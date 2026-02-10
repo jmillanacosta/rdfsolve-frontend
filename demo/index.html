@@ -198,15 +198,25 @@
         </nav>
 
         <!-- ═══════════════════════════════════════════════════════════ -->
-        <!-- TAB 1 · PATHS — Define what you want to discover          -->
+        <!-- TAB 1 · PATHS — Discover data & define paths              -->
         <!-- ═══════════════════════════════════════════════════════════ -->
         <div class="tab-pane active" id="tab-paths">
+          <div class="section-card" style="margin-bottom: 12px">
+            <div class="section-card-header">
+              <span class="sc-icon">🔍</span> IRI Discovery
+              <span class="sc-hint">Find where your data lives before drawing paths</span>
+            </div>
+            <div class="section-card-body">
+              <iri-resolver diagram="diagram"></iri-resolver>
+            </div>
+          </div>
           <div class="workflow-step">
             <span class="step-num">1</span>
             <span class="step-text">
-              <strong>Draw paths</strong> on the schema diagram to define what
-              data relationships you want to query.
-              Click nodes in the diagram to build a path through the schema.
+              <strong>Discover & draw paths.</strong>
+              Paste IRIs above to find which schema classes contain your data,
+              then click nodes on the diagram to draw paths between them.
+              Resolved IRIs will be bound as VALUES in the generated query.
             </span>
           </div>
           <path-list diagram="diagram"></path-list>
@@ -238,16 +248,6 @@
             </span>
           </div>
           <results-panel diagram="diagram"></results-panel>
-
-          <div class="section-card">
-            <div class="section-card-header">
-              IRI Resolver
-              <span class="sc-hint">Discover types for specific IRIs</span>
-            </div>
-            <div class="section-card-body">
-              <iri-resolver diagram="diagram"></iri-resolver>
-            </div>
-          </div>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════ -->

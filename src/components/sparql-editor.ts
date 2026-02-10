@@ -354,6 +354,15 @@ export class SparqlEditor extends HTMLElement {
     // Initial highlight + VALUES UI placeholder
     this.syncHighlight();
     this.buildValueBindingsUI();
+
+    // Listen for IRI bindings from iri-resolver (discovery flow).
+    // When the user resolves IRIs and then draws paths, the composed
+    // query should automatically get VALUES clauses.
+    document.addEventListener('iri-bindings-ready', ((e: CustomEvent) => {
+      const bindings = e.detail?.bindings as Map<string, string[]> | undefined;
+      if (!bindings || bindings.size === 0) return;
+      this.injectIriBindings(bindings);
+    }) as EventListener);
   }
 
   // ---------------------------------------------------------------------------
@@ -690,6 +699,81 @@ export class SparqlEditor extends HTMLElement {
         }
       }
     });
+  }
+
+  /**
+   * Inject IRI bindings from the iri-resolver's class→IRIs map.
+   *
+   * Maps each class URI to the query variable representing that class
+   * (via the variable_map from the last compose result or by parsing
+   * rdf:type assertions in the query), then adds each IRI.
+   */
+  private injectIriBindings(classToIris: Map<string, string[]>): void {
+    const queryText = this.ta().value;
+    if (!queryText || queryText.startsWith('# No paths')) return;
+
+    const diagram = this.getDiagram();
+    const prefixes = diagram?.getSchema()?.prefixes ?? {};
+    const typeToVar = this.buildTypeToVarMap(queryText, prefixes);
+
+    let added = false;
+    for (const [classUri, iris] of classToIris) {
+      const varName = typeToVar.get(classUri);
+      if (!varName) continue;
+      if (!this.valueBindings.has(varName)) this.valueBindings.set(varName, []);
+      const existing = this.valueBindings.get(varName)!;
+      for (const iri of iris) {
+        if (!existing.includes(iri)) {
+          existing.push(iri);
+          added = true;
+        }
+      }
+    }
+
+    if (added) this.regenerateWithBindings();
+  }
+
+  /**
+   * Parse SPARQL for "?var a curie ." or "?var a <uri> ." patterns,
+   * also match the variable_map from the compose result.
+   * Returns typeUri → varName.
+   */
+  private buildTypeToVarMap(
+    sparqlText: string,
+    prefixes: Record<string, string>,
+  ): Map<string, string> {
+    const map = new Map<string, string>();
+
+    // 1. Parse rdf:type assertions in the query text
+    const re = /\?(\w+)\s+a\s+(?:(\w[\w.-]*:\w[\w.-]*)|<([^>]+)>)/g;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(sparqlText)) !== null) {
+      const varName = m[1];
+      let typeUri = '';
+      if (m[3]) {
+        typeUri = m[3];
+      } else if (m[2]) {
+        const [pfx, local] = m[2].split(':');
+        const ns = prefixes[pfx];
+        typeUri = ns ? ns + local : m[2];
+      }
+      if (typeUri) map.set(typeUri, varName);
+    }
+
+    // 2. Also use variable_map from the last compose result (more reliable):
+    //    variable_map maps varName → classUri
+    //    We need the reverse: classUri → varName
+    const diagram = this.getDiagram();
+    const lastResult = (diagram as any)._lastComposeResult as
+      | { variable_map?: Record<string, string> }
+      | undefined;
+    if (lastResult?.variable_map) {
+      for (const [v, uri] of Object.entries(lastResult.variable_map)) {
+        if (!map.has(uri)) map.set(uri, v);
+      }
+    }
+
+    return map;
   }
 
   // ---------------------------------------------------------------------------

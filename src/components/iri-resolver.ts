@@ -41,6 +41,9 @@ export class IriResolver extends HTMLElement {
   private resolvedIris = new Map<string, ResolvedIri>();
   private selectedIris = new Set<string>();
 
+  /** Class URI → list of instance IRIs that resolve to that class. */
+  private classBindings = new Map<string, string[]>();
+
   /** Manually registered endpoints (e.g. from sources.csv or dataset-selector) */
   private endpoints: EndpointEntry[] = [];
   /** Auto-discovered endpoints from JSON-LD @about */
@@ -64,6 +67,17 @@ export class IriResolver extends HTMLElement {
   /** Return all effective endpoints (auto-discovered + manually registered). */
   getEndpoints(): EndpointEntry[] {
     return this.getEffectiveEndpoints();
+  }
+
+  /**
+   * Return the current class → instance IRI bindings.
+   *
+   * After resolution, each schema class URI maps to the instance IRIs
+   * the user pasted that are of that type.  The sparql-editor uses this
+   * to inject VALUES clauses into the composed query.
+   */
+  getBindings(): Map<string, string[]> {
+    return new Map(this.classBindings);
   }
 
   /**
@@ -180,10 +194,12 @@ export class IriResolver extends HTMLElement {
       </style>
 
       <div class="ir-wrap">
-        <div class="ir-title">IRI Resolver</div>
+        <div class="ir-title">IRI Discovery</div>
         <div class="ir-desc">
-          Paste IRIs to discover their <strong>rdf:type</strong> and render matching
-          schema classes on the diagram.
+          Paste IRIs to discover their <strong>rdf:type</strong> and see which
+          schema classes contain your data. Matched classes will be highlighted
+          on the diagram — draw paths between them, and the resolved IRIs will
+          be injected as VALUES bindings in the generated SPARQL query.
         </div>
 
         <div class="ir-input">
@@ -572,7 +588,7 @@ export class IriResolver extends HTMLElement {
       }
     }
 
-    // ── 4. Build class → resolved IRIs map (for badges) ────────────
+    // ── 4. Build class → resolved IRIs map (for badges & VALUES) ────
     //   For each resolved IRI, find which matched root class(es) it
     //   belongs to via its rdf:type(s).
     const classToIris = new Map<string, string[]>();
@@ -585,6 +601,9 @@ export class IriResolver extends HTMLElement {
         }
       }
     }
+
+    // Persist bindings so sparql-editor can read them when composing
+    this.classBindings = classToIris;
 
     // ── 5. Re-render the diagram with matched classes as roots ────────
     if (matchedRoots.size > 0 && diagram) {
@@ -602,21 +621,31 @@ export class IriResolver extends HTMLElement {
       requestAnimationFrame(() => diagram.fitToView());
     }
 
-    // ── 6. Push VALUES bindings into sparql-editor (if available) ─────
+    // ── 6. Notify listeners that bindings are ready ──────────────────
+    //   The sparql-editor listens for this event.  When the user draws
+    //   paths and a query is composed, the editor injects these bindings
+    //   as VALUES clauses automatically.
+    document.dispatchEvent(new CustomEvent('iri-bindings-ready', {
+      detail: { bindings: classToIris },
+    }));
+
+    // Also push bindings into the editor immediately if a query exists
     const sparqlEditor = document.querySelector<SparqlEditor>('sparql-editor');
     let bound = 0;
     if (sparqlEditor) {
       const sparqlText = sparqlEditor.getSPARQL();
-      const schemaPrefixes = schema.prefixes ?? {};
-      const typeToVar = this.buildTypeToVarMap(sparqlText, schemaPrefixes);
+      if (sparqlText && !sparqlText.startsWith('# No paths')) {
+        const schemaPrefixes = schema.prefixes ?? {};
+        const typeToVar = this.buildTypeToVarMap(sparqlText, schemaPrefixes);
 
-      for (const [iri, types] of iriToTypes) {
-        for (const typeUri of types) {
-          const varName = typeToVar.get(typeUri);
-          if (varName) {
-            sparqlEditor.addIriBinding(varName, iri);
-            bound++;
-            break; // one binding per IRI
+        for (const [iri, types] of iriToTypes) {
+          for (const typeUri of types) {
+            const varName = typeToVar.get(typeUri);
+            if (varName) {
+              sparqlEditor.addIriBinding(varName, iri);
+              bound++;
+              break; // one binding per IRI
+            }
           }
         }
       }
@@ -625,15 +654,19 @@ export class IriResolver extends HTMLElement {
     // ── 7. Status ─────────────────────────────────────────────────────
     const parts: string[] = [];
     if (matchedRoots.size > 0) {
-      parts.push(`Rendered ${matchedRoots.size} class(es) as roots`);
+      parts.push(`Found ${matchedRoots.size} matching class(es)`);
     } else {
       parts.push('No matching classes found in schema');
     }
+    if (classToIris.size > 0) {
+      const totalIris = [...classToIris.values()].reduce((n, arr) => n + arr.length, 0);
+      parts.push(`${totalIris} IRI(s) ready as VALUES bindings`);
+    }
     if (bound > 0) {
-      parts.push(`bound ${bound} IRI(s) to query`);
+      parts.push(`injected into current query`);
     }
     this.setStatus(
-      parts.join('; '),
+      parts.join(' · '),
       matchedRoots.size > 0 ? 'success' : 'warning',
     );
   }
@@ -675,10 +708,16 @@ export class IriResolver extends HTMLElement {
   private clear(): void {
     this.resolvedIris.clear();
     this.selectedIris.clear();
+    this.classBindings.clear();
     const ta = this.root.querySelector<HTMLTextAreaElement>('textarea');
     if (ta) ta.value = '';
     this.root.querySelector<HTMLElement>('.ir-results')!.innerHTML = '';
     this.setStatus('', 'info');
+
+    // Notify that bindings have been cleared
+    document.dispatchEvent(new CustomEvent('iri-bindings-ready', {
+      detail: { bindings: new Map() },
+    }));
 
     // Clear any IRI highlights and resolved-IRI badges on the diagram
     const diagram = this.getDiagram();
