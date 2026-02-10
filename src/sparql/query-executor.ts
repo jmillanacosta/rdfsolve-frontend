@@ -3,7 +3,7 @@
  *
  * Sends SPARQL SELECT queries to endpoints, parses the JSON results,
  * and maps each result variable back to the schema URI it was derived
- * from (using the variable→URI mapping produced by SPARQLComposer).
+ * from (using the variable→URI mapping produced by the backend composer).
  *
  * Design:
  *  - Pure data module — no DOM, no side-effects.
@@ -54,6 +54,8 @@ export interface QueryResult {
   durationMs: number;
   /** Error message, if any. */
   error?: string;
+  /** Python code snippet to reproduce this operation. */
+  rdfsolveCode?: string;
 }
 
 /** Options for executeQuery. */
@@ -151,6 +153,7 @@ export async function executeQuery(
       rowCount: data.row_count ?? rows.length,
       durationMs: data.duration_ms ?? Math.round(performance.now() - t0),
       error: data.error ?? undefined,
+      rdfsolveCode: data.rdfsolve_code ?? undefined,
     };
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : String(err);
@@ -198,53 +201,6 @@ export function buildVariableMapFromQuery(
   // Also try variable name → schema URI by looking for
   // subject-position variables: `?varName predicate ?other`
   // These are less reliable so we don't overwrite existing entries.
-  return map;
-}
-
-/**
- * Build a mapping from each variable to its positional schema URI
- * using the same logic the composer uses: each node position in a path
- * gets a variable named after its local name.
- *
- * This is the preferred approach when you have the paths available.
- */
-export function buildVariableMapFromPaths(
-  paths: Array<{
-    edgeData?: Array<{
-      source: string;
-      target: string;
-      predicate: string;
-      isForward: boolean;
-    }>;
-  }>,
-): VariableMapping {
-  const map: VariableMapping = new Map();
-  const counter: Record<string, number> = {};
-
-  const freshVar = (uri: string): string => {
-    let ln = uri.includes('#') ? uri.split('#').pop()! : uri.split('/').pop()!;
-    ln = ln.replace(/[^a-zA-Z0-9_]/g, '') || 'node';
-    const base = ln.charAt(0).toLowerCase() + ln.slice(1);
-    if (!counter[base]) counter[base] = 0;
-    const suffix = counter[base] === 0 ? '' : `_${counter[base]}`;
-    counter[base]++;
-    return `${base}${suffix}`;
-  };
-
-  for (const path of paths) {
-    if (!path.edgeData?.length) continue;
-    for (let ei = 0; ei < path.edgeData.length; ei++) {
-      const edge = path.edgeData[ei];
-      const subj = edge.isForward ? edge.source : edge.target;
-      const obj = edge.isForward ? edge.target : edge.source;
-      if (ei === 0) {
-        const v = freshVar(subj);
-        map.set(v, subj);
-      }
-      const v = freshVar(obj);
-      map.set(v, obj);
-    }
-  }
   return map;
 }
 

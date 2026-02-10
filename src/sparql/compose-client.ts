@@ -12,11 +12,11 @@
 
 import type { EnhancedPath } from '../state/diagram-state';
 
-// ── API base ─────────────────────────────────────────────────────────────────
+// ── API base ────────────────────────────────────────────────────
 
 const API_BASE: string = (globalThis as any).__RDFSOLVE_API_BASE__ ?? '';
 
-// ── Types matching backend contract ──────────────────────────────────────────
+// ── Types matching backend contract ─────────────────────────────
 
 export interface ComposeOptions {
   include_types?: boolean;
@@ -29,20 +29,14 @@ export interface ComposeResult {
   query: string;
   variable_map: Record<string, string>;
   jsonld: Record<string, unknown>;
+  rdfsolve_code?: string;
 }
 
-// ── Helpers ──────────────────────────────────────────────────────────────────
+// ── Helpers ─────────────────────────────────────────────────────
 
 /**
- * Convert frontend `EnhancedPath[]` + `nodeIdToUri` into the API's
- * `paths` format:
- * ```json
- * [{ "edges": [{ "source": "uri", "target": "uri",
- *                "predicate": "uri", "is_forward": true }] }]
- * ```
- *
- * The backend expects real URIs (not node IDs) in source/target.
- * `edgeData` already stores URIs, so no mapping is needed.
+ * Convert frontend EnhancedPath[] into the API paths format.
+ * edgeData already stores URIs, so no mapping is needed.
  */
 function serialisePaths(
   paths: EnhancedPath[],
@@ -59,15 +53,10 @@ function serialisePaths(
     }));
 }
 
-// ── Main entry point ─────────────────────────────────────────────────────────
+// ── Main entry point ────────────────────────────────────────────
 
 /**
  * Ask the backend to compose a SPARQL query from diagram paths.
- *
- * @param paths       Enhanced paths from the diagram state.
- * @param prefixes    Namespace prefix map (e.g. from the schema).
- * @param options     Generation options (types, labels, limit, bindings).
- * @returns           The composed query string (or a comment on error).
  */
 export async function composeFromPaths(
   paths: EnhancedPath[],

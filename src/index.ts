@@ -16,6 +16,7 @@ export { IriResolver } from './components/iri-resolver';
 export type { EndpointEntry } from './components/iri-resolver';
 export { DiagramSettingsComponent } from './components/diagram-settings';
 export { ResultsPanel } from './components/results-panel';
+export { CodeLog } from './components/code-log';
 
 // Types
 export type {
@@ -129,20 +130,17 @@ export {
 // IRI Manager
 export { IRIManager, COMMON_PREFIXES } from './iri/iri-manager';
 
-// SPARQL Composer
+// SPARQL Compose Client (backend-driven composition)
 export {
-  SPARQLComposer,
-  type SPARQLComposerOptions,
-  type QueryGenerationOptions,
-  type EndpointInfo,
-  type DatasetEndpoints,
-} from './sparql/composer';
+  composeFromPaths,
+  type ComposeOptions,
+  type ComposeResult,
+} from './sparql/compose-client';
 
 // SPARQL Query Executor
 export {
   executeQuery,
   buildVariableMapFromQuery,
-  buildVariableMapFromPaths,
   collectInstancesBySchemaNode,
   type QueryResult,
   type ResultCell,

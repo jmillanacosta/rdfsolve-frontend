@@ -331,12 +331,17 @@ export class SparqlEditor extends HTMLElement {
           // Prune valueBindings: remove vars that no longer exist in the query
           this.pruneValueBindings();
           // Compose via backend API (async)
-          ((diagram as any).generateSPARQL?.(this.buildGenOptions()) as Promise<{ query: string }> | undefined)
+          ((diagram as any).generateSPARQL?.(this.buildGenOptions()) as Promise<{ query: string; rdfsolve_code?: string }> | undefined)
             ?.then((result) => {
               if (result?.query) {
                 this.setSPARQL(result.query);
                 this.buildPredicateDropdowns(paths);
                 this.buildValueBindingsUI();
+                if (result.rdfsolve_code) {
+                  document.dispatchEvent(new CustomEvent('code-log-entry', {
+                    detail: { label: 'Compose Query', code: result.rdfsolve_code },
+                  }));
+                }
               }
             });
         } else {
@@ -673,11 +678,16 @@ export class SparqlEditor extends HTMLElement {
     if (!diagram) return;
 
     // Compose via backend API (async)
-    const resultPromise = (diagram as any).generateSPARQL?.(this.buildGenOptions()) as Promise<{ query: string }> | undefined;
+    const resultPromise = (diagram as any).generateSPARQL?.(this.buildGenOptions()) as Promise<{ query: string; rdfsolve_code?: string }> | undefined;
     resultPromise?.then((result) => {
       if (result?.query) {
         this.setSPARQL(result.query);
         this.buildValueBindingsUI();
+        if (result.rdfsolve_code) {
+          document.dispatchEvent(new CustomEvent('code-log-entry', {
+            detail: { label: 'Compose Query', code: result.rdfsolve_code },
+          }));
+        }
       }
     });
   }

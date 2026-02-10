@@ -181,15 +181,19 @@
         <!-- ── Tab Navigation ── -->
         <nav class="tab-nav">
           <button class="tab-btn active" data-tab="paths">
-            <span class="tab-icon">🔗</span> Paths
+            Paths
             <span class="tab-badge" id="path-count" style="display:none">0</span>
           </button>
           <button class="tab-btn" data-tab="query">
-            <span class="tab-icon">✏️</span> Query
+            Query
           </button>
           <button class="tab-btn" data-tab="results">
-            <span class="tab-icon">📊</span> Results
+            Results
             <span class="tab-badge" id="result-count" style="display:none">0</span>
+          </button>
+          <button class="tab-btn" data-tab="code">
+            Code
+            <span class="tab-badge" id="code-count" style="display:none">0</span>
           </button>
         </nav>
 
@@ -237,13 +241,28 @@
 
           <div class="section-card">
             <div class="section-card-header">
-              <span class="sc-icon">🔍</span> IRI Resolver
+              IRI Resolver
               <span class="sc-hint">Discover types for specific IRIs</span>
             </div>
             <div class="section-card-body">
               <iri-resolver diagram="diagram"></iri-resolver>
             </div>
           </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <!-- TAB 4 · CODE — Python code log                            -->
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <div class="tab-pane" id="tab-code">
+          <div class="workflow-step">
+            <span class="step-num">4</span>
+            <span class="step-text">
+              <strong>Reproduce in Python.</strong> Every operation you perform
+              generates an equivalent <code>rdfsolve</code> script.
+              Download the full session as a <code>.py</code> file.
+            </span>
+          </div>
+          <code-log></code-log>
         </div>
 
       </aside>
@@ -323,6 +342,19 @@
       if (e.detail && typeof e.detail.rowCount === 'number') {
         badge.textContent = e.detail.rowCount;
         badge.style.display = '';
+      }
+    });
+
+    // ── Update code badge when code-log entries are added ──
+    document.addEventListener('code-log-update', function(e) {
+      var badge = document.getElementById('code-count');
+      if (e.detail && typeof e.detail.count === 'number') {
+        if (e.detail.count > 0) {
+          badge.textContent = e.detail.count;
+          badge.style.display = '';
+        } else {
+          badge.style.display = 'none';
+        }
       }
     });
   </script>

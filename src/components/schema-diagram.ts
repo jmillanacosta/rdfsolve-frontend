@@ -18,7 +18,6 @@ import type {
   VisualModel,
   PathNode,
   PathEdge,
-  PrefixMap,
 } from '../types';
 import { parseJSONLD } from '../parsers/jsonld-parser';
 import {
@@ -34,7 +33,6 @@ import { TreeRenderer } from '../renderer/tree-renderer';
 import { DiagramState, type DiagramMode, type EnhancedPath } from '../state/diagram-state';
 import { IRIManager } from '../iri/iri-manager';
 import { PathFinder, type EdgePath, type PathFinderOptions } from '../algorithms/path-finder';
-import { SPARQLComposer, type QueryGenerationOptions } from '../sparql/composer';
 import { composeFromPaths, type ComposeOptions, type ComposeResult } from '../sparql/compose-client';
 import { 
   type DiagramStyle, 
@@ -80,7 +78,6 @@ export class SchemaDiagram extends HTMLElement {
   private state: DiagramState;
   private iriManager: IRIManager;
   private pathFinder: PathFinder | null = null;
-  private sparqlComposer: SPARQLComposer;
   
   // Map nodeId -> URI for path/query generation
   private nodeIdToUri: Map<string, string> = new Map();
@@ -92,7 +89,6 @@ export class SchemaDiagram extends HTMLElement {
     this.shadow = this.attachShadow({ mode: 'open' });
     this.state = new DiagramState();
     this.iriManager = new IRIManager();
-    this.sparqlComposer = new SPARQLComposer();
     this.setupDOM();
   }
   
@@ -872,17 +868,15 @@ export class SchemaDiagram extends HTMLElement {
   // ==========================================================================
   
   /**
-   * Get the SPARQL Composer (kept for JSON-LD export utilities).
-   */
-  getSPARQLComposer(): SPARQLComposer {
-    return this.sparqlComposer;
-  }
-  
-  /**
    * Generate SPARQL query from current highlighted paths via the backend API.
-   * All composition logic lives in the `rdfsolve.compose` package module.
+   * All composition logic lives in the `rdfsolve.compose` Python module.
    */
-  async generateSPARQL(options?: QueryGenerationOptions): Promise<ComposeResult> {
+  async generateSPARQL(options?: {
+    includeTypes?: boolean;
+    includeLabels?: boolean;
+    limit?: number;
+    valueBindings?: Map<string, string[]>;
+  }): Promise<ComposeResult> {
     const paths = this.state.getPaths();
     if (paths.length === 0) {
       return {
@@ -914,22 +908,6 @@ export class SchemaDiagram extends HTMLElement {
     }
     
     return composeFromPaths(paths, prefixes, composeOpts);
-  }
-  
-  /**
-   * Generate SPARQL from specific EdgePaths (still uses local composer
-   * as a convenience — these are never user-facing, only used for
-   * path-list preview).
-   */
-  generateSPARQLFromEdgePaths(edgePaths: EdgePath[], options?: QueryGenerationOptions): string {
-    return this.sparqlComposer.generateFromEdgePaths(edgePaths, options);
-  }
-  
-  /**
-   * Set SPARQL prefixes.
-   */
-  setSPARQLPrefixes(prefixes: PrefixMap): void {
-    this.sparqlComposer.setPrefixes(prefixes);
   }
   
   // ==========================================================================

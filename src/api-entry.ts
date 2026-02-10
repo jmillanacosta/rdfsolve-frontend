@@ -19,6 +19,7 @@ import './components/node-tooltip';
 import './components/iri-resolver';
 import './components/diagram-settings';
 import './components/results-panel';
+import './components/code-log';
 
 // Apply default style
 import { setStyle, DEFAULT_STYLE } from './layout/styles';

@@ -161,7 +161,6 @@ export class ResultsPanel extends HTMLElement {
 <div id="summary"></div>
 <div id="results">
   <div class="rp-empty">
-    <div class="rp-empty-icon">📊</div>
     Draw a path → review the query → run it here.<br/>
     Results will map back to the schema diagram.
   </div>
@@ -240,6 +239,13 @@ export class ResultsPanel extends HTMLElement {
         this.renderTable(result);
         this.highlightDiagram(result);
         this.dispatchEvent(new CustomEvent('query-result', { detail: result, bubbles: true }));
+
+        // Log the rdfsolve Python code snippet
+        if (result.rdfsolveCode) {
+          document.dispatchEvent(new CustomEvent('code-log-entry', {
+            detail: { label: 'Execute SPARQL', code: result.rdfsolveCode },
+          }));
+        }
       }
     } finally {
       btn.disabled = false;

@@ -306,6 +306,13 @@ export class IriResolver extends HTMLElement {
         : `No types found across ${eps.length} endpoint(s)`;
       if (errorMsgs.length) msg += ` (${errorMsgs.length} endpoint errors)`;
       this.setStatus(msg, foundCount > 0 ? 'success' : 'warning');
+
+      // Log rdfsolve Python code snippet
+      if (data.rdfsolve_code) {
+        document.dispatchEvent(new CustomEvent('code-log-entry', {
+          detail: { label: 'Resolve IRIs', code: data.rdfsolve_code },
+        }));
+      }
     } catch (err: any) {
       this.setStatus(`Resolve failed: ${err.message}`, 'warning');
     }
