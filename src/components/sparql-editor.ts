@@ -133,6 +133,13 @@ export class SparqlEditor extends HTMLElement {
   private index: SchemaIndex | null = null;
   private debounceTimer: ReturnType<typeof setTimeout> | null = null;
   private updatingFromDiagram = false;
+  /**
+   * True once the user manually edits the textarea.
+   * While dirty, diagram-driven regeneration won't overwrite the text.
+   */
+  private userDirty = false;
+  /** The last query produced by the backend composer (for "Reset"). */
+  private lastGeneratedQuery = '';
   /** Per-variable IRI bindings for VALUES clause */
   private valueBindings = new Map<string, string[]>();
   /** SPARQL generation options */
@@ -253,6 +260,11 @@ export class SparqlEditor extends HTMLElement {
                  background:#fff; cursor:pointer; }
         button.primary { background:#0066cc; color:#fff; border-color:#0066cc; }
         button:hover { opacity:.85; }
+        .se-dirty-bar { display:none; align-items:center; gap:6px; padding:4px 8px;
+                        background:#fff8e1; border:1px solid #ffe082; border-radius:4px;
+                        font-size:10px; color:#8d6e00; }
+        .se-dirty-bar.show { display:flex; }
+        .se-dirty-bar button { font-size:10px; padding:2px 8px; background:#fff; border:1px solid #d2d2d7; }
       </style>
       <div class="se-wrap">
         <div class="se-header">
@@ -283,6 +295,10 @@ export class SparqlEditor extends HTMLElement {
           <button class="primary update-btn">Update Diagram</button>
           <button class="copy-btn">Copy</button>
         </div>
+        <div class="se-dirty-bar">
+          <span>✏️ Query edited manually — auto-sync paused</span>
+          <button class="reset-btn">Reset to generated</button>
+        </div>
       </div>
     `;
 
@@ -293,6 +309,12 @@ export class SparqlEditor extends HTMLElement {
     ta.addEventListener('input', () => {
       this.syncHighlight();
       if (this.updatingFromDiagram) return;
+      // User is manually editing — mark dirty so auto-regeneration
+      // from diagram events won't overwrite their edits.
+      if (!this.userDirty) {
+        this.userDirty = true;
+        this.updateDirtyBar();
+      }
       this.showAutocomplete();
       if (this.debounceTimer) clearTimeout(this.debounceTimer);
       this.debounceTimer = setTimeout(() => this.parseAndHighlight(), 800);
@@ -310,6 +332,13 @@ export class SparqlEditor extends HTMLElement {
     // Buttons
     this.root.querySelector('.update-btn')?.addEventListener('click', () => this.parseAndHighlight());
     this.root.querySelector('.copy-btn')?.addEventListener('click', () => this.copyToClipboard());
+    this.root.querySelector('.reset-btn')?.addEventListener('click', () => {
+      this.userDirty = false;
+      this.updateDirtyBar();
+      if (this.lastGeneratedQuery) {
+        this.setSPARQL(this.lastGeneratedQuery);
+      }
+    });
 
     // Options checkboxes
     this.root.querySelector('.opt-types')?.addEventListener('change', (e) => {
@@ -334,7 +363,12 @@ export class SparqlEditor extends HTMLElement {
           ((diagram as any).generateSPARQL?.(this.buildGenOptions()) as Promise<{ query: string; rdfsolve_code?: string }> | undefined)
             ?.then((result) => {
               if (result?.query) {
-                this.setSPARQL(result.query);
+                // Always store the generated query for "Reset" purposes
+                this.lastGeneratedQuery = result.query;
+                // Only overwrite textarea when user hasn't manually edited
+                if (!this.userDirty) {
+                  this.setSPARQL(result.query);
+                }
                 this.buildPredicateDropdowns(paths);
                 this.buildValueBindingsUI();
                 if (result.rdfsolve_code) {
@@ -376,6 +410,7 @@ export class SparqlEditor extends HTMLElement {
 
   setSPARQL(text: string): void {
     this.updatingFromDiagram = true;
+    this.lastGeneratedQuery = text;
     this.ta().value = text;
     this.syncHighlight();
     setTimeout(() => { this.updatingFromDiagram = false; }, 0);
@@ -690,7 +725,10 @@ export class SparqlEditor extends HTMLElement {
     const resultPromise = (diagram as any).generateSPARQL?.(this.buildGenOptions()) as Promise<{ query: string; rdfsolve_code?: string }> | undefined;
     resultPromise?.then((result) => {
       if (result?.query) {
-        this.setSPARQL(result.query);
+        this.lastGeneratedQuery = result.query;
+        if (!this.userDirty) {
+          this.setSPARQL(result.query);
+        }
         this.buildValueBindingsUI();
         if (result.rdfsolve_code) {
           document.dispatchEvent(new CustomEvent('code-log-entry', {
@@ -1059,6 +1097,13 @@ export class SparqlEditor extends HTMLElement {
   private setStatus(msg: string): void {
     const el = this.root.querySelector('.se-status');
     if (el) el.textContent = msg;
+  }
+
+  private updateDirtyBar(): void {
+    const bar = this.root.querySelector<HTMLElement>('.se-dirty-bar');
+    if (bar) {
+      bar.classList.toggle('show', this.userDirty);
+    }
   }
 
   private copyToClipboard(): void {

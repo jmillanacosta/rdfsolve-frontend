@@ -144,6 +144,30 @@ export class ResultsPanel extends HTMLElement {
     line-height: 1.6;
   }
   .rp-empty .rp-empty-icon { font-size: 28px; margin-bottom: 6px; }
+
+  /* ── Download bar ── */
+  .rp-download-bar {
+    display: flex; gap: 6px; align-items: center; padding: 6px 0;
+  }
+  .rp-download-bar button {
+    font-size: 11px; padding: 4px 12px; border: 1px solid #d2d2d7;
+    border-radius: 4px; background: #fff; cursor: pointer; display: inline-flex;
+    align-items: center; gap: 4px;
+  }
+  .rp-download-bar button:hover { background: #f0f4ff; }
+
+  /* ── Endpoint URL ── */
+  .rp-endpoint-info {
+    display: flex; align-items: center; gap: 6px; padding: 6px 8px;
+    background: #f5f6f8; border-radius: 4px; font-size: 11px; color: #555;
+    word-break: break-all; margin-top: 6px;
+  }
+  .rp-endpoint-info .ep-label { color: #999; font-size: 10px; white-space: nowrap; }
+  .rp-endpoint-info a {
+    color: #0066cc; text-decoration: none; font-family: 'SF Mono', Monaco, monospace;
+    font-size: 11px;
+  }
+  .rp-endpoint-info a:hover { text-decoration: underline; }
 </style>
 
 <div class="rp-controls">
@@ -165,9 +189,19 @@ export class ResultsPanel extends HTMLElement {
     Results will map back to the schema diagram.
   </div>
 </div>
+<div class="rp-download-bar" id="download-bar" style="display:none">
+  <button id="dl-csv">⬇ CSV</button>
+  <button id="dl-json">⬇ JSON</button>
+</div>
+<div class="rp-endpoint-info" id="endpoint-info" style="display:none">
+  <span class="ep-label">Endpoint:</span>
+  <a id="ep-link" href="#" target="_blank" rel="noopener"></a>
+</div>
 `;
 
     this.root.getElementById('run-btn')!.addEventListener('click', () => this.runQuery());
+    this.root.getElementById('dl-csv')!.addEventListener('click', () => this.downloadCSV());
+    this.root.getElementById('dl-json')!.addEventListener('click', () => this.downloadJSON());
     this.refreshEndpoints();
   }
 
@@ -229,6 +263,7 @@ export class ResultsPanel extends HTMLElement {
       if (result.error) {
         this.setStatus(`Error: ${result.error}`, true);
         this.renderEmpty(result.error);
+        this.hideDownloadBar();
       } else {
         this.setStatus(
           `${result.rowCount} row${result.rowCount !== 1 ? 's' : ''}`,
@@ -237,6 +272,8 @@ export class ResultsPanel extends HTMLElement {
         );
         this.renderSummary(result);
         this.renderTable(result);
+        this.showDownloadBar();
+        this.showEndpointInfo(result.endpoint);
         this.highlightDiagram(result);
         this.dispatchEvent(new CustomEvent('query-result', { detail: result, bubbles: true }));
 
@@ -425,6 +462,77 @@ export class ResultsPanel extends HTMLElement {
     table.append(tbody);
     wrap.append(table);
     container.append(wrap);
+  }
+
+  // ── download helpers ────────────────────────────────────────────────────
+
+  private showDownloadBar(): void {
+    const bar = this.root.getElementById('download-bar');
+    if (bar) bar.style.display = 'flex';
+  }
+
+  private hideDownloadBar(): void {
+    const bar = this.root.getElementById('download-bar');
+    if (bar) bar.style.display = 'none';
+    const info = this.root.getElementById('endpoint-info');
+    if (info) info.style.display = 'none';
+  }
+
+  private showEndpointInfo(endpoint: string): void {
+    const wrap = this.root.getElementById('endpoint-info');
+    const link = this.root.getElementById('ep-link') as HTMLAnchorElement | null;
+    if (!wrap || !link) return;
+    wrap.style.display = 'flex';
+    link.href = endpoint;
+    link.textContent = endpoint;
+  }
+
+  private downloadCSV(): void {
+    const result = this.lastResult;
+    if (!result || result.rows.length === 0) return;
+
+    const escape = (val: string): string => {
+      if (val.includes('"') || val.includes(',') || val.includes('\n')) {
+        return '"' + val.replace(/"/g, '""') + '"';
+      }
+      return val;
+    };
+
+    const header = result.variables.map(escape).join(',');
+    const rows = result.rows.map(row =>
+      result.variables.map(v => {
+        const cell = row[v];
+        return cell ? escape(cell.value) : '';
+      }).join(','),
+    );
+    const csv = [header, ...rows].join('\n');
+    this.downloadBlob(csv, 'sparql-results.csv', 'text/csv;charset=utf-8');
+  }
+
+  private downloadJSON(): void {
+    const result = this.lastResult;
+    if (!result || result.rows.length === 0) return;
+
+    const data = result.rows.map(row => {
+      const obj: Record<string, string> = {};
+      for (const v of result.variables) {
+        const cell = row[v];
+        obj[v] = cell ? cell.value : '';
+      }
+      return obj;
+    });
+    const json = JSON.stringify(data, null, 2);
+    this.downloadBlob(json, 'sparql-results.json', 'application/json');
+  }
+
+  private downloadBlob(content: string, filename: string, mime: string): void {
+    const blob = new Blob([content], { type: mime });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
   }
 
   // ── util ───────────────────────────────────────────────────────────────
