@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>rdfsolve — Schema Visualization</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f5f6f8;
+      --card-bg: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --accent: #0066cc;
+      --border: #d2d2d7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg); color: var(--text);
+    }
+    .app { display: flex; flex-direction: column; height: 100vh; }
+    .header {
+      padding: 12px 20px; background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    }
+    .header h1 { font-size: 18px; font-weight: 600; }
+    .header .sub { font-size: 12px; color: var(--text-secondary); }
+    .toolbar {
+      padding: 10px 20px; background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    }
+    .main { flex: 1; display: flex; overflow: hidden; }
+    .diagram-panel { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+    .diagram-toolbar {
+      padding: 8px 12px; background: #fafbfc;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    }
+    .diagram-area { flex: 1; position: relative; overflow: hidden; background: #fafbfc; }
+    schema-diagram { display: block; width: 100%; height: 100%; }
+    .zoom-controls { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+    .zoom-controls button {
+      width: 28px; height: 28px; border: 1px solid var(--border); border-radius: 4px;
+      background: var(--card-bg); cursor: pointer; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .zoom-controls button:hover { background: #f0f0f2; }
+    .zoom-controls .wide-btn { width: auto; padding: 0 8px; }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 34%; min-width: 320px; max-width: 640px;
+      background: var(--card-bg); border-left: 1px solid var(--border);
+      display: flex; flex-direction: column; overflow: hidden; transition: width .2s;
+    }
+    .sidebar.collapsed { width: 0; min-width: 0; border-left: none; }
+    .sidebar-header {
+      padding: 10px 16px; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .sidebar-header h3 { font-size: 14px; font-weight: 600; }
+
+    /* ── Tab navigation ── */
+    .tab-nav {
+      display: flex; border-bottom: 2px solid var(--border); background: #fafbfc;
+    }
+    .tab-btn {
+      flex: 1; padding: 10px 8px; font-size: 12px; font-weight: 600;
+      border: none; background: none; cursor: pointer;
+      color: var(--text-secondary); position: relative; transition: color .15s;
+      display: flex; align-items: center; justify-content: center; gap: 5px;
+    }
+    .tab-btn:hover { color: var(--text); background: rgba(0,0,0,.02); }
+    .tab-btn.active { color: var(--accent); }
+    .tab-btn.active::after {
+      content: ''; position: absolute; bottom: -2px; left: 12px; right: 12px;
+      height: 2px; background: var(--accent); border-radius: 1px;
+    }
+    .tab-btn .tab-icon { font-size: 14px; }
+    .tab-btn .tab-badge {
+      font-size: 9px; font-weight: 700; background: var(--accent); color: #fff;
+      padding: 1px 5px; border-radius: 8px; min-width: 16px; text-align: center;
+    }
+
+    /* ── Tab panes ── */
+    .tab-pane {
+      display: none; flex: 1; overflow-y: auto; padding: 14px 16px;
+      flex-direction: column; gap: 14px;
+    }
+    .tab-pane.active { display: flex; }
+
+    .toggle-btn {
+      font-size: 12px; padding: 5px 14px; border: 1px solid var(--border);
+      border-radius: 4px; background: var(--card-bg); cursor: pointer;
+    }
+    .toggle-btn:hover { background: #f0f0f2; }
+
+    /* ── Section cards within tabs ── */
+    .section-card {
+      border: 1px solid var(--border); border-radius: 8px; overflow: hidden;
+    }
+    .section-card-header {
+      padding: 8px 12px; background: #f5f6f8;
+      font-size: 12px; font-weight: 600; color: var(--text);
+      display: flex; align-items: center; gap: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-card-header .sc-icon { font-size: 13px; }
+    .section-card-header .sc-hint {
+      font-weight: 400; font-size: 10px; color: var(--text-secondary); margin-left: auto;
+    }
+    .section-card-body { padding: 10px 12px; }
+
+    /* ── Workflow step indicators ── */
+    .workflow-step {
+      display: flex; align-items: flex-start; gap: 10px; padding: 8px 0;
+    }
+    .step-num {
+      width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0;
+      background: var(--accent); color: #fff; font-size: 11px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .step-num.done { background: #34a853; }
+    .step-text { font-size: 12px; color: var(--text-secondary); line-height: 1.4; }
+    .step-text strong { color: var(--text); }
+
+    .footer {
+      padding: 8px 16px; background: var(--card-bg);
+      border-top: 1px solid var(--border);
+      font-size: 12px; color: var(--text-secondary);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .legend { display: flex; gap: 12px; font-size: 11px; }
+    .legend-item { display: flex; align-items: center; gap: 4px; }
+    .swatch { width: 16px; height: 12px; border-radius: 2px; border: 1px solid rgba(0,0,0,.2); }
+    .swatch.class    { background: #fff4c3; }
+    .swatch.instance { background: #ffce9f; }
+    .swatch.literal  { background: #f8cecc; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div>
+        <h1>rdfsolve</h1>
+        <span class="sub">Discover, understand & query RDF data</span>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <dataset-selector diagram="diagram"></dataset-selector>
+      <button class="toggle-btn" id="sidebar-toggle" style="margin-left:auto">⚡ Query Panel</button>
+    </div>
+
+    <div class="main">
+      <div class="diagram-panel">
+        <div class="diagram-toolbar">
+          <find-node diagram="diagram"></find-node>
+          <div class="zoom-controls">
+            <button id="zoom-out" title="Zoom out">−</button>
+            <button id="zoom-in"  title="Zoom in">+</button>
+            <button id="fit-btn"  title="Fit to view" class="wide-btn">Fit</button>
+            <button id="reset-btn" title="Reset view" class="wide-btn">Reset</button>
+            <diagram-settings diagram="diagram"></diagram-settings>
+          </div>
+        </div>
+        <div class="diagram-area">
+          <schema-diagram id="diagram"></schema-diagram>
+          <node-tooltip diagram="diagram"></node-tooltip>
+        </div>
+      </div>
+
+      <aside id="sidebar" class="sidebar collapsed">
+        <div class="sidebar-header">
+          <h3>Query Panel</h3>
+          <button id="sidebar-close" class="toggle-btn">✕</button>
+        </div>
+
+        <!-- ── Tab Navigation ── -->
+        <nav class="tab-nav">
+          <button class="tab-btn active" data-tab="paths">
+            <span class="tab-icon">🔗</span> Paths
+            <span class="tab-badge" id="path-count" style="display:none">0</span>
+          </button>
+          <button class="tab-btn" data-tab="query">
+            <span class="tab-icon">✏️</span> Query
+          </button>
+          <button class="tab-btn" data-tab="results">
+            <span class="tab-icon">📊</span> Results
+            <span class="tab-badge" id="result-count" style="display:none">0</span>
+          </button>
+        </nav>
+
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <!-- TAB 1 · PATHS — Define what you want to discover          -->
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <div class="tab-pane active" id="tab-paths">
+          <div class="workflow-step">
+            <span class="step-num">1</span>
+            <span class="step-text">
+              <strong>Draw paths</strong> on the schema diagram to define what
+              data relationships you want to query.
+              Click nodes in the diagram to build a path through the schema.
+            </span>
+          </div>
+          <path-list diagram="diagram"></path-list>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <!-- TAB 2 · QUERY — Refine the generated SPARQL               -->
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <div class="tab-pane" id="tab-query">
+          <div class="workflow-step">
+            <span class="step-num">2</span>
+            <span class="step-text">
+              <strong>Review & refine</strong> the auto-generated SPARQL query.
+              Choose predicate alternatives, bind specific IRIs, or edit directly.
+            </span>
+          </div>
+          <sparql-editor diagram="diagram"></sparql-editor>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <!-- TAB 3 · RESULTS — Execute & explore                       -->
+        <!-- ═══════════════════════════════════════════════════════════ -->
+        <div class="tab-pane" id="tab-results">
+          <div class="workflow-step">
+            <span class="step-num">3</span>
+            <span class="step-text">
+              <strong>Run the query</strong> against a live SPARQL endpoint to
+              see what data is actually available. Results map back to the schema.
+            </span>
+          </div>
+          <results-panel diagram="diagram"></results-panel>
+
+          <div class="section-card">
+            <div class="section-card-header">
+              <span class="sc-icon">🔍</span> IRI Resolver
+              <span class="sc-hint">Discover types for specific IRIs</span>
+            </div>
+            <div class="section-card-body">
+              <iri-resolver diagram="diagram"></iri-resolver>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <div class="legend">
+        <span class="legend-item"><span class="swatch class"></span> Class</span>
+        <span class="legend-item"><span class="swatch instance"></span> Instance/URI</span>
+        <span class="legend-item"><span class="swatch literal"></span> Literal</span>
+      </div>
+      <div id="status-text">Select datasets and click Render</div>
+    </footer>
+  </div>
+
+  <script>
+    // ── Sidebar toggle ──
+    document.getElementById('sidebar-toggle').onclick = function() {
+      document.getElementById('sidebar').classList.toggle('collapsed');
+    };
+    document.getElementById('sidebar-close').onclick = function() {
+      document.getElementById('sidebar').classList.add('collapsed');
+    };
+
+    // ── Zoom controls ──
+    document.getElementById('zoom-in').onclick  = function() { document.getElementById('diagram').zoomIn(); };
+    document.getElementById('zoom-out').onclick = function() { document.getElementById('diagram').zoomOut(); };
+    document.getElementById('fit-btn').onclick  = function() { document.getElementById('diagram').fitToView(); };
+    document.getElementById('reset-btn').onclick = function() { document.getElementById('diagram').resetToOrigin(); };
+
+    // ── Tab switching ──
+    document.querySelectorAll('.tab-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var tab = btn.dataset.tab;
+        document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+        document.querySelectorAll('.tab-pane').forEach(function(p) { p.classList.remove('active'); });
+        btn.classList.add('active');
+        document.getElementById('tab-' + tab).classList.add('active');
+      });
+    });
+
+    // ── Auto-open sidebar + switch to Paths tab when entering path mode ──
+    document.getElementById('diagram').addEventListener('mode-change', function(e) {
+      if (e.detail && e.detail.mode === 'draw-path') {
+        document.getElementById('sidebar').classList.remove('collapsed');
+        // Activate paths tab
+        document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+        document.querySelectorAll('.tab-pane').forEach(function(p) { p.classList.remove('active'); });
+        document.querySelector('[data-tab="paths"]').classList.add('active');
+        document.getElementById('tab-paths').classList.add('active');
+      }
+    });
+
+    // ── Auto-switch to Query tab when SPARQL is generated ──
+    document.getElementById('diagram').addEventListener('paths-changed', function() {
+      var pathBadge = document.getElementById('path-count');
+      var pathList = document.getElementById('diagram');
+      var paths = pathList.getPaths ? pathList.getPaths() : [];
+      if (paths.length > 0) {
+        pathBadge.textContent = paths.length;
+        pathBadge.style.display = '';
+        // Switch to query tab after a brief delay
+        setTimeout(function() {
+          document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+          document.querySelectorAll('.tab-pane').forEach(function(p) { p.classList.remove('active'); });
+          document.querySelector('[data-tab="query"]').classList.add('active');
+          document.getElementById('tab-query').classList.add('active');
+        }, 400);
+      } else {
+        pathBadge.style.display = 'none';
+      }
+    });
+
+    // ── Update result badge when query results arrive ──
+    document.addEventListener('query-result', function(e) {
+      var badge = document.getElementById('result-count');
+      if (e.detail && typeof e.detail.rowCount === 'number') {
+        badge.textContent = e.detail.rowCount;
+        badge.style.display = '';
+      }
+    });
+  </script>
+
+  <script type="module" src="./dist/bundle.js"></script>
+</body>
+</html>
