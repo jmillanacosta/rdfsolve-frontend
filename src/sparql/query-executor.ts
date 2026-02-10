@@ -14,6 +14,12 @@
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
+/**
+ * API base URL.  Empty string = same origin (Docker Compose).
+ * Override via window.__RDFSOLVE_API_BASE__ before this module loads.
+ */
+const API_BASE: string = (globalThis as any).__RDFSOLVE_API_BASE__ ?? '';
+
 /** One cell in a result row. */
 export interface ResultCell {
   value: string;
@@ -61,7 +67,10 @@ export interface ExecuteOptions {
 // ── Executor ─────────────────────────────────────────────────────────────────
 
 /**
- * Send a SPARQL SELECT query to an endpoint and return structured results.
+ * Send a SPARQL SELECT query to an endpoint **via the backend proxy**.
+ *
+ * The request is POSTed to /api/sparql/query, which forwards it to the
+ * remote SPARQL endpoint server-side (no CORS issues).
  *
  * @param query       The full SPARQL query string (including PREFIXes).
  * @param endpoint    The SPARQL endpoint URL.
@@ -79,32 +88,69 @@ export async function executeQuery(
   const t0 = performance.now();
 
   try {
-    const json = await fetchSparqlJson(endpoint, query, timeout, method);
-    const variables: string[] = json.head?.vars ?? [];
-    const rows: ResultRow[] = (json.results?.bindings ?? []).map(
-      (binding: Record<string, SparqlJsonCell>) => {
-        const row: ResultRow = {};
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), timeout + 5000);
+
+    const res = await fetch(`${API_BASE}/api/sparql/query`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        query,
+        endpoint,
+        method,
+        timeout: Math.round(timeout / 1000),
+        variable_map: Object.fromEntries(variableMap),
+      }),
+      signal: ctrl.signal,
+    });
+    clearTimeout(timer);
+
+    if (!res.ok) {
+      const body = await res.json().catch(() => ({}));
+      throw new Error(body.error || `HTTP ${res.status}`);
+    }
+
+    const data = await res.json();
+
+    // Map snake_case backend response → camelCase frontend types
+    const variables: string[] = data.variables ?? [];
+    const rows: ResultRow[] = (data.rows ?? []).map(
+      (row: Record<string, any>) => {
+        const mapped: ResultRow = {};
         for (const v of variables) {
-          const cell = binding[v];
+          const cell = row[v];
           if (cell) {
-            row[v] = {
+            mapped[v] = {
               value: cell.value,
               type: cell.type === 'uri' ? 'uri'
                 : cell.type === 'bnode' ? 'bnode'
                 : 'literal',
-              lang: cell['xml:lang'],
-              datatype: cell.datatype,
+              lang: cell.lang ?? undefined,
+              datatype: cell.datatype ?? undefined,
             };
           }
         }
-        return row;
+        return mapped;
       },
     );
 
+    // Merge backend variable_map with caller-provided variableMap
+    const mergedMap: VariableMapping = new Map(variableMap);
+    if (data.variable_map) {
+      for (const [k, v] of Object.entries(data.variable_map)) {
+        if (!mergedMap.has(k)) mergedMap.set(k, v as string);
+      }
+    }
+
     return {
-      query, endpoint, variables, rows, variableMap,
-      rowCount: rows.length,
-      durationMs: Math.round(performance.now() - t0),
+      query: data.query ?? query,
+      endpoint: data.endpoint ?? endpoint,
+      variables,
+      rows,
+      variableMap: mergedMap,
+      rowCount: data.row_count ?? rows.length,
+      durationMs: data.duration_ms ?? Math.round(performance.now() - t0),
+      error: data.error ?? undefined,
     };
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : String(err);
@@ -232,58 +278,4 @@ export function collectInstancesBySchemaNode(
   return map;
 }
 
-// ── Internal ─────────────────────────────────────────────────────────────────
 
-/** Raw SPARQL JSON cell shape. */
-interface SparqlJsonCell {
-  type: string;
-  value: string;
-  'xml:lang'?: string;
-  datatype?: string;
-}
-
-/** Fetch SPARQL endpoint, return parsed JSON. */
-async function fetchSparqlJson(
-  endpoint: string,
-  query: string,
-  timeout: number,
-  method: 'GET' | 'POST',
-): Promise<any> {
-  const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), timeout);
-
-  try {
-    let res: Response;
-    if (method === 'POST') {
-      res = await fetch(endpoint, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/sparql-query',
-          Accept: 'application/sparql-results+json',
-        },
-        body: query,
-        signal: ctrl.signal,
-        mode: 'cors',
-      });
-    } else {
-      const url = `${endpoint}?query=${encodeURIComponent(query)}&format=json`;
-      res = await fetch(url, {
-        headers: { Accept: 'application/sparql-results+json' },
-        signal: ctrl.signal,
-        mode: 'cors',
-      });
-    }
-    clearTimeout(timer);
-    if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
-    return await res.json();
-  } catch (err: unknown) {
-    clearTimeout(timer);
-    if (err instanceof DOMException && err.name === 'AbortError') {
-      throw new Error('Timeout');
-    }
-    if (err instanceof TypeError && (err as any).message?.includes('Failed to fetch')) {
-      throw new Error('CORS blocked or network error');
-    }
-    throw err;
-  }
-}

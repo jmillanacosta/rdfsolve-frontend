@@ -330,12 +330,15 @@ export class SparqlEditor extends HTMLElement {
         if (paths && paths.length > 0) {
           // Prune valueBindings: remove vars that no longer exist in the query
           this.pruneValueBindings();
-          const query = (diagram as any).generateSPARQL?.(this.buildGenOptions());
-          if (query) {
-            this.setSPARQL(query);
-            this.buildPredicateDropdowns(paths);
-            this.buildValueBindingsUI();
-          }
+          // Compose via backend API (async)
+          ((diagram as any).generateSPARQL?.(this.buildGenOptions()) as Promise<{ query: string }> | undefined)
+            ?.then((result) => {
+              if (result?.query) {
+                this.setSPARQL(result.query);
+                this.buildPredicateDropdowns(paths);
+                this.buildValueBindingsUI();
+              }
+            });
         } else {
           this.valueBindings.clear();
           this.buildValueBindingsUI();
@@ -480,10 +483,14 @@ export class SparqlEditor extends HTMLElement {
         if (!diagram) return;
         (diagram as any).getState().selectEdgeAlternative(pathIdx, hopIdx, altIdx);
 
-        // Regenerate SPARQL with the new predicate selection
-        const query = (diagram as any).generateSPARQL(this.buildGenOptions());
-        this.setSPARQL(query);
-        this.buildValueBindingsUI();
+        // Regenerate SPARQL with the new predicate selection (async via backend)
+        ((diagram as any).generateSPARQL(this.buildGenOptions()) as Promise<{ query: string }>)
+          .then((result) => {
+            if (result?.query) {
+              this.setSPARQL(result.query);
+              this.buildValueBindingsUI();
+            }
+          });
       });
     });
   }
@@ -665,11 +672,14 @@ export class SparqlEditor extends HTMLElement {
     const diagram = this.getDiagram();
     if (!diagram) return;
 
-    const query = (diagram as any).generateSPARQL?.(this.buildGenOptions());
-    if (query) {
-      this.setSPARQL(query);
-      this.buildValueBindingsUI();
-    }
+    // Compose via backend API (async)
+    const resultPromise = (diagram as any).generateSPARQL?.(this.buildGenOptions()) as Promise<{ query: string }> | undefined;
+    resultPromise?.then((result) => {
+      if (result?.query) {
+        this.setSPARQL(result.query);
+        this.buildValueBindingsUI();
+      }
+    });
   }
 
   // ---------------------------------------------------------------------------

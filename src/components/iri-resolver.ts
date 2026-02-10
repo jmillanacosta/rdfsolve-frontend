@@ -265,33 +265,52 @@ export class IriResolver extends HTMLElement {
     this.setLoading(true);
     this.setStatus(`Resolving ${iris.length} IRI(s) against ${eps.length} endpoint(s)…`, 'info');
 
-    let successCount = 0;
-    let corsCount = 0;
-    let timeoutCount = 0;
+    const API_BASE: string = (window as any).__RDFSOLVE_API_BASE__ ?? '';
+    let foundCount = 0;
 
-    for (const ep of eps) {
-      try {
-        const bindings = await this.queryEndpoint(ep.endpoint, ep.graph, iris);
-        this.mergeResults(ep.name, ep.endpoint, ep.graph, bindings);
-        successCount++;
-      } catch (err: any) {
-        const reason = err?.message || 'Unknown';
-        if (reason === 'CORS blocked') corsCount++;
-        if (reason === 'Timeout') timeoutCount++;
-        console.warn(`[IriResolver] ${ep.name}: ${reason}`);
+    try {
+      const res = await fetch(`${API_BASE}/api/iri/resolve`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          iris,
+          endpoints: eps.map(ep => ({
+            name: ep.name,
+            endpoint: ep.endpoint,
+            graph: ep.graph,
+          })),
+          timeout: Math.round(this.queryTimeout / 1000),
+        }),
+      });
+
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || `HTTP ${res.status}`);
       }
+
+      const data = await res.json();
+
+      // Map backend response into internal resolvedIris structure
+      for (const [iri, info] of Object.entries(data.resolved ?? {})) {
+        const iriInfo = info as { types: string[]; found_in: Array<{ dataset: string; endpoint: string; graph: string | null; types: string[] }> };
+        for (const found of iriInfo.found_in) {
+          this.mergeResults(found.dataset, found.endpoint, found.graph,
+            found.types.map(t => ({ iri, type: t })));
+        }
+      }
+
+      const errorMsgs = (data.errors ?? []).map((e: any) => e.error);
+      foundCount = iris.filter(i => this.resolvedIris.has(i)).length;
+      let msg = foundCount > 0
+        ? `Resolved ${foundCount}/${iris.length} IRI(s)`
+        : `No types found across ${eps.length} endpoint(s)`;
+      if (errorMsgs.length) msg += ` (${errorMsgs.length} endpoint errors)`;
+      this.setStatus(msg, foundCount > 0 ? 'success' : 'warning');
+    } catch (err: any) {
+      this.setStatus(`Resolve failed: ${err.message}`, 'warning');
     }
 
     this.setLoading(false);
-
-    const foundCount = iris.filter(i => this.resolvedIris.has(i)).length;
-    let msg = foundCount > 0
-      ? `Resolved ${foundCount}/${iris.length} IRI(s) across ${successCount} endpoint(s)`
-      : `No types found in ${successCount}/${eps.length} endpoint(s)`;
-    if (corsCount) msg += ` (${corsCount} CORS)`;
-    if (timeoutCount) msg += ` (${timeoutCount} timeout)`;
-    this.setStatus(msg, foundCount > 0 ? 'success' : 'warning');
-
     this.renderResults();
 
     // Auto-select all resolved IRIs and immediately apply —
@@ -299,42 +318,6 @@ export class IriResolver extends HTMLElement {
     if (foundCount > 0) {
       this.selectAll();
       await this.applySelection();
-    }
-  }
-
-  private async queryEndpoint(
-    endpoint: string,
-    graph: string | null,
-    iris: string[],
-  ): Promise<Array<{ iri: string; type: string }>> {
-    const values = iris.map(i => `<${i}>`).join(' ');
-    const body = graph
-      ? `SELECT ?iri ?type WHERE { VALUES ?iri { ${values} } GRAPH <${graph}> { ?iri a ?type . } }`
-      : `SELECT ?iri ?type WHERE { VALUES ?iri { ${values} } ?iri a ?type . }`;
-
-    const url = `${endpoint}?query=${encodeURIComponent(body)}&format=json`;
-    const ctrl = new AbortController();
-    const timer = setTimeout(() => ctrl.abort(), this.queryTimeout);
-
-    try {
-      const res = await fetch(url, {
-        headers: { Accept: 'application/sparql-results+json' },
-        signal: ctrl.signal,
-        mode: 'cors',
-      });
-      clearTimeout(timer);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const json = await res.json();
-      return (json.results?.bindings ?? []).map((b: any) => ({
-        iri: b.iri?.value,
-        type: b.type?.value,
-      })).filter((r: any) => r.iri && r.type);
-    } catch (err: any) {
-      clearTimeout(timer);
-      if (err.name === 'AbortError') throw new Error('Timeout');
-      if (err.name === 'TypeError' && err.message?.includes('Failed to fetch'))
-        throw new Error('CORS blocked');
-      throw err;
     }
   }
 

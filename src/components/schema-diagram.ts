@@ -35,6 +35,7 @@ import { DiagramState, type DiagramMode, type EnhancedPath } from '../state/diag
 import { IRIManager } from '../iri/iri-manager';
 import { PathFinder, type EdgePath, type PathFinderOptions } from '../algorithms/path-finder';
 import { SPARQLComposer, type QueryGenerationOptions } from '../sparql/composer';
+import { composeFromPaths, type ComposeOptions, type ComposeResult } from '../sparql/compose-client';
 import { 
   type DiagramStyle, 
   STYLE,
@@ -871,26 +872,54 @@ export class SchemaDiagram extends HTMLElement {
   // ==========================================================================
   
   /**
-   * Get the SPARQL Composer.
+   * Get the SPARQL Composer (kept for JSON-LD export utilities).
    */
   getSPARQLComposer(): SPARQLComposer {
     return this.sparqlComposer;
   }
   
   /**
-   * Generate SPARQL query from current highlighted paths.
+   * Generate SPARQL query from current highlighted paths via the backend API.
+   * All composition logic lives in the `rdfsolve.compose` package module.
    */
-  generateSPARQL(options?: QueryGenerationOptions): string {
+  async generateSPARQL(options?: QueryGenerationOptions): Promise<ComposeResult> {
     const paths = this.state.getPaths();
     if (paths.length === 0) {
-      return '# No paths selected. Draw paths in the diagram first.';
+      return {
+        query: '# No paths selected. Draw paths in the diagram first.',
+        variable_map: {},
+        jsonld: {},
+      };
     }
     
-    return this.sparqlComposer.generateFromPaths(paths, this.nodeIdToUri, options);
+    // Collect prefixes from schema (if loaded)
+    const prefixes: Record<string, string> = this.schema?.prefixes
+      ? { ...this.schema.prefixes }
+      : {};
+    
+    // Map frontend options → backend API options
+    const composeOpts: ComposeOptions = {
+      include_types: options?.includeTypes ?? false,
+      include_labels: options?.includeLabels ?? true,
+      limit: options?.limit ?? 100,
+    };
+    
+    // Convert valueBindings Map → plain object
+    if (options?.valueBindings && options.valueBindings.size > 0) {
+      const bindings: Record<string, string[]> = {};
+      for (const [k, v] of options.valueBindings) {
+        bindings[k] = v;
+      }
+      composeOpts.value_bindings = bindings;
+    }
+    
+    return composeFromPaths(paths, prefixes, composeOpts);
   }
   
   /**
-   * Generate SPARQL from specific EdgePaths.
+   * Generate SPARQL from specific EdgePaths (still uses local composer
+   * as a convenience — these are never user-facing, only used for
+   * path-list preview).
    */
   generateSPARQLFromEdgePaths(edgePaths: EdgePath[], options?: QueryGenerationOptions): string {
     return this.sparqlComposer.generateFromEdgePaths(edgePaths, options);
