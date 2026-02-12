@@ -21,7 +21,8 @@ import { STYLE } from '../layout/styles';
 export type DiagramMode = 
   | 'view'       // Default: click to select, hover to highlight
   | 'draw-path'  // Click nodes to draw path between them
-  | 'expand';    // Click node to expand its connections
+  | 'expand'     // Click node to expand its connections
+  | 'shapes';    // Click edge labels to select/deselect for shape definition
 
 /** Path being drawn (in progress) — supports multi-node building */
 export interface PathInProgress {
@@ -706,5 +707,81 @@ export class DiagramState {
         }
       }
     }
+  }
+
+  // ==========================================================================
+  // Shapes Mode — Edge Selection
+  // ==========================================================================
+
+  /** Edges selected for shape definition (edge ID → edge metadata). */
+  private selectedShapeEdges = new Map<string, {
+    edgeId: string;
+    sourceUri: string;
+    targetUri: string;
+    predicate: string;
+    predicateLabel: string;
+  }>();
+
+  /**
+   * Toggle an edge's selection in shapes mode.
+   * Returns `true` if the edge is now selected, `false` if deselected.
+   */
+  toggleShapeEdge(edge: {
+    edgeId: string;
+    sourceUri: string;
+    targetUri: string;
+    predicate: string;
+    predicateLabel: string;
+  }): boolean {
+    if (this.selectedShapeEdges.has(edge.edgeId)) {
+      this.selectedShapeEdges.delete(edge.edgeId);
+      this.emit({ type: 'selection-changed', selectedNodeId: null });
+      return false;
+    }
+    this.selectedShapeEdges.set(edge.edgeId, edge);
+    this.emit({ type: 'selection-changed', selectedNodeId: null });
+    return true;
+  }
+
+  /** Remove a specific shape edge by its ID. */
+  removeShapeEdge(edgeId: string): void {
+    this.selectedShapeEdges.delete(edgeId);
+    this.emit({ type: 'selection-changed', selectedNodeId: null });
+  }
+
+  /** Get all currently selected shape edges. */
+  getSelectedShapeEdges(): Array<{
+    edgeId: string;
+    sourceUri: string;
+    targetUri: string;
+    predicate: string;
+    predicateLabel: string;
+  }> {
+    return [...this.selectedShapeEdges.values()];
+  }
+
+  /** Select all visible edges for shapes. */
+  selectAllShapeEdges(edges: Array<{
+    edgeId: string;
+    sourceUri: string;
+    targetUri: string;
+    predicate: string;
+    predicateLabel: string;
+  }>): void {
+    for (const e of edges) {
+      this.selectedShapeEdges.set(e.edgeId, e);
+    }
+    this.emit({ type: 'selection-changed', selectedNodeId: null });
+  }
+
+  /** Clear all shape edge selections. */
+  clearShapeEdges(): void {
+    this.selectedShapeEdges.clear();
+    this.emit({ type: 'selection-changed', selectedNodeId: null });
+  }
+
+  /** Check if an edge is selected in shapes mode. */
+  isShapeEdgeSelected(edgeId: string): boolean {
+    return this.selectedShapeEdges.has(edgeId);
   }
 }

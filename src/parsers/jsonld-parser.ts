@@ -35,6 +35,12 @@ export function parseJSONLD(input: JSONLDSchema): CanonicalSchema {
   // Extract prefixes from @context
   schema.prefixes = extractPrefixes(input['@context']);
 
+  // Extract the _labels map produced by the Python miner (CURIE → label)
+  const rawLabels = (input as Record<string, unknown>)['_labels'];
+  if (rawLabels && typeof rawLabels === 'object' && !Array.isArray(rawLabels)) {
+    schema.labels = rawLabels as Record<string, string>;
+  }
+
   // Register discovered namespaces so the settings UI can show them
   settings.registerNamespacesFromPrefixes(schema.prefixes);
   
@@ -101,6 +107,28 @@ function extractPrefixesFromObject(obj: Record<string, unknown>): PrefixMap {
 }
 
 /**
+ * Look up a human-readable label for a URI.
+ *
+ * The labels map is keyed by CURIE (e.g. "aopo:KeyEvent").  We try a
+ * reverse-lookup by compacting the expanded URI back to every known
+ * prefix.  Falls back to `getLocalName()`.
+ */
+function labelFor(
+  expandedUri: string,
+  prefixes: PrefixMap,
+  labels: Record<string, string>,
+): string {
+  // Try each prefix to form a CURIE, check in the labels map
+  for (const [pfx, ns] of Object.entries(prefixes)) {
+    if (expandedUri.startsWith(ns)) {
+      const curie = `${pfx}:${expandedUri.slice(ns.length)}`;
+      if (labels[curie]) return labels[curie];
+    }
+  }
+  return getLocalName(expandedUri);
+}
+
+/**
  * Process a single JSON-LD node into triples.
  * Skips triples whose predicate or object URI belongs to an excluded namespace.
  */
@@ -114,7 +142,7 @@ function processNode(schema: CanonicalSchema, node: JSONLDNode): void {
   // canonical expanded form.  The raw JSON-LD may use CURIEs like
   // "wp:Complex" — we must normalise to "http://...#Complex".
   const subjectUri = expandCurie(rawSubject, schema.prefixes);
-  const subjectLabel = getLocalName(subjectUri);
+  const subjectLabel = labelFor(subjectUri, schema.prefixes, schema.labels);
   
   // Process @type specially
   if (node['@type']) {
@@ -128,7 +156,7 @@ function processNode(schema: CanonicalSchema, node: JSONLDNode): void {
         object: typeUri,
         subjectLabel,
         predicateLabel: 'rdf:type',
-        objectLabel: getLocalName(typeUri),
+        objectLabel: labelFor(typeUri, schema.prefixes, schema.labels),
         objectType: 'uri',
         isRdfType: true,
       });
@@ -141,7 +169,7 @@ function processNode(schema: CanonicalSchema, node: JSONLDNode): void {
     
     const predicateUri = expandCurie(key, schema.prefixes);
     if (settings.isUriExcluded(predicateUri)) continue;
-    const predicateLabel = key.includes(':') ? key : getLocalName(predicateUri);
+    const predicateLabel = labelFor(predicateUri, schema.prefixes, schema.labels);
     const isRdfType = isRdfTypePredicate(predicateUri);
     
     const values = Array.isArray(value) ? value : [value];
@@ -154,6 +182,7 @@ function processNode(schema: CanonicalSchema, node: JSONLDNode): void {
         predicateLabel,
         v as JSONLDValue, 
         schema.prefixes,
+        schema.labels,
         isRdfType
       );
       
@@ -174,6 +203,7 @@ function createTriple(
   predicateLabel: string,
   value: JSONLDValue,
   prefixes: PrefixMap,
+  labels: Record<string, string>,
   isRdfType: boolean
 ): CanonicalTriple | null {
   if (value === null || value === undefined) return null;
@@ -189,7 +219,7 @@ function createTriple(
       object: expanded,
       subjectLabel,
       predicateLabel,
-      objectLabel: isUri ? getLocalName(expanded) : value,
+      objectLabel: isUri ? labelFor(expanded, prefixes, labels) : value,
       objectType: isUri ? (expanded.startsWith('_:') ? 'blank' : 'uri') : 'literal',
       isRdfType,
     };
@@ -204,7 +234,7 @@ function createTriple(
         object: objectUri,
         subjectLabel,
         predicateLabel,
-        objectLabel: getLocalName(objectUri),
+        objectLabel: labelFor(objectUri, prefixes, labels),
         objectType: objectUri.startsWith('_:') ? 'blank' : 'uri',
         isRdfType,
       };

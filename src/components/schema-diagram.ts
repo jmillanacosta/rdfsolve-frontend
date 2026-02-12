@@ -1076,7 +1076,74 @@ export class SchemaDiagram extends HTMLElement {
   }
   
   private handleEdgeClick(edge: PathEdge): void {
+    const mode = this.state.getMode();
+
+    if (mode === 'shapes') {
+      // In shapes mode, dispatch edge info so the shapes panel can
+      // handle deletion.  We don't toggle internal state here —
+      // the panel owns the working-set logic.
+      const sourceNode = this.trees
+        .flatMap(t => t.nodes)
+        .find(n => n.id === edge.sourceId);
+      const targetNode = this.trees
+        .flatMap(t => t.nodes)
+        .find(n => n.id === edge.targetId);
+
+      if (sourceNode && targetNode) {
+        this.dispatchEvent(new CustomEvent('shape-edge-toggle', {
+          detail: {
+            edgeId: edge.id,
+            sourceUri: sourceNode.uri,
+            targetUri: targetNode.uri,
+            predicate: edge.predicate,
+            predicateLabel: edge.label,
+          },
+        }));
+      }
+    }
+
     this.dispatchEvent(new CustomEvent('edge-click', { detail: edge }));
+  }
+
+  /**
+   * Enter shapes editing mode.
+   */
+  enterShapesMode(): void {
+    this.setMode('shapes');
+  }
+
+  /**
+   * Get all edges in the current visual model (for "Select All").
+   */
+  getAllVisibleEdges(): Array<{
+    edgeId: string;
+    sourceUri: string;
+    targetUri: string;
+    predicate: string;
+    predicateLabel: string;
+  }> {
+    if (!this.trees) return [];
+    const result: Array<{
+      edgeId: string; sourceUri: string; targetUri: string;
+      predicate: string; predicateLabel: string;
+    }> = [];
+
+    for (const tree of this.trees) {
+      for (const edge of tree.edges) {
+        const src = tree.nodes.find(n => n.id === edge.sourceId);
+        const tgt = tree.nodes.find(n => n.id === edge.targetId);
+        if (src && tgt) {
+          result.push({
+            edgeId: edge.id,
+            sourceUri: src.uri,
+            targetUri: tgt.uri,
+            predicate: edge.predicate,
+            predicateLabel: edge.label,
+          });
+        }
+      }
+    }
+    return result;
   }
 
   /**

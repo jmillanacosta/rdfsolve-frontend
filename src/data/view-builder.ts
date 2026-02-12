@@ -159,7 +159,7 @@ class TreeProjection {
     const nodeType = classifyNode(uri, this.schema, isTypeTarget);
     return {
       id, uri,
-      label: getLocalName(uri),
+      label: this.labelForUri(uri),
       nodeType,
       x: 0, y: 0,
       width: STYLE.nodeWidth, height: STYLE.nodeHeight,
@@ -179,6 +179,25 @@ class TreeProjection {
       isIncoming,
       path: '',
     };
+  }
+
+  /**
+   * Resolve a human-readable label for a URI.
+   * Uses the schema.labels map (populated from _labels in JSON-LD),
+   * falling back to getLocalName() when no label is available.
+   */
+  labelForUri(uri: string): string {
+    const labels = this.schema.labels;
+    if (labels) {
+      // Try each prefix to form a CURIE and look it up
+      for (const [pfx, ns] of Object.entries(this.schema.prefixes)) {
+        if (uri.startsWith(ns)) {
+          const curie = `${pfx}:${uri.slice(ns.length)}`;
+          if (labels[curie]) return labels[curie];
+        }
+      }
+    }
+    return getLocalName(uri);
   }
 
   /**
@@ -402,7 +421,17 @@ export function getAvailableRoots(
     if (isExcludedNode(uri)) continue;
     const outDegree = graph.outgoing.get(uri)?.length || 0;
     if (outDegree === 0) continue;
-    roots.push({ uri, label: getLocalName(uri), outDegree });
+    // Prefer human label from the labels map, fall back to local name
+    let label = getLocalName(uri);
+    if (graph.labels) {
+      for (const [pfx, ns] of Object.entries(graph.prefixes)) {
+        if (uri.startsWith(ns)) {
+          const curie = `${pfx}:${uri.slice(ns.length)}`;
+          if (graph.labels[curie]) { label = graph.labels[curie]; break; }
+        }
+      }
+    }
+    roots.push({ uri, label, outDegree });
   }
   roots.sort((a, b) => b.outDegree - a.outDegree);
   return roots;

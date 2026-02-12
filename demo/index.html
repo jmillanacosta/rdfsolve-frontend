@@ -138,6 +138,21 @@
     .swatch.class    { background: #fff4c3; }
     .swatch.instance { background: #ffce9f; }
     .swatch.literal  { background: #f8cecc; }
+
+    /* ── Shapes panel (separate from query sidebar) ── */
+    .shapes-aside {
+      width: 30%; min-width: 280px; max-width: 520px;
+      background: var(--card-bg); border-left: 1px solid var(--border);
+      display: flex; flex-direction: column; overflow: hidden;
+      transition: width .2s;
+    }
+    .shapes-aside.collapsed { width: 0; min-width: 0; border-left: none; overflow: hidden; }
+    .shapes-aside-header {
+      padding: 10px 16px; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .shapes-aside-header h3 { font-size: 14px; font-weight: 600; }
+    .shapes-aside-body { flex: 1; overflow-y: auto; padding: 14px 16px; }
   </style>
 </head>
 <body>
@@ -151,7 +166,8 @@
 
     <div class="toolbar">
       <dataset-selector diagram="diagram"></dataset-selector>
-      <button class="toggle-btn" id="sidebar-toggle" style="margin-left:auto">⚡ Query Panel</button>
+      <button class="toggle-btn" id="sidebar-toggle" style="margin-left:auto">Query Panel</button>
+      <button class="toggle-btn" id="shapes-toggle">Shapes Editor</button>
     </div>
 
     <div class="main">
@@ -266,6 +282,17 @@
         </div>
 
       </aside>
+
+      <!-- ── Shapes Editor Panel (separate from query sidebar) ── -->
+      <aside id="shapes-aside" class="shapes-aside collapsed">
+        <div class="shapes-aside-header">
+          <h3>Shapes Editor</h3>
+          <button id="shapes-close" class="toggle-btn">&#x2715;</button>
+        </div>
+        <div class="shapes-aside-body">
+          <shapes-panel diagram="diagram"></shapes-panel>
+        </div>
+      </aside>
     </div>
 
     <footer class="footer">
@@ -285,6 +312,14 @@
     };
     document.getElementById('sidebar-close').onclick = function() {
       document.getElementById('sidebar').classList.add('collapsed');
+    };
+
+    // ── Shapes panel toggle ──
+    document.getElementById('shapes-toggle').onclick = function() {
+      document.getElementById('shapes-aside').classList.toggle('collapsed');
+    };
+    document.getElementById('shapes-close').onclick = function() {
+      document.getElementById('shapes-aside').classList.add('collapsed');
     };
 
     // ── Zoom controls ──
@@ -313,6 +348,10 @@
         document.querySelectorAll('.tab-pane').forEach(function(p) { p.classList.remove('active'); });
         document.querySelector('[data-tab="paths"]').classList.add('active');
         document.getElementById('tab-paths').classList.add('active');
+      }
+      if (e.detail && e.detail.mode === 'shapes') {
+        // Auto-open shapes panel when shapes mode is activated
+        document.getElementById('shapes-aside').classList.remove('collapsed');
       }
     });
 

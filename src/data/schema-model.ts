@@ -35,6 +35,7 @@ export function createEmptySchema(): CanonicalSchema {
   return {
     triples: [],
     prefixes: {},
+    labels: {},
     subjects: new Set(),
     predicates: new Set(),
     objects: new Set(),

@@ -77,6 +77,13 @@ export interface CanonicalTriple {
 export interface CanonicalSchema {
   triples: CanonicalTriple[];
   prefixes: PrefixMap;
+
+  /**
+   * CURIE → human-readable label map.
+   * Populated from `_labels` in JSON-LD when available.
+   * Falls back to the local-name part of the URI.
+   */
+  labels: Record<string, string>;
   
   // Computed indices
   subjects: Set<string>;        // All unique subjects

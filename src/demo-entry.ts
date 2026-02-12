@@ -14,6 +14,7 @@ import './components/node-tooltip';
 import './components/iri-resolver';
 import './components/diagram-settings';
 import './components/results-panel';
+import './components/shapes-panel';
 
 // Apply default style
 import { setStyle, DEFAULT_STYLE } from './layout/styles';
@@ -24,6 +25,7 @@ import type { SparqlEditor } from './components/sparql-editor';
 import type { PathList } from './components/path-list';
 import type { IriResolver } from './components/iri-resolver';
 import type { ResultsPanel } from './components/results-panel';
+import type { ShapesPanel } from './components/shapes-panel';
 
 // =============================================================================
 // DATASET CONFIGURATION — the only thing that varies per deployment
@@ -55,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const pathList = document.querySelector<PathList>('path-list');
   const iriResolver = document.querySelector<IriResolver>('iri-resolver');
   const resultsPanel = document.querySelector<ResultsPanel>('results-panel');
+  const shapesPanel = document.querySelector<ShapesPanel>('shapes-panel');
 
   // Pre-fetch all JSON-LD files to discover SPARQL endpoints before any
   // diagram is rendered — the IRI Resolver endpoint list is populated
@@ -69,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     pathList?.refresh();
     iriResolver?.refresh();
     resultsPanel?.refreshEndpoints();
+    shapesPanel?.refresh();
   });
 
   // Status bar
