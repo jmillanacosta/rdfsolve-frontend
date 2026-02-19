@@ -59,6 +59,17 @@ export interface SchemaDiagramOptions {
   
   /** Whether to show system nodes (owl, rdfs, etc.) */
   showSystemNodes?: boolean;
+
+  /**
+   * Subject URI → CSS color, built by DatasetSelector when multiple schemas
+   * are merged so each node can show which schema it came from.
+   */
+  nodeColorMap?: Map<string, string>;
+
+  /**
+   * Schema-id → { name, color } — drives the legend swatches.
+   */
+  schemaColorMap?: Map<string, { name: string; color: string }>;
 }
 
 /**
@@ -373,6 +384,11 @@ export class SchemaDiagram extends HTMLElement {
     
     // Parse to canonical schema
     this.schema = parseJSONLD(jsonld);
+
+    // Copy color maps from caller into the schema so the view-builder
+    // and renderer can access them without needing extra parameters
+    if (options?.nodeColorMap)  this.schema.nodeColorMap  = options.nodeColorMap;
+    if (options?.schemaColorMap) this.schema.schemaColorMap = options.schemaColorMap;
     
     // Register IRIs
     this.iriManager.registerFromSchema(this.schema);
@@ -1006,10 +1022,14 @@ export class SchemaDiagram extends HTMLElement {
       this.renderer = new TreeRenderer({
         container: this.diagramContainer,
         state: this.state,
+        schemaColorMap: this.schema?.schemaColorMap,
         onNodeClick: (node, event) => this.handleNodeClick(node, event),
         onNodeHover: (node) => this.handleNodeHover(node),
         onEdgeClick: (edge) => this.handleEdgeClick(edge),
       });
+    } else {
+      // Update schemaColorMap on existing renderer (datasets may have changed)
+      this.renderer.setSchemaColorMap(this.schema?.schemaColorMap);
     }
     
     this.renderer.render(this.visualModel);
@@ -1022,6 +1042,7 @@ export class SchemaDiagram extends HTMLElement {
       this.renderer = new TreeRenderer({
         container: this.diagramContainer,
         state: this.state,
+        schemaColorMap: this.schema?.schemaColorMap,
         onNodeClick: (node, event) => this.handleNodeClick(node, event),
         onNodeHover: (node) => this.handleNodeHover(node),
         onEdgeClick: (edge) => this.handleEdgeClick(edge),

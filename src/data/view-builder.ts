@@ -157,6 +157,10 @@ class TreeProjection {
     const row = (this.columnMaxRow.get(column) ?? -1) + 1;
     this.columnMaxRow.set(column, row);
     const nodeType = classifyNode(uri, this.schema, isTypeTarget);
+
+    // Look up the schema color for this URI (populated when multiple schemas are merged)
+    const schemaColor = this.schema.nodeColorMap?.get(uri);
+
     return {
       id, uri,
       label: this.labelForUri(uri),
@@ -166,6 +170,7 @@ class TreeProjection {
       column, row,
       inPort: { x: 0, y: 0 }, outPort: { x: 0, y: 0 },
       isTypeNode: nodeType === 'class',
+      ...(schemaColor ? { schemaColor } : {}),
     };
   }
 

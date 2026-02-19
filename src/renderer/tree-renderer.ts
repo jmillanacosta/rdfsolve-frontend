@@ -16,6 +16,12 @@ export interface TreeRendererOptions {
   
   /** Optional diagram state for highlighting */
   state?: DiagramState;
+
+  /**
+   * Schema-id → { name, color } map — used for the legend.
+   * Passed from SchemaDiagram when multiple datasets are loaded.
+   */
+  schemaColorMap?: Map<string, { name: string; color: string }>;
   
   /** Event callbacks */
   onNodeClick?: (node: PathNode, event?: MouseEvent) => void;
@@ -34,9 +40,18 @@ export class TreeRenderer {
   private width = 0;
   private height = 0;
   private model: VisualModel | null = null;
+
+  /** Schema color map — updated by SchemaDiagram on each render */
+  private schemaColorMap: Map<string, { name: string; color: string }> = new Map();
   
   constructor(private options: TreeRendererOptions) {
+    if (options.schemaColorMap) this.schemaColorMap = options.schemaColorMap;
     this.initSVG();
+  }
+
+  /** Update the schema color map (called when a new dataset combination is rendered). */
+  setSchemaColorMap(map: Map<string, { name: string; color: string }> | undefined): void {
+    this.schemaColorMap = map ?? new Map();
   }
   
   // ==========================================================================
@@ -325,6 +340,21 @@ export class TreeRenderer {
       const more = resolvedIris.length > 5 ? `\n… +${resolvedIris.length - 5} more` : '';
       badgeG.append('title')
         .text(`Resolved instances (${resolvedIris.length}):\n${preview}${more}`);
+    }
+
+    // Schema source dot — small colored circle in the bottom-right corner,
+    // shown when the node belongs to a specific schema in a multi-schema view.
+    if (node.schemaColor) {
+      const DOT_R = 5;
+      const dotG = nodeG.append('g')
+        .attr('class', 'schema-dot')
+        .attr('transform', `translate(${width - DOT_R - 3}, ${height - DOT_R - 3})`);
+
+      dotG.append('circle')
+        .attr('r', DOT_R)
+        .attr('fill', node.schemaColor)
+        .attr('stroke', 'white')
+        .attr('stroke-width', 1.5);
     }
 
     // Event handlers
@@ -650,38 +680,54 @@ export class TreeRenderer {
   /**
    * Render a legend overlay fixed to the bottom-left of the SVG viewport.
    * The legend sits *outside* the rootG zoom group so it doesn't move with pan/zoom.
+   *
+   * Shows:
+   *  1. Edge type rows (Outgoing / Incoming)
+   *  2. Schema color swatches (only when multiple schemas are loaded)
    */
   private renderLegend(): void {
     // Remove any existing legend
     this.svg.select('.diagram-legend').remove();
 
+    const edgeItems: Array<{ label: string; dash: string | null; marker: string }> = [
+      { label: 'Outgoing edge', dash: null,  marker: 'arrow' },
+      { label: 'Incoming edge', dash: '4,3', marker: 'arrow' },
+    ];
+
+    const schemaEntries = [...this.schemaColorMap.values()];
+    const hasSchemas = schemaEntries.length > 0;
+
+    // Layout constants
+    const lineX0  = 10;
+    const lineLen  = 36;
+    const lineY0   = 14;
+    const lineH    = 16;
+    const schemaStartY = lineY0 + edgeItems.length * lineH + (hasSchemas ? 8 : 0);
+    const swatchR  = 5;
+    const schemaH  = 14;
+
+    const totalRows  = edgeItems.length + (hasSchemas ? schemaEntries.length + 1 : 0); // +1 for divider label
+    const boxHeight  = lineY0 + edgeItems.length * lineH
+                       + (hasSchemas ? 6 + 12 + schemaEntries.length * schemaH + 6 : 6);
+    const boxWidth   = 185;
+
     const legendG = this.svg.append('g')
       .attr('class', 'diagram-legend')
-      .attr('transform', `translate(12, ${this.height - 60})`);
+      .attr('transform', `translate(12, ${this.height - boxHeight - 12})`);
 
     // Semi-transparent background
     legendG.append('rect')
       .attr('x', 0).attr('y', 0)
-      .attr('width', 175).attr('height', 56)
+      .attr('width', boxWidth).attr('height', boxHeight)
       .attr('rx', 6).attr('ry', 6)
       .attr('fill', '#fff')
       .attr('fill-opacity', 0.88)
       .attr('stroke', '#d2d2d7')
       .attr('stroke-width', 1);
 
-    const items: Array<{ label: string; dash: string | null; marker: string }> = [
-      { label: 'Outgoing edge',  dash: null,   marker: 'arrow' },
-      { label: 'Incoming edge',  dash: '4,3',  marker: 'arrow' },
-      //{ label: 'rdf:type',       dash: '5,3',  marker: 'arrow-type' },
-    ];
-
-    const lineY0 = 14;
-    const lineH = 15;
-    const lineX0 = 10;
-    const lineLen = 36;
-
-    for (let i = 0; i < items.length; i++) {
-      const { label, dash, marker } = items[i];
+    // ── Edge type rows ──
+    for (let i = 0; i < edgeItems.length; i++) {
+      const { label, dash, marker } = edgeItems[i];
       const y = lineY0 + i * lineH;
 
       const pathEl = legendG.append('line')
@@ -692,7 +738,6 @@ export class TreeRenderer {
         .attr('stroke', STYLE.strokeColor)
         .attr('stroke-width', STYLE.strokeWidth)
         .attr('marker-end', `url(#${marker})`);
-
       if (dash) pathEl.attr('stroke-dasharray', dash);
 
       legendG.append('text')
@@ -702,6 +747,52 @@ export class TreeRenderer {
         .attr('font-size', 10)
         .attr('fill', '#555')
         .text(label);
+    }
+
+    // ── Schema swatches (multi-dataset view) ──
+    if (hasSchemas) {
+      const dividerY = lineY0 + edgeItems.length * lineH + 4;
+
+      // Thin separator line
+      legendG.append('line')
+        .attr('x1', 6).attr('y1', dividerY)
+        .attr('x2', boxWidth - 6).attr('y2', dividerY)
+        .attr('stroke', '#ddd').attr('stroke-width', 1);
+
+      // "Schemas:" label
+      legendG.append('text')
+        .attr('x', lineX0)
+        .attr('y', dividerY + 10)
+        .attr('dominant-baseline', 'middle')
+        .attr('font-size', 9)
+        .attr('font-weight', '600')
+        .attr('fill', '#888')
+        .text('Schemas:');
+
+      for (let i = 0; i < schemaEntries.length; i++) {
+        const { name, color } = schemaEntries[i];
+        const y = dividerY + 10 + 12 + i * schemaH;
+
+        // Colored dot
+        legendG.append('circle')
+          .attr('cx', lineX0 + swatchR)
+          .attr('cy', y)
+          .attr('r', swatchR)
+          .attr('fill', color)
+          .attr('stroke', 'white')
+          .attr('stroke-width', 1);
+
+        // Schema name (truncated)
+        const maxChars = 22;
+        const displayName = name.length > maxChars ? name.slice(0, maxChars - 1) + '…' : name;
+        legendG.append('text')
+          .attr('x', lineX0 + swatchR * 2 + 6)
+          .attr('y', y)
+          .attr('dominant-baseline', 'middle')
+          .attr('font-size', 10)
+          .attr('fill', '#333')
+          .text(displayName);
+      }
     }
   }
 

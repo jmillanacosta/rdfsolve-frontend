@@ -96,6 +96,19 @@ export interface CanonicalSchema {
   // Adjacency for traversal
   outgoing: Map<string, CanonicalTriple[]>;  // subject → triples
   incoming: Map<string, CanonicalTriple[]>;  // object → triples
+
+  /**
+   * Subject URI → CSS color string.
+   * Set when multiple schemas are merged so nodes can be colored
+   * by their source schema.  Absent (empty map) for single-schema loads.
+   */
+  nodeColorMap: Map<string, string>;
+
+  /**
+   * Schema-id → { name, color } — used by the legend.
+   * Populated by DatasetSelector when multiple schemas are merged.
+   */
+  schemaColorMap: Map<string, { name: string; color: string }>;
 }
 
 // =============================================================================
@@ -135,6 +148,9 @@ export interface PathNode {
   
   /** For nodes that are rdf:type targets (owl:Class etc) */
   isTypeNode?: boolean;
+  
+  /** Color of the source schema this node's subject URI belongs to (CSS color string) */
+  schemaColor?: string;
 }
 
 /** An edge in the visual path tree */

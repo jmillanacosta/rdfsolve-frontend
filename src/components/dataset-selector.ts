@@ -2,10 +2,11 @@
  * Dataset Selector Component
  *
  * Self-contained web component that:
- * - Renders a multi-select dropdown of datasets
+ * - Renders a multi-select dropdown of datasets (for diagram visualisation)
+ * - Renders a second multi-select dropdown for "Mapping datasets" (probe targets)
  * - Loads JSON-LD files on "Render"
- * - Merges multiple schemas
- * - Feeds the result into a <schema-diagram> element
+ * - Parses each schema individually so node colors can be tracked per-source
+ * - Merges multiple schemas and feeds the result into a <schema-diagram>
  *
  * Usage:
  *   <dataset-selector diagram="diagram"></dataset-selector>
@@ -18,8 +19,9 @@
  *   });
  */
 
-import type { JSONLDSchema } from '../types';
+import type { JSONLDSchema, CanonicalSchema } from '../types';
 import type { SchemaDiagram } from './schema-diagram';
+import { parseJSONLD } from '../parsers/jsonld-parser';
 
 export interface DatasetEntry {
   name: string;
@@ -28,8 +30,16 @@ export interface DatasetEntry {
 }
 
 export class DatasetSelector extends HTMLElement {
+  /** All available datasets (both dropdowns can draw from this by default) */
   private datasets: Record<string, DatasetEntry> = {};
+  /**
+   * Separate dataset pool for the Mapping dropdown.
+   * Falls back to `datasets` if not explicitly set (e.g. in demo mode where
+   * there is no API to filter by strategy).
+   */
+  private mappingDatasets: Record<string, DatasetEntry> | null = null;
   private selected: Set<string> = new Set();
+  private mappingSelected: Set<string> = new Set();
   private loadedSchemas: Map<string, JSONLDSchema> = new Map();
   private root: ShadowRoot;
 
@@ -66,6 +76,21 @@ export class DatasetSelector extends HTMLElement {
     return this.datasets;
   }
 
+  /**
+   * Override the dataset pool for the Mapping dropdown.
+   * Call this with the filtered (miner-only) set from the API.
+   * If never called, the Mapping dropdown shows the same list as Diagram.
+   */
+  setMappingDatasets(datasets: Record<string, DatasetEntry>): void {
+    this.mappingDatasets = datasets;
+    this.renderUI();
+  }
+
+  /** Return the IDs selected in the Mapping datasets dropdown. */
+  getMappingDatasets(): string[] {
+    return [...this.mappingSelected];
+  }
+
   /** Programmatically select datasets and render. */
   async selectAndRender(ids: string[]): Promise<void> {
     this.selected = new Set(ids);
@@ -92,11 +117,15 @@ export class DatasetSelector extends HTMLElement {
 
   private renderUI(): void {
     const entries = Object.entries(this.datasets);
+    const mappingEntries = Object.entries(this.mappingDatasets ?? this.datasets);
 
     this.root.innerHTML = `
       <style>
         :host { display: contents; }
-        .ds-wrap { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+        .ds-wrap { display:flex; flex-direction:column; gap:6px; }
+        .ds-row  { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+
+        /* ── Shared dropdown styles ── */
         .ds-dd-wrap { position:relative; display:inline-block; }
         .ds-toggle {
           padding:5px 10px; font-size:12px; border:1px solid #d2d2d7; border-radius:4px;
@@ -131,43 +160,101 @@ export class DatasetSelector extends HTMLElement {
         .ds-actions button { font-size:11px; padding:3px 10px; border:1px solid #ccc;
           border-radius:3px; background:#fff; cursor:pointer; }
         .ds-actions button:hover { background:#f0f0f2; }
-        .ds-actions .ds-render-btn { background:#0066cc; color:#fff; border-color:#0066cc; }
+
+        /* ── Render row controls ── */
         button.render-btn { font-size:12px; padding:5px 14px; border:1px solid #d2d2d7; border-radius:4px;
                  background:#0066cc; color:#fff; cursor:pointer; }
         button.render-btn:hover { background:#0055aa; }
         button.render-btn:disabled { opacity:.5; cursor:default; }
         .status { font-size:11px; color:#6e6e73; }
+
+        /* ── Section labels ── */
+        .ds-section-label {
+          font-size:11px; font-weight:600; color:#444; min-width:110px; white-space:nowrap;
+        }
+        .ds-section-label.mapping { color:#6060aa; }
       </style>
       <div class="ds-wrap">
-        <div class="ds-dd-wrap">
-          <button class="ds-toggle">Select datasets <span class="caret">▾</span></button>
-          <div class="ds-dropdown">
-            <input class="ds-search" type="text" placeholder="Search…" autocomplete="off" />
-            <div class="ds-list">
-              ${entries.map(([id, ds]) => `
-                <label class="ds-item" data-id="${id}">
-                  <input type="checkbox" value="${id}" />
-                  <span class="ds-swatch" style="background:${ds.color}"></span>
-                  <span>${ds.name}</span>
-                </label>
-              `).join('')}
+        <!-- ── Row 1: Diagram dataset selector + Render ── -->
+        <div class="ds-row">
+          <span class="ds-section-label">Diagram datasets:</span>
+          <div class="ds-dd-wrap" data-role="viz">
+            <button class="ds-toggle viz-toggle">Select datasets <span class="caret">▾</span></button>
+            <div class="ds-dropdown viz-dropdown">
+              <input class="ds-search viz-search" type="text" placeholder="Search…" autocomplete="off" />
+              <div class="ds-list viz-list">
+                ${entries.map(([id, ds]) => `
+                  <label class="ds-item" data-id="${id}">
+                    <input type="checkbox" value="${id}" data-role="viz" />
+                    <span class="ds-swatch" style="background:${ds.color}"></span>
+                    <span>${ds.name}</span>
+                  </label>
+                `).join('')}
+              </div>
+              <div class="ds-actions">
+                <button class="ds-all-btn" data-target="viz">All</button>
+                <button class="ds-none-btn" data-target="viz">None</button>
+              </div>
             </div>
-            <div class="ds-actions">
-              <button class="ds-all-btn">All</button>
-              <button class="ds-none-btn">None</button>
+          </div>
+          <button class="render-btn">Render</button>
+          <span class="status"></span>
+        </div>
+
+        <!-- ── Row 2: Mapping dataset selector ── -->
+        <div class="ds-row">
+          <span class="ds-section-label mapping">Mapping datasets:</span>
+          <div class="ds-dd-wrap" data-role="mapping">
+            <button class="ds-toggle mapping-toggle">Select datasets <span class="caret">▾</span></button>
+            <div class="ds-dropdown mapping-dropdown">
+              <input class="ds-search mapping-search" type="text" placeholder="Search…" autocomplete="off" />
+              <div class="ds-list mapping-list">
+                ${mappingEntries.map(([id, ds]) => `
+                  <label class="ds-item" data-id="${id}">
+                    <input type="checkbox" value="${id}" data-role="mapping" />
+                    <span class="ds-swatch" style="background:${ds.color}"></span>
+                    <span>${ds.name}</span>
+                  </label>
+                `).join('')}
+              </div>
+              <div class="ds-actions">
+                <button class="ds-all-btn" data-target="mapping">All</button>
+                <button class="ds-none-btn" data-target="mapping">None</button>
+              </div>
             </div>
           </div>
         </div>
-        <button class="render-btn">Render</button>
-        <span class="status"></span>
       </div>
     `;
 
-    // Toggle dropdown
-    const toggle = this.root.querySelector<HTMLButtonElement>('.ds-toggle')!;
-    const dropdown = this.root.querySelector<HTMLElement>('.ds-dropdown')!;
-    const search = this.root.querySelector<HTMLInputElement>('.ds-search')!;
+    // ── Wire viz dropdown ──
+    this.wireDropdown('viz', this.selected, (set) => { this.selected = set; });
 
+    // ── Wire mapping dropdown ──
+    this.wireDropdown('mapping', this.mappingSelected, (set) => { this.mappingSelected = set; });
+
+    // ── Render button ──
+    this.root.querySelector('.render-btn')?.addEventListener('click', () => this.loadAndRender());
+
+    this.syncSelect();
+  }
+
+  /**
+   * Wire a dropdown identified by `role` ('viz' | 'mapping').
+   * The `selectedSet` is the current selection Set; `onUpdate` is called
+   * with the new Set whenever checkboxes change.
+   */
+  private wireDropdown(
+    role: 'viz' | 'mapping',
+    selectedSet: Set<string>,
+    onUpdate: (set: Set<string>) => void,
+  ): void {
+    const toggle    = this.root.querySelector<HTMLButtonElement>(`.${role}-toggle`)!;
+    const dropdown  = this.root.querySelector<HTMLElement>(`.${role}-dropdown`)!;
+    const search    = this.root.querySelector<HTMLInputElement>(`.${role}-search`)!;
+    const list      = this.root.querySelector<HTMLElement>(`.${role}-list`)!;
+
+    // Toggle open/close
     toggle.addEventListener('click', () => {
       dropdown.classList.toggle('open');
       if (dropdown.classList.contains('open')) search.focus();
@@ -175,60 +262,76 @@ export class DatasetSelector extends HTMLElement {
 
     // Close on outside click
     this.root.addEventListener('click', (e) => {
-      const wrap = this.root.querySelector('.ds-dd-wrap');
+      const wrap = this.root.querySelector(`.ds-dd-wrap[data-role="${role}"]`);
       if (wrap && !wrap.contains(e.target as Node)) dropdown.classList.remove('open');
     });
 
     // Search filter
     search.addEventListener('input', () => {
       const q = search.value.toLowerCase();
-      this.root.querySelectorAll<HTMLElement>('.ds-item').forEach(item => {
+      list.querySelectorAll<HTMLElement>('.ds-item').forEach(item => {
         const text = item.textContent?.toLowerCase() ?? '';
         item.style.display = text.includes(q) ? '' : 'none';
       });
     });
 
-    // Select all / none
-    this.root.querySelector('.ds-all-btn')?.addEventListener('click', () => {
-      this.root.querySelectorAll<HTMLInputElement>('.ds-list input[type="checkbox"]').forEach(cb => cb.checked = true);
-      this.syncFromCheckboxes();
-    });
-    this.root.querySelector('.ds-none-btn')?.addEventListener('click', () => {
-      this.root.querySelectorAll<HTMLInputElement>('.ds-list input[type="checkbox"]').forEach(cb => cb.checked = false);
-      this.syncFromCheckboxes();
-    });
-
-    // Checkbox change → update selected set + toggle label
-    this.root.querySelectorAll<HTMLInputElement>('.ds-list input[type="checkbox"]').forEach(cb => {
-      cb.addEventListener('change', () => {
-        this.syncFromCheckboxes();
+    // All / None
+    this.root.querySelectorAll<HTMLButtonElement>(`.ds-actions button[data-target="${role}"]`).forEach(btn => {
+      btn.addEventListener('click', () => {
+        const checked = btn.classList.contains('ds-all-btn') || btn.textContent?.trim() === 'All';
+        list.querySelectorAll<HTMLInputElement>(`input[data-role="${role}"]`).forEach(cb => { cb.checked = checked; });
+        const newSet = new Set<string>();
+        if (checked) list.querySelectorAll<HTMLInputElement>(`input[data-role="${role}"]`).forEach(cb => newSet.add(cb.value));
+        onUpdate(newSet);
+        const poolSize = role === 'mapping'
+          ? Object.keys(this.mappingDatasets ?? this.datasets).length
+          : Object.keys(this.datasets).length;
+        this.syncToggleLabel(toggle, newSet, poolSize, 'datasets');
+        if (role === 'mapping') this.emitMappingChange();
       });
     });
 
-    this.root.querySelector('.render-btn')?.addEventListener('click', () => this.loadAndRender());
-    this.syncSelect();
+    // Checkbox changes
+    list.querySelectorAll<HTMLInputElement>(`input[data-role="${role}"]`).forEach(cb => {
+      cb.addEventListener('change', () => {
+        const newSet = new Set<string>();
+        list.querySelectorAll<HTMLInputElement>(`input[data-role="${role}"]:checked`).forEach(c => newSet.add(c.value));
+        onUpdate(newSet);
+        const poolSize = role === 'mapping'
+          ? Object.keys(this.mappingDatasets ?? this.datasets).length
+          : Object.keys(this.datasets).length;
+        this.syncToggleLabel(toggle, newSet, poolSize, 'datasets');
+        if (role === 'mapping') this.emitMappingChange();
+      });
+    });
+  }
+
+  private syncToggleLabel(toggle: HTMLButtonElement, selected: Set<string>, total: number, noun: string): void {
+    const count = selected.size;
+    toggle.innerHTML = count === 0
+      ? `Select ${noun} <span class="caret">▾</span>`
+      : `${count} of ${total} ${noun} <span class="caret">▾</span>`;
+  }
+
+  private emitMappingChange(): void {
+    this.dispatchEvent(new CustomEvent('mapping-datasets-change', {
+      detail: { datasets: [...this.mappingSelected] },
+      bubbles: true,
+    }));
   }
 
   /** Read checkboxes and update the selected set + toggle button text. */
   private syncFromCheckboxes(): void {
-    const cbs = this.root.querySelectorAll<HTMLInputElement>('.ds-list input[type="checkbox"]');
+    const cbs = this.root.querySelectorAll<HTMLInputElement>('.viz-list input[data-role="viz"]');
     this.selected.clear();
     cbs.forEach(cb => { if (cb.checked) this.selected.add(cb.value); });
-    const toggle = this.root.querySelector<HTMLButtonElement>('.ds-toggle');
-    if (toggle) {
-      const count = this.selected.size;
-      const total = cbs.length;
-      toggle.innerHTML = count === 0
-        ? 'Select datasets <span class="caret">▾</span>'
-        : `${count} of ${total} datasets <span class="caret">▾</span>`;
-    }
+    const toggle = this.root.querySelector<HTMLButtonElement>('.viz-toggle');
+    if (toggle) this.syncToggleLabel(toggle, this.selected, cbs.length, 'datasets');
   }
 
   private syncSelect(): void {
-    const cbs = this.root.querySelectorAll<HTMLInputElement>('.ds-list input[type="checkbox"]');
-    cbs.forEach(cb => {
-      cb.checked = this.selected.has(cb.value);
-    });
+    const cbs = this.root.querySelectorAll<HTMLInputElement>('.viz-list input[data-role="viz"]');
+    cbs.forEach(cb => { cb.checked = this.selected.has(cb.value); });
     this.syncFromCheckboxes();
   }
 
@@ -255,24 +358,47 @@ export class DatasetSelector extends HTMLElement {
     if (btn) btn.disabled = true;
 
     try {
-      const schemas: JSONLDSchema[] = [];
-
+      // --- 1. Fetch raw JSON-LD for each selected dataset ---
+      const rawSchemas: Array<{ id: string; jsonld: JSONLDSchema }> = [];
       for (const id of this.selected) {
-        let schema = this.loadedSchemas.get(id);
-        if (!schema) {
+        let jsonld = this.loadedSchemas.get(id);
+        if (!jsonld) {
           const ds = this.datasets[id];
           if (!ds) continue;
           this.setStatus(`Loading ${ds.name}…`);
           const res = await fetch(ds.url);
           if (!res.ok) throw new Error(`HTTP ${res.status} loading ${ds.name}`);
-          schema = (await res.json()) as JSONLDSchema;
-          this.loadedSchemas.set(id, schema);
+          jsonld = (await res.json()) as JSONLDSchema;
+          this.loadedSchemas.set(id, jsonld);
         }
-        if (schema) schemas.push(schema);
+        rawSchemas.push({ id, jsonld });
       }
 
-      const merged = this.mergeSchemas(schemas);
-      diagram.setData(merged);
+      // --- 2. Parse each schema individually to collect subject URIs ---
+      //        Build nodeColorMap (subjectURI → color) and schemaColorMap
+      const nodeColorMap = new Map<string, string>();
+      const schemaColorMap = new Map<string, { name: string; color: string }>();
+
+      if (rawSchemas.length > 1) {
+        for (const { id, jsonld } of rawSchemas) {
+          const ds = this.datasets[id];
+          const parsed: CanonicalSchema = parseJSONLD(jsonld);
+          for (const uri of parsed.subjects) {
+            // First-seen wins — keeps the color stable across re-renders
+            if (!nodeColorMap.has(uri)) {
+              nodeColorMap.set(uri, ds.color);
+            }
+          }
+          schemaColorMap.set(id, { name: ds.name, color: ds.color });
+        }
+      }
+      // For a single dataset there is nothing to distinguish, leave maps empty
+
+      // --- 3. Merge raw JSON-LD (for the parser inside setData) ---
+      const merged = this.mergeSchemas(rawSchemas.map(r => r.jsonld));
+
+      // --- 4. Feed into diagram, passing color maps ---
+      diagram.setData(merged, { nodeColorMap, schemaColorMap });
 
       const nodeCount = diagram.getNodeList().length;
       this.setStatus(`Loaded ${this.selected.size} dataset(s) — ${nodeCount} nodes`);

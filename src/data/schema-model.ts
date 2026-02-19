@@ -42,6 +42,8 @@ export function createEmptySchema(): CanonicalSchema {
     classUris: new Set(),
     outgoing: new Map(),
     incoming: new Map(),
+    nodeColorMap: new Map(),
+    schemaColorMap: new Map(),
   };
 }
 

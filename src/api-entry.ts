@@ -97,6 +97,32 @@ async function loadDatasetsFromAPI(): Promise<
   return datasets;
 }
 
+/**
+ * Load instance-mapping linksets (strategy=instance_matcher) from the API.
+ * These are the probe outputs — stored JSON-LD mapping documents that the
+ * user can browse and compare in the Mapping datasets dropdown.
+ * Colors are reused from `allDatasets` where IDs overlap, otherwise grey.
+ */
+async function loadMappingDatasetsFromAPI(
+  allDatasets: Record<string, { name: string; url: string; color: string }>,
+): Promise<Record<string, { name: string; url: string; color: string }>> {
+  const res = await fetch(`${API_BASE}/api/schemas/?strategy=instance_matcher`);
+  if (!res.ok) throw new Error(`GET /api/schemas/?strategy=instance_matcher → ${res.status}`);
+
+  const schemas: SchemaListItem[] = await res.json();
+  // DO NOT!!! Reuse colors from the already-generated allDatasets palette so swatches
+  // are consistent between the two dropdowns.
+  const datasets: Record<string, { name: string; url: string; color: string }> = {};
+  for (const s of schemas) {
+    datasets[s.id] = allDatasets[s.id] ?? {
+      name: s.name,
+      url: `${API_BASE}/api/schemas/${s.id}`,
+      color: '#888',
+    };
+  }
+  return datasets;
+}
+
 // =====================================================================
 // INITIALISATION
 // =====================================================================
@@ -117,6 +143,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     const DATASETS = await loadDatasetsFromAPI();
     if (selector) selector.setDatasets(DATASETS);
     if (iriResolver) iriResolver.loadEndpointsFromUrls(DATASETS);
+
+    // Load instance-matcher linksets for the Mapping datasets dropdown.
+    // These are the probe outputs (strategy=instance_matcher), not the source schemas.
+    const MAPPING_DATASETS = await loadMappingDatasetsFromAPI(DATASETS);
+    if (selector) selector.setMappingDatasets(MAPPING_DATASETS);
   } catch (err) {
     console.error('Failed to load datasets from API:', err);
     const status = document.getElementById('status-text');
