@@ -74,10 +74,12 @@ interface SchemaListItem {
   name: string;
   endpoint?: string;
   pattern_count?: number;
+  strategy?: string;
+  about?: Record<string, unknown>;
 }
 
 async function loadDatasetsFromAPI(): Promise<
-  Record<string, { name: string; url: string; color: string }>
+  Record<string, { name: string; url: string; color: string; about?: Record<string, unknown> }>
 > {
   const res = await fetch(`${API_BASE}/api/schemas/`);
   if (!res.ok) throw new Error(`GET /api/schemas/ → ${res.status}`);
@@ -85,39 +87,40 @@ async function loadDatasetsFromAPI(): Promise<
   const schemas: SchemaListItem[] = await res.json();
   const palette = generatePalette(schemas.length);
 
-  const datasets: Record<string, { name: string; url: string; color: string }> = {};
+  const datasets: Record<string, { name: string; url: string; color: string; about?: Record<string, unknown> }> = {};
   for (let i = 0; i < schemas.length; i++) {
     const s = schemas[i];
     datasets[s.id] = {
       name: s.name,
       url: `${API_BASE}/api/schemas/${s.id}`,
       color: palette[i],
+      about: s.about,
     };
   }
   return datasets;
 }
 
 /**
- * Load instance-mapping linksets (strategy=instance_matcher) from the API.
- * These are the probe outputs — stored JSON-LD mapping documents that the
- * user can browse and compare in the Mapping datasets dropdown.
+ * Load all mapping linksets (instance_matcher, semra_import, inferenced)
+ * from the API using the ?type=mapping shorthand.
  * Colors are reused from `allDatasets` where IDs overlap, otherwise grey.
  */
 async function loadMappingDatasetsFromAPI(
-  allDatasets: Record<string, { name: string; url: string; color: string }>,
-): Promise<Record<string, { name: string; url: string; color: string }>> {
-  const res = await fetch(`${API_BASE}/api/schemas/?strategy=instance_matcher`);
-  if (!res.ok) throw new Error(`GET /api/schemas/?strategy=instance_matcher → ${res.status}`);
+  allDatasets: Record<string, { name: string; url: string; color: string; about?: Record<string, unknown> }>,
+): Promise<Record<string, { name: string; url: string; color: string; about?: Record<string, unknown> }>> {
+  const res = await fetch(`${API_BASE}/api/schemas/?type=mapping`);
+  if (!res.ok) throw new Error(`GET /api/schemas/?type=mapping → ${res.status}`);
 
   const schemas: SchemaListItem[] = await res.json();
-  // DO NOT!!! Reuse colors from the already-generated allDatasets palette so swatches
+  // Reuse colors from the already-generated allDatasets palette so swatches
   // are consistent between the two dropdowns.
-  const datasets: Record<string, { name: string; url: string; color: string }> = {};
+  const datasets: Record<string, { name: string; url: string; color: string; about?: Record<string, unknown> }> = {};
   for (const s of schemas) {
     datasets[s.id] = allDatasets[s.id] ?? {
       name: s.name,
       url: `${API_BASE}/api/schemas/${s.id}`,
       color: '#888',
+      about: s.about,
     };
   }
   return datasets;

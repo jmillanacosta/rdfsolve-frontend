@@ -27,6 +27,7 @@ export interface DatasetEntry {
   name: string;
   url: string;
   color: string;
+  about?: Record<string, unknown>;
 }
 
 export class DatasetSelector extends HTMLElement {
@@ -115,6 +116,32 @@ export class DatasetSelector extends HTMLElement {
   // UI
   // ---------------------------------------------------------------------------
 
+  // ---------------------------------------------------------------------------
+  // UI helpers
+  // ---------------------------------------------------------------------------
+
+  /**
+   * Generate the tooltip HTML for a dataset's @about metadata.
+   * Returns an empty string when `about` is undefined or empty.
+   */
+  private _aboutTooltip(about: Record<string, unknown> | undefined): string {
+    if (!about || Object.keys(about).length === 0) return '';
+    // Keys to skip — too verbose or already visible in the UI
+    const SKIP = new Set(['generated_by', '@context']);
+    const items = Object.entries(about)
+      .filter(([k]) => !SKIP.has(k))
+      .map(([k, v]) => {
+        const val = Array.isArray(v)
+          ? v.join(', ')
+          : typeof v === 'object' ? JSON.stringify(v) : String(v);
+        const safeKey = k.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        const safeVal = String(val).replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        return `<li><span class="tt-key">${safeKey}:</span> ${safeVal}</li>`;
+      });
+    if (items.length === 0) return '';
+    return `<div class="ds-tooltip"><ul>${items.join('')}</ul></div>`;
+  }
+
   private renderUI(): void {
     const entries = Object.entries(this.datasets);
     const mappingEntries = Object.entries(this.mappingDatasets ?? this.datasets);
@@ -147,7 +174,7 @@ export class DatasetSelector extends HTMLElement {
         .ds-list { overflow-y:auto; flex:1; padding:4px 0; }
         .ds-item {
           display:flex; align-items:center; gap:6px; padding:5px 10px;
-          font-size:12px; cursor:pointer;
+          font-size:12px; cursor:pointer; position:relative;
         }
         .ds-item:hover { background:#f0f4ff; }
         .ds-item input { margin:0; }
@@ -173,6 +200,20 @@ export class DatasetSelector extends HTMLElement {
           font-size:11px; font-weight:600; color:#444; min-width:110px; white-space:nowrap;
         }
         .ds-section-label.mapping { color:#6060aa; }
+
+        /* ── @about tooltip ── */
+        .ds-tooltip {
+          display:none; position:absolute; left:calc(100% + 6px); top:0; z-index:1300;
+          background:#1e1e2e; color:#e0e0f0; border-radius:6px;
+          padding:8px 12px; font-size:11px; line-height:1.6;
+          white-space:nowrap; pointer-events:none;
+          box-shadow:0 4px 16px rgba(0,0,0,.3);
+          max-width:320px; white-space:normal;
+        }
+        .ds-item:hover .ds-tooltip { display:block; }
+        .ds-tooltip ul { margin:0; padding:0 0 0 14px; }
+        .ds-tooltip li { margin:2px 0; }
+        .ds-tooltip .tt-key { color:#9090c0; font-weight:600; }
       </style>
       <div class="ds-wrap">
         <!-- ── Row 1: Diagram dataset selector + Render ── -->
@@ -188,6 +229,7 @@ export class DatasetSelector extends HTMLElement {
                     <input type="checkbox" value="${id}" data-role="viz" />
                     <span class="ds-swatch" style="background:${ds.color}"></span>
                     <span>${ds.name}</span>
+                    ${this._aboutTooltip(ds.about)}
                   </label>
                 `).join('')}
               </div>
@@ -214,6 +256,7 @@ export class DatasetSelector extends HTMLElement {
                     <input type="checkbox" value="${id}" data-role="mapping" />
                     <span class="ds-swatch" style="background:${ds.color}"></span>
                     <span>${ds.name}</span>
+                    ${this._aboutTooltip(ds.about)}
                   </label>
                 `).join('')}
               </div>
