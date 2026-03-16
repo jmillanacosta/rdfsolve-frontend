@@ -1,0 +1,100 @@
+{
+  "@context": {
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "frapo": "http://purl.org/cerif/frapo/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "vocabulary:Organization",
+      "vcard:country-name": {
+        "@type": "xsd:string"
+      },
+      "vcard:fn": {
+        "@type": "xsd:string"
+      },
+      "skos:closeMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "vcard:country-name": {
+          "Literal:xsd:string": 51519
+        },
+        "vcard:fn": {
+          "Literal:xsd:string": 2407011
+        },
+        "skos:closeMatch": {
+          "Resource": 232064
+        }
+      }
+    },
+    {
+      "@id": "vcard:Organization",
+      "vcard:fn": {
+        "@type": "xsd:string"
+      },
+      "vcard:country-name": {
+        "@type": "xsd:string"
+      },
+      "skos:closeMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "vcard:fn": {
+          "Literal:xsd:string": 2407011
+        },
+        "vcard:country-name": {
+          "Literal:xsd:string": 51519
+        },
+        "skos:closeMatch": {
+          "Resource": 232064
+        }
+      }
+    },
+    {
+      "@id": "frapo:FundingAgency",
+      "vcard:country-name": {
+        "@type": "xsd:string"
+      },
+      "vcard:fn": {
+        "@type": "xsd:string"
+      },
+      "skos:closeMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "vcard:country-name": {
+          "Literal:xsd:string": 51519
+        },
+        "vcard:fn": {
+          "Literal:xsd:string": 2407011
+        },
+        "skos:closeMatch": {
+          "Resource": 232064
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:40:11.831113+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.organization",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/organization"
+    ],
+    "pattern_count": 12,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "vocabulary:Organization": "Organization",
+    "vcard:country-name": "country-name",
+    "vcard:Organization": "Organization",
+    "vcard:fn": "fn",
+    "frapo:FundingAgency": "FundingAgency",
+    "skos:closeMatch": "closeMatch"
+  }
+}

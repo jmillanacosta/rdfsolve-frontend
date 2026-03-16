@@ -1,0 +1,118 @@
+{
+  "@context": {
+    "sio": "http://semanticscience.org/resource/SIO_",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "bfo": "http://purl.obolibrary.org/obo/BFO_",
+    "uniprot.core": "http://purl.uniprot.org/core/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "ro": "http://purl.obolibrary.org/obo/RO_",
+    "cito": "http://purl.org/spar/cito/"
+  },
+  "@graph": [
+    {
+      "@id": "sio:010054",
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "bfo:0000050": {
+        "@type": "xsd:string"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:organism": {
+        "@id": "rdfs:Resource"
+      },
+      "ro:0001000": {
+        "@id": "rdfs:Resource"
+      },
+      "cito:isDiscussedBy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "skos:altLabel": {
+          "Literal:xsd:string": 5599
+        },
+        "bfo:0000050": {
+          "Literal:xsd:string": 104
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 2009
+        },
+        "uniprot.core:organism": {
+          "Resource": 1841
+        },
+        "ro:0001000": {
+          "Resource": 1249
+        },
+        "cito:isDiscussedBy": {
+          "Resource": 23291
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:Cell",
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "bfo:0000050": {
+        "@type": "xsd:string"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:organism": {
+        "@id": "rdfs:Resource"
+      },
+      "ro:0001000": {
+        "@id": "rdfs:Resource"
+      },
+      "cito:isDiscussedBy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "skos:altLabel": {
+          "Literal:xsd:string": 5599
+        },
+        "bfo:0000050": {
+          "Literal:xsd:string": 104
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 2009
+        },
+        "uniprot.core:organism": {
+          "Resource": 1841
+        },
+        "ro:0001000": {
+          "Resource": 1249
+        },
+        "cito:isDiscussedBy": {
+          "Resource": 23291
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:39:49.565796+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.cell",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/cell"
+    ],
+    "pattern_count": 16,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "sio:010054": "SIO_010054",
+    "skos:altLabel": "altLabel",
+    "vocabulary:Cell": "Cell",
+    "bfo:0000050": "BFO_0000050",
+    "skos:prefLabel": "prefLabel",
+    "uniprot.core:organism": "organism",
+    "ro:0001000": "RO_0001000",
+    "cito:isDiscussedBy": "isDiscussedBy"
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfsolve": "https://w3id.org/rdfsolve/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "sd": "http://www.w3.org/ns/sparql-service-description#",
+    "edam.data": "http://edamontology.org/data_",
+    "wp": "http://vocabularies.wikipathways.org/wp#"
+  },
+  "@graph": [
+    {
+      "@id": "edam.data:1025",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/aopwikirdf",
+        "dcterms:title": "aopwikirdf",
+        "void:sparqlEndpoint": {
+          "@id": "https://aopwiki.rdf.bigcat-bioinformatics.org/sparql/"
+        }
+      },
+      "dcterms:created": "2026-02-19T14:24:44.064372+00:00",
+      "skos:narrowMatch": {
+        "@id": "edam.data:2291",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/aopwikirdf",
+          "dcterms:title": "aopwikirdf",
+          "void:sparqlEndpoint": {
+            "@id": "https://aopwiki.rdf.bigcat-bioinformatics.org/sparql/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wp:Complex",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways",
+        "dcterms:title": "wikipathways",
+        "void:sparqlEndpoint": {
+          "@id": "https://sparql.wikipathways.org/sparql/"
+        }
+      },
+      "dcterms:created": "2026-02-20T14:43:00.714753+00:00",
+      "skos:narrowMatch": [
+        {
+          "@id": "wp:DataNode",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:GeneProduct",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Protein",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Rna",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "wp:DataNode",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways",
+        "dcterms:title": "wikipathways",
+        "void:sparqlEndpoint": {
+          "@id": "https://sparql.wikipathways.org/sparql/"
+        }
+      },
+      "dcterms:created": "2026-02-20T14:43:00.714753+00:00",
+      "skos:narrowMatch": [
+        {
+          "@id": "wp:GeneProduct",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Protein",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Rna",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "wp:GeneProduct",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways",
+        "dcterms:title": "wikipathways",
+        "void:sparqlEndpoint": {
+          "@id": "https://sparql.wikipathways.org/sparql/"
+        }
+      },
+      "dcterms:created": "2026-02-20T14:43:00.714753+00:00",
+      "skos:narrowMatch": [
+        {
+          "@id": "wp:Protein",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Rna",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "wp:Protein",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways",
+        "dcterms:title": "wikipathways",
+        "void:sparqlEndpoint": {
+          "@id": "https://sparql.wikipathways.org/sparql/"
+        }
+      },
+      "dcterms:created": "2026-02-20T14:43:00.714753+00:00",
+      "skos:narrowMatch": {
+        "@id": "wp:Rna",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/wikipathways",
+          "dcterms:title": "wikipathways",
+          "void:sparqlEndpoint": {
+            "@id": "https://sparql.wikipathways.org/sparql/"
+          }
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-02-20T14:43:00.716582+00:00",
+    "dataset_name": "uniprot_instance_mapping",
+    "pattern_count": 5,
+    "strategy": "instance_matcher",
+    "resource": "uniprot",
+    "uri_formats_queried": [
+      "http://bioregistry.io/UP:",
+      "http://research.bioinformatics.udel.edu/iptmnet/entry/",
+      "http://db.indra.bio/statements/from_agents?&format=html&agent0=$1@UP",
+      "http://omabrowser.org/cgi-bin/gateway.pl?f=DisplayEntry&p2=orthologs&p1=",
+      "https://165.194.60.211:9006/detail/",
+      "http://bio2rdf.org/uniprot:",
+      "https://db.indra.bio/statements/from_agents?&format=html&agent0=$1@UP",
+      "http://identifiers.org/uniprot:",
+      "http://omnipathdb.org/interactions/?fields=sources,references&partners=",
+      "http://bioregistry.io/Uniprot ID:",
+      "https://research.bioinformatics.udel.edu/iptmnet/entry/",
+      "http://bioregistry.io/uniprot/swiss-prot:",
+      "http://biomine.cs.vcu.edu/servers/DESCRIBEPROT/result_v2.php?uniprot=",
+      "http://www.oglcnac.mcw.edu/search/?query_protein=",
+      "https://scholia.toolforge.org/uniprot/",
+      "http://pharos.nih.gov/idg/targets/",
+      "http://go.drugbank.com/polypeptides/",
+      "https://bfvd.foldseek.com/cluster/",
+      "https://www.iedb.org/antigen/UNIPROT:",
+      "https://bioregistry.io/Uniprot ID:",
+      "http://bioregistry.io/UniProtKB:",
+      "http://www.ncbi.nlm.nih.gov/protein/",
+      "https://pharos.nih.gov/idg/targets/",
+      "https://go.drugbank.com/polypeptides/",
+      "https://www.uniprot.org/uniprot/",
+      "https://purl.uniprot.org/uniprot/",
+      "https://www.uniprot.org/uniprotkb/$1/entry",
+      "https://omnipathdb.org/interactions/?fields=sources,references&partners=",
+      "http://identifiers.org/uniprot/",
+      "https://biomine.cs.vcu.edu/servers/DESCRIBEPROT/result_v2.php?uniprot=",
+      "https://www.oglcnac.mcw.edu/search/?query_protein=",
+      "https://identifiers.org/uniprot/",
+      "http://n2t.net/uniprot:",
+      "https://proteins.plus/",
+      "http://bioregistry.io/SwissProt:",
+      "http://165.194.60.211:9006/detail/",
+      "http://www.iedb.org/antigen/UNIPROT:",
+      "http://scholia.toolforge.org/uniprot/",
+      "https://bioregistry.io/uniprot:",
+      "https://bioregistry.io/uniprot/swiss-prot:",
+      "https://bioregistry.io/UniProtKB:",
+      "http://purl.uniprot.org/uniprot/",
+      "https://bio2rdf.org/uniprot:",
+      "https://bioregistry.io/UniProt:",
+      "https://bioregistry.io/UP:",
+      "http://bioregistry.io/uniprot:",
+      "https://identifiers.org/uniprot:",
+      "http://bioregistry.io/UniProt:",
+      "http://proteins.plus/",
+      "http://www.uniprot.org/uniprotkb/$1/entry",
+      "https://www.ncbi.nlm.nih.gov/protein/",
+      "https://n2t.net/uniprot:",
+      "https://omabrowser.org/cgi-bin/gateway.pl?f=DisplayEntry&p2=orthologs&p1=",
+      "http://bfvd.foldseek.com/cluster/",
+      "https://bioregistry.io/SwissProt:",
+      "http://www.uniprot.org/uniprot/"
+    ]
+  }
+}

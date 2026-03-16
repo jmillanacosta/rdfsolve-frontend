@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "sio": "http://semanticscience.org/resource/SIO_",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "sio:010299",
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "skos:closeMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "skos:relatedMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "skos:prefLabel": {
+          "Literal:xsd:string": 11721
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 30638
+        },
+        "skos:closeMatch": {
+          "Resource": 85470
+        },
+        "skos:relatedMatch": {
+          "Resource": 15071
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:Disease",
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "skos:relatedMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "skos:closeMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "skos:prefLabel": {
+          "Literal:xsd:string": 11721
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 30638
+        },
+        "skos:relatedMatch": {
+          "Resource": 15071
+        },
+        "skos:closeMatch": {
+          "Resource": 85470
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:40:21.161050+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.disease",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/disease"
+    ],
+    "pattern_count": 10,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "sio:010299": "SIO_010299",
+    "skos:prefLabel": "prefLabel",
+    "vocabulary:Disease": "Disease",
+    "skos:altLabel": "altLabel",
+    "skos:closeMatch": "closeMatch",
+    "skos:relatedMatch": "relatedMatch"
+  }
+}

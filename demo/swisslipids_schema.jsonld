@@ -1,0 +1,365 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "https://swisslipids.org/rdf/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "void": "http://rdfs.org/ns/void#",
+    "voidext": "http://ldf.fi/void-ext#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "chemrof": "https://w3id.org/chemrof/",
+    "oboinowl": "http://www.geneontology.org/formats/oboInOwl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "cheminf": "http://semanticscience.org/resource/CHEMINF_",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "https://schema.org/",
+    "ontology": "https://purl.expasy.org/sparql-examples/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "owl:Class",
+      "rdf:SLM_rank": {
+        "@id": "owl:Class"
+      },
+      "rdf:SLM_rankPreference": {
+        "@type": "xsd:integer"
+      },
+      "obo:chebi/smiles": {
+        "@type": "xsd:string"
+      },
+      "chemrof:inchi_string": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:hasRelatedSynonym": {
+        "@type": "xsd:string"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "obo:chebi/charge": {
+        "@type": "xsd:string"
+      },
+      "chemrof:charge": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000570": {
+        "@type": "xsd:string"
+      },
+      "chemrof:inchi_key_string": {
+        "@type": "xsd:string"
+      },
+      "obo:chebi/formula": {
+        "@type": "xsd:string"
+      },
+      "obo:chebi/inchikey": {
+        "@type": "xsd:string"
+      },
+      "obo:chebi/inchi": {
+        "@type": "xsd:string"
+      },
+      "chemrof:smiles_string": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "foaf:depiction": {
+        "@id": "rdfs:Resource"
+      },
+      "oboinowl:hasDbXref": {
+        "@id": "rdfs:Resource"
+      },
+      "owl:equivalentClass": {
+        "@id": "rdfs:Resource"
+      },
+      "rdf:SLM_citation": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "rdf:SLM_rank": {
+          "owl:Class": 777956
+        },
+        "rdf:SLM_rankPreference": {
+          "Literal:xsd:integer": 6
+        },
+        "obo:chebi/smiles": {
+          "Literal:xsd:string": 778907
+        },
+        "chemrof:inchi_string": {
+          "Literal:xsd:string": 593209
+        },
+        "oboinowl:hasRelatedSynonym": {
+          "Literal:xsd:string": 568257
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 779192
+        },
+        "obo:chebi/charge": {
+          "Literal:xsd:string": 779179
+        },
+        "chemrof:charge": {
+          "Literal:xsd:string": 779179
+        },
+        "cheminf:000570": {
+          "Literal:xsd:string": 779192
+        },
+        "chemrof:inchi_key_string": {
+          "Literal:xsd:string": 593215
+        },
+        "obo:chebi/formula": {
+          "Literal:xsd:string": 779000
+        },
+        "obo:chebi/inchikey": {
+          "Literal:xsd:string": 593215
+        },
+        "obo:chebi/inchi": {
+          "Literal:xsd:string": 593209
+        },
+        "chemrof:smiles_string": {
+          "Literal:xsd:string": 778906
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 776464
+        },
+        "foaf:depiction": {
+          "Resource": 778907
+        },
+        "oboinowl:hasDbXref": {
+          "Resource": 543146
+        },
+        "owl:equivalentClass": {
+          "Resource": 4220
+        },
+        "rdf:SLM_citation": {
+          "Resource": 10101
+        }
+      }
+    },
+    {
+      "@id": "sh:SPARQLSelectExecutable",
+      "sh:prefixes": {
+        "@id": "owl:Ontology"
+      },
+      "sh:select": {
+        "@type": "xsd:string"
+      },
+      "schema:target": {
+        "@id": "rdfs:Resource"
+      },
+      "ontology:federatesWith": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sh:prefixes": {
+          "owl:Ontology": 23
+        },
+        "sh:select": {
+          "Literal:xsd:string": 23
+        },
+        "schema:target": {
+          "Resource": 23
+        },
+        "ontology:federatesWith": {
+          "Resource": 13
+        }
+      }
+    },
+    {
+      "@id": "sh:SPARQLExecutable",
+      "sh:prefixes": {
+        "@id": "owl:Ontology"
+      },
+      "sh:select": {
+        "@type": "xsd:string"
+      },
+      "schema:target": {
+        "@id": "rdfs:Resource"
+      },
+      "ontology:federatesWith": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sh:prefixes": {
+          "owl:Ontology": 23
+        },
+        "sh:select": {
+          "Literal:xsd:string": 23
+        },
+        "schema:target": {
+          "Resource": 23
+        },
+        "ontology:federatesWith": {
+          "Resource": 13
+        }
+      }
+    },
+    {
+      "@id": "void:Dataset",
+      "void:propertyPartition": {
+        "@id": "void:Dataset"
+      },
+      "void:property": [
+        {
+          "@id": "owl:AnnotationProperty"
+        },
+        {
+          "@id": "owl:ObjectProperty"
+        },
+        {
+          "@id": "owl:DatatypeProperty"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "voidext:datatypePartition": {
+        "@id": "void:Dataset"
+      },
+      "void:classPartition": {
+        "@id": "void:Dataset"
+      },
+      "void:entities": {
+        "@type": "xsd:long"
+      },
+      "void:triples": {
+        "@type": "xsd:long"
+      },
+      "void:class": {
+        "@id": "rdfs:Resource"
+      },
+      "voidext:datatype": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:propertyPartition": {
+          "void:Dataset": 80
+        },
+        "void:property": {
+          "owl:AnnotationProperty": 4,
+          "owl:ObjectProperty": 3,
+          "owl:DatatypeProperty": 2,
+          "Resource": 146
+        },
+        "voidext:datatypePartition": {
+          "void:Dataset": 40
+        },
+        "void:classPartition": {
+          "void:Dataset": 19
+        },
+        "void:entities": {
+          "Literal:xsd:long": 14
+        },
+        "void:triples": {
+          "Literal:xsd:long": 174
+        },
+        "void:class": {
+          "Resource": 33
+        },
+        "voidext:datatype": {
+          "Resource": 32
+        }
+      }
+    },
+    {
+      "@id": "void:Linkset",
+      "void:subjectsTarget": {
+        "@id": "void:Dataset"
+      },
+      "void:objectsTarget": {
+        "@id": "void:Dataset"
+      },
+      "void:linkPredicate": [
+        {
+          "@id": "owl:AnnotationProperty"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "void:triples": {
+        "@type": "xsd:long"
+      },
+      "_counts": {
+        "void:subjectsTarget": {
+          "void:Dataset": 23
+        },
+        "void:objectsTarget": {
+          "void:Dataset": 23
+        },
+        "void:linkPredicate": {
+          "owl:AnnotationProperty": 1,
+          "Resource": 22
+        },
+        "void:triples": {
+          "Literal:xsd:long": 4
+        }
+      }
+    },
+    {
+      "@id": "owl:Ontology",
+      "owl:imports": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:imports": {
+          "Resource": 2
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T14:22:44.242937+00:00",
+    "endpoint": "https://beta.sparql.swisslipids.org/",
+    "dataset_name": "swisslipids",
+    "pattern_count": 98,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:Class": "Class",
+    "rdf:SLM_rank": "The category a Lipid description is ranked at",
+    "sh:SPARQLSelectExecutable": "SPARQLSelectExecutable",
+    "sh:prefixes": "prefixes",
+    "owl:Ontology": "Ontology",
+    "sh:SPARQLExecutable": "SPARQLExecutable",
+    "void:Dataset": "Dataset",
+    "void:propertyPartition": "propertyPartition",
+    "void:property": "property",
+    "owl:AnnotationProperty": "AnnotationProperty",
+    "owl:ObjectProperty": "ObjectProperty",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "voidext:datatypePartition": "datatypePartition",
+    "void:classPartition": "classPartition",
+    "void:Linkset": "Linkset",
+    "void:subjectsTarget": "subjectsTarget",
+    "void:objectsTarget": "objectsTarget",
+    "void:linkPredicate": "linkPredicate",
+    "rdf:SLM_rankPreference": "To allow sorting by rank",
+    "obo:chebi/smiles": "smiles",
+    "chemrof:inchi_string": "inchi_string",
+    "oboinowl:hasRelatedSynonym": "hasRelatedSynonym",
+    "skos:prefLabel": "prefLabel",
+    "obo:chebi/charge": "charge",
+    "chemrof:charge": "charge",
+    "cheminf:000570": "CHEMINF_000570",
+    "chemrof:inchi_key_string": "inchi_key_string",
+    "obo:chebi/formula": "formula",
+    "obo:chebi/inchikey": "inchikey",
+    "obo:chebi/inchi": "inchi",
+    "chemrof:smiles_string": "smiles_string",
+    "skos:altLabel": "altLabel",
+    "sh:select": "select",
+    "void:entities": "entities",
+    "void:triples": "triples",
+    "owl:imports": "imports",
+    "foaf:depiction": "depiction",
+    "oboinowl:hasDbXref": "hasDbXref",
+    "owl:equivalentClass": "equivalentClass",
+    "rdf:SLM_citation": "A reference to a pubmed record, where evidence for the Lipds existence can be found.",
+    "schema:target": "target",
+    "ontology:federatesWith": "federatesWith",
+    "void:class": "class",
+    "voidext:datatype": "datatype"
+  }
+}

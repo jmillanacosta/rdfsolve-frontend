@@ -3,10 +3,10 @@
  *
  * Features:
  * - Syntax highlighting (overlay: invisible textarea + highlighted <pre>)
- * - Context-aware autocomplete (subject → predicates → objects)
+ * - Context-aware autocomplete (subject -> predicates -> objects)
  * - Predicate dropdown selectors for hops with multiple alternatives
  * - Debounced parsing of triple patterns into diagram path highlighting
- * - Bidirectional: diagram paths → SPARQL and SPARQL → diagram paths
+ * - Bidirectional: diagram paths -> SPARQL and SPARQL -> diagram paths
  *
  * Usage:
  *   <sparql-editor diagram="diagram"></sparql-editor>
@@ -24,13 +24,13 @@ import { getLocalName, escapeHtml } from '../iri/uri-utils';
 interface SchemaIndex {
   /** All subject URIs (short labels) mapped to full URI */
   subjects: Map<string, string>;
-  /** For each subject URI → set of predicate short labels → full URI */
+  /** For each subject URI -> set of predicate short labels -> full URI */
   subjectPredicates: Map<string, Map<string, string>>;
-  /** For each (subject,predicate) → set of object short labels → full URI */
+  /** For each (subject,predicate) -> set of object short labels -> full URI */
   subjectPredicateObjects: Map<string, Map<string, string>>;
-  /** All predicate labels → URI */
+  /** All predicate labels -> URI */
   allPredicates: Map<string, string>;
-  /** All object labels → URI */
+  /** All object labels -> URI */
   allObjects: Map<string, string>;
   /** Prefix map for expansion/compaction */
   prefixes: Record<string, string>;
@@ -60,11 +60,11 @@ function buildSchemaIndex(schema: CanonicalSchema): SchemaIndex {
     const pLabel = shorten(t.predicate);
     allPredicates.set(pLabel, t.predicate);
 
-    // subject → predicates
+    // subject -> predicates
     if (!subjectPredicates.has(t.subject)) subjectPredicates.set(t.subject, new Map());
     subjectPredicates.get(t.subject)!.set(pLabel, t.predicate);
 
-    // (subject, predicate) → objects
+    // (subject, predicate) -> objects
     const spKey = `${t.subject}\t${t.predicate}`;
     if (!subjectPredicateObjects.has(spKey)) subjectPredicateObjects.set(spKey, new Map());
 
@@ -296,7 +296,7 @@ export class SparqlEditor extends HTMLElement {
           <button class="copy-btn">Copy</button>
         </div>
         <div class="se-dirty-bar">
-          <span>✏️ Query edited manually — auto-sync paused</span>
+          <span>Query edited manually - auto-sync paused</span>
           <button class="reset-btn">Reset to generated</button>
         </div>
       </div>
@@ -305,11 +305,11 @@ export class SparqlEditor extends HTMLElement {
     const ta = this.ta();
     const dd = this.dd();
 
-    // Typing → highlight + autocomplete + debounced parse
+    // Typing -> highlight + autocomplete + debounced parse
     ta.addEventListener('input', () => {
       this.syncHighlight();
       if (this.updatingFromDiagram) return;
-      // User is manually editing — mark dirty so auto-regeneration
+      // User is manually editing - mark dirty so auto-regeneration
       // from diagram events won't overwrite their edits.
       if (!this.userDirty) {
         this.userDirty = true;
@@ -503,7 +503,7 @@ export class SparqlEditor extends HTMLElement {
     rowsDiv.innerHTML = hops.map((h) => {
       const options = h.alternatives.map(a => {
         const sel = a.predicate === h.selectedPredicate ? ' selected' : '';
-        const dir = a.isForward ? '→' : '←';
+        const dir = a.isForward ? '->' : '←';
         return `<option value="${a.predicate}"${sel}>${a.predicateLabel} ${dir}</option>`;
       }).join('');
 
@@ -511,7 +511,7 @@ export class SparqlEditor extends HTMLElement {
         <div class="pred-row">
           <span class="pred-hop">hop ${h.hopIndex + 1}</span>
           <select data-path="${h.pathIndex}" data-hop="${h.hopIndex}">${options}</select>
-          <span class="pred-nodes">${h.sourceLabel} → ${h.targetLabel}</span>
+          <span class="pred-nodes">${h.sourceLabel} -> ${h.targetLabel}</span>
         </div>
       `;
     }).join('');
@@ -740,7 +740,7 @@ export class SparqlEditor extends HTMLElement {
   }
 
   /**
-   * Inject IRI bindings from the iri-resolver's class→IRIs map.
+   * Inject IRI bindings from the iri-resolver's class->IRIs map.
    *
    * Maps each class URI to the query variable representing that class
    * (via the variable_map from the last compose result or by parsing
@@ -774,7 +774,7 @@ export class SparqlEditor extends HTMLElement {
   /**
    * Parse SPARQL for "?var a curie ." or "?var a <uri> ." patterns,
    * also match the variable_map from the compose result.
-   * Returns typeUri → varName.
+   * Returns typeUri -> varName.
    */
   private buildTypeToVarMap(
     sparqlText: string,
@@ -799,8 +799,8 @@ export class SparqlEditor extends HTMLElement {
     }
 
     // 2. Also use variable_map from the last compose result (more reliable):
-    //    variable_map maps varName → classUri
-    //    We need the reverse: classUri → varName
+    //    variable_map maps varName -> classUri
+    //    We need the reverse: classUri -> varName
     const diagram = this.getDiagram();
     const lastResult = (diagram as any)._lastComposeResult as
       | { variable_map?: Record<string, string> }
@@ -965,7 +965,7 @@ export class SparqlEditor extends HTMLElement {
   }
 
   // ---------------------------------------------------------------------------
-  // Parse SPARQL → diagram highlighting
+  // Parse SPARQL -> diagram highlighting
   // ---------------------------------------------------------------------------
 
   private parseAndHighlight(): void {
@@ -1070,7 +1070,7 @@ export class SparqlEditor extends HTMLElement {
 
       const path = diagram.findShortestPath(triple.subject, triple.object);
       if (path) {
-        diagram.addPathFromEdgePath(path, `${ln(triple.subject)} → ${ln(triple.object)}`);
+        diagram.addPathFromEdgePath(path, `${ln(triple.subject)} -> ${ln(triple.object)}`);
         return true;
       }
     }

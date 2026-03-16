@@ -1,0 +1,931 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "gr": "http://purl.org/goodrelations/v1#",
+    "514": "http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "201108": "http://purl.org/allie/ontology/201108#",
+    "dctypes": "http://purl.org/dc/dcmitype/",
+    "pav": "http://purl.org/pav/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "owl:Class",
+      "owl:complementOf": {
+        "@id": "owl:Class"
+      },
+      "owl:equivalentClass": {
+        "@id": "owl:Restriction"
+      },
+      "_counts": {
+        "owl:complementOf": {
+          "owl:Class": 2
+        },
+        "owl:equivalentClass": {
+          "owl:Restriction": 18
+        }
+      }
+    },
+    {
+      "@id": "owl:Ontology",
+      "gr:BusinessEntity": {
+        "@id": "gr:BusinessEntity"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "owl:versionInfo": {
+        "@type": "xsd:string"
+      },
+      "dc:creator": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "owl:imports": {
+        "@id": "rdfs:Resource"
+      },
+      "owl:priorVersion": {
+        "@id": "rdfs:Resource"
+      },
+      "dc:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "gr:BusinessEntity": {
+          "gr:BusinessEntity": 1
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 1
+        },
+        "owl:versionInfo": {
+          "Literal:xsd:string": 2
+        },
+        "dc:creator": {
+          "Literal:xsd:string": 2,
+          "Resource": 1
+        },
+        "owl:imports": {
+          "Resource": 3
+        },
+        "owl:priorVersion": {
+          "Resource": 1
+        },
+        "dc:publisher": {
+          "Resource": 1
+        },
+        "dcterms:license": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "gr:BusinessEntity",
+      "gr:offers": {
+        "@id": "gr:Offering"
+      },
+      "gr:legalName": {
+        "@type": "xsd:string"
+      },
+      "owl:equivalentClass": {
+        "@id": "rdfs:Resource"
+      },
+      "owl:sameAs": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:homepage": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:logo": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:maker": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "gr:offers": {
+          "gr:Offering": 3
+        },
+        "gr:legalName": {
+          "Literal:xsd:string": 1
+        },
+        "owl:equivalentClass": {
+          "Resource": 1
+        },
+        "owl:sameAs": {
+          "Resource": 2
+        },
+        "foaf:homepage": {
+          "Resource": 1
+        },
+        "foaf:logo": {
+          "Resource": 1
+        },
+        "foaf:maker": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "gr:Offering",
+      "gr:availableAtOrFrom": {
+        "@id": "gr:LocationOfSalesOrServiceProvisioning"
+      },
+      "gr:includes": [
+        {
+          "@id": "gr:ActualProductOrServicesInstance"
+        },
+        {
+          "@id": "gr:ProductOrServiceSomeInstancePlaceholder"
+        }
+      ],
+      "gr:hasPriceSpecification": {
+        "@id": "gr:PriceSpecification"
+      },
+      "gr:includesObject": {
+        "@id": "gr:TypeAndQuantityNode"
+      },
+      "gr:validFrom": {
+        "@type": "xsd:dateTime"
+      },
+      "gr:validThrough": {
+        "@type": "xsd:dateTime"
+      },
+      "gr:eligibleRegions": {
+        "@type": "xsd:string"
+      },
+      "gr:hasBusinessFunction": {
+        "@id": "rdfs:Resource"
+      },
+      "gr:eligibleCustomerTypes": {
+        "@id": "rdfs:Resource"
+      },
+      "gr:acceptedPaymentMethods": {
+        "@id": "rdfs:Resource"
+      },
+      "gr:availableDeliveryMethods": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "gr:availableAtOrFrom": {
+          "gr:LocationOfSalesOrServiceProvisioning": 3
+        },
+        "gr:includes": {
+          "gr:ActualProductOrServicesInstance": 1,
+          "gr:ProductOrServiceSomeInstancePlaceholder": 1
+        },
+        "gr:hasPriceSpecification": {
+          "gr:PriceSpecification": 1
+        },
+        "gr:includesObject": {
+          "gr:TypeAndQuantityNode": 3
+        },
+        "gr:validFrom": {
+          "Literal:xsd:dateTime": 3
+        },
+        "gr:validThrough": {
+          "Literal:xsd:dateTime": 3
+        },
+        "gr:eligibleRegions": {
+          "Literal:xsd:string": 738
+        },
+        "gr:hasBusinessFunction": {
+          "Resource": 6
+        },
+        "gr:eligibleCustomerTypes": {
+          "Resource": 9
+        },
+        "gr:acceptedPaymentMethods": {
+          "Resource": 18
+        },
+        "gr:availableDeliveryMethods": {
+          "Resource": 3
+        }
+      }
+    },
+    {
+      "@id": "gr:TypeAndQuantityNode",
+      "gr:typeOfGood": [
+        {
+          "@id": "gr:ProductOrServicesSomeInstancesPlaceholder"
+        },
+        {
+          "@id": "514:C_AKJ315005-tax"
+        },
+        {
+          "@id": "514:C_AAB316003-tax"
+        },
+        {
+          "@id": "514:C_AKE112003-tax"
+        }
+      ],
+      "gr:amountOfThisGood": {
+        "@type": "xsd:float"
+      },
+      "gr:hasUnitOfMeasurement": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "gr:typeOfGood": {
+          "gr:ProductOrServicesSomeInstancesPlaceholder": 3,
+          "514:C_AKJ315005-tax": 1,
+          "514:C_AAB316003-tax": 1,
+          "514:C_AKE112003-tax": 1
+        },
+        "gr:amountOfThisGood": {
+          "Literal:xsd:float": 3
+        },
+        "gr:hasUnitOfMeasurement": {
+          "Literal:xsd:string": 3
+        }
+      }
+    },
+    {
+      "@id": "gr:Manufacturer",
+      "owl:equivalentClass": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:equivalentClass": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "owl:ObjectProperty"
+      },
+      "_counts": {
+        "owl:inverseOf": {
+          "owl:ObjectProperty": 2
+        }
+      }
+    },
+    {
+      "@id": "201108:EachPair",
+      "201108:hasLongFormOf": {
+        "@id": "201108:LongForm"
+      },
+      "201108:hasShortFormOf": {
+        "@id": "201108:ShortForm"
+      },
+      "201108:inResearchAreaOf": {
+        "@id": "201108:ResearchArea"
+      },
+      "201108:cooccursWith": {
+        "@id": "201108:CooccurringShortFormList"
+      },
+      "201108:appearsIn": {
+        "@id": "201108:PubMedIDList"
+      },
+      "201108:frequency": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "201108:hasLongFormOf": {
+          "201108:LongForm": 6202020
+        },
+        "201108:hasShortFormOf": {
+          "201108:ShortForm": 6202020
+        },
+        "201108:inResearchAreaOf": {
+          "201108:ResearchArea": 5847234
+        },
+        "201108:cooccursWith": {
+          "201108:CooccurringShortFormList": 5295626
+        },
+        "201108:appearsIn": {
+          "201108:PubMedIDList": 6202020
+        },
+        "201108:frequency": {
+          "Literal:xsd:string": 6202020
+        }
+      }
+    },
+    {
+      "@id": "dctypes:Dataset",
+      "pav:authoredBy": {
+        "@id": "foaf:Person"
+      },
+      "dcat:Distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "void:exampleResource": {
+        "@id": "201108:LongForm"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "void:distinctObjects": {
+        "@type": "xsd:int"
+      },
+      "void:distinctSubjects": {
+        "@type": "xsd:int"
+      },
+      "void:triples": {
+        "@type": "xsd:int"
+      },
+      "dcterms:accrualPeriodicity": {
+        "@type": "xsd:string"
+      },
+      "dcterms:issued": {
+        "@type": "xsd:date"
+      },
+      "void:vocabulary": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "void:dataDump": {
+        "@id": "rdfs:Resource"
+      },
+      "void:sparqlEndpoint": {
+        "@id": "rdfs:Resource"
+      },
+      "void:uriLookupEndpoint": {
+        "@id": "rdfs:Resource"
+      },
+      "dcat:landingPage": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pav:authoredBy": {
+          "foaf:Person": 2
+        },
+        "dcat:Distribution": {
+          "dcat:Distribution": 1
+        },
+        "void:exampleResource": {
+          "201108:LongForm": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 1
+        },
+        "void:distinctObjects": {
+          "Literal:xsd:int": 1
+        },
+        "void:distinctSubjects": {
+          "Literal:xsd:int": 1
+        },
+        "void:triples": {
+          "Literal:xsd:int": 1
+        },
+        "dcterms:accrualPeriodicity": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:issued": {
+          "Literal:xsd:date": 1
+        },
+        "void:vocabulary": {
+          "Resource": 2
+        },
+        "dcterms:publisher": {
+          "Resource": 1
+        },
+        "dcterms:license": {
+          "Resource": 1
+        },
+        "void:dataDump": {
+          "Resource": 1
+        },
+        "void:sparqlEndpoint": {
+          "Resource": 1
+        },
+        "void:uriLookupEndpoint": {
+          "Resource": 1
+        },
+        "dcat:landingPage": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "void:Dataset",
+      "pav:authoredBy": {
+        "@id": "foaf:Person"
+      },
+      "dcat:Distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "void:exampleResource": {
+        "@id": "201108:LongForm"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "void:distinctObjects": {
+        "@type": "xsd:int"
+      },
+      "void:distinctSubjects": {
+        "@type": "xsd:int"
+      },
+      "void:triples": {
+        "@type": "xsd:int"
+      },
+      "dcterms:accrualPeriodicity": {
+        "@type": "xsd:string"
+      },
+      "dcterms:issued": {
+        "@type": "xsd:date"
+      },
+      "void:vocabulary": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "void:dataDump": {
+        "@id": "rdfs:Resource"
+      },
+      "void:sparqlEndpoint": {
+        "@id": "rdfs:Resource"
+      },
+      "void:uriLookupEndpoint": {
+        "@id": "rdfs:Resource"
+      },
+      "dcat:landingPage": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pav:authoredBy": {
+          "foaf:Person": 2
+        },
+        "dcat:Distribution": {
+          "dcat:Distribution": 1
+        },
+        "void:exampleResource": {
+          "201108:LongForm": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 1
+        },
+        "void:distinctObjects": {
+          "Literal:xsd:int": 1
+        },
+        "void:distinctSubjects": {
+          "Literal:xsd:int": 1
+        },
+        "void:triples": {
+          "Literal:xsd:int": 1
+        },
+        "dcterms:accrualPeriodicity": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:issued": {
+          "Literal:xsd:date": 1
+        },
+        "void:vocabulary": {
+          "Resource": 2
+        },
+        "dcterms:publisher": {
+          "Resource": 1
+        },
+        "dcterms:license": {
+          "Resource": 1
+        },
+        "void:dataDump": {
+          "Resource": 1
+        },
+        "void:sparqlEndpoint": {
+          "Resource": 1
+        },
+        "void:uriLookupEndpoint": {
+          "Resource": 1
+        },
+        "dcat:landingPage": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "void:DatasetDescription",
+      "pav:createdBy": {
+        "@id": "foaf:Person"
+      },
+      "foaf:primaryTopic": [
+        {
+          "@id": "void:Dataset"
+        },
+        {
+          "@id": "dctypes:Dataset"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:issued": {
+        "@type": "xsd:dateTime"
+      },
+      "pav:createdOn": {
+        "@type": "xsd:dateTime"
+      },
+      "pav:createdWith": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pav:createdBy": {
+          "foaf:Person": 1
+        },
+        "foaf:primaryTopic": {
+          "void:Dataset": 1,
+          "dctypes:Dataset": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:issued": {
+          "Literal:xsd:dateTime": 1
+        },
+        "pav:createdOn": {
+          "Literal:xsd:dateTime": 1
+        },
+        "pav:createdWith": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "foaf:Person",
+      "foaf:family_name": {
+        "@type": "xsd:string"
+      },
+      "foaf:givenname": {
+        "@type": "xsd:string"
+      },
+      "foaf:mbox": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "foaf:family_name": {
+          "Literal:xsd:string": 2
+        },
+        "foaf:givenname": {
+          "Literal:xsd:string": 2
+        },
+        "foaf:mbox": {
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "201108:LongForm",
+      "201108:frequency": {
+        "@type": "xsd:string"
+      },
+      "owl:sameAs": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "201108:frequency": {
+          "Literal:xsd:string": 5278813
+        },
+        "owl:sameAs": {
+          "Resource": 113469
+        }
+      }
+    },
+    {
+      "@id": "201108:PubMedID",
+      "201108:publishedIn": {
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "_counts": {
+        "201108:publishedIn": {
+          "Literal:xsd:nonNegativeInteger": 16395831
+        }
+      }
+    },
+    {
+      "@id": "201108:ShortForm",
+      "201108:frequency": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "201108:frequency": {
+          "Literal:xsd:string": 1429334
+        }
+      }
+    },
+    {
+      "@id": "dcat:Distribution",
+      "dcat:mediaType": {
+        "@type": "xsd:string"
+      },
+      "dcat:downloadURL": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcat:mediaType": {
+          "Literal:xsd:string": 1
+        },
+        "dcat:downloadURL": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "void:Linkset",
+      "void:target": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:target": {
+          "Resource": 3
+        }
+      }
+    },
+    {
+      "@id": "owl:Restriction",
+      "owl:onClass": {
+        "@id": "owl:Class"
+      },
+      "owl:allValuesFrom": {
+        "@id": "owl:Class"
+      },
+      "owl:someValuesFrom": {
+        "@id": "owl:Class"
+      },
+      "owl:onProperty": [
+        {
+          "@id": "owl:ObjectProperty"
+        },
+        {
+          "@id": "owl:DatatypeProperty"
+        }
+      ],
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "owl:onDataRange": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:onClass": {
+          "owl:Class": 10
+        },
+        "owl:allValuesFrom": {
+          "owl:Class": 3
+        },
+        "owl:someValuesFrom": {
+          "owl:Class": 4
+        },
+        "owl:onProperty": {
+          "owl:ObjectProperty": 17,
+          "owl:DatatypeProperty": 1
+        },
+        "owl:qualifiedCardinality": {
+          "Literal:xsd:nonNegativeInteger": 11
+        },
+        "owl:onDataRange": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "201108:CooccurringShortFormList",
+      "201108:hasMemberOf": {
+        "@id": "201108:ShortForm"
+      },
+      "_counts": {
+        "201108:hasMemberOf": {
+          "201108:ShortForm": 93522745
+        }
+      }
+    },
+    {
+      "@id": "201108:PairCluster",
+      "201108:hasShortFormRepresentationOf": {
+        "@id": "201108:ShortForm"
+      },
+      "201108:hasLongFormRepresentationOf": {
+        "@id": "201108:LongForm"
+      },
+      "201108:inResearchAreaOf": [
+        {
+          "@id": "201108:ResearchArea"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "201108:contains": {
+        "@id": "201108:PairList"
+      },
+      "201108:cooccursWith": {
+        "@id": "201108:CooccurringShortFormList"
+      },
+      "201108:appearsIn": {
+        "@id": "201108:PubMedIDList"
+      },
+      "201108:frequency": {
+        "@type": "xsd:string"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "201108:hasShortFormRepresentationOf": {
+          "201108:ShortForm": 3937182
+        },
+        "201108:hasLongFormRepresentationOf": {
+          "201108:LongForm": 3937182
+        },
+        "201108:inResearchAreaOf": {
+          "201108:ResearchArea": 3709430,
+          "Resource": 9
+        },
+        "201108:contains": {
+          "201108:PairList": 3937182
+        },
+        "201108:cooccursWith": {
+          "201108:CooccurringShortFormList": 3356081
+        },
+        "201108:appearsIn": {
+          "201108:PubMedIDList": 3937182
+        },
+        "201108:frequency": {
+          "Literal:xsd:string": 3937182
+        },
+        "skos:exactMatch": {
+          "Resource": 160091
+        }
+      }
+    },
+    {
+      "@id": "201108:PairList",
+      "201108:hasMemberOf": {
+        "@id": "201108:EachPair"
+      },
+      "_counts": {
+        "201108:hasMemberOf": {
+          "201108:EachPair": 6202020
+        }
+      }
+    },
+    {
+      "@id": "201108:PubMedIDList",
+      "201108:hasMemberOf": {
+        "@id": "201108:PubMedID"
+      },
+      "_counts": {
+        "201108:hasMemberOf": {
+          "201108:PubMedID": 78162785
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-03T03:30:38.146543+00:00",
+    "endpoint": "http://data.allie.dbcls.jp/sparql",
+    "dataset_name": "allie",
+    "pattern_count": 340,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:Class": "Class",
+    "owl:complementOf": "complementOf",
+    "owl:Ontology": "Ontology",
+    "gr:BusinessEntity": "BusinessEntity",
+    "gr:offers": "offers",
+    "gr:Offering": "Offering",
+    "gr:availableAtOrFrom": "availableAtOrFrom",
+    "gr:LocationOfSalesOrServiceProvisioning": "LocationOfSalesOrServiceProvisioning",
+    "gr:includes": "includes",
+    "gr:ActualProductOrServicesInstance": "ActualProductOrServicesInstance",
+    "gr:ProductOrServiceSomeInstancePlaceholder": "ProductOrServiceSomeInstancePlaceholder",
+    "gr:hasPriceSpecification": "hasPriceSpecification",
+    "gr:PriceSpecification": "PriceSpecification",
+    "gr:includesObject": "includesObject",
+    "gr:TypeAndQuantityNode": "TypeAndQuantityNode",
+    "owl:equivalentClass": "equivalentClass",
+    "owl:Restriction": "Restriction",
+    "gr:typeOfGood": "typeOfGood",
+    "gr:ProductOrServicesSomeInstancesPlaceholder": "ProductOrServicesSomeInstancesPlaceholder",
+    "514:C_AKJ315005-tax": "C_AKJ315005-tax",
+    "514:C_AAB316003-tax": "C_AAB316003-tax",
+    "514:C_AKE112003-tax": "C_AKE112003-tax",
+    "dcterms:created": "created",
+    "owl:versionInfo": "versionInfo",
+    "gr:legalName": "legalName",
+    "gr:amountOfThisGood": "amountOfThisGood",
+    "gr:hasUnitOfMeasurement": "hasUnitOfMeasurement",
+    "gr:validFrom": "validFrom",
+    "gr:validThrough": "validThrough",
+    "gr:eligibleRegions": "eligibleRegions",
+    "dc:creator": "creator",
+    "gr:Manufacturer": "Manufacturer",
+    "owl:imports": "imports",
+    "owl:priorVersion": "priorVersion",
+    "owl:sameAs": "sameAs",
+    "foaf:homepage": "homepage",
+    "foaf:logo": "logo",
+    "foaf:maker": "maker",
+    "gr:hasBusinessFunction": "hasBusinessFunction",
+    "gr:eligibleCustomerTypes": "eligibleCustomerTypes",
+    "gr:acceptedPaymentMethods": "acceptedPaymentMethods",
+    "gr:availableDeliveryMethods": "availableDeliveryMethods",
+    "dc:publisher": "publisher",
+    "dcterms:license": "license",
+    "owl:ObjectProperty": "ObjectProperty",
+    "owl:inverseOf": "inverseOf",
+    "201108:EachPair": "EachPair",
+    "201108:hasLongFormOf": "hasLongFormOf",
+    "201108:LongForm": "LongForm",
+    "201108:hasShortFormOf": "hasShortFormOf",
+    "201108:ShortForm": "ShortForm",
+    "201108:inResearchAreaOf": "inResearchAreaOf",
+    "201108:ResearchArea": "ResearchArea",
+    "201108:cooccursWith": "cooccursWith",
+    "201108:CooccurringShortFormList": "CooccurringShortFormList",
+    "201108:appearsIn": "appearsIn",
+    "201108:PubMedIDList": "PubMedIDList",
+    "dctypes:Dataset": "Dataset",
+    "pav:authoredBy": "authoredBy",
+    "foaf:Person": "Person",
+    "void:Dataset": "Dataset",
+    "void:DatasetDescription": "DatasetDescription",
+    "pav:createdBy": "createdBy",
+    "dcat:Distribution": "Distribution",
+    "foaf:primaryTopic": "primaryTopic",
+    "void:exampleResource": "exampleResource",
+    "201108:frequency": "frequency",
+    "foaf:family_name": "family_name",
+    "foaf:givenname": "givenname",
+    "201108:PubMedID": "PubMedID",
+    "201108:publishedIn": "publishedIn",
+    "dcterms:title": "title",
+    "dcterms:description": "description",
+    "void:distinctObjects": "distinctObjects",
+    "void:distinctSubjects": "distinctSubjects",
+    "void:triples": "triples",
+    "dcat:mediaType": "mediaType",
+    "dcterms:accrualPeriodicity": "accrualPeriodicity",
+    "dcterms:issued": "issued",
+    "pav:createdOn": "createdOn",
+    "foaf:mbox": "mbox",
+    "void:vocabulary": "vocabulary",
+    "dcterms:publisher": "publisher",
+    "dcat:downloadURL": "downloadURL",
+    "void:dataDump": "dataDump",
+    "void:sparqlEndpoint": "sparqlEndpoint",
+    "void:Linkset": "Linkset",
+    "void:target": "target",
+    "void:uriLookupEndpoint": "uriLookupEndpoint",
+    "dcat:landingPage": "landingPage",
+    "pav:createdWith": "createdWith",
+    "owl:onClass": "onClass",
+    "owl:allValuesFrom": "allValuesFrom",
+    "owl:someValuesFrom": "someValuesFrom",
+    "owl:onProperty": "onProperty",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "201108:hasMemberOf": "hasMemberOf",
+    "201108:PairCluster": "PairCluster",
+    "201108:hasShortFormRepresentationOf": "hasShortFormRepresentationOf",
+    "201108:hasLongFormRepresentationOf": "hasLongFormRepresentationOf",
+    "201108:contains": "contains",
+    "201108:PairList": "PairList",
+    "owl:qualifiedCardinality": "qualifiedCardinality",
+    "owl:onDataRange": "onDataRange",
+    "skos:exactMatch": "exactMatch"
+  }
+}

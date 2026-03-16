@@ -37,11 +37,11 @@ export interface EndpointEntry {
 export class IriResolver extends HTMLElement {
   private root: ShadowRoot;
 
-  /** Resolved map:  IRI → { datasets: Map<datasetName, {types, endpoint, graph}> } */
+  /** Resolved map:  IRI -> { datasets: Map<datasetName, {types, endpoint, graph}> } */
   private resolvedIris = new Map<string, ResolvedIri>();
   private selectedIris = new Set<string>();
 
-  /** Class URI → list of instance IRIs that resolve to that class. */
+  /** Class URI -> list of instance IRIs that resolve to that class. */
   private classBindings = new Map<string, string[]>();
 
   /** Manually registered endpoints (e.g. from sources.csv or dataset-selector) */
@@ -70,7 +70,7 @@ export class IriResolver extends HTMLElement {
   }
 
   /**
-   * Return the current class → instance IRI bindings.
+   * Return the current class -> instance IRI bindings.
    *
    * After resolution, each schema class URI maps to the instance IRIs
    * the user pasted that are of that type.  The sparql-editor uses this
@@ -198,7 +198,7 @@ export class IriResolver extends HTMLElement {
         <div class="ir-desc">
           Paste IRIs to discover their <strong>rdf:type</strong> and see which
           schema classes contain your data. Matched classes will be highlighted
-          on the diagram — draw paths between them, and the resolved IRIs will
+          on the diagram - draw paths between them, and the resolved IRIs will
           be injected as VALUES bindings in the generated SPARQL query.
         </div>
 
@@ -209,7 +209,7 @@ export class IriResolver extends HTMLElement {
         <details style="font-size:11px">
           <summary style="cursor:pointer;color:#0066cc;">Endpoints</summary>
           <div class="ir-ep-list" style="margin-top:4px">
-            <div class="ir-ep-empty">No endpoints configured — add one below</div>
+            <div class="ir-ep-empty">No endpoints configured - add one below</div>
           </div>
           <div class="ir-endpoint-row" style="margin-top:4px">
             <input class="ir-custom-ep" placeholder="https://sparql.example.org/query" />
@@ -274,7 +274,7 @@ export class IriResolver extends HTMLElement {
     // Merge diagram-sourced endpoints (from datasets' schemas) if available
     const eps = this.getEffectiveEndpoints();
     if (eps.length === 0) {
-      this.setStatus('No endpoints configured — add one above', 'warning');
+      this.setStatus('No endpoints configured - add one above', 'warning');
       return;
     }
 
@@ -336,7 +336,7 @@ export class IriResolver extends HTMLElement {
     this.setLoading(false);
     this.renderResults();
 
-    // Auto-select all resolved IRIs and immediately apply —
+    // Auto-select all resolved IRIs and immediately apply -
     // this loads the matching datasets and renders matched classes
     if (foundCount > 0) {
       this.selectAll();
@@ -430,7 +430,7 @@ export class IriResolver extends HTMLElement {
 
     const all = this.getEffectiveEndpoints();
     if (all.length === 0) {
-      list.innerHTML = `<div class="ir-ep-empty">No endpoints configured — add one above</div>`;
+      list.innerHTML = `<div class="ir-ep-empty">No endpoints configured - add one above</div>`;
       return;
     }
 
@@ -485,7 +485,7 @@ export class IriResolver extends HTMLElement {
   }
 
   // ======================================================================
-  // Selection (internal — all resolved IRIs are auto-selected)
+  // Selection (internal - all resolved IRIs are auto-selected)
   // ======================================================================
 
   private selectAll(): void {
@@ -493,14 +493,14 @@ export class IriResolver extends HTMLElement {
   }
 
   // ======================================================================
-  // Apply → render matching classes & push VALUES bindings
+  // Apply -> render matching classes & push VALUES bindings
   // ======================================================================
 
   /**
    * For each selected IRI:
    *  1. Collect its discovered rdf:type(s)
    *  2. If no schema is loaded yet, auto-load all datasets whose endpoints
-   *     produced results — this is the "entity matching" workflow
+   *     produced results - this is the "entity matching" workflow
    *  3. Match those types to classes present in the loaded schema
    *  4. Re-render the diagram with the matched classes as root nodes
    *  5. Highlight the matched nodes on the diagram and zoom to fit
@@ -534,12 +534,12 @@ export class IriResolver extends HTMLElement {
       return;
     }
 
-    // ── 2. Ensure schema is loaded — auto-load matching datasets ──────
+    // ── 2. Ensure schema is loaded - auto-load matching datasets ──────
     const diagram = this.getDiagram();
     let schema = diagram?.getSchema();
 
     if (!schema) {
-      // No schema yet — try to auto-load datasets whose endpoints
+      // No schema yet - try to auto-load datasets whose endpoints
       // matched.  Map endpoint-based dataset names back to dataset IDs.
       const selector = document.querySelector<DatasetSelector>('dataset-selector');
       if (selector) {
@@ -559,7 +559,7 @@ export class IriResolver extends HTMLElement {
       }
 
       if (!schema) {
-        this.setStatus('Could not load schema — select datasets manually', 'error');
+        this.setStatus('Could not load schema - select datasets manually', 'error');
         return;
       }
     }
@@ -588,7 +588,7 @@ export class IriResolver extends HTMLElement {
       }
     }
 
-    // ── 4. Build class → resolved IRIs map (for badges & VALUES) ────
+    // ── 4. Build class -> resolved IRIs map (for badges & VALUES) ────
     //   For each resolved IRI, find which matched root class(es) it
     //   belongs to via its rdf:type(s).
     const classToIris = new Map<string, string[]>();

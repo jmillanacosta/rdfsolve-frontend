@@ -1,0 +1,116 @@
+{
+  "@context": {
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "fabio": "http://purl.org/spar/fabio/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "30": "http://prismstandard.org/namespaces/basic/3.0/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "vocabulary:Journal",
+      "fabio:hasNationalLibraryOfMedicineJournalId": {
+        "@type": "xsd:string"
+      },
+      "30:eissn": {
+        "@type": "xsd:string"
+      },
+      "30:issn": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "fabio:hasNationalLibraryOfMedicineJournalId": {
+          "Literal:xsd:string": 39859
+        },
+        "30:eissn": {
+          "Literal:xsd:string": 19095
+        },
+        "30:issn": {
+          "Literal:xsd:string": 29521
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 39822
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 39859
+        },
+        "skos:exactMatch": {
+          "Resource": 39859
+        }
+      }
+    },
+    {
+      "@id": "fabio:Journal",
+      "fabio:hasNationalLibraryOfMedicineJournalId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "30:eissn": {
+        "@type": "xsd:string"
+      },
+      "30:issn": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "fabio:hasNationalLibraryOfMedicineJournalId": {
+          "Literal:xsd:string": 39859
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 39822
+        },
+        "30:eissn": {
+          "Literal:xsd:string": 19095
+        },
+        "30:issn": {
+          "Literal:xsd:string": 29521
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 39859
+        },
+        "skos:exactMatch": {
+          "Resource": 39859
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:40:13.077212+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.journal",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/journal"
+    ],
+    "pattern_count": 14,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "vocabulary:Journal": "Journal",
+    "fabio:hasNationalLibraryOfMedicineJournalId": "hasNationalLibraryOfMedicineJournalId",
+    "fabio:Journal": "Journal",
+    "30:eissn": "eissn",
+    "fabio:hasNLMJournalTitleAbbreviation": "hasNLMJournalTitleAbbreviation",
+    "30:issn": "issn",
+    "dcterms:title": "title",
+    "skos:exactMatch": "exactMatch"
+  }
+}

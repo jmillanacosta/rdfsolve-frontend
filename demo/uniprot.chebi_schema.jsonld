@@ -1,0 +1,216 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "oboinowl": "http://www.geneontology.org/formats/oboInOwl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "iao": "http://purl.obolibrary.org/obo/IAO_",
+    "uniprot.core": "http://purl.uniprot.org/core/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "owl:Axiom",
+      "owl:annotatedSource": {
+        "@id": "owl:Class"
+      },
+      "oboinowl:hasDbXref": {
+        "@type": "xsd:string"
+      },
+      "owl:annotatedTarget": {
+        "@type": "xsd:string"
+      },
+      "owl:annotatedProperty": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:annotatedSource": {
+          "owl:Class": 17381
+        },
+        "oboinowl:hasDbXref": {
+          "Literal:xsd:string": 17381
+        },
+        "owl:annotatedTarget": {
+          "Literal:xsd:string": 17381
+        },
+        "owl:annotatedProperty": {
+          "Resource": 17381
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "owl:inverseOf": [
+        {
+          "@id": "owl:ObjectProperty"
+        },
+        {
+          "@id": "owl:TransitiveProperty"
+        }
+      ],
+      "_counts": {
+        "owl:inverseOf": {
+          "owl:ObjectProperty": 4,
+          "owl:TransitiveProperty": 1
+        }
+      }
+    },
+    {
+      "@id": "owl:Restriction",
+      "owl:onProperty": [
+        {
+          "@id": "owl:ObjectProperty"
+        },
+        {
+          "@id": "owl:TransitiveProperty"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "owl:someValuesFrom": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "_counts": {
+        "owl:onProperty": {
+          "owl:ObjectProperty": 94569,
+          "owl:TransitiveProperty": 4100,
+          "Resource": 8966
+        },
+        "owl:someValuesFrom": {
+          "owl:Class": 103528,
+          "Resource": 7
+        }
+      }
+    },
+    {
+      "@id": "owl:TransitiveProperty",
+      "owl:inverseOf": {
+        "@id": "owl:ObjectProperty"
+      },
+      "_counts": {
+        "owl:inverseOf": {
+          "owl:ObjectProperty": 1
+        }
+      }
+    },
+    {
+      "@id": "owl:Class",
+      "obo:chebi/charge": {
+        "@type": "xsd:string"
+      },
+      "obo:chebi/formula": {
+        "@type": "xsd:string"
+      },
+      "obo:chebi/inchi": {
+        "@type": "xsd:string"
+      },
+      "obo:chebi/inchikey": {
+        "@type": "xsd:string"
+      },
+      "obo:chebi/smiles": {
+        "@type": "xsd:string"
+      },
+      "iao:0000115": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:name": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:hasAlternativeId": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:hasDbXref": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:hasId": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:hasSynonym": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:inSubset": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "obo:chebi/charge": {
+          "Literal:xsd:string": 192767
+        },
+        "obo:chebi/formula": {
+          "Literal:xsd:string": 192262
+        },
+        "obo:chebi/inchi": {
+          "Literal:xsd:string": 179985
+        },
+        "obo:chebi/inchikey": {
+          "Literal:xsd:string": 179985
+        },
+        "obo:chebi/smiles": {
+          "Literal:xsd:string": 189922
+        },
+        "iao:0000115": {
+          "Literal:xsd:string": 58193
+        },
+        "uniprot.core:name": {
+          "Literal:xsd:string": 17381
+        },
+        "oboinowl:hasAlternativeId": {
+          "Literal:xsd:string": 18802
+        },
+        "oboinowl:hasDbXref": {
+          "Literal:xsd:string": 387429
+        },
+        "oboinowl:hasId": {
+          "Literal:xsd:string": 204585
+        },
+        "oboinowl:hasSynonym": {
+          "Literal:xsd:string": 358029
+        },
+        "oboinowl:inSubset": {
+          "Resource": 204585
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:53:42.027800+00:00",
+    "endpoint": "https://sparql.uniprot.org/sparql/",
+    "dataset_name": "uniprot.chebi",
+    "graph_uris": [
+      "http://sparql.uniprot.org/chebi"
+    ],
+    "pattern_count": 32,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:Axiom": "Axiom",
+    "owl:annotatedSource": "annotatedSource",
+    "owl:Class": "Class",
+    "owl:ObjectProperty": "ObjectProperty",
+    "owl:inverseOf": "inverseOf",
+    "owl:TransitiveProperty": "TransitiveProperty",
+    "owl:Restriction": "Restriction",
+    "owl:onProperty": "onProperty",
+    "owl:someValuesFrom": "someValuesFrom",
+    "oboinowl:hasDbXref": "hasDbXref",
+    "owl:annotatedTarget": "annotatedTarget",
+    "obo:chebi/charge": "charge",
+    "obo:chebi/formula": "formula",
+    "obo:chebi/inchi": "inchi",
+    "obo:chebi/inchikey": "inchikey",
+    "obo:chebi/smiles": "smiles",
+    "iao:0000115": "IAO_0000115",
+    "uniprot.core:name": "name",
+    "oboinowl:hasAlternativeId": "hasAlternativeId",
+    "oboinowl:hasId": "hasId",
+    "oboinowl:hasSynonym": "hasSynonym",
+    "owl:annotatedProperty": "annotatedProperty",
+    "oboinowl:inSubset": "inSubset"
+  }
+}

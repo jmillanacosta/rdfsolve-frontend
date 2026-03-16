@@ -1,0 +1,2236 @@
+{
+  "@context": {
+    "vocab": "https://plantmetwiki.bioinformatics.nl/vocab/",
+    "ro": "http://purl.obolibrary.org/obo/RO_",
+    "wp": "http://vocabularies.wikipathways.org/wp#",
+    "cito": "http://purl.org/spar/cito/",
+    "gpml": "http://vocabularies.wikipathways.org/gpml#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#"
+  },
+  "@graph": [
+    {
+      "@id": "vocab:BiosyntheticGeneCluster",
+      "ro:has_part": {
+        "@id": "wp:GeneProduct"
+      },
+      "wp:organismName": {
+        "@type": "xsd:string"
+      },
+      "dcterms:source": {
+        "@type": "xsd:string"
+      },
+      "wp:organism": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "ro:has_part": {
+          "wp:GeneProduct": 2921
+        },
+        "wp:organismName": {
+          "Literal:xsd:string": 158
+        },
+        "dcterms:source": {
+          "Literal:xsd:string": 158
+        },
+        "wp:organism": {
+          "Resource": 158
+        }
+      }
+    },
+    {
+      "@id": "wp:GeneProduct",
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:isAbout": {
+        "@id": "gpml:DataNode"
+      },
+      "dc:identifier": [
+        {
+          "@id": "wp:GeneProduct"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        }
+      ],
+      "dcterms:isPartOf": [
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:TranscriptionTranslation"
+        },
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        },
+        {
+          "@id": "wp:Catalysis"
+        }
+      ],
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "foaf:page": [
+        {
+          "@id": "wp:GeneProduct"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "wp:organismName": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "wp:organism": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "cito:cites": {
+          "wp:PublicationReference": 654
+        },
+        "wp:isAbout": {
+          "gpml:DataNode": 8209
+        },
+        "dc:identifier": {
+          "wp:GeneProduct": 2739,
+          "wp:DataNode": 2739,
+          "wp:Protein": 17
+        },
+        "dcterms:isPartOf": {
+          "wp:DirectedInteraction": 8245,
+          "wp:Interaction": 8245,
+          "wp:TranscriptionTranslation": 8193,
+          "skos:Collection": 8172,
+          "wp:Pathway": 8172,
+          "wp:Catalysis": 52
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 654
+        },
+        "foaf:page": {
+          "wp:GeneProduct": 56,
+          "wp:DataNode": 56,
+          "Resource": 2083
+        },
+        "wp:organismName": {
+          "Literal:xsd:string": 2921
+        },
+        "dc:source": {
+          "Literal:xsd:string": 2739
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2739
+        },
+        "wp:organism": {
+          "Resource": 2921
+        }
+      }
+    },
+    {
+      "@id": "skos:Collection",
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:isAbout": [
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        }
+      ],
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:organismName": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "wp:organism": {
+        "@id": "rdfs:Resource"
+      },
+      "dc:identifier": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "cito:cites": {
+          "wp:PublicationReference": 16943
+        },
+        "wp:isAbout": {
+          "skos:Collection": 2463,
+          "wp:Pathway": 2463
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 5914
+        },
+        "wp:organismName": {
+          "Literal:xsd:string": 4203
+        },
+        "dc:source": {
+          "Literal:xsd:string": 2463
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 2444
+        },
+        "dc:title": {
+          "Literal:xsd:string": 2463
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2463
+        },
+        "wp:organism": {
+          "Resource": 4169
+        },
+        "dc:identifier": {
+          "Resource": 2463
+        }
+      }
+    },
+    {
+      "@id": "wp:Catalysis",
+      "wp:participants": [
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        },
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:GeneProduct"
+        }
+      ],
+      "wp:isAbout": {
+        "@id": "gpml:Interaction"
+      },
+      "wp:source": [
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        },
+        {
+          "@id": "wp:GeneProduct"
+        }
+      ],
+      "wp:target": [
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        }
+      ],
+      "dcterms:isPartOf": [
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        }
+      ],
+      "_counts": {
+        "wp:participants": {
+          "wp:DataNode": 13255,
+          "wp:Protein": 13255,
+          "wp:Conversion": 13257,
+          "wp:DirectedInteraction": 13257,
+          "wp:Interaction": 13257,
+          "wp:GeneProduct": 52
+        },
+        "wp:isAbout": {
+          "gpml:Interaction": 13257
+        },
+        "wp:source": {
+          "wp:DataNode": 13255,
+          "wp:Protein": 13255,
+          "wp:GeneProduct": 52
+        },
+        "wp:target": {
+          "wp:Conversion": 13257,
+          "wp:DirectedInteraction": 13257,
+          "wp:Interaction": 13257
+        },
+        "dcterms:isPartOf": {
+          "skos:Collection": 13257,
+          "wp:Pathway": 13257
+        }
+      }
+    },
+    {
+      "@id": "wp:Binding",
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:participants": [
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        },
+        {
+          "@id": "wp:Complex"
+        }
+      ],
+      "wp:isAbout": {
+        "@id": "gpml:Group"
+      },
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "dcterms:isPartOf": [
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        }
+      ],
+      "_counts": {
+        "cito:cites": {
+          "wp:PublicationReference": 165
+        },
+        "wp:participants": {
+          "wp:DataNode": 382,
+          "wp:Protein": 323,
+          "wp:Complex": 59
+        },
+        "wp:isAbout": {
+          "gpml:Group": 59
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 165
+        },
+        "dcterms:isPartOf": {
+          "skos:Collection": 59,
+          "wp:Pathway": 59
+        }
+      }
+    },
+    {
+      "@id": "wp:Conversion",
+      "wp:participants": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        }
+      ],
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:isAbout": {
+        "@id": "gpml:Interaction"
+      },
+      "wp:target": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        }
+      ],
+      "wp:source": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        }
+      ],
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "dcterms:isPartOf": [
+        {
+          "@id": "wp:Catalysis"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:Inhibition"
+        },
+        {
+          "@id": "wp:Stimulation"
+        },
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        }
+      ],
+      "_counts": {
+        "wp:participants": {
+          "wp:Metabolite": 26008,
+          "wp:DataNode": 26008
+        },
+        "cito:cites": {
+          "wp:PublicationReference": 1909
+        },
+        "wp:isAbout": {
+          "gpml:Interaction": 19888
+        },
+        "wp:target": {
+          "wp:Metabolite": 18583,
+          "wp:DataNode": 18583
+        },
+        "wp:source": {
+          "wp:Metabolite": 7522,
+          "wp:DataNode": 7522
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 1909
+        },
+        "dcterms:isPartOf": {
+          "wp:Catalysis": 13257,
+          "wp:DirectedInteraction": 17625,
+          "wp:Interaction": 27398,
+          "wp:Inhibition": 3486,
+          "wp:Stimulation": 865,
+          "skos:Collection": 19888,
+          "wp:Pathway": 19888
+        }
+      }
+    },
+    {
+      "@id": "wp:Complex",
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:participants": [
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        }
+      ],
+      "wp:isAbout": {
+        "@id": "gpml:Group"
+      },
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "dcterms:isPartOf": [
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        }
+      ],
+      "_counts": {
+        "cito:cites": {
+          "wp:PublicationReference": 165
+        },
+        "wp:participants": {
+          "wp:DataNode": 323,
+          "wp:Protein": 323
+        },
+        "wp:isAbout": {
+          "gpml:Group": 59
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 165
+        },
+        "dcterms:isPartOf": {
+          "skos:Collection": 59,
+          "wp:Pathway": 59
+        }
+      }
+    },
+    {
+      "@id": "wp:ComplexBinding",
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:participants": [
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        },
+        {
+          "@id": "wp:Complex"
+        }
+      ],
+      "wp:isAbout": {
+        "@id": "gpml:Group"
+      },
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "dcterms:isPartOf": [
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        }
+      ],
+      "_counts": {
+        "cito:cites": {
+          "wp:PublicationReference": 165
+        },
+        "wp:participants": {
+          "wp:DataNode": 382,
+          "wp:Protein": 323,
+          "wp:Complex": 59
+        },
+        "wp:isAbout": {
+          "gpml:Group": 59
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 165
+        },
+        "dcterms:isPartOf": {
+          "skos:Collection": 59,
+          "wp:Pathway": 59
+        }
+      }
+    },
+    {
+      "@id": "wp:DirectedInteraction",
+      "wp:participants": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:GeneProduct"
+        },
+        {
+          "@id": "wp:Protein"
+        },
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        }
+      ],
+      "wp:source": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:GeneProduct"
+        },
+        {
+          "@id": "wp:Protein"
+        }
+      ],
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:isAbout": {
+        "@id": "gpml:Interaction"
+      },
+      "wp:target": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        },
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:GeneProduct"
+        }
+      ],
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "dcterms:isPartOf": [
+        {
+          "@id": "wp:Catalysis"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:Inhibition"
+        },
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        },
+        {
+          "@id": "wp:Stimulation"
+        }
+      ],
+      "_counts": {
+        "wp:participants": {
+          "wp:Metabolite": 30369,
+          "wp:DataNode": 59986,
+          "wp:GeneProduct": 8245,
+          "wp:Protein": 21461,
+          "wp:Conversion": 17625,
+          "wp:DirectedInteraction": 17625,
+          "wp:Interaction": 17625
+        },
+        "wp:source": {
+          "wp:Metabolite": 11883,
+          "wp:DataNode": 33337,
+          "wp:GeneProduct": 8245,
+          "wp:Protein": 13298
+        },
+        "cito:cites": {
+          "wp:PublicationReference": 4998
+        },
+        "wp:isAbout": {
+          "gpml:Interaction": 45713
+        },
+        "wp:target": {
+          "wp:Metabolite": 18583,
+          "wp:DataNode": 26783,
+          "wp:Protein": 8200,
+          "wp:Conversion": 17625,
+          "wp:DirectedInteraction": 17625,
+          "wp:Interaction": 17625,
+          "wp:GeneProduct": 37
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 4998
+        },
+        "dcterms:isPartOf": {
+          "wp:Catalysis": 13257,
+          "wp:DirectedInteraction": 17625,
+          "wp:Interaction": 27398,
+          "wp:Inhibition": 3486,
+          "skos:Collection": 45713,
+          "wp:Pathway": 45713,
+          "wp:Stimulation": 865
+        }
+      }
+    },
+    {
+      "@id": "wp:Inhibition",
+      "wp:participants": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        }
+      ],
+      "wp:source": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        }
+      ],
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:isAbout": {
+        "@id": "gpml:Interaction"
+      },
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:target": [
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        }
+      ],
+      "dcterms:isPartOf": [
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        }
+      ],
+      "_counts": {
+        "wp:participants": {
+          "wp:Metabolite": 3485,
+          "wp:DataNode": 3485,
+          "wp:Conversion": 3486,
+          "wp:DirectedInteraction": 3486,
+          "wp:Interaction": 3486
+        },
+        "wp:source": {
+          "wp:Metabolite": 3485,
+          "wp:DataNode": 3485
+        },
+        "cito:cites": {
+          "wp:PublicationReference": 2323
+        },
+        "wp:isAbout": {
+          "gpml:Interaction": 3486
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 2323
+        },
+        "wp:target": {
+          "wp:Conversion": 3486,
+          "wp:DirectedInteraction": 3486,
+          "wp:Interaction": 3486
+        },
+        "dcterms:isPartOf": {
+          "skos:Collection": 3486,
+          "wp:Pathway": 3486
+        }
+      }
+    },
+    {
+      "@id": "wp:Interaction",
+      "wp:participants": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:GeneProduct"
+        },
+        {
+          "@id": "wp:Protein"
+        },
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:Complex"
+        }
+      ],
+      "wp:source": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        },
+        {
+          "@id": "wp:GeneProduct"
+        }
+      ],
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:isAbout": [
+        {
+          "@id": "gpml:Interaction"
+        },
+        {
+          "@id": "gpml:Group"
+        }
+      ],
+      "wp:target": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        },
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:GeneProduct"
+        }
+      ],
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "dcterms:isPartOf": [
+        {
+          "@id": "wp:Catalysis"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:Inhibition"
+        },
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        },
+        {
+          "@id": "wp:Stimulation"
+        }
+      ],
+      "_counts": {
+        "wp:participants": {
+          "wp:Metabolite": 39060,
+          "wp:DataNode": 69059,
+          "wp:GeneProduct": 8245,
+          "wp:Protein": 21784,
+          "wp:Conversion": 27398,
+          "wp:DirectedInteraction": 27398,
+          "wp:Interaction": 27398,
+          "wp:Complex": 59
+        },
+        "wp:source": {
+          "wp:Metabolite": 11883,
+          "wp:DataNode": 33337,
+          "wp:Protein": 13298,
+          "wp:GeneProduct": 8245
+        },
+        "cito:cites": {
+          "wp:PublicationReference": 5163
+        },
+        "wp:isAbout": {
+          "gpml:Interaction": 55486,
+          "gpml:Group": 59
+        },
+        "wp:target": {
+          "wp:Metabolite": 18583,
+          "wp:DataNode": 26783,
+          "wp:Protein": 8200,
+          "wp:Conversion": 17625,
+          "wp:DirectedInteraction": 17625,
+          "wp:Interaction": 17625,
+          "wp:GeneProduct": 37
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 5163
+        },
+        "dcterms:isPartOf": {
+          "wp:Catalysis": 13257,
+          "wp:DirectedInteraction": 17625,
+          "wp:Interaction": 27398,
+          "wp:Inhibition": 3486,
+          "skos:Collection": 55545,
+          "wp:Pathway": 55545,
+          "wp:Stimulation": 865
+        }
+      }
+    },
+    {
+      "@id": "wp:Metabolite",
+      "wp:bdbChEBI": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "wp:bdbHmdb": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "wp:bdbInChIKey": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:isAbout": {
+        "@id": "gpml:DataNode"
+      },
+      "dcterms:isPartOf": [
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        },
+        {
+          "@id": "wp:Inhibition"
+        },
+        {
+          "@id": "wp:Stimulation"
+        }
+      ],
+      "dc:identifier": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        }
+      ],
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:bdbKeggCompound": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "owl:sameAs": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "wp:bdbChemspider": {
+        "@id": "rdfs:Resource"
+      },
+      "wp:bdbLipidMaps": {
+        "@id": "rdfs:Resource"
+      },
+      "wp:bdbPubChem": {
+        "@id": "rdfs:Resource"
+      },
+      "wp:bdbWikidata": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "wp:bdbChEBI": {
+          "wp:Metabolite": 175,
+          "wp:DataNode": 175,
+          "Resource": 2750
+        },
+        "wp:bdbHmdb": {
+          "wp:Metabolite": 2,
+          "wp:DataNode": 2,
+          "Resource": 986
+        },
+        "wp:bdbInChIKey": {
+          "wp:Metabolite": 2908,
+          "wp:DataNode": 2908,
+          "Resource": 70
+        },
+        "cito:cites": {
+          "wp:PublicationReference": 1741
+        },
+        "wp:isAbout": {
+          "gpml:DataNode": 22053
+        },
+        "dcterms:isPartOf": {
+          "wp:Interaction": 39060,
+          "wp:Conversion": 26008,
+          "wp:DirectedInteraction": 30369,
+          "skos:Collection": 22050,
+          "wp:Pathway": 22050,
+          "wp:Inhibition": 3485,
+          "wp:Stimulation": 859
+        },
+        "dc:identifier": {
+          "wp:Metabolite": 4576,
+          "wp:DataNode": 4576
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 1741
+        },
+        "wp:bdbKeggCompound": {
+          "wp:Metabolite": 49,
+          "wp:DataNode": 49,
+          "Resource": 1083
+        },
+        "dc:source": {
+          "Literal:xsd:string": 4576
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 4576
+        },
+        "owl:sameAs": {
+          "Resource": 811
+        },
+        "foaf:page": {
+          "Resource": 294
+        },
+        "wp:bdbChemspider": {
+          "Resource": 2368
+        },
+        "wp:bdbLipidMaps": {
+          "Resource": 511
+        },
+        "wp:bdbPubChem": {
+          "Resource": 3217
+        },
+        "wp:bdbWikidata": {
+          "Resource": 3158
+        }
+      }
+    },
+    {
+      "@id": "wp:PublicationReference",
+      "dcterms:isPartOf": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:GeneProduct"
+        },
+        {
+          "@id": "wp:Protein"
+        },
+        {
+          "@id": "wp:Complex"
+        },
+        {
+          "@id": "wp:Binding"
+        },
+        {
+          "@id": "wp:ComplexBinding"
+        },
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Inhibition"
+        },
+        {
+          "@id": "wp:Stimulation"
+        },
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        }
+      ],
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:isPartOf": {
+          "wp:Metabolite": 1741,
+          "wp:DataNode": 5439,
+          "wp:GeneProduct": 654,
+          "wp:Protein": 2895,
+          "wp:Complex": 165,
+          "wp:Binding": 165,
+          "wp:ComplexBinding": 165,
+          "wp:Interaction": 5163,
+          "wp:Conversion": 1909,
+          "wp:DirectedInteraction": 4998,
+          "wp:Inhibition": 2323,
+          "wp:Stimulation": 749,
+          "skos:Collection": 5914,
+          "wp:Pathway": 5914
+        },
+        "dc:source": {
+          "Literal:xsd:string": 5723
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5723
+        },
+        "foaf:page": {
+          "Resource": 5723
+        }
+      }
+    },
+    {
+      "@id": "wp:Stimulation",
+      "wp:participants": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:Protein"
+        }
+      ],
+      "wp:source": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        }
+      ],
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:isAbout": {
+        "@id": "gpml:Interaction"
+      },
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:target": [
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        }
+      ],
+      "dcterms:isPartOf": [
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        }
+      ],
+      "_counts": {
+        "wp:participants": {
+          "wp:Metabolite": 859,
+          "wp:DataNode": 865,
+          "wp:Conversion": 865,
+          "wp:DirectedInteraction": 865,
+          "wp:Interaction": 865,
+          "wp:Protein": 6
+        },
+        "wp:source": {
+          "wp:Metabolite": 859,
+          "wp:DataNode": 865,
+          "wp:Protein": 6
+        },
+        "cito:cites": {
+          "wp:PublicationReference": 749
+        },
+        "wp:isAbout": {
+          "gpml:Interaction": 865
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 749
+        },
+        "wp:target": {
+          "wp:Conversion": 865,
+          "wp:DirectedInteraction": 865,
+          "wp:Interaction": 865
+        },
+        "dcterms:isPartOf": {
+          "skos:Collection": 865,
+          "wp:Pathway": 865
+        }
+      }
+    },
+    {
+      "@id": "wp:TranscriptionTranslation",
+      "wp:participants": [
+        {
+          "@id": "wp:GeneProduct"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        }
+      ],
+      "wp:source": [
+        {
+          "@id": "wp:GeneProduct"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        }
+      ],
+      "wp:isAbout": {
+        "@id": "gpml:Interaction"
+      },
+      "wp:target": [
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        },
+        {
+          "@id": "wp:GeneProduct"
+        }
+      ],
+      "dcterms:isPartOf": [
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        }
+      ],
+      "_counts": {
+        "wp:participants": {
+          "wp:GeneProduct": 8193,
+          "wp:DataNode": 16356,
+          "wp:Protein": 8200
+        },
+        "wp:source": {
+          "wp:GeneProduct": 8193,
+          "wp:DataNode": 8193,
+          "wp:Protein": 37
+        },
+        "wp:isAbout": {
+          "gpml:Interaction": 8200
+        },
+        "wp:target": {
+          "wp:DataNode": 8200,
+          "wp:Protein": 8200,
+          "wp:GeneProduct": 37
+        },
+        "dcterms:isPartOf": {
+          "skos:Collection": 8200,
+          "wp:Pathway": 8200
+        }
+      }
+    },
+    {
+      "@id": "gpml:Anchor",
+      "dcterms:isPartOf": [
+        {
+          "@id": "gpml:Interaction"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "gpml:graphId": {
+        "@type": "xsd:string"
+      },
+      "gpml:position": {
+        "@type": "xsd:double"
+      },
+      "gpml:shape": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dcterms:isPartOf": {
+          "gpml:Interaction": 7757,
+          "Resource": 7757
+        },
+        "gpml:graphId": {
+          "Literal:xsd:string": 7757
+        },
+        "gpml:position": {
+          "Literal:xsd:double": 7757
+        },
+        "gpml:shape": {
+          "Literal:xsd:string": 7757
+        }
+      }
+    },
+    {
+      "@id": "gpml:Comment",
+      "dcterms:isPartOf": [
+        {
+          "@id": "gpml:DataNode"
+        },
+        {
+          "@id": "gpml:Interaction"
+        }
+      ],
+      "gpml:commentText": {
+        "@type": "xsd:string"
+      },
+      "gpml:source": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dcterms:isPartOf": {
+          "gpml:DataNode": 12933,
+          "gpml:Interaction": 753
+        },
+        "gpml:commentText": {
+          "Literal:xsd:string": 12615
+        },
+        "gpml:source": {
+          "Literal:xsd:string": 9992
+        }
+      }
+    },
+    {
+      "@id": "gpml:DataNode",
+      "gpml:hasComment": {
+        "@id": "gpml:Comment"
+      },
+      "gpml:textlabel": {
+        "@type": "xsd:string"
+      },
+      "gpml:align": {
+        "@type": "xsd:string"
+      },
+      "gpml:centerX": {
+        "@type": "xsd:double"
+      },
+      "gpml:centerY": {
+        "@type": "xsd:double"
+      },
+      "gpml:color": {
+        "@type": "xsd:string"
+      },
+      "gpml:fillColor": {
+        "@type": "xsd:string"
+      },
+      "gpml:fontDecoration": {
+        "@type": "xsd:string"
+      },
+      "gpml:fontName": {
+        "@type": "xsd:string"
+      },
+      "gpml:fontSize": {
+        "@type": "xsd:double"
+      },
+      "gpml:fontStrikethru": {
+        "@type": "xsd:string"
+      },
+      "gpml:fontStyle": {
+        "@type": "xsd:string"
+      },
+      "gpml:fontWeight": {
+        "@type": "xsd:string"
+      },
+      "gpml:graphId": {
+        "@type": "xsd:string"
+      },
+      "gpml:groupRef": {
+        "@type": "xsd:string"
+      },
+      "gpml:height": {
+        "@type": "xsd:double"
+      },
+      "gpml:lineStyle": {
+        "@type": "xsd:string"
+      },
+      "gpml:lineThickness": {
+        "@type": "xsd:double"
+      },
+      "gpml:shapeType": {
+        "@type": "xsd:string"
+      },
+      "gpml:type": {
+        "@type": "xsd:string"
+      },
+      "gpml:valign": {
+        "@type": "xsd:string"
+      },
+      "gpml:width": {
+        "@type": "xsd:double"
+      },
+      "gpml:xrefDataSource": {
+        "@type": "xsd:string"
+      },
+      "gpml:xrefId": {
+        "@type": "xsd:string"
+      },
+      "gpml:zorder": {
+        "@type": "xsd:long"
+      },
+      "dcterms:isPartOf": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "gpml:hasComment": {
+          "gpml:Comment": 12933
+        },
+        "gpml:textlabel": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:align": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:centerX": {
+          "Literal:xsd:double": 42170
+        },
+        "gpml:centerY": {
+          "Literal:xsd:double": 42170
+        },
+        "gpml:color": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:fillColor": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:fontDecoration": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:fontName": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:fontSize": {
+          "Literal:xsd:double": 42170
+        },
+        "gpml:fontStrikethru": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:fontStyle": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:fontWeight": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:graphId": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:groupRef": {
+          "Literal:xsd:string": 927
+        },
+        "gpml:height": {
+          "Literal:xsd:double": 42170
+        },
+        "gpml:lineStyle": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:lineThickness": {
+          "Literal:xsd:double": 42170
+        },
+        "gpml:shapeType": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:type": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:valign": {
+          "Literal:xsd:string": 42170
+        },
+        "gpml:width": {
+          "Literal:xsd:double": 42170
+        },
+        "gpml:xrefDataSource": {
+          "Literal:xsd:string": 40833
+        },
+        "gpml:xrefId": {
+          "Literal:xsd:string": 40833
+        },
+        "gpml:zorder": {
+          "Literal:xsd:long": 42170
+        },
+        "dcterms:isPartOf": {
+          "Resource": 42170
+        }
+      }
+    },
+    {
+      "@id": "wp:DataNode",
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:bdbChEBI": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "wp:bdbHmdb": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "wp:bdbInChIKey": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "wp:bdbKeggCompound": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "wp:isAbout": [
+        {
+          "@id": "gpml:DataNode"
+        },
+        {
+          "@id": "gpml:Group"
+        }
+      ],
+      "wp:participants": [
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        }
+      ],
+      "dcterms:isPartOf": [
+        {
+          "@id": "wp:Conversion"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:Catalysis"
+        },
+        {
+          "@id": "wp:TranscriptionTranslation"
+        },
+        {
+          "@id": "wp:Inhibition"
+        },
+        {
+          "@id": "wp:Complex"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Stimulation"
+        },
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        }
+      ],
+      "dc:identifier": [
+        {
+          "@id": "wp:Metabolite"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:GeneProduct"
+        },
+        {
+          "@id": "wp:Protein"
+        }
+      ],
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "owl:sameAs": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "wp:bdbChemspider": {
+        "@id": "rdfs:Resource"
+      },
+      "wp:bdbLipidMaps": {
+        "@id": "rdfs:Resource"
+      },
+      "wp:bdbPubChem": {
+        "@id": "rdfs:Resource"
+      },
+      "wp:bdbWikidata": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "cito:cites": {
+          "wp:PublicationReference": 5439
+        },
+        "wp:bdbChEBI": {
+          "wp:Metabolite": 175,
+          "wp:DataNode": 175,
+          "Resource": 2750
+        },
+        "wp:bdbHmdb": {
+          "wp:Metabolite": 2,
+          "wp:DataNode": 2,
+          "Resource": 986
+        },
+        "wp:bdbInChIKey": {
+          "wp:Metabolite": 2908,
+          "wp:DataNode": 2908,
+          "Resource": 70
+        },
+        "wp:bdbKeggCompound": {
+          "wp:Metabolite": 49,
+          "wp:DataNode": 49,
+          "Resource": 1083
+        },
+        "wp:isAbout": {
+          "gpml:DataNode": 40826,
+          "gpml:Group": 59
+        },
+        "wp:participants": {
+          "wp:DataNode": 323,
+          "wp:Protein": 323
+        },
+        "dcterms:isPartOf": {
+          "wp:Conversion": 26008,
+          "wp:DirectedInteraction": 59986,
+          "wp:Interaction": 68677,
+          "wp:Catalysis": 13255,
+          "wp:TranscriptionTranslation": 16356,
+          "wp:Inhibition": 3485,
+          "wp:Complex": 323,
+          "wp:DataNode": 323,
+          "wp:Stimulation": 865,
+          "skos:Collection": 40831,
+          "wp:Pathway": 40831
+        },
+        "dc:identifier": {
+          "wp:Metabolite": 4576,
+          "wp:DataNode": 11042,
+          "wp:GeneProduct": 2739,
+          "wp:Protein": 3744
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 5439
+        },
+        "dc:source": {
+          "Literal:xsd:string": 11042
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 11042
+        },
+        "owl:sameAs": {
+          "Resource": 811
+        },
+        "foaf:page": {
+          "Resource": 2465
+        },
+        "wp:bdbChemspider": {
+          "Resource": 2368
+        },
+        "wp:bdbLipidMaps": {
+          "Resource": 511
+        },
+        "wp:bdbPubChem": {
+          "Resource": 3217
+        },
+        "wp:bdbWikidata": {
+          "Resource": 3158
+        }
+      }
+    },
+    {
+      "@id": "wp:Pathway",
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:isAbout": [
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        }
+      ],
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:organismName": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "wp:organism": {
+        "@id": "rdfs:Resource"
+      },
+      "dc:identifier": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "cito:cites": {
+          "wp:PublicationReference": 16943
+        },
+        "wp:isAbout": {
+          "skos:Collection": 2463,
+          "wp:Pathway": 2463
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 5914
+        },
+        "wp:organismName": {
+          "Literal:xsd:string": 4203
+        },
+        "dc:source": {
+          "Literal:xsd:string": 2463
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 2444
+        },
+        "dc:title": {
+          "Literal:xsd:string": 2463
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2463
+        },
+        "wp:organism": {
+          "Resource": 4169
+        },
+        "dc:identifier": {
+          "Resource": 2463
+        }
+      }
+    },
+    {
+      "@id": "wp:Protein",
+      "cito:cites": {
+        "@id": "wp:PublicationReference"
+      },
+      "wp:isAbout": {
+        "@id": "gpml:DataNode"
+      },
+      "dcterms:isPartOf": [
+        {
+          "@id": "wp:Catalysis"
+        },
+        {
+          "@id": "wp:DirectedInteraction"
+        },
+        {
+          "@id": "wp:Interaction"
+        },
+        {
+          "@id": "wp:TranscriptionTranslation"
+        },
+        {
+          "@id": "wp:Complex"
+        },
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "skos:Collection"
+        },
+        {
+          "@id": "wp:Pathway"
+        },
+        {
+          "@id": "wp:Stimulation"
+        }
+      ],
+      "dc:identifier": [
+        {
+          "@id": "wp:DataNode"
+        },
+        {
+          "@id": "wp:Protein"
+        },
+        {
+          "@id": "wp:GeneProduct"
+        }
+      ],
+      "dcterms:references": {
+        "@id": "wp:PublicationReference"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "cito:cites": {
+          "wp:PublicationReference": 2895
+        },
+        "wp:isAbout": {
+          "gpml:DataNode": 10638
+        },
+        "dcterms:isPartOf": {
+          "wp:Catalysis": 13255,
+          "wp:DirectedInteraction": 21461,
+          "wp:Interaction": 21461,
+          "wp:TranscriptionTranslation": 8200,
+          "wp:Complex": 323,
+          "wp:DataNode": 323,
+          "skos:Collection": 10587,
+          "wp:Pathway": 10587,
+          "wp:Stimulation": 6
+        },
+        "dc:identifier": {
+          "wp:DataNode": 3744,
+          "wp:Protein": 3744,
+          "wp:GeneProduct": 17
+        },
+        "dcterms:references": {
+          "wp:PublicationReference": 2895
+        },
+        "dc:source": {
+          "Literal:xsd:string": 3744
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3744
+        },
+        "foaf:page": {
+          "Resource": 1757
+        }
+      }
+    },
+    {
+      "@id": "gpml:Interaction",
+      "gpml:hasAnchor": {
+        "@id": "gpml:Anchor"
+      },
+      "gpml:hasComment": {
+        "@id": "gpml:Comment"
+      },
+      "gpml:hasPoint": {
+        "@id": "gpml:Point"
+      },
+      "gpml:color": {
+        "@type": "xsd:string"
+      },
+      "gpml:connectorType": {
+        "@type": "xsd:string"
+      },
+      "gpml:graphId": {
+        "@type": "xsd:string"
+      },
+      "gpml:lineStyle": {
+        "@type": "xsd:string"
+      },
+      "gpml:lineThickness": {
+        "@type": "xsd:double"
+      },
+      "gpml:xrefDataSource": {
+        "@type": "xsd:string"
+      },
+      "gpml:xrefId": {
+        "@type": "xsd:string"
+      },
+      "gpml:zorder": {
+        "@type": "xsd:long"
+      },
+      "dcterms:isPartOf": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "gpml:hasAnchor": {
+          "gpml:Anchor": 7757
+        },
+        "gpml:hasComment": {
+          "gpml:Comment": 753
+        },
+        "gpml:hasPoint": {
+          "gpml:Point": 110972
+        },
+        "gpml:color": {
+          "Literal:xsd:string": 55486
+        },
+        "gpml:connectorType": {
+          "Literal:xsd:string": 55486
+        },
+        "gpml:graphId": {
+          "Literal:xsd:string": 55486
+        },
+        "gpml:lineStyle": {
+          "Literal:xsd:string": 55486
+        },
+        "gpml:lineThickness": {
+          "Literal:xsd:double": 55486
+        },
+        "gpml:xrefDataSource": {
+          "Literal:xsd:string": 29661
+        },
+        "gpml:xrefId": {
+          "Literal:xsd:string": 29661
+        },
+        "gpml:zorder": {
+          "Literal:xsd:long": 55486
+        },
+        "dcterms:isPartOf": {
+          "Resource": 55486
+        }
+      }
+    },
+    {
+      "@id": "gpml:Point",
+      "dcterms:isPartOf": [
+        {
+          "@id": "gpml:Interaction"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "gpml:arrowHead": {
+        "@type": "xsd:string"
+      },
+      "gpml:graphId": {
+        "@type": "xsd:string"
+      },
+      "gpml:graphRef": {
+        "@type": "xsd:string"
+      },
+      "gpml:relX": {
+        "@type": "xsd:double"
+      },
+      "gpml:relY": {
+        "@type": "xsd:double"
+      },
+      "gpml:x": {
+        "@type": "xsd:double"
+      },
+      "gpml:y": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "dcterms:isPartOf": {
+          "gpml:Interaction": 110972,
+          "Resource": 110972
+        },
+        "gpml:arrowHead": {
+          "Literal:xsd:string": 110972
+        },
+        "gpml:graphId": {
+          "Literal:xsd:string": 110972
+        },
+        "gpml:graphRef": {
+          "Literal:xsd:string": 110972
+        },
+        "gpml:relX": {
+          "Literal:xsd:double": 110972
+        },
+        "gpml:relY": {
+          "Literal:xsd:double": 110972
+        },
+        "gpml:x": {
+          "Literal:xsd:double": 110972
+        },
+        "gpml:y": {
+          "Literal:xsd:double": 110972
+        }
+      }
+    },
+    {
+      "@id": "gpml:Group",
+      "gpml:textlabel": {
+        "@type": "xsd:string"
+      },
+      "gpml:graphId": {
+        "@type": "xsd:string"
+      },
+      "gpml:groupId": {
+        "@type": "xsd:string"
+      },
+      "gpml:style": {
+        "@type": "xsd:string"
+      },
+      "dcterms:isPartOf": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "gpml:textlabel": {
+          "Literal:xsd:string": 661
+        },
+        "gpml:graphId": {
+          "Literal:xsd:string": 661
+        },
+        "gpml:groupId": {
+          "Literal:xsd:string": 661
+        },
+        "gpml:style": {
+          "Literal:xsd:string": 661
+        },
+        "dcterms:isPartOf": {
+          "Resource": 661
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:42:03.554915+00:00",
+    "endpoint": "https://plantmetwiki.bioinformatics.nl/sparql",
+    "dataset_name": "plantmetwiki.all",
+    "pattern_count": 505,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "vocab:BiosyntheticGeneCluster": "BiosyntheticGeneCluster",
+    "ro:has_part": "RO_has_part",
+    "wp:GeneProduct": "GeneProduct",
+    "cito:cites": "cites",
+    "wp:PublicationReference": "PublicationReference",
+    "wp:isAbout": "isAbout",
+    "gpml:DataNode": "DataNode",
+    "dc:identifier": "identifier",
+    "wp:DataNode": "DataNode",
+    "dcterms:isPartOf": "isPartOf",
+    "wp:DirectedInteraction": "DirectedInteraction",
+    "wp:Interaction": "Interaction",
+    "wp:TranscriptionTranslation": "TranscriptionTranslation",
+    "skos:Collection": "Collection",
+    "wp:Pathway": "Pathway",
+    "dcterms:references": "references",
+    "wp:Protein": "Protein",
+    "wp:Catalysis": "Catalysis",
+    "foaf:page": "page",
+    "wp:organismName": "organismName",
+    "dcterms:source": "source",
+    "dc:source": "source",
+    "dcterms:identifier": "identifier",
+    "dcterms:description": "description",
+    "dc:title": "title",
+    "wp:organism": "organism",
+    "wp:participants": "participants",
+    "wp:Binding": "Binding",
+    "gpml:Interaction": "Interaction",
+    "wp:Conversion": "Conversion",
+    "wp:Complex": "Complex",
+    "gpml:Group": "Group",
+    "wp:source": "source",
+    "wp:target": "target",
+    "wp:Metabolite": "Metabolite",
+    "wp:ComplexBinding": "ComplexBinding",
+    "wp:Inhibition": "Inhibition",
+    "wp:Stimulation": "Stimulation",
+    "wp:bdbChEBI": "bdbChEBI",
+    "wp:bdbHmdb": "bdbHmdb",
+    "wp:bdbInChIKey": "bdbInChIKey",
+    "wp:bdbKeggCompound": "bdbKeggCompound",
+    "gpml:Anchor": "Anchor",
+    "gpml:Comment": "Comment",
+    "gpml:hasComment": "hasComment",
+    "gpml:textlabel": "textlabel",
+    "gpml:align": "align",
+    "gpml:centerX": "centerX",
+    "gpml:centerY": "centerY",
+    "gpml:color": "color",
+    "gpml:commentText": "commentText",
+    "gpml:fillColor": "fillColor",
+    "gpml:fontDecoration": "fontDecoration",
+    "gpml:fontName": "fontName",
+    "gpml:fontSize": "fontSize",
+    "gpml:fontStrikethru": "fontStrikethru",
+    "gpml:fontStyle": "fontStyle",
+    "gpml:fontWeight": "fontWeight",
+    "gpml:graphId": "graphId",
+    "gpml:groupRef": "groupRef",
+    "gpml:height": "height",
+    "gpml:lineStyle": "lineStyle",
+    "gpml:lineThickness": "lineThickness",
+    "gpml:position": "position",
+    "gpml:shape": "shape",
+    "gpml:shapeType": "shapeType",
+    "gpml:source": "source",
+    "gpml:type": "type",
+    "gpml:valign": "valign",
+    "gpml:width": "width",
+    "gpml:xrefDataSource": "xrefDataSource",
+    "gpml:xrefId": "xrefId",
+    "gpml:zorder": "zorder",
+    "owl:sameAs": "sameAs",
+    "wp:bdbChemspider": "bdbChemspider",
+    "wp:bdbLipidMaps": "bdbLipidMaps",
+    "wp:bdbPubChem": "bdbPubChem",
+    "wp:bdbWikidata": "bdbWikidata",
+    "gpml:hasAnchor": "hasAnchor",
+    "gpml:hasPoint": "hasPoint",
+    "gpml:Point": "Point",
+    "gpml:arrowHead": "arrowHead",
+    "gpml:connectorType": "connectorType",
+    "gpml:graphRef": "graphRef",
+    "gpml:groupId": "groupId",
+    "gpml:relX": "relX",
+    "gpml:relY": "relY",
+    "gpml:style": "style",
+    "gpml:x": "x",
+    "gpml:y": "y"
+  }
+}

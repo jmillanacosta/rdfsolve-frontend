@@ -1,0 +1,441 @@
+{
+  "@context": {
+    "sio": "http://semanticscience.org/resource/SIO_",
+    "ms": "http://purl.obolibrary.org/obo/MS_",
+    "cheminf": "http://semanticscience.org/resource/CHEMINF_",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "sio:011125",
+      "sio:000231": {
+        "@id": "sio:001180"
+      },
+      "sio:000008": [
+        {
+          "@id": "cheminf:000042"
+        },
+        {
+          "@id": "cheminf:000113"
+        },
+        {
+          "@id": "cheminf:000018"
+        },
+        {
+          "@id": "cheminf:000217"
+        }
+      ],
+      "skos:closeMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000231": {
+          "sio:001180": 562269
+        },
+        "sio:000008": {
+          "cheminf:000042": 290987,
+          "cheminf:000113": 290987,
+          "cheminf:000018": 290987,
+          "cheminf:000217": 290987
+        },
+        "skos:closeMatch": {
+          "Resource": 1205797
+        }
+      }
+    },
+    {
+      "@id": "ms:1000744",
+      "sio:000553": {
+        "@id": "sio:001180"
+      },
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "sio:000221": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000553": {
+          "sio:001180": 562269
+        },
+        "sio:000300": {
+          "Literal:xsd:float": 562269
+        },
+        "sio:000221": {
+          "Resource": 562269
+        }
+      }
+    },
+    {
+      "@id": "ms:1000463",
+      "sio:000553": {
+        "@id": "sio:001180"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:000553": {
+          "sio:001180": 562269
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 562269
+        }
+      }
+    },
+    {
+      "@id": "ms:1002813",
+      "sio:000553": {
+        "@id": "sio:001180"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:000553": {
+          "sio:001180": 562269
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 562269
+        }
+      }
+    },
+    {
+      "@id": "ms:1000511",
+      "sio:000553": {
+        "@id": "sio:001180"
+      },
+      "sio:000300": {
+        "@type": "xsd:int"
+      },
+      "_counts": {
+        "sio:000553": {
+          "sio:001180": 562269
+        },
+        "sio:000300": {
+          "Literal:xsd:int": 562269
+        }
+      }
+    },
+    {
+      "@id": "ms:1000580",
+      "sio:000232": {
+        "@id": "sio:001180"
+      },
+      "sio:000300": {
+        "@type": "ms:spectrum"
+      },
+      "_counts": {
+        "sio:000232": {
+          "sio:001180": 562269
+        },
+        "sio:000300": {
+          "Literal:ms:spectrum": 562269
+        }
+      }
+    },
+    {
+      "@id": "ms:1000129",
+      "sio:000553": {
+        "@id": "sio:001180"
+      },
+      "_counts": {
+        "sio:000553": {
+          "sio:001180": 272840
+        }
+      }
+    },
+    {
+      "@id": "ms:1000041",
+      "sio:000553": {
+        "@id": "sio:001180"
+      },
+      "sio:000300": {
+        "@type": "xsd:int"
+      },
+      "_counts": {
+        "sio:000553": {
+          "sio:001180": 562269
+        },
+        "sio:000300": {
+          "Literal:xsd:int": 562269
+        }
+      }
+    },
+    {
+      "@id": "ms:1000073",
+      "sio:000553": {
+        "@id": "sio:001180"
+      },
+      "_counts": {
+        "sio:000553": {
+          "sio:001180": 562269
+        }
+      }
+    },
+    {
+      "@id": "ms:1000130",
+      "sio:000553": {
+        "@id": "sio:001180"
+      },
+      "_counts": {
+        "sio:000553": {
+          "sio:001180": 289429
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000217",
+      "sio:000011": {
+        "@id": "sio:011125"
+      },
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "sio:000221": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000011": {
+          "sio:011125": 290987
+        },
+        "sio:000300": {
+          "Literal:xsd:float": 290987
+        },
+        "sio:000221": {
+          "Resource": 290987
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000113",
+      "sio:000011": {
+        "@id": "sio:011125"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:000011": {
+          "sio:011125": 290987
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 290987
+        }
+      }
+    },
+    {
+      "@id": "ms:1000294",
+      "sio:000232": {
+        "@id": "sio:001180"
+      },
+      "sio:000300": {
+        "@type": "ms:spectrum"
+      },
+      "_counts": {
+        "sio:000232": {
+          "sio:001180": 562269
+        },
+        "sio:000300": {
+          "Literal:ms:spectrum": 562269
+        }
+      }
+    },
+    {
+      "@id": "sio:000089",
+      "sio:001277": {
+        "@id": "sio:001180"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:001277": {
+          "sio:001180": 562269
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000042",
+      "sio:000011": {
+        "@id": "sio:011125"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:000011": {
+          "sio:011125": 290987
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 290987
+        }
+      }
+    },
+    {
+      "@id": "sio:001180",
+      "sio:000552": [
+        {
+          "@id": "ms:1000130"
+        },
+        {
+          "@id": "ms:1000744"
+        },
+        {
+          "@id": "ms:1002813"
+        },
+        {
+          "@id": "ms:1000041"
+        },
+        {
+          "@id": "ms:1000073"
+        },
+        {
+          "@id": "ms:1000463"
+        },
+        {
+          "@id": "ms:1000129"
+        },
+        {
+          "@id": "ms:1000511"
+        }
+      ],
+      "sio:000229": [
+        {
+          "@id": "ms:1000294"
+        },
+        {
+          "@id": "ms:1000580"
+        }
+      ],
+      "sio:000255": {
+        "@id": "sio:001166"
+      },
+      "sio:001278": {
+        "@id": "sio:000089"
+      },
+      "sio:000230": {
+        "@id": "sio:011125"
+      },
+      "_counts": {
+        "sio:000552": {
+          "ms:1000130": 289429,
+          "ms:1000744": 562269,
+          "ms:1002813": 562269,
+          "ms:1000041": 562269,
+          "ms:1000073": 562269,
+          "ms:1000463": 562269,
+          "ms:1000129": 272840,
+          "ms:1000511": 562269
+        },
+        "sio:000229": {
+          "ms:1000294": 562269,
+          "ms:1000580": 562269
+        },
+        "sio:000255": {
+          "sio:001166": 562269
+        },
+        "sio:001278": {
+          "sio:000089": 562269
+        },
+        "sio:000230": {
+          "sio:011125": 562269
+        }
+      }
+    },
+    {
+      "@id": "sio:001166",
+      "sio:000254": {
+        "@id": "sio:001180"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:000254": {
+          "sio:001180": 562269
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 562269
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000018",
+      "sio:000011": {
+        "@id": "sio:011125"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:000011": {
+          "sio:011125": 290987
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 290987
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:40:37.171135+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "isdb",
+    "graph_uris": [
+      "https://idsm.elixir-czech.cz/rdf/isdb/"
+    ],
+    "pattern_count": 69,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "sio:011125": "SIO_011125",
+    "sio:000231": "SIO_000231",
+    "sio:001180": "SIO_001180",
+    "ms:1000744": "MS_1000744",
+    "sio:000553": "SIO_000553",
+    "ms:1000463": "MS_1000463",
+    "ms:1002813": "MS_1002813",
+    "sio:000008": "SIO_000008",
+    "cheminf:000042": "CHEMINF_000042",
+    "ms:1000511": "MS_1000511",
+    "ms:1000580": "MS_1000580",
+    "sio:000232": "SIO_000232",
+    "ms:1000129": "MS_1000129",
+    "ms:1000041": "MS_1000041",
+    "cheminf:000113": "CHEMINF_000113",
+    "ms:1000073": "MS_1000073",
+    "ms:1000130": "MS_1000130",
+    "cheminf:000018": "CHEMINF_000018",
+    "cheminf:000217": "CHEMINF_000217",
+    "sio:000011": "SIO_000011",
+    "ms:1000294": "MS_1000294",
+    "sio:000089": "SIO_000089",
+    "sio:001277": "SIO_001277",
+    "sio:000300": "SIO_000300",
+    "dcterms:description": "description",
+    "dcterms:title": "title",
+    "skos:closeMatch": "closeMatch",
+    "sio:000221": "SIO_000221",
+    "sio:000552": "SIO_000552",
+    "sio:000229": "SIO_000229",
+    "sio:001166": "SIO_001166",
+    "sio:000254": "SIO_000254",
+    "sio:000255": "SIO_000255",
+    "sio:001278": "SIO_001278",
+    "sio:000230": "SIO_000230"
+  }
+}

@@ -1,0 +1,4905 @@
+{
+  "@context": {
+    "bio2rdf": "http://bio2rdf.org/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "faldo": "http://biohackathon.org/resource/faldo#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pav": "http://purl.org/pav/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "bio2rdf:ensembl_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 414880
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 414880
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 414880
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 414880
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 414880
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 414880
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 28
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 28
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 28
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 28
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 28
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 28
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 14
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 14
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 14
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 14
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 14
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 14
+        }
+      }
+    },
+    {
+      "@id": "owl:Class",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 12
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 12
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 12
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:genbank_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2355983
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 2355983
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:go_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 21273
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 21273
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 21273
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 21273
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 21273
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 21273
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "faldo:begin": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:ExactPosition"
+        },
+        {
+          "@id": "faldo:ReverseStrandPosition"
+        },
+        {
+          "@id": "faldo:ForwardStrandPosition"
+        }
+      ],
+      "faldo:end": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:ExactPosition"
+        },
+        {
+          "@id": "faldo:ReverseStrandPosition"
+        },
+        {
+          "@id": "faldo:ForwardStrandPosition"
+        }
+      ],
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "faldo:reference": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:protein-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.gene": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.protein": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.rna": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-accession": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.protein": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:evidence": {
+        "@id": "bio2rdf:eco_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:NcRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Pseudo-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Protein-coding-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Unknown-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Other-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:SnoRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:SnRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:TRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:MiscRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:RRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:ScRNA-Gene"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:go-term": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:publication": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unists": {
+        "@id": "bio2rdf:unists_vocabulary:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 907006
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:refseq_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1408161
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1408161
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:unigene_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 511265
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 511265
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 511265
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 511265
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 511265
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 511265
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:gi_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 3261407
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:vega_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 168340
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 168340
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 168340
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 168340
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 168340
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pubmed_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 812381
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 812381
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 812381
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 812381
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 812381
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 812381
+        }
+      }
+    },
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 18
+        }
+      }
+    },
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 9
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 9
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 18
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 36
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 36
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 9
+        },
+        "dcterms:creator": {
+          "Resource": 9
+        },
+        "foaf:page": {
+          "Resource": 18
+        },
+        "dcterms:publisher": {
+          "Resource": 18
+        },
+        "dcterms:license": {
+          "Resource": 18
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:taxonomy_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 13
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 13
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 13
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 13
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 13
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 13
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:unists_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 361073
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 361073
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 361073
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 361073
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 361073
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 361073
+        }
+      }
+    },
+    {
+      "@id": "faldo:ExactPosition",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "faldo:reference": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2657424
+        },
+        "faldo:reference": {
+          "bio2rdf:refseq_vocabulary:Resource": 2657424
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:eco_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 20
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 20
+        }
+      }
+    },
+    {
+      "@id": "faldo:ForwardStrandPosition",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "faldo:reference": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1364857
+        },
+        "faldo:reference": {
+          "bio2rdf:refseq_vocabulary:Resource": 1364857
+        }
+      }
+    },
+    {
+      "@id": "faldo:Region",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "faldo:begin": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:ExactPosition"
+        },
+        {
+          "@id": "faldo:ReverseStrandPosition"
+        },
+        {
+          "@id": "faldo:ForwardStrandPosition"
+        }
+      ],
+      "faldo:end": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:ExactPosition"
+        },
+        {
+          "@id": "faldo:ReverseStrandPosition"
+        },
+        {
+          "@id": "faldo:ForwardStrandPosition"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1333589
+        },
+        "faldo:begin": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1333589,
+          "faldo:ExactPosition": 1333589,
+          "faldo:ReverseStrandPosition": 651256,
+          "faldo:ForwardStrandPosition": 685326
+        },
+        "faldo:end": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1333589,
+          "faldo:ExactPosition": 1333589,
+          "faldo:ReverseStrandPosition": 652705,
+          "faldo:ForwardStrandPosition": 686752
+        }
+      }
+    },
+    {
+      "@id": "faldo:ReverseStrandPosition",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "faldo:reference": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1297754
+        },
+        "faldo:reference": {
+          "bio2rdf:refseq_vocabulary:Resource": 1297754
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:Gene",
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-unists": {
+        "@id": "bio2rdf:unists_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.protein": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-accession": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.rna": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.gene": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.protein": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 401577
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 401577
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 1607877
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 486059,
+          "bio2rdf:genbank_vocabulary:Resource": 1121848
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 2104719
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 907054,
+          "bio2rdf:genbank_vocabulary:Resource": 1197665
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 1325094
+        },
+        "faldo:location": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1336041,
+          "faldo:Region": 1336041
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 680917,
+          "bio2rdf:genbank_vocabulary:Resource": 644225
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 195190
+        },
+        "bio2rdf:ncbigene_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 599517
+        },
+        "bio2rdf:ncbigene_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 338171
+        },
+        "bio2rdf:ncbigene_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 341194
+        },
+        "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 2856480
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-process-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 599517,
+          "bio2rdf:ncbigene_vocabulary:Gene-process-Association": 599517
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-component-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 338171,
+          "bio2rdf:ncbigene_vocabulary:Gene-component-Association": 338171
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-function-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 341194,
+          "bio2rdf:ncbigene_vocabulary:Gene-function-Association": 341194
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unists": {
+          "bio2rdf:unists_vocabulary:Resource": 397647
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+          "bio2rdf:ensembl_vocabulary:Resource": 113890
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+          "bio2rdf:ensembl_vocabulary:Resource": 156611
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.protein": {
+          "bio2rdf:ensembl_vocabulary:Resource": 144662
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 156606
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-accession": {
+          "bio2rdf:genbank_vocabulary:Resource": 144655
+        },
+        "bio2rdf:ncbigene_vocabulary:x-vega.rna": {
+          "bio2rdf:vega_vocabulary:Resource": 61140
+        },
+        "bio2rdf:ncbigene_vocabulary:x-vega.gene": {
+          "bio2rdf:vega_vocabulary:Resource": 46350
+        },
+        "bio2rdf:ncbigene_vocabulary:x-vega.protein": {
+          "bio2rdf:vega_vocabulary:Resource": 60869
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 401577
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:Other-Gene",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:protein-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unists": {
+        "@id": "bio2rdf:unists_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:assembly": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:locus": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:modification-date": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:date"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:other-designation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol-synonym": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:chromosome": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:dbxref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:map-location": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5116
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 6055,
+          "bio2rdf:refseq_vocabulary:Resource": 7613
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 1705,
+          "bio2rdf:refseq_vocabulary:Resource": 230
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 1935
+        },
+        "faldo:location": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 11546,
+          "faldo:Region": 11546
+        },
+        "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 15369
+        },
+        "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 5116
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 13668
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 2464,
+          "bio2rdf:refseq_vocabulary:Resource": 117
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 2581
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 448
+        },
+        "bio2rdf:ncbigene_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 245
+        },
+        "bio2rdf:ncbigene_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 172
+        },
+        "bio2rdf:ncbigene_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 372
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unists": {
+          "bio2rdf:unists_vocabulary:Resource": 1284
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-process-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 372,
+          "bio2rdf:ncbigene_vocabulary:Gene-process-Association": 372
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-component-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 245,
+          "bio2rdf:ncbigene_vocabulary:Gene-component-Association": 245
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-function-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 172,
+          "bio2rdf:ncbigene_vocabulary:Gene-function-Association": 172
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+          "bio2rdf:ensembl_vocabulary:Resource": 2
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+          "bio2rdf:ensembl_vocabulary:Resource": 2
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 2
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 5116
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 4953
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5116
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5116
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5116
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5116
+        },
+        "bio2rdf:ncbigene_vocabulary:status": {
+          "Literal:xsd:string": 2387
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol": {
+          "Literal:xsd:string": 5116
+        },
+        "bio2rdf:ncbigene_vocabulary:assembly": {
+          "Literal:xsd:string": 3620
+        },
+        "bio2rdf:ncbigene_vocabulary:locus": {
+          "Literal:xsd:string": 5116
+        },
+        "bio2rdf:ncbigene_vocabulary:modification-date": {
+          "Literal:xsd:string": 5105,
+          "Literal:xsd:date": 11
+        },
+        "bio2rdf:ncbigene_vocabulary:other-designation": {
+          "Literal:xsd:string": 1411
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+          "Literal:xsd:string": 3969,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:ncbigene_vocabulary:chromosome": {
+          "Literal:xsd:integer": 4350,
+          "Literal:xsd:string": 274
+        },
+        "bio2rdf:ncbigene_vocabulary:dbxref": {
+          "Literal:xsd:string": 4795
+        },
+        "bio2rdf:ncbigene_vocabulary:map-location": {
+          "Literal:xsd:string": 1461
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+          "Literal:xsd:string": 3768
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+          "Literal:xsd:string": 3768
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+          "Literal:xsd:string": 3768
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 5116
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:MiscRNA-Gene",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-unists": {
+        "@id": "bio2rdf:unists_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:locus": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:modification-date": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:date"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:symbol-synonym": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:chromosome": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:dbxref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:map-location": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 126
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 60
+        },
+        "faldo:location": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 126,
+          "faldo:Region": 126
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 60
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 126
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 126
+        },
+        "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 146
+        },
+        "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 126
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 8
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+          "bio2rdf:ensembl_vocabulary:Resource": 3
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+          "bio2rdf:ensembl_vocabulary:Resource": 3
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 3
+        },
+        "bio2rdf:ncbigene_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 89
+        },
+        "bio2rdf:ncbigene_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 24
+        },
+        "bio2rdf:ncbigene_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 26
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-function-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 26,
+          "bio2rdf:ncbigene_vocabulary:Gene-function-Association": 26
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-process-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 89,
+          "bio2rdf:ncbigene_vocabulary:Gene-process-Association": 89
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-component-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 24,
+          "bio2rdf:ncbigene_vocabulary:Gene-component-Association": 24
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unists": {
+          "bio2rdf:unists_vocabulary:Resource": 6
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 126
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 126
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 126
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 126
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 126
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 126
+        },
+        "bio2rdf:ncbigene_vocabulary:status": {
+          "Literal:xsd:string": 126
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol": {
+          "Literal:xsd:string": 126
+        },
+        "bio2rdf:ncbigene_vocabulary:locus": {
+          "Literal:xsd:string": 126
+        },
+        "bio2rdf:ncbigene_vocabulary:modification-date": {
+          "Literal:xsd:string": 125,
+          "Literal:xsd:date": 1
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+          "Literal:xsd:string": 116,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:ncbigene_vocabulary:chromosome": {
+          "Literal:xsd:string": 62,
+          "Literal:xsd:integer": 40
+        },
+        "bio2rdf:ncbigene_vocabulary:dbxref": {
+          "Literal:xsd:string": 68
+        },
+        "bio2rdf:ncbigene_vocabulary:map-location": {
+          "Literal:xsd:string": 14
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+          "Literal:xsd:string": 14
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+          "Literal:xsd:string": 14
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+          "Literal:xsd:string": 14
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 126
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:Protein-coding-Gene",
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-unists": {
+        "@id": "bio2rdf:unists_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.protein": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-accession": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.rna": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.gene": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.protein": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:locus": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:modification-date": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:date"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:chromosome": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:other-designation": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:float"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:symbol-synonym": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:dbxref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:map-location": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:assembly": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 222083
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 1594380
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 484454,
+          "bio2rdf:genbank_vocabulary:Resource": 1109956
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 222083
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 1461028
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 498585,
+          "bio2rdf:genbank_vocabulary:Resource": 962443
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 1091362
+        },
+        "faldo:location": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 735706,
+          "faldo:Region": 735706
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 496710,
+          "bio2rdf:genbank_vocabulary:Resource": 594700
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 180627
+        },
+        "bio2rdf:ncbigene_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 589326
+        },
+        "bio2rdf:ncbigene_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 332320
+        },
+        "bio2rdf:ncbigene_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 335246
+        },
+        "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 2672509
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-process-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 589326,
+          "bio2rdf:ncbigene_vocabulary:Gene-process-Association": 589326
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-component-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 332320,
+          "bio2rdf:ncbigene_vocabulary:Gene-component-Association": 332320
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-function-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 335246,
+          "bio2rdf:ncbigene_vocabulary:Gene-function-Association": 335246
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unists": {
+          "bio2rdf:unists_vocabulary:Resource": 349229
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+          "bio2rdf:ensembl_vocabulary:Resource": 102597
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+          "bio2rdf:ensembl_vocabulary:Resource": 144760
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.protein": {
+          "bio2rdf:ensembl_vocabulary:Resource": 144637
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 144755
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-accession": {
+          "bio2rdf:genbank_vocabulary:Resource": 144630
+        },
+        "bio2rdf:ncbigene_vocabulary:x-vega.rna": {
+          "bio2rdf:vega_vocabulary:Resource": 60884
+        },
+        "bio2rdf:ncbigene_vocabulary:x-vega.gene": {
+          "bio2rdf:vega_vocabulary:Resource": 46100
+        },
+        "bio2rdf:ncbigene_vocabulary:x-vega.protein": {
+          "bio2rdf:vega_vocabulary:Resource": 60869
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 222083
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 222083
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 222083
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 222083
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 222083
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 222083
+        },
+        "bio2rdf:ncbigene_vocabulary:status": {
+          "Literal:xsd:string": 260303
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol": {
+          "Literal:xsd:string": 222081,
+          "Literal:xsd:integer": 2
+        },
+        "bio2rdf:ncbigene_vocabulary:locus": {
+          "Literal:xsd:string": 222083
+        },
+        "bio2rdf:ncbigene_vocabulary:modification-date": {
+          "Literal:xsd:string": 221504,
+          "Literal:xsd:date": 579
+        },
+        "bio2rdf:ncbigene_vocabulary:chromosome": {
+          "Literal:xsd:string": 41735,
+          "Literal:xsd:integer": 150278
+        },
+        "bio2rdf:ncbigene_vocabulary:other-designation": {
+          "Literal:xsd:string": 231667,
+          "Literal:xsd:float": 2
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+          "Literal:xsd:string": 305187,
+          "Literal:xsd:integer": 331,
+          "Literal:xsd:float": 36
+        },
+        "bio2rdf:ncbigene_vocabulary:dbxref": {
+          "Literal:xsd:string": 331622
+        },
+        "bio2rdf:ncbigene_vocabulary:map-location": {
+          "Literal:xsd:string": 79678
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+          "Literal:xsd:string": 121022,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+          "Literal:xsd:string": 112282
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+          "Literal:xsd:string": 121023
+        },
+        "bio2rdf:ncbigene_vocabulary:assembly": {
+          "Literal:xsd:string": 211537
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 222083
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:Pseudo-Gene",
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:protein-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-unists": {
+        "@id": "bio2rdf:unists_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.rna": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.gene": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.protein": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-accession": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:assembly": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:locus": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:modification-date": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:date"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:other-designation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol-synonym": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:chromosome": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:dbxref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:map-location": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 45194
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 45194
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 239599
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 160641,
+          "bio2rdf:genbank_vocabulary:Resource": 78958
+        },
+        "faldo:location": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 227407,
+          "faldo:Region": 227407
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 4317,
+          "bio2rdf:refseq_vocabulary:Resource": 771
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 5388,
+          "bio2rdf:refseq_vocabulary:Resource": 5750
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 11138
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 5088
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 1919
+        },
+        "bio2rdf:ncbigene_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 1260
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+          "bio2rdf:ensembl_vocabulary:Resource": 878
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+          "bio2rdf:ensembl_vocabulary:Resource": 899
+        },
+        "bio2rdf:ncbigene_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 705
+        },
+        "bio2rdf:ncbigene_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 849
+        },
+        "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 19981
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-process-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1260,
+          "bio2rdf:ncbigene_vocabulary:Gene-process-Association": 1260
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-function-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 849,
+          "bio2rdf:ncbigene_vocabulary:Gene-function-Association": 849
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-component-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 705,
+          "bio2rdf:ncbigene_vocabulary:Gene-component-Association": 705
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unists": {
+          "bio2rdf:unists_vocabulary:Resource": 15958
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 899
+        },
+        "bio2rdf:ncbigene_vocabulary:x-vega.rna": {
+          "bio2rdf:vega_vocabulary:Resource": 55
+        },
+        "bio2rdf:ncbigene_vocabulary:x-vega.gene": {
+          "bio2rdf:vega_vocabulary:Resource": 55
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.protein": {
+          "bio2rdf:ensembl_vocabulary:Resource": 23
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-accession": {
+          "bio2rdf:genbank_vocabulary:Resource": 23
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 45194
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 45194
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 45194
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 45194
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 45194
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 45194
+        },
+        "bio2rdf:ncbigene_vocabulary:status": {
+          "Literal:xsd:string": 45396
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol": {
+          "Literal:xsd:string": 45194
+        },
+        "bio2rdf:ncbigene_vocabulary:assembly": {
+          "Literal:xsd:string": 68825
+        },
+        "bio2rdf:ncbigene_vocabulary:locus": {
+          "Literal:xsd:string": 45194
+        },
+        "bio2rdf:ncbigene_vocabulary:modification-date": {
+          "Literal:xsd:string": 45190,
+          "Literal:xsd:date": 4
+        },
+        "bio2rdf:ncbigene_vocabulary:other-designation": {
+          "Literal:xsd:string": 10062
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+          "Literal:xsd:string": 20172,
+          "Literal:xsd:float": 2,
+          "Literal:xsd:integer": 39
+        },
+        "bio2rdf:ncbigene_vocabulary:chromosome": {
+          "Literal:xsd:string": 5798,
+          "Literal:xsd:integer": 38753
+        },
+        "bio2rdf:ncbigene_vocabulary:dbxref": {
+          "Literal:xsd:string": 36015
+        },
+        "bio2rdf:ncbigene_vocabulary:map-location": {
+          "Literal:xsd:string": 21661
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+          "Literal:xsd:string": 29002
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+          "Literal:xsd:string": 28816
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+          "Literal:xsd:string": 29002
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 45194
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:NcRNA-Gene",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.rna": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-vega.gene": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:protein-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-unists": {
+        "@id": "bio2rdf:unists_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.protein": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:protein-accession": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:assembly": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:locus": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:modification-date": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:date"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:other-designation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol-synonym": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:chromosome": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:dbxref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:map-location": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 83591
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 222526,
+          "bio2rdf:genbank_vocabulary:Resource": 134048
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 36684,
+          "bio2rdf:refseq_vocabulary:Resource": 170112
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 206796
+        },
+        "faldo:location": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 323795,
+          "faldo:Region": 323795
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+          "bio2rdf:ensembl_vocabulary:Resource": 9676
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+          "bio2rdf:ensembl_vocabulary:Resource": 10210
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 9414
+        },
+        "bio2rdf:ncbigene_vocabulary:x-vega.rna": {
+          "bio2rdf:vega_vocabulary:Resource": 150
+        },
+        "bio2rdf:ncbigene_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 1672
+        },
+        "bio2rdf:ncbigene_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 1840
+        },
+        "bio2rdf:ncbigene_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 4774
+        },
+        "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 78658
+        },
+        "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 83591
+        },
+        "bio2rdf:ncbigene_vocabulary:x-vega.gene": {
+          "bio2rdf:vega_vocabulary:Resource": 144
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 356574
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 3234,
+          "bio2rdf:refseq_vocabulary:Resource": 223
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 3457
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-process-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 4774,
+          "bio2rdf:ncbigene_vocabulary:Gene-process-Association": 4774
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 10210
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-function-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1672,
+          "bio2rdf:ncbigene_vocabulary:Gene-function-Association": 1672
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-component-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1840,
+          "bio2rdf:ncbigene_vocabulary:Gene-component-Association": 1840
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unists": {
+          "bio2rdf:unists_vocabulary:Resource": 12837
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.protein": {
+          "bio2rdf:ensembl_vocabulary:Resource": 2
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-accession": {
+          "bio2rdf:genbank_vocabulary:Resource": 2
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 83591
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 83591
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 83591
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 83591
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 83591
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 83591
+        },
+        "bio2rdf:ncbigene_vocabulary:status": {
+          "Literal:xsd:string": 84015
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol": {
+          "Literal:xsd:string": 83591
+        },
+        "bio2rdf:ncbigene_vocabulary:assembly": {
+          "Literal:xsd:string": 99073
+        },
+        "bio2rdf:ncbigene_vocabulary:locus": {
+          "Literal:xsd:string": 83591
+        },
+        "bio2rdf:ncbigene_vocabulary:modification-date": {
+          "Literal:xsd:string": 83579,
+          "Literal:xsd:date": 12
+        },
+        "bio2rdf:ncbigene_vocabulary:other-designation": {
+          "Literal:xsd:string": 6700
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+          "Literal:xsd:string": 17556,
+          "Literal:xsd:integer": 42
+        },
+        "bio2rdf:ncbigene_vocabulary:chromosome": {
+          "Literal:xsd:string": 30051,
+          "Literal:xsd:integer": 53492
+        },
+        "bio2rdf:ncbigene_vocabulary:dbxref": {
+          "Literal:xsd:string": 43944
+        },
+        "bio2rdf:ncbigene_vocabulary:map-location": {
+          "Literal:xsd:string": 21087
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+          "Literal:xsd:string": 29993
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+          "Literal:xsd:string": 27671
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+          "Literal:xsd:string": 29993
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 83591
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:TRNA-Gene",
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unists": {
+        "@id": "bio2rdf:unists_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:assembly": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:locus": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:modification-date": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:date"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:other-designation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol-synonym": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:chromosome": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:dbxref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:map-location": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 3250
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 3250
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 14744
+        },
+        "faldo:location": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 21248,
+          "faldo:Region": 21248
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 6174,
+          "bio2rdf:genbank_vocabulary:Resource": 8570
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 7
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 7
+        },
+        "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 2970
+        },
+        "bio2rdf:ncbigene_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 1599
+        },
+        "bio2rdf:ncbigene_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 1412
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unists": {
+          "bio2rdf:unists_vocabulary:Resource": 831
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-process-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1491,
+          "bio2rdf:ncbigene_vocabulary:Gene-process-Association": 1491
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-component-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1412,
+          "bio2rdf:ncbigene_vocabulary:Gene-component-Association": 1412
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-function-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1599,
+          "bio2rdf:ncbigene_vocabulary:Gene-function-Association": 1599
+        },
+        "bio2rdf:ncbigene_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 1491
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 3250
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 3250
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3250
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3250
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3250
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3250
+        },
+        "bio2rdf:ncbigene_vocabulary:status": {
+          "Literal:xsd:string": 2891
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol": {
+          "Literal:xsd:string": 3250
+        },
+        "bio2rdf:ncbigene_vocabulary:assembly": {
+          "Literal:xsd:string": 1933
+        },
+        "bio2rdf:ncbigene_vocabulary:locus": {
+          "Literal:xsd:string": 3250
+        },
+        "bio2rdf:ncbigene_vocabulary:modification-date": {
+          "Literal:xsd:string": 3203,
+          "Literal:xsd:date": 47
+        },
+        "bio2rdf:ncbigene_vocabulary:other-designation": {
+          "Literal:xsd:string": 1095
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+          "Literal:xsd:string": 3782,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:ncbigene_vocabulary:chromosome": {
+          "Literal:xsd:string": 1507,
+          "Literal:xsd:integer": 1598
+        },
+        "bio2rdf:ncbigene_vocabulary:dbxref": {
+          "Literal:xsd:string": 2057
+        },
+        "bio2rdf:ncbigene_vocabulary:map-location": {
+          "Literal:xsd:string": 366
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+          "Literal:xsd:string": 1368
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+          "Literal:xsd:string": 1333
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+          "Literal:xsd:string": 1368
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 3250
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:RRNA-Gene",
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unists": {
+        "@id": "bio2rdf:unists_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:assembly": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:locus": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:modification-date": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:date"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:other-designation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:chromosome": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:dbxref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:map-location": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 270
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 270
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 469
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 352,
+          "bio2rdf:genbank_vocabulary:Resource": 117
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 240
+        },
+        "faldo:location": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 439,
+          "faldo:Region": 439
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 231,
+          "bio2rdf:genbank_vocabulary:Resource": 9
+        },
+        "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 388
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unists": {
+          "bio2rdf:unists_vocabulary:Resource": 138
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+          "bio2rdf:ensembl_vocabulary:Resource": 154
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+          "bio2rdf:ensembl_vocabulary:Resource": 154
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 154
+        },
+        "bio2rdf:ncbigene_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 109
+        },
+        "bio2rdf:ncbigene_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 112
+        },
+        "bio2rdf:ncbigene_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 116
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-process-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 112,
+          "bio2rdf:ncbigene_vocabulary:Gene-process-Association": 112
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-function-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 109,
+          "bio2rdf:ncbigene_vocabulary:Gene-function-Association": 109
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-component-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 116,
+          "bio2rdf:ncbigene_vocabulary:Gene-component-Association": 116
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 270
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 270
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 270
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 270
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 270
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 270
+        },
+        "bio2rdf:ncbigene_vocabulary:status": {
+          "Literal:xsd:string": 261
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol": {
+          "Literal:xsd:string": 270
+        },
+        "bio2rdf:ncbigene_vocabulary:assembly": {
+          "Literal:xsd:string": 80
+        },
+        "bio2rdf:ncbigene_vocabulary:locus": {
+          "Literal:xsd:string": 270
+        },
+        "bio2rdf:ncbigene_vocabulary:modification-date": {
+          "Literal:xsd:string": 266,
+          "Literal:xsd:date": 4
+        },
+        "bio2rdf:ncbigene_vocabulary:other-designation": {
+          "Literal:xsd:string": 76
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+          "Literal:xsd:string": 311
+        },
+        "bio2rdf:ncbigene_vocabulary:chromosome": {
+          "Literal:xsd:integer": 77,
+          "Literal:xsd:string": 184
+        },
+        "bio2rdf:ncbigene_vocabulary:dbxref": {
+          "Literal:xsd:string": 276
+        },
+        "bio2rdf:ncbigene_vocabulary:map-location": {
+          "Literal:xsd:string": 156
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+          "Literal:xsd:string": 219
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+          "Literal:xsd:string": 73
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+          "Literal:xsd:string": 219
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 270
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:Unknown-Gene",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:protein-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:protein-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unists": {
+        "@id": "bio2rdf:unists_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-vega.rna": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-vega.gene": {
+        "@id": "bio2rdf:vega_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:float"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:float"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:assembly": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:locus": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:modification-date": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:date"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:other-designation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol-synonym": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:chromosome": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:dbxref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:map-location": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 41264
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 5451,
+          "bio2rdf:refseq_vocabulary:Resource": 7163
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 12614
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 2569
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+          "bio2rdf:ensembl_vocabulary:Resource": 267
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+          "bio2rdf:ensembl_vocabulary:Resource": 270
+        },
+        "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 64575
+        },
+        "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 41264
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 14119
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 8299,
+          "bio2rdf:genbank_vocabulary:Resource": 5820
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 1877,
+          "bio2rdf:refseq_vocabulary:Resource": 494
+        },
+        "bio2rdf:ncbigene_vocabulary:protein-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 2371
+        },
+        "faldo:location": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 11517,
+          "faldo:Region": 11517
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 270
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unists": {
+          "bio2rdf:unists_vocabulary:Resource": 17078
+        },
+        "bio2rdf:ncbigene_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 1392
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-component-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1392,
+          "bio2rdf:ncbigene_vocabulary:Gene-component-Association": 1392
+        },
+        "bio2rdf:ncbigene_vocabulary:x-vega.rna": {
+          "bio2rdf:vega_vocabulary:Resource": 51
+        },
+        "bio2rdf:ncbigene_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 1408
+        },
+        "bio2rdf:ncbigene_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 1976
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-function-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1408,
+          "bio2rdf:ncbigene_vocabulary:Gene-function-Association": 1408
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-process-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1976,
+          "bio2rdf:ncbigene_vocabulary:Gene-process-Association": 1976
+        },
+        "bio2rdf:ncbigene_vocabulary:x-vega.gene": {
+          "bio2rdf:vega_vocabulary:Resource": 51
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 41264
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 41263,
+          "Literal:xsd:float": 1
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 41264
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 41264
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 41264
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 41264
+        },
+        "bio2rdf:ncbigene_vocabulary:status": {
+          "Literal:xsd:string": 2440
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol": {
+          "Literal:xsd:string": 41263,
+          "Literal:xsd:float": 1
+        },
+        "bio2rdf:ncbigene_vocabulary:assembly": {
+          "Literal:xsd:string": 4215
+        },
+        "bio2rdf:ncbigene_vocabulary:locus": {
+          "Literal:xsd:string": 41264
+        },
+        "bio2rdf:ncbigene_vocabulary:modification-date": {
+          "Literal:xsd:string": 39362,
+          "Literal:xsd:date": 1902
+        },
+        "bio2rdf:ncbigene_vocabulary:other-designation": {
+          "Literal:xsd:string": 1862
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+          "Literal:xsd:string": 7174,
+          "Literal:xsd:integer": 164,
+          "Literal:xsd:float": 22
+        },
+        "bio2rdf:ncbigene_vocabulary:chromosome": {
+          "Literal:xsd:integer": 37463,
+          "Literal:xsd:string": 3373
+        },
+        "bio2rdf:ncbigene_vocabulary:dbxref": {
+          "Literal:xsd:string": 40790
+        },
+        "bio2rdf:ncbigene_vocabulary:map-location": {
+          "Literal:xsd:string": 28786
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+          "Literal:xsd:string": 13759
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+          "Literal:xsd:string": 13759
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+          "Literal:xsd:string": 13759
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 41264
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:SnoRNA-Gene",
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unists": {
+        "@id": "bio2rdf:unists_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:assembly": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:locus": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:modification-date": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:other-designation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:chromosome": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:dbxref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:map-location": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 245,
+          "bio2rdf:refseq_vocabulary:Resource": 521
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 529
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 1298,
+          "bio2rdf:refseq_vocabulary:Resource": 2228
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 3526
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 766
+        },
+        "faldo:location": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 3452,
+          "faldo:Region": 3452
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 165
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+          "bio2rdf:ensembl_vocabulary:Resource": 236
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+          "bio2rdf:ensembl_vocabulary:Resource": 236
+        },
+        "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 1542
+        },
+        "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 529
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 236
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unists": {
+          "bio2rdf:unists_vocabulary:Resource": 260
+        },
+        "bio2rdf:ncbigene_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 106
+        },
+        "bio2rdf:ncbigene_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 108
+        },
+        "bio2rdf:ncbigene_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 108
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-function-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 106,
+          "bio2rdf:ncbigene_vocabulary:Gene-function-Association": 106
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-component-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 108,
+          "bio2rdf:ncbigene_vocabulary:Gene-component-Association": 108
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-process-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 108,
+          "bio2rdf:ncbigene_vocabulary:Gene-process-Association": 108
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 529
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 529
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 529
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 529
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 529
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 529
+        },
+        "bio2rdf:ncbigene_vocabulary:status": {
+          "Literal:xsd:string": 521
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol": {
+          "Literal:xsd:string": 529
+        },
+        "bio2rdf:ncbigene_vocabulary:assembly": {
+          "Literal:xsd:string": 1070
+        },
+        "bio2rdf:ncbigene_vocabulary:locus": {
+          "Literal:xsd:string": 529
+        },
+        "bio2rdf:ncbigene_vocabulary:modification-date": {
+          "Literal:xsd:string": 529
+        },
+        "bio2rdf:ncbigene_vocabulary:other-designation": {
+          "Literal:xsd:string": 398
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+          "Literal:xsd:string": 692
+        },
+        "bio2rdf:ncbigene_vocabulary:chromosome": {
+          "Literal:xsd:integer": 506,
+          "Literal:xsd:string": 15
+        },
+        "bio2rdf:ncbigene_vocabulary:dbxref": {
+          "Literal:xsd:string": 801
+        },
+        "bio2rdf:ncbigene_vocabulary:map-location": {
+          "Literal:xsd:string": 511
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+          "Literal:xsd:string": 519
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+          "Literal:xsd:string": 519
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+          "Literal:xsd:string": 519
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 529
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:SnRNA-Gene",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-unists": {
+        "@id": "bio2rdf:unists_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:assembly": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:locus": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:modification-date": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:other-designation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:chromosome": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:dbxref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:map-location": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 138
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 850
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 502,
+          "bio2rdf:genbank_vocabulary:Resource": 348
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 34,
+          "bio2rdf:refseq_vocabulary:Resource": 134
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 168
+        },
+        "faldo:location": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 789,
+          "faldo:Region": 789
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+          "bio2rdf:ensembl_vocabulary:Resource": 75
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+          "bio2rdf:ensembl_vocabulary:Resource": 75
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 39
+        },
+        "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 138
+        },
+        "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 306
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 75
+        },
+        "bio2rdf:ncbigene_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 6
+        },
+        "bio2rdf:ncbigene_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 8
+        },
+        "bio2rdf:ncbigene_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 8
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-function-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 6,
+          "bio2rdf:ncbigene_vocabulary:Gene-function-Association": 6
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-component-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 8,
+          "bio2rdf:ncbigene_vocabulary:Gene-component-Association": 8
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-process-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 8,
+          "bio2rdf:ncbigene_vocabulary:Gene-process-Association": 8
+        },
+        "bio2rdf:ncbigene_vocabulary:x-unists": {
+          "bio2rdf:unists_vocabulary:Resource": 26
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 138
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 138
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 138
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 138
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 138
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 138
+        },
+        "bio2rdf:ncbigene_vocabulary:status": {
+          "Literal:xsd:string": 136
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol": {
+          "Literal:xsd:string": 138
+        },
+        "bio2rdf:ncbigene_vocabulary:assembly": {
+          "Literal:xsd:string": 254
+        },
+        "bio2rdf:ncbigene_vocabulary:locus": {
+          "Literal:xsd:string": 138
+        },
+        "bio2rdf:ncbigene_vocabulary:modification-date": {
+          "Literal:xsd:string": 138
+        },
+        "bio2rdf:ncbigene_vocabulary:other-designation": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+          "Literal:xsd:string": 216
+        },
+        "bio2rdf:ncbigene_vocabulary:chromosome": {
+          "Literal:xsd:integer": 132,
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:ncbigene_vocabulary:dbxref": {
+          "Literal:xsd:string": 215
+        },
+        "bio2rdf:ncbigene_vocabulary:map-location": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+          "Literal:xsd:string": 132
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+          "Literal:xsd:string": 132
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+          "Literal:xsd:string": 132
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 138
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:ScRNA-Gene",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "faldo:location": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "faldo:Region"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": [
+        {
+          "@id": "bio2rdf:refseq_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:genbank_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene-function-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-component-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association"
+        }
+      ],
+      "bio2rdf:ncbigene_vocabulary:gene-process-association": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:locus": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:modification-date": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:other-designation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:assembly": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:chromosome": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:ncbigene_vocabulary:dbxref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:map-location": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 16
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 8,
+          "bio2rdf:refseq_vocabulary:Resource": 8
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 8
+        },
+        "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 16
+        },
+        "faldo:location": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 16,
+          "faldo:Region": 16
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": {
+          "bio2rdf:refseq_vocabulary:Resource": 6,
+          "bio2rdf:genbank_vocabulary:Resource": 2
+        },
+        "bio2rdf:ncbigene_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 16
+        },
+        "bio2rdf:ncbigene_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 36
+        },
+        "bio2rdf:ncbigene_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 1
+        },
+        "bio2rdf:ncbigene_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 1
+        },
+        "bio2rdf:ncbigene_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 1
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": {
+          "bio2rdf:ensembl_vocabulary:Resource": 2
+        },
+        "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": {
+          "bio2rdf:ensembl_vocabulary:Resource": 2
+        },
+        "bio2rdf:ncbigene_vocabulary:rna-accession.version": {
+          "bio2rdf:genbank_vocabulary:Resource": 2
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-function-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1,
+          "bio2rdf:ncbigene_vocabulary:Gene-function-Association": 1
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-component-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1,
+          "bio2rdf:ncbigene_vocabulary:Gene-component-Association": 1
+        },
+        "bio2rdf:ncbigene_vocabulary:gene-process-association": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1,
+          "bio2rdf:ncbigene_vocabulary:Gene-process-Association": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 16
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 16
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:ncbigene_vocabulary:status": {
+          "Literal:xsd:string": 6
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:ncbigene_vocabulary:locus": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:ncbigene_vocabulary:modification-date": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:ncbigene_vocabulary:other-designation": {
+          "Literal:xsd:string": 3
+        },
+        "bio2rdf:ncbigene_vocabulary:symbol-synonym": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:ncbigene_vocabulary:assembly": {
+          "Literal:xsd:string": 4
+        },
+        "bio2rdf:ncbigene_vocabulary:chromosome": {
+          "Literal:xsd:integer": 4
+        },
+        "bio2rdf:ncbigene_vocabulary:dbxref": {
+          "Literal:xsd:string": 14
+        },
+        "bio2rdf:ncbigene_vocabulary:map-location": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:ncbigene_vocabulary:nomenclature-status": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 16
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:Gene-component-Association",
+      "bio2rdf:ncbigene_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Protein-coding-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:NcRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:TRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:RRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:MiscRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Pseudo-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Unknown-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Other-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:SnRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:SnoRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:ScRNA-Gene"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:evidence": {
+        "@id": "bio2rdf:eco_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:go-term": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:publication": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:go-category": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:ncbigene_vocabulary:gene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 338171,
+          "bio2rdf:ncbigene_vocabulary:Gene": 338171,
+          "bio2rdf:ncbigene_vocabulary:Protein-coding-Gene": 332320,
+          "bio2rdf:ncbigene_vocabulary:NcRNA-Gene": 1840,
+          "bio2rdf:ncbigene_vocabulary:TRNA-Gene": 1412,
+          "bio2rdf:ncbigene_vocabulary:RRNA-Gene": 116,
+          "bio2rdf:ncbigene_vocabulary:MiscRNA-Gene": 24,
+          "bio2rdf:ncbigene_vocabulary:Pseudo-Gene": 705,
+          "bio2rdf:ncbigene_vocabulary:Unknown-Gene": 1392,
+          "bio2rdf:ncbigene_vocabulary:Other-Gene": 245,
+          "bio2rdf:ncbigene_vocabulary:SnRNA-Gene": 8,
+          "bio2rdf:ncbigene_vocabulary:SnoRNA-Gene": 108,
+          "bio2rdf:ncbigene_vocabulary:ScRNA-Gene": 1
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 338171
+        },
+        "bio2rdf:ncbigene_vocabulary:evidence": {
+          "bio2rdf:eco_vocabulary:Resource": 388444
+        },
+        "bio2rdf:ncbigene_vocabulary:go-term": {
+          "bio2rdf:go_vocabulary:Resource": 338171
+        },
+        "bio2rdf:ncbigene_vocabulary:publication": {
+          "bio2rdf:pubmed_vocabulary:Resource": 118441
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 338171
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 338171
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 338171
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 338171
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 338171
+        },
+        "bio2rdf:ncbigene_vocabulary:go-category": {
+          "Literal:xsd:string": 338171
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:Gene-function-Association",
+      "bio2rdf:ncbigene_vocabulary:go-term": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Protein-coding-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:NcRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Pseudo-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:TRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:RRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:MiscRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Unknown-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Other-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:SnRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:SnoRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:ScRNA-Gene"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:evidence": {
+        "@id": "bio2rdf:eco_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:publication": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:go-category": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:ncbigene_vocabulary:go-term": {
+          "bio2rdf:go_vocabulary:Resource": 341194
+        },
+        "bio2rdf:ncbigene_vocabulary:gene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 341194,
+          "bio2rdf:ncbigene_vocabulary:Gene": 341194,
+          "bio2rdf:ncbigene_vocabulary:Protein-coding-Gene": 335246,
+          "bio2rdf:ncbigene_vocabulary:NcRNA-Gene": 1672,
+          "bio2rdf:ncbigene_vocabulary:Pseudo-Gene": 849,
+          "bio2rdf:ncbigene_vocabulary:TRNA-Gene": 1599,
+          "bio2rdf:ncbigene_vocabulary:RRNA-Gene": 109,
+          "bio2rdf:ncbigene_vocabulary:MiscRNA-Gene": 26,
+          "bio2rdf:ncbigene_vocabulary:Unknown-Gene": 1408,
+          "bio2rdf:ncbigene_vocabulary:Other-Gene": 172,
+          "bio2rdf:ncbigene_vocabulary:SnRNA-Gene": 6,
+          "bio2rdf:ncbigene_vocabulary:SnoRNA-Gene": 106,
+          "bio2rdf:ncbigene_vocabulary:ScRNA-Gene": 1
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 341194
+        },
+        "bio2rdf:ncbigene_vocabulary:evidence": {
+          "bio2rdf:eco_vocabulary:Resource": 381358
+        },
+        "bio2rdf:ncbigene_vocabulary:publication": {
+          "bio2rdf:pubmed_vocabulary:Resource": 127545
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 341194
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 341194
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 341194
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 341194
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 341194
+        },
+        "bio2rdf:ncbigene_vocabulary:go-category": {
+          "Literal:xsd:string": 341194
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:Gene-process-Association",
+      "bio2rdf:ncbigene_vocabulary:go-term": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Protein-coding-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:NcRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:TRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:RRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:MiscRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Pseudo-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Unknown-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:Other-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:SnRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:SnoRNA-Gene"
+        },
+        {
+          "@id": "bio2rdf:ncbigene_vocabulary:ScRNA-Gene"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ncbigene_vocabulary:evidence": {
+        "@id": "bio2rdf:eco_vocabulary:Resource"
+      },
+      "bio2rdf:ncbigene_vocabulary:publication": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ncbigene_vocabulary:go-category": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:ncbigene_vocabulary:go-term": {
+          "bio2rdf:go_vocabulary:Resource": 599517
+        },
+        "bio2rdf:ncbigene_vocabulary:gene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 599517,
+          "bio2rdf:ncbigene_vocabulary:Gene": 599517,
+          "bio2rdf:ncbigene_vocabulary:Protein-coding-Gene": 589326,
+          "bio2rdf:ncbigene_vocabulary:NcRNA-Gene": 4774,
+          "bio2rdf:ncbigene_vocabulary:TRNA-Gene": 1491,
+          "bio2rdf:ncbigene_vocabulary:RRNA-Gene": 112,
+          "bio2rdf:ncbigene_vocabulary:MiscRNA-Gene": 89,
+          "bio2rdf:ncbigene_vocabulary:Pseudo-Gene": 1260,
+          "bio2rdf:ncbigene_vocabulary:Unknown-Gene": 1976,
+          "bio2rdf:ncbigene_vocabulary:Other-Gene": 372,
+          "bio2rdf:ncbigene_vocabulary:SnRNA-Gene": 8,
+          "bio2rdf:ncbigene_vocabulary:SnoRNA-Gene": 108,
+          "bio2rdf:ncbigene_vocabulary:ScRNA-Gene": 1
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 599517
+        },
+        "bio2rdf:ncbigene_vocabulary:evidence": {
+          "bio2rdf:eco_vocabulary:Resource": 686071
+        },
+        "bio2rdf:ncbigene_vocabulary:publication": {
+          "bio2rdf:pubmed_vocabulary:Resource": 280676
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 599517
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 599517
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 599517
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 599517
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 599517
+        },
+        "bio2rdf:ncbigene_vocabulary:go-category": {
+          "Literal:xsd:string": 599517
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T17:17:31.677747+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "ncbigene",
+    "graph_uris": [
+      "http://bio2rdf.org/ncbigene_resource:bio2rdf.dataset.ncbigene.R3"
+    ],
+    "pattern_count": 903,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "bio2rdf:ensembl_vocabulary:Resource": "ensembl_vocabulary:Resource",
+    "void:inDataset": "inDataset",
+    "dcterms:Dataset": "Dataset",
+    "owl:ObjectProperty": "ObjectProperty",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "owl:Class": "Class",
+    "bio2rdf:genbank_vocabulary:Resource": "genbank_vocabulary:Resource",
+    "bio2rdf:go_vocabulary:Resource": "go_vocabulary:Resource",
+    "bio2rdf:ncbigene_vocabulary:Resource": "ncbigene_vocabulary:Resource",
+    "bio2rdf:ncbigene_vocabulary:rna-nucleotide-accession.version": "ncbigene_vocabulary:rna-nucleotide-accession.version",
+    "bio2rdf:refseq_vocabulary:Resource": "refseq_vocabulary:Resource",
+    "bio2rdf:ncbigene_vocabulary:rna-nucleotide-gi": "ncbigene_vocabulary:rna-nucleotide-gi",
+    "bio2rdf:gi_vocabulary:Resource": "gi_vocabulary:Resource",
+    "faldo:begin": "begin",
+    "faldo:ExactPosition": "ExactPosition",
+    "faldo:ReverseStrandPosition": "ReverseStrandPosition",
+    "faldo:ForwardStrandPosition": "ForwardStrandPosition",
+    "faldo:end": "end",
+    "faldo:location": "location",
+    "faldo:Region": "Region",
+    "faldo:reference": "reference",
+    "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-accession.version": "ncbigene_vocabulary:genomic-nucleotide-accession.version",
+    "bio2rdf:ncbigene_vocabulary:genomic-nucleotide-gi": "ncbigene_vocabulary:genomic-nucleotide-gi",
+    "bio2rdf:ncbigene_vocabulary:protein-accession.version": "ncbigene_vocabulary:protein-accession.version",
+    "bio2rdf:ncbigene_vocabulary:protein-gi": "ncbigene_vocabulary:protein-gi",
+    "bio2rdf:ncbigene_vocabulary:x-taxonomy": "ncbigene_vocabulary:x-taxonomy",
+    "bio2rdf:taxonomy_vocabulary:Resource": "taxonomy_vocabulary:Resource",
+    "bio2rdf:ncbigene_vocabulary:x-pubmed": "ncbigene_vocabulary:x-pubmed",
+    "bio2rdf:pubmed_vocabulary:Resource": "pubmed_vocabulary:Resource",
+    "bio2rdf:ncbigene_vocabulary:x-vega.gene": "ncbigene_vocabulary:x-vega.gene",
+    "bio2rdf:vega_vocabulary:Resource": "vega_vocabulary:Resource",
+    "bio2rdf:ncbigene_vocabulary:x-vega.protein": "ncbigene_vocabulary:x-vega.protein",
+    "bio2rdf:ncbigene_vocabulary:x-vega.rna": "ncbigene_vocabulary:x-vega.rna",
+    "bio2rdf:ncbigene_vocabulary:protein-accession": "ncbigene_vocabulary:protein-accession",
+    "bio2rdf:ncbigene_vocabulary:rna-accession.version": "ncbigene_vocabulary:rna-accession.version",
+    "bio2rdf:ncbigene_vocabulary:x-ensembl.gene": "ncbigene_vocabulary:x-ensembl.gene",
+    "bio2rdf:ncbigene_vocabulary:x-ensembl.protein": "ncbigene_vocabulary:x-ensembl.protein",
+    "bio2rdf:ncbigene_vocabulary:x-ensembl.rna": "ncbigene_vocabulary:x-ensembl.rna",
+    "bio2rdf:ncbigene_vocabulary:component": "ncbigene_vocabulary:component",
+    "bio2rdf:ncbigene_vocabulary:evidence": "ncbigene_vocabulary:evidence",
+    "bio2rdf:eco_vocabulary:Resource": "eco_vocabulary:Resource",
+    "bio2rdf:ncbigene_vocabulary:function": "ncbigene_vocabulary:function",
+    "bio2rdf:ncbigene_vocabulary:gene": "ncbigene_vocabulary:gene",
+    "bio2rdf:ncbigene_vocabulary:Gene": "ncbigene_vocabulary:Gene",
+    "bio2rdf:ncbigene_vocabulary:NcRNA-Gene": "ncbigene_vocabulary:NcRNA-Gene",
+    "bio2rdf:ncbigene_vocabulary:Pseudo-Gene": "ncbigene_vocabulary:Pseudo-Gene",
+    "bio2rdf:ncbigene_vocabulary:Protein-coding-Gene": "ncbigene_vocabulary:Protein-coding-Gene",
+    "bio2rdf:ncbigene_vocabulary:Unknown-Gene": "ncbigene_vocabulary:Unknown-Gene",
+    "bio2rdf:ncbigene_vocabulary:Other-Gene": "ncbigene_vocabulary:Other-Gene",
+    "bio2rdf:ncbigene_vocabulary:SnoRNA-Gene": "ncbigene_vocabulary:SnoRNA-Gene",
+    "bio2rdf:ncbigene_vocabulary:SnRNA-Gene": "ncbigene_vocabulary:SnRNA-Gene",
+    "bio2rdf:ncbigene_vocabulary:TRNA-Gene": "ncbigene_vocabulary:TRNA-Gene",
+    "bio2rdf:ncbigene_vocabulary:MiscRNA-Gene": "ncbigene_vocabulary:MiscRNA-Gene",
+    "bio2rdf:ncbigene_vocabulary:RRNA-Gene": "ncbigene_vocabulary:RRNA-Gene",
+    "bio2rdf:ncbigene_vocabulary:ScRNA-Gene": "ncbigene_vocabulary:ScRNA-Gene",
+    "bio2rdf:ncbigene_vocabulary:gene-component-association": "ncbigene_vocabulary:gene-component-association",
+    "bio2rdf:ncbigene_vocabulary:Gene-component-Association": "ncbigene_vocabulary:Gene-component-Association",
+    "bio2rdf:ncbigene_vocabulary:gene-function-association": "ncbigene_vocabulary:gene-function-association",
+    "bio2rdf:ncbigene_vocabulary:Gene-function-Association": "ncbigene_vocabulary:Gene-function-Association",
+    "bio2rdf:ncbigene_vocabulary:gene-process-association": "ncbigene_vocabulary:gene-process-association",
+    "bio2rdf:ncbigene_vocabulary:Gene-process-Association": "ncbigene_vocabulary:Gene-process-Association",
+    "bio2rdf:ncbigene_vocabulary:go-term": "ncbigene_vocabulary:go-term",
+    "bio2rdf:ncbigene_vocabulary:process": "ncbigene_vocabulary:process",
+    "bio2rdf:ncbigene_vocabulary:publication": "ncbigene_vocabulary:publication",
+    "bio2rdf:ncbigene_vocabulary:x-unigene": "ncbigene_vocabulary:x-unigene",
+    "bio2rdf:unigene_vocabulary:Resource": "unigene_vocabulary:Resource",
+    "bio2rdf:ncbigene_vocabulary:x-unists": "ncbigene_vocabulary:x-unists",
+    "bio2rdf:unists_vocabulary:Resource": "unists_vocabulary:Resource",
+    "dcat:distribution": "distribution",
+    "dcat:Distribution": "Distribution",
+    "dcterms:source": "source",
+    "dcterms:title": "title",
+    "dcterms:identifier": "identifier",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "dcterms:created": "created",
+    "dcterms:format": "format",
+    "dcterms:rights": "rights",
+    "pav:retrievedOn": "retrievedOn",
+    "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": "bio2rdf_vocabulary:x-identifiers.org",
+    "dcterms:creator": "creator",
+    "foaf:page": "page",
+    "dcterms:publisher": "publisher",
+    "dcterms:license": "license",
+    "dcterms:description": "description",
+    "bio2rdf:ncbigene_vocabulary:status": "ncbigene_vocabulary:status",
+    "bio2rdf:ncbigene_vocabulary:symbol": "ncbigene_vocabulary:symbol",
+    "bio2rdf:ncbigene_vocabulary:locus": "ncbigene_vocabulary:locus",
+    "bio2rdf:ncbigene_vocabulary:modification-date": "ncbigene_vocabulary:modification-date",
+    "bio2rdf:ncbigene_vocabulary:symbol-synonym": "ncbigene_vocabulary:symbol-synonym",
+    "bio2rdf:ncbigene_vocabulary:chromosome": "ncbigene_vocabulary:chromosome",
+    "bio2rdf:ncbigene_vocabulary:dbxref": "ncbigene_vocabulary:dbxref",
+    "bio2rdf:ncbigene_vocabulary:map-location": "ncbigene_vocabulary:map-location",
+    "bio2rdf:ncbigene_vocabulary:nomenclature-authority": "ncbigene_vocabulary:nomenclature-authority",
+    "bio2rdf:ncbigene_vocabulary:nomenclature-authority-fullname": "ncbigene_vocabulary:nomenclature-authority-fullname",
+    "bio2rdf:ncbigene_vocabulary:nomenclature-status": "ncbigene_vocabulary:nomenclature-status",
+    "bio2rdf:ncbigene_vocabulary:assembly": "ncbigene_vocabulary:assembly",
+    "bio2rdf:ncbigene_vocabulary:other-designation": "ncbigene_vocabulary:other-designation",
+    "bio2rdf:ncbigene_vocabulary:go-category": "ncbigene_vocabulary:go-category"
+  }
+}

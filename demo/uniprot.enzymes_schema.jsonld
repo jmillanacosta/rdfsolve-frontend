@@ -1,0 +1,122 @@
+{
+  "@context": {
+    "uniprot.core": "http://purl.uniprot.org/core/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "uniprot.core:Citation",
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:primaryTopicOf": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2474
+        },
+        "skos:exactMatch": {
+          "Resource": 13779
+        },
+        "foaf:primaryTopicOf": {
+          "Resource": 13779
+        }
+      }
+    },
+    {
+      "@id": "uniprot.core:Enzyme",
+      "uniprot.core:activity": {
+        "@id": "uniprot.core:Catalytic_Activity"
+      },
+      "uniprot.core:citation": {
+        "@id": "uniprot.core:Citation"
+      },
+      "uniprot.core:replacedBy": {
+        "@id": "uniprot.core:Enzyme"
+      },
+      "uniprot.core:replaces": {
+        "@id": "uniprot.core:Enzyme"
+      },
+      "skos:broaderTransitive": {
+        "@id": "uniprot.core:Enzyme"
+      },
+      "skos:narrowerTransitive": {
+        "@id": "uniprot.core:Enzyme"
+      },
+      "uniprot.core:obsolete": {
+        "@type": "xsd:boolean"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "uniprot.core:activity": {
+          "uniprot.core:Catalytic_Activity": 8724
+        },
+        "uniprot.core:citation": {
+          "uniprot.core:Citation": 15982
+        },
+        "uniprot.core:replacedBy": {
+          "uniprot.core:Enzyme": 1522
+        },
+        "uniprot.core:replaces": {
+          "uniprot.core:Enzyme": 1522
+        },
+        "skos:broaderTransitive": {
+          "uniprot.core:Enzyme": 8844
+        },
+        "skos:narrowerTransitive": {
+          "uniprot.core:Enzyme": 7354
+        },
+        "uniprot.core:obsolete": {
+          "Literal:xsd:boolean": 1490
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 10354
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 7361
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T09:10:27.395403+00:00",
+    "endpoint": "https://sparql.uniprot.org/sparql/",
+    "dataset_name": "uniprot.enzymes",
+    "graph_uris": [
+      "http://sparql.uniprot.org/enzymes"
+    ],
+    "pattern_count": 16,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "uniprot.core:Citation": "Citation",
+    "dcterms:identifier": "identifier",
+    "skos:exactMatch": "exactMatch",
+    "foaf:primaryTopicOf": "primaryTopicOf",
+    "uniprot.core:Enzyme": "Enzyme",
+    "uniprot.core:activity": "activity",
+    "uniprot.core:Catalytic_Activity": "Catalytic_Activity",
+    "uniprot.core:citation": "citation",
+    "uniprot.core:replacedBy": "replacedBy",
+    "uniprot.core:replaces": "replaces",
+    "skos:broaderTransitive": "broaderTransitive",
+    "skos:narrowerTransitive": "narrowerTransitive",
+    "uniprot.core:obsolete": "obsolete",
+    "skos:altLabel": "altLabel",
+    "skos:prefLabel": "prefLabel"
+  }
+}

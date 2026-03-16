@@ -1,0 +1,15 @@
+{
+  "@context": {},
+  "@graph": [],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T15:03:13.934494+00:00",
+    "endpoint": "https://plantmetwiki.bioinformatics.nl/sparql",
+    "dataset_name": "plantmetwiki",
+    "graph_uris": [
+      "http://plantmetwiki.bioinformatics.nl/"
+    ],
+    "pattern_count": 0,
+    "strategy": "miner/two-phase"
+  }
+}

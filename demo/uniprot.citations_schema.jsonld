@@ -1,0 +1,257 @@
+{
+  "@context": {
+    "uniprot.core": "http://purl.uniprot.org/core/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "uniprot.core:Book_Citation",
+      "uniprot.core:author": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:date": {
+        "@type": "xsd:gYear"
+      },
+      "uniprot.core:editor": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:group": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:name": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:pages": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:place": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:publisher": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:title": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:volume": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "uniprot.core:author": {
+          "Literal:xsd:string": 1988
+        },
+        "uniprot.core:date": {
+          "Literal:xsd:gYear": 512
+        },
+        "uniprot.core:editor": {
+          "Literal:xsd:string": 893
+        },
+        "uniprot.core:group": {
+          "Literal:xsd:string": 1
+        },
+        "uniprot.core:name": {
+          "Literal:xsd:string": 512
+        },
+        "uniprot.core:pages": {
+          "Literal:xsd:string": 509
+        },
+        "uniprot.core:place": {
+          "Literal:xsd:string": 512
+        },
+        "uniprot.core:publisher": {
+          "Literal:xsd:string": 270
+        },
+        "uniprot.core:title": {
+          "Literal:xsd:string": 490
+        },
+        "uniprot.core:volume": {
+          "Literal:xsd:string": 6
+        }
+      }
+    },
+    {
+      "@id": "uniprot.core:Journal_Citation",
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:author": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:authorsIncomplete": {
+        "@type": "xsd:boolean"
+      },
+      "uniprot.core:date": [
+        {
+          "@type": "xsd:gYear"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "uniprot.core:group": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:name": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:pages": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:title": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:volume": {
+        "@type": "xsd:string"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:primaryTopicOf": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1579591
+        },
+        "uniprot.core:author": {
+          "Literal:xsd:string": 12056532
+        },
+        "uniprot.core:authorsIncomplete": {
+          "Literal:xsd:boolean": 1817
+        },
+        "uniprot.core:date": {
+          "Literal:xsd:gYear": 1663613,
+          "Literal:xsd:string": 371
+        },
+        "uniprot.core:group": {
+          "Literal:xsd:string": 2521
+        },
+        "uniprot.core:name": {
+          "Literal:xsd:string": 1663984
+        },
+        "uniprot.core:pages": {
+          "Literal:xsd:string": 1645922
+        },
+        "uniprot.core:title": {
+          "Literal:xsd:string": 1663488
+        },
+        "uniprot.core:volume": {
+          "Literal:xsd:string": 1650180
+        },
+        "skos:exactMatch": {
+          "Resource": 1615554
+        },
+        "foaf:primaryTopicOf": {
+          "Resource": 1613318
+        }
+      }
+    },
+    {
+      "@id": "uniprot.core:Submission_Citation",
+      "uniprot.core:author": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:date": {
+        "@type": "xsd:gYearMonth"
+      },
+      "uniprot.core:group": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:submittedTo": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:title": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "uniprot.core:author": {
+          "Literal:xsd:string": 1556989
+        },
+        "uniprot.core:date": {
+          "Literal:xsd:gYearMonth": 365672
+        },
+        "uniprot.core:group": {
+          "Literal:xsd:string": 6949
+        },
+        "uniprot.core:submittedTo": {
+          "Literal:xsd:string": 365672
+        },
+        "uniprot.core:title": {
+          "Literal:xsd:string": 273390
+        }
+      }
+    },
+    {
+      "@id": "uniprot.core:Thesis_Citation",
+      "uniprot.core:author": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:date": {
+        "@type": "xsd:gYear"
+      },
+      "uniprot.core:institution": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:place": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:title": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "uniprot.core:author": {
+          "Literal:xsd:string": 1313
+        },
+        "uniprot.core:date": {
+          "Literal:xsd:gYear": 1221
+        },
+        "uniprot.core:institution": {
+          "Literal:xsd:string": 1221
+        },
+        "uniprot.core:place": {
+          "Literal:xsd:string": 989
+        },
+        "uniprot.core:title": {
+          "Literal:xsd:string": 846
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T09:01:51.506429+00:00",
+    "endpoint": "https://sparql.uniprot.org/sparql/",
+    "dataset_name": "uniprot.citations",
+    "graph_uris": [
+      "http://sparql.uniprot.org/citations"
+    ],
+    "pattern_count": 34,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "uniprot.core:Book_Citation": "Book_Citation",
+    "uniprot.core:author": "author",
+    "uniprot.core:date": "date",
+    "uniprot.core:editor": "editor",
+    "uniprot.core:group": "group",
+    "uniprot.core:name": "name",
+    "uniprot.core:pages": "pages",
+    "uniprot.core:place": "place",
+    "uniprot.core:publisher": "publisher",
+    "uniprot.core:title": "title",
+    "uniprot.core:volume": "volume",
+    "uniprot.core:Journal_Citation": "Journal_Citation",
+    "dcterms:identifier": "identifier",
+    "uniprot.core:authorsIncomplete": "authorsIncomplete",
+    "skos:exactMatch": "exactMatch",
+    "foaf:primaryTopicOf": "primaryTopicOf",
+    "uniprot.core:Submission_Citation": "Submission_Citation",
+    "uniprot.core:submittedTo": "submittedTo",
+    "uniprot.core:Thesis_Citation": "Thesis_Citation",
+    "uniprot.core:institution": "institution"
+  }
+}

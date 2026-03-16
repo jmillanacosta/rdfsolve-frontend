@@ -1,0 +1,114 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pav": "http://purl.org/pav/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 2
+        }
+      }
+    },
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 1
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 1
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 1
+        },
+        "foaf:page": {
+          "Resource": 2
+        },
+        "dcterms:publisher": {
+          "Resource": 2
+        },
+        "dcterms:license": {
+          "Resource": 2
+        },
+        "dcterms:creator": {
+          "Resource": 1
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T12:37:02.032857+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "interpro",
+    "graph_uris": [
+      "http://bio2rdf.org/interpro_resource:bio2rdf.dataset.interpro.R3"
+    ],
+    "pattern_count": 14,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "dcterms:Dataset": "Dataset",
+    "dcat:distribution": "distribution",
+    "dcat:Distribution": "Distribution",
+    "dcterms:source": "source",
+    "dcterms:format": "format",
+    "dcterms:rights": "rights",
+    "dcterms:title": "title",
+    "dcterms:created": "created",
+    "pav:retrievedOn": "retrievedOn",
+    "foaf:page": "page",
+    "dcterms:publisher": "publisher",
+    "dcterms:license": "license",
+    "dcterms:creator": "creator"
+  }
+}

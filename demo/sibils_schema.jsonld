@@ -1,0 +1,3298 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "vocab": "https://w3id.org/widoco/vocab#",
+    "vann": "http://purl.org/vocab/vann/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "bibo": "http://purl.org/ontology/bibo/",
+    "ontology": "https://purl.expasy.org/sibils/rdf/ontology/",
+    "fabio": "http://purl.org/spar/fabio/",
+    "pattern": "http://www.essepuntato.it/2008/12/pattern#",
+    "doco": "http://purl.org/spar/doco/",
+    "schema": "https://schema.org/",
+    "frbr": "http://purl.org/vocab/frbr/core#",
+    "20": "http://prismstandard.org/namespaces/basic/2.0/",
+    "deo": "http://purl.org/spar/deo/",
+    "oa": "http://www.w3.org/ns/oa#",
+    "cnt": "http://www.w3.org/2011/content#",
+    "void": "http://rdfs.org/ns/void#",
+    "voidext": "http://ldf.fi/void-ext#",
+    "sh": "http://www.w3.org/ns/shacl#"
+  },
+  "@graph": [
+    {
+      "@id": "owl:Class",
+      "owl:complementOf": {
+        "@id": "owl:Class"
+      },
+      "skos:closeMatch": {
+        "@id": "owl:Class"
+      },
+      "skos:broadMatch": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "owl:complementOf": {
+          "owl:Class": 2
+        },
+        "skos:closeMatch": {
+          "owl:Class": 4
+        },
+        "skos:broadMatch": {
+          "owl:Class": 3
+        }
+      }
+    },
+    {
+      "@id": "owl:Ontology",
+      "dcterms:created": {
+        "@type": "xsd:date"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:date"
+      },
+      "owl:versionInfo": {
+        "@type": "xsd:string"
+      },
+      "dcterms:hasVersion": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "vocab:introduction": {
+        "@type": "xsd:string"
+      },
+      "dcterms:bibliographicCitation": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "vann:preferredNamespacePrefix": {
+        "@type": "xsd:string"
+      },
+      "owl:imports": {
+        "@id": "rdfs:Resource"
+      },
+      "owl:priorVersion": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "vocab:turtleSerialization": {
+        "@id": "rdfs:Resource"
+      },
+      "vocab:jsonldSerialization": {
+        "@id": "rdfs:Resource"
+      },
+      "vocab:ntSerialization": {
+        "@id": "rdfs:Resource"
+      },
+      "vocab:rdfxmlSerialization": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:contributor": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "bibo:status": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:created": {
+          "Literal:xsd:date": 1
+        },
+        "dcterms:modified": {
+          "Literal:xsd:date": 1
+        },
+        "owl:versionInfo": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:hasVersion": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "vocab:introduction": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:bibliographicCitation": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 1
+        },
+        "vann:preferredNamespacePrefix": {
+          "Literal:xsd:string": 1
+        },
+        "owl:imports": {
+          "Resource": 1
+        },
+        "owl:priorVersion": {
+          "Resource": 1
+        },
+        "dcterms:creator": {
+          "Resource": 1
+        },
+        "vocab:turtleSerialization": {
+          "Resource": 1
+        },
+        "vocab:jsonldSerialization": {
+          "Resource": 1
+        },
+        "vocab:ntSerialization": {
+          "Resource": 1
+        },
+        "vocab:rdfxmlSerialization": {
+          "Resource": 1
+        },
+        "dcterms:contributor": {
+          "Resource": 3
+        },
+        "dcterms:license": {
+          "Resource": 1
+        },
+        "dcterms:publisher": {
+          "Resource": 1
+        },
+        "bibo:status": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "skos:Concept",
+      "ontology:more_specific_than": {
+        "@id": "skos:Concept"
+      },
+      "skos:inScheme": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:SibilsConceptScheme"
+        }
+      ],
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "skos:notation": {
+        "@type": "xsd:string"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "ontology:more_specific_than": {
+          "skos:Concept": 243960
+        },
+        "skos:inScheme": {
+          "owl:NamedIndividual": 354405,
+          "ontology:SibilsConceptScheme": 354405
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 354380
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 2394999
+        },
+        "skos:notation": {
+          "Literal:xsd:string": 354405
+        },
+        "skos:exactMatch": {
+          "Resource": 222883
+        }
+      }
+    },
+    {
+      "@id": "fabio:ReviewArticle",
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:BackMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        },
+        {
+          "@id": "ontology:FloatMatter"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "dcterms:creator": {
+        "@id": "schema:Person"
+      },
+      "frbr:realizationOf": {
+        "@id": "fabio:CaseReport"
+      },
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "frbr:embodiment": {
+        "@id": "fabio:Manifestation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "20:keyword": {
+        "@type": "xsd:string"
+      },
+      "20:issueIdentifier": {
+        "@type": "xsd:string"
+      },
+      "20:volume": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:BodyMatter": 273,
+          "doco:BackMatter": 271,
+          "doco:FrontMatter": 278,
+          "ontology:FloatMatter": 59
+        },
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 270,
+          "ontology:CitingSource": 270
+        },
+        "dcterms:creator": {
+          "schema:Person": 12
+        },
+        "frbr:realizationOf": {
+          "fabio:CaseReport": 1
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 587800
+        },
+        "frbr:embodiment": {
+          "fabio:Manifestation": 141
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 278
+        },
+        "20:doi": {
+          "Literal:xsd:string": 268
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 275
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 278
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 278
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 276
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 267
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 278
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 278
+        },
+        "20:keyword": {
+          "Literal:xsd:string": 1718
+        },
+        "20:issueIdentifier": {
+          "Literal:xsd:string": 162
+        },
+        "20:volume": {
+          "Literal:xsd:string": 275
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 278
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "owl:equivalentProperty": {
+        "@id": "owl:DatatypeProperty"
+      },
+      "_counts": {
+        "owl:equivalentProperty": {
+          "owl:DatatypeProperty": 1
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "owl:ObjectProperty"
+      },
+      "_counts": {
+        "owl:inverseOf": {
+          "owl:ObjectProperty": 1
+        }
+      }
+    },
+    {
+      "@id": "doco:Glossary",
+      "pattern:contains": {
+        "@id": "doco:Sentence"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Sentence": 166
+        }
+      }
+    },
+    {
+      "@id": "fabio:RapidCommunication",
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:BackMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        }
+      ],
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "frbr:embodiment": {
+        "@id": "fabio:Manifestation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "20:keyword": {
+        "@type": "xsd:string"
+      },
+      "20:issueIdentifier": {
+        "@type": "xsd:string"
+      },
+      "20:volume": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 36,
+          "ontology:CitingSource": 36
+        },
+        "pattern:contains": {
+          "doco:BodyMatter": 30,
+          "doco:BackMatter": 30,
+          "doco:FrontMatter": 30
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 23384
+        },
+        "frbr:embodiment": {
+          "fabio:Manifestation": 30
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 30
+        },
+        "20:doi": {
+          "Literal:xsd:string": 30
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 30
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 30
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 30
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 30
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 29
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 30
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 30
+        },
+        "20:keyword": {
+          "Literal:xsd:string": 10
+        },
+        "20:issueIdentifier": {
+          "Literal:xsd:string": 30
+        },
+        "20:volume": {
+          "Literal:xsd:string": 30
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 30
+        }
+      }
+    },
+    {
+      "@id": "doco:Table",
+      "pattern:contains": {
+        "@id": "doco:Sentence"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Sentence": 46
+        }
+      }
+    },
+    {
+      "@id": "owl:NamedIndividual",
+      "dcterms:hasVersion": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dcterms:hasVersion": {
+          "Literal:xsd:string": 47
+        }
+      }
+    },
+    {
+      "@id": "ontology:SibilsConceptScheme",
+      "dcterms:hasVersion": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dcterms:hasVersion": {
+          "Literal:xsd:string": 47
+        }
+      }
+    },
+    {
+      "@id": "doco:Abstract",
+      "pattern:contains": [
+        {
+          "@id": "doco:Paragraph"
+        },
+        {
+          "@id": "doco:Section"
+        },
+        {
+          "@id": "doco:FigureBox"
+        },
+        {
+          "@id": "ontology:ListItemBlock"
+        },
+        {
+          "@id": "doco:TableBox"
+        }
+      ],
+      "dcterms:hasPart": {
+        "@id": "doco:SectionLabel"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Paragraph": 287754,
+          "doco:Section": 17060,
+          "doco:FigureBox": 40,
+          "ontology:ListItemBlock": 283,
+          "doco:TableBox": 1
+        },
+        "dcterms:hasPart": {
+          "doco:SectionLabel": 255334
+        }
+      }
+    },
+    {
+      "@id": "doco:BodyMatter",
+      "pattern:contains": [
+        {
+          "@id": "doco:Abstract"
+        },
+        {
+          "@id": "doco:Section"
+        },
+        {
+          "@id": "doco:Paragraph"
+        },
+        {
+          "@id": "doco:CaptionedBox"
+        },
+        {
+          "@id": "doco:FigureBox"
+        },
+        {
+          "@id": "doco:TextBox"
+        },
+        {
+          "@id": "doco:Glossary"
+        },
+        {
+          "@id": "doco:TableBox"
+        },
+        {
+          "@id": "ontology:ListItemBlock"
+        },
+        {
+          "@id": "deo:DiscourseElement"
+        },
+        {
+          "@id": "doco:BlockQuotation"
+        },
+        {
+          "@id": "doco:Table"
+        },
+        {
+          "@id": "ontology:ObjectIdBlock"
+        }
+      ],
+      "_counts": {
+        "pattern:contains": {
+          "doco:Abstract": 250503,
+          "doco:Section": 968918,
+          "doco:Paragraph": 43443,
+          "doco:CaptionedBox": 11334,
+          "doco:FigureBox": 995,
+          "doco:TextBox": 32,
+          "doco:Glossary": 135,
+          "doco:TableBox": 163,
+          "ontology:ListItemBlock": 145,
+          "deo:DiscourseElement": 2,
+          "doco:BlockQuotation": 3,
+          "doco:Table": 1,
+          "ontology:ObjectIdBlock": 1
+        }
+      }
+    },
+    {
+      "@id": "doco:FrontMatter",
+      "pattern:contains": [
+        {
+          "@id": "doco:Title"
+        },
+        {
+          "@id": "doco:ListOfAuthors"
+        },
+        {
+          "@id": "doco:ListOfOrganizations"
+        },
+        {
+          "@id": "doco:Abstract"
+        }
+      ],
+      "_counts": {
+        "pattern:contains": {
+          "doco:Title": 302817,
+          "doco:ListOfAuthors": 261786,
+          "doco:ListOfOrganizations": 239928,
+          "doco:Abstract": 40446
+        }
+      }
+    },
+    {
+      "@id": "doco:List",
+      "pattern:contains": {
+        "@id": "ontology:WordSequence"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "ontology:WordSequence": 6141344
+        }
+      }
+    },
+    {
+      "@id": "doco:ListOfOrganizations",
+      "pattern:contains": {
+        "@id": "ontology:WordSequence"
+      },
+      "dcterms:hasPart": {
+        "@id": "doco:Label"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "ontology:WordSequence": 416344
+        },
+        "dcterms:hasPart": {
+          "doco:Label": 239928
+        }
+      }
+    },
+    {
+      "@id": "doco:Paragraph",
+      "pattern:contains": {
+        "@id": "doco:Sentence"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Sentence": 10581415
+        }
+      }
+    },
+    {
+      "@id": "doco:Section",
+      "pattern:contains": [
+        {
+          "@id": "doco:List"
+        },
+        {
+          "@id": "doco:Paragraph"
+        },
+        {
+          "@id": "doco:Section"
+        },
+        {
+          "@id": "doco:FigureBox"
+        },
+        {
+          "@id": "ontology:MediaBlock"
+        },
+        {
+          "@id": "doco:ListOfReferences"
+        },
+        {
+          "@id": "deo:DiscourseElement"
+        },
+        {
+          "@id": "doco:TableBox"
+        },
+        {
+          "@id": "ontology:ListItemBlock"
+        },
+        {
+          "@id": "ontology:ObjectIdBlock"
+        },
+        {
+          "@id": "doco:TextBox"
+        },
+        {
+          "@id": "doco:CaptionedBox"
+        },
+        {
+          "@id": "doco:Table"
+        },
+        {
+          "@id": "doco:BlockQuotation"
+        },
+        {
+          "@id": "doco:Glossary"
+        }
+      ],
+      "dcterms:hasPart": {
+        "@id": "doco:SectionLabel"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:List": 795584,
+          "doco:Paragraph": 1349410,
+          "doco:Section": 571206,
+          "doco:FigureBox": 162954,
+          "ontology:MediaBlock": 4237,
+          "doco:ListOfReferences": 9343,
+          "deo:DiscourseElement": 30220,
+          "doco:TableBox": 26073,
+          "ontology:ListItemBlock": 15584,
+          "ontology:ObjectIdBlock": 1607,
+          "doco:TextBox": 144,
+          "doco:CaptionedBox": 285,
+          "doco:Table": 24,
+          "doco:BlockQuotation": 13,
+          "doco:Glossary": 27
+        },
+        "dcterms:hasPart": {
+          "doco:SectionLabel": 1568649
+        }
+      }
+    },
+    {
+      "@id": "doco:SectionLabel",
+      "pattern:contains": {
+        "@id": "doco:Sentence"
+      },
+      "cnt:chars": {
+        "@type": "xsd:string"
+      },
+      "ontology:ordinal": {
+        "@type": "xsd:integer"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Sentence": 809604
+        },
+        "cnt:chars": {
+          "Literal:xsd:string": 1046087
+        },
+        "ontology:ordinal": {
+          "Literal:xsd:integer": 1046087
+        }
+      }
+    },
+    {
+      "@id": "doco:Title",
+      "pattern:contains": {
+        "@id": "doco:Paragraph"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Paragraph": 302817
+        }
+      }
+    },
+    {
+      "@id": "fabio:Abstract",
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        },
+        {
+          "@id": "doco:BackMatter"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "dcterms:creator": {
+        "@id": "schema:Person"
+      },
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "frbr:embodiment": {
+        "@id": "fabio:Manifestation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "20:keyword": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "20:issueIdentifier": {
+        "@type": "xsd:string"
+      },
+      "20:volume": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:BodyMatter": 581,
+          "doco:FrontMatter": 583,
+          "doco:BackMatter": 7
+        },
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 585,
+          "ontology:CitingSource": 585
+        },
+        "dcterms:creator": {
+          "schema:Person": 2593
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 57076
+        },
+        "frbr:embodiment": {
+          "fabio:Manifestation": 8
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 583
+        },
+        "20:doi": {
+          "Literal:xsd:string": 85
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 512
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 583
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 583
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 583
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 583
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 583
+        },
+        "20:keyword": {
+          "Literal:xsd:string": 5
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 8
+        },
+        "20:issueIdentifier": {
+          "Literal:xsd:string": 8
+        },
+        "20:volume": {
+          "Literal:xsd:string": 8
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 583
+        }
+      }
+    },
+    {
+      "@id": "schema:Person",
+      "schema:name": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "schema:name": {
+          "Literal:xsd:string": 1561052
+        }
+      }
+    },
+    {
+      "@id": "oa:TextPositionSelector",
+      "oa:end": {
+        "@type": "xsd:integer"
+      },
+      "oa:exact": {
+        "@type": "xsd:string"
+      },
+      "oa:start": {
+        "@type": "xsd:integer"
+      },
+      "_counts": {
+        "oa:end": {
+          "Literal:xsd:integer": 117276847
+        },
+        "oa:exact": {
+          "Literal:xsd:string": 117276847
+        },
+        "oa:start": {
+          "Literal:xsd:integer": 117276847
+        }
+      }
+    },
+    {
+      "@id": "doco:Label",
+      "cnt:chars": {
+        "@type": "xsd:string"
+      },
+      "ontology:ordinal": {
+        "@type": "xsd:integer"
+      },
+      "_counts": {
+        "cnt:chars": {
+          "Literal:xsd:string": 517027
+        },
+        "ontology:ordinal": {
+          "Literal:xsd:integer": 239928
+        }
+      }
+    },
+    {
+      "@id": "doco:ListOfAuthors",
+      "cnt:chars": {
+        "@type": "xsd:string"
+      },
+      "ontology:ordinal": {
+        "@type": "xsd:integer"
+      },
+      "_counts": {
+        "cnt:chars": {
+          "Literal:xsd:string": 261786
+        },
+        "ontology:ordinal": {
+          "Literal:xsd:integer": 261786
+        }
+      }
+    },
+    {
+      "@id": "doco:Sentence",
+      "cnt:chars": {
+        "@type": "xsd:string"
+      },
+      "ontology:ordinal": {
+        "@type": "xsd:integer"
+      },
+      "_counts": {
+        "cnt:chars": {
+          "Literal:xsd:string": 14074656
+        },
+        "ontology:ordinal": {
+          "Literal:xsd:integer": 14074656
+        }
+      }
+    },
+    {
+      "@id": "fabio:JournalArticle",
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        },
+        {
+          "@id": "doco:BackMatter"
+        },
+        {
+          "@id": "ontology:FloatMatter"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "dcterms:creator": {
+        "@id": "schema:Person"
+      },
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "frbr:realizationOf": [
+        {
+          "@id": "fabio:Report"
+        },
+        {
+          "@id": "fabio:ClinicalTrialReport"
+        },
+        {
+          "@id": "fabio:CaseReport"
+        },
+        {
+          "@id": "fabio:TechnicalReport"
+        },
+        {
+          "@id": "fabio:SystematicReview"
+        }
+      ],
+      "frbr:embodiment": {
+        "@id": "fabio:Manifestation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "20:keyword": {
+        "@type": "xsd:string"
+      },
+      "20:issueIdentifier": {
+        "@type": "xsd:string"
+      },
+      "20:volume": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:BodyMatter": 256873,
+          "doco:FrontMatter": 258415,
+          "doco:BackMatter": 37888,
+          "ontology:FloatMatter": 13745
+        },
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 270591,
+          "ontology:CitingSource": 270591
+        },
+        "dcterms:creator": {
+          "schema:Person": 1314850
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 109540239
+        },
+        "frbr:realizationOf": {
+          "fabio:Report": 304,
+          "fabio:ClinicalTrialReport": 20,
+          "fabio:CaseReport": 23,
+          "fabio:TechnicalReport": 2,
+          "fabio:SystematicReview": 4
+        },
+        "frbr:embodiment": {
+          "fabio:Manifestation": 25488
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 258415
+        },
+        "20:doi": {
+          "Literal:xsd:string": 240330
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 249554
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 258412
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 258415
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 104839
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 257807
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 258415
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 258415
+        },
+        "20:keyword": {
+          "Literal:xsd:string": 179188
+        },
+        "20:issueIdentifier": {
+          "Literal:xsd:string": 31302
+        },
+        "20:volume": {
+          "Literal:xsd:string": 39381
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 258415
+        }
+      }
+    },
+    {
+      "@id": "fabio:Letter",
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        },
+        {
+          "@id": "doco:BackMatter"
+        },
+        {
+          "@id": "ontology:FloatMatter"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "dcterms:creator": {
+        "@id": "schema:Person"
+      },
+      "frbr:realizationOf": {
+        "@id": "fabio:Report"
+      },
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "frbr:embodiment": {
+        "@id": "fabio:Manifestation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "20:keyword": {
+        "@type": "xsd:string"
+      },
+      "20:issueIdentifier": {
+        "@type": "xsd:string"
+      },
+      "20:volume": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:BodyMatter": 1249,
+          "doco:FrontMatter": 1250,
+          "doco:BackMatter": 131,
+          "ontology:FloatMatter": 28
+        },
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 1263,
+          "ontology:CitingSource": 1263
+        },
+        "dcterms:creator": {
+          "schema:Person": 7795
+        },
+        "frbr:realizationOf": {
+          "fabio:Report": 19
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 152464
+        },
+        "frbr:embodiment": {
+          "fabio:Manifestation": 101
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 1250
+        },
+        "20:doi": {
+          "Literal:xsd:string": 1197
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 244
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1250
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 1250
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 362
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 1249
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 1250
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 1250
+        },
+        "20:keyword": {
+          "Literal:xsd:string": 520
+        },
+        "20:issueIdentifier": {
+          "Literal:xsd:string": 98
+        },
+        "20:volume": {
+          "Literal:xsd:string": 131
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 1250
+        }
+      }
+    },
+    {
+      "@id": "fabio:ReportDocument",
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        },
+        {
+          "@id": "doco:BackMatter"
+        },
+        {
+          "@id": "ontology:FloatMatter"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "frbr:realizationOf": [
+        {
+          "@id": "fabio:Report"
+        },
+        {
+          "@id": "fabio:CaseReport"
+        },
+        {
+          "@id": "fabio:ClinicalTrialReport"
+        },
+        {
+          "@id": "fabio:MeetingReport"
+        },
+        {
+          "@id": "fabio:TechnicalReport"
+        }
+      ],
+      "dcterms:creator": {
+        "@id": "schema:Person"
+      },
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "frbr:embodiment": {
+        "@id": "fabio:Manifestation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "20:keyword": {
+        "@type": "xsd:string"
+      },
+      "20:issueIdentifier": {
+        "@type": "xsd:string"
+      },
+      "20:volume": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:BodyMatter": 41076,
+          "doco:FrontMatter": 41076,
+          "doco:BackMatter": 177,
+          "ontology:FloatMatter": 44
+        },
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 42299,
+          "ontology:CitingSource": 42299
+        },
+        "frbr:realizationOf": {
+          "fabio:Report": 34584,
+          "fabio:CaseReport": 6289,
+          "fabio:ClinicalTrialReport": 200,
+          "fabio:MeetingReport": 2,
+          "fabio:TechnicalReport": 1
+        },
+        "dcterms:creator": {
+          "schema:Person": 234508
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 6192838
+        },
+        "frbr:embodiment": {
+          "fabio:Manifestation": 72
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 41076
+        },
+        "20:doi": {
+          "Literal:xsd:string": 36931
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 39428
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 41076
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 41076
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 10456
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 41055
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 41076
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 41076
+        },
+        "20:keyword": {
+          "Literal:xsd:string": 5856
+        },
+        "20:issueIdentifier": {
+          "Literal:xsd:string": 86
+        },
+        "20:volume": {
+          "Literal:xsd:string": 178
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 41076
+        }
+      }
+    },
+    {
+      "@id": "ontology:NexAnnotation",
+      "oa:hasBody": {
+        "@id": "skos:Concept"
+      },
+      "oa:hasTarget": {
+        "@id": "ontology:AnnotationTarget"
+      },
+      "_counts": {
+        "oa:hasBody": {
+          "skos:Concept": 117276847
+        },
+        "oa:hasTarget": {
+          "ontology:AnnotationTarget": 117276847
+        }
+      }
+    },
+    {
+      "@id": "ontology:AnnotationTarget",
+      "oa:hasSelector": {
+        "@id": "oa:TextPositionSelector"
+      },
+      "oa:hasSource": [
+        {
+          "@id": "doco:Sentence"
+        },
+        {
+          "@id": "ontology:WordSequence"
+        },
+        {
+          "@id": "ontology:TableColumnName"
+        },
+        {
+          "@id": "ontology:TableCellValues"
+        }
+      ],
+      "_counts": {
+        "oa:hasSelector": {
+          "oa:TextPositionSelector": 117276847
+        },
+        "oa:hasSource": {
+          "doco:Sentence": 98457304,
+          "ontology:WordSequence": 17592064,
+          "ontology:TableColumnName": 155261,
+          "ontology:TableCellValues": 1072218
+        }
+      }
+    },
+    {
+      "@id": "fabio:Comment",
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "dcterms:creator": {
+        "@id": "schema:Person"
+      },
+      "frbr:realizationOf": {
+        "@id": "fabio:Report"
+      },
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "20:keyword": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:BodyMatter": 164,
+          "doco:FrontMatter": 164
+        },
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 164,
+          "ontology:CitingSource": 164
+        },
+        "dcterms:creator": {
+          "schema:Person": 771
+        },
+        "frbr:realizationOf": {
+          "fabio:Report": 10
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 11146
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 164
+        },
+        "20:doi": {
+          "Literal:xsd:string": 158
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 75
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 164
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 164
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 51
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 164
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 164
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 164
+        },
+        "20:keyword": {
+          "Literal:xsd:string": 36
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 164
+        }
+      }
+    },
+    {
+      "@id": "fabio:Editorial",
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        },
+        {
+          "@id": "doco:BackMatter"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "dcterms:creator": {
+        "@id": "schema:Person"
+      },
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "frbr:embodiment": {
+        "@id": "fabio:Manifestation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "20:keyword": {
+        "@type": "xsd:string"
+      },
+      "20:issueIdentifier": {
+        "@type": "xsd:string"
+      },
+      "20:volume": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:BodyMatter": 24,
+          "doco:FrontMatter": 24,
+          "doco:BackMatter": 3
+        },
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 26,
+          "ontology:CitingSource": 26
+        },
+        "dcterms:creator": {
+          "schema:Person": 83
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 4725
+        },
+        "frbr:embodiment": {
+          "fabio:Manifestation": 2
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 24
+        },
+        "20:doi": {
+          "Literal:xsd:string": 24
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 14
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 24
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 24
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 4
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 24
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 24
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 24
+        },
+        "20:keyword": {
+          "Literal:xsd:string": 63
+        },
+        "20:issueIdentifier": {
+          "Literal:xsd:string": 2
+        },
+        "20:volume": {
+          "Literal:xsd:string": 3
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 24
+        }
+      }
+    },
+    {
+      "@id": "fabio:Article",
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        },
+        {
+          "@id": "doco:BackMatter"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "dcterms:creator": {
+        "@id": "schema:Person"
+      },
+      "frbr:realizationOf": {
+        "@id": "fabio:Report"
+      },
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "frbr:embodiment": {
+        "@id": "fabio:Manifestation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "20:keyword": {
+        "@type": "xsd:string"
+      },
+      "20:volume": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:BodyMatter": 52,
+          "doco:FrontMatter": 56,
+          "doco:BackMatter": 5
+        },
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 57,
+          "ontology:CitingSource": 57
+        },
+        "dcterms:creator": {
+          "schema:Person": 330
+        },
+        "frbr:realizationOf": {
+          "fabio:Report": 1
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 9209
+        },
+        "frbr:embodiment": {
+          "fabio:Manifestation": 5
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 56
+        },
+        "20:doi": {
+          "Literal:xsd:string": 50
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 46
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 56
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 56
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 16
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 56
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 56
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 56
+        },
+        "20:keyword": {
+          "Literal:xsd:string": 56
+        },
+        "20:volume": {
+          "Literal:xsd:string": 5
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 56
+        }
+      }
+    },
+    {
+      "@id": "fabio:Addendum",
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:BackMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        }
+      ],
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "frbr:embodiment": {
+        "@id": "fabio:Manifestation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "20:keyword": {
+        "@type": "xsd:string"
+      },
+      "20:issueIdentifier": {
+        "@type": "xsd:string"
+      },
+      "20:volume": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 6,
+          "ontology:CitingSource": 6
+        },
+        "pattern:contains": {
+          "doco:BodyMatter": 6,
+          "doco:BackMatter": 6,
+          "doco:FrontMatter": 6
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 5072
+        },
+        "frbr:embodiment": {
+          "fabio:Manifestation": 2
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 6
+        },
+        "20:doi": {
+          "Literal:xsd:string": 6
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 6
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 6
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 6
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 6
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 6
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 6
+        },
+        "20:keyword": {
+          "Literal:xsd:string": 33
+        },
+        "20:issueIdentifier": {
+          "Literal:xsd:string": 6
+        },
+        "20:volume": {
+          "Literal:xsd:string": 6
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 6
+        }
+      }
+    },
+    {
+      "@id": "ontology:WordSequence",
+      "cnt:chars": {
+        "@type": "xsd:string"
+      },
+      "ontology:ordinal": {
+        "@type": "xsd:integer"
+      },
+      "_counts": {
+        "cnt:chars": {
+          "Literal:xsd:string": 6557688
+        },
+        "ontology:ordinal": {
+          "Literal:xsd:integer": 6557688
+        }
+      }
+    },
+    {
+      "@id": "fabio:NewsItem",
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        },
+        {
+          "@id": "doco:BackMatter"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "dcterms:creator": {
+        "@id": "schema:Person"
+      },
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "frbr:embodiment": {
+        "@id": "fabio:Manifestation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "20:issueIdentifier": {
+        "@type": "xsd:string"
+      },
+      "20:volume": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:BodyMatter": 18,
+          "doco:FrontMatter": 18,
+          "doco:BackMatter": 1
+        },
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 18,
+          "ontology:CitingSource": 18
+        },
+        "dcterms:creator": {
+          "schema:Person": 29
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 1561
+        },
+        "frbr:embodiment": {
+          "fabio:Manifestation": 1
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 18
+        },
+        "20:doi": {
+          "Literal:xsd:string": 17
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 18
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 18
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 18
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 18
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 18
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 2
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 1
+        },
+        "20:issueIdentifier": {
+          "Literal:xsd:string": 1
+        },
+        "20:volume": {
+          "Literal:xsd:string": 1
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 18
+        }
+      }
+    },
+    {
+      "@id": "fabio:LectureNotes",
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "dcterms:creator": {
+        "@id": "schema:Person"
+      },
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:BodyMatter": 4,
+          "doco:FrontMatter": 4
+        },
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 4,
+          "ontology:CitingSource": 4
+        },
+        "dcterms:creator": {
+          "schema:Person": 14
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 742
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 4
+        },
+        "20:doi": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 4
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 4
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 4
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 4
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 4
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 1
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 4
+        }
+      }
+    },
+    {
+      "@id": "fabio:Expression",
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        },
+        {
+          "@id": "doco:BackMatter"
+        },
+        {
+          "@id": "ontology:FloatMatter"
+        }
+      ],
+      "frbr:realizationOf": [
+        {
+          "@id": "fabio:Biography"
+        },
+        {
+          "@id": "fabio:Correction"
+        },
+        {
+          "@id": "fabio:TechnicalReport"
+        },
+        {
+          "@id": "fabio:BookReview"
+        },
+        {
+          "@id": "fabio:ProductReview"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "dcterms:creator": {
+        "@id": "schema:Person"
+      },
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "frbr:embodiment": {
+        "@id": "fabio:Manifestation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "20:keyword": {
+        "@type": "xsd:string"
+      },
+      "20:issueIdentifier": {
+        "@type": "xsd:string"
+      },
+      "20:volume": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:BodyMatter": 269,
+          "doco:FrontMatter": 275,
+          "doco:BackMatter": 187,
+          "ontology:FloatMatter": 48
+        },
+        "frbr:realizationOf": {
+          "fabio:Biography": 11,
+          "fabio:Correction": 102,
+          "fabio:TechnicalReport": 3,
+          "fabio:BookReview": 1,
+          "fabio:ProductReview": 1
+        },
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 251,
+          "ontology:CitingSource": 251
+        },
+        "dcterms:creator": {
+          "schema:Person": 67
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 152085
+        },
+        "frbr:embodiment": {
+          "fabio:Manifestation": 116
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 275
+        },
+        "20:doi": {
+          "Literal:xsd:string": 267
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 148
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 275
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 275
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 260
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 250
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 275
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 275
+        },
+        "20:keyword": {
+          "Literal:xsd:string": 708
+        },
+        "20:issueIdentifier": {
+          "Literal:xsd:string": 137
+        },
+        "20:volume": {
+          "Literal:xsd:string": 257
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 275
+        }
+      }
+    },
+    {
+      "@id": "deo:Caption",
+      "pattern:contains": {
+        "@id": "doco:Sentence"
+      },
+      "cnt:chars": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Sentence": 2175451
+        },
+        "cnt:chars": {
+          "Literal:xsd:string": 14488
+        }
+      }
+    },
+    {
+      "@id": "deo:DiscourseElement",
+      "pattern:contains": {
+        "@id": "doco:Sentence"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Sentence": 364455
+        }
+      }
+    },
+    {
+      "@id": "doco:Appendix",
+      "pattern:contains": [
+        {
+          "@id": "doco:Paragraph"
+        },
+        {
+          "@id": "doco:Section"
+        },
+        {
+          "@id": "ontology:MediaBlock"
+        },
+        {
+          "@id": "deo:DiscourseElement"
+        },
+        {
+          "@id": "doco:TableBox"
+        },
+        {
+          "@id": "ontology:ListItemBlock"
+        },
+        {
+          "@id": "doco:FigureBox"
+        },
+        {
+          "@id": "doco:ListOfReferences"
+        },
+        {
+          "@id": "doco:TextBox"
+        },
+        {
+          "@id": "doco:Table"
+        },
+        {
+          "@id": "ontology:ObjectIdBlock"
+        }
+      ],
+      "dcterms:hasPart": {
+        "@id": "doco:SectionLabel"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Paragraph": 2316,
+          "doco:Section": 1314,
+          "ontology:MediaBlock": 685,
+          "deo:DiscourseElement": 64,
+          "doco:TableBox": 89,
+          "ontology:ListItemBlock": 20,
+          "doco:FigureBox": 110,
+          "doco:ListOfReferences": 1,
+          "doco:TextBox": 15,
+          "doco:Table": 2,
+          "ontology:ObjectIdBlock": 8
+        },
+        "dcterms:hasPart": {
+          "doco:SectionLabel": 1240
+        }
+      }
+    },
+    {
+      "@id": "doco:BackMatter",
+      "pattern:contains": [
+        {
+          "@id": "deo:DiscourseElement"
+        },
+        {
+          "@id": "doco:Section"
+        },
+        {
+          "@id": "doco:ListOfReferences"
+        },
+        {
+          "@id": "doco:Appendix"
+        },
+        {
+          "@id": "doco:CaptionedBox"
+        }
+      ],
+      "_counts": {
+        "pattern:contains": {
+          "deo:DiscourseElement": 77371,
+          "doco:Section": 44638,
+          "doco:ListOfReferences": 30326,
+          "doco:Appendix": 2187,
+          "doco:CaptionedBox": 740
+        }
+      }
+    },
+    {
+      "@id": "doco:CaptionedBox",
+      "pattern:contains": [
+        {
+          "@id": "ontology:MediaBlock"
+        },
+        {
+          "@id": "ontology:ListItemBlock"
+        },
+        {
+          "@id": "doco:Paragraph"
+        },
+        {
+          "@id": "doco:Section"
+        },
+        {
+          "@id": "doco:FigureBox"
+        },
+        {
+          "@id": "ontology:ObjectIdBlock"
+        },
+        {
+          "@id": "doco:TableBox"
+        },
+        {
+          "@id": "deo:DiscourseElement"
+        }
+      ],
+      "dcterms:hasPart": [
+        {
+          "@id": "doco:SectionLabel"
+        },
+        {
+          "@id": "deo:Caption"
+        }
+      ],
+      "_counts": {
+        "pattern:contains": {
+          "ontology:MediaBlock": 39618,
+          "ontology:ListItemBlock": 6979,
+          "doco:Paragraph": 4236,
+          "doco:Section": 508,
+          "doco:FigureBox": 38,
+          "ontology:ObjectIdBlock": 947,
+          "doco:TableBox": 14,
+          "deo:DiscourseElement": 2
+        },
+        "dcterms:hasPart": {
+          "doco:SectionLabel": 12169,
+          "deo:Caption": 14488
+        }
+      }
+    },
+    {
+      "@id": "doco:FigureBox",
+      "dcterms:hasPart": [
+        {
+          "@id": "deo:Caption"
+        },
+        {
+          "@id": "doco:Label"
+        }
+      ],
+      "_counts": {
+        "dcterms:hasPart": {
+          "deo:Caption": 240553,
+          "doco:Label": 240869
+        }
+      }
+    },
+    {
+      "@id": "doco:TableBox",
+      "pattern:contains": [
+        {
+          "@id": "ontology:TableColumnName"
+        },
+        {
+          "@id": "ontology:TableCellValues"
+        }
+      ],
+      "dcterms:hasPart": [
+        {
+          "@id": "deo:Caption"
+        },
+        {
+          "@id": "ontology:TableFooter"
+        },
+        {
+          "@id": "doco:Label"
+        }
+      ],
+      "_counts": {
+        "pattern:contains": {
+          "ontology:TableColumnName": 196687,
+          "ontology:TableCellValues": 66480
+        },
+        "dcterms:hasPart": {
+          "deo:Caption": 36239,
+          "ontology:TableFooter": 22927,
+          "doco:Label": 36230
+        }
+      }
+    },
+    {
+      "@id": "fabio:Manifestation",
+      "20:endingPage": {
+        "@type": "xsd:string"
+      },
+      "20:pageRange": {
+        "@type": "xsd:string"
+      },
+      "20:startingPage": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "20:endingPage": {
+          "Literal:xsd:string": 26175
+        },
+        "20:pageRange": {
+          "Literal:xsd:string": 26385
+        },
+        "20:startingPage": {
+          "Literal:xsd:string": 26385
+        }
+      }
+    },
+    {
+      "@id": "ontology:FloatMatter",
+      "pattern:contains": [
+        {
+          "@id": "doco:FigureBox"
+        },
+        {
+          "@id": "doco:TableBox"
+        },
+        {
+          "@id": "doco:CaptionedBox"
+        },
+        {
+          "@id": "doco:TextBox"
+        },
+        {
+          "@id": "doco:Section"
+        },
+        {
+          "@id": "deo:DiscourseElement"
+        }
+      ],
+      "_counts": {
+        "pattern:contains": {
+          "doco:FigureBox": 77612,
+          "doco:TableBox": 11187,
+          "doco:CaptionedBox": 2129,
+          "doco:TextBox": 128,
+          "doco:Section": 2084,
+          "deo:DiscourseElement": 10
+        }
+      }
+    },
+    {
+      "@id": "ontology:ListItemBlock",
+      "pattern:contains": {
+        "@id": "doco:Sentence"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Sentence": 30540
+        }
+      }
+    },
+    {
+      "@id": "ontology:MediaBlock",
+      "pattern:contains": {
+        "@id": "doco:Sentence"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Sentence": 45148
+        }
+      }
+    },
+    {
+      "@id": "ontology:TableFooter",
+      "pattern:contains": {
+        "@id": "doco:Sentence"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Sentence": 65179
+        }
+      }
+    },
+    {
+      "@id": "doco:TextBox",
+      "pattern:contains": [
+        {
+          "@id": "doco:Section"
+        },
+        {
+          "@id": "ontology:ListItemBlock"
+        },
+        {
+          "@id": "doco:Paragraph"
+        },
+        {
+          "@id": "doco:TableBox"
+        },
+        {
+          "@id": "ontology:ObjectIdBlock"
+        }
+      ],
+      "dcterms:hasPart": {
+        "@id": "doco:SectionLabel"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Section": 193,
+          "ontology:ListItemBlock": 586,
+          "doco:Paragraph": 282,
+          "doco:TableBox": 14,
+          "ontology:ObjectIdBlock": 5
+        },
+        "dcterms:hasPart": {
+          "doco:SectionLabel": 57
+        }
+      }
+    },
+    {
+      "@id": "ontology:ObjectIdBlock",
+      "pattern:contains": {
+        "@id": "doco:Sentence"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Sentence": 2568
+        }
+      }
+    },
+    {
+      "@id": "fabio:BriefReport",
+      "pattern:contains": [
+        {
+          "@id": "doco:BodyMatter"
+        },
+        {
+          "@id": "doco:BackMatter"
+        },
+        {
+          "@id": "doco:FrontMatter"
+        },
+        {
+          "@id": "ontology:FloatMatter"
+        }
+      ],
+      "dcterms:isReferencedBy": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "ontology:CitingSource"
+        }
+      ],
+      "ontology:hasAnnotation": {
+        "@id": "ontology:NexAnnotation"
+      },
+      "frbr:embodiment": {
+        "@id": "fabio:Manifestation"
+      },
+      "20:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "20:doi": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasNLMJournalTitleAbbreviation": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedCentralId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPubMedId": {
+        "@type": "xsd:string"
+      },
+      "fabio:hasPublicationYear": {
+        "@type": "xsd:string"
+      },
+      "ontology:inCollection": {
+        "@type": "xsd:string"
+      },
+      "20:keyword": {
+        "@type": "xsd:string"
+      },
+      "20:issueIdentifier": {
+        "@type": "xsd:string"
+      },
+      "20:volume": {
+        "@type": "xsd:string"
+      },
+      "ontology:seeAlsoAnnotated": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:BodyMatter": 598,
+          "doco:BackMatter": 635,
+          "doco:FrontMatter": 638,
+          "ontology:FloatMatter": 142
+        },
+        "dcterms:isReferencedBy": {
+          "owl:NamedIndividual": 633,
+          "ontology:CitingSource": 633
+        },
+        "ontology:hasAnnotation": {
+          "ontology:NexAnnotation": 539264
+        },
+        "frbr:embodiment": {
+          "fabio:Manifestation": 419
+        },
+        "20:publicationDate": {
+          "Literal:xsd:date": 638
+        },
+        "20:doi": {
+          "Literal:xsd:string": 638
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 611
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 638
+        },
+        "fabio:hasNLMJournalTitleAbbreviation": {
+          "Literal:xsd:string": 638
+        },
+        "fabio:hasPubMedCentralId": {
+          "Literal:xsd:string": 638
+        },
+        "fabio:hasPubMedId": {
+          "Literal:xsd:string": 611
+        },
+        "fabio:hasPublicationYear": {
+          "Literal:xsd:string": 638
+        },
+        "ontology:inCollection": {
+          "Literal:xsd:string": 638
+        },
+        "20:keyword": {
+          "Literal:xsd:string": 1992
+        },
+        "20:issueIdentifier": {
+          "Literal:xsd:string": 576
+        },
+        "20:volume": {
+          "Literal:xsd:string": 638
+        },
+        "ontology:seeAlsoAnnotated": {
+          "Resource": 638
+        }
+      }
+    },
+    {
+      "@id": "doco:BlockQuotation",
+      "pattern:contains": {
+        "@id": "doco:Sentence"
+      },
+      "_counts": {
+        "pattern:contains": {
+          "doco:Sentence": 22
+        }
+      }
+    },
+    {
+      "@id": "void:Dataset",
+      "void:property": [
+        {
+          "@id": "owl:AnnotationProperty"
+        },
+        {
+          "@id": "owl:OntologyProperty"
+        },
+        {
+          "@id": "owl:DatatypeProperty"
+        },
+        {
+          "@id": "owl:ObjectProperty"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "void:class": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "voidext:datatypePartition": {
+        "@id": "void:Dataset"
+      },
+      "void:classPartition": {
+        "@id": "void:Dataset"
+      },
+      "void:propertyPartition": {
+        "@id": "void:Dataset"
+      },
+      "void:triples": {
+        "@type": "xsd:long"
+      },
+      "void:entities": {
+        "@type": "xsd:long"
+      },
+      "voidext:datatype": {
+        "@id": "rdfs:Resource"
+      },
+      "voidext:objectPartition": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:property": {
+          "owl:AnnotationProperty": 69,
+          "owl:OntologyProperty": 2,
+          "owl:DatatypeProperty": 207,
+          "owl:ObjectProperty": 93,
+          "Resource": 45
+        },
+        "void:class": {
+          "owl:Class": 286,
+          "Resource": 36
+        },
+        "voidext:datatypePartition": {
+          "void:Dataset": 236
+        },
+        "void:classPartition": {
+          "void:Dataset": 277
+        },
+        "void:propertyPartition": {
+          "void:Dataset": 422
+        },
+        "void:triples": {
+          "Literal:xsd:long": 699
+        },
+        "void:entities": {
+          "Literal:xsd:long": 79
+        },
+        "voidext:datatype": {
+          "Resource": 40
+        },
+        "voidext:objectPartition": {
+          "Resource": 89
+        }
+      }
+    },
+    {
+      "@id": "ontology:TableCellValues",
+      "cnt:chars": {
+        "@type": "xsd:string"
+      },
+      "ontology:ordinal": {
+        "@type": "xsd:integer"
+      },
+      "_counts": {
+        "cnt:chars": {
+          "Literal:xsd:string": 66480
+        },
+        "ontology:ordinal": {
+          "Literal:xsd:integer": 66480
+        }
+      }
+    },
+    {
+      "@id": "ontology:TableColumnName",
+      "cnt:chars": {
+        "@type": "xsd:string"
+      },
+      "ontology:ordinal": {
+        "@type": "xsd:integer"
+      },
+      "_counts": {
+        "cnt:chars": {
+          "Literal:xsd:string": 196687
+        },
+        "ontology:ordinal": {
+          "Literal:xsd:integer": 196687
+        }
+      }
+    },
+    {
+      "@id": "sh:SPARQLExecutable",
+      "schema:keywords": {
+        "@type": "xsd:string"
+      },
+      "sh:select": {
+        "@type": "xsd:string"
+      },
+      "schema:target": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "schema:keywords": {
+          "Literal:xsd:string": 12
+        },
+        "sh:select": {
+          "Literal:xsd:string": 5
+        },
+        "schema:target": {
+          "Resource": 5
+        }
+      }
+    },
+    {
+      "@id": "sh:SPARQLSelectExecutable",
+      "schema:keywords": {
+        "@type": "xsd:string"
+      },
+      "sh:select": {
+        "@type": "xsd:string"
+      },
+      "schema:target": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "schema:keywords": {
+          "Literal:xsd:string": 12
+        },
+        "sh:select": {
+          "Literal:xsd:string": 5
+        },
+        "schema:target": {
+          "Resource": 5
+        }
+      }
+    },
+    {
+      "@id": "void:Linkset",
+      "void:linkPredicate": [
+        {
+          "@id": "owl:AnnotationProperty"
+        },
+        {
+          "@id": "owl:ObjectProperty"
+        },
+        {
+          "@id": "owl:DatatypeProperty"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "void:subjectsTarget": {
+        "@id": "void:Dataset"
+      },
+      "void:objectsTarget": [
+        {
+          "@id": "void:Dataset"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "void:triples": {
+        "@type": "xsd:long"
+      },
+      "_counts": {
+        "void:linkPredicate": {
+          "owl:AnnotationProperty": 5,
+          "owl:ObjectProperty": 203,
+          "owl:DatatypeProperty": 35,
+          "Resource": 25
+        },
+        "void:subjectsTarget": {
+          "void:Dataset": 277
+        },
+        "void:objectsTarget": {
+          "void:Dataset": 277,
+          "Resource": 2
+        },
+        "void:triples": {
+          "Literal:xsd:long": 2
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T16:21:44.248862+00:00",
+    "endpoint": "https://sparql.sibils.org/sparql",
+    "dataset_name": "sibils",
+    "pattern_count": 801,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:Class": "Class",
+    "owl:complementOf": "complementOf",
+    "skos:closeMatch": "close match",
+    "skos:broadMatch": "broad match",
+    "owl:Ontology": "Ontology",
+    "dcterms:created": "created",
+    "dcterms:modified": "modified",
+    "owl:versionInfo": "versionInfo",
+    "dcterms:hasVersion": "has version",
+    "dcterms:abstract": "abstract",
+    "dcterms:title": "title",
+    "vocab:introduction": "introduction",
+    "dcterms:bibliographicCitation": "bibliographicCitation",
+    "dcterms:description": "description",
+    "vann:preferredNamespacePrefix": "preferredNamespacePrefix",
+    "owl:imports": "imports",
+    "owl:priorVersion": "priorVersion",
+    "dcterms:creator": "creator",
+    "vocab:turtleSerialization": "turtleSerialization",
+    "vocab:jsonldSerialization": "jsonldSerialization",
+    "vocab:ntSerialization": "ntSerialization",
+    "vocab:rdfxmlSerialization": "rdfxmlSerialization",
+    "dcterms:contributor": "contributor",
+    "dcterms:license": "license",
+    "dcterms:publisher": "publisher",
+    "bibo:status": "status",
+    "skos:Concept": "Concept",
+    "ontology:more_specific_than": "more specific than",
+    "skos:inScheme": "in scheme",
+    "owl:NamedIndividual": "NamedIndividual",
+    "ontology:SibilsConceptScheme": "Sibils concept scheme",
+    "fabio:ReviewArticle": "Review article",
+    "pattern:contains": "contains",
+    "doco:BodyMatter": "Body matter",
+    "doco:BackMatter": "Back matter",
+    "doco:FrontMatter": "Front matter",
+    "ontology:FloatMatter": "Float matter",
+    "dcterms:isReferencedBy": "is referenced by",
+    "ontology:CitingSource": "Citing source",
+    "schema:Person": "Person",
+    "frbr:realizationOf": "realization of",
+    "fabio:CaseReport": "Case report",
+    "ontology:hasAnnotation": "has annotation",
+    "ontology:NexAnnotation": "Named Entity Extraction Annotation",
+    "frbr:embodiment": "embodiment",
+    "fabio:Manifestation": "Manifestation",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "owl:equivalentProperty": "equivalentProperty",
+    "owl:ObjectProperty": "ObjectProperty",
+    "owl:inverseOf": "inverseOf",
+    "doco:Glossary": "Glossary",
+    "doco:Sentence": "Sentence",
+    "fabio:RapidCommunication": "Rapid communication",
+    "doco:Table": "Table",
+    "skos:prefLabel": "pref label",
+    "skos:altLabel": "alt label",
+    "skos:notation": "notation",
+    "20:publicationDate": "has publication date",
+    "20:doi": "has DOI",
+    "fabio:hasNLMJournalTitleAbbreviation": "has National Library of Medicine journal title abbreviation",
+    "fabio:hasPubMedCentralId": "has PMC identifier",
+    "fabio:hasPubMedId": "has PubMed identifier",
+    "fabio:hasPublicationYear": "has publication year",
+    "ontology:inCollection": "in collection",
+    "20:keyword": "keyword",
+    "20:issueIdentifier": "issue identifier",
+    "20:volume": "volume",
+    "skos:exactMatch": "exact match",
+    "ontology:seeAlsoAnnotated": "see also annotated",
+    "doco:Abstract": "Abstract",
+    "doco:Paragraph": "Paragraph",
+    "dcterms:hasPart": "has part",
+    "doco:SectionLabel": "Section label",
+    "doco:Section": "Section",
+    "doco:FigureBox": "Figure box",
+    "ontology:ListItemBlock": "List item block",
+    "doco:TableBox": "Table box",
+    "doco:CaptionedBox": "Captioned box",
+    "doco:TextBox": "Text box",
+    "deo:DiscourseElement": "Discourse element",
+    "doco:BlockQuotation": "Block quotation",
+    "ontology:ObjectIdBlock": "Object id block",
+    "doco:Title": "Title",
+    "doco:ListOfAuthors": "List of authors",
+    "doco:ListOfOrganizations": "List of organizations",
+    "doco:List": "List",
+    "ontology:WordSequence": "Word sequence",
+    "doco:Label": "Label",
+    "ontology:MediaBlock": "Media block",
+    "doco:ListOfReferences": "List of references",
+    "fabio:Abstract": "Abstract",
+    "schema:name": "name",
+    "oa:TextPositionSelector": "Text position selector",
+    "oa:end": "end",
+    "oa:exact": "exact",
+    "oa:start": "start",
+    "cnt:chars": "Character sequence",
+    "ontology:ordinal": "ordinal",
+    "fabio:JournalArticle": "Journal article",
+    "fabio:Report": "Report",
+    "fabio:ClinicalTrialReport": "Clinical trial report",
+    "fabio:TechnicalReport": "Technical report",
+    "fabio:SystematicReview": "Systematic review",
+    "fabio:Letter": "Letter",
+    "fabio:ReportDocument": "Report document",
+    "fabio:MeetingReport": "Meeting report",
+    "oa:hasBody": "has body",
+    "ontology:AnnotationTarget": "Annotation target",
+    "oa:hasSelector": "has selector",
+    "oa:hasSource": "has source",
+    "ontology:TableColumnName": "Table column name",
+    "ontology:TableCellValues": "Table cell values",
+    "oa:hasTarget": "has target",
+    "fabio:Comment": "Comment",
+    "fabio:Editorial": "Editorial",
+    "fabio:Article": "Article",
+    "fabio:Addendum": "Addendum",
+    "fabio:NewsItem": "News item",
+    "fabio:LectureNotes": "Lecture notes",
+    "fabio:Expression": "Expression",
+    "deo:Caption": "Caption",
+    "fabio:Biography": "Biography",
+    "fabio:Correction": "Correction",
+    "fabio:BookReview": "Book review",
+    "fabio:ProductReview": "Product review",
+    "doco:Appendix": "Appendix",
+    "ontology:TableFooter": "Table footer",
+    "20:endingPage": "ending page",
+    "20:pageRange": "page range",
+    "20:startingPage": "starting page",
+    "fabio:BriefReport": "Brief report",
+    "void:Dataset": "Dataset",
+    "void:property": "property",
+    "owl:AnnotationProperty": "AnnotationProperty",
+    "owl:OntologyProperty": "OntologyProperty",
+    "void:class": "class",
+    "voidext:datatypePartition": "datatypePartition",
+    "void:classPartition": "classPartition",
+    "void:propertyPartition": "propertyPartition",
+    "sh:SPARQLExecutable": "SPARQLExecutable",
+    "schema:keywords": "keywords",
+    "sh:SPARQLSelectExecutable": "SPARQLSelectExecutable",
+    "sh:select": "select",
+    "void:triples": "triples",
+    "void:entities": "entities",
+    "schema:target": "target",
+    "voidext:datatype": "datatype",
+    "voidext:objectPartition": "objectPartition",
+    "void:Linkset": "Linkset",
+    "void:linkPredicate": "linkPredicate",
+    "void:subjectsTarget": "subjectsTarget",
+    "void:objectsTarget": "objectsTarget"
+  }
+}

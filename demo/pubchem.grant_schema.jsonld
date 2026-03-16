@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "frapo": "http://purl.org/cerif/frapo/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "vocabulary:Grant",
+      "frapo:hasGrantNumber": {
+        "@type": "xsd:string"
+      },
+      "frapo:hasFundingAgency": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "frapo:hasGrantNumber": {
+          "Literal:xsd:string": 1716322
+        },
+        "frapo:hasFundingAgency": {
+          "Resource": 1716322
+        }
+      }
+    },
+    {
+      "@id": "frapo:Grant",
+      "frapo:hasGrantNumber": {
+        "@type": "xsd:string"
+      },
+      "frapo:hasFundingAgency": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "frapo:hasGrantNumber": {
+          "Literal:xsd:string": 1716322
+        },
+        "frapo:hasFundingAgency": {
+          "Resource": 1716322
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:40:50.917638+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.grant",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/grant"
+    ],
+    "pattern_count": 6,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "vocabulary:Grant": "Grant",
+    "frapo:hasGrantNumber": "hasGrantNumber",
+    "frapo:Grant": "Grant",
+    "frapo:hasFundingAgency": "hasFundingAgency"
+  }
+}

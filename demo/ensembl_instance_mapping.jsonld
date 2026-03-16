@@ -1,0 +1,289 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfsolve": "https://w3id.org/rdfsolve/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "sd": "http://www.w3.org/ns/sparql-service-description#",
+    "edam.data": "http://edamontology.org/data_",
+    "wp": "http://vocabularies.wikipathways.org/wp#"
+  },
+  "@graph": [
+    {
+      "@id": "edam.data:1025",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/aopwikirdf",
+        "dcterms:title": "aopwikirdf",
+        "void:sparqlEndpoint": {
+          "@id": "https://aopwiki.rdf.bigcat-bioinformatics.org/sparql/"
+        }
+      },
+      "dcterms:created": "2026-02-20T14:37:13.682715+00:00",
+      "skos:narrowMatch": {
+        "@id": "edam.data:1033",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/aopwikirdf",
+          "dcterms:title": "aopwikirdf",
+          "void:sparqlEndpoint": {
+            "@id": "https://aopwiki.rdf.bigcat-bioinformatics.org/sparql/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wp:Complex",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways",
+        "dcterms:title": "wikipathways",
+        "void:sparqlEndpoint": {
+          "@id": "https://sparql.wikipathways.org/sparql/"
+        }
+      },
+      "dcterms:created": "2026-02-20T14:40:52.883092+00:00",
+      "skos:narrowMatch": [
+        {
+          "@id": "wp:DataNode",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:GeneProduct",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Pathway",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Protein",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Rna",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "wp:DataNode",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways",
+        "dcterms:title": "wikipathways",
+        "void:sparqlEndpoint": {
+          "@id": "https://sparql.wikipathways.org/sparql/"
+        }
+      },
+      "dcterms:created": "2026-02-20T14:40:52.883092+00:00",
+      "skos:narrowMatch": [
+        {
+          "@id": "wp:GeneProduct",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Pathway",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Protein",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Rna",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "wp:GeneProduct",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways",
+        "dcterms:title": "wikipathways",
+        "void:sparqlEndpoint": {
+          "@id": "https://sparql.wikipathways.org/sparql/"
+        }
+      },
+      "dcterms:created": "2026-02-20T14:40:52.883092+00:00",
+      "skos:narrowMatch": [
+        {
+          "@id": "wp:Pathway",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Protein",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Rna",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "wp:Pathway",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways",
+        "dcterms:title": "wikipathways",
+        "void:sparqlEndpoint": {
+          "@id": "https://sparql.wikipathways.org/sparql/"
+        }
+      },
+      "dcterms:created": "2026-02-20T14:40:52.883092+00:00",
+      "skos:narrowMatch": [
+        {
+          "@id": "wp:Protein",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        },
+        {
+          "@id": "wp:Rna",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "https://sparql.wikipathways.org/sparql/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "wp:Protein",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways",
+        "dcterms:title": "wikipathways",
+        "void:sparqlEndpoint": {
+          "@id": "https://sparql.wikipathways.org/sparql/"
+        }
+      },
+      "dcterms:created": "2026-02-20T14:40:52.883092+00:00",
+      "skos:narrowMatch": {
+        "@id": "wp:Rna",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/wikipathways",
+          "dcterms:title": "wikipathways",
+          "void:sparqlEndpoint": {
+            "@id": "https://sparql.wikipathways.org/sparql/"
+          }
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-02-20T14:40:55.832108+00:00",
+    "dataset_name": "ensembl_instance_mapping",
+    "pattern_count": 6,
+    "strategy": "instance_matcher",
+    "resource": "ensembl",
+    "uri_formats_queried": [
+      "http://ciliogenics.com/?page=General%20info&query=",
+      "https://ensembl.org/id/",
+      "http://bio2rdf.org/ensembl:",
+      "http://identifiers.org/ensembl/",
+      "http://exbio.wzw.tum.de/digger/ID/gene/human/",
+      "https://ciliogenics.com/?page=General%20info&query=",
+      "https://exbio.wzw.tum.de/digger/ID/gene/human/",
+      "https://asia.ensembl.org/id/",
+      "http://bioregistry.io/Ensembl:",
+      "https://www.ensembl.org/id/",
+      "https://n2t.net/ensembl:",
+      "http://bioregistry.io/ensembl:",
+      "https://bgee.org/?page=gene&gene_id=",
+      "https://bio2rdf.org/ensembl:",
+      "http://n2t.net/ensembl:",
+      "https://identifiers.org/ensembl:",
+      "http://rdf.ebi.ac.uk/resource/ensembl/",
+      "https://rdf.ebi.ac.uk/resource/ensembl/",
+      "http://www.ensembl.org/id/",
+      "http://genetics.opentargets.org/gene/",
+      "http://gnomad.broadinstitute.org/gene/",
+      "https://bioregistry.io/ensembl:",
+      "https://bioregistry.io/Ensembl:",
+      "http://useast.ensembl.org/id/",
+      "http://bgee.org/?page=gene&gene_id=",
+      "http://ensembl.org/id/",
+      "http://asia.ensembl.org/id/",
+      "https://gnomad.broadinstitute.org/gene/",
+      "https://useast.ensembl.org/id/",
+      "https://identifiers.org/ensembl/",
+      "http://identifiers.org/ensembl:",
+      "https://genetics.opentargets.org/gene/"
+    ]
+  }
+}

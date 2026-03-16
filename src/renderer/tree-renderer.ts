@@ -18,7 +18,7 @@ export interface TreeRendererOptions {
   state?: DiagramState;
 
   /**
-   * Schema-id → { name, color } map — used for the legend.
+   * Schema-id -> { name, color } map - used for the legend.
    * Passed from SchemaDiagram when multiple datasets are loaded.
    */
   schemaColorMap?: Map<string, { name: string; color: string }>;
@@ -41,7 +41,7 @@ export class TreeRenderer {
   private height = 0;
   private model: VisualModel | null = null;
 
-  /** Schema color map — updated by SchemaDiagram on each render */
+  /** Schema color map - updated by SchemaDiagram on each render */
   private schemaColorMap: Map<string, { name: string; color: string }> = new Map();
   
   constructor(private options: TreeRendererOptions) {
@@ -99,7 +99,7 @@ export class TreeRenderer {
   private defineMarkers(): void {
     const defs = this.svg.append('defs');
     
-    // Standard arrow marker (small, 5px) — points forward (→)
+    // Standard arrow marker (small, 5px) - points forward (->)
     defs.append('marker')
       .attr('id', 'arrow')
       .attr('viewBox', '0 0 10 10')
@@ -112,7 +112,7 @@ export class TreeRenderer {
       .attr('d', 'M 0 0 L 10 5 L 0 10 Z')
       .attr('fill', STYLE.strokeColor);
     
-    // Reverse arrow marker — points backward (←), placed at START of path
+    // Reverse arrow marker - points backward (←), placed at START of path
     defs.append('marker')
       .attr('id', 'arrow-reverse')
       .attr('viewBox', '0 0 10 10')
@@ -198,7 +198,7 @@ export class TreeRenderer {
       this.renderEdgePath(edgesG, edge);
     }
 
-    // Render edge labels — grouped by target node so overlapping labels stack
+    // Render edge labels - grouped by target node so overlapping labels stack
     this.renderEdgeLabels(edgesG, tree);
     
     // Render nodes
@@ -342,7 +342,7 @@ export class TreeRenderer {
         .text(`Resolved instances (${resolvedIris.length}):\n${preview}${more}`);
     }
 
-    // Schema source dot — small colored circle in the bottom-right corner,
+    // Schema source dot - small colored circle in the bottom-right corner,
     // shown when the node belongs to a specific schema in a multi-schema view.
     if (node.schemaColor) {
       const DOT_R = 5;
@@ -435,7 +435,7 @@ export class TreeRenderer {
    * Render edge labels, grouped by target node.
    * When multiple edges arrive at the same target, their labels are stacked
    * vertically so they never overlap. Each label is prefixed with a direction
-   * arrow: → for outgoing, ← for incoming.
+   * arrow: -> for outgoing, ← for incoming.
    */
   private renderEdgeLabels(
     container: d3.Selection<SVGGElement, unknown, null, undefined>,
@@ -458,7 +458,7 @@ export class TreeRenderer {
     const COLLAPSE_THRESHOLD = 3; // show summary when > this many labels
 
     for (const [rightId, edges] of edgesByTarget) {
-      // Sort: outgoing first (→), then incoming (←) for consistent ordering
+      // Sort: outgoing first (->), then incoming (←) for consistent ordering
       edges.sort((a, b) => {
         const aIn = (a as any).isIncoming ? 1 : 0;
         const bIn = (b as any).isIncoming ? 1 : 0;
@@ -917,7 +917,7 @@ export class TreeRenderer {
 
     const nodeGroup = nodeEl.node() as SVGGElement;
     
-    // The node group has transform="translate(x, y)" — read the actual world position
+    // The node group has transform="translate(x, y)" - read the actual world position
     // by getting the bounding box relative to the rootG coordinate space.
     const bbox = nodeGroup.getBBox();
     
@@ -964,7 +964,7 @@ export class TreeRenderer {
       .attr('width', this.width)
       .attr('height', this.height);
     
-    // Don't auto-fit on resize — keep user's current pan/zoom
+    // Don't auto-fit on resize - keep user's current pan/zoom
   }
   
   // ==========================================================================

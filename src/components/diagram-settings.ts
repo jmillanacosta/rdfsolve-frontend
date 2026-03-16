@@ -174,7 +174,7 @@ export class DiagramSettingsComponent extends HTMLElement {
       </label>
     `).join('');
 
-    // Checkbox change → update settings immediately (visual feedback)
+    // Checkbox change -> update settings immediately (visual feedback)
     list.querySelectorAll<HTMLInputElement>('input[type="checkbox"]').forEach(cb => {
       cb.addEventListener('change', () => {
         const uri = cb.dataset.nsUri!;

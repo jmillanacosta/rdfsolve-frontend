@@ -1,0 +1,1627 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfsolve": "https://w3id.org/rdfsolve/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "sd": "http://www.w3.org/ns/sparql-service-description#",
+    "wikipathways": "http://www.wikipathways.org/instance/",
+    "reactome": "https://reactome.org/content/detail/"
+  },
+  "@graph": [
+    {
+      "@id": "wikipathways:WP428",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/special_mappings.csv",
+        "dcterms:title": "special_mappings.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "wikipathways:WP363",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-195721",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "wikipathways:WP61",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/special_mappings.csv",
+        "dcterms:title": "special_mappings.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "wikipathways:WP3845",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-157118",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "wikipathways:WP75",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/special_mappings.csv",
+        "dcterms:title": "special_mappings.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "wikipathways:WP3858",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-168898",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "wikipathways:WP2873",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/special_mappings.csv",
+        "dcterms:title": "special_mappings.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "wikipathways:WP2586",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-8937144",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "wikipathways:WP47",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/special_mappings.csv",
+        "dcterms:title": "special_mappings.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "wikipathways:WP4249",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-5358351",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "wikipathways:WP3925",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-71291",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP254",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-109581",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP2586",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-8937144",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP23",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-983705",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP1425",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-201451",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP3845",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-157118",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP3874",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-170834",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP179",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-1640170",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP197",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-191273",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP545",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-166658",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP530",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-1280215",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP466",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-69306",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP111",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-611105",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP143",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-77289",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP4159",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-977443",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP455",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-373076",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP334",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-373080",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP501",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-420499",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP3958",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-434316",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP698",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-156588",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP2533",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-1483206",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP500",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-8982491",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP561",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-189451",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP195",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-446652",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP49",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-9020558",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP364",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-1059683",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP205",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-1266695",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP22",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-8985947",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP2112",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-448424",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP2034",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-2586552",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP3965",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-556833",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP422",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-5683057",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP382",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-5683057",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP3580",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-1237112",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP704",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-156581",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP531",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-5358508",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP438",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-5693571",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP404",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-15869",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP623",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-163210",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP4172",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-198203",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP134",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-71336",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP2037",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-1170546",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP1422",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-428157",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP383",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-390522",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP311",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-74182",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP78",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-71403",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP3859",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-2173791",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP560",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-9006936",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP366",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-9006936",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP1471",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-165159",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP1981",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-209968",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP3858",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-168898",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP2333",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-1614603",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP325",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-75109",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP619",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-877300",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP3888",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-4420097",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP1531",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-196791",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP2338",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-203927",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP400",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-171007",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP4507",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-947581",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "wikipathways:WP4506",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/wikipathways_reactome.csv",
+        "dcterms:title": "wikipathways_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.949070+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-1430728",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-02-20T16:57:07.949070+00:00",
+    "dataset_name": "compath_wikipathways_mapping",
+    "pattern_count": 71,
+    "strategy": "semra_import",
+    "semra_source": "compath",
+    "semra_prefix": "wikipathways",
+    "evidence": [
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "special_mappings.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "special_mappings.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "special_mappings.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "special_mappings.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "special_mappings.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "wikipathways_reactome.csv"
+      }
+    ]
+  }
+}

@@ -1,0 +1,619 @@
+{
+  "@context": {
+    "cheminf": "http://semanticscience.org/resource/CHEMINF_",
+    "resource": "http://semanticscience.org/resource/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "sio": "http://semanticscience.org/resource/SIO_",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#"
+  },
+  "@graph": [
+    {
+      "@id": "cheminf:000109",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 8365
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 8365
+        },
+        "dcterms:subject": {
+          "Resource": 8703
+        },
+        "sio:000011": {
+          "Resource": 7580
+        },
+        "resource:is-attribute-of": {
+          "Resource": 7580
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000339",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 52807964
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 52807964
+        },
+        "dcterms:subject": {
+          "Resource": 416030
+        },
+        "sio:000011": {
+          "Resource": 29360888
+        },
+        "resource:is-attribute-of": {
+          "Resource": 29360888
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000382",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 1504714
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 1504714
+        },
+        "dcterms:subject": {
+          "Resource": 235
+        },
+        "sio:000011": {
+          "Resource": 648124
+        },
+        "resource:is-attribute-of": {
+          "Resource": 648124
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000406",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 13608
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 13608
+        },
+        "sio:000011": {
+          "Resource": 10751
+        },
+        "resource:is-attribute-of": {
+          "Resource": 10751
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000407",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 216657
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 216657
+        },
+        "dcterms:subject": {
+          "Resource": 5
+        },
+        "sio:000011": {
+          "Resource": 181445
+        },
+        "resource:is-attribute-of": {
+          "Resource": 181445
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000409",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 47499
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 47499
+        },
+        "dcterms:subject": {
+          "Resource": 15
+        },
+        "sio:000011": {
+          "Resource": 25356
+        },
+        "resource:is-attribute-of": {
+          "Resource": 25356
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000412",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 3522047
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 3522047
+        },
+        "dcterms:subject": {
+          "Resource": 1
+        },
+        "sio:000011": {
+          "Resource": 2870818
+        },
+        "resource:is-attribute-of": {
+          "Resource": 2870818
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000446",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 5538844
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 5538844
+        },
+        "dcterms:subject": {
+          "Resource": 74780
+        },
+        "sio:000011": {
+          "Resource": 4051613
+        },
+        "resource:is-attribute-of": {
+          "Resource": 4051613
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000447",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 149116
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 149116
+        },
+        "sio:000011": {
+          "Resource": 121481
+        },
+        "resource:is-attribute-of": {
+          "Resource": 121481
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000467",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 174299297
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 174299297
+        },
+        "dcterms:subject": {
+          "Resource": 37390
+        },
+        "sio:000011": {
+          "Resource": 78622769
+        },
+        "resource:is-attribute-of": {
+          "Resource": 78622769
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000561",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 43729
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 43729
+        },
+        "dcterms:subject": {
+          "Resource": 21381
+        },
+        "sio:000011": {
+          "Resource": 30781
+        },
+        "resource:is-attribute-of": {
+          "Resource": 30781
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000562",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 35661
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 35661
+        },
+        "dcterms:subject": {
+          "Resource": 26396
+        },
+        "sio:000011": {
+          "Resource": 32844
+        },
+        "resource:is-attribute-of": {
+          "Resource": 32844
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000563",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 293901
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 293901
+        },
+        "dcterms:subject": {
+          "Resource": 13266
+        },
+        "sio:000011": {
+          "Resource": 125256
+        },
+        "resource:is-attribute-of": {
+          "Resource": 125256
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000564",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 48350
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 48350
+        },
+        "sio:000011": {
+          "Resource": 42885
+        },
+        "resource:is-attribute-of": {
+          "Resource": 42885
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000565",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 714895
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 714895
+        },
+        "dcterms:subject": {
+          "Resource": 4104
+        },
+        "sio:000011": {
+          "Resource": 697161
+        },
+        "resource:is-attribute-of": {
+          "Resource": 697161
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:Synonym",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 239816633
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 239816633
+        },
+        "sio:000011": {
+          "Resource": 116985785
+        },
+        "dcterms:subject": {
+          "Resource": 606352
+        },
+        "resource:is-attribute-of": {
+          "Resource": 116985785
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000566",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 28866
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 28866
+        },
+        "sio:000011": {
+          "Resource": 12798
+        },
+        "resource:is-attribute-of": {
+          "Resource": 12798
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T11:00:22.210386+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.synonym",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/synonym"
+    ],
+    "pattern_count": 98,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "cheminf:000109": "CHEMINF_000109",
+    "resource:has-value": "has-value",
+    "cheminf:000339": "CHEMINF_000339",
+    "cheminf:000382": "CHEMINF_000382",
+    "cheminf:000406": "CHEMINF_000406",
+    "cheminf:000407": "CHEMINF_000407",
+    "cheminf:000409": "CHEMINF_000409",
+    "cheminf:000412": "CHEMINF_000412",
+    "cheminf:000446": "CHEMINF_000446",
+    "cheminf:000447": "CHEMINF_000447",
+    "cheminf:000467": "CHEMINF_000467",
+    "cheminf:000561": "CHEMINF_000561",
+    "cheminf:000562": "CHEMINF_000562",
+    "cheminf:000563": "CHEMINF_000563",
+    "cheminf:000564": "CHEMINF_000564",
+    "cheminf:000565": "CHEMINF_000565",
+    "sio:000300": "SIO_000300",
+    "dcterms:subject": "subject",
+    "sio:000011": "SIO_000011",
+    "resource:is-attribute-of": "is-attribute-of",
+    "vocabulary:Synonym": "Synonym",
+    "cheminf:000566": "CHEMINF_000566"
+  }
+}

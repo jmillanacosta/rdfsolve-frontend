@@ -1,0 +1,1182 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "bio2rdf": "http://bio2rdf.org/",
+    "void": "http://rdfs.org/ns/void#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pav": "http://purl.org/pav/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 3
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 3
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 9
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 12
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 3
+        },
+        "foaf:page": {
+          "Resource": 6
+        },
+        "dcterms:publisher": {
+          "Resource": 6
+        },
+        "dcterms:creator": {
+          "Resource": 3
+        },
+        "dcterms:license": {
+          "Resource": 6
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:mesh_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": [
+        {
+          "@id": "dcterms:Dataset"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:allowable-topical-qualifiers": [
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:mesh_vocabulary:allowable-topical-qualifier"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:mesh-tree-number": [
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Tree-Entry"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:pharmacological-action": [
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Pharmacological-Action"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:semantic-type": [
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Semantic-Type"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 308993
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "dcterms:Dataset": 1,
+          "Resource": 308449
+        },
+        "bio2rdf:mesh_vocabulary:allowable-topical-qualifiers": {
+          "bio2rdf:mesh_vocabulary:Resource": 604148,
+          "bio2rdf:mesh_vocabulary:allowable-topical-qualifier": 604148
+        },
+        "bio2rdf:mesh_vocabulary:mesh-tree-number": {
+          "bio2rdf:mesh_vocabulary:Resource": 55611,
+          "bio2rdf:mesh_vocabulary:Tree-Entry": 55611
+        },
+        "bio2rdf:mesh_vocabulary:pharmacological-action": {
+          "bio2rdf:mesh_vocabulary:Resource": 7118,
+          "bio2rdf:mesh_vocabulary:Pharmacological-Action": 7118
+        },
+        "bio2rdf:mesh_vocabulary:semantic-type": {
+          "bio2rdf:mesh_vocabulary:Resource": 36615,
+          "bio2rdf:mesh_vocabulary:Semantic-Type": 36615
+        }
+      }
+    },
+    {
+      "@id": "owl:Class",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 4
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 4
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 4
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 4
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 4
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 47
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 47
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 47
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 47
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 47
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 47
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 3
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 3
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3
+        }
+      }
+    },
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 6
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:mesh_vocabulary:Supplementary-Descriptor",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": [
+        {
+          "@id": "dcterms:Dataset"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:pharmacological-action": [
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Pharmacological-Action"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:cas-registry-number-or-ec-number": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:decimal"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:frequency": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:mesh_vocabulary:heading-mapped-to": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:indexing-information": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:name-of-substance": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:nm-term-thesaurus-id": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:note": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:source": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:synonym": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:cas-type-1-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:date-of-entry": {
+        "@type": "xsd:date"
+      },
+      "bio2rdf:mesh_vocabulary:major-revision-date": {
+        "@type": "xsd:date"
+      },
+      "bio2rdf:mesh_vocabulary:previous-indexing": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:record-type": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:related-cas-registry-number": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:semantic-type": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 225477
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "dcterms:Dataset": 1,
+          "Resource": 225476
+        },
+        "bio2rdf:mesh_vocabulary:pharmacological-action": {
+          "bio2rdf:mesh_vocabulary:Resource": 7118,
+          "bio2rdf:mesh_vocabulary:Pharmacological-Action": 7118
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 225471
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 225477
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 225476
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 225477
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 225477
+        },
+        "bio2rdf:mesh_vocabulary:cas-registry-number-or-ec-number": {
+          "Literal:xsd:integer": 147147,
+          "Literal:xsd:decimal": 5,
+          "Literal:xsd:string": 78319
+        },
+        "bio2rdf:mesh_vocabulary:frequency": {
+          "Literal:xsd:integer": 225357
+        },
+        "bio2rdf:mesh_vocabulary:heading-mapped-to": {
+          "Literal:xsd:string": 321513
+        },
+        "bio2rdf:mesh_vocabulary:indexing-information": {
+          "Literal:xsd:string": 45779
+        },
+        "bio2rdf:mesh_vocabulary:name-of-substance": {
+          "Literal:xsd:string": 225473,
+          "Literal:xsd:integer": 2,
+          "Literal:xsd:float": 1
+        },
+        "bio2rdf:mesh_vocabulary:nm-term-thesaurus-id": {
+          "Literal:xsd:string": 236896
+        },
+        "bio2rdf:mesh_vocabulary:note": {
+          "Literal:xsd:string": 190266,
+          "Literal:xsd:integer": 8
+        },
+        "bio2rdf:mesh_vocabulary:source": {
+          "Literal:xsd:string": 226156
+        },
+        "bio2rdf:mesh_vocabulary:synonym": {
+          "Literal:xsd:string": 324068
+        },
+        "bio2rdf:mesh_vocabulary:cas-type-1-name": {
+          "Literal:xsd:string": 19335
+        },
+        "bio2rdf:mesh_vocabulary:date-of-entry": {
+          "Literal:xsd:date": 225476
+        },
+        "bio2rdf:mesh_vocabulary:major-revision-date": {
+          "Literal:xsd:date": 142991
+        },
+        "bio2rdf:mesh_vocabulary:previous-indexing": {
+          "Literal:xsd:string": 49360,
+          "Literal:xsd:integer": 3
+        },
+        "bio2rdf:mesh_vocabulary:record-type": {
+          "Literal:xsd:string": 225471
+        },
+        "bio2rdf:mesh_vocabulary:related-cas-registry-number": {
+          "Literal:xsd:string": 27423
+        },
+        "bio2rdf:mesh_vocabulary:semantic-type": {
+          "Literal:xsd:string": 273993
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:mesh_vocabulary:Descriptor",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:mesh_vocabulary:allowable-topical-qualifiers": [
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:mesh_vocabulary:allowable-topical-qualifier"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:mesh-tree-number": [
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Tree-Entry"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:semantic-type": [
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:mesh_vocabulary:Semantic-Type"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:annotation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:backfile-posting": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:cas-type-1-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:cataloging-subheadings-list-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:date-major-descriptor-established": {
+        "@type": "xsd:date"
+      },
+      "bio2rdf:mesh_vocabulary:consider-also-xref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:date-of-entry": {
+        "@type": "xsd:date"
+      },
+      "bio2rdf:mesh_vocabulary:descriptor-class": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:mesh_vocabulary:descriptor-entry-version": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:descriptor-sort-version": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:entry-combination": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:entry-term": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:forward-xref": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:history-note": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:grateful-med-note": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:major-revision-date": {
+        "@type": "xsd:date"
+      },
+      "bio2rdf:mesh_vocabulary:mesh-heading": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:mesh-heading-thesaurus-id": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:mesh-scope-note": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:online-note": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:pharmacological-action": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:previous-indexing": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:pre-explosion": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:public-mesh-note": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:record-type": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:registry-number": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:decimal"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:related-cas-registry-number": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:decimal"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:running-head": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 27149
+        },
+        "bio2rdf:mesh_vocabulary:allowable-topical-qualifiers": {
+          "bio2rdf:mesh_vocabulary:Resource": 604148,
+          "bio2rdf:mesh_vocabulary:allowable-topical-qualifier": 604148
+        },
+        "bio2rdf:mesh_vocabulary:mesh-tree-number": {
+          "bio2rdf:mesh_vocabulary:Resource": 55611,
+          "bio2rdf:mesh_vocabulary:Tree-Entry": 55611
+        },
+        "bio2rdf:mesh_vocabulary:semantic-type": {
+          "bio2rdf:mesh_vocabulary:Resource": 36615,
+          "bio2rdf:mesh_vocabulary:Semantic-Type": 36615
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 27149
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 27149
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 27149
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 27149
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 27149
+        },
+        "bio2rdf:mesh_vocabulary:annotation": {
+          "Literal:xsd:string": 27516
+        },
+        "bio2rdf:mesh_vocabulary:backfile-posting": {
+          "Literal:xsd:integer": 109632,
+          "Literal:xsd:string": 101643
+        },
+        "bio2rdf:mesh_vocabulary:cas-type-1-name": {
+          "Literal:xsd:string": 3045
+        },
+        "bio2rdf:mesh_vocabulary:cataloging-subheadings-list-name": {
+          "Literal:xsd:string": 6871
+        },
+        "bio2rdf:mesh_vocabulary:date-major-descriptor-established": {
+          "Literal:xsd:date": 21933
+        },
+        "bio2rdf:mesh_vocabulary:consider-also-xref": {
+          "Literal:xsd:string": 66
+        },
+        "bio2rdf:mesh_vocabulary:date-of-entry": {
+          "Literal:xsd:date": 27149
+        },
+        "bio2rdf:mesh_vocabulary:descriptor-class": {
+          "Literal:xsd:integer": 27149
+        },
+        "bio2rdf:mesh_vocabulary:descriptor-entry-version": {
+          "Literal:xsd:string": 4153
+        },
+        "bio2rdf:mesh_vocabulary:descriptor-sort-version": {
+          "Literal:xsd:string": 1591
+        },
+        "bio2rdf:mesh_vocabulary:entry-combination": {
+          "Literal:xsd:string": 946
+        },
+        "bio2rdf:mesh_vocabulary:entry-term": {
+          "Literal:xsd:string": 191836
+        },
+        "bio2rdf:mesh_vocabulary:forward-xref": {
+          "Literal:xsd:string": 7906
+        },
+        "bio2rdf:mesh_vocabulary:history-note": {
+          "Literal:xsd:integer": 11356,
+          "Literal:xsd:string": 11735
+        },
+        "bio2rdf:mesh_vocabulary:grateful-med-note": {
+          "Literal:xsd:string": 223
+        },
+        "bio2rdf:mesh_vocabulary:major-revision-date": {
+          "Literal:xsd:date": 23712
+        },
+        "bio2rdf:mesh_vocabulary:mesh-heading": {
+          "Literal:xsd:string": 27149
+        },
+        "bio2rdf:mesh_vocabulary:mesh-heading-thesaurus-id": {
+          "Literal:xsd:string": 32696
+        },
+        "bio2rdf:mesh_vocabulary:mesh-scope-note": {
+          "Literal:xsd:string": 26134
+        },
+        "bio2rdf:mesh_vocabulary:online-note": {
+          "Literal:xsd:string": 3089,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:mesh_vocabulary:pharmacological-action": {
+          "Literal:xsd:string": 4345
+        },
+        "bio2rdf:mesh_vocabulary:previous-indexing": {
+          "Literal:xsd:string": 24509
+        },
+        "bio2rdf:mesh_vocabulary:pre-explosion": {
+          "Literal:xsd:string": 71
+        },
+        "bio2rdf:mesh_vocabulary:public-mesh-note": {
+          "Literal:xsd:integer": 12245,
+          "Literal:xsd:string": 10468
+        },
+        "bio2rdf:mesh_vocabulary:record-type": {
+          "Literal:xsd:string": 27149
+        },
+        "bio2rdf:mesh_vocabulary:registry-number": {
+          "Literal:xsd:integer": 4826,
+          "Literal:xsd:string": 4452,
+          "Literal:xsd:decimal": 1
+        },
+        "bio2rdf:mesh_vocabulary:related-cas-registry-number": {
+          "Literal:xsd:string": 5391,
+          "Literal:xsd:decimal": 1
+        },
+        "bio2rdf:mesh_vocabulary:running-head": {
+          "Literal:xsd:string": 117
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 27149
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:mesh_vocabulary:Pharmacological-Action",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 406
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 406
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 406
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 406
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 406
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 406
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:mesh_vocabulary:Tree-Entry",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "dcterms:alternate": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 55611
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 55611
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 55611
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 55611
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 55611
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 55611
+        },
+        "dcterms:alternate": {
+          "Literal:xsd:string": 55611
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 55611
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:mesh_vocabulary:Semantic-Type",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 130
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 130
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 130
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 130
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 130
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 130
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 130
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:mesh_vocabulary:Qualifier-Descriptor",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:date-qualifier-established": {
+        "@type": "xsd:date"
+      },
+      "bio2rdf:mesh_vocabulary:histrory-note": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:mesh_vocabulary:qualifier-cross-reference": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:qualifier-entry-version": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:qualifier-sort-version": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:qualifier-type": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:mesh_vocabulary:scope-note": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:subheading": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:topical-qualifier-abbreviation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:tree-node-allowed": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:annotation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:date-of-entry": {
+        "@type": "xsd:date"
+      },
+      "bio2rdf:mesh_vocabulary:major-revision-date": {
+        "@type": "xsd:date"
+      },
+      "bio2rdf:mesh_vocabulary:online-note": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:mesh_vocabulary:record-type": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 83
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 83
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:mesh_vocabulary:date-qualifier-established": {
+          "Literal:xsd:date": 83
+        },
+        "bio2rdf:mesh_vocabulary:histrory-note": {
+          "Literal:xsd:string": 81,
+          "Literal:xsd:integer": 2
+        },
+        "bio2rdf:mesh_vocabulary:qualifier-cross-reference": {
+          "Literal:xsd:string": 235
+        },
+        "bio2rdf:mesh_vocabulary:qualifier-entry-version": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:mesh_vocabulary:qualifier-sort-version": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:mesh_vocabulary:qualifier-type": {
+          "Literal:xsd:integer": 83
+        },
+        "bio2rdf:mesh_vocabulary:scope-note": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:mesh_vocabulary:subheading": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:mesh_vocabulary:topical-qualifier-abbreviation": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:mesh_vocabulary:tree-node-allowed": {
+          "Literal:xsd:string": 2220
+        },
+        "bio2rdf:mesh_vocabulary:annotation": {
+          "Literal:xsd:string": 297
+        },
+        "bio2rdf:mesh_vocabulary:date-of-entry": {
+          "Literal:xsd:date": 83
+        },
+        "bio2rdf:mesh_vocabulary:major-revision-date": {
+          "Literal:xsd:date": 83
+        },
+        "bio2rdf:mesh_vocabulary:online-note": {
+          "Literal:xsd:string": 82
+        },
+        "bio2rdf:mesh_vocabulary:record-type": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 83
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:mesh_vocabulary:allowable-topical-qualifier",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 83
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 83
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 83
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T13:18:12.682573+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "mesh",
+    "graph_uris": [
+      "http://bio2rdf.org/mesh_resource:bio2rdf.dataset.mesh.R3"
+    ],
+    "pattern_count": 217,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "dcat:Distribution": "Distribution",
+    "dcterms:source": "source",
+    "bio2rdf:mesh_vocabulary:Resource": "mesh_vocabulary:Resource",
+    "void:inDataset": "inDataset",
+    "dcterms:Dataset": "Dataset",
+    "owl:Class": "Class",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "owl:ObjectProperty": "ObjectProperty",
+    "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": "bio2rdf_vocabulary:x-identifiers.org",
+    "dcat:distribution": "distribution",
+    "bio2rdf:mesh_vocabulary:allowable-topical-qualifiers": "mesh_vocabulary:allowable-topical-qualifiers",
+    "bio2rdf:mesh_vocabulary:allowable-topical-qualifier": "mesh_vocabulary:allowable-topical-qualifier",
+    "bio2rdf:mesh_vocabulary:mesh-tree-number": "mesh_vocabulary:mesh-tree-number",
+    "bio2rdf:mesh_vocabulary:Tree-Entry": "mesh_vocabulary:Tree-Entry",
+    "bio2rdf:mesh_vocabulary:pharmacological-action": "mesh_vocabulary:pharmacological-action",
+    "bio2rdf:mesh_vocabulary:Pharmacological-Action": "mesh_vocabulary:Pharmacological-Action",
+    "bio2rdf:mesh_vocabulary:semantic-type": "mesh_vocabulary:semantic-type",
+    "bio2rdf:mesh_vocabulary:Semantic-Type": "mesh_vocabulary:Semantic-Type",
+    "bio2rdf:mesh_vocabulary:Supplementary-Descriptor": "mesh_vocabulary:Supplementary-Descriptor",
+    "bio2rdf:mesh_vocabulary:Descriptor": "mesh_vocabulary:Descriptor",
+    "bio2rdf:mesh_vocabulary:Qualifier-Descriptor": "mesh_vocabulary:Qualifier-Descriptor",
+    "dcterms:title": "title",
+    "dcterms:identifier": "identifier",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "dcterms:created": "created",
+    "dcterms:format": "format",
+    "dcterms:rights": "rights",
+    "pav:retrievedOn": "retrievedOn",
+    "bio2rdf:mesh_vocabulary:date-qualifier-established": "mesh_vocabulary:date-qualifier-established",
+    "bio2rdf:mesh_vocabulary:histrory-note": "mesh_vocabulary:histrory-note",
+    "bio2rdf:mesh_vocabulary:qualifier-cross-reference": "mesh_vocabulary:qualifier-cross-reference",
+    "bio2rdf:mesh_vocabulary:qualifier-entry-version": "mesh_vocabulary:qualifier-entry-version",
+    "bio2rdf:mesh_vocabulary:qualifier-sort-version": "mesh_vocabulary:qualifier-sort-version",
+    "bio2rdf:mesh_vocabulary:qualifier-type": "mesh_vocabulary:qualifier-type",
+    "bio2rdf:mesh_vocabulary:scope-note": "mesh_vocabulary:scope-note",
+    "bio2rdf:mesh_vocabulary:subheading": "mesh_vocabulary:subheading",
+    "bio2rdf:mesh_vocabulary:topical-qualifier-abbreviation": "mesh_vocabulary:topical-qualifier-abbreviation",
+    "bio2rdf:mesh_vocabulary:tree-node-allowed": "mesh_vocabulary:tree-node-allowed",
+    "bio2rdf:mesh_vocabulary:annotation": "mesh_vocabulary:annotation",
+    "bio2rdf:mesh_vocabulary:date-of-entry": "mesh_vocabulary:date-of-entry",
+    "bio2rdf:mesh_vocabulary:major-revision-date": "mesh_vocabulary:major-revision-date",
+    "bio2rdf:mesh_vocabulary:online-note": "mesh_vocabulary:online-note",
+    "bio2rdf:mesh_vocabulary:record-type": "mesh_vocabulary:record-type",
+    "bio2rdf:mesh_vocabulary:cas-registry-number-or-ec-number": "mesh_vocabulary:cas-registry-number-or-ec-number",
+    "bio2rdf:mesh_vocabulary:frequency": "mesh_vocabulary:frequency",
+    "bio2rdf:mesh_vocabulary:heading-mapped-to": "mesh_vocabulary:heading-mapped-to",
+    "bio2rdf:mesh_vocabulary:indexing-information": "mesh_vocabulary:indexing-information",
+    "bio2rdf:mesh_vocabulary:name-of-substance": "mesh_vocabulary:name-of-substance",
+    "bio2rdf:mesh_vocabulary:nm-term-thesaurus-id": "mesh_vocabulary:nm-term-thesaurus-id",
+    "bio2rdf:mesh_vocabulary:note": "mesh_vocabulary:note",
+    "bio2rdf:mesh_vocabulary:source": "mesh_vocabulary:source",
+    "bio2rdf:mesh_vocabulary:synonym": "mesh_vocabulary:synonym",
+    "bio2rdf:mesh_vocabulary:cas-type-1-name": "mesh_vocabulary:cas-type-1-name",
+    "bio2rdf:mesh_vocabulary:previous-indexing": "mesh_vocabulary:previous-indexing",
+    "bio2rdf:mesh_vocabulary:related-cas-registry-number": "mesh_vocabulary:related-cas-registry-number",
+    "dcterms:alternate": "alternate",
+    "bio2rdf:mesh_vocabulary:backfile-posting": "mesh_vocabulary:backfile-posting",
+    "bio2rdf:mesh_vocabulary:cataloging-subheadings-list-name": "mesh_vocabulary:cataloging-subheadings-list-name",
+    "bio2rdf:mesh_vocabulary:date-major-descriptor-established": "mesh_vocabulary:date-major-descriptor-established",
+    "bio2rdf:mesh_vocabulary:consider-also-xref": "mesh_vocabulary:consider-also-xref",
+    "bio2rdf:mesh_vocabulary:descriptor-class": "mesh_vocabulary:descriptor-class",
+    "bio2rdf:mesh_vocabulary:descriptor-entry-version": "mesh_vocabulary:descriptor-entry-version",
+    "bio2rdf:mesh_vocabulary:descriptor-sort-version": "mesh_vocabulary:descriptor-sort-version",
+    "bio2rdf:mesh_vocabulary:entry-combination": "mesh_vocabulary:entry-combination",
+    "bio2rdf:mesh_vocabulary:entry-term": "mesh_vocabulary:entry-term",
+    "bio2rdf:mesh_vocabulary:forward-xref": "mesh_vocabulary:forward-xref",
+    "bio2rdf:mesh_vocabulary:history-note": "mesh_vocabulary:history-note",
+    "bio2rdf:mesh_vocabulary:grateful-med-note": "mesh_vocabulary:grateful-med-note",
+    "bio2rdf:mesh_vocabulary:mesh-heading": "mesh_vocabulary:mesh-heading",
+    "bio2rdf:mesh_vocabulary:mesh-heading-thesaurus-id": "mesh_vocabulary:mesh-heading-thesaurus-id",
+    "bio2rdf:mesh_vocabulary:mesh-scope-note": "mesh_vocabulary:mesh-scope-note",
+    "bio2rdf:mesh_vocabulary:pre-explosion": "mesh_vocabulary:pre-explosion",
+    "bio2rdf:mesh_vocabulary:public-mesh-note": "mesh_vocabulary:public-mesh-note",
+    "bio2rdf:mesh_vocabulary:registry-number": "mesh_vocabulary:registry-number",
+    "bio2rdf:mesh_vocabulary:running-head": "mesh_vocabulary:running-head",
+    "foaf:page": "page",
+    "dcterms:publisher": "publisher",
+    "dcterms:creator": "creator",
+    "dcterms:license": "license"
+  }
+}

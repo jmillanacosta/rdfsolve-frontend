@@ -24,7 +24,7 @@ export type DiagramMode =
   | 'expand'     // Click node to expand its connections
   | 'shapes';    // Click edge labels to select/deselect for shape definition
 
-/** Path being drawn (in progress) — supports multi-node building */
+/** Path being drawn (in progress) - supports multi-node building */
 export interface PathInProgress {
   startNodeId: string;
   startNodeUri: string;
@@ -60,7 +60,7 @@ export interface EnhancedPath extends PathHighlight {
   startUri: string;
   /** End node URI */
   endUri: string;
-  /** Edges with full info (one per hop — the currently selected predicate) */
+  /** Edges with full info (one per hop - the currently selected predicate) */
   edgeData?: Array<{
     source: string;
     target: string;
@@ -116,11 +116,11 @@ export class DiagramState {
   private highlightedNodes = new Map<string, { color: string; isStart: boolean; isEnd: boolean }>();
   private highlightedEdges = new Map<string, { color: string }>();
 
-  // IRI-based highlights (URI → color).  These highlight nodes by their
+  // IRI-based highlights (URI -> color).  These highlight nodes by their
   // semantic URI rather than visual node-id, so they survive re-renders.
   private iriHighlights = new Map<string, string>();
 
-  // Resolved IRIs per class/node URI — classUri → list of concrete IRIs
+  // Resolved IRIs per class/node URI - classUri -> list of concrete IRIs
   // that were resolved to this class.  Used by the renderer to draw
   // instance-count badges (green dots) on matched nodes.
   private resolvedIrisMap = new Map<string, string[]>();
@@ -214,12 +214,12 @@ export class DiagramState {
   /**
    * Add a node to the path being built.
    * Allows the same URI twice in a row for reflexive/self-loop edges
-   * (e.g. Protein → Protein via wp:bdbReactome).
+   * (e.g. Protein -> Protein via wp:bdbReactome).
    * Only blocks adding the exact same *visual* node ID consecutively.
    */
   addPathBuildingNode(nodeId: string, nodeUri: string, label: string): void {
     const last = this.pathBuilding.nodes[this.pathBuilding.nodes.length - 1];
-    if (last && last.nodeId === nodeId) return; // same visual node click — ignore
+    if (last && last.nodeId === nodeId) return; // same visual node click - ignore
     this.pathBuilding.nodes.push({ nodeId, nodeUri, label });
     this.emit({ type: 'selection-changed', selectedNodeId: nodeId });
   }
@@ -577,7 +577,7 @@ export class DiagramState {
   }
 
   // ==========================================================================
-  // Resolved IRIs  (class URI → concrete instance IRIs)
+  // Resolved IRIs  (class URI -> concrete instance IRIs)
   // ==========================================================================
 
   /**
@@ -710,10 +710,10 @@ export class DiagramState {
   }
 
   // ==========================================================================
-  // Shapes Mode — Edge Selection
+  // Shapes Mode - Edge Selection
   // ==========================================================================
 
-  /** Edges selected for shape definition (edge ID → edge metadata). */
+  /** Edges selected for shape definition (edge ID -> edge metadata). */
   private selectedShapeEdges = new Map<string, {
     edgeId: string;
     sourceUri: string;

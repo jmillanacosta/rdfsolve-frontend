@@ -1,0 +1,135 @@
+{
+  "@context": {
+    "sp": "http://spinrdf.org/sp#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "vocab": "https://hamap.expasy.org/rdf/vocab#"
+  },
+  "@graph": [
+    {
+      "@id": "sp:Construct",
+      "sh:prefixes": {
+        "@id": "owl:Ontology"
+      },
+      "sh:construct": {
+        "@type": "xsd:string"
+      },
+      "sp:templates": {
+        "@id": "owl:Class"
+      },
+      "sp:where": {
+        "@id": "owl:Class"
+      },
+      "vocab:addsTriple": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "sh:prefixes": {
+          "owl:Ontology": 2423
+        },
+        "sh:construct": {
+          "Literal:xsd:string": 2423
+        }
+      }
+    },
+    {
+      "@id": "sh:NodeShape",
+      "sh:rule": [
+        {
+          "@id": "sp:Construct"
+        },
+        {
+          "@id": "sh:SPARQLRule"
+        }
+      ],
+      "dcterms:modified": {
+        "@type": "xsd:date"
+      },
+      "sh:targetClass": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "sh:rule": {
+          "sp:Construct": 2423,
+          "sh:SPARQLRule": 2423
+        },
+        "dcterms:modified": {
+          "Literal:xsd:date": 2423
+        }
+      }
+    },
+    {
+      "@id": "sh:SPARQLRule",
+      "sh:prefixes": {
+        "@id": "owl:Ontology"
+      },
+      "sh:construct": {
+        "@type": "xsd:string"
+      },
+      "sp:templates": {
+        "@id": "owl:Class"
+      },
+      "sp:where": {
+        "@id": "owl:Class"
+      },
+      "vocab:addsTriple": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "sh:prefixes": {
+          "owl:Ontology": 2423
+        },
+        "sh:construct": {
+          "Literal:xsd:string": 2423
+        }
+      }
+    },
+    {
+      "@id": "sp:Optional",
+      "sp:elements": {
+        "@id": "owl:Class"
+      }
+    },
+    {
+      "@id": "sp:Union",
+      "sp:elements": {
+        "@id": "owl:Class"
+      }
+    },
+    {
+      "@id": "owl:Ontology",
+      "owl:imports": {
+        "@id": "owl:Class"
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-03T16:11:12.843643+00:00",
+    "endpoint": "https://jmillanacosta.com/rdfsolve/hamap/mined",
+    "dataset_name": "hamap",
+    "pattern_count": 25,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "sp:Construct": "Construct",
+    "sh:prefixes": "prefixes",
+    "owl:Ontology": "Ontology",
+    "sh:NodeShape": "NodeShape",
+    "sh:rule": "rule",
+    "sh:SPARQLRule": "SPARQLRule",
+    "sh:construct": "construct",
+    "dcterms:modified": "modified",
+    "sp:templates": "templates",
+    "owl:Class": "Class",
+    "sp:where": "where",
+    "vocab:addsTriple": "addsTriple",
+    "sp:Optional": "Optional",
+    "sp:elements": "elements",
+    "sp:Union": "Union",
+    "owl:imports": "imports",
+    "sh:targetClass": "targetClass"
+  }
+}

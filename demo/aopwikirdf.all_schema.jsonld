@@ -1,0 +1,1527 @@
+{
+  "@context": {
+    "aopo": "http://aopkb.org/aop_ontology#",
+    "pato": "http://purl.obolibrary.org/obo/PATO_",
+    "go": "http://purl.obolibrary.org/obo/GO_",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "edam.data": "http://edamontology.org/data_",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ncbitaxon": "http://purl.bioontology.org/ontology/NCBITAXON/",
+    "ncit": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#",
+    "cheminf": "http://semanticscience.org/resource/CHEMINF_",
+    "pav": "http://purl.org/pav/",
+    "mmo": "http://purl.obolibrary.org/obo/MMO_",
+    "edam.operation": "http://edamontology.org/operation_",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "aopo:BiologicalEvent",
+      "aopo:hasObject": [
+        {
+          "@id": "pato:0001241"
+        },
+        {
+          "@id": "aopo:CellTypeContext"
+        },
+        {
+          "@id": "aopo:OrganContext"
+        },
+        {
+          "@id": "go:0008150"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "aopo:hasProcess": [
+        {
+          "@id": "go:0008150"
+        },
+        {
+          "@id": "pato:0001241"
+        }
+      ],
+      "aopo:hasAction": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "aopo:hasObject": {
+          "pato:0001241": 796,
+          "aopo:CellTypeContext": 62,
+          "aopo:OrganContext": 49,
+          "go:0008150": 15,
+          "Literal:xsd:string": 3
+        },
+        "aopo:hasProcess": {
+          "go:0008150": 945,
+          "pato:0001241": 7
+        },
+        "aopo:hasAction": {
+          "Literal:xsd:string": 1111
+        }
+      }
+    },
+    {
+      "@id": "edam.data:1027",
+      "edam.data:1027": {
+        "@type": "xsd:string"
+      },
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "edam.data:1027": {
+          "Literal:xsd:string": 1537
+        },
+        "dc:identifier": {
+          "Literal:xsd:string": 1537
+        },
+        "dc:source": {
+          "Literal:xsd:string": 1537
+        }
+      }
+    },
+    {
+      "@id": "edam.data:1025",
+      "skos:exactMatch": [
+        {
+          "@id": "edam.data:1025"
+        },
+        {
+          "@id": "edam.data:1033"
+        },
+        {
+          "@id": "edam.data:1027"
+        },
+        {
+          "@id": "edam.data:2291"
+        }
+      ],
+      "edam.data:1027": {
+        "@type": "xsd:string"
+      },
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "edam.data:1033": {
+        "@type": "xsd:string"
+      },
+      "edam.data:2291": {
+        "@type": "xsd:string"
+      },
+      "edam.data:2298": {
+        "@type": "xsd:string"
+      },
+      "owl:sameAs": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "skos:exactMatch": {
+          "edam.data:1025": 10361,
+          "edam.data:1033": 1483,
+          "edam.data:1027": 1493,
+          "edam.data:2291": 7385
+        },
+        "edam.data:1027": {
+          "Literal:xsd:string": 1537
+        },
+        "dc:identifier": {
+          "Literal:xsd:string": 12523
+        },
+        "dc:source": {
+          "Literal:xsd:string": 12523
+        },
+        "edam.data:1033": {
+          "Literal:xsd:string": 1483
+        },
+        "edam.data:2291": {
+          "Literal:xsd:string": 7868
+        },
+        "edam.data:2298": {
+          "Literal:xsd:string": 1635
+        },
+        "owl:sameAs": {
+          "Resource": 572
+        }
+      }
+    },
+    {
+      "@id": "edam.data:2298",
+      "skos:exactMatch": [
+        {
+          "@id": "edam.data:1025"
+        },
+        {
+          "@id": "edam.data:1033"
+        },
+        {
+          "@id": "edam.data:1027"
+        },
+        {
+          "@id": "edam.data:2291"
+        }
+      ],
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "edam.data:2298": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "skos:exactMatch": {
+          "edam.data:1025": 10361,
+          "edam.data:1033": 1483,
+          "edam.data:1027": 1493,
+          "edam.data:2291": 7385
+        },
+        "dc:identifier": {
+          "Literal:xsd:string": 1635
+        },
+        "dc:source": {
+          "Literal:xsd:string": 1635
+        },
+        "edam.data:2298": {
+          "Literal:xsd:string": 1635
+        }
+      }
+    },
+    {
+      "@id": "go:0008150",
+      "dc:identifier": [
+        {
+          "@id": "go:0008150"
+        },
+        {
+          "@id": "pato:0001241"
+        }
+      ],
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "go:0008150": 553,
+          "pato:0001241": 5
+        },
+        "dc:source": {
+          "Literal:xsd:string": 553
+        },
+        "dc:title": {
+          "Literal:xsd:string": 553
+        }
+      }
+    },
+    {
+      "@id": "void:Dataset",
+      "dcat:downloadURL": [
+        {
+          "@id": "void:Dataset"
+        },
+        {
+          "@id": "void:Linkset"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "dcterms:modified": {
+        "@type": "xsd:date"
+      },
+      "dc:description": {
+        "@type": "xsd:string"
+      },
+      "pav:createdOn": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:date"
+        }
+      ],
+      "pav:createdWith": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "pav:importedOn": {
+        "@type": "xsd:string"
+      },
+      "dcterms:accuralPeriodicity": {
+        "@id": "rdfs:Resource"
+      },
+      "pav:createdBy": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:homepage": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcat:downloadURL": {
+          "void:Dataset": 1,
+          "void:Linkset": 1,
+          "Resource": 4
+        },
+        "dcterms:modified": {
+          "Literal:xsd:date": 1
+        },
+        "dc:description": {
+          "Literal:xsd:string": 4
+        },
+        "pav:createdOn": {
+          "Literal:xsd:string": 1,
+          "Literal:xsd:date": 1
+        },
+        "pav:createdWith": {
+          "Literal:xsd:string": 2,
+          "Resource": 2
+        },
+        "pav:importedOn": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:accuralPeriodicity": {
+          "Resource": 2
+        },
+        "pav:createdBy": {
+          "Resource": 2
+        },
+        "foaf:homepage": {
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "void:Linkset",
+      "dcat:downloadURL": [
+        {
+          "@id": "void:Dataset"
+        },
+        {
+          "@id": "void:Linkset"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "dc:description": {
+        "@type": "xsd:string"
+      },
+      "pav:importedOn": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dcat:downloadURL": {
+          "void:Dataset": 1,
+          "void:Linkset": 1,
+          "Resource": 1
+        },
+        "dc:description": {
+          "Literal:xsd:string": 2
+        },
+        "pav:importedOn": {
+          "Literal:xsd:string": 2
+        }
+      }
+    },
+    {
+      "@id": "aopo:KeyEvent",
+      "dc:identifier": {
+        "@id": "aopo:KeyEvent"
+      },
+      "edam.data:1025": [
+        {
+          "@id": "edam.data:1025"
+        },
+        {
+          "@id": "edam.data:2298"
+        }
+      ],
+      "go:0008150": [
+        {
+          "@id": "go:0008150"
+        },
+        {
+          "@id": "pato:0001241"
+        }
+      ],
+      "dcterms:isPartOf": {
+        "@id": "aopo:AdverseOutcomePathway"
+      },
+      "aopo:hasBiologicalEvent": {
+        "@id": "aopo:BiologicalEvent"
+      },
+      "foaf:page": {
+        "@id": "aopo:KeyEvent"
+      },
+      "pato:0001241": [
+        {
+          "@id": "pato:0001241"
+        },
+        {
+          "@id": "aopo:CellTypeContext"
+        },
+        {
+          "@id": "aopo:OrganContext"
+        },
+        {
+          "@id": "go:0008150"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "ncbitaxon:131567": [
+        {
+          "@id": "ncbitaxon:131567"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "aopo:CellTypeContext": [
+        {
+          "@id": "aopo:CellTypeContext"
+        },
+        {
+          "@id": "pato:0001241"
+        },
+        {
+          "@id": "aopo:OrganContext"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "aopo:OrganContext": [
+        {
+          "@id": "pato:0001241"
+        },
+        {
+          "@id": "aopo:OrganContext"
+        },
+        {
+          "@id": "aopo:CellTypeContext"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dc:description": {
+        "@type": "xsd:string"
+      },
+      "aopo:LifeStageContext": {
+        "@type": "xsd:string"
+      },
+      "ncit:C25664": {
+        "@type": "xsd:string"
+      },
+      "mmo:0000000": {
+        "@type": "xsd:string"
+      },
+      "pato:0000001": {
+        "@type": "xsd:string"
+      },
+      "pato:0000047": {
+        "@type": "xsd:string"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:alternative": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "aopo:KeyEvent": 1570
+        },
+        "edam.data:1025": {
+          "edam.data:1025": 1778,
+          "edam.data:2298": 1778
+        },
+        "go:0008150": {
+          "go:0008150": 902,
+          "pato:0001241": 6
+        },
+        "dcterms:isPartOf": {
+          "aopo:AdverseOutcomePathway": 3626
+        },
+        "aopo:hasBiologicalEvent": {
+          "aopo:BiologicalEvent": 1111
+        },
+        "foaf:page": {
+          "aopo:KeyEvent": 1570
+        },
+        "pato:0001241": {
+          "pato:0001241": 751,
+          "aopo:CellTypeContext": 60,
+          "aopo:OrganContext": 47,
+          "go:0008150": 14,
+          "Literal:xsd:string": 3
+        },
+        "ncbitaxon:131567": {
+          "ncbitaxon:131567": 782,
+          "Literal:xsd:string": 624
+        },
+        "aopo:CellTypeContext": {
+          "aopo:CellTypeContext": 425,
+          "pato:0001241": 201,
+          "aopo:OrganContext": 1,
+          "Literal:xsd:string": 1
+        },
+        "aopo:OrganContext": {
+          "pato:0001241": 216,
+          "aopo:OrganContext": 343,
+          "aopo:CellTypeContext": 2,
+          "Literal:xsd:string": 1
+        },
+        "dc:source": {
+          "Literal:xsd:string": 1570
+        },
+        "dc:description": {
+          "Literal:xsd:string": 625
+        },
+        "aopo:LifeStageContext": {
+          "Literal:xsd:string": 560
+        },
+        "ncit:C25664": {
+          "Literal:xsd:string": 1570
+        },
+        "mmo:0000000": {
+          "Literal:xsd:string": 588
+        },
+        "pato:0000001": {
+          "Literal:xsd:string": 924
+        },
+        "pato:0000047": {
+          "Literal:xsd:string": 517
+        },
+        "dc:title": {
+          "Literal:xsd:string": 1570
+        },
+        "dcterms:alternative": {
+          "Literal:xsd:string": 1570
+        }
+      }
+    },
+    {
+      "@id": "ncit:C54571",
+      "dc:identifier": {
+        "@id": "ncit:C54571"
+      },
+      "foaf:page": {
+        "@id": "ncit:C54571"
+      },
+      "dcterms:isPartOf": {
+        "@id": "aopo:AdverseOutcomePathway"
+      },
+      "aopo:has_chemical_entity": [
+        {
+          "@id": "cheminf:000000"
+        },
+        {
+          "@id": "cheminf:000446"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "dcterms:created": {
+        "@type": "xsd:string"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:string"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "dc:description": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "ncit:C54571": 736
+        },
+        "foaf:page": {
+          "ncit:C54571": 736
+        },
+        "dcterms:isPartOf": {
+          "aopo:AdverseOutcomePathway": 772
+        },
+        "aopo:has_chemical_entity": {
+          "cheminf:000000": 421,
+          "cheminf:000446": 421,
+          "Literal:xsd:string": 7
+        },
+        "dcterms:created": {
+          "Literal:xsd:string": 736
+        },
+        "dcterms:modified": {
+          "Literal:xsd:string": 736
+        },
+        "dc:title": {
+          "Literal:xsd:string": 736
+        },
+        "dc:description": {
+          "Literal:xsd:string": 17
+        }
+      }
+    },
+    {
+      "@id": "pato:0001241",
+      "dc:identifier": [
+        {
+          "@id": "pato:0001241"
+        },
+        {
+          "@id": "aopo:CellTypeContext"
+        },
+        {
+          "@id": "aopo:OrganContext"
+        },
+        {
+          "@id": "go:0008150"
+        }
+      ],
+      "skos:exactMatch": [
+        {
+          "@id": "edam.data:1025"
+        },
+        {
+          "@id": "edam.data:2298"
+        },
+        {
+          "@id": "edam.data:2291"
+        },
+        {
+          "@id": "edam.data:1027"
+        }
+      ],
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "pato:0001241": 491,
+          "aopo:CellTypeContext": 33,
+          "aopo:OrganContext": 33,
+          "go:0008150": 5
+        },
+        "skos:exactMatch": {
+          "edam.data:1025": 742,
+          "edam.data:2298": 126,
+          "edam.data:2291": 572,
+          "edam.data:1027": 44
+        },
+        "dc:source": {
+          "Literal:xsd:string": 491
+        },
+        "dc:title": {
+          "Literal:xsd:string": 492
+        }
+      }
+    },
+    {
+      "@id": "ncbitaxon:131567",
+      "dc:identifier": {
+        "@id": "ncbitaxon:131567"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "ncbitaxon:131567": 182
+        },
+        "dc:source": {
+          "Literal:xsd:string": 182
+        },
+        "dc:title": {
+          "Literal:xsd:string": 221
+        }
+      }
+    },
+    {
+      "@id": "aopo:KeyEventRelationship",
+      "aopo:has_upstream_key_event": {
+        "@id": "aopo:KeyEvent"
+      },
+      "aopo:has_downstream_key_event": {
+        "@id": "aopo:KeyEvent"
+      },
+      "dc:identifier": {
+        "@id": "aopo:KeyEventRelationship"
+      },
+      "edam.data:1025": [
+        {
+          "@id": "edam.data:1025"
+        },
+        {
+          "@id": "edam.data:2298"
+        }
+      ],
+      "foaf:page": {
+        "@id": "aopo:KeyEventRelationship"
+      },
+      "dcterms:isPartOf": {
+        "@id": "aopo:AdverseOutcomePathway"
+      },
+      "dcterms:created": {
+        "@type": "xsd:string"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:string"
+      },
+      "dc:description": {
+        "@type": "xsd:string"
+      },
+      "ncit:C71478": {
+        "@type": "xsd:string"
+      },
+      "ncit:C80263": {
+        "@type": "xsd:string"
+      },
+      "edam.data:2042": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "aopo:has_upstream_key_event": {
+          "aopo:KeyEvent": 2291
+        },
+        "aopo:has_downstream_key_event": {
+          "aopo:KeyEvent": 2291
+        },
+        "dc:identifier": {
+          "aopo:KeyEventRelationship": 2291
+        },
+        "edam.data:1025": {
+          "edam.data:1025": 3578,
+          "edam.data:2298": 3578
+        },
+        "foaf:page": {
+          "aopo:KeyEventRelationship": 2291
+        },
+        "dcterms:isPartOf": {
+          "aopo:AdverseOutcomePathway": 3205
+        },
+        "dcterms:created": {
+          "Literal:xsd:string": 2291
+        },
+        "dcterms:modified": {
+          "Literal:xsd:string": 2291
+        },
+        "dc:description": {
+          "Literal:xsd:string": 702
+        },
+        "ncit:C71478": {
+          "Literal:xsd:string": 562
+        },
+        "ncit:C80263": {
+          "Literal:xsd:string": 697
+        },
+        "edam.data:2042": {
+          "Literal:xsd:string": 680
+        }
+      }
+    },
+    {
+      "@id": "aopo:CellTypeContext",
+      "dc:identifier": [
+        {
+          "@id": "pato:0001241"
+        },
+        {
+          "@id": "aopo:CellTypeContext"
+        },
+        {
+          "@id": "aopo:OrganContext"
+        }
+      ],
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "pato:0001241": 33,
+          "aopo:CellTypeContext": 68,
+          "aopo:OrganContext": 1
+        },
+        "dc:source": {
+          "Literal:xsd:string": 68
+        },
+        "dc:title": {
+          "Literal:xsd:string": 69
+        }
+      }
+    },
+    {
+      "@id": "aopo:AdverseOutcomePathway",
+      "aopo:has_key_event": {
+        "@id": "aopo:KeyEvent"
+      },
+      "aopo:has_adverse_outcome": {
+        "@id": "aopo:KeyEvent"
+      },
+      "aopo:has_key_event_relationship": {
+        "@id": "aopo:KeyEventRelationship"
+      },
+      "dc:identifier": {
+        "@id": "aopo:AdverseOutcomePathway"
+      },
+      "aopo:has_molecular_initiating_event": {
+        "@id": "aopo:KeyEvent"
+      },
+      "foaf:page": {
+        "@id": "aopo:AdverseOutcomePathway"
+      },
+      "ncbitaxon:131567": [
+        {
+          "@id": "ncbitaxon:131567"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "ncit:C54571": {
+        "@id": "ncit:C54571"
+      },
+      "dcterms:created": {
+        "@type": "xsd:string"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dc:description": {
+        "@type": "xsd:string"
+      },
+      "aopo:AopContext": {
+        "@type": "xsd:string"
+      },
+      "aopo:LifeStageContext": {
+        "@type": "xsd:string"
+      },
+      "aopo:has_evidence": {
+        "@type": "xsd:string"
+      },
+      "ncit:C25217": {
+        "@type": "xsd:string"
+      },
+      "ncit:C48192": {
+        "@type": "xsd:string"
+      },
+      "pato:0000047": {
+        "@type": "xsd:string"
+      },
+      "dc:creator": {
+        "@type": "xsd:string"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:alternative": {
+        "@type": "xsd:string"
+      },
+      "ncit:C25688": {
+        "@type": "xsd:string"
+      },
+      "ncit:C25725": {
+        "@type": "xsd:string"
+      },
+      "edam.operation:3799": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "aopo:has_key_event": {
+          "aopo:KeyEvent": 3626
+        },
+        "aopo:has_adverse_outcome": {
+          "aopo:KeyEvent": 635
+        },
+        "aopo:has_key_event_relationship": {
+          "aopo:KeyEventRelationship": 3205
+        },
+        "dc:identifier": {
+          "aopo:AdverseOutcomePathway": 580
+        },
+        "aopo:has_molecular_initiating_event": {
+          "aopo:KeyEvent": 528
+        },
+        "foaf:page": {
+          "aopo:AdverseOutcomePathway": 580
+        },
+        "ncbitaxon:131567": {
+          "ncbitaxon:131567": 425,
+          "Literal:xsd:string": 350
+        },
+        "ncit:C54571": {
+          "ncit:C54571": 772
+        },
+        "dcterms:created": {
+          "Literal:xsd:string": 580
+        },
+        "dcterms:modified": {
+          "Literal:xsd:string": 580
+        },
+        "dc:source": {
+          "Literal:xsd:string": 580
+        },
+        "dc:description": {
+          "Literal:xsd:string": 710
+        },
+        "aopo:AopContext": {
+          "Literal:xsd:string": 213
+        },
+        "aopo:LifeStageContext": {
+          "Literal:xsd:string": 355
+        },
+        "aopo:has_evidence": {
+          "Literal:xsd:string": 194
+        },
+        "ncit:C25217": {
+          "Literal:xsd:string": 184
+        },
+        "ncit:C48192": {
+          "Literal:xsd:string": 200
+        },
+        "pato:0000047": {
+          "Literal:xsd:string": 342
+        },
+        "dc:creator": {
+          "Literal:xsd:string": 435
+        },
+        "dc:title": {
+          "Literal:xsd:string": 580
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 341
+        },
+        "dcterms:alternative": {
+          "Literal:xsd:string": 580
+        },
+        "ncit:C25688": {
+          "Literal:xsd:string": 146
+        },
+        "ncit:C25725": {
+          "Literal:xsd:string": 146
+        },
+        "edam.operation:3799": {
+          "Literal:xsd:string": 159
+        }
+      }
+    },
+    {
+      "@id": "edam.data:1033",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "edam.data:1033": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 1483
+        },
+        "dc:source": {
+          "Literal:xsd:string": 1483
+        },
+        "edam.data:1033": {
+          "Literal:xsd:string": 1483
+        }
+      }
+    },
+    {
+      "@id": "edam.data:2291",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "edam.data:2291": {
+        "@type": "xsd:string"
+      },
+      "owl:sameAs": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 7868
+        },
+        "dc:source": {
+          "Literal:xsd:string": 7868
+        },
+        "edam.data:2291": {
+          "Literal:xsd:string": 7868
+        },
+        "owl:sameAs": {
+          "Resource": 572
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000406",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000406": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 219
+        },
+        "dc:source": {
+          "Literal:xsd:string": 219
+        },
+        "cheminf:000406": {
+          "Literal:xsd:string": 219
+        }
+      }
+    },
+    {
+      "@id": "aopo:OrganContext",
+      "dc:identifier": [
+        {
+          "@id": "pato:0001241"
+        },
+        {
+          "@id": "aopo:CellTypeContext"
+        },
+        {
+          "@id": "aopo:OrganContext"
+        }
+      ],
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "pato:0001241": 33,
+          "aopo:CellTypeContext": 1,
+          "aopo:OrganContext": 98
+        },
+        "dc:source": {
+          "Literal:xsd:string": 98
+        },
+        "dc:title": {
+          "Literal:xsd:string": 99
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000000",
+      "dc:identifier": [
+        {
+          "@id": "cheminf:000000"
+        },
+        {
+          "@id": "cheminf:000446"
+        }
+      ],
+      "skos:exactMatch": [
+        {
+          "@id": "cheminf:000407"
+        },
+        {
+          "@id": "cheminf:000412"
+        },
+        {
+          "@id": "cheminf:000405"
+        },
+        {
+          "@id": "cheminf:000406"
+        },
+        {
+          "@id": "cheminf:000408"
+        },
+        {
+          "@id": "cheminf:000409"
+        },
+        {
+          "@id": "cheminf:000564"
+        },
+        {
+          "@id": "cheminf:000140"
+        },
+        {
+          "@id": "cheminf:000567"
+        }
+      ],
+      "dcterms:isPartOf": {
+        "@id": "ncit:C54571"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:alternative": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000446": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000059": {
+        "@id": "rdfs:Resource"
+      },
+      "cheminf:000568": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "cheminf:000000": 412,
+          "cheminf:000446": 412
+        },
+        "skos:exactMatch": {
+          "cheminf:000407": 440,
+          "cheminf:000412": 350,
+          "cheminf:000405": 426,
+          "cheminf:000406": 219,
+          "cheminf:000408": 426,
+          "cheminf:000409": 475,
+          "cheminf:000564": 35,
+          "cheminf:000140": 423,
+          "cheminf:000567": 423
+        },
+        "dcterms:isPartOf": {
+          "ncit:C54571": 421
+        },
+        "dc:source": {
+          "Literal:xsd:string": 412
+        },
+        "dc:title": {
+          "Literal:xsd:string": 412
+        },
+        "dcterms:alternative": {
+          "Literal:xsd:string": 13502
+        },
+        "cheminf:000446": {
+          "Literal:xsd:string": 412
+        },
+        "cheminf:000059": {
+          "Resource": 395
+        },
+        "cheminf:000568": {
+          "Resource": 412
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000446",
+      "dc:identifier": [
+        {
+          "@id": "cheminf:000000"
+        },
+        {
+          "@id": "cheminf:000446"
+        }
+      ],
+      "skos:exactMatch": [
+        {
+          "@id": "cheminf:000407"
+        },
+        {
+          "@id": "cheminf:000412"
+        },
+        {
+          "@id": "cheminf:000405"
+        },
+        {
+          "@id": "cheminf:000406"
+        },
+        {
+          "@id": "cheminf:000408"
+        },
+        {
+          "@id": "cheminf:000409"
+        },
+        {
+          "@id": "cheminf:000564"
+        },
+        {
+          "@id": "cheminf:000140"
+        },
+        {
+          "@id": "cheminf:000567"
+        }
+      ],
+      "dcterms:isPartOf": {
+        "@id": "ncit:C54571"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:alternative": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000446": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000059": {
+        "@id": "rdfs:Resource"
+      },
+      "cheminf:000568": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "cheminf:000000": 412,
+          "cheminf:000446": 412
+        },
+        "skos:exactMatch": {
+          "cheminf:000407": 440,
+          "cheminf:000412": 350,
+          "cheminf:000405": 426,
+          "cheminf:000406": 219,
+          "cheminf:000408": 426,
+          "cheminf:000409": 475,
+          "cheminf:000564": 35,
+          "cheminf:000140": 423,
+          "cheminf:000567": 423
+        },
+        "dcterms:isPartOf": {
+          "ncit:C54571": 421
+        },
+        "dc:source": {
+          "Literal:xsd:string": 412
+        },
+        "dc:title": {
+          "Literal:xsd:string": 412
+        },
+        "dcterms:alternative": {
+          "Literal:xsd:string": 13502
+        },
+        "cheminf:000446": {
+          "Literal:xsd:string": 412
+        },
+        "cheminf:000059": {
+          "Resource": 395
+        },
+        "cheminf:000568": {
+          "Resource": 412
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000405",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000405": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 426
+        },
+        "dc:source": {
+          "Literal:xsd:string": 426
+        },
+        "cheminf:000405": {
+          "Literal:xsd:string": 426
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000140",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000140": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 423
+        },
+        "dc:source": {
+          "Literal:xsd:string": 423
+        },
+        "cheminf:000140": {
+          "Literal:xsd:string": 423
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000407",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000407": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 440
+        },
+        "dc:source": {
+          "Literal:xsd:string": 440
+        },
+        "cheminf:000407": {
+          "Literal:xsd:string": 440
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000408",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000408": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 426
+        },
+        "dc:source": {
+          "Literal:xsd:string": 426
+        },
+        "cheminf:000408": {
+          "Literal:xsd:string": 426
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000412",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000412": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 350
+        },
+        "dc:source": {
+          "Literal:xsd:string": 350
+        },
+        "cheminf:000412": {
+          "Literal:xsd:string": 350
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000409",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000409": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 475
+        },
+        "dc:source": {
+          "Literal:xsd:string": 475
+        },
+        "cheminf:000409": {
+          "Literal:xsd:string": 475
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000567",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000567": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 423
+        },
+        "dc:source": {
+          "Literal:xsd:string": 423
+        },
+        "cheminf:000567": {
+          "Literal:xsd:string": 423
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000564",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dc:source": {
+        "@type": "xsd:string"
+      },
+      "cheminf:000564": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 35
+        },
+        "dc:source": {
+          "Literal:xsd:string": 35
+        },
+        "cheminf:000564": {
+          "Literal:xsd:string": 35
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:41:05.260347+00:00",
+    "endpoint": "https://aopwiki.rdf.bigcat-bioinformatics.org/sparql/",
+    "dataset_name": "aopwikirdf.all",
+    "pattern_count": 375,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "aopo:BiologicalEvent": "BiologicalEvent",
+    "aopo:hasObject": "hasObject",
+    "pato:0001241": "physical object quality",
+    "aopo:CellTypeContext": "Cell-term",
+    "aopo:hasProcess": "hasProcess",
+    "go:0008150": "GO_0008150",
+    "aopo:OrganContext": "Organ-term",
+    "aopo:hasAction": "hasAction",
+    "edam.data:1027": "Gene ID (NCBI)",
+    "dc:identifier": "identifier",
+    "dc:source": "source",
+    "edam.data:1025": "Gene identifier",
+    "skos:exactMatch": "exactMatch",
+    "edam.data:1033": "Ensembl gene ID",
+    "edam.data:2291": "UniProt ID",
+    "edam.data:2298": "Gene ID (HGNC)",
+    "void:Dataset": "Dataset",
+    "dcat:downloadURL": "downloadURL",
+    "void:Linkset": "Linkset",
+    "aopo:KeyEvent": "Key Event",
+    "dcterms:isPartOf": "isPartOf",
+    "aopo:AdverseOutcomePathway": "Adverse Outcome Pathway",
+    "aopo:hasBiologicalEvent": "hasBiologicalEvent",
+    "foaf:page": "page",
+    "ncbitaxon:131567": "cellular organisms",
+    "ncit:C54571": "Stressor",
+    "aopo:has_chemical_entity": "has_chemical_entity",
+    "cheminf:000000": "chemical entity",
+    "cheminf:000446": "CAS registry number",
+    "aopo:KeyEventRelationship": "Key Event Relationship",
+    "aopo:has_upstream_key_event": "has_upstream_key_event",
+    "aopo:has_downstream_key_event": "has_downstream_key_event",
+    "aopo:has_key_event": "has_key_event",
+    "aopo:has_adverse_outcome": "has_adverse_outcome",
+    "aopo:has_key_event_relationship": "has_key_event_relationship",
+    "aopo:has_molecular_initiating_event": "has_molecular_initiating_event",
+    "dc:title": "title",
+    "dcterms:modified": "modified",
+    "dc:description": "description",
+    "pav:createdOn": "createdOn",
+    "pav:createdWith": "createdWith",
+    "pav:importedOn": "importedOn",
+    "aopo:LifeStageContext": "LifeStageContext",
+    "ncit:C25664": "C25664",
+    "mmo:0000000": "MMO_0000000",
+    "pato:0000001": "PATO_0000001",
+    "pato:0000047": "PATO_0000047",
+    "dcterms:alternative": "alternative",
+    "dcterms:created": "created",
+    "cheminf:000406": "DrugBank identifier",
+    "aopo:AopContext": "AopContext",
+    "aopo:has_evidence": "has_evidence",
+    "ncit:C25217": "C25217",
+    "ncit:C48192": "C48192",
+    "ncit:C71478": "C71478",
+    "ncit:C80263": "C80263",
+    "dc:creator": "creator",
+    "dcterms:abstract": "abstract",
+    "edam.data:2042": "data_2042",
+    "ncit:C25688": "C25688",
+    "ncit:C25725": "C25725",
+    "edam.operation:3799": "operation_3799",
+    "owl:sameAs": "sameAs",
+    "dcterms:accuralPeriodicity": "accuralPeriodicity",
+    "pav:createdBy": "createdBy",
+    "foaf:homepage": "homepage",
+    "cheminf:000407": "ChEBI identifier",
+    "cheminf:000412": "ChEMBL identifier",
+    "cheminf:000405": "ChemSpider identifier",
+    "cheminf:000408": "HMDB identifier",
+    "cheminf:000409": "KEGG identifier",
+    "cheminf:000564": "LipidMaps identifier",
+    "cheminf:000140": "PubChem compound identifier (CID)",
+    "cheminf:000567": "Wikidata identifier",
+    "cheminf:000059": "CHEMINF_000059",
+    "cheminf:000568": "CHEMINF_000568"
+  }
+}

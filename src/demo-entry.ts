@@ -28,7 +28,7 @@ import type { ResultsPanel } from './components/results-panel';
 import type { ShapesPanel } from './components/shapes-panel';
 
 // =============================================================================
-// DATASET CONFIGURATION — the only thing that varies per deployment
+// DATASET CONFIGURATION - the only thing that varies per deployment
 // =============================================================================
 
 const DATASETS = {
@@ -41,7 +41,7 @@ const DATASETS = {
 };
 
 // =============================================================================
-// INITIALIZATION — wire dataset config into the selector
+// INITIALIZATION - wire dataset config into the selector
 // =============================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const shapesPanel = document.querySelector<ShapesPanel>('shapes-panel');
 
   // Pre-fetch all JSON-LD files to discover SPARQL endpoints before any
-  // diagram is rendered — the IRI Resolver endpoint list is populated
+  // diagram is rendered - the IRI Resolver endpoint list is populated
   // immediately so the user can start resolving IRIs right away.
   if (iriResolver) {
     iriResolver.loadEndpointsFromUrls(DATASETS);

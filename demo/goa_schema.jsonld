@@ -1,0 +1,874 @@
+{
+  "@context": {
+    "bio2rdf": "http://bio2rdf.org/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pav": "http://purl.org/pav/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "bio2rdf:go_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 21890
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 21890
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 21890
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 21890
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 21890
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 21890
+        }
+      }
+    },
+    {
+      "@id": "owl:Class",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 4
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 4
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 4
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 4
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 4
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 13
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 13
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 13
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 13
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 13
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 13
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 4
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 4
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 4
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 4
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 4
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:uniprot_vocabulary:Resource",
+      "bio2rdf:goa_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:goa_vocabulary:go-annotation": [
+        {
+          "@id": "bio2rdf:goa_vocabulary:GO-Annotation"
+        },
+        {
+          "@id": "bio2rdf:goa_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:goa_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:not-has-function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:not-in-process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:not-in-component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:goa_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 562642
+        },
+        "bio2rdf:goa_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 563838
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 300881
+        },
+        "bio2rdf:goa_vocabulary:go-annotation": {
+          "bio2rdf:goa_vocabulary:GO-Annotation": 2537057,
+          "bio2rdf:goa_vocabulary:Resource": 2537057
+        },
+        "bio2rdf:goa_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 1048367
+        },
+        "bio2rdf:goa_vocabulary:not-has-function": {
+          "bio2rdf:go_vocabulary:Resource": 3195
+        },
+        "bio2rdf:goa_vocabulary:not-in-process": {
+          "bio2rdf:go_vocabulary:Resource": 4000
+        },
+        "bio2rdf:goa_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 301177
+        },
+        "bio2rdf:goa_vocabulary:not-in-component": {
+          "bio2rdf:go_vocabulary:Resource": 2375
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 300881
+        }
+      }
+    },
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 26
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pubmed_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 105063
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 105063
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 105063
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 105063
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 105063
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 105063
+        }
+      }
+    },
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 13
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 26
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 39
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 52
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 52
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 13
+        },
+        "foaf:page": {
+          "Resource": 26
+        },
+        "dcterms:creator": {
+          "Resource": 13
+        },
+        "dcterms:publisher": {
+          "Resource": 26
+        },
+        "dcterms:license": {
+          "Resource": 26
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:taxonomy_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 101
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 101
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 101
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 101
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 101
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 101
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:eco_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 20
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 20
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:goa_vocabulary:GO-Annotation",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:goa_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:evidence": {
+        "@id": "bio2rdf:eco_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:go-annotation": [
+        {
+          "@id": "bio2rdf:goa_vocabulary:GO-Annotation"
+        },
+        {
+          "@id": "bio2rdf:goa_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:goa_vocabulary:go-category": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:goa_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:goa_vocabulary:go-term": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:not-has-function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:not-in-component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:not-in-process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:target": [
+        {
+          "@id": "bio2rdf:uniprot_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:goa_vocabulary:GO-Annotation"
+        },
+        {
+          "@id": "bio2rdf:intact_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:rnacentral_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:goa_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2842379
+        },
+        "bio2rdf:goa_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 769832
+        },
+        "bio2rdf:goa_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 564632
+        },
+        "bio2rdf:goa_vocabulary:evidence": {
+          "bio2rdf:eco_vocabulary:Resource": 2540757
+        },
+        "bio2rdf:goa_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 563569
+        },
+        "bio2rdf:goa_vocabulary:go-annotation": {
+          "bio2rdf:goa_vocabulary:GO-Annotation": 2540757,
+          "bio2rdf:goa_vocabulary:Resource": 2540757
+        },
+        "bio2rdf:goa_vocabulary:go-category": {
+          "owl:Class": 2540757,
+          "bio2rdf:goa_vocabulary:Resource": 2540757
+        },
+        "bio2rdf:goa_vocabulary:go-term": {
+          "bio2rdf:go_vocabulary:Resource": 2540757
+        },
+        "bio2rdf:goa_vocabulary:not-has-function": {
+          "bio2rdf:go_vocabulary:Resource": 3196
+        },
+        "bio2rdf:goa_vocabulary:not-in-component": {
+          "bio2rdf:go_vocabulary:Resource": 2375
+        },
+        "bio2rdf:goa_vocabulary:not-in-process": {
+          "bio2rdf:go_vocabulary:Resource": 4000
+        },
+        "bio2rdf:goa_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 1049858
+        },
+        "bio2rdf:goa_vocabulary:target": {
+          "bio2rdf:uniprot_vocabulary:Resource": 2537057,
+          "bio2rdf:goa_vocabulary:GO-Annotation": 2540757,
+          "bio2rdf:intact_vocabulary:Resource": 2406,
+          "bio2rdf:rnacentral_vocabulary:Resource": 1294
+        },
+        "bio2rdf:goa_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 301918
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 301377
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:goa_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:goa_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:evidence": {
+        "@id": "bio2rdf:eco_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:go-category": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:goa_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:goa_vocabulary:go-term": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:target": [
+        {
+          "@id": "bio2rdf:uniprot_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:goa_vocabulary:GO-Annotation"
+        },
+        {
+          "@id": "bio2rdf:intact_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:rnacentral_vocabulary:Resource"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2540778
+        },
+        "bio2rdf:goa_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 769832
+        },
+        "bio2rdf:goa_vocabulary:evidence": {
+          "bio2rdf:eco_vocabulary:Resource": 2540757
+        },
+        "bio2rdf:goa_vocabulary:go-category": {
+          "owl:Class": 2540757,
+          "bio2rdf:goa_vocabulary:Resource": 2540757
+        },
+        "bio2rdf:goa_vocabulary:go-term": {
+          "bio2rdf:go_vocabulary:Resource": 2540757
+        },
+        "bio2rdf:goa_vocabulary:target": {
+          "bio2rdf:uniprot_vocabulary:Resource": 2537057,
+          "bio2rdf:goa_vocabulary:GO-Annotation": 2540757,
+          "bio2rdf:intact_vocabulary:Resource": 2406,
+          "bio2rdf:rnacentral_vocabulary:Resource": 1294
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:intact_vocabulary:Resource",
+      "bio2rdf:goa_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:go-annotation": [
+        {
+          "@id": "bio2rdf:goa_vocabulary:GO-Annotation"
+        },
+        {
+          "@id": "bio2rdf:goa_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:goa_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:not-has-function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:goa_vocabulary:symbol": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:goa_vocabulary:synonym": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:goa_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 493
+        },
+        "bio2rdf:goa_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 678
+        },
+        "bio2rdf:goa_vocabulary:go-annotation": {
+          "bio2rdf:goa_vocabulary:GO-Annotation": 2406,
+          "bio2rdf:goa_vocabulary:Resource": 2406
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 496
+        },
+        "bio2rdf:goa_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 1065
+        },
+        "bio2rdf:goa_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 496
+        },
+        "bio2rdf:goa_vocabulary:not-has-function": {
+          "bio2rdf:go_vocabulary:Resource": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 496
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 496
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 496
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 496
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 496
+        },
+        "bio2rdf:goa_vocabulary:symbol": {
+          "Literal:xsd:string": 496
+        },
+        "bio2rdf:goa_vocabulary:synonym": {
+          "Literal:xsd:string": 1841
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 496
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:rnacentral_vocabulary:Resource",
+      "bio2rdf:goa_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:go-annotation": [
+        {
+          "@id": "bio2rdf:goa_vocabulary:GO-Annotation"
+        },
+        {
+          "@id": "bio2rdf:goa_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:goa_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:goa_vocabulary:symbol": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:goa_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 249
+        },
+        "bio2rdf:goa_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 301
+        },
+        "bio2rdf:goa_vocabulary:go-annotation": {
+          "bio2rdf:goa_vocabulary:GO-Annotation": 1294,
+          "bio2rdf:goa_vocabulary:Resource": 1294
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 245
+        },
+        "bio2rdf:goa_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 426
+        },
+        "bio2rdf:goa_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 245
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 245
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 245
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 245
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 245
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 245
+        },
+        "bio2rdf:goa_vocabulary:symbol": {
+          "Literal:xsd:string": 245
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T13:07:57.567453+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "goa",
+    "graph_uris": [
+      "http://bio2rdf.org/goa_resource:bio2rdf.dataset.goa.R3"
+    ],
+    "pattern_count": 161,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "bio2rdf:go_vocabulary:Resource": "go_vocabulary:Resource",
+    "void:inDataset": "inDataset",
+    "dcterms:Dataset": "Dataset",
+    "owl:Class": "Class",
+    "owl:ObjectProperty": "ObjectProperty",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "bio2rdf:uniprot_vocabulary:Resource": "uniprot_vocabulary:Resource",
+    "bio2rdf:goa_vocabulary:function": "goa_vocabulary:function",
+    "bio2rdf:goa_vocabulary:component": "goa_vocabulary:component",
+    "bio2rdf:goa_vocabulary:go-annotation": "goa_vocabulary:go-annotation",
+    "bio2rdf:goa_vocabulary:GO-Annotation": "goa_vocabulary:GO-Annotation",
+    "bio2rdf:goa_vocabulary:Resource": "goa_vocabulary:Resource",
+    "bio2rdf:goa_vocabulary:process": "goa_vocabulary:process",
+    "bio2rdf:goa_vocabulary:not-has-function": "goa_vocabulary:not-has-function",
+    "bio2rdf:goa_vocabulary:not-in-process": "goa_vocabulary:not-in-process",
+    "bio2rdf:goa_vocabulary:x-taxonomy": "goa_vocabulary:x-taxonomy",
+    "bio2rdf:taxonomy_vocabulary:Resource": "taxonomy_vocabulary:Resource",
+    "bio2rdf:goa_vocabulary:not-in-component": "goa_vocabulary:not-in-component",
+    "dcat:distribution": "distribution",
+    "dcat:Distribution": "Distribution",
+    "bio2rdf:pubmed_vocabulary:Resource": "pubmed_vocabulary:Resource",
+    "dcterms:source": "source",
+    "bio2rdf:eco_vocabulary:Resource": "eco_vocabulary:Resource",
+    "bio2rdf:goa_vocabulary:article": "goa_vocabulary:article",
+    "bio2rdf:goa_vocabulary:evidence": "goa_vocabulary:evidence",
+    "bio2rdf:goa_vocabulary:go-category": "goa_vocabulary:go-category",
+    "bio2rdf:goa_vocabulary:go-term": "goa_vocabulary:go-term",
+    "bio2rdf:goa_vocabulary:target": "goa_vocabulary:target",
+    "bio2rdf:intact_vocabulary:Resource": "intact_vocabulary:Resource",
+    "bio2rdf:rnacentral_vocabulary:Resource": "rnacentral_vocabulary:Resource",
+    "dcterms:title": "title",
+    "dcterms:identifier": "identifier",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "dcterms:created": "created",
+    "dcterms:format": "format",
+    "dcterms:rights": "rights",
+    "pav:retrievedOn": "retrievedOn",
+    "bio2rdf:goa_vocabulary:symbol": "goa_vocabulary:symbol",
+    "bio2rdf:goa_vocabulary:synonym": "goa_vocabulary:synonym",
+    "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": "bio2rdf_vocabulary:x-identifiers.org",
+    "foaf:page": "page",
+    "dcterms:creator": "creator",
+    "dcterms:publisher": "publisher",
+    "dcterms:license": "license"
+  }
+}

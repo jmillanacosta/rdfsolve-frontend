@@ -1,0 +1,4019 @@
+{
+  "@context": {
+    "bio2rdf": "http://bio2rdf.org/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "omim_vocab": "http://bio2rdf.org/omim_vocabulary:genotype/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "pav": "http://purl.org/pav/",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "bio2rdf:ensembl_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 29006
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 29006
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 29006
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 29006
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 29006
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 29006
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 45
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 45
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 45
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 45
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 45
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 45
+        }
+      }
+    },
+    {
+      "@id": "owl:Class",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 9
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 9
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 9
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 9
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 9
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 9
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 36
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 36
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 36
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 36
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 36
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 36
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 33416
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 33416
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 33415
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 33416
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 33416
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 33416
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 16080
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16080
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16080
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16080
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16080
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 16080
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:refseq_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 4971
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 4971
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 4971
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 4971
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 4971
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 4971
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:unigene_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 16495
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16495
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16495
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16495
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16495
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 16495
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:uniprot_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 14259
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 14259
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 14259
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 14259
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 14259
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 14259
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:gi_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 637314
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 637314
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 637314
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 637314
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 637314
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1469
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1469
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1469
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1469
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1469
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1469
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:flybase_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 3561
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3561
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3561
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3561
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3561
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 3561
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:mgi_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 13210
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 13210
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 13210
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 13210
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 13210
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 13210
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:omim_vocabulary:Resource",
+      "bio2rdf:omim_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:omim_vocabulary:x-ensembl": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:gene-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:refers-to": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene-phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Predominantly-phenotypes"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:mouse-gene-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-flybase": {
+        "@id": "bio2rdf:flybase_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-do": {
+        "@id": "bio2rdf:do_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:phenotype-map": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype-Map"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:variant": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Allelic-Variant"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:clinical-synopsis": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Clinical-Synopsis"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:mapping-method": {
+        "@id": "bio2rdf:omim_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-ncbigene": {
+        "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-uniprot": {
+        "@id": "bio2rdf:uniprot_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-mgi": {
+        "@id": "bio2rdf:mgi_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-icd10": {
+        "@id": "bio2rdf:icd10_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-hprd": {
+        "@id": "bio2rdf:hprd_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-refseq": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-ordr": {
+        "@id": "bio2rdf:ordr_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-orphanet": {
+        "@id": "bio2rdf:orphanet_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-snomed": {
+        "@id": "bio2rdf:snomedct_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-umls": {
+        "@id": "bio2rdf:umls_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-zfin": {
+        "@id": "bio2rdf:zfin_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-icd9": {
+        "@id": "bio2rdf:icd9_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-wormbase": {
+        "@id": "bio2rdf:wormbase_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:feature": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Characteristic"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:characteristic-of": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Entity"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:phenotypeMimNumber": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Predominantly-phenotypes"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:mimNumber": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene-phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Predominantly-phenotypes"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:x-omim": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene-phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Predominantly-phenotypes"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:x-dbsnp": {
+        "@id": "bio2rdf:dbsnp_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-hp": {
+        "@id": "bio2rdf:hp_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-eom": {
+        "@id": "bio2rdf:eom_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-img": {
+        "@id": "bio2rdf:img_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:alternative-title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:animal-model": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:biochemical-features": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:chromosome": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:clinical-features": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:clinical-management": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cloning": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cytogenetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cytolocation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:diagnosis": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:evolution": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-family": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-function": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-inheritance": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:gene-structure": {
+        "@type": "xsd:string"
+      },
+      "omim_vocab:phenotype-correlations": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:history": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:inheritance": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:mapping": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:molecular-genetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:nomenclature": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:other-features": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:pathogenesis": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:population-genetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:preferred-title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:text": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:heterogeneity": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-therapy": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:genotype": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:genetic-variability": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:phenotype": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:alternative-names": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:chromosomeLocationEnd": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:chromosomeLocationStart": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:chromosomeSort": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:chromosomeSymbol": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:computedCytoLocation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cytoLocation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:mutation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:phenotypeInheritance": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:phenotypicSeriesNumber": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:sequenceID": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:transcript": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:geneInheritance": {
+        "@type": "xsd:string"
+      },
+      "owl:sameAs": {
+        "@id": "rdfs:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:omim_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 175272
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 107767
+        },
+        "bio2rdf:omim_vocabulary:x-ensembl": {
+          "bio2rdf:ensembl_vocabulary:Resource": 29116
+        },
+        "bio2rdf:omim_vocabulary:gene-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 49786
+        },
+        "bio2rdf:omim_vocabulary:refers-to": {
+          "bio2rdf:omim_vocabulary:Resource": 139598,
+          "bio2rdf:omim_vocabulary:Gene": 107495,
+          "bio2rdf:omim_vocabulary:Gene-phenotype": 3003,
+          "bio2rdf:omim_vocabulary:Phenotype": 27994,
+          "bio2rdf:omim_vocabulary:Predominantly-phenotypes": 932
+        },
+        "bio2rdf:omim_vocabulary:mouse-gene-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 12621
+        },
+        "bio2rdf:omim_vocabulary:x-flybase": {
+          "bio2rdf:flybase_vocabulary:Resource": 3563
+        },
+        "bio2rdf:omim_vocabulary:x-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 672972
+        },
+        "bio2rdf:omim_vocabulary:x-do": {
+          "bio2rdf:do_vocabulary:Resource": 3385
+        },
+        "bio2rdf:omim_vocabulary:phenotype-map": {
+          "bio2rdf:omim_vocabulary:Resource": 5405,
+          "bio2rdf:omim_vocabulary:Phenotype-Map": 5405
+        },
+        "bio2rdf:omim_vocabulary:variant": {
+          "bio2rdf:omim_vocabulary:Resource": 24452,
+          "bio2rdf:omim_vocabulary:Allelic-Variant": 24452
+        },
+        "bio2rdf:omim_vocabulary:clinical-synopsis": {
+          "bio2rdf:omim_vocabulary:Resource": 6072,
+          "bio2rdf:omim_vocabulary:Clinical-Synopsis": 6072
+        },
+        "bio2rdf:omim_vocabulary:mapping-method": {
+          "bio2rdf:omim_vocabulary:Resource": 28913
+        },
+        "bio2rdf:omim_vocabulary:x-ncbigene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 16100
+        },
+        "bio2rdf:omim_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 16901
+        },
+        "bio2rdf:omim_vocabulary:x-uniprot": {
+          "bio2rdf:uniprot_vocabulary:Resource": 19357
+        },
+        "bio2rdf:omim_vocabulary:x-mgi": {
+          "bio2rdf:mgi_vocabulary:Resource": 13424
+        },
+        "bio2rdf:omim_vocabulary:x-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 15318
+        },
+        "bio2rdf:omim_vocabulary:x-icd10": {
+          "bio2rdf:icd10_vocabulary:Resource": 2467
+        },
+        "bio2rdf:omim_vocabulary:x-hprd": {
+          "bio2rdf:hprd_vocabulary:Resource": 12908
+        },
+        "bio2rdf:omim_vocabulary:x-refseq": {
+          "bio2rdf:refseq_vocabulary:Resource": 5403
+        },
+        "bio2rdf:omim_vocabulary:x-ordr": {
+          "bio2rdf:ordr_vocabulary:Resource": 2972
+        },
+        "bio2rdf:omim_vocabulary:x-orphanet": {
+          "bio2rdf:orphanet_vocabulary:Resource": 14108
+        },
+        "bio2rdf:omim_vocabulary:x-snomed": {
+          "bio2rdf:snomedct_vocabulary:Resource": 6563
+        },
+        "bio2rdf:omim_vocabulary:x-umls": {
+          "bio2rdf:umls_vocabulary:Resource": 64261
+        },
+        "bio2rdf:omim_vocabulary:x-zfin": {
+          "bio2rdf:zfin_vocabulary:Resource": 13179
+        },
+        "bio2rdf:omim_vocabulary:x-icd9": {
+          "bio2rdf:icd9_vocabulary:Resource": 1240
+        },
+        "bio2rdf:omim_vocabulary:x-wormbase": {
+          "bio2rdf:wormbase_vocabulary:Resource": 1661
+        },
+        "bio2rdf:omim_vocabulary:feature": {
+          "bio2rdf:omim_vocabulary:Resource": 102194,
+          "bio2rdf:omim_vocabulary:Characteristic": 102194
+        },
+        "bio2rdf:omim_vocabulary:characteristic-of": {
+          "bio2rdf:omim_vocabulary:Resource": 52741,
+          "bio2rdf:omim_vocabulary:Entity": 52741
+        },
+        "bio2rdf:omim_vocabulary:phenotypeMimNumber": {
+          "bio2rdf:omim_vocabulary:Resource": 5405,
+          "bio2rdf:omim_vocabulary:Phenotype": 5375,
+          "bio2rdf:omim_vocabulary:Predominantly-phenotypes": 30
+        },
+        "bio2rdf:omim_vocabulary:mimNumber": {
+          "bio2rdf:omim_vocabulary:Resource": 5405,
+          "bio2rdf:omim_vocabulary:Gene": 5180,
+          "bio2rdf:omim_vocabulary:Phenotype": 61,
+          "bio2rdf:omim_vocabulary:Gene-phenotype": 152,
+          "bio2rdf:omim_vocabulary:Predominantly-phenotypes": 12
+        },
+        "bio2rdf:omim_vocabulary:x-omim": {
+          "bio2rdf:omim_vocabulary:Resource": 4221,
+          "bio2rdf:omim_vocabulary:Gene": 3129,
+          "bio2rdf:omim_vocabulary:Phenotype": 955,
+          "bio2rdf:omim_vocabulary:Gene-phenotype": 98,
+          "bio2rdf:omim_vocabulary:Predominantly-phenotypes": 20
+        },
+        "bio2rdf:omim_vocabulary:x-dbsnp": {
+          "bio2rdf:dbsnp_vocabulary:Resource": 19177
+        },
+        "bio2rdf:omim_vocabulary:x-hp": {
+          "bio2rdf:hp_vocabulary:Resource": 11273
+        },
+        "bio2rdf:omim_vocabulary:x-eom": {
+          "bio2rdf:eom_vocabulary:Resource": 253
+        },
+        "bio2rdf:omim_vocabulary:x-img": {
+          "bio2rdf:img_vocabulary:Resource": 253
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 107575
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 35039
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 107767
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 107767
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 107767
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 107767
+        },
+        "bio2rdf:omim_vocabulary:alternative-title": {
+          "Literal:xsd:string": 30036
+        },
+        "bio2rdf:omim_vocabulary:animal-model": {
+          "Literal:xsd:string": 5063
+        },
+        "bio2rdf:omim_vocabulary:biochemical-features": {
+          "Literal:xsd:string": 1248
+        },
+        "bio2rdf:omim_vocabulary:chromosome": {
+          "Literal:xsd:integer": 20923
+        },
+        "bio2rdf:omim_vocabulary:clinical-features": {
+          "Literal:xsd:string": 5359
+        },
+        "bio2rdf:omim_vocabulary:clinical-management": {
+          "Literal:xsd:string": 437
+        },
+        "bio2rdf:omim_vocabulary:cloning": {
+          "Literal:xsd:string": 14184
+        },
+        "bio2rdf:omim_vocabulary:cytogenetics": {
+          "Literal:xsd:string": 807
+        },
+        "bio2rdf:omim_vocabulary:cytolocation": {
+          "Literal:xsd:string": 15555
+        },
+        "bio2rdf:omim_vocabulary:diagnosis": {
+          "Literal:xsd:string": 433
+        },
+        "bio2rdf:omim_vocabulary:evolution": {
+          "Literal:xsd:string": 426
+        },
+        "bio2rdf:omim_vocabulary:gene-family": {
+          "Literal:xsd:string": 184
+        },
+        "bio2rdf:omim_vocabulary:gene-function": {
+          "Literal:xsd:string": 10143
+        },
+        "bio2rdf:omim_vocabulary:gene-inheritance": {
+          "Literal:xsd:string": 573
+        },
+        "bio2rdf:omim_vocabulary:gene-name": {
+          "Literal:xsd:string": 24450,
+          "Literal:xsd:integer": 878
+        },
+        "bio2rdf:omim_vocabulary:gene-structure": {
+          "Literal:xsd:string": 6429
+        },
+        "omim_vocab:phenotype-correlations": {
+          "Literal:xsd:string": 556
+        },
+        "bio2rdf:omim_vocabulary:history": {
+          "Literal:xsd:string": 811
+        },
+        "bio2rdf:omim_vocabulary:inheritance": {
+          "Literal:xsd:string": 1997
+        },
+        "bio2rdf:omim_vocabulary:mapping": {
+          "Literal:xsd:string": 16958
+        },
+        "bio2rdf:omim_vocabulary:molecular-genetics": {
+          "Literal:xsd:string": 9097
+        },
+        "bio2rdf:omim_vocabulary:nomenclature": {
+          "Literal:xsd:string": 692
+        },
+        "bio2rdf:omim_vocabulary:other-features": {
+          "Literal:xsd:string": 208
+        },
+        "bio2rdf:omim_vocabulary:pathogenesis": {
+          "Literal:xsd:string": 602
+        },
+        "bio2rdf:omim_vocabulary:population-genetics": {
+          "Literal:xsd:string": 686
+        },
+        "bio2rdf:omim_vocabulary:preferred-title": {
+          "Literal:xsd:string": 23064
+        },
+        "bio2rdf:omim_vocabulary:text": {
+          "Literal:xsd:string": 7526
+        },
+        "bio2rdf:omim_vocabulary:heterogeneity": {
+          "Literal:xsd:string": 130
+        },
+        "bio2rdf:omim_vocabulary:gene-therapy": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:omim_vocabulary:genotype": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:omim_vocabulary:genetic-variability": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:omim_vocabulary:phenotype": {
+          "Literal:xsd:string": 5408
+        },
+        "bio2rdf:omim_vocabulary:alternative-names": {
+          "Literal:xsd:string": 1835
+        },
+        "bio2rdf:omim_vocabulary:chromosomeLocationEnd": {
+          "Literal:xsd:integer": 5368
+        },
+        "bio2rdf:omim_vocabulary:chromosomeLocationStart": {
+          "Literal:xsd:integer": 5368
+        },
+        "bio2rdf:omim_vocabulary:chromosomeSort": {
+          "Literal:xsd:integer": 5368
+        },
+        "bio2rdf:omim_vocabulary:chromosomeSymbol": {
+          "Literal:xsd:integer": 5051,
+          "Literal:xsd:string": 317
+        },
+        "bio2rdf:omim_vocabulary:computedCytoLocation": {
+          "Literal:xsd:string": 5327
+        },
+        "bio2rdf:omim_vocabulary:cytoLocation": {
+          "Literal:xsd:string": 5368
+        },
+        "bio2rdf:omim_vocabulary:mutation": {
+          "Literal:xsd:string": 24265
+        },
+        "bio2rdf:omim_vocabulary:phenotypeInheritance": {
+          "Literal:xsd:string": 4237
+        },
+        "bio2rdf:omim_vocabulary:phenotypicSeriesNumber": {
+          "Literal:xsd:string": 2336
+        },
+        "bio2rdf:omim_vocabulary:sequenceID": {
+          "Literal:xsd:integer": 5368
+        },
+        "bio2rdf:omim_vocabulary:transcript": {
+          "Literal:xsd:string": 5257
+        },
+        "bio2rdf:omim_vocabulary:geneInheritance": {
+          "Literal:xsd:string": 37
+        },
+        "owl:sameAs": {
+          "Resource": 23064
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 23253
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pubmed_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 124853
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 124853
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 124853
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 124853
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 124853
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 124853
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 124853
+        }
+      }
+    },
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 2
+        }
+      }
+    },
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 1
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 3
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 6
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:creator": {
+          "Resource": 1
+        },
+        "foaf:page": {
+          "Resource": 2
+        },
+        "dcterms:publisher": {
+          "Resource": 2
+        },
+        "dcterms:license": {
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:dbsnp_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 18495
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 18495
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 18495
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 18495
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 18495
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 18495
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:do_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1133
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1133
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1133
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1133
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1133
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1133
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:eom_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 48
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 48
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 48
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 48
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 48
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:hp_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5046
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5046
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5046
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5046
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5046
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:img_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 48
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 48
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 48
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 48
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 48
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ordr_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2947
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2947
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2947
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2947
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2947
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:orphanet_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 8118
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 8118
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 8118
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 8118
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 8118
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 8118
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:snomedct_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5024
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5024
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5024
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5024
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5024
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 5024
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:umls_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 55780
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 55780
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 55780
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 55780
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 55780
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:zfin_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 13179
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 13179
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 13179
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 13179
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 13179
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 13179
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:hprd_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 12908
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 12908
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 12908
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 12908
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 12908
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 12908
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:icd10_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1415
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1415
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1415
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1415
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1415
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:icd9_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 822
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 822
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 822
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 822
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 822
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:omim_vocabulary:Allelic-Variant",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:omim_vocabulary:x-dbsnp": {
+        "@id": "bio2rdf:dbsnp_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:alternative-names": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:mutation": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 24452
+        },
+        "bio2rdf:omim_vocabulary:x-dbsnp": {
+          "bio2rdf:dbsnp_vocabulary:Resource": 19177
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 24452
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 24272
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 24452
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 24452
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 24452
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 24452
+        },
+        "bio2rdf:omim_vocabulary:alternative-names": {
+          "Literal:xsd:string": 1835
+        },
+        "bio2rdf:omim_vocabulary:mutation": {
+          "Literal:xsd:string": 24265
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:omim_vocabulary:Characteristic",
+      "bio2rdf:omim_vocabulary:x-eom": {
+        "@id": "bio2rdf:eom_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-hp": {
+        "@id": "bio2rdf:hp_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:characteristic-of": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Entity"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:omim_vocabulary:x-omim": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene-phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Predominantly-phenotypes"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:x-icd10": {
+        "@id": "bio2rdf:icd10_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-icd9": {
+        "@id": "bio2rdf:icd9_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-img": {
+        "@id": "bio2rdf:img_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-snomed": {
+        "@id": "bio2rdf:snomedct_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-umls": {
+        "@id": "bio2rdf:umls_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:omim_vocabulary:x-eom": {
+          "bio2rdf:eom_vocabulary:Resource": 253
+        },
+        "bio2rdf:omim_vocabulary:x-hp": {
+          "bio2rdf:hp_vocabulary:Resource": 11273
+        },
+        "bio2rdf:omim_vocabulary:characteristic-of": {
+          "bio2rdf:omim_vocabulary:Resource": 52741,
+          "bio2rdf:omim_vocabulary:Entity": 52741
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 48318
+        },
+        "bio2rdf:omim_vocabulary:x-omim": {
+          "bio2rdf:omim_vocabulary:Resource": 4221,
+          "bio2rdf:omim_vocabulary:Gene": 3129,
+          "bio2rdf:omim_vocabulary:Phenotype": 955,
+          "bio2rdf:omim_vocabulary:Gene-phenotype": 98,
+          "bio2rdf:omim_vocabulary:Predominantly-phenotypes": 20
+        },
+        "bio2rdf:omim_vocabulary:x-icd10": {
+          "bio2rdf:icd10_vocabulary:Resource": 1747
+        },
+        "bio2rdf:omim_vocabulary:x-icd9": {
+          "bio2rdf:icd9_vocabulary:Resource": 945
+        },
+        "bio2rdf:omim_vocabulary:x-img": {
+          "bio2rdf:img_vocabulary:Resource": 253
+        },
+        "bio2rdf:omim_vocabulary:x-snomed": {
+          "bio2rdf:snomedct_vocabulary:Resource": 4172
+        },
+        "bio2rdf:omim_vocabulary:x-umls": {
+          "bio2rdf:umls_vocabulary:Resource": 39933
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 48318
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 48318
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 48318
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 48318
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 48318
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:omim_vocabulary:Clinical-Synopsis",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:omim_vocabulary:feature": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Characteristic"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6072
+        },
+        "bio2rdf:omim_vocabulary:feature": {
+          "bio2rdf:omim_vocabulary:Resource": 102194,
+          "bio2rdf:omim_vocabulary:Characteristic": 102194
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6072
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6072
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6072
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6072
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6072
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:omim_vocabulary:Gene",
+      "bio2rdf:omim_vocabulary:gene-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:mapping-method": {
+        "@id": "bio2rdf:omim_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:omim_vocabulary:x-flybase": {
+        "@id": "bio2rdf:flybase_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-ensembl": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:refers-to": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene-phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Predominantly-phenotypes"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:mouse-gene-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:variant": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Allelic-Variant"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:x-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-ncbigene": {
+        "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-uniprot": {
+        "@id": "bio2rdf:uniprot_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-mgi": {
+        "@id": "bio2rdf:mgi_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-hprd": {
+        "@id": "bio2rdf:hprd_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-refseq": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-umls": {
+        "@id": "bio2rdf:umls_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-zfin": {
+        "@id": "bio2rdf:zfin_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-ordr": {
+        "@id": "bio2rdf:ordr_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-wormbase": {
+        "@id": "bio2rdf:wormbase_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-snomed": {
+        "@id": "bio2rdf:snomedct_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-do": {
+        "@id": "bio2rdf:do_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-icd10": {
+        "@id": "bio2rdf:icd10_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-icd9": {
+        "@id": "bio2rdf:icd9_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:alternative-title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:animal-model": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:biochemical-features": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:chromosome": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:cloning": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cytogenetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cytolocation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:evolution": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-family": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-function": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:gene-structure": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:history": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:mapping": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:molecular-genetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:preferred-title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:text": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:nomenclature": {
+        "@type": "xsd:string"
+      },
+      "omim_vocab:phenotype-correlations": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:population-genetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:other-features": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:pathogenesis": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:inheritance": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:genotype": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-therapy": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:clinical-management": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:genetic-variability": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:heterogeneity": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:phenotype": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:diagnosis": {
+        "@type": "xsd:string"
+      },
+      "owl:sameAs": {
+        "@id": "rdfs:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:omim_vocabulary:gene-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 30012
+        },
+        "bio2rdf:omim_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 102878
+        },
+        "bio2rdf:omim_vocabulary:mapping-method": {
+          "bio2rdf:omim_vocabulary:Resource": 21981
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 14984
+        },
+        "bio2rdf:omim_vocabulary:x-flybase": {
+          "bio2rdf:flybase_vocabulary:Resource": 3554
+        },
+        "bio2rdf:omim_vocabulary:x-ensembl": {
+          "bio2rdf:ensembl_vocabulary:Resource": 28924
+        },
+        "bio2rdf:omim_vocabulary:refers-to": {
+          "bio2rdf:omim_vocabulary:Resource": 100386,
+          "bio2rdf:omim_vocabulary:Phenotype": 11844,
+          "bio2rdf:omim_vocabulary:Gene": 86036,
+          "bio2rdf:omim_vocabulary:Gene-phenotype": 2175,
+          "bio2rdf:omim_vocabulary:Predominantly-phenotypes": 221
+        },
+        "bio2rdf:omim_vocabulary:mouse-gene-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 12539
+        },
+        "bio2rdf:omim_vocabulary:x-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 661426
+        },
+        "bio2rdf:omim_vocabulary:variant": {
+          "bio2rdf:omim_vocabulary:Resource": 22877,
+          "bio2rdf:omim_vocabulary:Allelic-Variant": 22877
+        },
+        "bio2rdf:omim_vocabulary:x-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 14823
+        },
+        "bio2rdf:omim_vocabulary:x-ncbigene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 14871
+        },
+        "bio2rdf:omim_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 16774
+        },
+        "bio2rdf:omim_vocabulary:x-uniprot": {
+          "bio2rdf:uniprot_vocabulary:Resource": 14236
+        },
+        "bio2rdf:omim_vocabulary:x-mgi": {
+          "bio2rdf:mgi_vocabulary:Resource": 13326
+        },
+        "bio2rdf:omim_vocabulary:x-hprd": {
+          "bio2rdf:hprd_vocabulary:Resource": 12769
+        },
+        "bio2rdf:omim_vocabulary:x-refseq": {
+          "bio2rdf:refseq_vocabulary:Resource": 5317
+        },
+        "bio2rdf:omim_vocabulary:x-umls": {
+          "bio2rdf:umls_vocabulary:Resource": 15275
+        },
+        "bio2rdf:omim_vocabulary:x-zfin": {
+          "bio2rdf:zfin_vocabulary:Resource": 13082
+        },
+        "bio2rdf:omim_vocabulary:x-ordr": {
+          "bio2rdf:ordr_vocabulary:Resource": 69
+        },
+        "bio2rdf:omim_vocabulary:x-wormbase": {
+          "bio2rdf:wormbase_vocabulary:Resource": 1330
+        },
+        "bio2rdf:omim_vocabulary:x-snomed": {
+          "bio2rdf:snomedct_vocabulary:Resource": 34
+        },
+        "bio2rdf:omim_vocabulary:x-do": {
+          "bio2rdf:do_vocabulary:Resource": 18
+        },
+        "bio2rdf:omim_vocabulary:x-icd10": {
+          "bio2rdf:icd10_vocabulary:Resource": 3
+        },
+        "bio2rdf:omim_vocabulary:x-icd9": {
+          "bio2rdf:icd9_vocabulary:Resource": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 14984
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 7654
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 14984
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 14984
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 14984
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 14984
+        },
+        "bio2rdf:omim_vocabulary:alternative-title": {
+          "Literal:xsd:string": 21841
+        },
+        "bio2rdf:omim_vocabulary:animal-model": {
+          "Literal:xsd:string": 4099
+        },
+        "bio2rdf:omim_vocabulary:biochemical-features": {
+          "Literal:xsd:string": 959
+        },
+        "bio2rdf:omim_vocabulary:chromosome": {
+          "Literal:xsd:integer": 14181
+        },
+        "bio2rdf:omim_vocabulary:cloning": {
+          "Literal:xsd:string": 14093
+        },
+        "bio2rdf:omim_vocabulary:cytogenetics": {
+          "Literal:xsd:string": 367
+        },
+        "bio2rdf:omim_vocabulary:cytolocation": {
+          "Literal:xsd:string": 14181
+        },
+        "bio2rdf:omim_vocabulary:evolution": {
+          "Literal:xsd:string": 401
+        },
+        "bio2rdf:omim_vocabulary:gene-family": {
+          "Literal:xsd:string": 180
+        },
+        "bio2rdf:omim_vocabulary:gene-function": {
+          "Literal:xsd:string": 10071
+        },
+        "bio2rdf:omim_vocabulary:gene-name": {
+          "Literal:xsd:string": 22137,
+          "Literal:xsd:integer": 577
+        },
+        "bio2rdf:omim_vocabulary:gene-structure": {
+          "Literal:xsd:string": 6372
+        },
+        "bio2rdf:omim_vocabulary:history": {
+          "Literal:xsd:string": 256
+        },
+        "bio2rdf:omim_vocabulary:mapping": {
+          "Literal:xsd:string": 13928
+        },
+        "bio2rdf:omim_vocabulary:molecular-genetics": {
+          "Literal:xsd:string": 4432
+        },
+        "bio2rdf:omim_vocabulary:preferred-title": {
+          "Literal:xsd:string": 14984
+        },
+        "bio2rdf:omim_vocabulary:text": {
+          "Literal:xsd:string": 913
+        },
+        "bio2rdf:omim_vocabulary:nomenclature": {
+          "Literal:xsd:string": 294
+        },
+        "omim_vocab:phenotype-correlations": {
+          "Literal:xsd:string": 210
+        },
+        "bio2rdf:omim_vocabulary:population-genetics": {
+          "Literal:xsd:string": 59
+        },
+        "bio2rdf:omim_vocabulary:other-features": {
+          "Literal:xsd:string": 32
+        },
+        "bio2rdf:omim_vocabulary:pathogenesis": {
+          "Literal:xsd:string": 27
+        },
+        "bio2rdf:omim_vocabulary:inheritance": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:omim_vocabulary:genotype": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:omim_vocabulary:gene-therapy": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:omim_vocabulary:clinical-management": {
+          "Literal:xsd:string": 3
+        },
+        "bio2rdf:omim_vocabulary:genetic-variability": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:omim_vocabulary:heterogeneity": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:omim_vocabulary:phenotype": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:omim_vocabulary:diagnosis": {
+          "Literal:xsd:string": 1
+        },
+        "owl:sameAs": {
+          "Resource": 14984
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 14984
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:omim_vocabulary:Entity",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 145
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 145
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 145
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 145
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 145
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 145
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:omim_vocabulary:Gene-phenotype",
+      "bio2rdf:omim_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:omim_vocabulary:refers-to": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene-phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Predominantly-phenotypes"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:gene-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:mouse-gene-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:mapping-method": {
+        "@id": "bio2rdf:omim_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:clinical-synopsis": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Clinical-Synopsis"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:x-ensembl": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-ncbigene": {
+        "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-uniprot": {
+        "@id": "bio2rdf:uniprot_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-mgi": {
+        "@id": "bio2rdf:mgi_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-hprd": {
+        "@id": "bio2rdf:hprd_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-refseq": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:variant": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Allelic-Variant"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:x-ordr": {
+        "@id": "bio2rdf:ordr_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-snomed": {
+        "@id": "bio2rdf:snomedct_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-umls": {
+        "@id": "bio2rdf:umls_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-wormbase": {
+        "@id": "bio2rdf:wormbase_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-zfin": {
+        "@id": "bio2rdf:zfin_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-flybase": {
+        "@id": "bio2rdf:flybase_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-do": {
+        "@id": "bio2rdf:do_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-icd10": {
+        "@id": "bio2rdf:icd10_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-icd9": {
+        "@id": "bio2rdf:icd9_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:alternative-title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:animal-model": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:biochemical-features": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:chromosome": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:clinical-features": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cloning": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cytolocation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-function": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-inheritance": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-structure": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:history": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:inheritance": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:mapping": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:molecular-genetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:population-genetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:preferred-title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cytogenetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:nomenclature": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:text": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:evolution": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-family": {
+        "@type": "xsd:string"
+      },
+      "omim_vocab:phenotype-correlations": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:pathogenesis": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:phenotype": {
+        "@type": "xsd:string"
+      },
+      "owl:sameAs": {
+        "@id": "rdfs:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:omim_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 5250
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 86
+        },
+        "bio2rdf:omim_vocabulary:refers-to": {
+          "bio2rdf:omim_vocabulary:Resource": 1663,
+          "bio2rdf:omim_vocabulary:Phenotype": 325,
+          "bio2rdf:omim_vocabulary:Gene": 1252,
+          "bio2rdf:omim_vocabulary:Gene-phenotype": 73,
+          "bio2rdf:omim_vocabulary:Predominantly-phenotypes": 7
+        },
+        "bio2rdf:omim_vocabulary:gene-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 201
+        },
+        "bio2rdf:omim_vocabulary:mouse-gene-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 82
+        },
+        "bio2rdf:omim_vocabulary:mapping-method": {
+          "bio2rdf:omim_vocabulary:Resource": 230
+        },
+        "bio2rdf:omim_vocabulary:clinical-synopsis": {
+          "bio2rdf:omim_vocabulary:Resource": 22,
+          "bio2rdf:omim_vocabulary:Clinical-Synopsis": 22
+        },
+        "bio2rdf:omim_vocabulary:x-ensembl": {
+          "bio2rdf:ensembl_vocabulary:Resource": 172
+        },
+        "bio2rdf:omim_vocabulary:x-ncbigene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 86
+        },
+        "bio2rdf:omim_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 104
+        },
+        "bio2rdf:omim_vocabulary:x-uniprot": {
+          "bio2rdf:uniprot_vocabulary:Resource": 121
+        },
+        "bio2rdf:omim_vocabulary:x-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 86
+        },
+        "bio2rdf:omim_vocabulary:x-mgi": {
+          "bio2rdf:mgi_vocabulary:Resource": 88
+        },
+        "bio2rdf:omim_vocabulary:x-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 11000
+        },
+        "bio2rdf:omim_vocabulary:x-hprd": {
+          "bio2rdf:hprd_vocabulary:Resource": 84
+        },
+        "bio2rdf:omim_vocabulary:x-refseq": {
+          "bio2rdf:refseq_vocabulary:Resource": 84
+        },
+        "bio2rdf:omim_vocabulary:variant": {
+          "bio2rdf:omim_vocabulary:Resource": 1574,
+          "bio2rdf:omim_vocabulary:Allelic-Variant": 1574
+        },
+        "bio2rdf:omim_vocabulary:x-ordr": {
+          "bio2rdf:ordr_vocabulary:Resource": 5
+        },
+        "bio2rdf:omim_vocabulary:x-snomed": {
+          "bio2rdf:snomedct_vocabulary:Resource": 17
+        },
+        "bio2rdf:omim_vocabulary:x-umls": {
+          "bio2rdf:umls_vocabulary:Resource": 241
+        },
+        "bio2rdf:omim_vocabulary:x-wormbase": {
+          "bio2rdf:wormbase_vocabulary:Resource": 210
+        },
+        "bio2rdf:omim_vocabulary:x-zfin": {
+          "bio2rdf:zfin_vocabulary:Resource": 93
+        },
+        "bio2rdf:omim_vocabulary:x-flybase": {
+          "bio2rdf:flybase_vocabulary:Resource": 9
+        },
+        "bio2rdf:omim_vocabulary:x-do": {
+          "bio2rdf:do_vocabulary:Resource": 1
+        },
+        "bio2rdf:omim_vocabulary:x-icd10": {
+          "bio2rdf:icd10_vocabulary:Resource": 3
+        },
+        "bio2rdf:omim_vocabulary:x-icd9": {
+          "bio2rdf:icd9_vocabulary:Resource": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 86
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 54
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 86
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 86
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 86
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 86
+        },
+        "bio2rdf:omim_vocabulary:alternative-title": {
+          "Literal:xsd:string": 130
+        },
+        "bio2rdf:omim_vocabulary:animal-model": {
+          "Literal:xsd:string": 64
+        },
+        "bio2rdf:omim_vocabulary:biochemical-features": {
+          "Literal:xsd:string": 23
+        },
+        "bio2rdf:omim_vocabulary:chromosome": {
+          "Literal:xsd:integer": 84
+        },
+        "bio2rdf:omim_vocabulary:clinical-features": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:omim_vocabulary:cloning": {
+          "Literal:xsd:string": 68
+        },
+        "bio2rdf:omim_vocabulary:cytolocation": {
+          "Literal:xsd:string": 84
+        },
+        "bio2rdf:omim_vocabulary:gene-function": {
+          "Literal:xsd:string": 63
+        },
+        "bio2rdf:omim_vocabulary:gene-inheritance": {
+          "Literal:xsd:string": 21
+        },
+        "bio2rdf:omim_vocabulary:gene-name": {
+          "Literal:xsd:string": 138
+        },
+        "bio2rdf:omim_vocabulary:gene-structure": {
+          "Literal:xsd:string": 46
+        },
+        "bio2rdf:omim_vocabulary:history": {
+          "Literal:xsd:string": 9
+        },
+        "bio2rdf:omim_vocabulary:inheritance": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:omim_vocabulary:mapping": {
+          "Literal:xsd:string": 74
+        },
+        "bio2rdf:omim_vocabulary:molecular-genetics": {
+          "Literal:xsd:string": 76
+        },
+        "bio2rdf:omim_vocabulary:population-genetics": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:omim_vocabulary:preferred-title": {
+          "Literal:xsd:string": 86
+        },
+        "bio2rdf:omim_vocabulary:cytogenetics": {
+          "Literal:xsd:string": 8
+        },
+        "bio2rdf:omim_vocabulary:nomenclature": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:omim_vocabulary:text": {
+          "Literal:xsd:string": 11
+        },
+        "bio2rdf:omim_vocabulary:evolution": {
+          "Literal:xsd:string": 8
+        },
+        "bio2rdf:omim_vocabulary:gene-family": {
+          "Literal:xsd:string": 3
+        },
+        "omim_vocab:phenotype-correlations": {
+          "Literal:xsd:string": 6
+        },
+        "bio2rdf:omim_vocabulary:pathogenesis": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:omim_vocabulary:phenotype": {
+          "Literal:xsd:string": 2
+        },
+        "owl:sameAs": {
+          "Resource": 86
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 86
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:omim_vocabulary:Phenotype",
+      "bio2rdf:omim_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:omim_vocabulary:refers-to": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene-phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Predominantly-phenotypes"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:clinical-synopsis": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Clinical-Synopsis"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:phenotype-map": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype-Map"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:mapping-method": {
+        "@id": "bio2rdf:omim_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:gene-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-uniprot": {
+        "@id": "bio2rdf:uniprot_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-icd10": {
+        "@id": "bio2rdf:icd10_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-hprd": {
+        "@id": "bio2rdf:hprd_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-ordr": {
+        "@id": "bio2rdf:ordr_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-orphanet": {
+        "@id": "bio2rdf:orphanet_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-umls": {
+        "@id": "bio2rdf:umls_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-do": {
+        "@id": "bio2rdf:do_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-snomed": {
+        "@id": "bio2rdf:snomedct_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-icd9": {
+        "@id": "bio2rdf:icd9_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-ncbigene": {
+        "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-wormbase": {
+        "@id": "bio2rdf:wormbase_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-mgi": {
+        "@id": "bio2rdf:mgi_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-ensembl": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-refseq": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:variant": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Allelic-Variant"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:alternative-title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:animal-model": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:biochemical-features": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:chromosome": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:clinical-features": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:clinical-management": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cytogenetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cytolocation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:diagnosis": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:evolution": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-inheritance": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "omim_vocab:phenotype-correlations": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:heterogeneity": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:history": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:inheritance": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:mapping": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:molecular-genetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:nomenclature": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:other-features": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:pathogenesis": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:population-genetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:preferred-title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:text": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-therapy": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cloning": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-family": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-function": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-structure": {
+        "@type": "xsd:string"
+      },
+      "owl:sameAs": {
+        "@id": "rdfs:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:omim_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 63201
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 6173
+        },
+        "bio2rdf:omim_vocabulary:refers-to": {
+          "bio2rdf:omim_vocabulary:Resource": 35578,
+          "bio2rdf:omim_vocabulary:Gene": 19665,
+          "bio2rdf:omim_vocabulary:Phenotype": 14653,
+          "bio2rdf:omim_vocabulary:Gene-phenotype": 723,
+          "bio2rdf:omim_vocabulary:Predominantly-phenotypes": 482
+        },
+        "bio2rdf:omim_vocabulary:clinical-synopsis": {
+          "bio2rdf:omim_vocabulary:Resource": 4583,
+          "bio2rdf:omim_vocabulary:Clinical-Synopsis": 4583
+        },
+        "bio2rdf:omim_vocabulary:phenotype-map": {
+          "bio2rdf:omim_vocabulary:Resource": 5375,
+          "bio2rdf:omim_vocabulary:Phenotype-Map": 5375
+        },
+        "bio2rdf:omim_vocabulary:mapping-method": {
+          "bio2rdf:omim_vocabulary:Resource": 1243
+        },
+        "bio2rdf:omim_vocabulary:gene-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 1607
+        },
+        "bio2rdf:omim_vocabulary:x-uniprot": {
+          "bio2rdf:uniprot_vocabulary:Resource": 4969
+        },
+        "bio2rdf:omim_vocabulary:x-icd10": {
+          "bio2rdf:icd10_vocabulary:Resource": 574
+        },
+        "bio2rdf:omim_vocabulary:x-hprd": {
+          "bio2rdf:hprd_vocabulary:Resource": 47
+        },
+        "bio2rdf:omim_vocabulary:x-ordr": {
+          "bio2rdf:ordr_vocabulary:Resource": 2187
+        },
+        "bio2rdf:omim_vocabulary:x-orphanet": {
+          "bio2rdf:orphanet_vocabulary:Resource": 12453
+        },
+        "bio2rdf:omim_vocabulary:x-umls": {
+          "bio2rdf:umls_vocabulary:Resource": 6954
+        },
+        "bio2rdf:omim_vocabulary:x-do": {
+          "bio2rdf:do_vocabulary:Resource": 3209
+        },
+        "bio2rdf:omim_vocabulary:x-snomed": {
+          "bio2rdf:snomedct_vocabulary:Resource": 1942
+        },
+        "bio2rdf:omim_vocabulary:x-icd9": {
+          "bio2rdf:icd9_vocabulary:Resource": 215
+        },
+        "bio2rdf:omim_vocabulary:x-ncbigene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1058
+        },
+        "bio2rdf:omim_vocabulary:x-wormbase": {
+          "bio2rdf:wormbase_vocabulary:Resource": 107
+        },
+        "bio2rdf:omim_vocabulary:x-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 364
+        },
+        "bio2rdf:omim_vocabulary:x-mgi": {
+          "bio2rdf:mgi_vocabulary:Resource": 7
+        },
+        "bio2rdf:omim_vocabulary:x-ensembl": {
+          "bio2rdf:ensembl_vocabulary:Resource": 2
+        },
+        "bio2rdf:omim_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 2
+        },
+        "bio2rdf:omim_vocabulary:x-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 225
+        },
+        "bio2rdf:omim_vocabulary:x-refseq": {
+          "bio2rdf:refseq_vocabulary:Resource": 1
+        },
+        "bio2rdf:omim_vocabulary:variant": {
+          "bio2rdf:omim_vocabulary:Resource": 1,
+          "bio2rdf:omim_vocabulary:Allelic-Variant": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6173
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 2951
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6173
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6173
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6173
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6173
+        },
+        "bio2rdf:omim_vocabulary:alternative-title": {
+          "Literal:xsd:string": 7333
+        },
+        "bio2rdf:omim_vocabulary:animal-model": {
+          "Literal:xsd:string": 875
+        },
+        "bio2rdf:omim_vocabulary:biochemical-features": {
+          "Literal:xsd:string": 262
+        },
+        "bio2rdf:omim_vocabulary:chromosome": {
+          "Literal:xsd:integer": 1221
+        },
+        "bio2rdf:omim_vocabulary:clinical-features": {
+          "Literal:xsd:string": 4920
+        },
+        "bio2rdf:omim_vocabulary:clinical-management": {
+          "Literal:xsd:string": 425
+        },
+        "bio2rdf:omim_vocabulary:cytogenetics": {
+          "Literal:xsd:string": 415
+        },
+        "bio2rdf:omim_vocabulary:cytolocation": {
+          "Literal:xsd:string": 1221
+        },
+        "bio2rdf:omim_vocabulary:diagnosis": {
+          "Literal:xsd:string": 424
+        },
+        "bio2rdf:omim_vocabulary:evolution": {
+          "Literal:xsd:string": 14
+        },
+        "bio2rdf:omim_vocabulary:gene-inheritance": {
+          "Literal:xsd:string": 534
+        },
+        "bio2rdf:omim_vocabulary:gene-name": {
+          "Literal:xsd:string": 2074,
+          "Literal:xsd:integer": 301
+        },
+        "omim_vocab:phenotype-correlations": {
+          "Literal:xsd:string": 340
+        },
+        "bio2rdf:omim_vocabulary:heterogeneity": {
+          "Literal:xsd:string": 129
+        },
+        "bio2rdf:omim_vocabulary:history": {
+          "Literal:xsd:string": 533
+        },
+        "bio2rdf:omim_vocabulary:inheritance": {
+          "Literal:xsd:string": 1826
+        },
+        "bio2rdf:omim_vocabulary:mapping": {
+          "Literal:xsd:string": 2917
+        },
+        "bio2rdf:omim_vocabulary:molecular-genetics": {
+          "Literal:xsd:string": 4540
+        },
+        "bio2rdf:omim_vocabulary:nomenclature": {
+          "Literal:xsd:string": 378
+        },
+        "bio2rdf:omim_vocabulary:other-features": {
+          "Literal:xsd:string": 174
+        },
+        "bio2rdf:omim_vocabulary:pathogenesis": {
+          "Literal:xsd:string": 553
+        },
+        "bio2rdf:omim_vocabulary:population-genetics": {
+          "Literal:xsd:string": 607
+        },
+        "bio2rdf:omim_vocabulary:preferred-title": {
+          "Literal:xsd:string": 6173
+        },
+        "bio2rdf:omim_vocabulary:text": {
+          "Literal:xsd:string": 5259
+        },
+        "bio2rdf:omim_vocabulary:gene-therapy": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:omim_vocabulary:cloning": {
+          "Literal:xsd:string": 3
+        },
+        "bio2rdf:omim_vocabulary:gene-family": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:omim_vocabulary:gene-function": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:omim_vocabulary:gene-structure": {
+          "Literal:xsd:string": 3
+        },
+        "owl:sameAs": {
+          "Resource": 6173
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 6173
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:omim_vocabulary:Phenotype-Map",
+      "bio2rdf:omim_vocabulary:mimNumber": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene-phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Predominantly-phenotypes"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:gene-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:mapping-method": {
+        "@id": "bio2rdf:omim_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:omim_vocabulary:phenotypeMimNumber": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Predominantly-phenotypes"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:chromosome": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:chromosomeLocationEnd": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:chromosomeLocationStart": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:chromosomeSort": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:chromosomeSymbol": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:computedCytoLocation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cytoLocation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:phenotype": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:phenotypeInheritance": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:phenotypicSeriesNumber": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:sequenceID": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:transcript": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:geneInheritance": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:omim_vocabulary:mimNumber": {
+          "bio2rdf:omim_vocabulary:Resource": 5405,
+          "bio2rdf:omim_vocabulary:Gene": 5180,
+          "bio2rdf:omim_vocabulary:Gene-phenotype": 152,
+          "bio2rdf:omim_vocabulary:Phenotype": 61,
+          "bio2rdf:omim_vocabulary:Predominantly-phenotypes": 12
+        },
+        "bio2rdf:omim_vocabulary:gene-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 17885
+        },
+        "bio2rdf:omim_vocabulary:mapping-method": {
+          "bio2rdf:omim_vocabulary:Resource": 5368
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 5405
+        },
+        "bio2rdf:omim_vocabulary:phenotypeMimNumber": {
+          "bio2rdf:omim_vocabulary:Resource": 5405,
+          "bio2rdf:omim_vocabulary:Phenotype": 5375,
+          "bio2rdf:omim_vocabulary:Predominantly-phenotypes": 30
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 5405
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5405
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5405
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5405
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5405
+        },
+        "bio2rdf:omim_vocabulary:chromosome": {
+          "Literal:xsd:integer": 5368
+        },
+        "bio2rdf:omim_vocabulary:chromosomeLocationEnd": {
+          "Literal:xsd:integer": 5368
+        },
+        "bio2rdf:omim_vocabulary:chromosomeLocationStart": {
+          "Literal:xsd:integer": 5368
+        },
+        "bio2rdf:omim_vocabulary:chromosomeSort": {
+          "Literal:xsd:integer": 5368
+        },
+        "bio2rdf:omim_vocabulary:chromosomeSymbol": {
+          "Literal:xsd:integer": 5051,
+          "Literal:xsd:string": 317
+        },
+        "bio2rdf:omim_vocabulary:computedCytoLocation": {
+          "Literal:xsd:string": 5327
+        },
+        "bio2rdf:omim_vocabulary:cytoLocation": {
+          "Literal:xsd:string": 5368
+        },
+        "bio2rdf:omim_vocabulary:phenotype": {
+          "Literal:xsd:string": 5405
+        },
+        "bio2rdf:omim_vocabulary:phenotypeInheritance": {
+          "Literal:xsd:string": 4237
+        },
+        "bio2rdf:omim_vocabulary:phenotypicSeriesNumber": {
+          "Literal:xsd:string": 2336
+        },
+        "bio2rdf:omim_vocabulary:sequenceID": {
+          "Literal:xsd:integer": 5368
+        },
+        "bio2rdf:omim_vocabulary:transcript": {
+          "Literal:xsd:string": 5257
+        },
+        "bio2rdf:omim_vocabulary:geneInheritance": {
+          "Literal:xsd:string": 37
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:omim_vocabulary:Predominantly-phenotypes",
+      "bio2rdf:omim_vocabulary:gene-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:refers-to": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Gene-phenotype"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Predominantly-phenotypes"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:clinical-synopsis": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Clinical-Synopsis"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:phenotype-map": [
+        {
+          "@id": "bio2rdf:omim_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:omim_vocabulary:Phenotype-Map"
+        }
+      ],
+      "bio2rdf:omim_vocabulary:mapping-method": {
+        "@id": "bio2rdf:omim_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:omim_vocabulary:x-symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-ncbigene": {
+        "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-unigene": {
+        "@id": "bio2rdf:unigene_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-uniprot": {
+        "@id": "bio2rdf:uniprot_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-ensembl": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-mgi": {
+        "@id": "bio2rdf:mgi_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-icd10": {
+        "@id": "bio2rdf:icd10_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-hprd": {
+        "@id": "bio2rdf:hprd_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-orphanet": {
+        "@id": "bio2rdf:orphanet_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-refseq": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-do": {
+        "@id": "bio2rdf:do_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-ordr": {
+        "@id": "bio2rdf:ordr_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-snomed": {
+        "@id": "bio2rdf:snomedct_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-umls": {
+        "@id": "bio2rdf:umls_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-zfin": {
+        "@id": "bio2rdf:zfin_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-wormbase": {
+        "@id": "bio2rdf:wormbase_vocabulary:Resource"
+      },
+      "bio2rdf:omim_vocabulary:x-icd9": {
+        "@id": "bio2rdf:icd9_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:alternative-title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:animal-model": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:biochemical-features": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:chromosome": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:omim_vocabulary:clinical-features": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:clinical-management": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cloning": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cytogenetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:cytolocation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:evolution": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-function": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-inheritance": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:gene-structure": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:inheritance": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:mapping": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:molecular-genetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:pathogenesis": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:preferred-title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:text": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:nomenclature": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:population-genetics": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:diagnosis": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:history": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:omim_vocabulary:other-features": {
+        "@type": "xsd:string"
+      },
+      "owl:sameAs": {
+        "@id": "rdfs:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:omim_vocabulary:gene-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 81
+        },
+        "bio2rdf:omim_vocabulary:refers-to": {
+          "bio2rdf:omim_vocabulary:Resource": 1971,
+          "bio2rdf:omim_vocabulary:Gene": 542,
+          "bio2rdf:omim_vocabulary:Phenotype": 1172,
+          "bio2rdf:omim_vocabulary:Gene-phenotype": 32,
+          "bio2rdf:omim_vocabulary:Predominantly-phenotypes": 222
+        },
+        "bio2rdf:omim_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 3943
+        },
+        "bio2rdf:omim_vocabulary:clinical-synopsis": {
+          "bio2rdf:omim_vocabulary:Resource": 1467,
+          "bio2rdf:omim_vocabulary:Clinical-Synopsis": 1467
+        },
+        "bio2rdf:omim_vocabulary:phenotype-map": {
+          "bio2rdf:omim_vocabulary:Resource": 30,
+          "bio2rdf:omim_vocabulary:Phenotype-Map": 30
+        },
+        "bio2rdf:omim_vocabulary:mapping-method": {
+          "bio2rdf:omim_vocabulary:Resource": 91
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 1821
+        },
+        "bio2rdf:omim_vocabulary:x-symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 45
+        },
+        "bio2rdf:omim_vocabulary:x-ncbigene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 85
+        },
+        "bio2rdf:omim_vocabulary:x-unigene": {
+          "bio2rdf:unigene_vocabulary:Resource": 21
+        },
+        "bio2rdf:omim_vocabulary:x-uniprot": {
+          "bio2rdf:uniprot_vocabulary:Resource": 31
+        },
+        "bio2rdf:omim_vocabulary:x-ensembl": {
+          "bio2rdf:ensembl_vocabulary:Resource": 18
+        },
+        "bio2rdf:omim_vocabulary:x-mgi": {
+          "bio2rdf:mgi_vocabulary:Resource": 3
+        },
+        "bio2rdf:omim_vocabulary:x-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 321
+        },
+        "bio2rdf:omim_vocabulary:x-icd10": {
+          "bio2rdf:icd10_vocabulary:Resource": 140
+        },
+        "bio2rdf:omim_vocabulary:x-hprd": {
+          "bio2rdf:hprd_vocabulary:Resource": 8
+        },
+        "bio2rdf:omim_vocabulary:x-orphanet": {
+          "bio2rdf:orphanet_vocabulary:Resource": 1655
+        },
+        "bio2rdf:omim_vocabulary:x-refseq": {
+          "bio2rdf:refseq_vocabulary:Resource": 1
+        },
+        "bio2rdf:omim_vocabulary:x-do": {
+          "bio2rdf:do_vocabulary:Resource": 157
+        },
+        "bio2rdf:omim_vocabulary:x-ordr": {
+          "bio2rdf:ordr_vocabulary:Resource": 711
+        },
+        "bio2rdf:omim_vocabulary:x-snomed": {
+          "bio2rdf:snomedct_vocabulary:Resource": 398
+        },
+        "bio2rdf:omim_vocabulary:x-umls": {
+          "bio2rdf:umls_vocabulary:Resource": 1858
+        },
+        "bio2rdf:omim_vocabulary:x-zfin": {
+          "bio2rdf:zfin_vocabulary:Resource": 4
+        },
+        "bio2rdf:omim_vocabulary:x-wormbase": {
+          "bio2rdf:wormbase_vocabulary:Resource": 14
+        },
+        "bio2rdf:omim_vocabulary:x-icd9": {
+          "bio2rdf:icd9_vocabulary:Resource": 78
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1821
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 108
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1821
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1821
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1821
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1821
+        },
+        "bio2rdf:omim_vocabulary:alternative-title": {
+          "Literal:xsd:string": 732
+        },
+        "bio2rdf:omim_vocabulary:animal-model": {
+          "Literal:xsd:string": 25
+        },
+        "bio2rdf:omim_vocabulary:biochemical-features": {
+          "Literal:xsd:string": 4
+        },
+        "bio2rdf:omim_vocabulary:chromosome": {
+          "Literal:xsd:integer": 69
+        },
+        "bio2rdf:omim_vocabulary:clinical-features": {
+          "Literal:xsd:string": 437
+        },
+        "bio2rdf:omim_vocabulary:clinical-management": {
+          "Literal:xsd:string": 9
+        },
+        "bio2rdf:omim_vocabulary:cloning": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:omim_vocabulary:cytogenetics": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:omim_vocabulary:cytolocation": {
+          "Literal:xsd:string": 69
+        },
+        "bio2rdf:omim_vocabulary:evolution": {
+          "Literal:xsd:string": 3
+        },
+        "bio2rdf:omim_vocabulary:gene-function": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:omim_vocabulary:gene-inheritance": {
+          "Literal:xsd:string": 18
+        },
+        "bio2rdf:omim_vocabulary:gene-name": {
+          "Literal:xsd:string": 101
+        },
+        "bio2rdf:omim_vocabulary:gene-structure": {
+          "Literal:xsd:string": 8
+        },
+        "bio2rdf:omim_vocabulary:inheritance": {
+          "Literal:xsd:string": 167
+        },
+        "bio2rdf:omim_vocabulary:mapping": {
+          "Literal:xsd:string": 39
+        },
+        "bio2rdf:omim_vocabulary:molecular-genetics": {
+          "Literal:xsd:string": 49
+        },
+        "bio2rdf:omim_vocabulary:pathogenesis": {
+          "Literal:xsd:string": 21
+        },
+        "bio2rdf:omim_vocabulary:preferred-title": {
+          "Literal:xsd:string": 1821
+        },
+        "bio2rdf:omim_vocabulary:text": {
+          "Literal:xsd:string": 1343
+        },
+        "bio2rdf:omim_vocabulary:nomenclature": {
+          "Literal:xsd:string": 15
+        },
+        "bio2rdf:omim_vocabulary:population-genetics": {
+          "Literal:xsd:string": 13
+        },
+        "bio2rdf:omim_vocabulary:diagnosis": {
+          "Literal:xsd:string": 8
+        },
+        "bio2rdf:omim_vocabulary:history": {
+          "Literal:xsd:string": 13
+        },
+        "bio2rdf:omim_vocabulary:other-features": {
+          "Literal:xsd:string": 2
+        },
+        "owl:sameAs": {
+          "Resource": 1821
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1821
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T13:02:09.307521+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "omim",
+    "graph_uris": [
+      "http://bio2rdf.org/omim_resource:bio2rdf.dataset.omim.R3"
+    ],
+    "pattern_count": 707,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "bio2rdf:ensembl_vocabulary:Resource": "ensembl_vocabulary:Resource",
+    "void:inDataset": "inDataset",
+    "dcterms:Dataset": "Dataset",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "owl:Class": "Class",
+    "owl:ObjectProperty": "ObjectProperty",
+    "bio2rdf:hgnc.symbol_vocabulary:Resource": "hgnc.symbol_vocabulary:Resource",
+    "bio2rdf:ncbigene_vocabulary:Resource": "ncbigene_vocabulary:Resource",
+    "bio2rdf:refseq_vocabulary:Resource": "refseq_vocabulary:Resource",
+    "bio2rdf:unigene_vocabulary:Resource": "unigene_vocabulary:Resource",
+    "bio2rdf:uniprot_vocabulary:Resource": "uniprot_vocabulary:Resource",
+    "bio2rdf:gi_vocabulary:Resource": "gi_vocabulary:Resource",
+    "bio2rdf:wormbase_vocabulary:Resource": "wormbase_vocabulary:Resource",
+    "bio2rdf:flybase_vocabulary:Resource": "flybase_vocabulary:Resource",
+    "bio2rdf:mgi_vocabulary:Resource": "mgi_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:Resource": "omim_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:article": "omim_vocabulary:article",
+    "bio2rdf:pubmed_vocabulary:Resource": "pubmed_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:x-ensembl": "omim_vocabulary:x-ensembl",
+    "bio2rdf:omim_vocabulary:gene-symbol": "omim_vocabulary:gene-symbol",
+    "bio2rdf:omim_vocabulary:refers-to": "omim_vocabulary:refers-to",
+    "bio2rdf:omim_vocabulary:Gene": "omim_vocabulary:Gene",
+    "bio2rdf:omim_vocabulary:Gene-phenotype": "omim_vocabulary:Gene-phenotype",
+    "bio2rdf:omim_vocabulary:Phenotype": "omim_vocabulary:Phenotype",
+    "bio2rdf:omim_vocabulary:mouse-gene-symbol": "omim_vocabulary:mouse-gene-symbol",
+    "bio2rdf:omim_vocabulary:x-flybase": "omim_vocabulary:x-flybase",
+    "bio2rdf:omim_vocabulary:x-gi": "omim_vocabulary:x-gi",
+    "bio2rdf:omim_vocabulary:x-do": "omim_vocabulary:x-do",
+    "bio2rdf:do_vocabulary:Resource": "do_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:Predominantly-phenotypes": "omim_vocabulary:Predominantly-phenotypes",
+    "bio2rdf:omim_vocabulary:phenotype-map": "omim_vocabulary:phenotype-map",
+    "bio2rdf:omim_vocabulary:Phenotype-Map": "omim_vocabulary:Phenotype-Map",
+    "bio2rdf:omim_vocabulary:variant": "omim_vocabulary:variant",
+    "bio2rdf:omim_vocabulary:Allelic-Variant": "omim_vocabulary:Allelic-Variant",
+    "bio2rdf:omim_vocabulary:clinical-synopsis": "omim_vocabulary:clinical-synopsis",
+    "bio2rdf:omim_vocabulary:Clinical-Synopsis": "omim_vocabulary:Clinical-Synopsis",
+    "bio2rdf:omim_vocabulary:mapping-method": "omim_vocabulary:mapping-method",
+    "bio2rdf:omim_vocabulary:x-ncbigene": "omim_vocabulary:x-ncbigene",
+    "bio2rdf:omim_vocabulary:x-unigene": "omim_vocabulary:x-unigene",
+    "bio2rdf:omim_vocabulary:x-uniprot": "omim_vocabulary:x-uniprot",
+    "bio2rdf:omim_vocabulary:x-mgi": "omim_vocabulary:x-mgi",
+    "bio2rdf:omim_vocabulary:x-symbol": "omim_vocabulary:x-symbol",
+    "bio2rdf:omim_vocabulary:x-icd10": "omim_vocabulary:x-icd10",
+    "bio2rdf:icd10_vocabulary:Resource": "icd10_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:x-hprd": "omim_vocabulary:x-hprd",
+    "bio2rdf:hprd_vocabulary:Resource": "hprd_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:x-refseq": "omim_vocabulary:x-refseq",
+    "bio2rdf:omim_vocabulary:x-ordr": "omim_vocabulary:x-ordr",
+    "bio2rdf:ordr_vocabulary:Resource": "ordr_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:x-orphanet": "omim_vocabulary:x-orphanet",
+    "bio2rdf:orphanet_vocabulary:Resource": "orphanet_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:x-snomed": "omim_vocabulary:x-snomed",
+    "bio2rdf:snomedct_vocabulary:Resource": "snomedct_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:x-umls": "omim_vocabulary:x-umls",
+    "bio2rdf:umls_vocabulary:Resource": "umls_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:x-zfin": "omim_vocabulary:x-zfin",
+    "bio2rdf:zfin_vocabulary:Resource": "zfin_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:x-icd9": "omim_vocabulary:x-icd9",
+    "bio2rdf:icd9_vocabulary:Resource": "icd9_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:x-wormbase": "omim_vocabulary:x-wormbase",
+    "bio2rdf:omim_vocabulary:feature": "omim_vocabulary:feature",
+    "bio2rdf:omim_vocabulary:Characteristic": "omim_vocabulary:Characteristic",
+    "bio2rdf:omim_vocabulary:characteristic-of": "omim_vocabulary:characteristic-of",
+    "bio2rdf:omim_vocabulary:Entity": "omim_vocabulary:Entity",
+    "bio2rdf:omim_vocabulary:phenotypeMimNumber": "omim_vocabulary:phenotypeMimNumber",
+    "bio2rdf:omim_vocabulary:mimNumber": "omim_vocabulary:mimNumber",
+    "bio2rdf:omim_vocabulary:x-omim": "omim_vocabulary:x-omim",
+    "bio2rdf:omim_vocabulary:x-dbsnp": "omim_vocabulary:x-dbsnp",
+    "bio2rdf:dbsnp_vocabulary:Resource": "dbsnp_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:x-hp": "omim_vocabulary:x-hp",
+    "bio2rdf:hp_vocabulary:Resource": "hp_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:x-eom": "omim_vocabulary:x-eom",
+    "bio2rdf:eom_vocabulary:Resource": "eom_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:x-img": "omim_vocabulary:x-img",
+    "bio2rdf:img_vocabulary:Resource": "img_vocabulary:Resource",
+    "dcterms:identifier": "identifier",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "dcterms:title": "title",
+    "dcterms:description": "description",
+    "bio2rdf:omim_vocabulary:alternative-title": "omim_vocabulary:alternative-title",
+    "bio2rdf:omim_vocabulary:animal-model": "omim_vocabulary:animal-model",
+    "bio2rdf:omim_vocabulary:biochemical-features": "omim_vocabulary:biochemical-features",
+    "bio2rdf:omim_vocabulary:chromosome": "omim_vocabulary:chromosome",
+    "bio2rdf:omim_vocabulary:clinical-features": "omim_vocabulary:clinical-features",
+    "bio2rdf:omim_vocabulary:clinical-management": "omim_vocabulary:clinical-management",
+    "bio2rdf:omim_vocabulary:cloning": "omim_vocabulary:cloning",
+    "bio2rdf:omim_vocabulary:cytogenetics": "omim_vocabulary:cytogenetics",
+    "bio2rdf:omim_vocabulary:cytolocation": "omim_vocabulary:cytolocation",
+    "bio2rdf:omim_vocabulary:diagnosis": "omim_vocabulary:diagnosis",
+    "bio2rdf:omim_vocabulary:evolution": "omim_vocabulary:evolution",
+    "bio2rdf:omim_vocabulary:gene-family": "omim_vocabulary:gene-family",
+    "bio2rdf:omim_vocabulary:gene-function": "omim_vocabulary:gene-function",
+    "bio2rdf:omim_vocabulary:gene-inheritance": "omim_vocabulary:gene-inheritance",
+    "bio2rdf:omim_vocabulary:gene-name": "omim_vocabulary:gene-name",
+    "bio2rdf:omim_vocabulary:gene-structure": "omim_vocabulary:gene-structure",
+    "omim_vocab:phenotype-correlations": "phenotype-correlations",
+    "bio2rdf:omim_vocabulary:history": "omim_vocabulary:history",
+    "bio2rdf:omim_vocabulary:inheritance": "omim_vocabulary:inheritance",
+    "bio2rdf:omim_vocabulary:mapping": "omim_vocabulary:mapping",
+    "bio2rdf:omim_vocabulary:molecular-genetics": "omim_vocabulary:molecular-genetics",
+    "bio2rdf:omim_vocabulary:nomenclature": "omim_vocabulary:nomenclature",
+    "bio2rdf:omim_vocabulary:other-features": "omim_vocabulary:other-features",
+    "bio2rdf:omim_vocabulary:pathogenesis": "omim_vocabulary:pathogenesis",
+    "bio2rdf:omim_vocabulary:population-genetics": "omim_vocabulary:population-genetics",
+    "bio2rdf:omim_vocabulary:preferred-title": "omim_vocabulary:preferred-title",
+    "bio2rdf:omim_vocabulary:text": "omim_vocabulary:text",
+    "bio2rdf:omim_vocabulary:heterogeneity": "omim_vocabulary:heterogeneity",
+    "bio2rdf:omim_vocabulary:gene-therapy": "omim_vocabulary:gene-therapy",
+    "bio2rdf:omim_vocabulary:genotype": "omim_vocabulary:genotype",
+    "bio2rdf:omim_vocabulary:genetic-variability": "omim_vocabulary:genetic-variability",
+    "bio2rdf:omim_vocabulary:phenotype": "omim_vocabulary:phenotype",
+    "bio2rdf:omim_vocabulary:alternative-names": "omim_vocabulary:alternative-names",
+    "bio2rdf:omim_vocabulary:chromosomeLocationEnd": "omim_vocabulary:chromosomeLocationEnd",
+    "bio2rdf:omim_vocabulary:chromosomeLocationStart": "omim_vocabulary:chromosomeLocationStart",
+    "bio2rdf:omim_vocabulary:chromosomeSort": "omim_vocabulary:chromosomeSort",
+    "bio2rdf:omim_vocabulary:chromosomeSymbol": "omim_vocabulary:chromosomeSymbol",
+    "bio2rdf:omim_vocabulary:computedCytoLocation": "omim_vocabulary:computedCytoLocation",
+    "bio2rdf:omim_vocabulary:cytoLocation": "omim_vocabulary:cytoLocation",
+    "bio2rdf:omim_vocabulary:mutation": "omim_vocabulary:mutation",
+    "bio2rdf:omim_vocabulary:phenotypeInheritance": "omim_vocabulary:phenotypeInheritance",
+    "bio2rdf:omim_vocabulary:phenotypicSeriesNumber": "omim_vocabulary:phenotypicSeriesNumber",
+    "bio2rdf:omim_vocabulary:sequenceID": "omim_vocabulary:sequenceID",
+    "bio2rdf:omim_vocabulary:transcript": "omim_vocabulary:transcript",
+    "bio2rdf:omim_vocabulary:geneInheritance": "omim_vocabulary:geneInheritance",
+    "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": "bio2rdf_vocabulary:x-identifiers.org",
+    "owl:sameAs": "sameAs",
+    "dcat:distribution": "distribution",
+    "dcat:Distribution": "Distribution",
+    "dcterms:source": "source",
+    "dcterms:created": "created",
+    "dcterms:format": "format",
+    "dcterms:rights": "rights",
+    "pav:retrievedOn": "retrievedOn",
+    "dcterms:creator": "creator",
+    "foaf:page": "page",
+    "dcterms:publisher": "publisher",
+    "dcterms:license": "license"
+  }
+}

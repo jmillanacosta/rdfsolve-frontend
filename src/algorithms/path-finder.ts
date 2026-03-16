@@ -90,10 +90,10 @@ export class PathFinder {
       // Only consider URI objects for path finding (skip literals)
       if (triple.objectType !== 'uri') continue;
       
-      // Outgoing: subject → object
+      // Outgoing: subject -> object
       addEdge(triple.subject, triple.object, triple, true);
       
-      // Incoming: object → subject (reversed direction)
+      // Incoming: object -> subject (reversed direction)
       addEdge(triple.object, triple.subject, triple, false);
     }
     
@@ -115,7 +115,7 @@ export class PathFinder {
    * Find shortest path between two nodes using BFS.
    * Returns null if no path exists.
    * 
-   * When startUri === endUri, looks for a self-loop edge (e.g. Protein→Protein)
+   * When startUri === endUri, looks for a self-loop edge (e.g. Protein->Protein)
    * rather than returning an empty trivial path.
    */
   findShortestPath(startUri: string, endUri: string, options: PathFinderOptions = {}): EdgePath | null {
@@ -140,7 +140,7 @@ export class PathFinder {
           };
         }
       }
-      // No self-loop edge found — return trivial path
+      // No self-loop edge found - return trivial path
       return { nodes: [startUri], edges: [], length: 0 };
     }
     

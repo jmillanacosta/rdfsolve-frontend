@@ -1,0 +1,603 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "bio2rdf": "http://bio2rdf.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pav": "http://purl.org/pav/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "owl:Class",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 8605
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 8605
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 8605
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 8605
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 8605
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 8605
+        }
+      }
+    },
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 1
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 4
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:publisher": {
+          "Resource": 2
+        },
+        "dcterms:creator": {
+          "Resource": 1
+        },
+        "foaf:page": {
+          "Resource": 2
+        },
+        "dcterms:license": {
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:umls_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5880
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 5880
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5880
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5880
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5880
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5880
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:meddra_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2724
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2724
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2724
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2724
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2724
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2724
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sider_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sider_vocabulary:drug": {
+        "@id": "bio2rdf:stitch_vocabulary:Resource"
+      },
+      "bio2rdf:sider_vocabulary:indication": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:meddra_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:sider_vocabulary:side-effect": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:umls_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:sider_vocabulary:stitch-flat": {
+        "@id": "bio2rdf:stitch_vocabulary:Resource"
+      },
+      "bio2rdf:sider_vocabulary:stitch-stereo": {
+        "@id": "bio2rdf:stitch_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sider_vocabulary:provenance": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 154805
+        },
+        "bio2rdf:sider_vocabulary:drug": {
+          "bio2rdf:stitch_vocabulary:Resource": 14734
+        },
+        "bio2rdf:sider_vocabulary:indication": {
+          "owl:Class": 14734,
+          "bio2rdf:meddra_vocabulary:Resource": 14734
+        },
+        "bio2rdf:sider_vocabulary:side-effect": {
+          "owl:Class": 140064,
+          "bio2rdf:umls_vocabulary:Resource": 140064
+        },
+        "bio2rdf:sider_vocabulary:stitch-flat": {
+          "bio2rdf:stitch_vocabulary:Resource": 140064
+        },
+        "bio2rdf:sider_vocabulary:stitch-stereo": {
+          "bio2rdf:stitch_vocabulary:Resource": 146960
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 154805
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 154805
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 154805
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 154805
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 154805
+        },
+        "bio2rdf:sider_vocabulary:provenance": {
+          "Literal:xsd:string": 14734
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sider_vocabulary:Drug-Indication-Association",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sider_vocabulary:drug": {
+        "@id": "bio2rdf:stitch_vocabulary:Resource"
+      },
+      "bio2rdf:sider_vocabulary:indication": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:meddra_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sider_vocabulary:provenance": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 14734
+        },
+        "bio2rdf:sider_vocabulary:drug": {
+          "bio2rdf:stitch_vocabulary:Resource": 14734
+        },
+        "bio2rdf:sider_vocabulary:indication": {
+          "owl:Class": 14734,
+          "bio2rdf:meddra_vocabulary:Resource": 14734
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 14734
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 14734
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 14734
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 14734
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 14734
+        },
+        "bio2rdf:sider_vocabulary:provenance": {
+          "Literal:xsd:string": 14734
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:stitch_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 3063
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3063
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3063
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3063
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3063
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 3063
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sider_vocabulary:Side-Effect",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sider_vocabulary:side-effect": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:umls_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:sider_vocabulary:stitch-flat": {
+        "@id": "bio2rdf:stitch_vocabulary:Resource"
+      },
+      "bio2rdf:sider_vocabulary:stitch-stereo": {
+        "@id": "bio2rdf:stitch_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 140064
+        },
+        "bio2rdf:sider_vocabulary:side-effect": {
+          "owl:Class": 140064,
+          "bio2rdf:umls_vocabulary:Resource": 140064
+        },
+        "bio2rdf:sider_vocabulary:stitch-flat": {
+          "bio2rdf:stitch_vocabulary:Resource": 140064
+        },
+        "bio2rdf:sider_vocabulary:stitch-stereo": {
+          "bio2rdf:stitch_vocabulary:Resource": 146960
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 140064
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 140064
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 140064
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 140064
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 140064
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 5
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 2
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T13:49:27.722281+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "sider",
+    "graph_uris": [
+      "http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3"
+    ],
+    "pattern_count": 116,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:Class": "Class",
+    "void:inDataset": "inDataset",
+    "dcterms:Dataset": "Dataset",
+    "dcat:Distribution": "Distribution",
+    "dcterms:source": "source",
+    "bio2rdf:umls_vocabulary:Resource": "umls_vocabulary:Resource",
+    "bio2rdf:meddra_vocabulary:Resource": "meddra_vocabulary:Resource",
+    "bio2rdf:sider_vocabulary:Resource": "sider_vocabulary:Resource",
+    "bio2rdf:sider_vocabulary:Drug-Indication-Association": "sider_vocabulary:Drug-Indication-Association",
+    "bio2rdf:stitch_vocabulary:Resource": "stitch_vocabulary:Resource",
+    "bio2rdf:sider_vocabulary:Side-Effect": "sider_vocabulary:Side-Effect",
+    "owl:ObjectProperty": "ObjectProperty",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "dcat:distribution": "distribution",
+    "bio2rdf:sider_vocabulary:drug": "sider_vocabulary:drug",
+    "bio2rdf:sider_vocabulary:indication": "sider_vocabulary:indication",
+    "bio2rdf:sider_vocabulary:side-effect": "sider_vocabulary:side-effect",
+    "bio2rdf:sider_vocabulary:stitch-flat": "sider_vocabulary:stitch-flat",
+    "bio2rdf:sider_vocabulary:stitch-stereo": "sider_vocabulary:stitch-stereo",
+    "dcterms:created": "created",
+    "dcterms:title": "title",
+    "dcterms:identifier": "identifier",
+    "dcterms:format": "format",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "dcterms:rights": "rights",
+    "pav:retrievedOn": "retrievedOn",
+    "bio2rdf:sider_vocabulary:provenance": "sider_vocabulary:provenance",
+    "dcterms:publisher": "publisher",
+    "dcterms:creator": "creator",
+    "foaf:page": "page",
+    "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": "bio2rdf_vocabulary:x-identifiers.org",
+    "dcterms:license": "license"
+  }
+}

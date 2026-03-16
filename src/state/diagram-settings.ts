@@ -1,5 +1,5 @@
 /**
- * Diagram Settings — Centralized configuration store
+ * Diagram Settings - Centralized configuration store
  *
  * Manages user-facing settings such as excluded namespaces.
  * Persists to localStorage and fires change events so components
@@ -47,7 +47,7 @@ type ChangeListener = () => void;
 export class DiagramSettings {
   private static _instance: DiagramSettings | null = null;
 
-  /** Namespace URI → excluded flag */
+  /** Namespace URI -> excluded flag */
   private excludedNamespaces = new Map<string, boolean>();
 
   /** All known namespace entries (for the UI) */
@@ -132,7 +132,7 @@ export class DiagramSettings {
         return a.prefix.localeCompare(b.prefix);
       });
       this.persist();
-      // Don't notify here — registering is passive, not a user action
+      // Don't notify here - registering is passive, not a user action
     }
   }
 
@@ -183,7 +183,7 @@ export class DiagramSettings {
         }
       }
     } catch {
-      // Corrupted storage — ignore
+      // Corrupted storage - ignore
     }
   }
 
@@ -194,7 +194,7 @@ export class DiagramSettings {
         .map(([uri]) => uri);
       localStorage.setItem(STORAGE_KEY, JSON.stringify({ excludedUris }));
     } catch {
-      // Storage unavailable — ignore
+      // Storage unavailable - ignore
     }
   }
 

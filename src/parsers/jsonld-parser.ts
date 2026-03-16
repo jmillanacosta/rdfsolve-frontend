@@ -35,7 +35,7 @@ export function parseJSONLD(input: JSONLDSchema): CanonicalSchema {
   // Extract prefixes from @context
   schema.prefixes = extractPrefixes(input['@context']);
 
-  // Extract the _labels map produced by the Python miner (CURIE → label)
+  // Extract the _labels map produced by the Python miner (CURIE -> label)
   const rawLabels = (input as Record<string, unknown>)['_labels'];
   if (rawLabels && typeof rawLabels === 'object' && !Array.isArray(rawLabels)) {
     schema.labels = rawLabels as Record<string, string>;
@@ -57,7 +57,7 @@ export function parseJSONLD(input: JSONLDSchema): CanonicalSchema {
     processNode(schema, node);
   }
   
-  // Enrich: detect class URIs and remove redundant rdf:type→owl:Class triples
+  // Enrich: detect class URIs and remove redundant rdf:type->owl:Class triples
   enrichSchemaWithClassInfo(schema);
   
   return schema;
@@ -140,7 +140,7 @@ function processNode(schema: CanonicalSchema, node: JSONLDNode): void {
   
   // CRITICAL: expand the subject URI so ALL URIs in the schema are in
   // canonical expanded form.  The raw JSON-LD may use CURIEs like
-  // "wp:Complex" — we must normalise to "http://...#Complex".
+  // "wp:Complex" - we must normalise to "http://...#Complex".
   const subjectUri = expandCurie(rawSubject, schema.prefixes);
   const subjectLabel = labelFor(subjectUri, schema.prefixes, schema.labels);
   

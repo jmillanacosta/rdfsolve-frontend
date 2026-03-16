@@ -1,0 +1,1367 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "vann": "http://purl.org/vocab/vann/",
+    "oboinowl": "http://www.geneontology.org/formats/oboInOwl#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "ontology": "https://purl.expasy.org/sparql-examples/ontology#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "orth": "http://purl.org/net/orth#",
+    "pav": "http://purl.org/pav/",
+    "vocab": "https://w3id.org/widoco/vocab#",
+    "schema": "http://schema.org/",
+    "iao": "http://purl.obolibrary.org/obo/IAO_",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "grddl": "http://www.w3.org/2003/g/data-view#",
+    "bibo": "http://purl.org/ontology/bibo/",
+    "lscr": "http://purl.org/lscr#",
+    "uniprot.core": "http://purl.uniprot.org/core/",
+    "ro": "http://purl.obolibrary.org/obo/RO_",
+    "sio": "http://semanticscience.org/resource/SIO_",
+    "ensembl": "http://rdf.ebi.ac.uk/resource/ensembl/",
+    "so": "http://purl.obolibrary.org/obo/SO_",
+    "cdao": "http://purl.obolibrary.org/obo/CDAO_",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "void": "http://rdfs.org/ns/void#",
+    "voidext": "http://ldf.fi/void-ext#"
+  },
+  "@graph": [
+    {
+      "@id": "owl:SymmetricProperty",
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "vann:example": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "skos:altLabel": {
+          "Literal:xsd:string": 12
+        },
+        "vann:example": {
+          "Literal:xsd:string": 8
+        }
+      }
+    },
+    {
+      "@id": "owl:Class",
+      "owl:complementOf": {
+        "@id": "owl:Class"
+      },
+      "owl:equivalentClass": [
+        {
+          "@id": "owl:Restriction"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "owl:disjointWith": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "oboinowl:inSubset": {
+        "@id": "owl:AnnotationProperty"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "vann:example": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:hasDbXref": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:hasBroadSynonym": {
+        "@type": "xsd:string"
+      },
+      "iao:0000115": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:hasExactSynonym": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:hasOBONamespace": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:id": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "owl:complementOf": {
+          "owl:Class": 6
+        },
+        "owl:equivalentClass": {
+          "owl:Restriction": 4,
+          "owl:Class": 40
+        },
+        "owl:disjointWith": {
+          "owl:Class": 36,
+          "Resource": 2
+        },
+        "oboinowl:inSubset": {
+          "owl:AnnotationProperty": 10
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 106
+        },
+        "vann:example": {
+          "Literal:xsd:string": 42,
+          "Resource": 2
+        },
+        "dc:identifier": {
+          "Literal:xsd:string": 3
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 3
+        },
+        "oboinowl:hasDbXref": {
+          "Literal:xsd:string": 5
+        },
+        "oboinowl:hasBroadSynonym": {
+          "Literal:xsd:string": 2
+        },
+        "iao:0000115": {
+          "Literal:xsd:string": 5
+        },
+        "oboinowl:hasExactSynonym": {
+          "Literal:xsd:string": 3
+        },
+        "oboinowl:hasOBONamespace": {
+          "Literal:xsd:string": 5
+        },
+        "oboinowl:id": {
+          "Literal:xsd:string": 5
+        }
+      }
+    },
+    {
+      "@id": "owl:Ontology",
+      "owl:versionIRI": [
+        {
+          "@id": "owl:Ontology"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "owl:imports": [
+        {
+          "@id": "owl:Ontology"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "owl:versionInfo": [
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:created": {
+        "@type": "xsd:date"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:date"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "vocab:introduction": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:bibliographicCitation": {
+        "@type": "xsd:string"
+      },
+      "dcterms:issue": {
+        "@type": "xsd:date"
+      },
+      "vann:preferredNamespacePrefix": {
+        "@type": "xsd:string"
+      },
+      "schema:codeRepository": {
+        "@type": "xsd:anyURI"
+      },
+      "dc:description": {
+        "@type": "xsd:string"
+      },
+      "dc:date": {
+        "@type": "xsd:string"
+      },
+      "owl:priorVersion": {
+        "@id": "rdfs:Resource"
+      },
+      "grddl:namespaceTransformation": {
+        "@id": "rdfs:Resource"
+      },
+      "sh:suggestedShapesGraph": {
+        "@id": "rdfs:Resource"
+      },
+      "owl:backwardCompatibleWith": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "bibo:status": {
+        "@id": "rdfs:Resource"
+      },
+      "vann:preferredNamespaceUri": {
+        "@id": "rdfs:Resource"
+      },
+      "schema:image": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:contributor": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:versionIRI": {
+          "owl:Ontology": 4,
+          "Resource": 5
+        },
+        "owl:imports": {
+          "owl:Ontology": 1,
+          "Resource": 4
+        },
+        "owl:versionInfo": {
+          "Literal:xsd:string": 2
+        },
+        "dc:title": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:created": {
+          "Literal:xsd:date": 2
+        },
+        "dcterms:modified": {
+          "Literal:xsd:date": 2
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 2
+        },
+        "vocab:introduction": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:bibliographicCitation": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:issue": {
+          "Literal:xsd:date": 2
+        },
+        "vann:preferredNamespacePrefix": {
+          "Literal:xsd:string": 2
+        },
+        "schema:codeRepository": {
+          "Literal:xsd:anyURI": 2
+        },
+        "dc:description": {
+          "Literal:xsd:string": 1
+        },
+        "dc:date": {
+          "Literal:xsd:string": 1
+        },
+        "owl:priorVersion": {
+          "Resource": 4
+        },
+        "grddl:namespaceTransformation": {
+          "Resource": 2
+        },
+        "sh:suggestedShapesGraph": {
+          "Resource": 1
+        },
+        "owl:backwardCompatibleWith": {
+          "Resource": 2
+        },
+        "dcterms:publisher": {
+          "Resource": 2
+        },
+        "dcterms:license": {
+          "Resource": 2
+        },
+        "dcterms:creator": {
+          "Resource": 6
+        },
+        "bibo:status": {
+          "Resource": 2
+        },
+        "vann:preferredNamespaceUri": {
+          "Resource": 2
+        },
+        "schema:image": {
+          "Resource": 2
+        },
+        "dcterms:contributor": {
+          "Resource": 16
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "owl:inverseOf": {
+        "@id": "owl:ObjectProperty"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "vann:example": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "owl:inverseOf": {
+          "owl:ObjectProperty": 32
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 20
+        },
+        "vann:example": {
+          "Literal:xsd:string": 8
+        }
+      }
+    },
+    {
+      "@id": "owl:Restriction",
+      "owl:onProperty": [
+        {
+          "@id": "owl:ObjectProperty"
+        },
+        {
+          "@id": "owl:DatatypeProperty"
+        },
+        {
+          "@id": "owl:TransitiveProperty"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "owl:allValuesFrom": {
+        "@id": "owl:Class"
+      },
+      "owl:someValuesFrom": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "owl:onClass": {
+        "@id": "owl:Class"
+      },
+      "owl:hasValue": {
+        "@type": "xsd:boolean"
+      },
+      "owl:maxCardinality": {
+        "@type": "xsd:integer"
+      },
+      "owl:maxQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "owl:qualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger"
+      },
+      "owl:onDataRange": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:onProperty": {
+          "owl:ObjectProperty": 118,
+          "owl:DatatypeProperty": 14,
+          "owl:TransitiveProperty": 1,
+          "Resource": 1
+        },
+        "owl:allValuesFrom": {
+          "owl:Class": 81
+        },
+        "owl:someValuesFrom": {
+          "owl:Class": 30,
+          "Resource": 2
+        },
+        "owl:onClass": {
+          "owl:Class": 20
+        },
+        "owl:hasValue": {
+          "Literal:xsd:boolean": 2
+        },
+        "owl:maxCardinality": {
+          "Literal:xsd:integer": 1
+        },
+        "owl:maxQualifiedCardinality": {
+          "Literal:xsd:nonNegativeInteger": 2
+        },
+        "owl:qualifiedCardinality": {
+          "Literal:xsd:nonNegativeInteger": 10
+        },
+        "owl:onDataRange": {
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "owl:AnnotationProperty",
+      "skos:scopeNote": {
+        "@type": "xsd:string"
+      },
+      "skos:definition": {
+        "@type": "xsd:string"
+      },
+      "skos:example": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "skos:scopeNote": {
+          "Literal:xsd:string": 4
+        },
+        "skos:definition": {
+          "Literal:xsd:string": 24
+        },
+        "skos:example": {
+          "Literal:xsd:string": 4
+        }
+      }
+    },
+    {
+      "@id": "sh:SPARQLExecutable",
+      "sh:select": {
+        "@type": "xsd:string"
+      },
+      "ontology:file_path": {
+        "@type": "xsd:string"
+      },
+      "ontology:file_name": {
+        "@type": "xsd:string"
+      },
+      "ontology:project": {
+        "@type": "xsd:string"
+      },
+      "schema:target": {
+        "@id": "rdfs:Resource"
+      },
+      "ontology:federatesWith": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sh:select": {
+          "Literal:xsd:string": 15
+        },
+        "ontology:file_path": {
+          "Literal:xsd:string": 15
+        },
+        "ontology:file_name": {
+          "Literal:xsd:string": 15
+        },
+        "ontology:project": {
+          "Literal:xsd:string": 15
+        },
+        "schema:target": {
+          "Resource": 15
+        },
+        "ontology:federatesWith": {
+          "Resource": 3
+        }
+      }
+    },
+    {
+      "@id": "sh:SPARQLSelectExecutable",
+      "sh:select": {
+        "@type": "xsd:string"
+      },
+      "ontology:file_path": {
+        "@type": "xsd:string"
+      },
+      "ontology:file_name": {
+        "@type": "xsd:string"
+      },
+      "ontology:project": {
+        "@type": "xsd:string"
+      },
+      "schema:target": {
+        "@id": "rdfs:Resource"
+      },
+      "ontology:federatesWith": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sh:select": {
+          "Literal:xsd:string": 15
+        },
+        "ontology:file_path": {
+          "Literal:xsd:string": 15
+        },
+        "ontology:file_name": {
+          "Literal:xsd:string": 15
+        },
+        "ontology:project": {
+          "Literal:xsd:string": 15
+        },
+        "schema:target": {
+          "Resource": 15
+        },
+        "ontology:federatesWith": {
+          "Resource": 3
+        }
+      }
+    },
+    {
+      "@id": "orth:OrthologyDataset",
+      "pav:version": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "pav:version": {
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "skos:altLabel": {
+          "Literal:xsd:string": 8
+        }
+      }
+    },
+    {
+      "@id": "orth:Protein",
+      "lscr:xrefUniprot": {
+        "@id": "uniprot.core:Protein"
+      },
+      "ro:0001018": {
+        "@id": "sio:000750"
+      },
+      "orth:organism": {
+        "@id": "orth:Organism"
+      },
+      "lscr:xrefSwissProt": {
+        "@id": "uniprot.core:Protein"
+      },
+      "sio:010079": [
+        {
+          "@id": "orth:Gene"
+        },
+        {
+          "@id": "so:0000704"
+        }
+      ],
+      "lscr:xrefEnsemblProtein": {
+        "@id": "ensembl:protein"
+      },
+      "lscr:xrefEnsemblTranscript": {
+        "@id": "so:0000673"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "lscr:xrefEMBLSequence": {
+        "@id": "rdfs:Resource"
+      },
+      "lscr:xrefNCBIProtein": {
+        "@id": "rdfs:Resource"
+      },
+      "lscr:xrefNCBIRefSeq": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "lscr:xrefUniprot": {
+          "uniprot.core:Protein": 13587108
+        },
+        "ro:0001018": {
+          "sio:000750": 17383786
+        },
+        "orth:organism": {
+          "orth:Organism": 17383786
+        },
+        "lscr:xrefSwissProt": {
+          "uniprot.core:Protein": 381038
+        },
+        "sio:010079": {
+          "orth:Gene": 7987664,
+          "so:0000704": 2894269
+        },
+        "lscr:xrefEnsemblProtein": {
+          "ensembl:protein": 2915333
+        },
+        "lscr:xrefEnsemblTranscript": {
+          "so:0000673": 3369630
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 84975908
+        },
+        "lscr:xrefEMBLSequence": {
+          "Resource": 2380225
+        },
+        "lscr:xrefNCBIProtein": {
+          "Resource": 6129716
+        },
+        "lscr:xrefNCBIRefSeq": {
+          "Resource": 19917891
+        }
+      }
+    },
+    {
+      "@id": "so:0000704",
+      "orth:organism": {
+        "@id": "orth:Organism"
+      },
+      "lscr:xrefEnsemblGene": {
+        "@id": "rdfs:Resource"
+      },
+      "lscr:xrefNCBIGene": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "orth:organism": {
+          "orth:Organism": 3005087
+        },
+        "lscr:xrefEnsemblGene": {
+          "Resource": 2994267
+        },
+        "lscr:xrefNCBIGene": {
+          "Resource": 1824564
+        }
+      }
+    },
+    {
+      "@id": "orth:Gene",
+      "orth:organism": {
+        "@id": "orth:Organism"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "lscr:xrefNCBIGene": {
+        "@id": "rdfs:Resource"
+      },
+      "lscr:xrefEnsemblGene": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "orth:organism": {
+          "orth:Organism": 8744280
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 181897
+        },
+        "lscr:xrefNCBIGene": {
+          "Resource": 7254566
+        },
+        "lscr:xrefEnsemblGene": {
+          "Resource": 2994267
+        }
+      }
+    },
+    {
+      "@id": "orth:HierarchicalGeneTree",
+      "cdao:0000148": {
+        "@id": "orth:OrthologsCluster"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "cdao:0000148": {
+          "orth:OrthologsCluster": 1040435
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1040435
+        }
+      }
+    },
+    {
+      "@id": "orth:OrthologsCluster",
+      "orth:hasHomologousMember": [
+        {
+          "@id": "orth:Protein"
+        },
+        {
+          "@id": "orth:ParalogsCluster"
+        },
+        {
+          "@id": "orth:OrthologsCluster"
+        }
+      ],
+      "orth:hasTaxonomicRange": [
+        {
+          "@id": "orth:TaxonomicRange"
+        },
+        {
+          "@id": "uniprot.core:Taxon"
+        }
+      ],
+      "orth:inDataset": {
+        "@id": "orth:OrthologyDataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "orth:hasHomologousMember": {
+          "orth:Protein": 17383786,
+          "orth:ParalogsCluster": 1587082,
+          "orth:OrthologsCluster": 27826819
+        },
+        "orth:hasTaxonomicRange": {
+          "orth:TaxonomicRange": 33451292,
+          "uniprot.core:Taxon": 17403958
+        },
+        "orth:inDataset": {
+          "orth:OrthologyDataset": 16067506
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 33177379
+        }
+      }
+    },
+    {
+      "@id": "orth:ParalogsCluster",
+      "orth:hasHomologousMember": {
+        "@id": "orth:OrthologsCluster"
+      },
+      "orth:inDataset": {
+        "@id": "orth:OrthologyDataset"
+      },
+      "_counts": {
+        "orth:hasHomologousMember": {
+          "orth:OrthologsCluster": 4584038
+        },
+        "orth:inDataset": {
+          "orth:OrthologyDataset": 1587082
+        }
+      }
+    },
+    {
+      "@id": "orth:TaxonomicRange",
+      "uniprot.core:rank": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "uniprot.core:Rank"
+        }
+      ],
+      "orth:taxRange": {
+        "@type": "xsd:string"
+      },
+      "orth:taxRangeId": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:scientificName": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:mnemonic": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "uniprot.core:rank": {
+          "owl:NamedIndividual": 2927,
+          "uniprot.core:Rank": 2927
+        },
+        "orth:taxRange": {
+          "Literal:xsd:string": 4115
+        },
+        "orth:taxRangeId": {
+          "Literal:xsd:string": 4092
+        },
+        "uniprot.core:scientificName": {
+          "Literal:xsd:string": 2927
+        },
+        "uniprot.core:mnemonic": {
+          "Literal:xsd:string": 1555
+        }
+      }
+    },
+    {
+      "@id": "uniprot.core:Taxon",
+      "uniprot.core:rank": [
+        {
+          "@id": "owl:NamedIndividual"
+        },
+        {
+          "@id": "uniprot.core:Rank"
+        }
+      ],
+      "orth:taxRange": {
+        "@type": "xsd:string"
+      },
+      "orth:taxRangeId": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:scientificName": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:mnemonic": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "uniprot.core:rank": {
+          "owl:NamedIndividual": 2927,
+          "uniprot.core:Rank": 2927
+        },
+        "orth:taxRange": {
+          "Literal:xsd:string": 2927
+        },
+        "orth:taxRangeId": {
+          "Literal:xsd:string": 2927
+        },
+        "uniprot.core:scientificName": {
+          "Literal:xsd:string": 2927
+        },
+        "uniprot.core:mnemonic": {
+          "Literal:xsd:string": 1555
+        }
+      }
+    },
+    {
+      "@id": "orth:Organism",
+      "ro:0002162": [
+        {
+          "@id": "orth:TaxonomicRange"
+        },
+        {
+          "@id": "uniprot.core:Taxon"
+        }
+      ],
+      "_counts": {
+        "ro:0002162": {
+          "orth:TaxonomicRange": 2927,
+          "uniprot.core:Taxon": 2927
+        }
+      }
+    },
+    {
+      "@id": "so:0000673",
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5580822
+        }
+      }
+    },
+    {
+      "@id": "uniprot.core:Protein",
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dcterms:identifier": {
+          "Literal:xsd:string": 17544694
+        }
+      }
+    },
+    {
+      "@id": "sio:000750",
+      "pav:version": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "pav:version": {
+          "Literal:xsd:string": 2867
+        }
+      }
+    },
+    {
+      "@id": "owl:NamedIndividual",
+      "foaf:homepage": {
+        "@type": "xsd:string"
+      },
+      "foaf:name": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "foaf:homepage": {
+          "Literal:xsd:string": 6
+        },
+        "foaf:name": {
+          "Literal:xsd:string": 6
+        }
+      }
+    },
+    {
+      "@id": "void:Dataset",
+      "void:property": [
+        {
+          "@id": "owl:AnnotationProperty"
+        },
+        {
+          "@id": "owl:OntologyProperty"
+        },
+        {
+          "@id": "owl:DatatypeProperty"
+        },
+        {
+          "@id": "owl:ObjectProperty"
+        },
+        {
+          "@id": "owl:FunctionalProperty"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "void:class": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "void:propertyPartition": {
+        "@id": "void:Dataset"
+      },
+      "void:classPartition": {
+        "@id": "void:Dataset"
+      },
+      "voidext:datatypePartition": {
+        "@id": "void:Dataset"
+      },
+      "void:entities": {
+        "@type": "xsd:long"
+      },
+      "void:triples": {
+        "@type": "xsd:long"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:date"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "voidext:datatype": {
+        "@id": "rdfs:Resource"
+      },
+      "voidext:subjectPartition": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:homepage": {
+        "@id": "rdfs:Resource"
+      },
+      "void:sparqlEndpoint": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:property": {
+          "owl:AnnotationProperty": 73,
+          "owl:OntologyProperty": 7,
+          "owl:DatatypeProperty": 32,
+          "owl:ObjectProperty": 28,
+          "owl:FunctionalProperty": 4,
+          "Resource": 6
+        },
+        "void:class": {
+          "owl:Class": 79,
+          "Resource": 2
+        },
+        "void:propertyPartition": {
+          "void:Dataset": 144
+        },
+        "void:classPartition": {
+          "void:Dataset": 60
+        },
+        "voidext:datatypePartition": {
+          "void:Dataset": 54
+        },
+        "void:entities": {
+          "Literal:xsd:long": 35
+        },
+        "void:triples": {
+          "Literal:xsd:long": 204
+        },
+        "dcterms:modified": {
+          "Literal:xsd:date": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 2
+        },
+        "voidext:datatype": {
+          "Resource": 19
+        },
+        "voidext:subjectPartition": {
+          "Resource": 2
+        },
+        "foaf:homepage": {
+          "Resource": 2
+        },
+        "void:sparqlEndpoint": {
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "void:Linkset",
+      "voidext:linkPredicateDomain": {
+        "@id": "owl:Class"
+      },
+      "voidext:linkPredicateRange": {
+        "@id": "owl:Class"
+      },
+      "void:linkPredicate": {
+        "@id": "owl:AnnotationProperty"
+      },
+      "void:subjectsTarget": {
+        "@id": "void:Dataset"
+      },
+      "voidext:isSubsetOf": {
+        "@id": "void:Dataset"
+      },
+      "void:objectsTarget": {
+        "@id": "void:Dataset"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:date"
+      },
+      "dcterms:issued": {
+        "@type": "xsd:date"
+      },
+      "_counts": {
+        "voidext:linkPredicateDomain": {
+          "owl:Class": 2
+        },
+        "voidext:linkPredicateRange": {
+          "owl:Class": 2
+        },
+        "void:linkPredicate": {
+          "owl:AnnotationProperty": 1
+        },
+        "void:subjectsTarget": {
+          "void:Dataset": 1
+        },
+        "voidext:isSubsetOf": {
+          "void:Dataset": 1
+        },
+        "void:objectsTarget": {
+          "void:Dataset": 1
+        },
+        "dcterms:modified": {
+          "Literal:xsd:date": 1
+        },
+        "dcterms:issued": {
+          "Literal:xsd:date": 1
+        }
+      }
+    },
+    {
+      "@id": "voidext:SimpleLinkSet",
+      "voidext:linkPredicateDomain": {
+        "@id": "owl:Class"
+      },
+      "voidext:linkPredicateRange": {
+        "@id": "owl:Class"
+      },
+      "void:linkPredicate": {
+        "@id": "owl:AnnotationProperty"
+      },
+      "void:subjectsTarget": {
+        "@id": "void:Dataset"
+      },
+      "voidext:isSubsetOf": {
+        "@id": "void:Dataset"
+      },
+      "void:objectsTarget": {
+        "@id": "void:Dataset"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:date"
+      },
+      "dcterms:issued": {
+        "@type": "xsd:date"
+      },
+      "_counts": {
+        "voidext:linkPredicateDomain": {
+          "owl:Class": 2
+        },
+        "voidext:linkPredicateRange": {
+          "owl:Class": 2
+        },
+        "void:linkPredicate": {
+          "owl:AnnotationProperty": 1
+        },
+        "void:subjectsTarget": {
+          "void:Dataset": 1
+        },
+        "voidext:isSubsetOf": {
+          "void:Dataset": 1
+        },
+        "void:objectsTarget": {
+          "void:Dataset": 1
+        },
+        "dcterms:modified": {
+          "Literal:xsd:date": 1
+        },
+        "dcterms:issued": {
+          "Literal:xsd:date": 1
+        }
+      }
+    },
+    {
+      "@id": "sh:ConstraintComponent",
+      "sh:parameter": {
+        "@id": "sh:Parameter"
+      },
+      "_counts": {
+        "sh:parameter": {
+          "sh:Parameter": 38
+        }
+      }
+    },
+    {
+      "@id": "sh:Parameter",
+      "sh:nodeKind": {
+        "@id": "sh:NodeKind"
+      },
+      "sh:maxCount": {
+        "@type": "xsd:integer"
+      },
+      "sh:optional": {
+        "@type": "xsd:boolean"
+      },
+      "sh:datatype": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sh:nodeKind": {
+          "sh:NodeKind": 10
+        },
+        "sh:maxCount": {
+          "Literal:xsd:integer": 13
+        },
+        "sh:optional": {
+          "Literal:xsd:boolean": 4
+        },
+        "sh:datatype": {
+          "Resource": 12
+        }
+      }
+    },
+    {
+      "@id": "ensembl:protein",
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5173747
+        }
+      }
+    },
+    {
+      "@id": "foaf:Organization",
+      "foaf:homepage": {
+        "@type": "xsd:string"
+      },
+      "foaf:name": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "foaf:homepage": {
+          "Literal:xsd:string": 6
+        },
+        "foaf:name": {
+          "Literal:xsd:string": 6
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T15:37:00.120879+00:00",
+    "endpoint": "https://sparql.omabrowser.org/sparql/",
+    "dataset_name": "omabrowser",
+    "pattern_count": 498,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:SymmetricProperty": "SymmetricProperty",
+    "skos:altLabel": "altLabel",
+    "vann:example": "example",
+    "owl:Class": "Class",
+    "owl:complementOf": "complementOf",
+    "owl:equivalentClass": "equivalentClass",
+    "owl:Restriction": "Restriction",
+    "owl:Ontology": "Ontology",
+    "owl:versionIRI": "versionIRI",
+    "owl:ObjectProperty": "ObjectProperty",
+    "owl:inverseOf": "inverseOf",
+    "owl:disjointWith": "disjointWith",
+    "oboinowl:inSubset": "inSubset",
+    "owl:AnnotationProperty": "AnnotationProperty",
+    "owl:onProperty": "onProperty",
+    "owl:allValuesFrom": "allValuesFrom",
+    "owl:someValuesFrom": "someValuesFrom",
+    "owl:onClass": "onClass",
+    "owl:imports": "imports",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "owl:TransitiveProperty": "TransitiveProperty",
+    "owl:versionInfo": "versionInfo",
+    "skos:scopeNote": "scopeNote",
+    "skos:definition": "definition",
+    "sh:SPARQLExecutable": "SPARQLExecutable",
+    "sh:select": "select",
+    "sh:SPARQLSelectExecutable": "SPARQLSelectExecutable",
+    "ontology:file_path": "file_path",
+    "ontology:file_name": "file_name",
+    "ontology:project": "project",
+    "dc:title": "title",
+    "dcterms:created": "created",
+    "dcterms:modified": "modified",
+    "orth:OrthologyDataset": "Orthology datasource",
+    "pav:version": "Version",
+    "skos:example": "example",
+    "dcterms:title": "title",
+    "dc:identifier": "identifier",
+    "dcterms:description": "description",
+    "oboinowl:hasDbXref": "hasDbXref",
+    "vocab:introduction": "introduction",
+    "dcterms:abstract": "abstract",
+    "dcterms:bibliographicCitation": "bibliographicCitation",
+    "dcterms:issue": "issue",
+    "vann:preferredNamespacePrefix": "preferredNamespacePrefix",
+    "schema:codeRepository": "codeRepository",
+    "oboinowl:hasBroadSynonym": "hasBroadSynonym",
+    "iao:0000115": "IAO_0000115",
+    "oboinowl:hasExactSynonym": "hasExactSynonym",
+    "oboinowl:hasOBONamespace": "hasOBONamespace",
+    "oboinowl:id": "id",
+    "dc:description": "description",
+    "dc:date": "date",
+    "owl:hasValue": "hasValue",
+    "owl:maxCardinality": "maxCardinality",
+    "owl:maxQualifiedCardinality": "maxQualifiedCardinality",
+    "owl:qualifiedCardinality": "qualifiedCardinality",
+    "owl:priorVersion": "priorVersion",
+    "schema:target": "target",
+    "ontology:federatesWith": "federatesWith",
+    "grddl:namespaceTransformation": "namespaceTransformation",
+    "sh:suggestedShapesGraph": "suggested shapes graph",
+    "owl:backwardCompatibleWith": "backwardCompatibleWith",
+    "dcterms:publisher": "publisher",
+    "dcterms:license": "license",
+    "dcterms:creator": "creator",
+    "bibo:status": "status",
+    "vann:preferredNamespaceUri": "preferredNamespaceUri",
+    "schema:image": "image",
+    "dcterms:contributor": "contributor",
+    "owl:onDataRange": "onDataRange",
+    "orth:Protein": "Protein",
+    "lscr:xrefUniprot": "see also UniProt cross-reference",
+    "uniprot.core:Protein": "Protein",
+    "ro:0001018": "contained in",
+    "sio:000750": "database",
+    "orth:organism": "in organism",
+    "orth:Organism": "Organism",
+    "lscr:xrefSwissProt": "xrefSwissProt",
+    "sio:010079": "is encoded by",
+    "orth:Gene": "Gene",
+    "lscr:xrefEnsemblProtein": "see also Ensembl protein",
+    "ensembl:protein": "protein",
+    "lscr:xrefEnsemblTranscript": "see also Ensembl transcript",
+    "so:0000673": "Transcript",
+    "so:0000704": "Gene",
+    "orth:HierarchicalGeneTree": "Hierarchical gene tree",
+    "cdao:0000148": "has_Root",
+    "orth:OrthologsCluster": "Cluster of orthologs",
+    "orth:hasHomologousMember": "has homologous member",
+    "orth:hasTaxonomicRange": "has taxonomic level",
+    "orth:TaxonomicRange": "Taxonomic level",
+    "orth:ParalogsCluster": "Cluster of paralogs",
+    "uniprot.core:Taxon": "Taxon",
+    "orth:inDataset": "in dataset",
+    "uniprot.core:rank": "rank",
+    "owl:NamedIndividual": "NamedIndividual",
+    "uniprot.core:Rank": "Taxon rank",
+    "ro:0002162": "in taxon",
+    "dcterms:identifier": "identifier",
+    "orth:taxRange": "taxonomic level",
+    "orth:taxRangeId": "taxonomic level identifier",
+    "uniprot.core:scientificName": "scientificName",
+    "uniprot.core:mnemonic": "Mnemonic",
+    "foaf:homepage": "homepage",
+    "foaf:name": "name",
+    "lscr:xrefEMBLSequence": "see also EMBL sequence",
+    "lscr:xrefNCBIProtein": "see also NCBI protein",
+    "lscr:xrefNCBIRefSeq": "see also NCBI RefSeq",
+    "lscr:xrefEnsemblGene": "see also Ensembl gene",
+    "lscr:xrefNCBIGene": "see also NCBI gene",
+    "void:Dataset": "Dataset",
+    "void:property": "property",
+    "owl:OntologyProperty": "OntologyProperty",
+    "void:class": "class",
+    "void:propertyPartition": "propertyPartition",
+    "void:classPartition": "classPartition",
+    "voidext:datatypePartition": "datatypePartition",
+    "owl:FunctionalProperty": "FunctionalProperty",
+    "void:Linkset": "Linkset",
+    "voidext:linkPredicateDomain": "linkPredicateDomain",
+    "voidext:SimpleLinkSet": "SimpleLinkSet",
+    "voidext:linkPredicateRange": "linkPredicateRange",
+    "void:linkPredicate": "linkPredicate",
+    "void:subjectsTarget": "subjectsTarget",
+    "voidext:isSubsetOf": "isSubsetOf",
+    "void:objectsTarget": "objectsTarget",
+    "sh:ConstraintComponent": "ConstraintComponent",
+    "sh:parameter": "parameter",
+    "sh:Parameter": "Parameter",
+    "sh:nodeKind": "node kind",
+    "sh:NodeKind": "NodeKind",
+    "void:entities": "entities",
+    "void:triples": "triples",
+    "dcterms:issued": "issued",
+    "foaf:Organization": "Organization",
+    "sh:maxCount": "maxCount",
+    "sh:optional": "optional",
+    "voidext:datatype": "datatype",
+    "voidext:subjectPartition": "subjectPartition",
+    "sh:datatype": "datatype",
+    "void:sparqlEndpoint": "sparqlEndpoint"
+  }
+}

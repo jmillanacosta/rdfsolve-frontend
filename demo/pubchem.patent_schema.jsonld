@@ -1,0 +1,204 @@
+{
+  "@context": {
+    "patent": "http://data.epo.org/linked-data/def/patent/",
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "cito": "http://purl.org/spar/cito/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#"
+  },
+  "@graph": [
+    {
+      "@id": "patent:Publication",
+      "patent:applicantVC": {
+        "@id": "vocabulary:PatentAssignee"
+      },
+      "cito:isCitedBy": [
+        {
+          "@id": "patent:Publication"
+        },
+        {
+          "@id": "vocabulary:Patent"
+        }
+      ],
+      "patent:inventorVC": {
+        "@id": "vocabulary:PatentInventor"
+      },
+      "patent:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "patent:filingDate": {
+        "@type": "xsd:date"
+      },
+      "patent:titleOfInvention": {
+        "@type": "xsd:string"
+      },
+      "patent:publicationNumber": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "patent:grantDate": {
+        "@type": "xsd:date"
+      },
+      "vocabulary:priorityDate": {
+        "@type": "xsd:date"
+      },
+      "_counts": {
+        "patent:applicantVC": {
+          "vocabulary:PatentAssignee": 74657321
+        },
+        "cito:isCitedBy": {
+          "patent:Publication": 297802693,
+          "vocabulary:Patent": 297802693
+        },
+        "patent:inventorVC": {
+          "vocabulary:PatentInventor": 175392313
+        },
+        "patent:publicationDate": {
+          "Literal:xsd:date": 72847441
+        },
+        "patent:filingDate": {
+          "Literal:xsd:date": 72359881
+        },
+        "patent:titleOfInvention": {
+          "Literal:xsd:string": 71484847
+        },
+        "patent:publicationNumber": {
+          "Literal:xsd:string": 73126479
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 59992486
+        },
+        "patent:grantDate": {
+          "Literal:xsd:date": 29071386
+        },
+        "vocabulary:priorityDate": {
+          "Literal:xsd:date": 72382303
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:Patent",
+      "cito:isCitedBy": [
+        {
+          "@id": "vocabulary:Patent"
+        },
+        {
+          "@id": "patent:Publication"
+        }
+      ],
+      "patent:applicantVC": {
+        "@id": "vocabulary:PatentAssignee"
+      },
+      "patent:inventorVC": {
+        "@id": "vocabulary:PatentInventor"
+      },
+      "patent:grantDate": {
+        "@type": "xsd:date"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "patent:publicationNumber": {
+        "@type": "xsd:string"
+      },
+      "patent:publicationDate": {
+        "@type": "xsd:date"
+      },
+      "vocabulary:priorityDate": {
+        "@type": "xsd:date"
+      },
+      "patent:filingDate": {
+        "@type": "xsd:date"
+      },
+      "patent:titleOfInvention": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "cito:isCitedBy": {
+          "vocabulary:Patent": 297802693,
+          "patent:Publication": 297802693
+        },
+        "patent:applicantVC": {
+          "vocabulary:PatentAssignee": 74657321
+        },
+        "patent:inventorVC": {
+          "vocabulary:PatentInventor": 175392313
+        },
+        "patent:grantDate": {
+          "Literal:xsd:date": 29071386
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 59992486
+        },
+        "patent:publicationNumber": {
+          "Literal:xsd:string": 73126479
+        },
+        "patent:publicationDate": {
+          "Literal:xsd:date": 72847441
+        },
+        "vocabulary:priorityDate": {
+          "Literal:xsd:date": 72382303
+        },
+        "patent:filingDate": {
+          "Literal:xsd:date": 72359881
+        },
+        "patent:titleOfInvention": {
+          "Literal:xsd:string": 71484847
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:PatentInventor",
+      "vcard:fn": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "vcard:fn": {
+          "Literal:xsd:string": 49546056
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:PatentAssignee",
+      "vcard:fn": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "vcard:fn": {
+          "Literal:xsd:string": 7016766
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T12:49:59.560117+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.patent",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/patent"
+    ],
+    "pattern_count": 26,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "patent:Publication": "Publication",
+    "patent:applicantVC": "applicantVC",
+    "vocabulary:PatentAssignee": "PatentAssignee",
+    "cito:isCitedBy": "isCitedBy",
+    "vocabulary:Patent": "Patent",
+    "patent:inventorVC": "inventorVC",
+    "vocabulary:PatentInventor": "PatentInventor",
+    "patent:publicationDate": "publicationDate",
+    "patent:grantDate": "grantDate",
+    "dcterms:abstract": "abstract",
+    "patent:publicationNumber": "publicationNumber",
+    "patent:filingDate": "filingDate",
+    "vcard:fn": "fn",
+    "vocabulary:priorityDate": "priorityDate",
+    "patent:titleOfInvention": "titleOfInvention"
+  }
+}

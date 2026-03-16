@@ -1,5 +1,5 @@
 /**
- * Path List Component — Full Path Builder & Manager
+ * Path List Component - Full Path Builder & Manager
  *
  * PATH BUILDING:
  *  1. "Add Path" button enters path-drawing mode
@@ -263,7 +263,7 @@ export class PathList extends HTMLElement {
         const prev = nodes[i - 1];
         // Find ALL edge labels between prev and current in the schema
         const edgeLabels = this.findAllEdgeLabels(schema, prev.nodeUri, n.nodeUri);
-        lines.push(`  —[${edgeLabels.join(', ')}]→`);
+        lines.push(`  -[${edgeLabels.join(', ')}]->`);
         lines.push(`[${n.label}]`);
       }
     }
@@ -272,8 +272,8 @@ export class PathList extends HTMLElement {
   }
 
   /**
-   * Find ALL predicate labels connecting fromUri → toUri (outgoing)
-   * and toUri → fromUri (incoming, shown with ← prefix).
+   * Find ALL predicate labels connecting fromUri -> toUri (outgoing)
+   * and toUri -> fromUri (incoming, shown with ← prefix).
    */
   private findAllEdgeLabels(
     schema: import('../types').CanonicalSchema | null,
@@ -285,7 +285,7 @@ export class PathList extends HTMLElement {
     const labels: string[] = [];
     const seen = new Set<string>();
 
-    // Check outgoing from fromUri → toUri
+    // Check outgoing from fromUri -> toUri
     const outTriples = schema.outgoing.get(fromUri) || [];
     for (const t of outTriples) {
       if (t.object === toUri && t.objectType === 'uri') {
@@ -294,7 +294,7 @@ export class PathList extends HTMLElement {
       }
     }
 
-    // Check reverse edges: toUri → fromUri (only if different nodes)
+    // Check reverse edges: toUri -> fromUri (only if different nodes)
     if (fromUri !== toUri) {
       const outTriples2 = schema.outgoing.get(toUri) || [];
       for (const t of outTriples2) {
@@ -332,7 +332,7 @@ export class PathList extends HTMLElement {
       const segmentPath = diagram.findShortestPath(from.nodeUri, to.nodeUri, { maxDepth: 10 });
 
       if (!segmentPath || segmentPath.edges.length === 0) {
-        // No path found — add bare edge
+        // No path found - add bare edge
         if (fullNodeUris.length === 0) fullNodeUris.push(from.nodeUri);
         fullNodeUris.push(to.nodeUri);
         const bareEdge: PathEdgeInfo = {
@@ -385,7 +385,7 @@ export class PathList extends HTMLElement {
     }
 
     // Build label showing all edges when there's only one hop
-    const label = `${nodes[0].label} → ${nodes[nodes.length - 1].label}`;
+    const label = `${nodes[0].label} -> ${nodes[nodes.length - 1].label}`;
 
     const edgePath: EdgePath = {
       nodes: fullNodeUris,
@@ -429,7 +429,7 @@ export class PathList extends HTMLElement {
       const lightBg = hexToRgba(color, 0.08);
       const borderColor = hexToRgba(color, 0.35);
 
-      // Build triple-pattern text — show all alternatives per hop
+      // Build triple-pattern text - show all alternatives per hop
       const tripleLines: string[] = [];
       if (p.edgeData && p.edgeData.length > 0) {
         for (let h = 0; h < p.edgeData.length; h++) {

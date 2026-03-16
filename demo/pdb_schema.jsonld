@@ -1,0 +1,4262 @@
+{
+  "@context": {
+    "pdbxwithvr": "http://rdf.wwpdb.org/schema/pdbx-with-vrptx-v50.owl#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "pdbxwithvr:chem_comp",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:link_to_parent_chem_comp": [
+        {
+          "@id": "pdbxwithvr:datablock"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "pdbxwithvr:referenced_by_pdbx_chem_comp_pcm": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_pcm"
+      },
+      "pdbxwithvr:link_to_chem_comp": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:referenced_by_pdbx_unobs_or_zero_occ_residues": {
+        "@id": "pdbxwithvr:pdbx_unobs_or_zero_occ_residues"
+      },
+      "pdbxwithvr:referenced_by_pdbx_unobs_or_zero_occ_atoms": {
+        "@id": "pdbxwithvr:pdbx_unobs_or_zero_occ_atoms"
+      },
+      "pdbxwithvr:referenced_by_pdbx_distant_solvent_atoms": {
+        "@id": "pdbxwithvr:pdbx_distant_solvent_atoms"
+      },
+      "pdbxwithvr:chem_comp.formula": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.formula_weight": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:chem_comp.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.name": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_ambiguous_flag": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_formal_charge": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:chem_comp.pdbx_ideal_coordinates_details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_ideal_coordinates_missing_flag": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_initial_date": {
+        "@type": "xsd:date"
+      },
+      "pdbxwithvr:chem_comp.pdbx_model_coordinates_db_code": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_model_coordinates_missing_flag": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_modified_date": {
+        "@type": "xsd:date"
+      },
+      "pdbxwithvr:chem_comp.pdbx_processing_site": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_release_status": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.three_letter_code": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_synonyms": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.mon_nstd_parent_comp_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.one_letter_code": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_subcomponent_list": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_pcm": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_replaced_by": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_replaces": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.pdbx_model_coordinates_details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:chem_comp.mon_nstd_flag": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:chem_compCategory",
+      "pdbxwithvr:has_chem_comp": {
+        "@id": "pdbxwithvr:chem_comp"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:chem_comp_atom",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:reference_to_chem_comp": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:chem_comp_atomCategory",
+      "pdbxwithvr:has_chem_comp_atom": {
+        "@id": "pdbxwithvr:chem_comp_atom"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:chem_comp_bond",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:reference_to_chem_comp": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:reference_to_chem_comp_atom": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:chem_comp_bondCategory",
+      "pdbxwithvr:has_chem_comp_bond": {
+        "@id": "pdbxwithvr:chem_comp_bond"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:datablock",
+      "pdbxwithvr:has_chem_compCategory": {
+        "@id": "pdbxwithvr:chem_compCategory"
+      },
+      "pdbxwithvr:has_chem_comp_atomCategory": {
+        "@id": "pdbxwithvr:chem_comp_atomCategory"
+      },
+      "pdbxwithvr:has_chem_comp_bondCategory": {
+        "@id": "pdbxwithvr:chem_comp_bondCategory"
+      },
+      "pdbxwithvr:has_pdbx_chem_comp_auditCategory": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_auditCategory"
+      },
+      "pdbxwithvr:has_pdbx_chem_comp_descriptorCategory": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_descriptorCategory"
+      },
+      "pdbxwithvr:has_pdbx_chem_comp_identifierCategory": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_identifierCategory"
+      },
+      "pdbxwithvr:has_pdbx_chem_comp_synonymsCategory": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_synonymsCategory"
+      },
+      "pdbxwithvr:has_pdbx_chem_comp_featureCategory": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_featureCategory"
+      },
+      "pdbxwithvr:has_pdbx_chem_comp_pcmCategory": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_pcmCategory"
+      },
+      "pdbxwithvr:has_pdbx_chem_comp_atom_relatedCategory": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_atom_relatedCategory"
+      },
+      "pdbxwithvr:has_pdbx_chem_comp_relatedCategory": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_relatedCategory"
+      },
+      "pdbxwithvr:has_pdbx_family_prd_auditCategory": {
+        "@id": "pdbxwithvr:pdbx_family_prd_auditCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_molecule_annotationCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_molecule_annotationCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_molecule_familyCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_molecule_familyCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_molecule_featuresCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_molecule_featuresCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_molecule_listCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_molecule_listCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_molecule_synonymsCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_molecule_synonymsCategory"
+      },
+      "pdbxwithvr:has_citationCategory": {
+        "@id": "pdbxwithvr:citationCategory"
+      },
+      "pdbxwithvr:has_citation_authorCategory": {
+        "@id": "pdbxwithvr:citation_authorCategory"
+      },
+      "pdbxwithvr:has_atom_sitesCategory": {
+        "@id": "pdbxwithvr:atom_sitesCategory"
+      },
+      "pdbxwithvr:has_atom_typeCategory": {
+        "@id": "pdbxwithvr:atom_typeCategory"
+      },
+      "pdbxwithvr:has_audit_authorCategory": {
+        "@id": "pdbxwithvr:audit_authorCategory"
+      },
+      "pdbxwithvr:has_audit_conformCategory": {
+        "@id": "pdbxwithvr:audit_conformCategory"
+      },
+      "pdbxwithvr:has_cellCategory": {
+        "@id": "pdbxwithvr:cellCategory"
+      },
+      "pdbxwithvr:has_database_2Category": {
+        "@id": "pdbxwithvr:database_2Category"
+      },
+      "pdbxwithvr:has_em_3d_fittingCategory": {
+        "@id": "pdbxwithvr:em_3d_fittingCategory"
+      },
+      "pdbxwithvr:has_em_3d_fitting_listCategory": {
+        "@id": "pdbxwithvr:em_3d_fitting_listCategory"
+      },
+      "pdbxwithvr:has_em_3d_reconstructionCategory": {
+        "@id": "pdbxwithvr:em_3d_reconstructionCategory"
+      },
+      "pdbxwithvr:has_em_adminCategory": {
+        "@id": "pdbxwithvr:em_adminCategory"
+      },
+      "pdbxwithvr:has_em_bufferCategory": {
+        "@id": "pdbxwithvr:em_bufferCategory"
+      },
+      "pdbxwithvr:has_em_ctf_correctionCategory": {
+        "@id": "pdbxwithvr:em_ctf_correctionCategory"
+      },
+      "pdbxwithvr:has_em_entity_assemblyCategory": {
+        "@id": "pdbxwithvr:em_entity_assemblyCategory"
+      },
+      "pdbxwithvr:has_em_entity_assembly_molwtCategory": {
+        "@id": "pdbxwithvr:em_entity_assembly_molwtCategory"
+      },
+      "pdbxwithvr:has_em_entity_assembly_naturalsourceCategory": {
+        "@id": "pdbxwithvr:em_entity_assembly_naturalsourceCategory"
+      },
+      "pdbxwithvr:has_em_entity_assembly_recombinantCategory": {
+        "@id": "pdbxwithvr:em_entity_assembly_recombinantCategory"
+      },
+      "pdbxwithvr:has_em_experimentCategory": {
+        "@id": "pdbxwithvr:em_experimentCategory"
+      },
+      "pdbxwithvr:has_em_image_processingCategory": {
+        "@id": "pdbxwithvr:em_image_processingCategory"
+      },
+      "pdbxwithvr:has_em_image_recordingCategory": {
+        "@id": "pdbxwithvr:em_image_recordingCategory"
+      },
+      "pdbxwithvr:has_em_image_scansCategory": {
+        "@id": "pdbxwithvr:em_image_scansCategory"
+      },
+      "pdbxwithvr:has_em_imagingCategory": {
+        "@id": "pdbxwithvr:em_imagingCategory"
+      },
+      "pdbxwithvr:has_em_sample_supportCategory": {
+        "@id": "pdbxwithvr:em_sample_supportCategory"
+      },
+      "pdbxwithvr:has_em_softwareCategory": {
+        "@id": "pdbxwithvr:em_softwareCategory"
+      },
+      "pdbxwithvr:has_em_specimenCategory": {
+        "@id": "pdbxwithvr:em_specimenCategory"
+      },
+      "pdbxwithvr:has_em_vitrificationCategory": {
+        "@id": "pdbxwithvr:em_vitrificationCategory"
+      },
+      "pdbxwithvr:has_entityCategory": {
+        "@id": "pdbxwithvr:entityCategory"
+      },
+      "pdbxwithvr:has_entity_polyCategory": {
+        "@id": "pdbxwithvr:entity_polyCategory"
+      },
+      "pdbxwithvr:has_entity_poly_seqCategory": {
+        "@id": "pdbxwithvr:entity_poly_seqCategory"
+      },
+      "pdbxwithvr:has_entity_src_genCategory": {
+        "@id": "pdbxwithvr:entity_src_genCategory"
+      },
+      "pdbxwithvr:has_entryCategory": {
+        "@id": "pdbxwithvr:entryCategory"
+      },
+      "pdbxwithvr:has_exptlCategory": {
+        "@id": "pdbxwithvr:exptlCategory"
+      },
+      "pdbxwithvr:has_pdbx_SG_projectCategory": {
+        "@id": "pdbxwithvr:pdbx_SG_projectCategory"
+      },
+      "pdbxwithvr:has_pdbx_audit_revision_detailsCategory": {
+        "@id": "pdbxwithvr:pdbx_audit_revision_detailsCategory"
+      },
+      "pdbxwithvr:has_pdbx_audit_revision_historyCategory": {
+        "@id": "pdbxwithvr:pdbx_audit_revision_historyCategory"
+      },
+      "pdbxwithvr:has_pdbx_audit_supportCategory": {
+        "@id": "pdbxwithvr:pdbx_audit_supportCategory"
+      },
+      "pdbxwithvr:has_pdbx_contact_authorCategory": {
+        "@id": "pdbxwithvr:pdbx_contact_authorCategory"
+      },
+      "pdbxwithvr:has_pdbx_database_relatedCategory": {
+        "@id": "pdbxwithvr:pdbx_database_relatedCategory"
+      },
+      "pdbxwithvr:has_pdbx_database_statusCategory": {
+        "@id": "pdbxwithvr:pdbx_database_statusCategory"
+      },
+      "pdbxwithvr:has_pdbx_entry_detailsCategory": {
+        "@id": "pdbxwithvr:pdbx_entry_detailsCategory"
+      },
+      "pdbxwithvr:has_pdbx_initial_refinement_modelCategory": {
+        "@id": "pdbxwithvr:pdbx_initial_refinement_modelCategory"
+      },
+      "pdbxwithvr:has_pdbx_poly_seq_schemeCategory": {
+        "@id": "pdbxwithvr:pdbx_poly_seq_schemeCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_assemblyCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_assemblyCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_assembly_auth_evidenceCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_assembly_auth_evidenceCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_assembly_genCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_assembly_genCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_oper_listCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_oper_listCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_sheet_hbondCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_sheet_hbondCategory"
+      },
+      "pdbxwithvr:has_pdbx_unobs_or_zero_occ_atomsCategory": {
+        "@id": "pdbxwithvr:pdbx_unobs_or_zero_occ_atomsCategory"
+      },
+      "pdbxwithvr:has_pdbx_unobs_or_zero_occ_residuesCategory": {
+        "@id": "pdbxwithvr:pdbx_unobs_or_zero_occ_residuesCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_torsionCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_torsionCategory"
+      },
+      "pdbxwithvr:has_refineCategory": {
+        "@id": "pdbxwithvr:refineCategory"
+      },
+      "pdbxwithvr:has_refine_ls_restrCategory": {
+        "@id": "pdbxwithvr:refine_ls_restrCategory"
+      },
+      "pdbxwithvr:has_structCategory": {
+        "@id": "pdbxwithvr:structCategory"
+      },
+      "pdbxwithvr:has_struct_asymCategory": {
+        "@id": "pdbxwithvr:struct_asymCategory"
+      },
+      "pdbxwithvr:has_struct_confCategory": {
+        "@id": "pdbxwithvr:struct_confCategory"
+      },
+      "pdbxwithvr:has_struct_conf_typeCategory": {
+        "@id": "pdbxwithvr:struct_conf_typeCategory"
+      },
+      "pdbxwithvr:has_struct_keywordsCategory": {
+        "@id": "pdbxwithvr:struct_keywordsCategory"
+      },
+      "pdbxwithvr:has_struct_refCategory": {
+        "@id": "pdbxwithvr:struct_refCategory"
+      },
+      "pdbxwithvr:has_struct_ref_seqCategory": {
+        "@id": "pdbxwithvr:struct_ref_seqCategory"
+      },
+      "pdbxwithvr:has_struct_ref_seq_difCategory": {
+        "@id": "pdbxwithvr:struct_ref_seq_difCategory"
+      },
+      "pdbxwithvr:has_struct_sheetCategory": {
+        "@id": "pdbxwithvr:struct_sheetCategory"
+      },
+      "pdbxwithvr:has_struct_sheet_orderCategory": {
+        "@id": "pdbxwithvr:struct_sheet_orderCategory"
+      },
+      "pdbxwithvr:has_struct_sheet_rangeCategory": {
+        "@id": "pdbxwithvr:struct_sheet_rangeCategory"
+      },
+      "pdbxwithvr:has_symmetryCategory": {
+        "@id": "pdbxwithvr:symmetryCategory"
+      },
+      "pdbxwithvr:link_to_vrpt": [
+        {
+          "@id": "pdbxwithvr:datablock"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "pdbxwithvr:has_database_PDB_matrixCategory": {
+        "@id": "pdbxwithvr:database_PDB_matrixCategory"
+      },
+      "pdbxwithvr:has_diffrnCategory": {
+        "@id": "pdbxwithvr:diffrnCategory"
+      },
+      "pdbxwithvr:has_diffrn_detectorCategory": {
+        "@id": "pdbxwithvr:diffrn_detectorCategory"
+      },
+      "pdbxwithvr:has_diffrn_radiationCategory": {
+        "@id": "pdbxwithvr:diffrn_radiationCategory"
+      },
+      "pdbxwithvr:has_diffrn_radiation_wavelengthCategory": {
+        "@id": "pdbxwithvr:diffrn_radiation_wavelengthCategory"
+      },
+      "pdbxwithvr:has_diffrn_sourceCategory": {
+        "@id": "pdbxwithvr:diffrn_sourceCategory"
+      },
+      "pdbxwithvr:has_exptl_crystalCategory": {
+        "@id": "pdbxwithvr:exptl_crystalCategory"
+      },
+      "pdbxwithvr:has_exptl_crystal_growCategory": {
+        "@id": "pdbxwithvr:exptl_crystal_growCategory"
+      },
+      "pdbxwithvr:has_pdbx_audit_revision_categoryCategory": {
+        "@id": "pdbxwithvr:pdbx_audit_revision_categoryCategory"
+      },
+      "pdbxwithvr:has_pdbx_audit_revision_groupCategory": {
+        "@id": "pdbxwithvr:pdbx_audit_revision_groupCategory"
+      },
+      "pdbxwithvr:has_pdbx_audit_revision_itemCategory": {
+        "@id": "pdbxwithvr:pdbx_audit_revision_itemCategory"
+      },
+      "pdbxwithvr:has_pdbx_entity_nonpolyCategory": {
+        "@id": "pdbxwithvr:pdbx_entity_nonpolyCategory"
+      },
+      "pdbxwithvr:has_pdbx_nonpoly_schemeCategory": {
+        "@id": "pdbxwithvr:pdbx_nonpoly_schemeCategory"
+      },
+      "pdbxwithvr:has_pdbx_sifts_unp_segmentsCategory": {
+        "@id": "pdbxwithvr:pdbx_sifts_unp_segmentsCategory"
+      },
+      "pdbxwithvr:has_pdbx_sifts_xref_db_segmentsCategory": {
+        "@id": "pdbxwithvr:pdbx_sifts_xref_db_segmentsCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_conn_angleCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_conn_angleCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_special_symmetryCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_special_symmetryCategory"
+      },
+      "pdbxwithvr:has_pdbx_xplor_fileCategory": {
+        "@id": "pdbxwithvr:pdbx_xplor_fileCategory"
+      },
+      "pdbxwithvr:has_refine_analyzeCategory": {
+        "@id": "pdbxwithvr:refine_analyzeCategory"
+      },
+      "pdbxwithvr:has_refine_histCategory": {
+        "@id": "pdbxwithvr:refine_histCategory"
+      },
+      "pdbxwithvr:has_refine_ls_shellCategory": {
+        "@id": "pdbxwithvr:refine_ls_shellCategory"
+      },
+      "pdbxwithvr:has_reflnsCategory": {
+        "@id": "pdbxwithvr:reflnsCategory"
+      },
+      "pdbxwithvr:has_reflns_shellCategory": {
+        "@id": "pdbxwithvr:reflns_shellCategory"
+      },
+      "pdbxwithvr:has_softwareCategory": {
+        "@id": "pdbxwithvr:softwareCategory"
+      },
+      "pdbxwithvr:has_struct_biolCategory": {
+        "@id": "pdbxwithvr:struct_biolCategory"
+      },
+      "pdbxwithvr:has_struct_connCategory": {
+        "@id": "pdbxwithvr:struct_connCategory"
+      },
+      "pdbxwithvr:has_struct_conn_typeCategory": {
+        "@id": "pdbxwithvr:struct_conn_typeCategory"
+      },
+      "pdbxwithvr:has_struct_siteCategory": {
+        "@id": "pdbxwithvr:struct_siteCategory"
+      },
+      "pdbxwithvr:has_struct_site_genCategory": {
+        "@id": "pdbxwithvr:struct_site_genCategory"
+      },
+      "pdbxwithvr:has_exptl_crystal_grow_compCategory": {
+        "@id": "pdbxwithvr:exptl_crystal_grow_compCategory"
+      },
+      "pdbxwithvr:has_ndb_struct_conf_naCategory": {
+        "@id": "pdbxwithvr:ndb_struct_conf_naCategory"
+      },
+      "pdbxwithvr:has_ndb_struct_na_base_pairCategory": {
+        "@id": "pdbxwithvr:ndb_struct_na_base_pairCategory"
+      },
+      "pdbxwithvr:has_ndb_struct_na_base_pair_stepCategory": {
+        "@id": "pdbxwithvr:ndb_struct_na_base_pair_stepCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_rmsd_angleCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_rmsd_angleCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_rmsd_bondCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_rmsd_bondCategory"
+      },
+      "pdbxwithvr:has_refine_B_isoCategory": {
+        "@id": "pdbxwithvr:refine_B_isoCategory"
+      },
+      "pdbxwithvr:has_refine_occupancyCategory": {
+        "@id": "pdbxwithvr:refine_occupancyCategory"
+      },
+      "pdbxwithvr:has_refine_ls_restr_ncsCategory": {
+        "@id": "pdbxwithvr:refine_ls_restr_ncsCategory"
+      },
+      "pdbxwithvr:has_struct_ncs_domCategory": {
+        "@id": "pdbxwithvr:struct_ncs_domCategory"
+      },
+      "pdbxwithvr:has_struct_ncs_ensCategory": {
+        "@id": "pdbxwithvr:struct_ncs_ensCategory"
+      },
+      "pdbxwithvr:has_struct_ncs_operCategory": {
+        "@id": "pdbxwithvr:struct_ncs_operCategory"
+      },
+      "pdbxwithvr:has_pdbx_prd_auditCategory": {
+        "@id": "pdbxwithvr:pdbx_prd_auditCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_entity_listCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_entity_listCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_entity_polyCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_entity_polyCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_entity_poly_linkCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_entity_poly_linkCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_entity_poly_seqCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_entity_poly_seqCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_entity_sequenceCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_entity_sequenceCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_entity_src_natCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_entity_src_natCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_moleculeCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_moleculeCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_close_contactCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_close_contactCategory"
+      },
+      "pdbxwithvr:link_to_pdb_src": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:has_pdbx_dcc_densityCategory": {
+        "@id": "pdbxwithvr:pdbx_dcc_densityCategory"
+      },
+      "pdbxwithvr:has_pdbx_dcc_density_corrCategory": {
+        "@id": "pdbxwithvr:pdbx_dcc_density_corrCategory"
+      },
+      "pdbxwithvr:has_pdbx_dcc_entity_geometryCategory": {
+        "@id": "pdbxwithvr:pdbx_dcc_entity_geometryCategory"
+      },
+      "pdbxwithvr:has_pdbx_dcc_geometryCategory": {
+        "@id": "pdbxwithvr:pdbx_dcc_geometryCategory"
+      },
+      "pdbxwithvr:has_pdbx_dcc_mapCategory": {
+        "@id": "pdbxwithvr:pdbx_dcc_mapCategory"
+      },
+      "pdbxwithvr:has_pdbx_dcc_map_overallCategory": {
+        "@id": "pdbxwithvr:pdbx_dcc_map_overallCategory"
+      },
+      "pdbxwithvr:has_pdbx_dcc_mon_geometryCategory": {
+        "@id": "pdbxwithvr:pdbx_dcc_mon_geometryCategory"
+      },
+      "pdbxwithvr:has_pdbx_percentile_conditionsCategory": {
+        "@id": "pdbxwithvr:pdbx_percentile_conditionsCategory"
+      },
+      "pdbxwithvr:has_pdbx_percentile_entity_viewCategory": {
+        "@id": "pdbxwithvr:pdbx_percentile_entity_viewCategory"
+      },
+      "pdbxwithvr:has_pdbx_percentile_listCategory": {
+        "@id": "pdbxwithvr:pdbx_percentile_listCategory"
+      },
+      "pdbxwithvr:has_pdbx_percentile_viewCategory": {
+        "@id": "pdbxwithvr:pdbx_percentile_viewCategory"
+      },
+      "pdbxwithvr:has_pdbx_validation_softwareCategory": {
+        "@id": "pdbxwithvr:pdbx_validation_softwareCategory"
+      },
+      "pdbxwithvr:has_struct_mon_protCategory": {
+        "@id": "pdbxwithvr:struct_mon_protCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_atom_inclusionCategory": {
+        "@id": "pdbxwithvr:pdbx_em_atom_inclusionCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_atom_inclusion_markerCategory": {
+        "@id": "pdbxwithvr:pdbx_em_atom_inclusion_markerCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_density_distributionCategory": {
+        "@id": "pdbxwithvr:pdbx_em_density_distributionCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_density_distribution_markerCategory": {
+        "@id": "pdbxwithvr:pdbx_em_density_distribution_markerCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_fsc_curveCategory": {
+        "@id": "pdbxwithvr:pdbx_em_fsc_curveCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_fsc_curve_markerCategory": {
+        "@id": "pdbxwithvr:pdbx_em_fsc_curve_markerCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_fsc_cutoff_curveCategory": {
+        "@id": "pdbxwithvr:pdbx_em_fsc_cutoff_curveCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_fsc_cutoff_curve_markerCategory": {
+        "@id": "pdbxwithvr:pdbx_em_fsc_cutoff_curve_markerCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_fsc_resolutionCategory": {
+        "@id": "pdbxwithvr:pdbx_em_fsc_resolutionCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_rapsCategory": {
+        "@id": "pdbxwithvr:pdbx_em_rapsCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_raps_markerCategory": {
+        "@id": "pdbxwithvr:pdbx_em_raps_markerCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_raw_rapsCategory": {
+        "@id": "pdbxwithvr:pdbx_em_raw_rapsCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_raw_raps_markerCategory": {
+        "@id": "pdbxwithvr:pdbx_em_raw_raps_markerCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_validate_map_modelCategory": {
+        "@id": "pdbxwithvr:pdbx_em_validate_map_modelCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_validate_map_model_entityCategory": {
+        "@id": "pdbxwithvr:pdbx_em_validate_map_model_entityCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_validate_map_model_overallCategory": {
+        "@id": "pdbxwithvr:pdbx_em_validate_map_model_overallCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_volume_estimateCategory": {
+        "@id": "pdbxwithvr:pdbx_em_volume_estimateCategory"
+      },
+      "pdbxwithvr:has_pdbx_em_volume_estimate_markerCategory": {
+        "@id": "pdbxwithvr:pdbx_em_volume_estimate_markerCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_entity_subcomponentsCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_entity_subcomponentsCategory"
+      },
+      "pdbxwithvr:has_entity_name_comCategory": {
+        "@id": "pdbxwithvr:entity_name_comCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_assembly_propCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_assembly_propCategory"
+      },
+      "pdbxwithvr:has_struct_mon_prot_cisCategory": {
+        "@id": "pdbxwithvr:struct_mon_prot_cisCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_mod_residueCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_mod_residueCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_planesCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_planesCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_symm_contactCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_symm_contactCategory"
+      },
+      "pdbxwithvr:has_entity_keywordsCategory": {
+        "@id": "pdbxwithvr:entity_keywordsCategory"
+      },
+      "pdbxwithvr:has_pdbx_refineCategory": {
+        "@id": "pdbxwithvr:pdbx_refineCategory"
+      },
+      "pdbxwithvr:has_struct_site_keywordsCategory": {
+        "@id": "pdbxwithvr:struct_site_keywordsCategory"
+      },
+      "pdbxwithvr:has_atom_sites_footnoteCategory": {
+        "@id": "pdbxwithvr:atom_sites_footnoteCategory"
+      },
+      "pdbxwithvr:has_pdbx_database_remarkCategory": {
+        "@id": "pdbxwithvr:pdbx_database_remarkCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_peptide_omegaCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_peptide_omegaCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_rmsd_torsionCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_rmsd_torsionCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_rmsd_torsions_atomCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_rmsd_torsions_atomCategory"
+      },
+      "pdbxwithvr:has_pdbx_entity_src_synCategory": {
+        "@id": "pdbxwithvr:pdbx_entity_src_synCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_ensembleCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_ensembleCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_refineCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_refineCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_softwareCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_softwareCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_nmr_ens_clustCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_nmr_ens_clustCategory"
+      },
+      "pdbxwithvr:has_pdbx_database_PDB_obs_sprCategory": {
+        "@id": "pdbxwithvr:pdbx_database_PDB_obs_sprCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_chiralCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_chiralCategory"
+      },
+      "pdbxwithvr:has_entity_name_sysCategory": {
+        "@id": "pdbxwithvr:entity_name_sysCategory"
+      },
+      "pdbxwithvr:has_pdbx_deposit_groupCategory": {
+        "@id": "pdbxwithvr:pdbx_deposit_groupCategory"
+      },
+      "pdbxwithvr:has_pdbx_distant_solvent_atomsCategory": {
+        "@id": "pdbxwithvr:pdbx_distant_solvent_atomsCategory"
+      },
+      "pdbxwithvr:has_pdbx_entity_instance_featureCategory": {
+        "@id": "pdbxwithvr:pdbx_entity_instance_featureCategory"
+      },
+      "pdbxwithvr:has_pdbx_refine_tlsCategory": {
+        "@id": "pdbxwithvr:pdbx_refine_tlsCategory"
+      },
+      "pdbxwithvr:has_pdbx_refine_tls_groupCategory": {
+        "@id": "pdbxwithvr:pdbx_refine_tls_groupCategory"
+      },
+      "pdbxwithvr:has_phasingCategory": {
+        "@id": "pdbxwithvr:phasingCategory"
+      },
+      "pdbxwithvr:has_struct_mon_nuclCategory": {
+        "@id": "pdbxwithvr:struct_mon_nuclCategory"
+      },
+      "pdbxwithvr:has_citation_editorCategory": {
+        "@id": "pdbxwithvr:citation_editorCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_main_chain_planeCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_main_chain_planeCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_exptlCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_exptlCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_exptl_sample_conditionsCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_exptl_sample_conditionsCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_sample_detailsCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_sample_detailsCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_spectrometerCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_spectrometerCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_nmr_ens_clust_genCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_nmr_ens_clust_genCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_nmr_ens_domCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_nmr_ens_domCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_nmr_ens_dom_limCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_nmr_ens_dom_limCategory"
+      },
+      "pdbxwithvr:has_struct_ncs_dom_limCategory": {
+        "@id": "pdbxwithvr:struct_ncs_dom_limCategory"
+      },
+      "pdbxwithvr:has_entity_src_natCategory": {
+        "@id": "pdbxwithvr:entity_src_natCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_polymer_linkageCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_polymer_linkageCategory"
+      },
+      "pdbxwithvr:has_pdbx_reflns_twinCategory": {
+        "@id": "pdbxwithvr:pdbx_reflns_twinCategory"
+      },
+      "pdbxwithvr:has_pdbx_branch_schemeCategory": {
+        "@id": "pdbxwithvr:pdbx_branch_schemeCategory"
+      },
+      "pdbxwithvr:has_pdbx_entity_branchCategory": {
+        "@id": "pdbxwithvr:pdbx_entity_branchCategory"
+      },
+      "pdbxwithvr:has_pdbx_entity_branch_descriptorCategory": {
+        "@id": "pdbxwithvr:pdbx_entity_branch_descriptorCategory"
+      },
+      "pdbxwithvr:has_pdbx_entity_branch_linkCategory": {
+        "@id": "pdbxwithvr:pdbx_entity_branch_linkCategory"
+      },
+      "pdbxwithvr:has_pdbx_entity_branch_listCategory": {
+        "@id": "pdbxwithvr:pdbx_entity_branch_listCategory"
+      },
+      "pdbxwithvr:has_pdbx_moleculeCategory": {
+        "@id": "pdbxwithvr:pdbx_moleculeCategory"
+      },
+      "pdbxwithvr:has_pdbx_molecule_featuresCategory": {
+        "@id": "pdbxwithvr:pdbx_molecule_featuresCategory"
+      },
+      "pdbxwithvr:has_space_groupCategory": {
+        "@id": "pdbxwithvr:space_groupCategory"
+      },
+      "pdbxwithvr:has_space_group_symopCategory": {
+        "@id": "pdbxwithvr:space_group_symopCategory"
+      },
+      "pdbxwithvr:has_struct_ncs_ens_genCategory": {
+        "@id": "pdbxwithvr:struct_ncs_ens_genCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_exptl_sampleCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_exptl_sampleCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_representativeCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_representativeCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_assigned_chem_shift_listCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_assigned_chem_shift_listCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_chem_shift_annotationCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_chem_shift_annotationCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_chem_shift_completenessCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_chem_shift_completenessCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_chem_shift_re_offsetCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_chem_shift_re_offsetCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_distance_violationCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_distance_violationCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_distance_violation_ensembleCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_distance_violation_ensembleCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_distance_violation_modelCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_distance_violation_modelCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_distance_violation_pluralCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_distance_violation_pluralCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_distance_violation_summaryCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_distance_violation_summaryCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_restraint_listCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_restraint_listCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_restraint_summaryCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_restraint_summaryCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_restraint_violationCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_restraint_violationCategory"
+      },
+      "pdbxwithvr:has_pdbx_phasing_MRCategory": {
+        "@id": "pdbxwithvr:pdbx_phasing_MRCategory"
+      },
+      "pdbxwithvr:has_em_buffer_componentCategory": {
+        "@id": "pdbxwithvr:em_buffer_componentCategory"
+      },
+      "pdbxwithvr:has_em_imaging_opticsCategory": {
+        "@id": "pdbxwithvr:em_imaging_opticsCategory"
+      },
+      "pdbxwithvr:has_em_particle_selectionCategory": {
+        "@id": "pdbxwithvr:em_particle_selectionCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_detailsCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_detailsCategory"
+      },
+      "pdbxwithvr:has_pdbx_serial_crystallography_data_reductionCategory": {
+        "@id": "pdbxwithvr:pdbx_serial_crystallography_data_reductionCategory"
+      },
+      "pdbxwithvr:has_pdbx_serial_crystallography_sample_deliveryCategory": {
+        "@id": "pdbxwithvr:pdbx_serial_crystallography_sample_deliveryCategory"
+      },
+      "pdbxwithvr:has_pdbx_serial_crystallography_sample_delivery_injectionCategory": {
+        "@id": "pdbxwithvr:pdbx_serial_crystallography_sample_delivery_injectionCategory"
+      },
+      "pdbxwithvr:has_em_single_particle_entityCategory": {
+        "@id": "pdbxwithvr:em_single_particle_entityCategory"
+      },
+      "pdbxwithvr:has_database_PDB_caveatCategory": {
+        "@id": "pdbxwithvr:database_PDB_caveatCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_rmsd_ringCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_rmsd_ringCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_rmsd_rings_atomCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_rmsd_rings_atomCategory"
+      },
+      "pdbxwithvr:has_em_helical_entityCategory": {
+        "@id": "pdbxwithvr:em_helical_entityCategory"
+      },
+      "pdbxwithvr:has_diffrn_reflnsCategory": {
+        "@id": "pdbxwithvr:diffrn_reflnsCategory"
+      },
+      "pdbxwithvr:has_pdbx_diffrn_reflns_shellCategory": {
+        "@id": "pdbxwithvr:pdbx_diffrn_reflns_shellCategory"
+      },
+      "pdbxwithvr:has_pdbx_related_exp_data_setCategory": {
+        "@id": "pdbxwithvr:pdbx_related_exp_data_setCategory"
+      },
+      "pdbxwithvr:has_pdbx_phasing_MAD_setCategory": {
+        "@id": "pdbxwithvr:pdbx_phasing_MAD_setCategory"
+      },
+      "pdbxwithvr:has_pdbx_phasing_MAD_set_shellCategory": {
+        "@id": "pdbxwithvr:pdbx_phasing_MAD_set_shellCategory"
+      },
+      "pdbxwithvr:has_pdbx_phasing_MAD_set_siteCategory": {
+        "@id": "pdbxwithvr:pdbx_phasing_MAD_set_siteCategory"
+      },
+      "pdbxwithvr:has_pdbx_phasing_MAD_shellCategory": {
+        "@id": "pdbxwithvr:pdbx_phasing_MAD_shellCategory"
+      },
+      "pdbxwithvr:has_pdbx_phasing_dmCategory": {
+        "@id": "pdbxwithvr:pdbx_phasing_dmCategory"
+      },
+      "pdbxwithvr:has_pdbx_phasing_dm_shellCategory": {
+        "@id": "pdbxwithvr:pdbx_phasing_dm_shellCategory"
+      },
+      "pdbxwithvr:has_phasing_MADCategory": {
+        "@id": "pdbxwithvr:phasing_MADCategory"
+      },
+      "pdbxwithvr:has_phasing_MAD_clustCategory": {
+        "@id": "pdbxwithvr:phasing_MAD_clustCategory"
+      },
+      "pdbxwithvr:has_phasing_MAD_exptCategory": {
+        "@id": "pdbxwithvr:phasing_MAD_exptCategory"
+      },
+      "pdbxwithvr:has_phasing_MAD_setCategory": {
+        "@id": "pdbxwithvr:phasing_MAD_setCategory"
+      },
+      "pdbxwithvr:has_phasing_setCategory": {
+        "@id": "pdbxwithvr:phasing_setCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_constraintsCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_constraintsCategory"
+      },
+      "pdbxwithvr:has_em_virus_entityCategory": {
+        "@id": "pdbxwithvr:em_virus_entityCategory"
+      },
+      "pdbxwithvr:has_em_virus_natural_hostCategory": {
+        "@id": "pdbxwithvr:em_virus_natural_hostCategory"
+      },
+      "pdbxwithvr:has_em_virus_shellCategory": {
+        "@id": "pdbxwithvr:em_virus_shellCategory"
+      },
+      "pdbxwithvr:has_pdbx_serial_crystallography_measurementCategory": {
+        "@id": "pdbxwithvr:pdbx_serial_crystallography_measurementCategory"
+      },
+      "pdbxwithvr:has_pdbx_serial_crystallography_sample_delivery_fixed_targetCategory": {
+        "@id": "pdbxwithvr:pdbx_serial_crystallography_sample_delivery_fixed_targetCategory"
+      },
+      "pdbxwithvr:has_auditCategory": {
+        "@id": "pdbxwithvr:auditCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_dihedral_angle_violationCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_dihedral_angle_violationCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_dihedral_angle_violation_ensembleCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_dihedral_angle_violation_ensembleCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_dihedral_angle_violation_modelCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_dihedral_angle_violation_modelCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_dihedral_angle_violation_pluralCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_dihedral_angle_violation_pluralCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_dihedral_angle_violation_summaryCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_dihedral_angle_violation_summaryCategory"
+      },
+      "pdbxwithvr:has_database_PDB_tvectCategory": {
+        "@id": "pdbxwithvr:database_PDB_tvectCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_molecule_related_structuresCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_molecule_related_structuresCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_entity_linkCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_entity_linkCategory"
+      },
+      "pdbxwithvr:has_pdbx_reference_entity_nonpolyCategory": {
+        "@id": "pdbxwithvr:pdbx_reference_entity_nonpolyCategory"
+      },
+      "pdbxwithvr:has_pdbx_coordinate_modelCategory": {
+        "@id": "pdbxwithvr:pdbx_coordinate_modelCategory"
+      },
+      "pdbxwithvr:has_pdbx_modification_featureCategory": {
+        "@id": "pdbxwithvr:pdbx_modification_featureCategory"
+      },
+      "pdbxwithvr:has_em_virus_syntheticCategory": {
+        "@id": "pdbxwithvr:em_virus_syntheticCategory"
+      },
+      "pdbxwithvr:has_em_3d_crystal_entityCategory": {
+        "@id": "pdbxwithvr:em_3d_crystal_entityCategory"
+      },
+      "pdbxwithvr:has_em_crystal_formationCategory": {
+        "@id": "pdbxwithvr:em_crystal_formationCategory"
+      },
+      "pdbxwithvr:has_em_diffractionCategory": {
+        "@id": "pdbxwithvr:em_diffractionCategory"
+      },
+      "pdbxwithvr:has_em_diffraction_shellCategory": {
+        "@id": "pdbxwithvr:em_diffraction_shellCategory"
+      },
+      "pdbxwithvr:has_em_diffraction_statsCategory": {
+        "@id": "pdbxwithvr:em_diffraction_statsCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_unmapped_chem_shiftCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_unmapped_chem_shiftCategory"
+      },
+      "pdbxwithvr:has_pdbx_validate_nmr_chem_shiftCategory": {
+        "@id": "pdbxwithvr:pdbx_validate_nmr_chem_shiftCategory"
+      },
+      "pdbxwithvr:has_em_volume_selectionCategory": {
+        "@id": "pdbxwithvr:em_volume_selectionCategory"
+      },
+      "pdbxwithvr:has_pdbx_point_symmetryCategory": {
+        "@id": "pdbxwithvr:pdbx_point_symmetryCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_ensemble_rmsCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_ensemble_rmsCategory"
+      },
+      "pdbxwithvr:has_phasing_MIRCategory": {
+        "@id": "pdbxwithvr:phasing_MIRCategory"
+      },
+      "pdbxwithvr:has_phasing_MIR_derCategory": {
+        "@id": "pdbxwithvr:phasing_MIR_derCategory"
+      },
+      "pdbxwithvr:has_phasing_MIR_der_shellCategory": {
+        "@id": "pdbxwithvr:phasing_MIR_der_shellCategory"
+      },
+      "pdbxwithvr:has_phasing_MIR_shellCategory": {
+        "@id": "pdbxwithvr:phasing_MIR_shellCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_chem_comp_diagnosticsCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_chem_comp_diagnosticsCategory"
+      },
+      "pdbxwithvr:has_pdbx_helical_symmetryCategory": {
+        "@id": "pdbxwithvr:pdbx_helical_symmetryCategory"
+      },
+      "pdbxwithvr:has_em_stainingCategory": {
+        "@id": "pdbxwithvr:em_stainingCategory"
+      },
+      "pdbxwithvr:has_pdbx_bufferCategory": {
+        "@id": "pdbxwithvr:pdbx_bufferCategory"
+      },
+      "pdbxwithvr:has_pdbx_buffer_componentsCategory": {
+        "@id": "pdbxwithvr:pdbx_buffer_componentsCategory"
+      },
+      "owl:sameAs": [
+        {
+          "@id": "pdbxwithvr:datablock"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "pdbxwithvr:has_em_embeddingCategory": {
+        "@id": "pdbxwithvr:em_embeddingCategory"
+      },
+      "pdbxwithvr:has_cell_measurementCategory": {
+        "@id": "pdbxwithvr:cell_measurementCategory"
+      },
+      "pdbxwithvr:has_diffrn_measurementCategory": {
+        "@id": "pdbxwithvr:diffrn_measurementCategory"
+      },
+      "pdbxwithvr:has_pdbx_nmr_unparsed_chem_shiftCategory": {
+        "@id": "pdbxwithvr:pdbx_nmr_unparsed_chem_shiftCategory"
+      },
+      "pdbxwithvr:has_phasing_MIR_der_siteCategory": {
+        "@id": "pdbxwithvr:phasing_MIR_der_siteCategory"
+      },
+      "pdbxwithvr:has_reflnCategory": {
+        "@id": "pdbxwithvr:reflnCategory"
+      },
+      "pdbxwithvr:has_reflns_scaleCategory": {
+        "@id": "pdbxwithvr:reflns_scaleCategory"
+      },
+      "pdbxwithvr:has_pdbx_audit_conformCategory": {
+        "@id": "pdbxwithvr:pdbx_audit_conformCategory"
+      },
+      "pdbxwithvr:has_chem_linkCategory": {
+        "@id": "pdbxwithvr:chem_linkCategory"
+      },
+      "pdbxwithvr:has_em_entity_assembly_syntheticCategory": {
+        "@id": "pdbxwithvr:em_entity_assembly_syntheticCategory"
+      },
+      "pdbxwithvr:has_symmetry_equivCategory": {
+        "@id": "pdbxwithvr:symmetry_equivCategory"
+      },
+      "pdbxwithvr:has_pdbx_soln_scatterCategory": {
+        "@id": "pdbxwithvr:pdbx_soln_scatterCategory"
+      },
+      "pdbxwithvr:has_pdbx_soln_scatter_modelCategory": {
+        "@id": "pdbxwithvr:pdbx_soln_scatter_modelCategory"
+      },
+      "pdbxwithvr:has_refine_funct_minimizedCategory": {
+        "@id": "pdbxwithvr:refine_funct_minimizedCategory"
+      },
+      "pdbxwithvr:has_em_2d_crystal_entityCategory": {
+        "@id": "pdbxwithvr:em_2d_crystal_entityCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_legacy_oper_listCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_legacy_oper_listCategory"
+      },
+      "pdbxwithvr:has_pdbx_exptl_crystal_cryo_treatmentCategory": {
+        "@id": "pdbxwithvr:pdbx_exptl_crystal_cryo_treatmentCategory"
+      },
+      "pdbxwithvr:has_pdbx_exptl_crystal_grow_compCategory": {
+        "@id": "pdbxwithvr:pdbx_exptl_crystal_grow_compCategory"
+      },
+      "pdbxwithvr:has_pdbx_exptl_crystal_grow_solCategory": {
+        "@id": "pdbxwithvr:pdbx_exptl_crystal_grow_solCategory"
+      },
+      "pdbxwithvr:has_refln_sys_absCategory": {
+        "@id": "pdbxwithvr:refln_sys_absCategory"
+      },
+      "pdbxwithvr:has_struct_biol_keywordsCategory": {
+        "@id": "pdbxwithvr:struct_biol_keywordsCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_entity_instCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_entity_instCategory"
+      },
+      "pdbxwithvr:has_pdbx_struct_msym_genCategory": {
+        "@id": "pdbxwithvr:pdbx_struct_msym_genCategory"
+      },
+      "pdbxwithvr:has_publCategory": {
+        "@id": "pdbxwithvr:publCategory"
+      },
+      "dc:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:datablockName": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:link_to_pdbml": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_pdbml_extatom": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_pdbml_noatom": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:references": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_xml_vrpt": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_audit",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_chem_comp_audit.action_type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_audit.comp_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_audit.date": {
+        "@type": "xsd:date"
+      },
+      "pdbxwithvr:pdbx_chem_comp_audit.processing_site": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_audit.annotator": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_chem_comp": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_auditCategory",
+      "pdbxwithvr:has_pdbx_chem_comp_audit": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_audit"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_descriptor",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_chem_comp_descriptor.comp_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_descriptor.descriptor": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_descriptor.program": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_descriptor.program_version": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_descriptor.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_chem_comp": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_descriptorCategory",
+      "pdbxwithvr:has_pdbx_chem_comp_descriptor": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_descriptor"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_identifier",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_chem_comp_identifier.comp_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_identifier.identifier": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_identifier.program": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_identifier.program_version": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_identifier.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_chem_comp": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_identifierCategory",
+      "pdbxwithvr:has_pdbx_chem_comp_identifier": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_identifier"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_synonyms",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_chem_comp_synonyms.comp_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_synonyms.name": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_synonyms.ordinal": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:pdbx_chem_comp_synonyms.provenance": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_synonyms.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_chem_comp": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_synonymsCategory",
+      "pdbxwithvr:has_pdbx_chem_comp_synonyms": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_synonyms"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_pcm",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:reference_to_chem_comp": {
+        "@id": "pdbxwithvr:chem_comp"
+      },
+      "pdbxwithvr:pdbx_chem_comp_pcm.first_instance_model_db_code": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_pcm.category": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_pcm.comp_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_pcm.comp_id_linking_atom": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_pcm.modified_residue_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_pcm.modified_residue_id_linking_atom": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_pcm.pcm_id": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:pdbx_chem_comp_pcm.polypeptide_position": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_pcm.position": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_pcm.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_pcm.uniprot_specific_ptm_accession": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_pcm.uniprot_generic_ptm_accession": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_pcmCategory",
+      "pdbxwithvr:has_pdbx_chem_comp_pcm": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_pcm"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_reference_molecule_features",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_features.family_prd_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_features.ordinal": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_features.prd_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_features.source": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_features.source_ordinal": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_features.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_features.value": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:link_to_chebi": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_chembl": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_chemdb": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_mesh": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_bindingdb": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_cas": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_chemspider": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_pubchem_substance": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_kegg_drug": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_uniprot": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:reference_to_pdbx_reference_molecule_list": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_norine": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_drugbank": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_nadb": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_kegg_comp": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_atom_related",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_chem_comp_atom_related.atom_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_atom_related.comp_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_atom_related.ordinal": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:pdbx_chem_comp_atom_related.related_atom_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_atom_related.related_comp_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_atom_related.related_type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_chem_comp": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_atom_relatedCategory",
+      "pdbxwithvr:has_pdbx_chem_comp_atom_related": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_atom_related"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_feature",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_chem_comp_feature.comp_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_feature.source": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_feature.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_feature.value": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_chem_comp": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_featureCategory",
+      "pdbxwithvr:has_pdbx_chem_comp_feature": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_feature"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_related",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_chem_comp_related.comp_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_related.related_comp_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_chem_comp_related.relationship_type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_chem_comp": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_chem_comp_relatedCategory",
+      "pdbxwithvr:has_pdbx_chem_comp_related": {
+        "@id": "pdbxwithvr:pdbx_chem_comp_related"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_family_prd_audit",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_family_prd_audit.action_type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_family_prd_audit.date": {
+        "@type": "xsd:date"
+      },
+      "pdbxwithvr:pdbx_family_prd_audit.family_prd_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_family_prd_audit.processing_site": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_pdbx_reference_molecule_family": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_reference_molecule_annotation",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_annotation.family_prd_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_annotation.ordinal": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_annotation.prd_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_annotation.source": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_annotation.text": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_annotation.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:link_to_doi": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:references": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_pubmed": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_family_prd_auditCategory",
+      "pdbxwithvr:has_pdbx_family_prd_audit": {
+        "@id": "pdbxwithvr:pdbx_family_prd_audit"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_reference_molecule_family",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_family.family_prd_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_family.name": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_family.release_status": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_reference_molecule_annotationCategory",
+      "pdbxwithvr:has_pdbx_reference_molecule_annotation": {
+        "@id": "pdbxwithvr:pdbx_reference_molecule_annotation"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_reference_molecule_familyCategory",
+      "pdbxwithvr:has_pdbx_reference_molecule_family": {
+        "@id": "pdbxwithvr:pdbx_reference_molecule_family"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:atom_sites",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:atom_sites.entry_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:atom_sites.fract_transf_matrix11": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.fract_transf_matrix12": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.fract_transf_matrix13": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.fract_transf_matrix21": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.fract_transf_matrix22": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.fract_transf_matrix23": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.fract_transf_matrix31": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.fract_transf_matrix32": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.fract_transf_matrix33": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.fract_transf_vector1": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.fract_transf_vector2": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.fract_transf_vector3": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.Cartn_transf_matrix11": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.Cartn_transf_matrix12": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.Cartn_transf_matrix13": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.Cartn_transf_matrix21": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.Cartn_transf_matrix22": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.Cartn_transf_matrix23": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.Cartn_transf_matrix31": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.Cartn_transf_matrix32": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.Cartn_transf_matrix33": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.Cartn_transf_vector1": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.Cartn_transf_vector2": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_sites.Cartn_transf_vector3": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:reference_to_entry": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:atom_sitesCategory",
+      "pdbxwithvr:has_atom_sites": {
+        "@id": "pdbxwithvr:atom_sites"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:atom_type",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:atom_type.symbol": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:atom_type.scat_Cromer_Mann_a1": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.scat_Cromer_Mann_a2": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.scat_Cromer_Mann_b1": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.scat_Cromer_Mann_b2": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.scat_Cromer_Mann_c": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.scat_source": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:atom_type.scat_Cromer_Mann_a3": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.scat_Cromer_Mann_a4": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.scat_Cromer_Mann_b3": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.scat_Cromer_Mann_b4": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.pdbx_N_electrons": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:atom_type.pdbx_scat_Z": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:atom_type.pdbx_scat_Cromer_Mann_a5": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.pdbx_scat_Cromer_Mann_b5": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.pdbx_scat_Cromer_Mann_a6": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.pdbx_scat_Cromer_Mann_b6": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.scat_dispersion_imag": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.scat_dispersion_real": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:atom_type.oxidation_number": {
+        "@type": "xsd:int"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:atom_typeCategory",
+      "pdbxwithvr:has_atom_type": {
+        "@id": "pdbxwithvr:atom_type"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:audit_author",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:audit_author.name": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:audit_author.pdbx_ordinal": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:audit_author.identifier_ORCID": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:link_to_orcid": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:audit_authorCategory",
+      "pdbxwithvr:has_audit_author": {
+        "@id": "pdbxwithvr:audit_author"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:citation",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:citation.pdbx_database_id_DOI": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.journal_abbrev": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.journal_volume": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.page_first": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.page_last": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.pdbx_database_id_PubMed": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:citation.title": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.year": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:citation.country": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.journal_id_ASTM": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.journal_id_CSD": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.journal_id_ISSN": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.book_publisher": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.unpublished_flag": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.book_id_ISBN": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.book_publisher_city": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.book_title": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.language": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.pdbx_database_id_patent": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.coordinate_linkage": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.abstract": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.database_id_CSD": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation.journal_issue": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:link_to_doi": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:references": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_pubmed": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_reference_molecule_featuresCategory",
+      "pdbxwithvr:has_pdbx_reference_molecule_features": {
+        "@id": "pdbxwithvr:pdbx_reference_molecule_features"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:citationCategory",
+      "pdbxwithvr:has_citation": {
+        "@id": "pdbxwithvr:citation"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:citation_author",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:citation_author.citation_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation_author.name": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:citation_author.ordinal": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:citation_author.identifier_ORCID": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_citation": {
+        "@id": "rdfs:Resource"
+      },
+      "pdbxwithvr:link_to_orcid": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:citation_authorCategory",
+      "pdbxwithvr:has_citation_author": {
+        "@id": "pdbxwithvr:citation_author"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_reference_molecule_list",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:link_to_prd": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_list.family_prd_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_list.prd_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_pdbx_reference_molecule_family": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_reference_molecule_synonyms",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_synonyms.family_prd_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_synonyms.name": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_synonyms.ordinal": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_synonyms.prd_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:pdbx_reference_molecule_synonyms.source": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_pdbx_reference_molecule_list": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_reference_molecule_listCategory",
+      "pdbxwithvr:has_pdbx_reference_molecule_list": {
+        "@id": "pdbxwithvr:pdbx_reference_molecule_list"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_reference_molecule_synonymsCategory",
+      "pdbxwithvr:has_pdbx_reference_molecule_synonyms": {
+        "@id": "pdbxwithvr:pdbx_reference_molecule_synonyms"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_3d_fitting",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_3d_fitting.entry_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting.ref_space": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting.ref_protocol": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting.target_criteria": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting.overall_b_value": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_3d_fitting.method": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_entry": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_3d_fittingCategory",
+      "pdbxwithvr:has_em_3d_fitting": {
+        "@id": "pdbxwithvr:em_3d_fitting"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_3d_fitting_list",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_3d_fitting_list._3d_fitting_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting_list.accession_code": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting_list.chain_residue_range": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting_list.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting_list.initial_refinement_model_id": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:em_3d_fitting_list.source_name": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting_list.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting_list.pdb_chain_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting_list.pdb_chain_residue_range": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting_list.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting_list.pdb_entry_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_fitting_list.chain_id": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_3d_fitting_listCategory",
+      "pdbxwithvr:has_em_3d_fitting_list": {
+        "@id": "pdbxwithvr:em_3d_fitting_list"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_3d_reconstruction",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:reference_to_entry": {
+        "@id": "pdbxwithvr:entry"
+      },
+      "pdbxwithvr:em_3d_reconstruction.entry_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_reconstruction.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_reconstruction.image_processing_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_reconstruction.num_particles": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:em_3d_reconstruction.resolution": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_3d_reconstruction.resolution_method": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_reconstruction.symmetry_type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_reconstruction.actual_pixel_size": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_3d_reconstruction.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_reconstruction.method": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_reconstruction.nominal_pixel_size": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_3d_reconstruction.algorithm": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_reconstruction.num_class_averages": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:em_3d_reconstruction.magnification_calibration": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_3d_reconstruction.refinement_type": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_3d_reconstructionCategory",
+      "pdbxwithvr:has_em_3d_reconstruction": {
+        "@id": "pdbxwithvr:em_3d_reconstruction"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_admin",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_admin.current_status": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_admin.deposition_date": {
+        "@type": "xsd:date"
+      },
+      "pdbxwithvr:em_admin.deposition_site": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_admin.entry_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_admin.last_update": {
+        "@type": "xsd:date"
+      },
+      "pdbxwithvr:em_admin.map_release_date": {
+        "@type": "xsd:date"
+      },
+      "pdbxwithvr:em_admin.title": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_entry": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_adminCategory",
+      "pdbxwithvr:has_em_admin": {
+        "@id": "pdbxwithvr:em_admin"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_buffer",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_buffer.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_buffer.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_buffer.pH": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_buffer.specimen_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_buffer.name": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:audit_conform",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:audit_conform.dict_location": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:audit_conform.dict_name": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:audit_conform.dict_version": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:audit_conformCategory",
+      "pdbxwithvr:has_audit_conform": {
+        "@id": "pdbxwithvr:audit_conform"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:cell",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:cell.Z_PDB": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:cell.angle_alpha": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.angle_beta": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.angle_gamma": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.entry_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:cell.length_a": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.length_b": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.length_c": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.volume": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.pdbx_unique_axis": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:cell.angle_alpha_esd": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.angle_beta_esd": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.angle_gamma_esd": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.length_a_esd": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.length_b_esd": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.length_c_esd": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.reciprocal_angle_alpha": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.reciprocal_angle_beta": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.reciprocal_angle_gamma": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:cell.formula_units_Z": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:cell.volume_esd": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:reference_to_entry": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:cellCategory",
+      "pdbxwithvr:has_cell": {
+        "@id": "pdbxwithvr:cell"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:database_2",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:database_2.database_code": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:database_2.database_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:database_2.pdbx_DOI": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:database_2.pdbx_database_accession": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:database_2Category",
+      "pdbxwithvr:has_database_2": {
+        "@id": "pdbxwithvr:database_2"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_bufferCategory",
+      "pdbxwithvr:has_em_buffer": {
+        "@id": "pdbxwithvr:em_buffer"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_ctf_correction",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_ctf_correction.em_image_processing_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_ctf_correction.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_ctf_correction.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_ctf_correction.details": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_ctf_correctionCategory",
+      "pdbxwithvr:has_em_ctf_correction": {
+        "@id": "pdbxwithvr:em_ctf_correction"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_entity_assembly",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_entity_assembly.entity_id_list": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly.name": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly.parent_id": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:em_entity_assembly.source": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly.oligomeric_details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly.synonym": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_entity_assemblyCategory",
+      "pdbxwithvr:has_em_entity_assembly": {
+        "@id": "pdbxwithvr:em_entity_assembly"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_entity_assembly_molwt",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_entity_assembly_molwt.entity_assembly_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_molwt.experimental_flag": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_molwt.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_molwt.units": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_molwt.value": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:reference_to_em_entity_assembly": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_entity_assembly_molwtCategory",
+      "pdbxwithvr:has_em_entity_assembly_molwt": {
+        "@id": "pdbxwithvr:em_entity_assembly_molwt"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_entity_assembly_naturalsource",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_entity_assembly_naturalsource.entity_assembly_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_naturalsource.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_naturalsource.ncbi_tax_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_naturalsource.organism": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_naturalsource.tissue": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_naturalsource.strain": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_naturalsource.organ": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_naturalsource.cellular_location": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_naturalsource.organelle": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_naturalsource.cell": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_naturalsource.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_em_entity_assembly": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_entity_assembly_naturalsourceCategory",
+      "pdbxwithvr:has_em_entity_assembly_naturalsource": {
+        "@id": "pdbxwithvr:em_entity_assembly_naturalsource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_entity_assembly_recombinant",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_entity_assembly_recombinant.entity_assembly_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_recombinant.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_recombinant.ncbi_tax_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_recombinant.organism": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_recombinant.cell": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_recombinant.strain": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_entity_assembly_recombinant.plasmid": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_em_entity_assembly": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_entity_assembly_recombinantCategory",
+      "pdbxwithvr:has_em_entity_assembly_recombinant": {
+        "@id": "pdbxwithvr:em_entity_assembly_recombinant"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_experiment",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_experiment.aggregation_state": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_experiment.entity_assembly_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_experiment.entry_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_experiment.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_experiment.reconstruction_method": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_entry": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_experimentCategory",
+      "pdbxwithvr:has_em_experiment": {
+        "@id": "pdbxwithvr:em_experiment"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_image_processing",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_image_processing.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_processing.image_recording_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_processing.details": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_image_processingCategory",
+      "pdbxwithvr:has_em_image_processing": {
+        "@id": "pdbxwithvr:em_image_processing"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_image_recording",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_image_recording.average_exposure_time": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_image_recording.avg_electron_dose_per_image": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_image_recording.detector_mode": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_recording.film_or_detector_model": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_recording.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_recording.imaging_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_recording.num_grids_imaged": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_recording.num_real_images": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_recording.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_recording.avg_electron_dose_per_subtomogram": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_image_recording.num_diffraction_images": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_image_recordingCategory",
+      "pdbxwithvr:has_em_image_recording": {
+        "@id": "pdbxwithvr:em_image_recording"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_image_scans",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:reference_to_entry": {
+        "@id": "pdbxwithvr:entry"
+      },
+      "pdbxwithvr:em_image_scans.dimension_height": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_scans.dimension_width": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_scans.entry_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_scans.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_scans.image_recording_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_scans.scanner_model": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_scans.number_digital_images": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:em_image_scans.sampling_size": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_image_scans.frames_per_image": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_scans.used_frames_per_image": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_scans.quant_bit_size": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:em_image_scans.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_image_scans.od_range": {
+        "@type": "xsd:decimal"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_image_scansCategory",
+      "pdbxwithvr:has_em_image_scans": {
+        "@id": "pdbxwithvr:em_image_scans"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_imaging",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_imaging.accelerating_voltage": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:em_imaging.alignment_procedure": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.cryogen": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.electron_source": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.entry_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.illumination_mode": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.microscope_model": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.mode": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.nominal_cs": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.nominal_defocus_max": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.nominal_defocus_min": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.specimen_holder_model": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.specimen_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.temperature": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.recording_temperature_maximum": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.recording_temperature_minimum": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.date": {
+        "@type": "xsd:date"
+      },
+      "pdbxwithvr:em_imaging.tilt_angle_max": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.tilt_angle_min": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.c2_aperture_diameter": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.nominal_magnification": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:em_imaging.calibrated_magnification": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:em_imaging.calibrated_defocus_max": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.calibrated_defocus_min": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.specimen_holder_type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.residual_tilt": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.detector_distance": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_imaging.electron_beam_tilt_params": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_imaging.astigmatism": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:reference_to_entry": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_imagingCategory",
+      "pdbxwithvr:has_em_imaging": {
+        "@id": "pdbxwithvr:em_imaging"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_sample_support",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_sample_support.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_sample_support.grid_material": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_sample_support.grid_mesh_size": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:em_sample_support.grid_type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_sample_support.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_sample_support.specimen_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_sample_support.film_material": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_sample_supportCategory",
+      "pdbxwithvr:has_em_sample_support": {
+        "@id": "pdbxwithvr:em_sample_support"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_software",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_software.category": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_software.fitting_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_software.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_software.image_processing_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_software.imaging_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_software.name": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_software.version": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_software.details": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_softwareCategory",
+      "pdbxwithvr:has_em_software": {
+        "@id": "pdbxwithvr:em_software"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_specimen",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:em_specimen.concentration": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_specimen.embedding_applied": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_specimen.experiment_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_specimen.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_specimen.shadowing_applied": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_specimen.staining_applied": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_specimen.vitrification_applied": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_specimen.details": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_specimenCategory",
+      "pdbxwithvr:has_em_specimen": {
+        "@id": "pdbxwithvr:em_specimen"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_vitrification",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:reference_to_entry": {
+        "@id": "pdbxwithvr:entry"
+      },
+      "pdbxwithvr:em_vitrification.chamber_temperature": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_vitrification.cryogen_name": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_vitrification.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_vitrification.entry_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_vitrification.humidity": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_vitrification.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_vitrification.instrument": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_vitrification.specimen_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_vitrification.method": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:em_vitrification.temp": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:em_vitrification.time_resolved_state": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:em_vitrificationCategory",
+      "pdbxwithvr:has_em_vitrification": {
+        "@id": "pdbxwithvr:em_vitrification"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:entity",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:referenced_by_struct_asym": {
+        "@id": "pdbxwithvr:struct_asym"
+      },
+      "pdbxwithvr:referenced_by_struct_ref": {
+        "@id": "pdbxwithvr:struct_ref"
+      },
+      "pdbxwithvr:referenced_by_pdbx_entity_branch_descriptor": {
+        "@id": "pdbxwithvr:pdbx_entity_branch_descriptor"
+      },
+      "pdbxwithvr:entity.details": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity.formula_weight": {
+        "@type": "xsd:decimal"
+      },
+      "pdbxwithvr:entity.id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity.pdbx_description": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity.pdbx_number_of_molecules": {
+        "@type": "xsd:int"
+      },
+      "pdbxwithvr:entity.src_method": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity.pdbx_ec": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity.pdbx_mutation": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity.pdbx_fragment": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:link_to_enzyme": {
+        "@id": "rdfs:Resource"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:entityCategory",
+      "pdbxwithvr:has_entity": {
+        "@id": "pdbxwithvr:entity"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:entity_poly",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:entity_poly.entity_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity_poly.nstd_linkage": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity_poly.nstd_monomer": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity_poly.pdbx_seq_one_letter_code": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity_poly.pdbx_seq_one_letter_code_can": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity_poly.pdbx_strand_id": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity_poly.type": {
+        "@type": "xsd:string"
+      },
+      "pdbxwithvr:entity_poly.pdbx_target_identifier": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:entity_polyCategory",
+      "pdbxwithvr:has_entity_poly": {
+        "@id": "pdbxwithvr:entity_poly"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:entity_poly_seq",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:entity_poly_seqCategory",
+      "pdbxwithvr:has_entity_poly_seq": {
+        "@id": "pdbxwithvr:entity_poly_seq"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:entry",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      },
+      "pdbxwithvr:referenced_by_em_3d_reconstruction": {
+        "@id": "pdbxwithvr:em_3d_reconstruction"
+      },
+      "pdbxwithvr:referenced_by_em_image_scans": {
+        "@id": "pdbxwithvr:em_image_scans"
+      },
+      "pdbxwithvr:referenced_by_em_vitrification": {
+        "@id": "pdbxwithvr:em_vitrification"
+      },
+      "pdbxwithvr:referenced_by_reflns": {
+        "@id": "pdbxwithvr:reflns"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:entryCategory",
+      "pdbxwithvr:has_entry": {
+        "@id": "pdbxwithvr:entry"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:exptl",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:exptlCategory",
+      "pdbxwithvr:has_exptl": {
+        "@id": "pdbxwithvr:exptl"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_audit_revision_details",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_audit_revision_detailsCategory",
+      "pdbxwithvr:has_pdbx_audit_revision_details": {
+        "@id": "pdbxwithvr:pdbx_audit_revision_details"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:entity_src_gen",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:entity_src_genCategory",
+      "pdbxwithvr:has_entity_src_gen": {
+        "@id": "pdbxwithvr:entity_src_gen"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_SG_project",
+      "pdbxwithvr:of_datablock": {
+        "@id": "pdbxwithvr:datablock"
+      }
+    },
+    {
+      "@id": "pdbxwithvr:pdbx_SG_projectCategory",
+      "pdbxwithvr:has_pdbx_SG_project": {
+        "@id": "pdbxwithvr:pdbx_SG_project"
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-03T05:15:43.086618+00:00",
+    "endpoint": "http://rdfportal.org/pdb/sparql",
+    "dataset_name": "pdb",
+    "graph_uris": [
+      "http://rdfportal.org/dataset/pdbj"
+    ],
+    "pattern_count": 999,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "pdbxwithvr:chem_comp": "chem_comp",
+    "pdbxwithvr:of_datablock": "of_datablock",
+    "pdbxwithvr:datablock": "datablock",
+    "pdbxwithvr:link_to_parent_chem_comp": "link_to_parent_chem_comp",
+    "pdbxwithvr:referenced_by_pdbx_chem_comp_pcm": "referenced_by_pdbx_chem_comp_pcm",
+    "pdbxwithvr:pdbx_chem_comp_pcm": "pdbx_chem_comp_pcm",
+    "pdbxwithvr:link_to_chem_comp": "link_to_chem_comp",
+    "pdbxwithvr:referenced_by_pdbx_unobs_or_zero_occ_residues": "referenced_by_pdbx_unobs_or_zero_occ_residues",
+    "pdbxwithvr:pdbx_unobs_or_zero_occ_residues": "pdbx_unobs_or_zero_occ_residues",
+    "pdbxwithvr:referenced_by_pdbx_unobs_or_zero_occ_atoms": "referenced_by_pdbx_unobs_or_zero_occ_atoms",
+    "pdbxwithvr:pdbx_unobs_or_zero_occ_atoms": "pdbx_unobs_or_zero_occ_atoms",
+    "pdbxwithvr:referenced_by_pdbx_distant_solvent_atoms": "referenced_by_pdbx_distant_solvent_atoms",
+    "pdbxwithvr:pdbx_distant_solvent_atoms": "pdbx_distant_solvent_atoms",
+    "pdbxwithvr:chem_compCategory": "chem_compCategory",
+    "pdbxwithvr:has_chem_comp": "has_chem_comp",
+    "pdbxwithvr:chem_comp_atom": "chem_comp_atom",
+    "pdbxwithvr:chem_comp_atomCategory": "chem_comp_atomCategory",
+    "pdbxwithvr:has_chem_comp_atom": "has_chem_comp_atom",
+    "pdbxwithvr:chem_comp_bond": "chem_comp_bond",
+    "pdbxwithvr:chem_comp_bondCategory": "chem_comp_bondCategory",
+    "pdbxwithvr:has_chem_comp_bond": "has_chem_comp_bond",
+    "pdbxwithvr:has_chem_compCategory": "has_chem_compCategory",
+    "pdbxwithvr:has_chem_comp_atomCategory": "has_chem_comp_atomCategory",
+    "pdbxwithvr:has_chem_comp_bondCategory": "has_chem_comp_bondCategory",
+    "pdbxwithvr:has_pdbx_chem_comp_auditCategory": "has_pdbx_chem_comp_auditCategory",
+    "pdbxwithvr:pdbx_chem_comp_auditCategory": "pdbx_chem_comp_auditCategory",
+    "pdbxwithvr:has_pdbx_chem_comp_descriptorCategory": "has_pdbx_chem_comp_descriptorCategory",
+    "pdbxwithvr:pdbx_chem_comp_descriptorCategory": "pdbx_chem_comp_descriptorCategory",
+    "pdbxwithvr:has_pdbx_chem_comp_identifierCategory": "has_pdbx_chem_comp_identifierCategory",
+    "pdbxwithvr:pdbx_chem_comp_identifierCategory": "pdbx_chem_comp_identifierCategory",
+    "pdbxwithvr:has_pdbx_chem_comp_synonymsCategory": "has_pdbx_chem_comp_synonymsCategory",
+    "pdbxwithvr:pdbx_chem_comp_synonymsCategory": "pdbx_chem_comp_synonymsCategory",
+    "pdbxwithvr:has_pdbx_chem_comp_featureCategory": "has_pdbx_chem_comp_featureCategory",
+    "pdbxwithvr:pdbx_chem_comp_featureCategory": "pdbx_chem_comp_featureCategory",
+    "pdbxwithvr:has_pdbx_chem_comp_pcmCategory": "has_pdbx_chem_comp_pcmCategory",
+    "pdbxwithvr:pdbx_chem_comp_pcmCategory": "pdbx_chem_comp_pcmCategory",
+    "pdbxwithvr:has_pdbx_chem_comp_atom_relatedCategory": "has_pdbx_chem_comp_atom_relatedCategory",
+    "pdbxwithvr:pdbx_chem_comp_atom_relatedCategory": "pdbx_chem_comp_atom_relatedCategory",
+    "pdbxwithvr:has_pdbx_chem_comp_relatedCategory": "has_pdbx_chem_comp_relatedCategory",
+    "pdbxwithvr:pdbx_chem_comp_relatedCategory": "pdbx_chem_comp_relatedCategory",
+    "pdbxwithvr:has_pdbx_family_prd_auditCategory": "has_pdbx_family_prd_auditCategory",
+    "pdbxwithvr:pdbx_family_prd_auditCategory": "pdbx_family_prd_auditCategory",
+    "pdbxwithvr:has_pdbx_reference_molecule_annotationCategory": "has_pdbx_reference_molecule_annotationCategory",
+    "pdbxwithvr:pdbx_reference_molecule_annotationCategory": "pdbx_reference_molecule_annotationCategory",
+    "pdbxwithvr:has_pdbx_reference_molecule_familyCategory": "has_pdbx_reference_molecule_familyCategory",
+    "pdbxwithvr:pdbx_reference_molecule_familyCategory": "pdbx_reference_molecule_familyCategory",
+    "pdbxwithvr:has_pdbx_reference_molecule_featuresCategory": "has_pdbx_reference_molecule_featuresCategory",
+    "pdbxwithvr:pdbx_reference_molecule_featuresCategory": "pdbx_reference_molecule_featuresCategory",
+    "pdbxwithvr:has_pdbx_reference_molecule_listCategory": "has_pdbx_reference_molecule_listCategory",
+    "pdbxwithvr:pdbx_reference_molecule_listCategory": "pdbx_reference_molecule_listCategory",
+    "pdbxwithvr:has_pdbx_reference_molecule_synonymsCategory": "has_pdbx_reference_molecule_synonymsCategory",
+    "pdbxwithvr:pdbx_reference_molecule_synonymsCategory": "pdbx_reference_molecule_synonymsCategory",
+    "pdbxwithvr:has_citationCategory": "has_citationCategory",
+    "pdbxwithvr:citationCategory": "citationCategory",
+    "pdbxwithvr:has_citation_authorCategory": "has_citation_authorCategory",
+    "pdbxwithvr:citation_authorCategory": "citation_authorCategory",
+    "pdbxwithvr:has_atom_sitesCategory": "has_atom_sitesCategory",
+    "pdbxwithvr:atom_sitesCategory": "atom_sitesCategory",
+    "pdbxwithvr:has_atom_typeCategory": "has_atom_typeCategory",
+    "pdbxwithvr:atom_typeCategory": "atom_typeCategory",
+    "pdbxwithvr:has_audit_authorCategory": "has_audit_authorCategory",
+    "pdbxwithvr:audit_authorCategory": "audit_authorCategory",
+    "pdbxwithvr:has_audit_conformCategory": "has_audit_conformCategory",
+    "pdbxwithvr:audit_conformCategory": "audit_conformCategory",
+    "pdbxwithvr:has_cellCategory": "has_cellCategory",
+    "pdbxwithvr:cellCategory": "cellCategory",
+    "pdbxwithvr:has_database_2Category": "has_database_2Category",
+    "pdbxwithvr:database_2Category": "database_2Category",
+    "pdbxwithvr:has_em_3d_fittingCategory": "has_em_3d_fittingCategory",
+    "pdbxwithvr:em_3d_fittingCategory": "em_3d_fittingCategory",
+    "pdbxwithvr:has_em_3d_fitting_listCategory": "has_em_3d_fitting_listCategory",
+    "pdbxwithvr:em_3d_fitting_listCategory": "em_3d_fitting_listCategory",
+    "pdbxwithvr:has_em_3d_reconstructionCategory": "has_em_3d_reconstructionCategory",
+    "pdbxwithvr:em_3d_reconstructionCategory": "em_3d_reconstructionCategory",
+    "pdbxwithvr:has_em_adminCategory": "has_em_adminCategory",
+    "pdbxwithvr:em_adminCategory": "em_adminCategory",
+    "pdbxwithvr:has_em_bufferCategory": "has_em_bufferCategory",
+    "pdbxwithvr:em_bufferCategory": "em_bufferCategory",
+    "pdbxwithvr:has_em_ctf_correctionCategory": "has_em_ctf_correctionCategory",
+    "pdbxwithvr:em_ctf_correctionCategory": "em_ctf_correctionCategory",
+    "pdbxwithvr:has_em_entity_assemblyCategory": "has_em_entity_assemblyCategory",
+    "pdbxwithvr:em_entity_assemblyCategory": "em_entity_assemblyCategory",
+    "pdbxwithvr:has_em_entity_assembly_molwtCategory": "has_em_entity_assembly_molwtCategory",
+    "pdbxwithvr:em_entity_assembly_molwtCategory": "em_entity_assembly_molwtCategory",
+    "pdbxwithvr:has_em_entity_assembly_naturalsourceCategory": "has_em_entity_assembly_naturalsourceCategory",
+    "pdbxwithvr:em_entity_assembly_naturalsourceCategory": "em_entity_assembly_naturalsourceCategory",
+    "pdbxwithvr:has_em_entity_assembly_recombinantCategory": "has_em_entity_assembly_recombinantCategory",
+    "pdbxwithvr:em_entity_assembly_recombinantCategory": "em_entity_assembly_recombinantCategory",
+    "pdbxwithvr:has_em_experimentCategory": "has_em_experimentCategory",
+    "pdbxwithvr:em_experimentCategory": "em_experimentCategory",
+    "pdbxwithvr:has_em_image_processingCategory": "has_em_image_processingCategory",
+    "pdbxwithvr:em_image_processingCategory": "em_image_processingCategory",
+    "pdbxwithvr:has_em_image_recordingCategory": "has_em_image_recordingCategory",
+    "pdbxwithvr:em_image_recordingCategory": "em_image_recordingCategory",
+    "pdbxwithvr:has_em_image_scansCategory": "has_em_image_scansCategory",
+    "pdbxwithvr:em_image_scansCategory": "em_image_scansCategory",
+    "pdbxwithvr:has_em_imagingCategory": "has_em_imagingCategory",
+    "pdbxwithvr:em_imagingCategory": "em_imagingCategory",
+    "pdbxwithvr:has_em_sample_supportCategory": "has_em_sample_supportCategory",
+    "pdbxwithvr:em_sample_supportCategory": "em_sample_supportCategory",
+    "pdbxwithvr:has_em_softwareCategory": "has_em_softwareCategory",
+    "pdbxwithvr:em_softwareCategory": "em_softwareCategory",
+    "pdbxwithvr:has_em_specimenCategory": "has_em_specimenCategory",
+    "pdbxwithvr:em_specimenCategory": "em_specimenCategory",
+    "pdbxwithvr:has_em_vitrificationCategory": "has_em_vitrificationCategory",
+    "pdbxwithvr:em_vitrificationCategory": "em_vitrificationCategory",
+    "pdbxwithvr:has_entityCategory": "has_entityCategory",
+    "pdbxwithvr:entityCategory": "entityCategory",
+    "pdbxwithvr:has_entity_polyCategory": "has_entity_polyCategory",
+    "pdbxwithvr:entity_polyCategory": "entity_polyCategory",
+    "pdbxwithvr:has_entity_poly_seqCategory": "has_entity_poly_seqCategory",
+    "pdbxwithvr:entity_poly_seqCategory": "entity_poly_seqCategory",
+    "pdbxwithvr:has_entity_src_genCategory": "has_entity_src_genCategory",
+    "pdbxwithvr:entity_src_genCategory": "entity_src_genCategory",
+    "pdbxwithvr:has_entryCategory": "has_entryCategory",
+    "pdbxwithvr:entryCategory": "entryCategory",
+    "pdbxwithvr:has_exptlCategory": "has_exptlCategory",
+    "pdbxwithvr:exptlCategory": "exptlCategory",
+    "pdbxwithvr:has_pdbx_SG_projectCategory": "has_pdbx_SG_projectCategory",
+    "pdbxwithvr:pdbx_SG_projectCategory": "pdbx_SG_projectCategory",
+    "pdbxwithvr:has_pdbx_audit_revision_detailsCategory": "has_pdbx_audit_revision_detailsCategory",
+    "pdbxwithvr:pdbx_audit_revision_detailsCategory": "pdbx_audit_revision_detailsCategory",
+    "pdbxwithvr:has_pdbx_audit_revision_historyCategory": "has_pdbx_audit_revision_historyCategory",
+    "pdbxwithvr:pdbx_audit_revision_historyCategory": "pdbx_audit_revision_historyCategory",
+    "pdbxwithvr:has_pdbx_audit_supportCategory": "has_pdbx_audit_supportCategory",
+    "pdbxwithvr:pdbx_audit_supportCategory": "pdbx_audit_supportCategory",
+    "pdbxwithvr:has_pdbx_contact_authorCategory": "has_pdbx_contact_authorCategory",
+    "pdbxwithvr:pdbx_contact_authorCategory": "pdbx_contact_authorCategory",
+    "pdbxwithvr:has_pdbx_database_relatedCategory": "has_pdbx_database_relatedCategory",
+    "pdbxwithvr:pdbx_database_relatedCategory": "pdbx_database_relatedCategory",
+    "pdbxwithvr:has_pdbx_database_statusCategory": "has_pdbx_database_statusCategory",
+    "pdbxwithvr:pdbx_database_statusCategory": "pdbx_database_statusCategory",
+    "pdbxwithvr:has_pdbx_entry_detailsCategory": "has_pdbx_entry_detailsCategory",
+    "pdbxwithvr:pdbx_entry_detailsCategory": "pdbx_entry_detailsCategory",
+    "pdbxwithvr:has_pdbx_initial_refinement_modelCategory": "has_pdbx_initial_refinement_modelCategory",
+    "pdbxwithvr:pdbx_initial_refinement_modelCategory": "pdbx_initial_refinement_modelCategory",
+    "pdbxwithvr:has_pdbx_poly_seq_schemeCategory": "has_pdbx_poly_seq_schemeCategory",
+    "pdbxwithvr:pdbx_poly_seq_schemeCategory": "pdbx_poly_seq_schemeCategory",
+    "pdbxwithvr:has_pdbx_struct_assemblyCategory": "has_pdbx_struct_assemblyCategory",
+    "pdbxwithvr:pdbx_struct_assemblyCategory": "pdbx_struct_assemblyCategory",
+    "pdbxwithvr:has_pdbx_struct_assembly_auth_evidenceCategory": "has_pdbx_struct_assembly_auth_evidenceCategory",
+    "pdbxwithvr:pdbx_struct_assembly_auth_evidenceCategory": "pdbx_struct_assembly_auth_evidenceCategory",
+    "pdbxwithvr:has_pdbx_struct_assembly_genCategory": "has_pdbx_struct_assembly_genCategory",
+    "pdbxwithvr:pdbx_struct_assembly_genCategory": "pdbx_struct_assembly_genCategory",
+    "pdbxwithvr:has_pdbx_struct_oper_listCategory": "has_pdbx_struct_oper_listCategory",
+    "pdbxwithvr:pdbx_struct_oper_listCategory": "pdbx_struct_oper_listCategory",
+    "pdbxwithvr:has_pdbx_struct_sheet_hbondCategory": "has_pdbx_struct_sheet_hbondCategory",
+    "pdbxwithvr:pdbx_struct_sheet_hbondCategory": "pdbx_struct_sheet_hbondCategory",
+    "pdbxwithvr:has_pdbx_unobs_or_zero_occ_atomsCategory": "has_pdbx_unobs_or_zero_occ_atomsCategory",
+    "pdbxwithvr:pdbx_unobs_or_zero_occ_atomsCategory": "pdbx_unobs_or_zero_occ_atomsCategory",
+    "pdbxwithvr:has_pdbx_unobs_or_zero_occ_residuesCategory": "has_pdbx_unobs_or_zero_occ_residuesCategory",
+    "pdbxwithvr:pdbx_unobs_or_zero_occ_residuesCategory": "pdbx_unobs_or_zero_occ_residuesCategory",
+    "pdbxwithvr:has_pdbx_validate_torsionCategory": "has_pdbx_validate_torsionCategory",
+    "pdbxwithvr:pdbx_validate_torsionCategory": "pdbx_validate_torsionCategory",
+    "pdbxwithvr:has_refineCategory": "has_refineCategory",
+    "pdbxwithvr:refineCategory": "refineCategory",
+    "pdbxwithvr:has_refine_ls_restrCategory": "has_refine_ls_restrCategory",
+    "pdbxwithvr:refine_ls_restrCategory": "refine_ls_restrCategory",
+    "pdbxwithvr:has_structCategory": "has_structCategory",
+    "pdbxwithvr:structCategory": "structCategory",
+    "pdbxwithvr:has_struct_asymCategory": "has_struct_asymCategory",
+    "pdbxwithvr:struct_asymCategory": "struct_asymCategory",
+    "pdbxwithvr:has_struct_confCategory": "has_struct_confCategory",
+    "pdbxwithvr:struct_confCategory": "struct_confCategory",
+    "pdbxwithvr:has_struct_conf_typeCategory": "has_struct_conf_typeCategory",
+    "pdbxwithvr:struct_conf_typeCategory": "struct_conf_typeCategory",
+    "pdbxwithvr:has_struct_keywordsCategory": "has_struct_keywordsCategory",
+    "pdbxwithvr:struct_keywordsCategory": "struct_keywordsCategory",
+    "pdbxwithvr:has_struct_refCategory": "has_struct_refCategory",
+    "pdbxwithvr:struct_refCategory": "struct_refCategory",
+    "pdbxwithvr:has_struct_ref_seqCategory": "has_struct_ref_seqCategory",
+    "pdbxwithvr:struct_ref_seqCategory": "struct_ref_seqCategory",
+    "pdbxwithvr:has_struct_ref_seq_difCategory": "has_struct_ref_seq_difCategory",
+    "pdbxwithvr:struct_ref_seq_difCategory": "struct_ref_seq_difCategory",
+    "pdbxwithvr:has_struct_sheetCategory": "has_struct_sheetCategory",
+    "pdbxwithvr:struct_sheetCategory": "struct_sheetCategory",
+    "pdbxwithvr:has_struct_sheet_orderCategory": "has_struct_sheet_orderCategory",
+    "pdbxwithvr:struct_sheet_orderCategory": "struct_sheet_orderCategory",
+    "pdbxwithvr:has_struct_sheet_rangeCategory": "has_struct_sheet_rangeCategory",
+    "pdbxwithvr:struct_sheet_rangeCategory": "struct_sheet_rangeCategory",
+    "pdbxwithvr:has_symmetryCategory": "has_symmetryCategory",
+    "pdbxwithvr:symmetryCategory": "symmetryCategory",
+    "pdbxwithvr:link_to_vrpt": "link_to_vrpt",
+    "pdbxwithvr:has_database_PDB_matrixCategory": "has_database_PDB_matrixCategory",
+    "pdbxwithvr:database_PDB_matrixCategory": "database_PDB_matrixCategory",
+    "pdbxwithvr:has_diffrnCategory": "has_diffrnCategory",
+    "pdbxwithvr:diffrnCategory": "diffrnCategory",
+    "pdbxwithvr:has_diffrn_detectorCategory": "has_diffrn_detectorCategory",
+    "pdbxwithvr:diffrn_detectorCategory": "diffrn_detectorCategory",
+    "pdbxwithvr:has_diffrn_radiationCategory": "has_diffrn_radiationCategory",
+    "pdbxwithvr:diffrn_radiationCategory": "diffrn_radiationCategory",
+    "pdbxwithvr:has_diffrn_radiation_wavelengthCategory": "has_diffrn_radiation_wavelengthCategory",
+    "pdbxwithvr:diffrn_radiation_wavelengthCategory": "diffrn_radiation_wavelengthCategory",
+    "pdbxwithvr:has_diffrn_sourceCategory": "has_diffrn_sourceCategory",
+    "pdbxwithvr:diffrn_sourceCategory": "diffrn_sourceCategory",
+    "pdbxwithvr:has_exptl_crystalCategory": "has_exptl_crystalCategory",
+    "pdbxwithvr:exptl_crystalCategory": "exptl_crystalCategory",
+    "pdbxwithvr:has_exptl_crystal_growCategory": "has_exptl_crystal_growCategory",
+    "pdbxwithvr:exptl_crystal_growCategory": "exptl_crystal_growCategory",
+    "pdbxwithvr:has_pdbx_audit_revision_categoryCategory": "has_pdbx_audit_revision_categoryCategory",
+    "pdbxwithvr:pdbx_audit_revision_categoryCategory": "pdbx_audit_revision_categoryCategory",
+    "pdbxwithvr:has_pdbx_audit_revision_groupCategory": "has_pdbx_audit_revision_groupCategory",
+    "pdbxwithvr:pdbx_audit_revision_groupCategory": "pdbx_audit_revision_groupCategory",
+    "pdbxwithvr:has_pdbx_audit_revision_itemCategory": "has_pdbx_audit_revision_itemCategory",
+    "pdbxwithvr:pdbx_audit_revision_itemCategory": "pdbx_audit_revision_itemCategory",
+    "pdbxwithvr:has_pdbx_entity_nonpolyCategory": "has_pdbx_entity_nonpolyCategory",
+    "pdbxwithvr:pdbx_entity_nonpolyCategory": "pdbx_entity_nonpolyCategory",
+    "pdbxwithvr:has_pdbx_nonpoly_schemeCategory": "has_pdbx_nonpoly_schemeCategory",
+    "pdbxwithvr:pdbx_nonpoly_schemeCategory": "pdbx_nonpoly_schemeCategory",
+    "pdbxwithvr:has_pdbx_sifts_unp_segmentsCategory": "has_pdbx_sifts_unp_segmentsCategory",
+    "pdbxwithvr:pdbx_sifts_unp_segmentsCategory": "pdbx_sifts_unp_segmentsCategory",
+    "pdbxwithvr:has_pdbx_sifts_xref_db_segmentsCategory": "has_pdbx_sifts_xref_db_segmentsCategory",
+    "pdbxwithvr:pdbx_sifts_xref_db_segmentsCategory": "pdbx_sifts_xref_db_segmentsCategory",
+    "pdbxwithvr:has_pdbx_struct_conn_angleCategory": "has_pdbx_struct_conn_angleCategory",
+    "pdbxwithvr:pdbx_struct_conn_angleCategory": "pdbx_struct_conn_angleCategory",
+    "pdbxwithvr:has_pdbx_struct_special_symmetryCategory": "has_pdbx_struct_special_symmetryCategory",
+    "pdbxwithvr:pdbx_struct_special_symmetryCategory": "pdbx_struct_special_symmetryCategory",
+    "pdbxwithvr:has_pdbx_xplor_fileCategory": "has_pdbx_xplor_fileCategory",
+    "pdbxwithvr:pdbx_xplor_fileCategory": "pdbx_xplor_fileCategory",
+    "pdbxwithvr:has_refine_analyzeCategory": "has_refine_analyzeCategory",
+    "pdbxwithvr:refine_analyzeCategory": "refine_analyzeCategory",
+    "pdbxwithvr:has_refine_histCategory": "has_refine_histCategory",
+    "pdbxwithvr:refine_histCategory": "refine_histCategory",
+    "pdbxwithvr:has_refine_ls_shellCategory": "has_refine_ls_shellCategory",
+    "pdbxwithvr:refine_ls_shellCategory": "refine_ls_shellCategory",
+    "pdbxwithvr:has_reflnsCategory": "has_reflnsCategory",
+    "pdbxwithvr:reflnsCategory": "reflnsCategory",
+    "pdbxwithvr:has_reflns_shellCategory": "has_reflns_shellCategory",
+    "pdbxwithvr:reflns_shellCategory": "reflns_shellCategory",
+    "pdbxwithvr:has_softwareCategory": "has_softwareCategory",
+    "pdbxwithvr:softwareCategory": "softwareCategory",
+    "pdbxwithvr:has_struct_biolCategory": "has_struct_biolCategory",
+    "pdbxwithvr:struct_biolCategory": "struct_biolCategory",
+    "pdbxwithvr:has_struct_connCategory": "has_struct_connCategory",
+    "pdbxwithvr:struct_connCategory": "struct_connCategory",
+    "pdbxwithvr:has_struct_conn_typeCategory": "has_struct_conn_typeCategory",
+    "pdbxwithvr:struct_conn_typeCategory": "struct_conn_typeCategory",
+    "pdbxwithvr:has_struct_siteCategory": "has_struct_siteCategory",
+    "pdbxwithvr:struct_siteCategory": "struct_siteCategory",
+    "pdbxwithvr:has_struct_site_genCategory": "has_struct_site_genCategory",
+    "pdbxwithvr:struct_site_genCategory": "struct_site_genCategory",
+    "pdbxwithvr:has_exptl_crystal_grow_compCategory": "has_exptl_crystal_grow_compCategory",
+    "pdbxwithvr:exptl_crystal_grow_compCategory": "exptl_crystal_grow_compCategory",
+    "pdbxwithvr:has_ndb_struct_conf_naCategory": "has_ndb_struct_conf_naCategory",
+    "pdbxwithvr:ndb_struct_conf_naCategory": "ndb_struct_conf_naCategory",
+    "pdbxwithvr:has_ndb_struct_na_base_pairCategory": "has_ndb_struct_na_base_pairCategory",
+    "pdbxwithvr:ndb_struct_na_base_pairCategory": "ndb_struct_na_base_pairCategory",
+    "pdbxwithvr:has_ndb_struct_na_base_pair_stepCategory": "has_ndb_struct_na_base_pair_stepCategory",
+    "pdbxwithvr:ndb_struct_na_base_pair_stepCategory": "ndb_struct_na_base_pair_stepCategory",
+    "pdbxwithvr:has_pdbx_validate_rmsd_angleCategory": "has_pdbx_validate_rmsd_angleCategory",
+    "pdbxwithvr:pdbx_validate_rmsd_angleCategory": "pdbx_validate_rmsd_angleCategory",
+    "pdbxwithvr:has_pdbx_validate_rmsd_bondCategory": "has_pdbx_validate_rmsd_bondCategory",
+    "pdbxwithvr:pdbx_validate_rmsd_bondCategory": "pdbx_validate_rmsd_bondCategory",
+    "pdbxwithvr:has_refine_B_isoCategory": "has_refine_B_isoCategory",
+    "pdbxwithvr:refine_B_isoCategory": "refine_B_isoCategory",
+    "pdbxwithvr:has_refine_occupancyCategory": "has_refine_occupancyCategory",
+    "pdbxwithvr:refine_occupancyCategory": "refine_occupancyCategory",
+    "pdbxwithvr:has_refine_ls_restr_ncsCategory": "has_refine_ls_restr_ncsCategory",
+    "pdbxwithvr:refine_ls_restr_ncsCategory": "refine_ls_restr_ncsCategory",
+    "pdbxwithvr:has_struct_ncs_domCategory": "has_struct_ncs_domCategory",
+    "pdbxwithvr:struct_ncs_domCategory": "struct_ncs_domCategory",
+    "pdbxwithvr:has_struct_ncs_ensCategory": "has_struct_ncs_ensCategory",
+    "pdbxwithvr:struct_ncs_ensCategory": "struct_ncs_ensCategory",
+    "pdbxwithvr:has_struct_ncs_operCategory": "has_struct_ncs_operCategory",
+    "pdbxwithvr:struct_ncs_operCategory": "struct_ncs_operCategory",
+    "pdbxwithvr:has_pdbx_prd_auditCategory": "has_pdbx_prd_auditCategory",
+    "pdbxwithvr:pdbx_prd_auditCategory": "pdbx_prd_auditCategory",
+    "pdbxwithvr:has_pdbx_reference_entity_listCategory": "has_pdbx_reference_entity_listCategory",
+    "pdbxwithvr:pdbx_reference_entity_listCategory": "pdbx_reference_entity_listCategory",
+    "pdbxwithvr:has_pdbx_reference_entity_polyCategory": "has_pdbx_reference_entity_polyCategory",
+    "pdbxwithvr:pdbx_reference_entity_polyCategory": "pdbx_reference_entity_polyCategory",
+    "pdbxwithvr:has_pdbx_reference_entity_poly_linkCategory": "has_pdbx_reference_entity_poly_linkCategory",
+    "pdbxwithvr:pdbx_reference_entity_poly_linkCategory": "pdbx_reference_entity_poly_linkCategory",
+    "pdbxwithvr:has_pdbx_reference_entity_poly_seqCategory": "has_pdbx_reference_entity_poly_seqCategory",
+    "pdbxwithvr:pdbx_reference_entity_poly_seqCategory": "pdbx_reference_entity_poly_seqCategory",
+    "pdbxwithvr:has_pdbx_reference_entity_sequenceCategory": "has_pdbx_reference_entity_sequenceCategory",
+    "pdbxwithvr:pdbx_reference_entity_sequenceCategory": "pdbx_reference_entity_sequenceCategory",
+    "pdbxwithvr:has_pdbx_reference_entity_src_natCategory": "has_pdbx_reference_entity_src_natCategory",
+    "pdbxwithvr:pdbx_reference_entity_src_natCategory": "pdbx_reference_entity_src_natCategory",
+    "pdbxwithvr:has_pdbx_reference_moleculeCategory": "has_pdbx_reference_moleculeCategory",
+    "pdbxwithvr:pdbx_reference_moleculeCategory": "pdbx_reference_moleculeCategory",
+    "pdbxwithvr:has_pdbx_validate_close_contactCategory": "has_pdbx_validate_close_contactCategory",
+    "pdbxwithvr:pdbx_validate_close_contactCategory": "pdbx_validate_close_contactCategory",
+    "pdbxwithvr:link_to_pdb_src": "link_to_pdb_src",
+    "pdbxwithvr:has_pdbx_dcc_densityCategory": "has_pdbx_dcc_densityCategory",
+    "pdbxwithvr:pdbx_dcc_densityCategory": "pdbx_dcc_densityCategory",
+    "pdbxwithvr:has_pdbx_dcc_density_corrCategory": "has_pdbx_dcc_density_corrCategory",
+    "pdbxwithvr:pdbx_dcc_density_corrCategory": "pdbx_dcc_density_corrCategory",
+    "pdbxwithvr:has_pdbx_dcc_entity_geometryCategory": "has_pdbx_dcc_entity_geometryCategory",
+    "pdbxwithvr:pdbx_dcc_entity_geometryCategory": "pdbx_dcc_entity_geometryCategory",
+    "pdbxwithvr:has_pdbx_dcc_geometryCategory": "has_pdbx_dcc_geometryCategory",
+    "pdbxwithvr:pdbx_dcc_geometryCategory": "pdbx_dcc_geometryCategory",
+    "pdbxwithvr:has_pdbx_dcc_mapCategory": "has_pdbx_dcc_mapCategory",
+    "pdbxwithvr:pdbx_dcc_mapCategory": "pdbx_dcc_mapCategory",
+    "pdbxwithvr:has_pdbx_dcc_map_overallCategory": "has_pdbx_dcc_map_overallCategory",
+    "pdbxwithvr:pdbx_dcc_map_overallCategory": "pdbx_dcc_map_overallCategory",
+    "pdbxwithvr:has_pdbx_dcc_mon_geometryCategory": "has_pdbx_dcc_mon_geometryCategory",
+    "pdbxwithvr:pdbx_dcc_mon_geometryCategory": "pdbx_dcc_mon_geometryCategory",
+    "pdbxwithvr:has_pdbx_percentile_conditionsCategory": "has_pdbx_percentile_conditionsCategory",
+    "pdbxwithvr:pdbx_percentile_conditionsCategory": "pdbx_percentile_conditionsCategory",
+    "pdbxwithvr:has_pdbx_percentile_entity_viewCategory": "has_pdbx_percentile_entity_viewCategory",
+    "pdbxwithvr:pdbx_percentile_entity_viewCategory": "pdbx_percentile_entity_viewCategory",
+    "pdbxwithvr:has_pdbx_percentile_listCategory": "has_pdbx_percentile_listCategory",
+    "pdbxwithvr:pdbx_percentile_listCategory": "pdbx_percentile_listCategory",
+    "pdbxwithvr:has_pdbx_percentile_viewCategory": "has_pdbx_percentile_viewCategory",
+    "pdbxwithvr:pdbx_percentile_viewCategory": "pdbx_percentile_viewCategory",
+    "pdbxwithvr:has_pdbx_validation_softwareCategory": "has_pdbx_validation_softwareCategory",
+    "pdbxwithvr:pdbx_validation_softwareCategory": "pdbx_validation_softwareCategory",
+    "pdbxwithvr:has_struct_mon_protCategory": "has_struct_mon_protCategory",
+    "pdbxwithvr:struct_mon_protCategory": "struct_mon_protCategory",
+    "pdbxwithvr:has_pdbx_em_atom_inclusionCategory": "has_pdbx_em_atom_inclusionCategory",
+    "pdbxwithvr:pdbx_em_atom_inclusionCategory": "pdbx_em_atom_inclusionCategory",
+    "pdbxwithvr:has_pdbx_em_atom_inclusion_markerCategory": "has_pdbx_em_atom_inclusion_markerCategory",
+    "pdbxwithvr:pdbx_em_atom_inclusion_markerCategory": "pdbx_em_atom_inclusion_markerCategory",
+    "pdbxwithvr:has_pdbx_em_density_distributionCategory": "has_pdbx_em_density_distributionCategory",
+    "pdbxwithvr:pdbx_em_density_distributionCategory": "pdbx_em_density_distributionCategory",
+    "pdbxwithvr:has_pdbx_em_density_distribution_markerCategory": "has_pdbx_em_density_distribution_markerCategory",
+    "pdbxwithvr:pdbx_em_density_distribution_markerCategory": "pdbx_em_density_distribution_markerCategory",
+    "pdbxwithvr:has_pdbx_em_fsc_curveCategory": "has_pdbx_em_fsc_curveCategory",
+    "pdbxwithvr:pdbx_em_fsc_curveCategory": "pdbx_em_fsc_curveCategory",
+    "pdbxwithvr:has_pdbx_em_fsc_curve_markerCategory": "has_pdbx_em_fsc_curve_markerCategory",
+    "pdbxwithvr:pdbx_em_fsc_curve_markerCategory": "pdbx_em_fsc_curve_markerCategory",
+    "pdbxwithvr:has_pdbx_em_fsc_cutoff_curveCategory": "has_pdbx_em_fsc_cutoff_curveCategory",
+    "pdbxwithvr:pdbx_em_fsc_cutoff_curveCategory": "pdbx_em_fsc_cutoff_curveCategory",
+    "pdbxwithvr:has_pdbx_em_fsc_cutoff_curve_markerCategory": "has_pdbx_em_fsc_cutoff_curve_markerCategory",
+    "pdbxwithvr:pdbx_em_fsc_cutoff_curve_markerCategory": "pdbx_em_fsc_cutoff_curve_markerCategory",
+    "pdbxwithvr:has_pdbx_em_fsc_resolutionCategory": "has_pdbx_em_fsc_resolutionCategory",
+    "pdbxwithvr:pdbx_em_fsc_resolutionCategory": "pdbx_em_fsc_resolutionCategory",
+    "pdbxwithvr:has_pdbx_em_rapsCategory": "has_pdbx_em_rapsCategory",
+    "pdbxwithvr:pdbx_em_rapsCategory": "pdbx_em_rapsCategory",
+    "pdbxwithvr:has_pdbx_em_raps_markerCategory": "has_pdbx_em_raps_markerCategory",
+    "pdbxwithvr:pdbx_em_raps_markerCategory": "pdbx_em_raps_markerCategory",
+    "pdbxwithvr:has_pdbx_em_raw_rapsCategory": "has_pdbx_em_raw_rapsCategory",
+    "pdbxwithvr:pdbx_em_raw_rapsCategory": "pdbx_em_raw_rapsCategory",
+    "pdbxwithvr:has_pdbx_em_raw_raps_markerCategory": "has_pdbx_em_raw_raps_markerCategory",
+    "pdbxwithvr:pdbx_em_raw_raps_markerCategory": "pdbx_em_raw_raps_markerCategory",
+    "pdbxwithvr:has_pdbx_em_validate_map_modelCategory": "has_pdbx_em_validate_map_modelCategory",
+    "pdbxwithvr:pdbx_em_validate_map_modelCategory": "pdbx_em_validate_map_modelCategory",
+    "pdbxwithvr:has_pdbx_em_validate_map_model_entityCategory": "has_pdbx_em_validate_map_model_entityCategory",
+    "pdbxwithvr:pdbx_em_validate_map_model_entityCategory": "pdbx_em_validate_map_model_entityCategory",
+    "pdbxwithvr:has_pdbx_em_validate_map_model_overallCategory": "has_pdbx_em_validate_map_model_overallCategory",
+    "pdbxwithvr:pdbx_em_validate_map_model_overallCategory": "pdbx_em_validate_map_model_overallCategory",
+    "pdbxwithvr:has_pdbx_em_volume_estimateCategory": "has_pdbx_em_volume_estimateCategory",
+    "pdbxwithvr:pdbx_em_volume_estimateCategory": "pdbx_em_volume_estimateCategory",
+    "pdbxwithvr:has_pdbx_em_volume_estimate_markerCategory": "has_pdbx_em_volume_estimate_markerCategory",
+    "pdbxwithvr:pdbx_em_volume_estimate_markerCategory": "pdbx_em_volume_estimate_markerCategory",
+    "pdbxwithvr:has_pdbx_reference_entity_subcomponentsCategory": "has_pdbx_reference_entity_subcomponentsCategory",
+    "pdbxwithvr:pdbx_reference_entity_subcomponentsCategory": "pdbx_reference_entity_subcomponentsCategory",
+    "pdbxwithvr:has_entity_name_comCategory": "has_entity_name_comCategory",
+    "pdbxwithvr:entity_name_comCategory": "entity_name_comCategory",
+    "pdbxwithvr:has_pdbx_struct_assembly_propCategory": "has_pdbx_struct_assembly_propCategory",
+    "pdbxwithvr:pdbx_struct_assembly_propCategory": "pdbx_struct_assembly_propCategory",
+    "pdbxwithvr:has_struct_mon_prot_cisCategory": "has_struct_mon_prot_cisCategory",
+    "pdbxwithvr:struct_mon_prot_cisCategory": "struct_mon_prot_cisCategory",
+    "pdbxwithvr:has_pdbx_struct_mod_residueCategory": "has_pdbx_struct_mod_residueCategory",
+    "pdbxwithvr:pdbx_struct_mod_residueCategory": "pdbx_struct_mod_residueCategory",
+    "pdbxwithvr:has_pdbx_validate_planesCategory": "has_pdbx_validate_planesCategory",
+    "pdbxwithvr:pdbx_validate_planesCategory": "pdbx_validate_planesCategory",
+    "pdbxwithvr:has_pdbx_validate_symm_contactCategory": "has_pdbx_validate_symm_contactCategory",
+    "pdbxwithvr:pdbx_validate_symm_contactCategory": "pdbx_validate_symm_contactCategory",
+    "pdbxwithvr:has_entity_keywordsCategory": "has_entity_keywordsCategory",
+    "pdbxwithvr:entity_keywordsCategory": "entity_keywordsCategory",
+    "pdbxwithvr:has_pdbx_refineCategory": "has_pdbx_refineCategory",
+    "pdbxwithvr:pdbx_refineCategory": "pdbx_refineCategory",
+    "pdbxwithvr:has_struct_site_keywordsCategory": "has_struct_site_keywordsCategory",
+    "pdbxwithvr:struct_site_keywordsCategory": "struct_site_keywordsCategory",
+    "pdbxwithvr:has_atom_sites_footnoteCategory": "has_atom_sites_footnoteCategory",
+    "pdbxwithvr:atom_sites_footnoteCategory": "atom_sites_footnoteCategory",
+    "pdbxwithvr:has_pdbx_database_remarkCategory": "has_pdbx_database_remarkCategory",
+    "pdbxwithvr:pdbx_database_remarkCategory": "pdbx_database_remarkCategory",
+    "pdbxwithvr:has_pdbx_validate_peptide_omegaCategory": "has_pdbx_validate_peptide_omegaCategory",
+    "pdbxwithvr:pdbx_validate_peptide_omegaCategory": "pdbx_validate_peptide_omegaCategory",
+    "pdbxwithvr:has_pdbx_validate_rmsd_torsionCategory": "has_pdbx_validate_rmsd_torsionCategory",
+    "pdbxwithvr:pdbx_validate_rmsd_torsionCategory": "pdbx_validate_rmsd_torsionCategory",
+    "pdbxwithvr:has_pdbx_validate_rmsd_torsions_atomCategory": "has_pdbx_validate_rmsd_torsions_atomCategory",
+    "pdbxwithvr:pdbx_validate_rmsd_torsions_atomCategory": "pdbx_validate_rmsd_torsions_atomCategory",
+    "pdbxwithvr:has_pdbx_entity_src_synCategory": "has_pdbx_entity_src_synCategory",
+    "pdbxwithvr:pdbx_entity_src_synCategory": "pdbx_entity_src_synCategory",
+    "pdbxwithvr:has_pdbx_nmr_ensembleCategory": "has_pdbx_nmr_ensembleCategory",
+    "pdbxwithvr:pdbx_nmr_ensembleCategory": "pdbx_nmr_ensembleCategory",
+    "pdbxwithvr:has_pdbx_nmr_refineCategory": "has_pdbx_nmr_refineCategory",
+    "pdbxwithvr:pdbx_nmr_refineCategory": "pdbx_nmr_refineCategory",
+    "pdbxwithvr:has_pdbx_nmr_softwareCategory": "has_pdbx_nmr_softwareCategory",
+    "pdbxwithvr:pdbx_nmr_softwareCategory": "pdbx_nmr_softwareCategory",
+    "pdbxwithvr:has_pdbx_struct_nmr_ens_clustCategory": "has_pdbx_struct_nmr_ens_clustCategory",
+    "pdbxwithvr:pdbx_struct_nmr_ens_clustCategory": "pdbx_struct_nmr_ens_clustCategory",
+    "pdbxwithvr:has_pdbx_database_PDB_obs_sprCategory": "has_pdbx_database_PDB_obs_sprCategory",
+    "pdbxwithvr:pdbx_database_PDB_obs_sprCategory": "pdbx_database_PDB_obs_sprCategory",
+    "pdbxwithvr:has_pdbx_validate_chiralCategory": "has_pdbx_validate_chiralCategory",
+    "pdbxwithvr:pdbx_validate_chiralCategory": "pdbx_validate_chiralCategory",
+    "pdbxwithvr:has_entity_name_sysCategory": "has_entity_name_sysCategory",
+    "pdbxwithvr:entity_name_sysCategory": "entity_name_sysCategory",
+    "pdbxwithvr:has_pdbx_deposit_groupCategory": "has_pdbx_deposit_groupCategory",
+    "pdbxwithvr:pdbx_deposit_groupCategory": "pdbx_deposit_groupCategory",
+    "pdbxwithvr:has_pdbx_distant_solvent_atomsCategory": "has_pdbx_distant_solvent_atomsCategory",
+    "pdbxwithvr:pdbx_distant_solvent_atomsCategory": "pdbx_distant_solvent_atomsCategory",
+    "pdbxwithvr:has_pdbx_entity_instance_featureCategory": "has_pdbx_entity_instance_featureCategory",
+    "pdbxwithvr:pdbx_entity_instance_featureCategory": "pdbx_entity_instance_featureCategory",
+    "pdbxwithvr:has_pdbx_refine_tlsCategory": "has_pdbx_refine_tlsCategory",
+    "pdbxwithvr:pdbx_refine_tlsCategory": "pdbx_refine_tlsCategory",
+    "pdbxwithvr:has_pdbx_refine_tls_groupCategory": "has_pdbx_refine_tls_groupCategory",
+    "pdbxwithvr:pdbx_refine_tls_groupCategory": "pdbx_refine_tls_groupCategory",
+    "pdbxwithvr:has_phasingCategory": "has_phasingCategory",
+    "pdbxwithvr:phasingCategory": "phasingCategory",
+    "pdbxwithvr:has_struct_mon_nuclCategory": "has_struct_mon_nuclCategory",
+    "pdbxwithvr:struct_mon_nuclCategory": "struct_mon_nuclCategory",
+    "pdbxwithvr:has_citation_editorCategory": "has_citation_editorCategory",
+    "pdbxwithvr:citation_editorCategory": "citation_editorCategory",
+    "pdbxwithvr:has_pdbx_validate_main_chain_planeCategory": "has_pdbx_validate_main_chain_planeCategory",
+    "pdbxwithvr:pdbx_validate_main_chain_planeCategory": "pdbx_validate_main_chain_planeCategory",
+    "pdbxwithvr:has_pdbx_nmr_exptlCategory": "has_pdbx_nmr_exptlCategory",
+    "pdbxwithvr:pdbx_nmr_exptlCategory": "pdbx_nmr_exptlCategory",
+    "pdbxwithvr:has_pdbx_nmr_exptl_sample_conditionsCategory": "has_pdbx_nmr_exptl_sample_conditionsCategory",
+    "pdbxwithvr:pdbx_nmr_exptl_sample_conditionsCategory": "pdbx_nmr_exptl_sample_conditionsCategory",
+    "pdbxwithvr:has_pdbx_nmr_sample_detailsCategory": "has_pdbx_nmr_sample_detailsCategory",
+    "pdbxwithvr:pdbx_nmr_sample_detailsCategory": "pdbx_nmr_sample_detailsCategory",
+    "pdbxwithvr:has_pdbx_nmr_spectrometerCategory": "has_pdbx_nmr_spectrometerCategory",
+    "pdbxwithvr:pdbx_nmr_spectrometerCategory": "pdbx_nmr_spectrometerCategory",
+    "pdbxwithvr:has_pdbx_struct_nmr_ens_clust_genCategory": "has_pdbx_struct_nmr_ens_clust_genCategory",
+    "pdbxwithvr:pdbx_struct_nmr_ens_clust_genCategory": "pdbx_struct_nmr_ens_clust_genCategory",
+    "pdbxwithvr:has_pdbx_struct_nmr_ens_domCategory": "has_pdbx_struct_nmr_ens_domCategory",
+    "pdbxwithvr:pdbx_struct_nmr_ens_domCategory": "pdbx_struct_nmr_ens_domCategory",
+    "pdbxwithvr:has_pdbx_struct_nmr_ens_dom_limCategory": "has_pdbx_struct_nmr_ens_dom_limCategory",
+    "pdbxwithvr:pdbx_struct_nmr_ens_dom_limCategory": "pdbx_struct_nmr_ens_dom_limCategory",
+    "pdbxwithvr:has_struct_ncs_dom_limCategory": "has_struct_ncs_dom_limCategory",
+    "pdbxwithvr:struct_ncs_dom_limCategory": "struct_ncs_dom_limCategory",
+    "pdbxwithvr:has_entity_src_natCategory": "has_entity_src_natCategory",
+    "pdbxwithvr:entity_src_natCategory": "entity_src_natCategory",
+    "pdbxwithvr:has_pdbx_validate_polymer_linkageCategory": "has_pdbx_validate_polymer_linkageCategory",
+    "pdbxwithvr:pdbx_validate_polymer_linkageCategory": "pdbx_validate_polymer_linkageCategory",
+    "pdbxwithvr:has_pdbx_reflns_twinCategory": "has_pdbx_reflns_twinCategory",
+    "pdbxwithvr:pdbx_reflns_twinCategory": "pdbx_reflns_twinCategory",
+    "pdbxwithvr:has_pdbx_branch_schemeCategory": "has_pdbx_branch_schemeCategory",
+    "pdbxwithvr:pdbx_branch_schemeCategory": "pdbx_branch_schemeCategory",
+    "pdbxwithvr:has_pdbx_entity_branchCategory": "has_pdbx_entity_branchCategory",
+    "pdbxwithvr:pdbx_entity_branchCategory": "pdbx_entity_branchCategory",
+    "pdbxwithvr:has_pdbx_entity_branch_descriptorCategory": "has_pdbx_entity_branch_descriptorCategory",
+    "pdbxwithvr:pdbx_entity_branch_descriptorCategory": "pdbx_entity_branch_descriptorCategory",
+    "pdbxwithvr:has_pdbx_entity_branch_linkCategory": "has_pdbx_entity_branch_linkCategory",
+    "pdbxwithvr:pdbx_entity_branch_linkCategory": "pdbx_entity_branch_linkCategory",
+    "pdbxwithvr:has_pdbx_entity_branch_listCategory": "has_pdbx_entity_branch_listCategory",
+    "pdbxwithvr:pdbx_entity_branch_listCategory": "pdbx_entity_branch_listCategory",
+    "pdbxwithvr:has_pdbx_moleculeCategory": "has_pdbx_moleculeCategory",
+    "pdbxwithvr:pdbx_moleculeCategory": "pdbx_moleculeCategory",
+    "pdbxwithvr:has_pdbx_molecule_featuresCategory": "has_pdbx_molecule_featuresCategory",
+    "pdbxwithvr:pdbx_molecule_featuresCategory": "pdbx_molecule_featuresCategory",
+    "pdbxwithvr:has_space_groupCategory": "has_space_groupCategory",
+    "pdbxwithvr:space_groupCategory": "space_groupCategory",
+    "pdbxwithvr:has_space_group_symopCategory": "has_space_group_symopCategory",
+    "pdbxwithvr:space_group_symopCategory": "space_group_symopCategory",
+    "pdbxwithvr:has_struct_ncs_ens_genCategory": "has_struct_ncs_ens_genCategory",
+    "pdbxwithvr:struct_ncs_ens_genCategory": "struct_ncs_ens_genCategory",
+    "pdbxwithvr:has_pdbx_nmr_exptl_sampleCategory": "has_pdbx_nmr_exptl_sampleCategory",
+    "pdbxwithvr:pdbx_nmr_exptl_sampleCategory": "pdbx_nmr_exptl_sampleCategory",
+    "pdbxwithvr:has_pdbx_nmr_representativeCategory": "has_pdbx_nmr_representativeCategory",
+    "pdbxwithvr:pdbx_nmr_representativeCategory": "pdbx_nmr_representativeCategory",
+    "pdbxwithvr:has_pdbx_nmr_assigned_chem_shift_listCategory": "has_pdbx_nmr_assigned_chem_shift_listCategory",
+    "pdbxwithvr:pdbx_nmr_assigned_chem_shift_listCategory": "pdbx_nmr_assigned_chem_shift_listCategory",
+    "pdbxwithvr:has_pdbx_nmr_chem_shift_annotationCategory": "has_pdbx_nmr_chem_shift_annotationCategory",
+    "pdbxwithvr:pdbx_nmr_chem_shift_annotationCategory": "pdbx_nmr_chem_shift_annotationCategory",
+    "pdbxwithvr:has_pdbx_nmr_chem_shift_completenessCategory": "has_pdbx_nmr_chem_shift_completenessCategory",
+    "pdbxwithvr:pdbx_nmr_chem_shift_completenessCategory": "pdbx_nmr_chem_shift_completenessCategory",
+    "pdbxwithvr:has_pdbx_nmr_chem_shift_re_offsetCategory": "has_pdbx_nmr_chem_shift_re_offsetCategory",
+    "pdbxwithvr:pdbx_nmr_chem_shift_re_offsetCategory": "pdbx_nmr_chem_shift_re_offsetCategory",
+    "pdbxwithvr:has_pdbx_nmr_distance_violationCategory": "has_pdbx_nmr_distance_violationCategory",
+    "pdbxwithvr:pdbx_nmr_distance_violationCategory": "pdbx_nmr_distance_violationCategory",
+    "pdbxwithvr:has_pdbx_nmr_distance_violation_ensembleCategory": "has_pdbx_nmr_distance_violation_ensembleCategory",
+    "pdbxwithvr:pdbx_nmr_distance_violation_ensembleCategory": "pdbx_nmr_distance_violation_ensembleCategory",
+    "pdbxwithvr:has_pdbx_nmr_distance_violation_modelCategory": "has_pdbx_nmr_distance_violation_modelCategory",
+    "pdbxwithvr:pdbx_nmr_distance_violation_modelCategory": "pdbx_nmr_distance_violation_modelCategory",
+    "pdbxwithvr:has_pdbx_nmr_distance_violation_pluralCategory": "has_pdbx_nmr_distance_violation_pluralCategory",
+    "pdbxwithvr:pdbx_nmr_distance_violation_pluralCategory": "pdbx_nmr_distance_violation_pluralCategory",
+    "pdbxwithvr:has_pdbx_nmr_distance_violation_summaryCategory": "has_pdbx_nmr_distance_violation_summaryCategory",
+    "pdbxwithvr:pdbx_nmr_distance_violation_summaryCategory": "pdbx_nmr_distance_violation_summaryCategory",
+    "pdbxwithvr:has_pdbx_nmr_restraint_listCategory": "has_pdbx_nmr_restraint_listCategory",
+    "pdbxwithvr:pdbx_nmr_restraint_listCategory": "pdbx_nmr_restraint_listCategory",
+    "pdbxwithvr:has_pdbx_nmr_restraint_summaryCategory": "has_pdbx_nmr_restraint_summaryCategory",
+    "pdbxwithvr:pdbx_nmr_restraint_summaryCategory": "pdbx_nmr_restraint_summaryCategory",
+    "pdbxwithvr:has_pdbx_nmr_restraint_violationCategory": "has_pdbx_nmr_restraint_violationCategory",
+    "pdbxwithvr:pdbx_nmr_restraint_violationCategory": "pdbx_nmr_restraint_violationCategory",
+    "pdbxwithvr:has_pdbx_phasing_MRCategory": "has_pdbx_phasing_MRCategory",
+    "pdbxwithvr:pdbx_phasing_MRCategory": "pdbx_phasing_MRCategory",
+    "pdbxwithvr:has_em_buffer_componentCategory": "has_em_buffer_componentCategory",
+    "pdbxwithvr:em_buffer_componentCategory": "em_buffer_componentCategory",
+    "pdbxwithvr:has_em_imaging_opticsCategory": "has_em_imaging_opticsCategory",
+    "pdbxwithvr:em_imaging_opticsCategory": "em_imaging_opticsCategory",
+    "pdbxwithvr:has_em_particle_selectionCategory": "has_em_particle_selectionCategory",
+    "pdbxwithvr:em_particle_selectionCategory": "em_particle_selectionCategory",
+    "pdbxwithvr:has_pdbx_nmr_detailsCategory": "has_pdbx_nmr_detailsCategory",
+    "pdbxwithvr:pdbx_nmr_detailsCategory": "pdbx_nmr_detailsCategory",
+    "pdbxwithvr:has_pdbx_serial_crystallography_data_reductionCategory": "has_pdbx_serial_crystallography_data_reductionCategory",
+    "pdbxwithvr:pdbx_serial_crystallography_data_reductionCategory": "pdbx_serial_crystallography_data_reductionCategory",
+    "pdbxwithvr:has_pdbx_serial_crystallography_sample_deliveryCategory": "has_pdbx_serial_crystallography_sample_deliveryCategory",
+    "pdbxwithvr:pdbx_serial_crystallography_sample_deliveryCategory": "pdbx_serial_crystallography_sample_deliveryCategory",
+    "pdbxwithvr:has_pdbx_serial_crystallography_sample_delivery_injectionCategory": "has_pdbx_serial_crystallography_sample_delivery_injectionCategory",
+    "pdbxwithvr:pdbx_serial_crystallography_sample_delivery_injectionCategory": "pdbx_serial_crystallography_sample_delivery_injectionCategory",
+    "pdbxwithvr:has_em_single_particle_entityCategory": "has_em_single_particle_entityCategory",
+    "pdbxwithvr:em_single_particle_entityCategory": "em_single_particle_entityCategory",
+    "pdbxwithvr:has_database_PDB_caveatCategory": "has_database_PDB_caveatCategory",
+    "pdbxwithvr:database_PDB_caveatCategory": "database_PDB_caveatCategory",
+    "pdbxwithvr:has_pdbx_validate_rmsd_ringCategory": "has_pdbx_validate_rmsd_ringCategory",
+    "pdbxwithvr:pdbx_validate_rmsd_ringCategory": "pdbx_validate_rmsd_ringCategory",
+    "pdbxwithvr:has_pdbx_validate_rmsd_rings_atomCategory": "has_pdbx_validate_rmsd_rings_atomCategory",
+    "pdbxwithvr:pdbx_validate_rmsd_rings_atomCategory": "pdbx_validate_rmsd_rings_atomCategory",
+    "pdbxwithvr:has_em_helical_entityCategory": "has_em_helical_entityCategory",
+    "pdbxwithvr:em_helical_entityCategory": "em_helical_entityCategory",
+    "pdbxwithvr:has_diffrn_reflnsCategory": "has_diffrn_reflnsCategory",
+    "pdbxwithvr:diffrn_reflnsCategory": "diffrn_reflnsCategory",
+    "pdbxwithvr:has_pdbx_diffrn_reflns_shellCategory": "has_pdbx_diffrn_reflns_shellCategory",
+    "pdbxwithvr:pdbx_diffrn_reflns_shellCategory": "pdbx_diffrn_reflns_shellCategory",
+    "pdbxwithvr:has_pdbx_related_exp_data_setCategory": "has_pdbx_related_exp_data_setCategory",
+    "pdbxwithvr:pdbx_related_exp_data_setCategory": "pdbx_related_exp_data_setCategory",
+    "pdbxwithvr:has_pdbx_phasing_MAD_setCategory": "has_pdbx_phasing_MAD_setCategory",
+    "pdbxwithvr:pdbx_phasing_MAD_setCategory": "pdbx_phasing_MAD_setCategory",
+    "pdbxwithvr:has_pdbx_phasing_MAD_set_shellCategory": "has_pdbx_phasing_MAD_set_shellCategory",
+    "pdbxwithvr:pdbx_phasing_MAD_set_shellCategory": "pdbx_phasing_MAD_set_shellCategory",
+    "pdbxwithvr:has_pdbx_phasing_MAD_set_siteCategory": "has_pdbx_phasing_MAD_set_siteCategory",
+    "pdbxwithvr:pdbx_phasing_MAD_set_siteCategory": "pdbx_phasing_MAD_set_siteCategory",
+    "pdbxwithvr:has_pdbx_phasing_MAD_shellCategory": "has_pdbx_phasing_MAD_shellCategory",
+    "pdbxwithvr:pdbx_phasing_MAD_shellCategory": "pdbx_phasing_MAD_shellCategory",
+    "pdbxwithvr:has_pdbx_phasing_dmCategory": "has_pdbx_phasing_dmCategory",
+    "pdbxwithvr:pdbx_phasing_dmCategory": "pdbx_phasing_dmCategory",
+    "pdbxwithvr:has_pdbx_phasing_dm_shellCategory": "has_pdbx_phasing_dm_shellCategory",
+    "pdbxwithvr:pdbx_phasing_dm_shellCategory": "pdbx_phasing_dm_shellCategory",
+    "pdbxwithvr:has_phasing_MADCategory": "has_phasing_MADCategory",
+    "pdbxwithvr:phasing_MADCategory": "phasing_MADCategory",
+    "pdbxwithvr:has_phasing_MAD_clustCategory": "has_phasing_MAD_clustCategory",
+    "pdbxwithvr:phasing_MAD_clustCategory": "phasing_MAD_clustCategory",
+    "pdbxwithvr:has_phasing_MAD_exptCategory": "has_phasing_MAD_exptCategory",
+    "pdbxwithvr:phasing_MAD_exptCategory": "phasing_MAD_exptCategory",
+    "pdbxwithvr:has_phasing_MAD_setCategory": "has_phasing_MAD_setCategory",
+    "pdbxwithvr:phasing_MAD_setCategory": "phasing_MAD_setCategory",
+    "pdbxwithvr:has_phasing_setCategory": "has_phasing_setCategory",
+    "pdbxwithvr:phasing_setCategory": "phasing_setCategory",
+    "pdbxwithvr:has_pdbx_nmr_constraintsCategory": "has_pdbx_nmr_constraintsCategory",
+    "pdbxwithvr:pdbx_nmr_constraintsCategory": "pdbx_nmr_constraintsCategory",
+    "pdbxwithvr:has_em_virus_entityCategory": "has_em_virus_entityCategory",
+    "pdbxwithvr:em_virus_entityCategory": "em_virus_entityCategory",
+    "pdbxwithvr:has_em_virus_natural_hostCategory": "has_em_virus_natural_hostCategory",
+    "pdbxwithvr:em_virus_natural_hostCategory": "em_virus_natural_hostCategory",
+    "pdbxwithvr:has_em_virus_shellCategory": "has_em_virus_shellCategory",
+    "pdbxwithvr:em_virus_shellCategory": "em_virus_shellCategory",
+    "pdbxwithvr:has_pdbx_serial_crystallography_measurementCategory": "has_pdbx_serial_crystallography_measurementCategory",
+    "pdbxwithvr:pdbx_serial_crystallography_measurementCategory": "pdbx_serial_crystallography_measurementCategory",
+    "pdbxwithvr:has_pdbx_serial_crystallography_sample_delivery_fixed_targetCategory": "has_pdbx_serial_crystallography_sample_delivery_fixed_targetCategory",
+    "pdbxwithvr:pdbx_serial_crystallography_sample_delivery_fixed_targetCategory": "pdbx_serial_crystallography_sample_delivery_fixed_targetCategory",
+    "pdbxwithvr:has_auditCategory": "has_auditCategory",
+    "pdbxwithvr:auditCategory": "auditCategory",
+    "pdbxwithvr:has_pdbx_nmr_dihedral_angle_violationCategory": "has_pdbx_nmr_dihedral_angle_violationCategory",
+    "pdbxwithvr:pdbx_nmr_dihedral_angle_violationCategory": "pdbx_nmr_dihedral_angle_violationCategory",
+    "pdbxwithvr:has_pdbx_nmr_dihedral_angle_violation_ensembleCategory": "has_pdbx_nmr_dihedral_angle_violation_ensembleCategory",
+    "pdbxwithvr:pdbx_nmr_dihedral_angle_violation_ensembleCategory": "pdbx_nmr_dihedral_angle_violation_ensembleCategory",
+    "pdbxwithvr:has_pdbx_nmr_dihedral_angle_violation_modelCategory": "has_pdbx_nmr_dihedral_angle_violation_modelCategory",
+    "pdbxwithvr:pdbx_nmr_dihedral_angle_violation_modelCategory": "pdbx_nmr_dihedral_angle_violation_modelCategory",
+    "pdbxwithvr:has_pdbx_nmr_dihedral_angle_violation_pluralCategory": "has_pdbx_nmr_dihedral_angle_violation_pluralCategory",
+    "pdbxwithvr:pdbx_nmr_dihedral_angle_violation_pluralCategory": "pdbx_nmr_dihedral_angle_violation_pluralCategory",
+    "pdbxwithvr:has_pdbx_nmr_dihedral_angle_violation_summaryCategory": "has_pdbx_nmr_dihedral_angle_violation_summaryCategory",
+    "pdbxwithvr:pdbx_nmr_dihedral_angle_violation_summaryCategory": "pdbx_nmr_dihedral_angle_violation_summaryCategory",
+    "pdbxwithvr:has_database_PDB_tvectCategory": "has_database_PDB_tvectCategory",
+    "pdbxwithvr:database_PDB_tvectCategory": "database_PDB_tvectCategory",
+    "pdbxwithvr:has_pdbx_reference_molecule_related_structuresCategory": "has_pdbx_reference_molecule_related_structuresCategory",
+    "pdbxwithvr:pdbx_reference_molecule_related_structuresCategory": "pdbx_reference_molecule_related_structuresCategory",
+    "pdbxwithvr:has_pdbx_reference_entity_linkCategory": "has_pdbx_reference_entity_linkCategory",
+    "pdbxwithvr:pdbx_reference_entity_linkCategory": "pdbx_reference_entity_linkCategory",
+    "pdbxwithvr:has_pdbx_reference_entity_nonpolyCategory": "has_pdbx_reference_entity_nonpolyCategory",
+    "pdbxwithvr:pdbx_reference_entity_nonpolyCategory": "pdbx_reference_entity_nonpolyCategory",
+    "pdbxwithvr:has_pdbx_coordinate_modelCategory": "has_pdbx_coordinate_modelCategory",
+    "pdbxwithvr:pdbx_coordinate_modelCategory": "pdbx_coordinate_modelCategory",
+    "pdbxwithvr:has_pdbx_modification_featureCategory": "has_pdbx_modification_featureCategory",
+    "pdbxwithvr:pdbx_modification_featureCategory": "pdbx_modification_featureCategory",
+    "pdbxwithvr:has_em_virus_syntheticCategory": "has_em_virus_syntheticCategory",
+    "pdbxwithvr:em_virus_syntheticCategory": "em_virus_syntheticCategory",
+    "pdbxwithvr:has_em_3d_crystal_entityCategory": "has_em_3d_crystal_entityCategory",
+    "pdbxwithvr:em_3d_crystal_entityCategory": "em_3d_crystal_entityCategory",
+    "pdbxwithvr:has_em_crystal_formationCategory": "has_em_crystal_formationCategory",
+    "pdbxwithvr:em_crystal_formationCategory": "em_crystal_formationCategory",
+    "pdbxwithvr:has_em_diffractionCategory": "has_em_diffractionCategory",
+    "pdbxwithvr:em_diffractionCategory": "em_diffractionCategory",
+    "pdbxwithvr:has_em_diffraction_shellCategory": "has_em_diffraction_shellCategory",
+    "pdbxwithvr:em_diffraction_shellCategory": "em_diffraction_shellCategory",
+    "pdbxwithvr:has_em_diffraction_statsCategory": "has_em_diffraction_statsCategory",
+    "pdbxwithvr:em_diffraction_statsCategory": "em_diffraction_statsCategory",
+    "pdbxwithvr:has_pdbx_nmr_unmapped_chem_shiftCategory": "has_pdbx_nmr_unmapped_chem_shiftCategory",
+    "pdbxwithvr:pdbx_nmr_unmapped_chem_shiftCategory": "pdbx_nmr_unmapped_chem_shiftCategory",
+    "pdbxwithvr:has_pdbx_validate_nmr_chem_shiftCategory": "has_pdbx_validate_nmr_chem_shiftCategory",
+    "pdbxwithvr:pdbx_validate_nmr_chem_shiftCategory": "pdbx_validate_nmr_chem_shiftCategory",
+    "pdbxwithvr:has_em_volume_selectionCategory": "has_em_volume_selectionCategory",
+    "pdbxwithvr:em_volume_selectionCategory": "em_volume_selectionCategory",
+    "pdbxwithvr:has_pdbx_point_symmetryCategory": "has_pdbx_point_symmetryCategory",
+    "pdbxwithvr:pdbx_point_symmetryCategory": "pdbx_point_symmetryCategory",
+    "pdbxwithvr:has_pdbx_nmr_ensemble_rmsCategory": "has_pdbx_nmr_ensemble_rmsCategory",
+    "pdbxwithvr:pdbx_nmr_ensemble_rmsCategory": "pdbx_nmr_ensemble_rmsCategory",
+    "pdbxwithvr:has_phasing_MIRCategory": "has_phasing_MIRCategory",
+    "pdbxwithvr:phasing_MIRCategory": "phasing_MIRCategory",
+    "pdbxwithvr:has_phasing_MIR_derCategory": "has_phasing_MIR_derCategory",
+    "pdbxwithvr:phasing_MIR_derCategory": "phasing_MIR_derCategory",
+    "pdbxwithvr:has_phasing_MIR_der_shellCategory": "has_phasing_MIR_der_shellCategory",
+    "pdbxwithvr:phasing_MIR_der_shellCategory": "phasing_MIR_der_shellCategory",
+    "pdbxwithvr:has_phasing_MIR_shellCategory": "has_phasing_MIR_shellCategory",
+    "pdbxwithvr:phasing_MIR_shellCategory": "phasing_MIR_shellCategory",
+    "pdbxwithvr:has_pdbx_struct_chem_comp_diagnosticsCategory": "has_pdbx_struct_chem_comp_diagnosticsCategory",
+    "pdbxwithvr:pdbx_struct_chem_comp_diagnosticsCategory": "pdbx_struct_chem_comp_diagnosticsCategory",
+    "pdbxwithvr:has_pdbx_helical_symmetryCategory": "has_pdbx_helical_symmetryCategory",
+    "pdbxwithvr:pdbx_helical_symmetryCategory": "pdbx_helical_symmetryCategory",
+    "pdbxwithvr:has_em_stainingCategory": "has_em_stainingCategory",
+    "pdbxwithvr:em_stainingCategory": "em_stainingCategory",
+    "pdbxwithvr:has_pdbx_bufferCategory": "has_pdbx_bufferCategory",
+    "pdbxwithvr:pdbx_bufferCategory": "pdbx_bufferCategory",
+    "pdbxwithvr:has_pdbx_buffer_componentsCategory": "has_pdbx_buffer_componentsCategory",
+    "pdbxwithvr:pdbx_buffer_componentsCategory": "pdbx_buffer_componentsCategory",
+    "owl:sameAs": "sameAs",
+    "pdbxwithvr:has_em_embeddingCategory": "has_em_embeddingCategory",
+    "pdbxwithvr:em_embeddingCategory": "em_embeddingCategory",
+    "pdbxwithvr:has_cell_measurementCategory": "has_cell_measurementCategory",
+    "pdbxwithvr:cell_measurementCategory": "cell_measurementCategory",
+    "pdbxwithvr:has_diffrn_measurementCategory": "has_diffrn_measurementCategory",
+    "pdbxwithvr:diffrn_measurementCategory": "diffrn_measurementCategory",
+    "pdbxwithvr:has_pdbx_nmr_unparsed_chem_shiftCategory": "has_pdbx_nmr_unparsed_chem_shiftCategory",
+    "pdbxwithvr:pdbx_nmr_unparsed_chem_shiftCategory": "pdbx_nmr_unparsed_chem_shiftCategory",
+    "pdbxwithvr:has_phasing_MIR_der_siteCategory": "has_phasing_MIR_der_siteCategory",
+    "pdbxwithvr:phasing_MIR_der_siteCategory": "phasing_MIR_der_siteCategory",
+    "pdbxwithvr:has_reflnCategory": "has_reflnCategory",
+    "pdbxwithvr:reflnCategory": "reflnCategory",
+    "pdbxwithvr:has_reflns_scaleCategory": "has_reflns_scaleCategory",
+    "pdbxwithvr:reflns_scaleCategory": "reflns_scaleCategory",
+    "pdbxwithvr:has_pdbx_audit_conformCategory": "has_pdbx_audit_conformCategory",
+    "pdbxwithvr:pdbx_audit_conformCategory": "pdbx_audit_conformCategory",
+    "pdbxwithvr:has_chem_linkCategory": "has_chem_linkCategory",
+    "pdbxwithvr:chem_linkCategory": "chem_linkCategory",
+    "pdbxwithvr:has_em_entity_assembly_syntheticCategory": "has_em_entity_assembly_syntheticCategory",
+    "pdbxwithvr:em_entity_assembly_syntheticCategory": "em_entity_assembly_syntheticCategory",
+    "pdbxwithvr:has_symmetry_equivCategory": "has_symmetry_equivCategory",
+    "pdbxwithvr:symmetry_equivCategory": "symmetry_equivCategory",
+    "pdbxwithvr:has_pdbx_soln_scatterCategory": "has_pdbx_soln_scatterCategory",
+    "pdbxwithvr:pdbx_soln_scatterCategory": "pdbx_soln_scatterCategory",
+    "pdbxwithvr:has_pdbx_soln_scatter_modelCategory": "has_pdbx_soln_scatter_modelCategory",
+    "pdbxwithvr:pdbx_soln_scatter_modelCategory": "pdbx_soln_scatter_modelCategory",
+    "pdbxwithvr:has_refine_funct_minimizedCategory": "has_refine_funct_minimizedCategory",
+    "pdbxwithvr:refine_funct_minimizedCategory": "refine_funct_minimizedCategory",
+    "pdbxwithvr:has_em_2d_crystal_entityCategory": "has_em_2d_crystal_entityCategory",
+    "pdbxwithvr:em_2d_crystal_entityCategory": "em_2d_crystal_entityCategory",
+    "pdbxwithvr:has_pdbx_struct_legacy_oper_listCategory": "has_pdbx_struct_legacy_oper_listCategory",
+    "pdbxwithvr:pdbx_struct_legacy_oper_listCategory": "pdbx_struct_legacy_oper_listCategory",
+    "pdbxwithvr:has_pdbx_exptl_crystal_cryo_treatmentCategory": "has_pdbx_exptl_crystal_cryo_treatmentCategory",
+    "pdbxwithvr:pdbx_exptl_crystal_cryo_treatmentCategory": "pdbx_exptl_crystal_cryo_treatmentCategory",
+    "pdbxwithvr:has_pdbx_exptl_crystal_grow_compCategory": "has_pdbx_exptl_crystal_grow_compCategory",
+    "pdbxwithvr:pdbx_exptl_crystal_grow_compCategory": "pdbx_exptl_crystal_grow_compCategory",
+    "pdbxwithvr:has_pdbx_exptl_crystal_grow_solCategory": "has_pdbx_exptl_crystal_grow_solCategory",
+    "pdbxwithvr:pdbx_exptl_crystal_grow_solCategory": "pdbx_exptl_crystal_grow_solCategory",
+    "pdbxwithvr:has_refln_sys_absCategory": "has_refln_sys_absCategory",
+    "pdbxwithvr:refln_sys_absCategory": "refln_sys_absCategory",
+    "pdbxwithvr:has_struct_biol_keywordsCategory": "has_struct_biol_keywordsCategory",
+    "pdbxwithvr:struct_biol_keywordsCategory": "struct_biol_keywordsCategory",
+    "pdbxwithvr:has_pdbx_struct_entity_instCategory": "has_pdbx_struct_entity_instCategory",
+    "pdbxwithvr:pdbx_struct_entity_instCategory": "pdbx_struct_entity_instCategory",
+    "pdbxwithvr:has_pdbx_struct_msym_genCategory": "has_pdbx_struct_msym_genCategory",
+    "pdbxwithvr:pdbx_struct_msym_genCategory": "pdbx_struct_msym_genCategory",
+    "pdbxwithvr:has_publCategory": "has_publCategory",
+    "pdbxwithvr:publCategory": "publCategory",
+    "pdbxwithvr:pdbx_chem_comp_audit": "pdbx_chem_comp_audit",
+    "pdbxwithvr:has_pdbx_chem_comp_audit": "has_pdbx_chem_comp_audit",
+    "pdbxwithvr:pdbx_chem_comp_descriptor": "pdbx_chem_comp_descriptor",
+    "pdbxwithvr:has_pdbx_chem_comp_descriptor": "has_pdbx_chem_comp_descriptor",
+    "pdbxwithvr:pdbx_chem_comp_identifier": "pdbx_chem_comp_identifier",
+    "pdbxwithvr:has_pdbx_chem_comp_identifier": "has_pdbx_chem_comp_identifier",
+    "pdbxwithvr:pdbx_chem_comp_synonyms": "pdbx_chem_comp_synonyms",
+    "pdbxwithvr:has_pdbx_chem_comp_synonyms": "has_pdbx_chem_comp_synonyms",
+    "pdbxwithvr:chem_comp.formula": "chem_comp.formula",
+    "pdbxwithvr:chem_comp.formula_weight": "chem_comp.formula_weight",
+    "pdbxwithvr:chem_comp.id": "chem_comp.id",
+    "pdbxwithvr:chem_comp.name": "chem_comp.name",
+    "pdbxwithvr:chem_comp.pdbx_ambiguous_flag": "chem_comp.pdbx_ambiguous_flag",
+    "pdbxwithvr:chem_comp.pdbx_formal_charge": "chem_comp.pdbx_formal_charge",
+    "pdbxwithvr:chem_comp.pdbx_ideal_coordinates_details": "chem_comp.pdbx_ideal_coordinates_details",
+    "pdbxwithvr:chem_comp.pdbx_ideal_coordinates_missing_flag": "chem_comp.pdbx_ideal_coordinates_missing_flag",
+    "pdbxwithvr:chem_comp.pdbx_initial_date": "chem_comp.pdbx_initial_date",
+    "pdbxwithvr:chem_comp.pdbx_model_coordinates_db_code": "chem_comp.pdbx_model_coordinates_db_code",
+    "pdbxwithvr:chem_comp.pdbx_model_coordinates_missing_flag": "chem_comp.pdbx_model_coordinates_missing_flag",
+    "pdbxwithvr:chem_comp.pdbx_modified_date": "chem_comp.pdbx_modified_date",
+    "pdbxwithvr:chem_comp.pdbx_processing_site": "chem_comp.pdbx_processing_site",
+    "pdbxwithvr:chem_comp.pdbx_release_status": "chem_comp.pdbx_release_status",
+    "pdbxwithvr:chem_comp.pdbx_type": "chem_comp.pdbx_type",
+    "pdbxwithvr:chem_comp.three_letter_code": "chem_comp.three_letter_code",
+    "pdbxwithvr:chem_comp.type": "chem_comp.type",
+    "pdbxwithvr:chem_comp.pdbx_synonyms": "chem_comp.pdbx_synonyms",
+    "pdbxwithvr:chem_comp.mon_nstd_parent_comp_id": "chem_comp.mon_nstd_parent_comp_id",
+    "pdbxwithvr:chem_comp.one_letter_code": "chem_comp.one_letter_code",
+    "pdbxwithvr:chem_comp.pdbx_subcomponent_list": "chem_comp.pdbx_subcomponent_list",
+    "pdbxwithvr:chem_comp.pdbx_pcm": "chem_comp.pdbx_pcm",
+    "pdbxwithvr:chem_comp.pdbx_replaced_by": "chem_comp.pdbx_replaced_by",
+    "pdbxwithvr:chem_comp.pdbx_replaces": "chem_comp.pdbx_replaces",
+    "pdbxwithvr:chem_comp.pdbx_model_coordinates_details": "chem_comp.pdbx_model_coordinates_details",
+    "pdbxwithvr:chem_comp.mon_nstd_flag": "chem_comp.mon_nstd_flag",
+    "dc:title": "title",
+    "dcterms:identifier": "identifier",
+    "pdbxwithvr:datablockName": "datablockName",
+    "skos:altLabel": "altLabel",
+    "pdbxwithvr:pdbx_chem_comp_audit.action_type": "pdbx_chem_comp_audit.action_type",
+    "pdbxwithvr:pdbx_chem_comp_audit.comp_id": "pdbx_chem_comp_audit.comp_id",
+    "pdbxwithvr:pdbx_chem_comp_audit.date": "pdbx_chem_comp_audit.date",
+    "pdbxwithvr:pdbx_chem_comp_audit.processing_site": "pdbx_chem_comp_audit.processing_site",
+    "pdbxwithvr:pdbx_chem_comp_audit.annotator": "pdbx_chem_comp_audit.annotator",
+    "pdbxwithvr:pdbx_chem_comp_descriptor.comp_id": "pdbx_chem_comp_descriptor.comp_id",
+    "pdbxwithvr:pdbx_chem_comp_descriptor.descriptor": "pdbx_chem_comp_descriptor.descriptor",
+    "pdbxwithvr:pdbx_chem_comp_descriptor.program": "pdbx_chem_comp_descriptor.program",
+    "pdbxwithvr:pdbx_chem_comp_descriptor.program_version": "pdbx_chem_comp_descriptor.program_version",
+    "pdbxwithvr:pdbx_chem_comp_descriptor.type": "pdbx_chem_comp_descriptor.type",
+    "pdbxwithvr:pdbx_chem_comp_identifier.comp_id": "pdbx_chem_comp_identifier.comp_id",
+    "pdbxwithvr:pdbx_chem_comp_identifier.identifier": "pdbx_chem_comp_identifier.identifier",
+    "pdbxwithvr:pdbx_chem_comp_identifier.program": "pdbx_chem_comp_identifier.program",
+    "pdbxwithvr:pdbx_chem_comp_identifier.program_version": "pdbx_chem_comp_identifier.program_version",
+    "pdbxwithvr:pdbx_chem_comp_identifier.type": "pdbx_chem_comp_identifier.type",
+    "pdbxwithvr:pdbx_chem_comp_synonyms.comp_id": "pdbx_chem_comp_synonyms.comp_id",
+    "pdbxwithvr:pdbx_chem_comp_synonyms.name": "pdbx_chem_comp_synonyms.name",
+    "pdbxwithvr:pdbx_chem_comp_synonyms.ordinal": "pdbx_chem_comp_synonyms.ordinal",
+    "pdbxwithvr:pdbx_chem_comp_synonyms.provenance": "pdbx_chem_comp_synonyms.provenance",
+    "pdbxwithvr:pdbx_chem_comp_synonyms.type": "pdbx_chem_comp_synonyms.type",
+    "pdbxwithvr:reference_to_chem_comp": "reference_to_chem_comp",
+    "pdbxwithvr:reference_to_chem_comp_atom": "reference_to_chem_comp_atom",
+    "pdbxwithvr:link_to_pdbml": "link_to_pdbml",
+    "pdbxwithvr:link_to_pdbml_extatom": "link_to_pdbml_extatom",
+    "pdbxwithvr:link_to_pdbml_noatom": "link_to_pdbml_noatom",
+    "dcterms:references": "references",
+    "pdbxwithvr:link_to_xml_vrpt": "link_to_xml_vrpt",
+    "pdbxwithvr:has_pdbx_chem_comp_pcm": "has_pdbx_chem_comp_pcm",
+    "pdbxwithvr:pdbx_reference_molecule_features": "pdbx_reference_molecule_features",
+    "pdbxwithvr:pdbx_chem_comp_atom_related": "pdbx_chem_comp_atom_related",
+    "pdbxwithvr:has_pdbx_chem_comp_atom_related": "has_pdbx_chem_comp_atom_related",
+    "pdbxwithvr:pdbx_chem_comp_feature": "pdbx_chem_comp_feature",
+    "pdbxwithvr:has_pdbx_chem_comp_feature": "has_pdbx_chem_comp_feature",
+    "pdbxwithvr:pdbx_chem_comp_related": "pdbx_chem_comp_related",
+    "pdbxwithvr:has_pdbx_chem_comp_related": "has_pdbx_chem_comp_related",
+    "pdbxwithvr:pdbx_family_prd_audit": "pdbx_family_prd_audit",
+    "pdbxwithvr:pdbx_reference_molecule_annotation": "pdbx_reference_molecule_annotation",
+    "pdbxwithvr:has_pdbx_family_prd_audit": "has_pdbx_family_prd_audit",
+    "pdbxwithvr:pdbx_reference_molecule_family": "pdbx_reference_molecule_family",
+    "pdbxwithvr:has_pdbx_reference_molecule_annotation": "has_pdbx_reference_molecule_annotation",
+    "pdbxwithvr:has_pdbx_reference_molecule_family": "has_pdbx_reference_molecule_family",
+    "pdbxwithvr:pdbx_chem_comp_pcm.first_instance_model_db_code": "pdbx_chem_comp_pcm.first_instance_model_db_code",
+    "pdbxwithvr:pdbx_chem_comp_pcm.category": "pdbx_chem_comp_pcm.category",
+    "pdbxwithvr:pdbx_chem_comp_pcm.comp_id": "pdbx_chem_comp_pcm.comp_id",
+    "pdbxwithvr:pdbx_chem_comp_pcm.comp_id_linking_atom": "pdbx_chem_comp_pcm.comp_id_linking_atom",
+    "pdbxwithvr:pdbx_chem_comp_pcm.modified_residue_id": "pdbx_chem_comp_pcm.modified_residue_id",
+    "pdbxwithvr:pdbx_chem_comp_pcm.modified_residue_id_linking_atom": "pdbx_chem_comp_pcm.modified_residue_id_linking_atom",
+    "pdbxwithvr:pdbx_chem_comp_pcm.pcm_id": "pdbx_chem_comp_pcm.pcm_id",
+    "pdbxwithvr:pdbx_chem_comp_pcm.polypeptide_position": "pdbx_chem_comp_pcm.polypeptide_position",
+    "pdbxwithvr:pdbx_chem_comp_pcm.position": "pdbx_chem_comp_pcm.position",
+    "pdbxwithvr:pdbx_chem_comp_pcm.type": "pdbx_chem_comp_pcm.type",
+    "pdbxwithvr:pdbx_chem_comp_pcm.uniprot_specific_ptm_accession": "pdbx_chem_comp_pcm.uniprot_specific_ptm_accession",
+    "pdbxwithvr:pdbx_chem_comp_pcm.uniprot_generic_ptm_accession": "pdbx_chem_comp_pcm.uniprot_generic_ptm_accession",
+    "pdbxwithvr:pdbx_reference_molecule_features.family_prd_id": "pdbx_reference_molecule_features.family_prd_id",
+    "pdbxwithvr:pdbx_reference_molecule_features.ordinal": "pdbx_reference_molecule_features.ordinal",
+    "pdbxwithvr:pdbx_reference_molecule_features.prd_id": "pdbx_reference_molecule_features.prd_id",
+    "pdbxwithvr:pdbx_reference_molecule_features.source": "pdbx_reference_molecule_features.source",
+    "pdbxwithvr:pdbx_reference_molecule_features.source_ordinal": "pdbx_reference_molecule_features.source_ordinal",
+    "pdbxwithvr:pdbx_reference_molecule_features.type": "pdbx_reference_molecule_features.type",
+    "pdbxwithvr:pdbx_reference_molecule_features.value": "pdbx_reference_molecule_features.value",
+    "pdbxwithvr:pdbx_chem_comp_atom_related.atom_id": "pdbx_chem_comp_atom_related.atom_id",
+    "pdbxwithvr:pdbx_chem_comp_atom_related.comp_id": "pdbx_chem_comp_atom_related.comp_id",
+    "pdbxwithvr:pdbx_chem_comp_atom_related.ordinal": "pdbx_chem_comp_atom_related.ordinal",
+    "pdbxwithvr:pdbx_chem_comp_atom_related.related_atom_id": "pdbx_chem_comp_atom_related.related_atom_id",
+    "pdbxwithvr:pdbx_chem_comp_atom_related.related_comp_id": "pdbx_chem_comp_atom_related.related_comp_id",
+    "pdbxwithvr:pdbx_chem_comp_atom_related.related_type": "pdbx_chem_comp_atom_related.related_type",
+    "pdbxwithvr:pdbx_chem_comp_feature.comp_id": "pdbx_chem_comp_feature.comp_id",
+    "pdbxwithvr:pdbx_chem_comp_feature.source": "pdbx_chem_comp_feature.source",
+    "pdbxwithvr:pdbx_chem_comp_feature.type": "pdbx_chem_comp_feature.type",
+    "pdbxwithvr:pdbx_chem_comp_feature.value": "pdbx_chem_comp_feature.value",
+    "pdbxwithvr:pdbx_chem_comp_related.comp_id": "pdbx_chem_comp_related.comp_id",
+    "pdbxwithvr:pdbx_chem_comp_related.related_comp_id": "pdbx_chem_comp_related.related_comp_id",
+    "pdbxwithvr:pdbx_chem_comp_related.relationship_type": "pdbx_chem_comp_related.relationship_type",
+    "pdbxwithvr:pdbx_family_prd_audit.action_type": "pdbx_family_prd_audit.action_type",
+    "pdbxwithvr:pdbx_family_prd_audit.date": "pdbx_family_prd_audit.date",
+    "pdbxwithvr:pdbx_family_prd_audit.family_prd_id": "pdbx_family_prd_audit.family_prd_id",
+    "pdbxwithvr:pdbx_family_prd_audit.processing_site": "pdbx_family_prd_audit.processing_site",
+    "pdbxwithvr:pdbx_reference_molecule_annotation.family_prd_id": "pdbx_reference_molecule_annotation.family_prd_id",
+    "pdbxwithvr:pdbx_reference_molecule_annotation.ordinal": "pdbx_reference_molecule_annotation.ordinal",
+    "pdbxwithvr:pdbx_reference_molecule_annotation.prd_id": "pdbx_reference_molecule_annotation.prd_id",
+    "pdbxwithvr:pdbx_reference_molecule_annotation.source": "pdbx_reference_molecule_annotation.source",
+    "pdbxwithvr:pdbx_reference_molecule_annotation.text": "pdbx_reference_molecule_annotation.text",
+    "pdbxwithvr:pdbx_reference_molecule_annotation.type": "pdbx_reference_molecule_annotation.type",
+    "pdbxwithvr:pdbx_reference_molecule_family.family_prd_id": "pdbx_reference_molecule_family.family_prd_id",
+    "pdbxwithvr:pdbx_reference_molecule_family.name": "pdbx_reference_molecule_family.name",
+    "pdbxwithvr:pdbx_reference_molecule_family.release_status": "pdbx_reference_molecule_family.release_status",
+    "pdbxwithvr:link_to_chebi": "link_to_chebi",
+    "pdbxwithvr:link_to_chembl": "link_to_chembl",
+    "pdbxwithvr:link_to_chemdb": "link_to_chemdb",
+    "pdbxwithvr:link_to_mesh": "link_to_mesh",
+    "pdbxwithvr:link_to_bindingdb": "link_to_bindingdb",
+    "pdbxwithvr:link_to_cas": "link_to_cas",
+    "pdbxwithvr:link_to_chemspider": "link_to_chemspider",
+    "pdbxwithvr:link_to_pubchem_substance": "link_to_pubchem_substance",
+    "pdbxwithvr:link_to_kegg_drug": "link_to_kegg_drug",
+    "pdbxwithvr:link_to_uniprot": "link_to_uniprot",
+    "pdbxwithvr:reference_to_pdbx_reference_molecule_list": "reference_to_pdbx_reference_molecule_list",
+    "pdbxwithvr:link_to_norine": "link_to_norine",
+    "pdbxwithvr:link_to_drugbank": "link_to_drugbank",
+    "pdbxwithvr:link_to_nadb": "link_to_nadb",
+    "pdbxwithvr:link_to_kegg_comp": "link_to_kegg_comp",
+    "pdbxwithvr:reference_to_pdbx_reference_molecule_family": "reference_to_pdbx_reference_molecule_family",
+    "pdbxwithvr:link_to_doi": "link_to_doi",
+    "pdbxwithvr:link_to_pubmed": "link_to_pubmed",
+    "pdbxwithvr:atom_sites": "atom_sites",
+    "pdbxwithvr:has_atom_sites": "has_atom_sites",
+    "pdbxwithvr:atom_type": "atom_type",
+    "pdbxwithvr:has_atom_type": "has_atom_type",
+    "pdbxwithvr:audit_author": "audit_author",
+    "pdbxwithvr:has_audit_author": "has_audit_author",
+    "pdbxwithvr:citation": "citation",
+    "pdbxwithvr:has_pdbx_reference_molecule_features": "has_pdbx_reference_molecule_features",
+    "pdbxwithvr:has_citation": "has_citation",
+    "pdbxwithvr:citation_author": "citation_author",
+    "pdbxwithvr:has_citation_author": "has_citation_author",
+    "pdbxwithvr:pdbx_reference_molecule_list": "pdbx_reference_molecule_list",
+    "pdbxwithvr:pdbx_reference_molecule_synonyms": "pdbx_reference_molecule_synonyms",
+    "pdbxwithvr:has_pdbx_reference_molecule_list": "has_pdbx_reference_molecule_list",
+    "pdbxwithvr:link_to_prd": "link_to_prd",
+    "pdbxwithvr:has_pdbx_reference_molecule_synonyms": "has_pdbx_reference_molecule_synonyms",
+    "pdbxwithvr:atom_sites.entry_id": "atom_sites.entry_id",
+    "pdbxwithvr:atom_sites.fract_transf_matrix11": "atom_sites.fract_transf_matrix11",
+    "pdbxwithvr:atom_sites.fract_transf_matrix12": "atom_sites.fract_transf_matrix12",
+    "pdbxwithvr:atom_sites.fract_transf_matrix13": "atom_sites.fract_transf_matrix13",
+    "pdbxwithvr:atom_sites.fract_transf_matrix21": "atom_sites.fract_transf_matrix21",
+    "pdbxwithvr:atom_sites.fract_transf_matrix22": "atom_sites.fract_transf_matrix22",
+    "pdbxwithvr:atom_sites.fract_transf_matrix23": "atom_sites.fract_transf_matrix23",
+    "pdbxwithvr:atom_sites.fract_transf_matrix31": "atom_sites.fract_transf_matrix31",
+    "pdbxwithvr:atom_sites.fract_transf_matrix32": "atom_sites.fract_transf_matrix32",
+    "pdbxwithvr:atom_sites.fract_transf_matrix33": "atom_sites.fract_transf_matrix33",
+    "pdbxwithvr:atom_sites.fract_transf_vector1": "atom_sites.fract_transf_vector1",
+    "pdbxwithvr:atom_sites.fract_transf_vector2": "atom_sites.fract_transf_vector2",
+    "pdbxwithvr:atom_sites.fract_transf_vector3": "atom_sites.fract_transf_vector3",
+    "pdbxwithvr:atom_sites.Cartn_transf_matrix11": "atom_sites.Cartn_transf_matrix11",
+    "pdbxwithvr:atom_sites.Cartn_transf_matrix12": "atom_sites.Cartn_transf_matrix12",
+    "pdbxwithvr:atom_sites.Cartn_transf_matrix13": "atom_sites.Cartn_transf_matrix13",
+    "pdbxwithvr:atom_sites.Cartn_transf_matrix21": "atom_sites.Cartn_transf_matrix21",
+    "pdbxwithvr:atom_sites.Cartn_transf_matrix22": "atom_sites.Cartn_transf_matrix22",
+    "pdbxwithvr:atom_sites.Cartn_transf_matrix23": "atom_sites.Cartn_transf_matrix23",
+    "pdbxwithvr:atom_sites.Cartn_transf_matrix31": "atom_sites.Cartn_transf_matrix31",
+    "pdbxwithvr:atom_sites.Cartn_transf_matrix32": "atom_sites.Cartn_transf_matrix32",
+    "pdbxwithvr:atom_sites.Cartn_transf_matrix33": "atom_sites.Cartn_transf_matrix33",
+    "pdbxwithvr:atom_sites.Cartn_transf_vector1": "atom_sites.Cartn_transf_vector1",
+    "pdbxwithvr:atom_sites.Cartn_transf_vector2": "atom_sites.Cartn_transf_vector2",
+    "pdbxwithvr:atom_sites.Cartn_transf_vector3": "atom_sites.Cartn_transf_vector3",
+    "pdbxwithvr:atom_type.symbol": "atom_type.symbol",
+    "pdbxwithvr:atom_type.scat_Cromer_Mann_a1": "atom_type.scat_Cromer_Mann_a1",
+    "pdbxwithvr:atom_type.scat_Cromer_Mann_a2": "atom_type.scat_Cromer_Mann_a2",
+    "pdbxwithvr:atom_type.scat_Cromer_Mann_b1": "atom_type.scat_Cromer_Mann_b1",
+    "pdbxwithvr:atom_type.scat_Cromer_Mann_b2": "atom_type.scat_Cromer_Mann_b2",
+    "pdbxwithvr:atom_type.scat_Cromer_Mann_c": "atom_type.scat_Cromer_Mann_c",
+    "pdbxwithvr:atom_type.scat_source": "atom_type.scat_source",
+    "pdbxwithvr:atom_type.scat_Cromer_Mann_a3": "atom_type.scat_Cromer_Mann_a3",
+    "pdbxwithvr:atom_type.scat_Cromer_Mann_a4": "atom_type.scat_Cromer_Mann_a4",
+    "pdbxwithvr:atom_type.scat_Cromer_Mann_b3": "atom_type.scat_Cromer_Mann_b3",
+    "pdbxwithvr:atom_type.scat_Cromer_Mann_b4": "atom_type.scat_Cromer_Mann_b4",
+    "pdbxwithvr:atom_type.pdbx_N_electrons": "atom_type.pdbx_N_electrons",
+    "pdbxwithvr:atom_type.pdbx_scat_Z": "atom_type.pdbx_scat_Z",
+    "pdbxwithvr:atom_type.pdbx_scat_Cromer_Mann_a5": "atom_type.pdbx_scat_Cromer_Mann_a5",
+    "pdbxwithvr:atom_type.pdbx_scat_Cromer_Mann_b5": "atom_type.pdbx_scat_Cromer_Mann_b5",
+    "pdbxwithvr:atom_type.pdbx_scat_Cromer_Mann_a6": "atom_type.pdbx_scat_Cromer_Mann_a6",
+    "pdbxwithvr:atom_type.pdbx_scat_Cromer_Mann_b6": "atom_type.pdbx_scat_Cromer_Mann_b6",
+    "pdbxwithvr:atom_type.scat_dispersion_imag": "atom_type.scat_dispersion_imag",
+    "pdbxwithvr:atom_type.scat_dispersion_real": "atom_type.scat_dispersion_real",
+    "pdbxwithvr:atom_type.oxidation_number": "atom_type.oxidation_number",
+    "pdbxwithvr:audit_author.name": "audit_author.name",
+    "pdbxwithvr:audit_author.pdbx_ordinal": "audit_author.pdbx_ordinal",
+    "pdbxwithvr:audit_author.identifier_ORCID": "audit_author.identifier_ORCID",
+    "pdbxwithvr:citation.pdbx_database_id_DOI": "citation.pdbx_database_id_DOI",
+    "pdbxwithvr:citation.id": "citation.id",
+    "pdbxwithvr:citation.journal_abbrev": "citation.journal_abbrev",
+    "pdbxwithvr:citation.journal_volume": "citation.journal_volume",
+    "pdbxwithvr:citation.page_first": "citation.page_first",
+    "pdbxwithvr:citation.page_last": "citation.page_last",
+    "pdbxwithvr:citation.pdbx_database_id_PubMed": "citation.pdbx_database_id_PubMed",
+    "pdbxwithvr:citation.title": "citation.title",
+    "pdbxwithvr:citation.year": "citation.year",
+    "pdbxwithvr:citation.country": "citation.country",
+    "pdbxwithvr:citation.journal_id_ASTM": "citation.journal_id_ASTM",
+    "pdbxwithvr:citation.journal_id_CSD": "citation.journal_id_CSD",
+    "pdbxwithvr:citation.journal_id_ISSN": "citation.journal_id_ISSN",
+    "pdbxwithvr:citation.book_publisher": "citation.book_publisher",
+    "pdbxwithvr:citation.unpublished_flag": "citation.unpublished_flag",
+    "pdbxwithvr:citation.book_id_ISBN": "citation.book_id_ISBN",
+    "pdbxwithvr:citation.book_publisher_city": "citation.book_publisher_city",
+    "pdbxwithvr:citation.book_title": "citation.book_title",
+    "pdbxwithvr:citation.language": "citation.language",
+    "pdbxwithvr:citation.pdbx_database_id_patent": "citation.pdbx_database_id_patent",
+    "pdbxwithvr:citation.coordinate_linkage": "citation.coordinate_linkage",
+    "pdbxwithvr:citation.details": "citation.details",
+    "pdbxwithvr:citation.abstract": "citation.abstract",
+    "pdbxwithvr:citation.database_id_CSD": "citation.database_id_CSD",
+    "pdbxwithvr:citation.journal_issue": "citation.journal_issue",
+    "pdbxwithvr:citation_author.citation_id": "citation_author.citation_id",
+    "pdbxwithvr:citation_author.name": "citation_author.name",
+    "pdbxwithvr:citation_author.ordinal": "citation_author.ordinal",
+    "pdbxwithvr:citation_author.identifier_ORCID": "citation_author.identifier_ORCID",
+    "pdbxwithvr:pdbx_reference_molecule_list.family_prd_id": "pdbx_reference_molecule_list.family_prd_id",
+    "pdbxwithvr:pdbx_reference_molecule_list.prd_id": "pdbx_reference_molecule_list.prd_id",
+    "pdbxwithvr:pdbx_reference_molecule_synonyms.family_prd_id": "pdbx_reference_molecule_synonyms.family_prd_id",
+    "pdbxwithvr:pdbx_reference_molecule_synonyms.name": "pdbx_reference_molecule_synonyms.name",
+    "pdbxwithvr:pdbx_reference_molecule_synonyms.ordinal": "pdbx_reference_molecule_synonyms.ordinal",
+    "pdbxwithvr:pdbx_reference_molecule_synonyms.prd_id": "pdbx_reference_molecule_synonyms.prd_id",
+    "pdbxwithvr:pdbx_reference_molecule_synonyms.source": "pdbx_reference_molecule_synonyms.source",
+    "pdbxwithvr:reference_to_entry": "reference_to_entry",
+    "pdbxwithvr:link_to_orcid": "link_to_orcid",
+    "pdbxwithvr:reference_to_citation": "reference_to_citation",
+    "pdbxwithvr:em_3d_fitting": "em_3d_fitting",
+    "pdbxwithvr:has_em_3d_fitting": "has_em_3d_fitting",
+    "pdbxwithvr:em_3d_fitting_list": "em_3d_fitting_list",
+    "pdbxwithvr:has_em_3d_fitting_list": "has_em_3d_fitting_list",
+    "pdbxwithvr:em_3d_reconstruction": "em_3d_reconstruction",
+    "pdbxwithvr:entry": "entry",
+    "pdbxwithvr:has_em_3d_reconstruction": "has_em_3d_reconstruction",
+    "pdbxwithvr:em_admin": "em_admin",
+    "pdbxwithvr:has_em_admin": "has_em_admin",
+    "pdbxwithvr:em_buffer": "em_buffer",
+    "pdbxwithvr:audit_conform": "audit_conform",
+    "pdbxwithvr:has_audit_conform": "has_audit_conform",
+    "pdbxwithvr:cell": "cell",
+    "pdbxwithvr:has_cell": "has_cell",
+    "pdbxwithvr:database_2": "database_2",
+    "pdbxwithvr:has_database_2": "has_database_2",
+    "pdbxwithvr:em_3d_fitting.entry_id": "em_3d_fitting.entry_id",
+    "pdbxwithvr:em_3d_fitting.id": "em_3d_fitting.id",
+    "pdbxwithvr:em_3d_fitting.ref_space": "em_3d_fitting.ref_space",
+    "pdbxwithvr:em_3d_fitting.details": "em_3d_fitting.details",
+    "pdbxwithvr:em_3d_fitting.ref_protocol": "em_3d_fitting.ref_protocol",
+    "pdbxwithvr:em_3d_fitting.target_criteria": "em_3d_fitting.target_criteria",
+    "pdbxwithvr:em_3d_fitting.overall_b_value": "em_3d_fitting.overall_b_value",
+    "pdbxwithvr:em_3d_fitting.method": "em_3d_fitting.method",
+    "pdbxwithvr:em_3d_fitting_list._3d_fitting_id": "em_3d_fitting_list._3d_fitting_id",
+    "pdbxwithvr:em_3d_fitting_list.accession_code": "em_3d_fitting_list.accession_code",
+    "pdbxwithvr:em_3d_fitting_list.chain_residue_range": "em_3d_fitting_list.chain_residue_range",
+    "pdbxwithvr:em_3d_fitting_list.id": "em_3d_fitting_list.id",
+    "pdbxwithvr:em_3d_fitting_list.initial_refinement_model_id": "em_3d_fitting_list.initial_refinement_model_id",
+    "pdbxwithvr:em_3d_fitting_list.source_name": "em_3d_fitting_list.source_name",
+    "pdbxwithvr:em_3d_fitting_list.type": "em_3d_fitting_list.type",
+    "pdbxwithvr:em_3d_fitting_list.pdb_chain_id": "em_3d_fitting_list.pdb_chain_id",
+    "pdbxwithvr:em_3d_fitting_list.pdb_chain_residue_range": "em_3d_fitting_list.pdb_chain_residue_range",
+    "pdbxwithvr:em_3d_fitting_list.details": "em_3d_fitting_list.details",
+    "pdbxwithvr:em_3d_fitting_list.pdb_entry_id": "em_3d_fitting_list.pdb_entry_id",
+    "pdbxwithvr:em_3d_fitting_list.chain_id": "em_3d_fitting_list.chain_id",
+    "pdbxwithvr:em_3d_reconstruction.entry_id": "em_3d_reconstruction.entry_id",
+    "pdbxwithvr:em_3d_reconstruction.id": "em_3d_reconstruction.id",
+    "pdbxwithvr:em_3d_reconstruction.image_processing_id": "em_3d_reconstruction.image_processing_id",
+    "pdbxwithvr:em_3d_reconstruction.num_particles": "em_3d_reconstruction.num_particles",
+    "pdbxwithvr:em_3d_reconstruction.resolution": "em_3d_reconstruction.resolution",
+    "pdbxwithvr:em_3d_reconstruction.resolution_method": "em_3d_reconstruction.resolution_method",
+    "pdbxwithvr:em_3d_reconstruction.symmetry_type": "em_3d_reconstruction.symmetry_type",
+    "pdbxwithvr:em_3d_reconstruction.actual_pixel_size": "em_3d_reconstruction.actual_pixel_size",
+    "pdbxwithvr:em_3d_reconstruction.details": "em_3d_reconstruction.details",
+    "pdbxwithvr:em_3d_reconstruction.method": "em_3d_reconstruction.method",
+    "pdbxwithvr:em_3d_reconstruction.nominal_pixel_size": "em_3d_reconstruction.nominal_pixel_size",
+    "pdbxwithvr:em_3d_reconstruction.algorithm": "em_3d_reconstruction.algorithm",
+    "pdbxwithvr:em_3d_reconstruction.num_class_averages": "em_3d_reconstruction.num_class_averages",
+    "pdbxwithvr:em_3d_reconstruction.magnification_calibration": "em_3d_reconstruction.magnification_calibration",
+    "pdbxwithvr:em_3d_reconstruction.refinement_type": "em_3d_reconstruction.refinement_type",
+    "pdbxwithvr:em_admin.current_status": "em_admin.current_status",
+    "pdbxwithvr:em_admin.deposition_date": "em_admin.deposition_date",
+    "pdbxwithvr:em_admin.deposition_site": "em_admin.deposition_site",
+    "pdbxwithvr:em_admin.entry_id": "em_admin.entry_id",
+    "pdbxwithvr:em_admin.last_update": "em_admin.last_update",
+    "pdbxwithvr:em_admin.map_release_date": "em_admin.map_release_date",
+    "pdbxwithvr:em_admin.title": "em_admin.title",
+    "pdbxwithvr:em_buffer.details": "em_buffer.details",
+    "pdbxwithvr:em_buffer.id": "em_buffer.id",
+    "pdbxwithvr:em_buffer.pH": "em_buffer.pH",
+    "pdbxwithvr:em_buffer.specimen_id": "em_buffer.specimen_id",
+    "pdbxwithvr:em_buffer.name": "em_buffer.name",
+    "pdbxwithvr:audit_conform.dict_location": "audit_conform.dict_location",
+    "pdbxwithvr:audit_conform.dict_name": "audit_conform.dict_name",
+    "pdbxwithvr:audit_conform.dict_version": "audit_conform.dict_version",
+    "pdbxwithvr:cell.Z_PDB": "cell.Z_PDB",
+    "pdbxwithvr:cell.angle_alpha": "cell.angle_alpha",
+    "pdbxwithvr:cell.angle_beta": "cell.angle_beta",
+    "pdbxwithvr:cell.angle_gamma": "cell.angle_gamma",
+    "pdbxwithvr:cell.entry_id": "cell.entry_id",
+    "pdbxwithvr:cell.length_a": "cell.length_a",
+    "pdbxwithvr:cell.length_b": "cell.length_b",
+    "pdbxwithvr:cell.length_c": "cell.length_c",
+    "pdbxwithvr:cell.volume": "cell.volume",
+    "pdbxwithvr:cell.pdbx_unique_axis": "cell.pdbx_unique_axis",
+    "pdbxwithvr:cell.angle_alpha_esd": "cell.angle_alpha_esd",
+    "pdbxwithvr:cell.angle_beta_esd": "cell.angle_beta_esd",
+    "pdbxwithvr:cell.angle_gamma_esd": "cell.angle_gamma_esd",
+    "pdbxwithvr:cell.length_a_esd": "cell.length_a_esd",
+    "pdbxwithvr:cell.length_b_esd": "cell.length_b_esd",
+    "pdbxwithvr:cell.length_c_esd": "cell.length_c_esd",
+    "pdbxwithvr:cell.reciprocal_angle_alpha": "cell.reciprocal_angle_alpha",
+    "pdbxwithvr:cell.reciprocal_angle_beta": "cell.reciprocal_angle_beta",
+    "pdbxwithvr:cell.reciprocal_angle_gamma": "cell.reciprocal_angle_gamma",
+    "pdbxwithvr:cell.formula_units_Z": "cell.formula_units_Z",
+    "pdbxwithvr:cell.volume_esd": "cell.volume_esd",
+    "pdbxwithvr:database_2.database_code": "database_2.database_code",
+    "pdbxwithvr:database_2.database_id": "database_2.database_id",
+    "pdbxwithvr:database_2.pdbx_DOI": "database_2.pdbx_DOI",
+    "pdbxwithvr:database_2.pdbx_database_accession": "database_2.pdbx_database_accession",
+    "pdbxwithvr:has_em_buffer": "has_em_buffer",
+    "pdbxwithvr:em_ctf_correction": "em_ctf_correction",
+    "pdbxwithvr:has_em_ctf_correction": "has_em_ctf_correction",
+    "pdbxwithvr:em_entity_assembly": "em_entity_assembly",
+    "pdbxwithvr:has_em_entity_assembly": "has_em_entity_assembly",
+    "pdbxwithvr:em_entity_assembly_molwt": "em_entity_assembly_molwt",
+    "pdbxwithvr:has_em_entity_assembly_molwt": "has_em_entity_assembly_molwt",
+    "pdbxwithvr:em_entity_assembly_naturalsource": "em_entity_assembly_naturalsource",
+    "pdbxwithvr:has_em_entity_assembly_naturalsource": "has_em_entity_assembly_naturalsource",
+    "pdbxwithvr:em_entity_assembly_recombinant": "em_entity_assembly_recombinant",
+    "pdbxwithvr:has_em_entity_assembly_recombinant": "has_em_entity_assembly_recombinant",
+    "pdbxwithvr:em_experiment": "em_experiment",
+    "pdbxwithvr:has_em_experiment": "has_em_experiment",
+    "pdbxwithvr:em_image_processing": "em_image_processing",
+    "pdbxwithvr:has_em_image_processing": "has_em_image_processing",
+    "pdbxwithvr:em_ctf_correction.em_image_processing_id": "em_ctf_correction.em_image_processing_id",
+    "pdbxwithvr:em_ctf_correction.id": "em_ctf_correction.id",
+    "pdbxwithvr:em_ctf_correction.type": "em_ctf_correction.type",
+    "pdbxwithvr:em_ctf_correction.details": "em_ctf_correction.details",
+    "pdbxwithvr:em_entity_assembly.entity_id_list": "em_entity_assembly.entity_id_list",
+    "pdbxwithvr:em_entity_assembly.id": "em_entity_assembly.id",
+    "pdbxwithvr:em_entity_assembly.name": "em_entity_assembly.name",
+    "pdbxwithvr:em_entity_assembly.parent_id": "em_entity_assembly.parent_id",
+    "pdbxwithvr:em_entity_assembly.source": "em_entity_assembly.source",
+    "pdbxwithvr:em_entity_assembly.type": "em_entity_assembly.type",
+    "pdbxwithvr:em_entity_assembly.details": "em_entity_assembly.details",
+    "pdbxwithvr:em_entity_assembly.oligomeric_details": "em_entity_assembly.oligomeric_details",
+    "pdbxwithvr:em_entity_assembly.synonym": "em_entity_assembly.synonym",
+    "pdbxwithvr:em_entity_assembly_molwt.entity_assembly_id": "em_entity_assembly_molwt.entity_assembly_id",
+    "pdbxwithvr:em_entity_assembly_molwt.experimental_flag": "em_entity_assembly_molwt.experimental_flag",
+    "pdbxwithvr:em_entity_assembly_molwt.id": "em_entity_assembly_molwt.id",
+    "pdbxwithvr:em_entity_assembly_molwt.units": "em_entity_assembly_molwt.units",
+    "pdbxwithvr:em_entity_assembly_molwt.value": "em_entity_assembly_molwt.value",
+    "pdbxwithvr:em_entity_assembly_naturalsource.entity_assembly_id": "em_entity_assembly_naturalsource.entity_assembly_id",
+    "pdbxwithvr:em_entity_assembly_naturalsource.id": "em_entity_assembly_naturalsource.id",
+    "pdbxwithvr:em_entity_assembly_naturalsource.ncbi_tax_id": "em_entity_assembly_naturalsource.ncbi_tax_id",
+    "pdbxwithvr:em_entity_assembly_naturalsource.organism": "em_entity_assembly_naturalsource.organism",
+    "pdbxwithvr:em_entity_assembly_naturalsource.tissue": "em_entity_assembly_naturalsource.tissue",
+    "pdbxwithvr:em_entity_assembly_naturalsource.strain": "em_entity_assembly_naturalsource.strain",
+    "pdbxwithvr:em_entity_assembly_naturalsource.organ": "em_entity_assembly_naturalsource.organ",
+    "pdbxwithvr:em_entity_assembly_naturalsource.cellular_location": "em_entity_assembly_naturalsource.cellular_location",
+    "pdbxwithvr:em_entity_assembly_naturalsource.organelle": "em_entity_assembly_naturalsource.organelle",
+    "pdbxwithvr:em_entity_assembly_naturalsource.cell": "em_entity_assembly_naturalsource.cell",
+    "pdbxwithvr:em_entity_assembly_naturalsource.details": "em_entity_assembly_naturalsource.details",
+    "pdbxwithvr:em_entity_assembly_recombinant.entity_assembly_id": "em_entity_assembly_recombinant.entity_assembly_id",
+    "pdbxwithvr:em_entity_assembly_recombinant.id": "em_entity_assembly_recombinant.id",
+    "pdbxwithvr:em_entity_assembly_recombinant.ncbi_tax_id": "em_entity_assembly_recombinant.ncbi_tax_id",
+    "pdbxwithvr:em_entity_assembly_recombinant.organism": "em_entity_assembly_recombinant.organism",
+    "pdbxwithvr:em_entity_assembly_recombinant.cell": "em_entity_assembly_recombinant.cell",
+    "pdbxwithvr:em_entity_assembly_recombinant.strain": "em_entity_assembly_recombinant.strain",
+    "pdbxwithvr:em_entity_assembly_recombinant.plasmid": "em_entity_assembly_recombinant.plasmid",
+    "pdbxwithvr:em_experiment.aggregation_state": "em_experiment.aggregation_state",
+    "pdbxwithvr:em_experiment.entity_assembly_id": "em_experiment.entity_assembly_id",
+    "pdbxwithvr:em_experiment.entry_id": "em_experiment.entry_id",
+    "pdbxwithvr:em_experiment.id": "em_experiment.id",
+    "pdbxwithvr:em_experiment.reconstruction_method": "em_experiment.reconstruction_method",
+    "pdbxwithvr:em_image_processing.id": "em_image_processing.id",
+    "pdbxwithvr:em_image_processing.image_recording_id": "em_image_processing.image_recording_id",
+    "pdbxwithvr:em_image_processing.details": "em_image_processing.details",
+    "pdbxwithvr:reference_to_em_entity_assembly": "reference_to_em_entity_assembly",
+    "pdbxwithvr:em_image_recording": "em_image_recording",
+    "pdbxwithvr:has_em_image_recording": "has_em_image_recording",
+    "pdbxwithvr:em_image_scans": "em_image_scans",
+    "pdbxwithvr:has_em_image_scans": "has_em_image_scans",
+    "pdbxwithvr:em_imaging": "em_imaging",
+    "pdbxwithvr:has_em_imaging": "has_em_imaging",
+    "pdbxwithvr:em_sample_support": "em_sample_support",
+    "pdbxwithvr:has_em_sample_support": "has_em_sample_support",
+    "pdbxwithvr:em_software": "em_software",
+    "pdbxwithvr:has_em_software": "has_em_software",
+    "pdbxwithvr:em_specimen": "em_specimen",
+    "pdbxwithvr:has_em_specimen": "has_em_specimen",
+    "pdbxwithvr:em_vitrification": "em_vitrification",
+    "pdbxwithvr:has_em_vitrification": "has_em_vitrification",
+    "pdbxwithvr:entity": "entity",
+    "pdbxwithvr:referenced_by_struct_asym": "referenced_by_struct_asym",
+    "pdbxwithvr:struct_asym": "struct_asym",
+    "pdbxwithvr:referenced_by_struct_ref": "referenced_by_struct_ref",
+    "pdbxwithvr:struct_ref": "struct_ref",
+    "pdbxwithvr:referenced_by_pdbx_entity_branch_descriptor": "referenced_by_pdbx_entity_branch_descriptor",
+    "pdbxwithvr:pdbx_entity_branch_descriptor": "pdbx_entity_branch_descriptor",
+    "pdbxwithvr:em_image_recording.average_exposure_time": "em_image_recording.average_exposure_time",
+    "pdbxwithvr:em_image_recording.avg_electron_dose_per_image": "em_image_recording.avg_electron_dose_per_image",
+    "pdbxwithvr:em_image_recording.detector_mode": "em_image_recording.detector_mode",
+    "pdbxwithvr:em_image_recording.film_or_detector_model": "em_image_recording.film_or_detector_model",
+    "pdbxwithvr:em_image_recording.id": "em_image_recording.id",
+    "pdbxwithvr:em_image_recording.imaging_id": "em_image_recording.imaging_id",
+    "pdbxwithvr:em_image_recording.num_grids_imaged": "em_image_recording.num_grids_imaged",
+    "pdbxwithvr:em_image_recording.num_real_images": "em_image_recording.num_real_images",
+    "pdbxwithvr:em_image_recording.details": "em_image_recording.details",
+    "pdbxwithvr:em_image_recording.avg_electron_dose_per_subtomogram": "em_image_recording.avg_electron_dose_per_subtomogram",
+    "pdbxwithvr:em_image_recording.num_diffraction_images": "em_image_recording.num_diffraction_images",
+    "pdbxwithvr:em_image_scans.dimension_height": "em_image_scans.dimension_height",
+    "pdbxwithvr:em_image_scans.dimension_width": "em_image_scans.dimension_width",
+    "pdbxwithvr:em_image_scans.entry_id": "em_image_scans.entry_id",
+    "pdbxwithvr:em_image_scans.id": "em_image_scans.id",
+    "pdbxwithvr:em_image_scans.image_recording_id": "em_image_scans.image_recording_id",
+    "pdbxwithvr:em_image_scans.scanner_model": "em_image_scans.scanner_model",
+    "pdbxwithvr:em_image_scans.number_digital_images": "em_image_scans.number_digital_images",
+    "pdbxwithvr:em_image_scans.sampling_size": "em_image_scans.sampling_size",
+    "pdbxwithvr:em_image_scans.frames_per_image": "em_image_scans.frames_per_image",
+    "pdbxwithvr:em_image_scans.used_frames_per_image": "em_image_scans.used_frames_per_image",
+    "pdbxwithvr:em_image_scans.quant_bit_size": "em_image_scans.quant_bit_size",
+    "pdbxwithvr:em_image_scans.details": "em_image_scans.details",
+    "pdbxwithvr:em_image_scans.od_range": "em_image_scans.od_range",
+    "pdbxwithvr:em_imaging.accelerating_voltage": "em_imaging.accelerating_voltage",
+    "pdbxwithvr:em_imaging.alignment_procedure": "em_imaging.alignment_procedure",
+    "pdbxwithvr:em_imaging.cryogen": "em_imaging.cryogen",
+    "pdbxwithvr:em_imaging.electron_source": "em_imaging.electron_source",
+    "pdbxwithvr:em_imaging.entry_id": "em_imaging.entry_id",
+    "pdbxwithvr:em_imaging.id": "em_imaging.id",
+    "pdbxwithvr:em_imaging.illumination_mode": "em_imaging.illumination_mode",
+    "pdbxwithvr:em_imaging.microscope_model": "em_imaging.microscope_model",
+    "pdbxwithvr:em_imaging.mode": "em_imaging.mode",
+    "pdbxwithvr:em_imaging.nominal_cs": "em_imaging.nominal_cs",
+    "pdbxwithvr:em_imaging.nominal_defocus_max": "em_imaging.nominal_defocus_max",
+    "pdbxwithvr:em_imaging.nominal_defocus_min": "em_imaging.nominal_defocus_min",
+    "pdbxwithvr:em_imaging.specimen_holder_model": "em_imaging.specimen_holder_model",
+    "pdbxwithvr:em_imaging.specimen_id": "em_imaging.specimen_id",
+    "pdbxwithvr:em_imaging.details": "em_imaging.details",
+    "pdbxwithvr:em_imaging.temperature": "em_imaging.temperature",
+    "pdbxwithvr:em_imaging.recording_temperature_maximum": "em_imaging.recording_temperature_maximum",
+    "pdbxwithvr:em_imaging.recording_temperature_minimum": "em_imaging.recording_temperature_minimum",
+    "pdbxwithvr:em_imaging.date": "em_imaging.date",
+    "pdbxwithvr:em_imaging.tilt_angle_max": "em_imaging.tilt_angle_max",
+    "pdbxwithvr:em_imaging.tilt_angle_min": "em_imaging.tilt_angle_min",
+    "pdbxwithvr:em_imaging.c2_aperture_diameter": "em_imaging.c2_aperture_diameter",
+    "pdbxwithvr:em_imaging.nominal_magnification": "em_imaging.nominal_magnification",
+    "pdbxwithvr:em_imaging.calibrated_magnification": "em_imaging.calibrated_magnification",
+    "pdbxwithvr:em_imaging.calibrated_defocus_max": "em_imaging.calibrated_defocus_max",
+    "pdbxwithvr:em_imaging.calibrated_defocus_min": "em_imaging.calibrated_defocus_min",
+    "pdbxwithvr:em_imaging.specimen_holder_type": "em_imaging.specimen_holder_type",
+    "pdbxwithvr:em_imaging.residual_tilt": "em_imaging.residual_tilt",
+    "pdbxwithvr:em_imaging.detector_distance": "em_imaging.detector_distance",
+    "pdbxwithvr:em_imaging.electron_beam_tilt_params": "em_imaging.electron_beam_tilt_params",
+    "pdbxwithvr:em_imaging.astigmatism": "em_imaging.astigmatism",
+    "pdbxwithvr:em_sample_support.details": "em_sample_support.details",
+    "pdbxwithvr:em_sample_support.grid_material": "em_sample_support.grid_material",
+    "pdbxwithvr:em_sample_support.grid_mesh_size": "em_sample_support.grid_mesh_size",
+    "pdbxwithvr:em_sample_support.grid_type": "em_sample_support.grid_type",
+    "pdbxwithvr:em_sample_support.id": "em_sample_support.id",
+    "pdbxwithvr:em_sample_support.specimen_id": "em_sample_support.specimen_id",
+    "pdbxwithvr:em_sample_support.film_material": "em_sample_support.film_material",
+    "pdbxwithvr:em_software.category": "em_software.category",
+    "pdbxwithvr:em_software.fitting_id": "em_software.fitting_id",
+    "pdbxwithvr:em_software.id": "em_software.id",
+    "pdbxwithvr:em_software.image_processing_id": "em_software.image_processing_id",
+    "pdbxwithvr:em_software.imaging_id": "em_software.imaging_id",
+    "pdbxwithvr:em_software.name": "em_software.name",
+    "pdbxwithvr:em_software.version": "em_software.version",
+    "pdbxwithvr:em_software.details": "em_software.details",
+    "pdbxwithvr:em_specimen.concentration": "em_specimen.concentration",
+    "pdbxwithvr:em_specimen.embedding_applied": "em_specimen.embedding_applied",
+    "pdbxwithvr:em_specimen.experiment_id": "em_specimen.experiment_id",
+    "pdbxwithvr:em_specimen.id": "em_specimen.id",
+    "pdbxwithvr:em_specimen.shadowing_applied": "em_specimen.shadowing_applied",
+    "pdbxwithvr:em_specimen.staining_applied": "em_specimen.staining_applied",
+    "pdbxwithvr:em_specimen.vitrification_applied": "em_specimen.vitrification_applied",
+    "pdbxwithvr:em_specimen.details": "em_specimen.details",
+    "pdbxwithvr:em_vitrification.chamber_temperature": "em_vitrification.chamber_temperature",
+    "pdbxwithvr:em_vitrification.cryogen_name": "em_vitrification.cryogen_name",
+    "pdbxwithvr:em_vitrification.details": "em_vitrification.details",
+    "pdbxwithvr:em_vitrification.entry_id": "em_vitrification.entry_id",
+    "pdbxwithvr:em_vitrification.humidity": "em_vitrification.humidity",
+    "pdbxwithvr:em_vitrification.id": "em_vitrification.id",
+    "pdbxwithvr:em_vitrification.instrument": "em_vitrification.instrument",
+    "pdbxwithvr:em_vitrification.specimen_id": "em_vitrification.specimen_id",
+    "pdbxwithvr:em_vitrification.method": "em_vitrification.method",
+    "pdbxwithvr:em_vitrification.temp": "em_vitrification.temp",
+    "pdbxwithvr:em_vitrification.time_resolved_state": "em_vitrification.time_resolved_state",
+    "pdbxwithvr:entity.details": "entity.details",
+    "pdbxwithvr:entity.formula_weight": "entity.formula_weight",
+    "pdbxwithvr:entity.id": "entity.id",
+    "pdbxwithvr:entity.pdbx_description": "entity.pdbx_description",
+    "pdbxwithvr:entity.pdbx_number_of_molecules": "entity.pdbx_number_of_molecules",
+    "pdbxwithvr:entity.src_method": "entity.src_method",
+    "pdbxwithvr:entity.type": "entity.type",
+    "pdbxwithvr:entity.pdbx_ec": "entity.pdbx_ec",
+    "pdbxwithvr:entity.pdbx_mutation": "entity.pdbx_mutation",
+    "pdbxwithvr:entity.pdbx_fragment": "entity.pdbx_fragment",
+    "pdbxwithvr:link_to_enzyme": "link_to_enzyme",
+    "pdbxwithvr:has_entity": "has_entity",
+    "pdbxwithvr:entity_poly": "entity_poly",
+    "pdbxwithvr:has_entity_poly": "has_entity_poly",
+    "pdbxwithvr:entity_poly_seq": "entity_poly_seq",
+    "pdbxwithvr:has_entity_poly_seq": "has_entity_poly_seq",
+    "pdbxwithvr:referenced_by_em_3d_reconstruction": "referenced_by_em_3d_reconstruction",
+    "pdbxwithvr:referenced_by_em_image_scans": "referenced_by_em_image_scans",
+    "pdbxwithvr:referenced_by_em_vitrification": "referenced_by_em_vitrification",
+    "pdbxwithvr:referenced_by_reflns": "referenced_by_reflns",
+    "pdbxwithvr:reflns": "reflns",
+    "pdbxwithvr:has_entry": "has_entry",
+    "pdbxwithvr:exptl": "exptl",
+    "pdbxwithvr:has_exptl": "has_exptl",
+    "pdbxwithvr:pdbx_audit_revision_details": "pdbx_audit_revision_details",
+    "pdbxwithvr:has_pdbx_audit_revision_details": "has_pdbx_audit_revision_details",
+    "pdbxwithvr:entity_src_gen": "entity_src_gen",
+    "pdbxwithvr:has_entity_src_gen": "has_entity_src_gen",
+    "pdbxwithvr:pdbx_SG_project": "pdbx_SG_project",
+    "pdbxwithvr:has_pdbx_SG_project": "has_pdbx_SG_project",
+    "pdbxwithvr:entity_poly.entity_id": "entity_poly.entity_id",
+    "pdbxwithvr:entity_poly.nstd_linkage": "entity_poly.nstd_linkage",
+    "pdbxwithvr:entity_poly.nstd_monomer": "entity_poly.nstd_monomer",
+    "pdbxwithvr:entity_poly.pdbx_seq_one_letter_code": "entity_poly.pdbx_seq_one_letter_code",
+    "pdbxwithvr:entity_poly.pdbx_seq_one_letter_code_can": "entity_poly.pdbx_seq_one_letter_code_can",
+    "pdbxwithvr:entity_poly.pdbx_strand_id": "entity_poly.pdbx_strand_id",
+    "pdbxwithvr:entity_poly.type": "entity_poly.type",
+    "pdbxwithvr:entity_poly.pdbx_target_identifier": "entity_poly.pdbx_target_identifier"
+  }
+}

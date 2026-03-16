@@ -1,0 +1,1163 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "vocab": "https://w3id.org/widoco/vocab#",
+    "vann": "http://purl.org/vocab/vann/",
+    "schema": "https://schema.org/",
+    "void": "http://rdfs.org/ns/void#",
+    "voidext": "http://ldf.fi/void-ext#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "ontology": "https://purl.expasy.org/sparql-examples/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "owl:Class",
+      "owl:complementOf": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "owl:complementOf": {
+          "owl:Class": 2
+        }
+      }
+    },
+    {
+      "@id": "owl:Ontology",
+      "dcterms:creator": [
+        {
+          "@id": "prov:Person"
+        },
+        {
+          "@id": "foaf:Person"
+        }
+      ],
+      "dcterms:created": {
+        "@type": "xsd:date"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:date"
+      },
+      "owl:versionInfo": {
+        "@type": "xsd:string"
+      },
+      "vocab:introduction": {
+        "@type": "xsd:string"
+      },
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:bibliographicCitation": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:issue": {
+        "@type": "xsd:date"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "vann:preferredNamespacePrefix": {
+        "@type": "xsd:string"
+      },
+      "owl:imports": {
+        "@id": "owl:Class"
+      },
+      "owl:priorVersion": {
+        "@id": "owl:Class"
+      },
+      "owl:versionIRI": {
+        "@id": "owl:Class"
+      },
+      "dcterms:license": {
+        "@id": "owl:Class"
+      },
+      "vann:preferredNamespaceUri": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "dcterms:creator": {
+          "prov:Person": 2,
+          "foaf:Person": 2
+        },
+        "dcterms:created": {
+          "Literal:xsd:date": 1
+        },
+        "dcterms:modified": {
+          "Literal:xsd:date": 1
+        },
+        "owl:versionInfo": {
+          "Literal:xsd:string": 1
+        },
+        "vocab:introduction": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:abstract": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:bibliographicCitation": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:issue": {
+          "Literal:xsd:date": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "vann:preferredNamespacePrefix": {
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "schema:CHEM",
+      "schema:chemXref": [
+        {
+          "@id": "schema:ChemEntity"
+        },
+        {
+          "@id": "schema:ChemXRef"
+        },
+        {
+          "@id": "schema:StereoDefinedChemEntity"
+        },
+        {
+          "@id": "schema:StereoIncompleteChemEntity"
+        },
+        {
+          "@id": "schema:RGroupChemEntity"
+        },
+        {
+          "@id": "schema:FreeRadicalChemEntity"
+        },
+        {
+          "@id": "schema:CHEM"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "schema:chemRefer": [
+        {
+          "@id": "schema:ChemEntity"
+        },
+        {
+          "@id": "schema:ChemXRef"
+        },
+        {
+          "@id": "schema:StereoIncompleteChemEntity"
+        },
+        {
+          "@id": "schema:StereoDefinedChemEntity"
+        },
+        {
+          "@id": "schema:RGroupChemEntity"
+        },
+        {
+          "@id": "schema:FreeRadicalChemEntity"
+        },
+        {
+          "@id": "schema:CHEM"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "schema:chemSource": [
+        {
+          "@id": "schema:ChemEntity"
+        },
+        {
+          "@id": "schema:ChemXRef"
+        },
+        {
+          "@id": "schema:StereoIncompleteChemEntity"
+        },
+        {
+          "@id": "schema:StereoDefinedChemEntity"
+        },
+        {
+          "@id": "schema:RGroupChemEntity"
+        },
+        {
+          "@id": "schema:FreeRadicalChemEntity"
+        },
+        {
+          "@id": "schema:CHEM"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "schema:hasIsomericChild": {
+        "@id": "schema:CHEM"
+      },
+      "schema:chemIsom": {
+        "@id": "schema:CHEM"
+      },
+      "schema:chemReplacedBy": [
+        {
+          "@id": "schema:CHEM"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "schema:elemFormula": {
+        "@id": "schema:ElemFormula"
+      },
+      "_counts": {
+        "schema:chemXref": {
+          "schema:ChemEntity": 1628901,
+          "schema:ChemXRef": 1756959,
+          "schema:StereoDefinedChemEntity": 1139450,
+          "schema:StereoIncompleteChemEntity": 489451,
+          "schema:RGroupChemEntity": 19203,
+          "schema:FreeRadicalChemEntity": 1296,
+          "schema:CHEM": 5
+        },
+        "schema:chemRefer": {
+          "schema:ChemEntity": 1434185,
+          "schema:ChemXRef": 1495647,
+          "schema:StereoIncompleteChemEntity": 439789,
+          "schema:StereoDefinedChemEntity": 994396,
+          "schema:RGroupChemEntity": 16587,
+          "schema:FreeRadicalChemEntity": 907,
+          "schema:CHEM": 5
+        },
+        "schema:chemSource": {
+          "schema:ChemEntity": 1434185,
+          "schema:ChemXRef": 1495647,
+          "schema:StereoIncompleteChemEntity": 439789,
+          "schema:StereoDefinedChemEntity": 994396,
+          "schema:RGroupChemEntity": 16587,
+          "schema:FreeRadicalChemEntity": 907,
+          "schema:CHEM": 5
+        },
+        "schema:hasIsomericChild": {
+          "schema:CHEM": 13377
+        },
+        "schema:chemIsom": {
+          "schema:CHEM": 13377
+        },
+        "schema:chemReplacedBy": {
+          "schema:CHEM": 92201
+        },
+        "schema:elemFormula": {
+          "schema:ElemFormula": 6
+        }
+      }
+    },
+    {
+      "@id": "schema:GPR",
+      "schema:reac": {
+        "@id": "schema:REAC"
+      },
+      "schema:cata": {
+        "@id": "schema:CATA"
+      },
+      "_counts": {
+        "schema:reac": {
+          "schema:REAC": 208224
+        },
+        "schema:cata": {
+          "schema:CATA": 208224
+        }
+      }
+    },
+    {
+      "@id": "schema:MNET",
+      "schema:gpr": {
+        "@id": "schema:GPR"
+      },
+      "schema:canGrow": {
+        "@type": "xsd:string"
+      },
+      "schema:chemCount": {
+        "@type": "xsd:integer"
+      },
+      "schema:compCount": {
+        "@type": "xsd:integer"
+      },
+      "schema:default_LB": {
+        "@type": "xsd:integer"
+      },
+      "schema:default_UB": {
+        "@type": "xsd:integer"
+      },
+      "schema:lineage": {
+        "@type": "xsd:string"
+      },
+      "schema:organism": {
+        "@type": "xsd:string"
+      },
+      "schema:peptCount": {
+        "@type": "xsd:integer"
+      },
+      "schema:reacCount": {
+        "@type": "xsd:integer"
+      },
+      "schema:specCount": {
+        "@type": "xsd:integer"
+      },
+      "schema:taxid": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "schema:gpr": {
+          "schema:GPR": 208224
+        },
+        "schema:canGrow": {
+          "Literal:xsd:string": 231
+        },
+        "schema:chemCount": {
+          "Literal:xsd:integer": 231
+        },
+        "schema:compCount": {
+          "Literal:xsd:integer": 231
+        },
+        "schema:default_LB": {
+          "Literal:xsd:integer": 231
+        },
+        "schema:default_UB": {
+          "Literal:xsd:integer": 231
+        },
+        "schema:lineage": {
+          "Literal:xsd:string": 231
+        },
+        "schema:organism": {
+          "Literal:xsd:string": 231
+        },
+        "schema:peptCount": {
+          "Literal:xsd:integer": 231
+        },
+        "schema:reacCount": {
+          "Literal:xsd:integer": 231
+        },
+        "schema:specCount": {
+          "Literal:xsd:integer": 231
+        }
+      }
+    },
+    {
+      "@id": "schema:REAC",
+      "schema:left": {
+        "@id": "schema:PART"
+      },
+      "schema:right": {
+        "@id": "schema:PART"
+      },
+      "schema:mnxr": {
+        "@id": "schema:REAC"
+      },
+      "schema:reacReplacedBy": [
+        {
+          "@id": "schema:REAC"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "schema:reacInMNXref": {
+        "@type": "xsd:boolean"
+      },
+      "schema:classification": {
+        "@type": "xsd:string"
+      },
+      "schema:isBalanced": {
+        "@type": "xsd:boolean"
+      },
+      "schema:isTransport": {
+        "@type": "xsd:boolean"
+      },
+      "owl:deprecated": {
+        "@type": "xsd:boolean"
+      },
+      "schema:reacRefer": {
+        "@id": "owl:Class"
+      },
+      "schema:reacSource": {
+        "@id": "owl:Class"
+      },
+      "schema:reacXref": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "schema:left": {
+          "schema:PART": 309927
+        },
+        "schema:right": {
+          "schema:PART": 286039
+        },
+        "schema:mnxr": {
+          "schema:REAC": 30322
+        },
+        "schema:reacReplacedBy": {
+          "schema:REAC": 74093
+        },
+        "schema:reacInMNXref": {
+          "Literal:xsd:boolean": 200719
+        },
+        "schema:classification": {
+          "Literal:xsd:string": 42676
+        },
+        "schema:isBalanced": {
+          "Literal:xsd:boolean": 83796
+        },
+        "schema:isTransport": {
+          "Literal:xsd:boolean": 83796
+        },
+        "owl:deprecated": {
+          "Literal:xsd:boolean": 68254
+        }
+      }
+    },
+    {
+      "@id": "schema:PART",
+      "schema:chem": {
+        "@id": "schema:CHEM"
+      },
+      "schema:comp": {
+        "@id": "schema:COMP"
+      },
+      "schema:coef": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:decimal"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "schema:chem": {
+          "schema:CHEM": 106904
+        },
+        "schema:comp": {
+          "schema:COMP": 106904
+        },
+        "schema:coef": {
+          "Literal:xsd:integer": 99845,
+          "Literal:xsd:decimal": 6518,
+          "Literal:xsd:string": 541
+        }
+      }
+    },
+    {
+      "@id": "schema:COMP",
+      "schema:compRefer": [
+        {
+          "@id": "schema:COMP"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "schema:compSource": [
+        {
+          "@id": "schema:COMP"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "schema:compXref": [
+        {
+          "@id": "schema:COMP"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "schema:compInMNXref": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "schema:compRefer": {
+          "schema:COMP": 1
+        },
+        "schema:compSource": {
+          "schema:COMP": 1
+        },
+        "schema:compXref": {
+          "schema:COMP": 1
+        },
+        "schema:compInMNXref": {
+          "Literal:xsd:boolean": 50
+        }
+      }
+    },
+    {
+      "@id": "schema:CATA",
+      "schema:pept": {
+        "@id": "schema:PEPT"
+      },
+      "schema:cplx": {
+        "@id": "schema:CPLX"
+      },
+      "schema:dir": {
+        "@type": "xsd:string"
+      },
+      "schema:lb": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:decimal"
+        },
+        {
+          "@type": "xsd:double"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "schema:ub": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:decimal"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "_counts": {
+        "schema:pept": {
+          "schema:PEPT": 142489
+        },
+        "schema:cplx": {
+          "schema:CPLX": 168212
+        },
+        "schema:dir": {
+          "Literal:xsd:string": 74450
+        },
+        "schema:lb": {
+          "Literal:xsd:integer": 12014,
+          "Literal:xsd:decimal": 46,
+          "Literal:xsd:double": 2
+        },
+        "schema:ub": {
+          "Literal:xsd:integer": 13495,
+          "Literal:xsd:decimal": 13
+        }
+      }
+    },
+    {
+      "@id": "schema:CPLX",
+      "schema:subu": {
+        "@id": "schema:PEPT"
+      },
+      "_counts": {
+        "schema:subu": {
+          "schema:PEPT": 211835
+        }
+      }
+    },
+    {
+      "@id": "schema:PEPT",
+      "schema:geneName": {
+        "@type": "xsd:string"
+      },
+      "schema:peptRefer": {
+        "@id": "owl:Class"
+      },
+      "schema:peptSource": {
+        "@id": "owl:Class"
+      },
+      "schema:peptXref": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "schema:geneName": {
+          "Literal:xsd:string": 148323
+        }
+      }
+    },
+    {
+      "@id": "prov:Person",
+      "schema:name": {
+        "@type": "xsd:string"
+      },
+      "schema:affiliation": {
+        "@id": "owl:Class"
+      },
+      "schema:email": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "schema:name": {
+          "Literal:xsd:string": 2
+        }
+      }
+    },
+    {
+      "@id": "foaf:Person",
+      "schema:name": {
+        "@type": "xsd:string"
+      },
+      "schema:affiliation": {
+        "@id": "owl:Class"
+      },
+      "schema:email": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "schema:name": {
+          "Literal:xsd:string": 2
+        }
+      }
+    },
+    {
+      "@id": "schema:ChemEntity",
+      "schema:elemFormula": {
+        "@id": "schema:ElemFormula"
+      },
+      "_counts": {
+        "schema:elemFormula": {
+          "schema:ElemFormula": 6469600
+        }
+      }
+    },
+    {
+      "@id": "schema:ChemXRef",
+      "schema:elemFormula": {
+        "@id": "schema:ElemFormula"
+      },
+      "_counts": {
+        "schema:elemFormula": {
+          "schema:ElemFormula": 6469600
+        }
+      }
+    },
+    {
+      "@id": "schema:FreeRadicalChemEntity",
+      "schema:elemFormula": {
+        "@id": "schema:ElemFormula"
+      },
+      "schema:mnxInChI": {
+        "@type": "xsd:string"
+      },
+      "schema:mnxInChIKey": {
+        "@type": "xsd:string"
+      },
+      "schema:mnxSMILES": {
+        "@type": "xsd:string"
+      },
+      "schema:srcName": {
+        "@type": "xsd:string"
+      },
+      "schema:stdFormula": {
+        "@type": "xsd:string"
+      },
+      "schema:stdGlobalCharge": {
+        "@type": "xsd:integer"
+      },
+      "schema:stdInChI": {
+        "@type": "xsd:string"
+      },
+      "schema:stdInChIKey": {
+        "@type": "xsd:string"
+      },
+      "schema:stdMolWeight": {
+        "@type": "xsd:decimal"
+      },
+      "schema:stdMonoIsotopicMass": {
+        "@type": "xsd:decimal"
+      },
+      "schema:stdSMILES": {
+        "@type": "xsd:string"
+      },
+      "schema:structOrigin": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "schema:elemFormula": {
+          "schema:ElemFormula": 5216
+        },
+        "schema:mnxInChI": {
+          "Literal:xsd:string": 1296
+        },
+        "schema:mnxInChIKey": {
+          "Literal:xsd:string": 1296
+        },
+        "schema:mnxSMILES": {
+          "Literal:xsd:string": 1229
+        },
+        "schema:srcName": {
+          "Literal:xsd:string": 1296
+        },
+        "schema:stdFormula": {
+          "Literal:xsd:string": 1286
+        },
+        "schema:stdGlobalCharge": {
+          "Literal:xsd:integer": 1286
+        },
+        "schema:stdInChI": {
+          "Literal:xsd:string": 1128
+        },
+        "schema:stdInChIKey": {
+          "Literal:xsd:string": 1128
+        },
+        "schema:stdMolWeight": {
+          "Literal:xsd:decimal": 1154
+        },
+        "schema:stdMonoIsotopicMass": {
+          "Literal:xsd:decimal": 1154
+        },
+        "schema:stdSMILES": {
+          "Literal:xsd:string": 1286
+        },
+        "schema:structOrigin": {
+          "Literal:xsd:string": 1296
+        }
+      }
+    },
+    {
+      "@id": "schema:RGroupChemEntity",
+      "schema:elemFormula": {
+        "@id": "schema:ElemFormula"
+      },
+      "schema:mnxInChI": {
+        "@type": "xsd:string"
+      },
+      "schema:mnxInChIKey": {
+        "@type": "xsd:string"
+      },
+      "schema:mnxSMILES": {
+        "@type": "xsd:string"
+      },
+      "schema:srcName": {
+        "@type": "xsd:string"
+      },
+      "schema:stdFormula": {
+        "@type": "xsd:string"
+      },
+      "schema:stdGlobalCharge": {
+        "@type": "xsd:integer"
+      },
+      "schema:stdSMILES": {
+        "@type": "xsd:string"
+      },
+      "schema:structOrigin": {
+        "@type": "xsd:string"
+      },
+      "schema:stdInChI": {
+        "@type": "xsd:string"
+      },
+      "schema:stdInChIKey": {
+        "@type": "xsd:string"
+      },
+      "schema:stdMolWeight": {
+        "@type": "xsd:decimal"
+      },
+      "schema:stdMonoIsotopicMass": {
+        "@type": "xsd:decimal"
+      },
+      "_counts": {
+        "schema:elemFormula": {
+          "schema:ElemFormula": 100339
+        },
+        "schema:mnxInChI": {
+          "Literal:xsd:string": 19203
+        },
+        "schema:mnxInChIKey": {
+          "Literal:xsd:string": 19203
+        },
+        "schema:mnxSMILES": {
+          "Literal:xsd:string": 19130
+        },
+        "schema:srcName": {
+          "Literal:xsd:string": 19203
+        },
+        "schema:stdFormula": {
+          "Literal:xsd:string": 19193
+        },
+        "schema:stdGlobalCharge": {
+          "Literal:xsd:integer": 19193
+        },
+        "schema:stdSMILES": {
+          "Literal:xsd:string": 19193
+        },
+        "schema:structOrigin": {
+          "Literal:xsd:string": 19203
+        },
+        "schema:stdInChI": {
+          "Literal:xsd:string": 2
+        },
+        "schema:stdInChIKey": {
+          "Literal:xsd:string": 2
+        },
+        "schema:stdMolWeight": {
+          "Literal:xsd:decimal": 1
+        },
+        "schema:stdMonoIsotopicMass": {
+          "Literal:xsd:decimal": 1
+        }
+      }
+    },
+    {
+      "@id": "schema:StereoDefinedChemEntity",
+      "schema:elemFormula": {
+        "@id": "schema:ElemFormula"
+      },
+      "_counts": {
+        "schema:elemFormula": {
+          "schema:ElemFormula": 4662422
+        }
+      }
+    },
+    {
+      "@id": "schema:StereoIncompleteChemEntity",
+      "schema:elemFormula": {
+        "@id": "schema:ElemFormula"
+      },
+      "schema:mnxInChI": {
+        "@type": "xsd:string"
+      },
+      "schema:mnxInChIKey": {
+        "@type": "xsd:string"
+      },
+      "schema:mnxSMILES": {
+        "@type": "xsd:string"
+      },
+      "schema:srcName": {
+        "@type": "xsd:string"
+      },
+      "schema:stdFormula": {
+        "@type": "xsd:string"
+      },
+      "schema:stdGlobalCharge": {
+        "@type": "xsd:integer"
+      },
+      "schema:stdInChI": {
+        "@type": "xsd:string"
+      },
+      "schema:stdInChIKey": {
+        "@type": "xsd:string"
+      },
+      "schema:stdMolWeight": {
+        "@type": "xsd:decimal"
+      },
+      "schema:stdMonoIsotopicMass": {
+        "@type": "xsd:decimal"
+      },
+      "schema:stdSMILES": {
+        "@type": "xsd:string"
+      },
+      "schema:structOrigin": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "schema:elemFormula": {
+          "schema:ElemFormula": 1807178
+        }
+      }
+    },
+    {
+      "@id": "void:Dataset",
+      "void:property": [
+        {
+          "@id": "owl:AnnotationProperty"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "voidext:datatypePartition": {
+        "@id": "void:Dataset"
+      },
+      "void:propertyPartition": {
+        "@id": "void:Dataset"
+      },
+      "void:classPartition": {
+        "@id": "void:Dataset"
+      },
+      "void:entities": {
+        "@type": "xsd:long"
+      },
+      "void:triples": {
+        "@type": "xsd:long"
+      },
+      "voidext:datatype": {
+        "@id": "owl:Class"
+      },
+      "void:class": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "void:property": {
+          "owl:AnnotationProperty": 43
+        },
+        "voidext:datatypePartition": {
+          "void:Dataset": 170
+        },
+        "void:propertyPartition": {
+          "void:Dataset": 215
+        },
+        "void:classPartition": {
+          "void:Dataset": 47
+        },
+        "void:entities": {
+          "Literal:xsd:long": 28
+        },
+        "void:triples": {
+          "Literal:xsd:long": 262
+        }
+      }
+    },
+    {
+      "@id": "void:Linkset",
+      "void:objectsTarget": {
+        "@id": "void:Dataset"
+      },
+      "void:subjectsTarget": {
+        "@id": "void:Dataset"
+      },
+      "void:triples": {
+        "@type": "xsd:long"
+      },
+      "void:linkPredicate": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "void:objectsTarget": {
+          "void:Dataset": 54
+        },
+        "void:subjectsTarget": {
+          "void:Dataset": 53
+        },
+        "void:triples": {
+          "Literal:xsd:long": 7
+        }
+      }
+    },
+    {
+      "@id": "schema:ElemFormula",
+      "schema:atomCount": {
+        "@type": "xsd:integer"
+      },
+      "schema:atomElem": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "schema:atomCount": {
+          "Literal:xsd:integer": 1280
+        },
+        "schema:atomElem": {
+          "Literal:xsd:string": 1280
+        }
+      }
+    },
+    {
+      "@id": "sh:SPARQLExecutable",
+      "ontology:file_path": {
+        "@type": "xsd:string"
+      },
+      "sh:select": {
+        "@type": "xsd:string"
+      },
+      "ontology:file_name": {
+        "@type": "xsd:string"
+      },
+      "ontology:project": {
+        "@type": "xsd:string"
+      },
+      "schema:target": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "ontology:file_path": {
+          "Literal:xsd:string": 13
+        },
+        "sh:select": {
+          "Literal:xsd:string": 13
+        },
+        "ontology:file_name": {
+          "Literal:xsd:string": 13
+        },
+        "ontology:project": {
+          "Literal:xsd:string": 13
+        }
+      }
+    },
+    {
+      "@id": "sh:SPARQLSelectExecutable",
+      "ontology:file_path": {
+        "@type": "xsd:string"
+      },
+      "sh:select": {
+        "@type": "xsd:string"
+      },
+      "ontology:file_name": {
+        "@type": "xsd:string"
+      },
+      "ontology:project": {
+        "@type": "xsd:string"
+      },
+      "schema:target": {
+        "@id": "owl:Class"
+      },
+      "_counts": {
+        "ontology:file_path": {
+          "Literal:xsd:string": 13
+        },
+        "sh:select": {
+          "Literal:xsd:string": 13
+        },
+        "ontology:file_name": {
+          "Literal:xsd:string": 13
+        },
+        "ontology:project": {
+          "Literal:xsd:string": 13
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-03T19:14:54.539892+00:00",
+    "endpoint": "https://rdf.metanetx.org/sparql/",
+    "dataset_name": "metanext",
+    "pattern_count": 389,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:Class": "Class",
+    "owl:complementOf": "complementOf",
+    "owl:Ontology": "Ontology",
+    "dcterms:creator": "creator",
+    "prov:Person": "Person",
+    "foaf:Person": "Person",
+    "dcterms:created": "created",
+    "dcterms:modified": "modified",
+    "owl:versionInfo": "versionInfo",
+    "vocab:introduction": "introduction",
+    "dcterms:abstract": "abstract",
+    "dcterms:bibliographicCitation": "bibliographicCitation",
+    "dcterms:description": "description",
+    "dcterms:issue": "issue",
+    "dcterms:title": "title",
+    "vann:preferredNamespacePrefix": "preferredNamespacePrefix",
+    "owl:imports": "imports",
+    "owl:priorVersion": "priorVersion",
+    "owl:versionIRI": "versionIRI",
+    "dcterms:license": "license",
+    "vann:preferredNamespaceUri": "preferredNamespaceUri",
+    "schema:CHEM": "CHEM",
+    "schema:chemXref": "chemXref",
+    "schema:ChemEntity": "ChemEntity",
+    "schema:ChemXRef": "ChemXRef",
+    "schema:StereoDefinedChemEntity": "StereoDefinedChemEntity",
+    "schema:chemRefer": "chemRefer",
+    "schema:StereoIncompleteChemEntity": "StereoIncompleteChemEntity",
+    "schema:chemSource": "chemSource",
+    "schema:RGroupChemEntity": "RGroupChemEntity",
+    "schema:hasIsomericChild": "hasIsomericChild",
+    "schema:chemIsom": "chemIsom",
+    "schema:FreeRadicalChemEntity": "FreeRadicalChemEntity",
+    "schema:chemReplacedBy": "chemReplacedBy",
+    "schema:elemFormula": "elemFormula",
+    "schema:ElemFormula": "ElemFormula",
+    "schema:GPR": "GPR",
+    "schema:reac": "reac",
+    "schema:REAC": "REAC",
+    "schema:cata": "cata",
+    "schema:CATA": "CATA",
+    "schema:MNET": "MNET",
+    "schema:gpr": "gpr",
+    "schema:left": "left",
+    "schema:PART": "PART",
+    "schema:right": "right",
+    "schema:mnxr": "mnxr",
+    "schema:reacReplacedBy": "reacReplacedBy",
+    "schema:chem": "chem",
+    "schema:comp": "comp",
+    "schema:COMP": "COMP",
+    "schema:compRefer": "compRefer",
+    "schema:compSource": "compSource",
+    "schema:compXref": "compXref",
+    "schema:pept": "pept",
+    "schema:PEPT": "PEPT",
+    "schema:cplx": "cplx",
+    "schema:CPLX": "CPLX",
+    "schema:subu": "subu",
+    "schema:canGrow": "canGrow",
+    "schema:chemCount": "chemCount",
+    "schema:compCount": "compCount",
+    "schema:default_LB": "default_LB",
+    "schema:default_UB": "default_UB",
+    "schema:lineage": "lineage",
+    "schema:organism": "organism",
+    "schema:peptCount": "peptCount",
+    "schema:reacCount": "reacCount",
+    "schema:specCount": "specCount",
+    "schema:reacInMNXref": "reacInMNXref",
+    "schema:classification": "classification",
+    "schema:isBalanced": "isBalanced",
+    "schema:isTransport": "isTransport",
+    "owl:deprecated": "deprecated",
+    "schema:geneName": "geneName",
+    "schema:coef": "coef",
+    "schema:compInMNXref": "compInMNXref",
+    "schema:dir": "dir",
+    "schema:lb": "lb",
+    "schema:ub": "ub",
+    "schema:name": "name",
+    "schema:taxid": "taxid",
+    "schema:reacRefer": "reacRefer",
+    "schema:reacSource": "reacSource",
+    "schema:reacXref": "reacXref",
+    "schema:peptRefer": "peptRefer",
+    "schema:peptSource": "peptSource",
+    "schema:peptXref": "peptXref",
+    "schema:affiliation": "affiliation",
+    "schema:email": "email",
+    "void:Dataset": "Dataset",
+    "void:property": "property",
+    "owl:AnnotationProperty": "AnnotationProperty",
+    "void:Linkset": "Linkset",
+    "void:objectsTarget": "objectsTarget",
+    "voidext:datatypePartition": "datatypePartition",
+    "void:propertyPartition": "propertyPartition",
+    "void:classPartition": "classPartition",
+    "void:subjectsTarget": "subjectsTarget",
+    "schema:atomCount": "atomCount",
+    "schema:atomElem": "atomElem",
+    "schema:mnxInChI": "mnxInChI",
+    "schema:mnxInChIKey": "mnxInChIKey",
+    "schema:mnxSMILES": "mnxSMILES",
+    "schema:srcName": "srcName",
+    "schema:stdFormula": "stdFormula",
+    "schema:stdGlobalCharge": "stdGlobalCharge",
+    "schema:stdInChI": "stdInChI",
+    "schema:stdInChIKey": "stdInChIKey",
+    "schema:stdMolWeight": "stdMolWeight",
+    "schema:stdMonoIsotopicMass": "stdMonoIsotopicMass",
+    "schema:stdSMILES": "stdSMILES",
+    "schema:structOrigin": "structOrigin",
+    "void:entities": "entities",
+    "void:triples": "triples",
+    "sh:SPARQLExecutable": "SPARQLExecutable",
+    "ontology:file_path": "file_path",
+    "sh:SPARQLSelectExecutable": "SPARQLSelectExecutable",
+    "sh:select": "select",
+    "ontology:file_name": "file_name",
+    "ontology:project": "project",
+    "voidext:datatype": "datatype",
+    "void:class": "class",
+    "void:linkPredicate": "linkPredicate",
+    "schema:target": "target"
+  }
+}

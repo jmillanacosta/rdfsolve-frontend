@@ -1,0 +1,954 @@
+{
+  "@context": {
+    "cheminf": "http://semanticscience.org/resource/CHEMINF_",
+    "resource": "http://semanticscience.org/resource/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "sio": "http://semanticscience.org/resource/SIO_",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "cheminf:000396",
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:rdf:langString": 123351913
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 123351913
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000338",
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "resource:has-value": {
+        "@type": "xsd:float"
+      },
+      "resource:has-unit": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000221": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:float": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:float": 123351916
+        },
+        "resource:has-unit": {
+          "Resource": 123351916
+        },
+        "sio:000221": {
+          "Resource": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:MolecularWeight",
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "resource:has-value": {
+        "@type": "xsd:float"
+      },
+      "resource:has-unit": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000221": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:float": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:float": 123351916
+        },
+        "resource:has-unit": {
+          "Resource": 123351916
+        },
+        "sio:000221": {
+          "Resource": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000372",
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000336",
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:HydrogenBondDonorCount",
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000374",
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:PreferredIUPACName",
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:rdf:langString": 122474742
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 122474742
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:ConnectivitySMILES",
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:rdf:langString": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:DefinedAtomStereoCount",
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000389",
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:UndefinedBondStereoCount",
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000376",
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:rdf:langString": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000140",
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:string": 123514093
+        },
+        "resource:has-value": {
+          "Literal:rdf:langString": 123514093
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:TPSA",
+      "resource:has-value": {
+        "@type": "xsd:float"
+      },
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "resource:has-unit": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000221": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:float": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:float": 123351916
+        },
+        "resource:has-unit": {
+          "Resource": 123351916
+        },
+        "sio:000221": {
+          "Resource": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000337",
+      "resource:has-value": {
+        "@type": "xsd:float"
+      },
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "resource:has-unit": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000221": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:float": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:float": 123351916
+        },
+        "resource:has-unit": {
+          "Resource": 123351916
+        },
+        "sio:000221": {
+          "Resource": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:CompoundIdentifier",
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:string": 123514093
+        },
+        "resource:has-value": {
+          "Literal:rdf:langString": 123514093
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000335",
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:string": 123351916
+        },
+        "resource:has-value": {
+          "Literal:rdf:langString": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:ExactMass",
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "resource:has-value": {
+        "@type": "xsd:float"
+      },
+      "sio:000221": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:has-unit": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:float": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:float": 123351916
+        },
+        "sio:000221": {
+          "Resource": 123351916
+        },
+        "resource:has-unit": {
+          "Resource": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:NonHydrogenAtomCount",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:UndefinedAtomStereoCount",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000375",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:IsotopeAtomCount",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:HydrogenBondAcceptorCount",
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:MolecularFormula",
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:rdf:langString": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:RotatableBondCount",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000369",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000388",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:SMILES",
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:string": 123351916
+        },
+        "resource:has-value": {
+          "Literal:rdf:langString": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000370",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000373",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:TotalFormalCharge",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:DefinedBondStereoCount",
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000392",
+      "resource:has-value": {
+        "@type": "xsd:float"
+      },
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "resource:has-unit": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000221": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:float": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:float": 123351916
+        },
+        "resource:has-unit": {
+          "Resource": 123351916
+        },
+        "sio:000221": {
+          "Resource": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000390",
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "resource:has-value": {
+        "@type": "xsd:float"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:float": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:float": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:StructureComplexity",
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "resource:has-value": {
+        "@type": "xsd:float"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:float": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:float": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000371",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:CovalentUnitCount",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000379",
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:rdf:langString": 123351916
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000382",
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:string": 122474742
+        },
+        "resource:has-value": {
+          "Literal:rdf:langString": 122474742
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:XLogP3",
+      "resource:has-value": {
+        "@type": "xsd:float"
+      },
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:float": 108953987
+        },
+        "sio:000300": {
+          "Literal:xsd:float": 108953987
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:IUPACInChI",
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:rdf:langString": 123351913
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 123351913
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000334",
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "resource:has-value": {
+        "@type": "xsd:float"
+      },
+      "sio:000221": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:has-unit": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:float": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:float": 123351916
+        },
+        "sio:000221": {
+          "Resource": 123351916
+        },
+        "resource:has-unit": {
+          "Resource": 123351916
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:MonoIsotopicWeight",
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "resource:has-value": {
+        "@type": "xsd:float"
+      },
+      "sio:000221": {
+        "@id": "rdfs:Resource"
+      },
+      "resource:has-unit": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:float": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:float": 123351916
+        },
+        "sio:000221": {
+          "Resource": 123351916
+        },
+        "resource:has-unit": {
+          "Resource": 123351916
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000395",
+      "resource:has-value": {
+        "@type": "xsd:float"
+      },
+      "sio:000300": {
+        "@type": "xsd:float"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:float": 108953987
+        },
+        "sio:000300": {
+          "Literal:xsd:float": 108953987
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000387",
+      "sio:000300": {
+        "@type": "xsd:short"
+      },
+      "resource:has-value": {
+        "@type": "xsd:short"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:short": 123351916
+        },
+        "resource:has-value": {
+          "Literal:xsd:short": 123351916
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T10:05:00.393165+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.descriptor.compound",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/descriptor/compound"
+    ],
+    "pattern_count": 154,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "cheminf:000396": "CHEMINF_000396",
+    "resource:has-value": "has-value",
+    "cheminf:000338": "CHEMINF_000338",
+    "sio:000300": "SIO_000300",
+    "vocabulary:MolecularWeight": "MolecularWeight",
+    "cheminf:000372": "CHEMINF_000372",
+    "cheminf:000336": "CHEMINF_000336",
+    "vocabulary:HydrogenBondDonorCount": "HydrogenBondDonorCount",
+    "cheminf:000374": "CHEMINF_000374",
+    "vocabulary:PreferredIUPACName": "PreferredIUPACName",
+    "vocabulary:ConnectivitySMILES": "ConnectivitySMILES",
+    "vocabulary:DefinedAtomStereoCount": "DefinedAtomStereoCount",
+    "cheminf:000389": "CHEMINF_000389",
+    "vocabulary:UndefinedBondStereoCount": "UndefinedBondStereoCount",
+    "cheminf:000376": "CHEMINF_000376",
+    "cheminf:000140": "CHEMINF_000140",
+    "vocabulary:TPSA": "TPSA",
+    "resource:has-unit": "has-unit",
+    "sio:000221": "SIO_000221",
+    "cheminf:000337": "CHEMINF_000337",
+    "vocabulary:CompoundIdentifier": "CompoundIdentifier",
+    "cheminf:000335": "CHEMINF_000335",
+    "vocabulary:ExactMass": "ExactMass",
+    "vocabulary:NonHydrogenAtomCount": "NonHydrogenAtomCount",
+    "vocabulary:UndefinedAtomStereoCount": "UndefinedAtomStereoCount",
+    "cheminf:000375": "CHEMINF_000375",
+    "vocabulary:IsotopeAtomCount": "IsotopeAtomCount",
+    "vocabulary:HydrogenBondAcceptorCount": "HydrogenBondAcceptorCount",
+    "vocabulary:MolecularFormula": "MolecularFormula",
+    "vocabulary:RotatableBondCount": "RotatableBondCount",
+    "cheminf:000369": "CHEMINF_000369",
+    "cheminf:000388": "CHEMINF_000388",
+    "vocabulary:SMILES": "SMILES",
+    "cheminf:000370": "CHEMINF_000370",
+    "cheminf:000373": "CHEMINF_000373",
+    "vocabulary:TotalFormalCharge": "TotalFormalCharge",
+    "vocabulary:DefinedBondStereoCount": "DefinedBondStereoCount",
+    "cheminf:000392": "CHEMINF_000392",
+    "cheminf:000390": "CHEMINF_000390",
+    "vocabulary:StructureComplexity": "StructureComplexity",
+    "cheminf:000371": "CHEMINF_000371",
+    "vocabulary:CovalentUnitCount": "CovalentUnitCount",
+    "cheminf:000379": "CHEMINF_000379",
+    "cheminf:000382": "CHEMINF_000382",
+    "vocabulary:XLogP3": "XLogP3",
+    "vocabulary:IUPACInChI": "IUPACInChI",
+    "cheminf:000334": "CHEMINF_000334",
+    "vocabulary:MonoIsotopicWeight": "MonoIsotopicWeight",
+    "cheminf:000395": "CHEMINF_000395",
+    "cheminf:000387": "CHEMINF_000387"
+  }
+}

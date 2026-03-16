@@ -1,22 +1,5 @@
 /**
  * SPARQL Query Executor
- *
- * Sends SPARQL SELECT queries to endpoints, parses the JSON results,
- * and maps each result variable back to the schema URI it was derived
- * from (using the variable→URI mapping produced by the backend composer).
- *
- * Design:
- *  - Pure data module — no DOM, no side-effects.
- *  - Single `executeQuery()` entry point returns a strongly typed result.
- *  - Callers (results-panel, diagram) consume the result to render
- *    tables and populate instance badges on the diagram.
- */
-
-// ── Types ────────────────────────────────────────────────────────────────────
-
-/**
- * API base URL.  Empty string = same origin (Docker Compose).
- * Override via window.__RDFSOLVE_API_BASE__ before this module loads.
  */
 const API_BASE: string = (globalThis as any).__RDFSOLVE_API_BASE__ ?? '';
 
@@ -30,10 +13,10 @@ export interface ResultCell {
   datatype?: string;
 }
 
-/** A single result binding row: variableName → cell */
+/** A single result binding row: variableName -> cell */
 export type ResultRow = Record<string, ResultCell>;
 
-/** Mapping from SPARQL ?variable name → schema class/node URI it represents. */
+/** Mapping from SPARQL ?variable name -> schema class/node URI it represents. */
 export type VariableMapping = Map<string, string>;
 
 /** Full execution result. */
@@ -46,7 +29,7 @@ export interface QueryResult {
   variables: string[];
   /** Result rows. */
   rows: ResultRow[];
-  /** Variable → schema URI mapping (for traceability). */
+  /** Variable -> schema URI mapping (for traceability). */
   variableMap: VariableMapping;
   /** Total rows returned. */
   rowCount: number;
@@ -114,7 +97,7 @@ export async function executeQuery(
 
     const data = await res.json();
 
-    // Map snake_case backend response → camelCase frontend types
+    // Map snake_case backend response -> camelCase frontend types
     const variables: string[] = data.variables ?? [];
     const rows: ResultRow[] = (data.rows ?? []).map(
       (row: Record<string, any>) => {
@@ -166,13 +149,13 @@ export async function executeQuery(
   }
 }
 
-// ── Variable → Schema mapping builder ────────────────────────────────────────
+// ── Variable -> Schema mapping builder ────────────────────────────────────────
 
 /**
  * Build a VariableMapping by parsing the SPARQL query text for
  * `?var a <URI>` or `?var a prefix:Local` patterns and expanding CURIEs.
  *
- * This is a lightweight heuristic — the composer already embeds rdf:type
+ * This is a lightweight heuristic - the composer already embeds rdf:type
  * assertions so we can recover the mapping. For queries without type
  * assertions the mapping will simply be empty (no traceability).
  */
@@ -198,7 +181,7 @@ export function buildVariableMapFromQuery(
     if (!map.has(varName)) map.set(varName, uri);
   }
 
-  // Also try variable name → schema URI by looking for
+  // Also try variable name -> schema URI by looking for
   // subject-position variables: `?varName predicate ?other`
   // These are less reliable so we don't overwrite existing entries.
   return map;
@@ -210,7 +193,7 @@ export function buildVariableMapFromQuery(
  * For each schema URI in the variable map, collect all distinct instance
  * IRIs that appeared in the results for that variable.
  *
- * Returns: schemaUri → Set of instance IRIs.
+ * Returns: schemaUri -> Set of instance IRIs.
  */
 export function collectInstancesBySchemaNode(
   result: QueryResult,

@@ -19,11 +19,11 @@ npm run build
 ```
 
 Files created
-- `src/components/schema-diagram.ts` — starter web component exposing the public API described in the design.
-- `src/parsers/jsonldParser.ts` — initial JSON-LD -> canonical graph parser.
-- `src/parsers/csvParser.ts` — initial CSV parser + coverage->graph converter.
-- `src/types.ts` — canonical TypeScript interfaces.
-- `demo/index.html` — quick demo page.
+- `src/components/schema-diagram.ts` - starter web component exposing the public API described in the design.
+- `src/parsers/jsonldParser.ts` - initial JSON-LD -> canonical graph parser.
+- `src/parsers/csvParser.ts` - initial CSV parser + coverage->graph converter.
+- `src/types.ts` - canonical TypeScript interfaces.
+- `demo/index.html` - quick demo page.
 
 Next steps
 - Implement full D3 orthogonal renderer (left-to-right) in `src/renderer/*` and wire into the component.

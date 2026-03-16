@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "uniprot.core": "http://purl.uniprot.org/core/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "uniprot.core:Citation",
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:primaryTopicOf": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:identifier": {
+          "Literal:xsd:string": 170
+        },
+        "skos:exactMatch": {
+          "Resource": 170
+        },
+        "foaf:primaryTopicOf": {
+          "Resource": 170
+        }
+      }
+    },
+    {
+      "@id": "uniprot.core:Database",
+      "uniprot.core:citation": {
+        "@id": "uniprot.core:Citation"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:abbreviation": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:category": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:linkIsExplicit": {
+        "@type": "xsd:boolean"
+      },
+      "uniprot.core:urlTemplate": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "uniprot.core:citation": {
+          "uniprot.core:Citation": 176
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 185
+        },
+        "uniprot.core:abbreviation": {
+          "Literal:xsd:string": 185
+        },
+        "uniprot.core:category": {
+          "Literal:xsd:string": 185
+        },
+        "uniprot.core:linkIsExplicit": {
+          "Literal:xsd:boolean": 170
+        },
+        "uniprot.core:urlTemplate": {
+          "Literal:xsd:string": 185
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T09:12:02.938100+00:00",
+    "endpoint": "https://sparql.uniprot.org/sparql/",
+    "dataset_name": "uniprot.database",
+    "graph_uris": [
+      "http://sparql.uniprot.org/database"
+    ],
+    "pattern_count": 12,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "uniprot.core:Citation": "Citation",
+    "dcterms:identifier": "identifier",
+    "skos:exactMatch": "exactMatch",
+    "foaf:primaryTopicOf": "primaryTopicOf",
+    "uniprot.core:Database": "Database",
+    "uniprot.core:citation": "citation",
+    "uniprot.core:abbreviation": "abbreviation",
+    "uniprot.core:category": "category",
+    "uniprot.core:linkIsExplicit": "linkIsExplicit",
+    "uniprot.core:urlTemplate": "urlTemplate"
+  }
+}

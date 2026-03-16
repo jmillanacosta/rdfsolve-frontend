@@ -1,0 +1,72 @@
+{
+  "@context": {
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@graph": [
+    {
+      "@id": "vocabulary:Author",
+      "vcard:fn": {
+        "@type": "xsd:string"
+      },
+      "vcard:organization-name": {
+        "@type": "xsd:string"
+      },
+      "vcard:given-name": {
+        "@type": "xsd:string"
+      },
+      "vcard:family-name": {
+        "@type": "xsd:string"
+      },
+      "vcard:hasUID": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:source": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "vcard:fn": {
+          "Literal:xsd:string": 29815301
+        },
+        "vcard:organization-name": {
+          "Literal:xsd:string": 42731411
+        },
+        "vcard:given-name": {
+          "Literal:xsd:string": 31487023
+        },
+        "vcard:family-name": {
+          "Literal:xsd:string": 28910178
+        },
+        "vcard:hasUID": {
+          "Resource": 4090614
+        },
+        "dcterms:source": {
+          "Resource": 4090614
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:40:35.028931+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.author",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/author"
+    ],
+    "pattern_count": 7,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "vocabulary:Author": "Author",
+    "vcard:fn": "fn",
+    "vcard:organization-name": "organization-name",
+    "vcard:given-name": "given-name",
+    "vcard:family-name": "family-name",
+    "vcard:hasUID": "hasUID",
+    "dcterms:source": "source"
+  }
+}

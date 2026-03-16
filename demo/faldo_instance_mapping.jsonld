@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfsolve": "https://w3id.org/rdfsolve/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "sd": "http://www.w3.org/ns/sparql-service-description#"
+  },
+  "@graph": [],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-02-19T22:38:39.581680+00:00",
+    "dataset_name": "faldo_instance_mapping",
+    "pattern_count": 0,
+    "strategy": "instance_matcher",
+    "resource": "faldo",
+    "uri_formats_queried": [
+      "https://biohackathon.org/resource/faldo#",
+      "http://biohackathon.org/resource/faldo#",
+      "https://bioregistry.io/faldo:",
+      "http://bioregistry.io/faldo:"
+    ]
+  }
+}

@@ -1,0 +1,6251 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "bio2rdf": "http://bio2rdf.org/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "so": "http://bio2rdf.org/so:",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pav": "http://purl.org/pav/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "owl:Class",
+      "owl:equivalentClass": [
+        {
+          "@id": "bio2rdf:chebi_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:so_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "owl:equivalentClass": {
+          "bio2rdf:chebi_vocabulary:Resource": 2,
+          "bio2rdf:so_vocabulary:Resource": 1
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 42
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 42
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 42
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 42
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 42
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 42
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:Resource",
+      "owl:equivalentClass": [
+        {
+          "@id": "bio2rdf:chebi_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:so_vocabulary:Resource"
+        }
+      ],
+      "owl:sameAs": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:goa_vocabulary:evidence": {
+        "@id": "bio2rdf:eco_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:go-term": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:target": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:RNA"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:x-ec": [
+        {
+          "@id": "bio2rdf:ec_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Reaction"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:x-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:x-ncbigene": {
+        "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:x-refseq": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:chromosome": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:encodes": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:RNA"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:is-about": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "so:0000236"
+        },
+        {
+          "@id": "so:0000336"
+        },
+        {
+          "@id": "so:0000830"
+        },
+        {
+          "@id": "so:0000180"
+        },
+        {
+          "@id": "so:0000577"
+        },
+        {
+          "@id": "so:0000286"
+        },
+        {
+          "@id": "so:0000624"
+        },
+        {
+          "@id": "so:0001496"
+        },
+        {
+          "@id": "so:0000316"
+        },
+        {
+          "@id": "so:0000445"
+        },
+        {
+          "@id": "so:0000188"
+        },
+        {
+          "@id": "so:0001211"
+        },
+        {
+          "@id": "so:0000183"
+        },
+        {
+          "@id": "so:0000640"
+        },
+        {
+          "@id": "so:0000639"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:strand": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:has-proper-part": [
+        {
+          "@id": "bio2rdf:pfam_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:RNA"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        },
+        {
+          "@id": "bio2rdf:coil_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:gene3d_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:hamap_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:panther_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:phobius_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pirsf_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:prints_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:prodom_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:prosite_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:signalp_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:smart_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:superfamily_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:tmhmm_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Pathway"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:SuperPathway"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:query": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:target": [
+        {
+          "@id": "bio2rdf:pfam_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:coil_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:gene3d_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:hamap_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:panther_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:phobius_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pirsf_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:prints_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:prodom_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:prosite_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:signalp_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:smart_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:superfamily_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:tmhmm_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:is-described-by": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:AlanineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:ArginineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:AromaticityScore"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:AsparagineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:AspartateCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CodonAdaptationIndex"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CodonBias"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CysteinCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:FrequencyOfOptimalCodons"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:GlutamineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:GlutamateCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:GlycineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:GRAVYScore"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:HistineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:IsoleucineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:LeucineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:LysineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:SequenceLength"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:MethionineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:MolecularWeight"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:PhenylalanineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:IsolectricPoint"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:ProlineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:SerineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:ThreonineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:TryptophanCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:TyrosineCount"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:ValineCount"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:experiment-type": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:has-participant": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "so:0000236"
+        },
+        {
+          "@id": "so:0000336"
+        },
+        {
+          "@id": "so:0000830"
+        },
+        {
+          "@id": "so:0000180"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Enzyme"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:mutant-type": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:observable": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:article": [
+        {
+          "@id": "bio2rdf:pubmed_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:bait": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:has-function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:hit": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:is-located-in": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:is-participant-in": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:method": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:phenotype": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:qualifier": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "owl:equivalentProperty": {
+        "@id": "rdfs:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:equivalentClass": {
+          "bio2rdf:chebi_vocabulary:Resource": 2,
+          "bio2rdf:so_vocabulary:Resource": 1
+        },
+        "owl:sameAs": {
+          "bio2rdf:sgd_vocabulary:Resource": 34521,
+          "bio2rdf:sgd_vocabulary:Protein": 16794
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 893724
+        },
+        "bio2rdf:goa_vocabulary:evidence": {
+          "bio2rdf:eco_vocabulary:Resource": 94944
+        },
+        "bio2rdf:goa_vocabulary:go-term": {
+          "bio2rdf:go_vocabulary:Resource": 94948
+        },
+        "bio2rdf:goa_vocabulary:target": {
+          "bio2rdf:sgd_vocabulary:Resource": 94948,
+          "bio2rdf:sgd_vocabulary:RNA": 1646,
+          "bio2rdf:sgd_vocabulary:Protein": 90494
+        },
+        "bio2rdf:sgd_vocabulary:x-ec": {
+          "bio2rdf:ec_vocabulary:Resource": 2051,
+          "bio2rdf:sgd_vocabulary:Reaction": 682
+        },
+        "bio2rdf:sgd_vocabulary:x-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 39702
+        },
+        "bio2rdf:sgd_vocabulary:x-ncbigene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 6073
+        },
+        "bio2rdf:sgd_vocabulary:x-refseq": {
+          "bio2rdf:refseq_vocabulary:Resource": 5951
+        },
+        "bio2rdf:sgd_vocabulary:chromosome": {
+          "bio2rdf:sgd_vocabulary:Resource": 16034,
+          "bio2rdf:sgd_vocabulary:Chromosome": 16026
+        },
+        "bio2rdf:sgd_vocabulary:encodes": {
+          "bio2rdf:sgd_vocabulary:Resource": 18747,
+          "bio2rdf:sgd_vocabulary:Protein": 18303,
+          "bio2rdf:sgd_vocabulary:RNA": 444
+        },
+        "bio2rdf:sgd_vocabulary:is-about": {
+          "bio2rdf:sgd_vocabulary:Resource": 16450,
+          "so:0000236": 6604,
+          "so:0000336": 12,
+          "so:0000830": 1280,
+          "so:0000180": 91,
+          "so:0000577": 16,
+          "so:0000286": 383,
+          "so:0000624": 32,
+          "so:0001496": 31,
+          "so:0000316": 7074,
+          "so:0000445": 484,
+          "so:0000188": 377,
+          "so:0001211": 47,
+          "so:0000183": 3,
+          "so:0000640": 8,
+          "so:0000639": 8
+        },
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 40858,
+          "bio2rdf:sgd_vocabulary:Chromosome": 16418,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 16034
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 16386,
+          "bio2rdf:sgd_vocabulary:Location": 16386
+        },
+        "bio2rdf:sgd_vocabulary:strand": {
+          "bio2rdf:sgd_vocabulary:Resource": 16034,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 16034
+        },
+        "bio2rdf:sgd_vocabulary:has-proper-part": {
+          "bio2rdf:pfam_vocabulary:Resource": 7681,
+          "bio2rdf:sgd_vocabulary:Resource": 7154,
+          "bio2rdf:sgd_vocabulary:RNA": 330,
+          "bio2rdf:sgd_vocabulary:Protein": 6220,
+          "bio2rdf:coil_vocabulary:Resource": 1275,
+          "bio2rdf:gene3d_vocabulary:Resource": 4916,
+          "bio2rdf:hamap_vocabulary:Resource": 329,
+          "bio2rdf:panther_vocabulary:Resource": 7782,
+          "bio2rdf:phobius_vocabulary:Resource": 7776,
+          "bio2rdf:pirsf_vocabulary:Resource": 683,
+          "bio2rdf:prints_vocabulary:Resource": 802,
+          "bio2rdf:prodom_vocabulary:Resource": 207,
+          "bio2rdf:prosite_vocabulary:Resource": 4466,
+          "bio2rdf:signalp_vocabulary:Resource": 712,
+          "bio2rdf:smart_vocabulary:Resource": 2223,
+          "bio2rdf:superfamily_vocabulary:Resource": 4823,
+          "bio2rdf:tmhmm_vocabulary:Resource": 1474,
+          "bio2rdf:sgd_vocabulary:Pathway": 82,
+          "bio2rdf:sgd_vocabulary:SuperPathway": 1
+        },
+        "bio2rdf:sgd_vocabulary:query": {
+          "bio2rdf:sgd_vocabulary:Resource": 73647,
+          "bio2rdf:sgd_vocabulary:Protein": 523
+        },
+        "bio2rdf:sgd_vocabulary:target": {
+          "bio2rdf:pfam_vocabulary:Resource": 8563,
+          "bio2rdf:coil_vocabulary:Resource": 2018,
+          "bio2rdf:gene3d_vocabulary:Resource": 6669,
+          "bio2rdf:hamap_vocabulary:Resource": 329,
+          "bio2rdf:panther_vocabulary:Resource": 12272,
+          "bio2rdf:phobius_vocabulary:Resource": 17134,
+          "bio2rdf:pirsf_vocabulary:Resource": 683,
+          "bio2rdf:prints_vocabulary:Resource": 3849,
+          "bio2rdf:prodom_vocabulary:Resource": 208,
+          "bio2rdf:prosite_vocabulary:Resource": 5467,
+          "bio2rdf:signalp_vocabulary:Resource": 764,
+          "bio2rdf:smart_vocabulary:Resource": 3371,
+          "bio2rdf:superfamily_vocabulary:Resource": 6607,
+          "bio2rdf:tmhmm_vocabulary:Resource": 5713
+        },
+        "bio2rdf:sgd_vocabulary:is-described-by": {
+          "bio2rdf:sgd_vocabulary:Resource": 184632,
+          "bio2rdf:sgd_vocabulary:AlanineCount": 6594,
+          "bio2rdf:sgd_vocabulary:ArginineCount": 6594,
+          "bio2rdf:sgd_vocabulary:AromaticityScore": 6594,
+          "bio2rdf:sgd_vocabulary:AsparagineCount": 6594,
+          "bio2rdf:sgd_vocabulary:AspartateCount": 6594,
+          "bio2rdf:sgd_vocabulary:CodonAdaptationIndex": 6594,
+          "bio2rdf:sgd_vocabulary:CodonBias": 6594,
+          "bio2rdf:sgd_vocabulary:CysteinCount": 6594,
+          "bio2rdf:sgd_vocabulary:FrequencyOfOptimalCodons": 6594,
+          "bio2rdf:sgd_vocabulary:GlutamineCount": 6594,
+          "bio2rdf:sgd_vocabulary:GlutamateCount": 6594,
+          "bio2rdf:sgd_vocabulary:GlycineCount": 6594,
+          "bio2rdf:sgd_vocabulary:GRAVYScore": 6594,
+          "bio2rdf:sgd_vocabulary:HistineCount": 6594,
+          "bio2rdf:sgd_vocabulary:IsoleucineCount": 6594,
+          "bio2rdf:sgd_vocabulary:LeucineCount": 6594,
+          "bio2rdf:sgd_vocabulary:LysineCount": 6594,
+          "bio2rdf:sgd_vocabulary:SequenceLength": 6594,
+          "bio2rdf:sgd_vocabulary:MethionineCount": 6594,
+          "bio2rdf:sgd_vocabulary:MolecularWeight": 6594,
+          "bio2rdf:sgd_vocabulary:PhenylalanineCount": 6594,
+          "bio2rdf:sgd_vocabulary:IsolectricPoint": 6594,
+          "bio2rdf:sgd_vocabulary:ProlineCount": 6594,
+          "bio2rdf:sgd_vocabulary:SerineCount": 6594,
+          "bio2rdf:sgd_vocabulary:ThreonineCount": 6594,
+          "bio2rdf:sgd_vocabulary:TryptophanCount": 6594,
+          "bio2rdf:sgd_vocabulary:TyrosineCount": 6594,
+          "bio2rdf:sgd_vocabulary:ValineCount": 6594
+        },
+        "bio2rdf:sgd_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 20835
+        },
+        "bio2rdf:sgd_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 18371
+        },
+        "bio2rdf:sgd_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 24679
+        },
+        "bio2rdf:sgd_vocabulary:experiment-type": {
+          "bio2rdf:apo_vocabulary:Resource": 94616
+        },
+        "bio2rdf:sgd_vocabulary:has-participant": {
+          "bio2rdf:sgd_vocabulary:Resource": 95910,
+          "so:0000236": 93687,
+          "so:0000336": 38,
+          "so:0000830": 653,
+          "so:0000180": 15,
+          "bio2rdf:sgd_vocabulary:Enzyme": 511
+        },
+        "bio2rdf:sgd_vocabulary:mutant-type": {
+          "bio2rdf:apo_vocabulary:Resource": 94616
+        },
+        "bio2rdf:sgd_vocabulary:observable": {
+          "bio2rdf:apo_vocabulary:Resource": 94598
+        },
+        "bio2rdf:sgd_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 442634,
+          "bio2rdf:sgd_vocabulary:Resource": 110372
+        },
+        "bio2rdf:sgd_vocabulary:bait": {
+          "bio2rdf:sgd_vocabulary:Resource": 332143,
+          "bio2rdf:sgd_vocabulary:Protein": 123248
+        },
+        "bio2rdf:sgd_vocabulary:has-function": {
+          "bio2rdf:go_vocabulary:Resource": 10135
+        },
+        "bio2rdf:sgd_vocabulary:hit": {
+          "bio2rdf:sgd_vocabulary:Resource": 332143,
+          "bio2rdf:sgd_vocabulary:Protein": 122321
+        },
+        "bio2rdf:sgd_vocabulary:is-located-in": {
+          "bio2rdf:go_vocabulary:Resource": 15039
+        },
+        "bio2rdf:sgd_vocabulary:is-participant-in": {
+          "bio2rdf:go_vocabulary:Resource": 16098
+        },
+        "bio2rdf:sgd_vocabulary:method": {
+          "bio2rdf:apo_vocabulary:Resource": 332143
+        },
+        "bio2rdf:sgd_vocabulary:phenotype": {
+          "bio2rdf:apo_vocabulary:Resource": 54988
+        },
+        "bio2rdf:sgd_vocabulary:qualifier": {
+          "bio2rdf:apo_vocabulary:Resource": 119597
+        },
+        "owl:equivalentProperty": {
+          "Resource": 7
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 65030
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ec_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:has-participant": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Enzyme"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 887
+        },
+        "bio2rdf:sgd_vocabulary:has-participant": {
+          "bio2rdf:sgd_vocabulary:Resource": 1038,
+          "bio2rdf:sgd_vocabulary:Enzyme": 405
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 444
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 887
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 887
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 887
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 887
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 887
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "owl:equivalentProperty": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 33
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 33
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 33
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 33
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 33
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 33
+        },
+        "owl:equivalentProperty": {
+          "Resource": 7
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 18
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 18
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 18
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 18
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 18
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 18
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:go_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5256
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5256
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5256
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5256
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5256
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 5256
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5905
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5905
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5905
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5905
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5905
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 5905
+        }
+      }
+    },
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 1
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 12
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 24
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 14
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 11
+        },
+        "foaf:page": {
+          "Resource": 12
+        },
+        "dcterms:publisher": {
+          "Resource": 12
+        },
+        "dcterms:creator": {
+          "Resource": 1
+        },
+        "dcterms:license": {
+          "Resource": 12
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:gi_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 39434
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 39434
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 39434
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 39434
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 39434
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:refseq_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5823
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5823
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5823
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5823
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5823
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 5823
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pubmed_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 16098
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16098
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16098
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16098
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16098
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 16098
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:chebi_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 12
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pfam_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 3488
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3488
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3488
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3488
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3488
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:apo_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 245
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 245
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 245
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 245
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 245
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:coil_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:gene3d_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 893
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 893
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 893
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 893
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 893
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:hamap_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 261
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 261
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 261
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 261
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 261
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 261
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:panther_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 4892
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 4892
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 4892
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 4892
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 4892
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 4892
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pirsf_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 495
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 495
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 495
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 495
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 495
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 495
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:eco_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 17
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 17
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:goa_vocabulary:GO-Annotation",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:goa_vocabulary:evidence": {
+        "@id": "bio2rdf:eco_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:go-term": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:goa_vocabulary:target": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:RNA"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:goa_vocabulary:go-category": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 94948
+        },
+        "bio2rdf:goa_vocabulary:evidence": {
+          "bio2rdf:eco_vocabulary:Resource": 94944
+        },
+        "bio2rdf:goa_vocabulary:go-term": {
+          "bio2rdf:go_vocabulary:Resource": 94948
+        },
+        "bio2rdf:goa_vocabulary:target": {
+          "bio2rdf:sgd_vocabulary:Resource": 94948,
+          "bio2rdf:sgd_vocabulary:RNA": 1646,
+          "bio2rdf:sgd_vocabulary:Protein": 90494
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 94948
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 94948
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 94948
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 94948
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 94948
+        },
+        "bio2rdf:goa_vocabulary:go-category": {
+          "Literal:xsd:string": 94948
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:prints_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 316
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 316
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 316
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 316
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 316
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:prodom_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 149
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 149
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 149
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 149
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 149
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 149
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:prosite_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1057
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1057
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1057
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1057
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1057
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1057
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:smart_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 462
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 462
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 462
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 462
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 462
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 462
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:superfamily_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 778
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 778
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 778
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 778
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 778
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 778
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:so_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:Protein",
+      "owl:sameAs": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:x-gi": {
+        "@id": "bio2rdf:gi_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:x-refseq": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:has-proper-part": [
+        {
+          "@id": "bio2rdf:pfam_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:coil_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:phobius_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:signalp_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:superfamily_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:tmhmm_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:gene3d_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:panther_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:prosite_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:hamap_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:prints_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:smart_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pirsf_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:has-function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:is-located-in": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:is-participant-in": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:sameAs": {
+          "bio2rdf:sgd_vocabulary:Resource": 16794,
+          "bio2rdf:sgd_vocabulary:Protein": 16794
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 18303
+        },
+        "bio2rdf:sgd_vocabulary:x-gi": {
+          "bio2rdf:gi_vocabulary:Resource": 39289
+        },
+        "bio2rdf:sgd_vocabulary:x-refseq": {
+          "bio2rdf:refseq_vocabulary:Resource": 5920
+        },
+        "bio2rdf:sgd_vocabulary:has-proper-part": {
+          "bio2rdf:pfam_vocabulary:Resource": 33,
+          "bio2rdf:coil_vocabulary:Resource": 1,
+          "bio2rdf:phobius_vocabulary:Resource": 74,
+          "bio2rdf:signalp_vocabulary:Resource": 2,
+          "bio2rdf:superfamily_vocabulary:Resource": 27,
+          "bio2rdf:tmhmm_vocabulary:Resource": 21,
+          "bio2rdf:gene3d_vocabulary:Resource": 25,
+          "bio2rdf:panther_vocabulary:Resource": 24,
+          "bio2rdf:prosite_vocabulary:Resource": 20,
+          "bio2rdf:hamap_vocabulary:Resource": 2,
+          "bio2rdf:prints_vocabulary:Resource": 8,
+          "bio2rdf:smart_vocabulary:Resource": 3,
+          "bio2rdf:pirsf_vocabulary:Resource": 1
+        },
+        "bio2rdf:sgd_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 20001
+        },
+        "bio2rdf:sgd_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 16992
+        },
+        "bio2rdf:sgd_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 23582
+        },
+        "bio2rdf:sgd_vocabulary:has-function": {
+          "bio2rdf:go_vocabulary:Resource": 9269
+        },
+        "bio2rdf:sgd_vocabulary:is-located-in": {
+          "bio2rdf:go_vocabulary:Resource": 14495
+        },
+        "bio2rdf:sgd_vocabulary:is-participant-in": {
+          "bio2rdf:go_vocabulary:Resource": 15559
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 18303
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 18303
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 18303
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 18303
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 18303
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 11699
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:goa_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 5
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:Location",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:chromosome": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:strand": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-start-position": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:sgd_vocabulary:has-stop-position": {
+        "@type": "xsd:integer"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 16386
+        },
+        "bio2rdf:sgd_vocabulary:chromosome": {
+          "bio2rdf:sgd_vocabulary:Resource": 16034,
+          "bio2rdf:sgd_vocabulary:Chromosome": 16026
+        },
+        "bio2rdf:sgd_vocabulary:strand": {
+          "bio2rdf:sgd_vocabulary:Resource": 16034,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 16034
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 16386
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16386
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16386
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16386
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16386
+        },
+        "bio2rdf:sgd_vocabulary:has-start-position": {
+          "Literal:xsd:integer": 16386
+        },
+        "bio2rdf:sgd_vocabulary:has-stop-position": {
+          "Literal:xsd:integer": 16386
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:RNA",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:component": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:process": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:has-function": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:is-located-in": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:is-participant-in": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 444
+        },
+        "bio2rdf:sgd_vocabulary:component": {
+          "bio2rdf:go_vocabulary:Resource": 530
+        },
+        "bio2rdf:sgd_vocabulary:function": {
+          "bio2rdf:go_vocabulary:Resource": 424
+        },
+        "bio2rdf:sgd_vocabulary:process": {
+          "bio2rdf:go_vocabulary:Resource": 462
+        },
+        "bio2rdf:sgd_vocabulary:has-function": {
+          "bio2rdf:go_vocabulary:Resource": 866
+        },
+        "bio2rdf:sgd_vocabulary:is-located-in": {
+          "bio2rdf:go_vocabulary:Resource": 544
+        },
+        "bio2rdf:sgd_vocabulary:is-participant-in": {
+          "bio2rdf:go_vocabulary:Resource": 539
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 444
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 444
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 444
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 444
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 444
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:Chromosome",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 17
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 17
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 17
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:CrickStrand",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 18
+        },
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 18,
+          "bio2rdf:sgd_vocabulary:Chromosome": 17
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 18
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 18
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 18
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 18
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 18
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:Record",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:is-about": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "so:0000236"
+        },
+        {
+          "@id": "so:0000336"
+        },
+        {
+          "@id": "so:0000830"
+        },
+        {
+          "@id": "so:0000180"
+        },
+        {
+          "@id": "so:0000577"
+        },
+        {
+          "@id": "so:0000286"
+        },
+        {
+          "@id": "so:0000624"
+        },
+        {
+          "@id": "so:0001496"
+        },
+        {
+          "@id": "so:0000316"
+        },
+        {
+          "@id": "so:0000445"
+        },
+        {
+          "@id": "so:0000188"
+        },
+        {
+          "@id": "so:0001211"
+        },
+        {
+          "@id": "so:0000183"
+        },
+        {
+          "@id": "so:0000640"
+        },
+        {
+          "@id": "so:0000639"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:modified": {
+        "@type": "xsd:date"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 16450
+        },
+        "bio2rdf:sgd_vocabulary:is-about": {
+          "bio2rdf:sgd_vocabulary:Resource": 16450,
+          "so:0000236": 6604,
+          "so:0000336": 12,
+          "so:0000830": 1280,
+          "so:0000180": 91,
+          "so:0000577": 16,
+          "so:0000286": 383,
+          "so:0000624": 32,
+          "so:0001496": 31,
+          "so:0000316": 7074,
+          "so:0000445": 484,
+          "so:0000188": 377,
+          "so:0001211": 47,
+          "so:0000183": 3,
+          "so:0000640": 8,
+          "so:0000639": 8
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 16450
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16450
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16450
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16450
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16450
+        },
+        "bio2rdf:sgd_vocabulary:modified": {
+          "Literal:xsd:date": 18021
+        }
+      }
+    },
+    {
+      "@id": "so:0000236",
+      "bio2rdf:sgd_vocabulary:x-ncbigene": {
+        "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:x-ec": [
+        {
+          "@id": "bio2rdf:ec_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Reaction"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:encodes": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        }
+      ],
+      "owl:sameAs": {
+        "@id": "bio2rdf:sgd_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:alias": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:standardName": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:sgd_vocabulary:x-ncbigene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 5942
+        },
+        "bio2rdf:sgd_vocabulary:x-ec": {
+          "bio2rdf:ec_vocabulary:Resource": 1867,
+          "bio2rdf:sgd_vocabulary:Reaction": 679
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 6604
+        },
+        "bio2rdf:sgd_vocabulary:encodes": {
+          "bio2rdf:sgd_vocabulary:Resource": 18303,
+          "bio2rdf:sgd_vocabulary:Protein": 18303
+        },
+        "owl:sameAs": {
+          "bio2rdf:sgd_vocabulary:Resource": 15613
+        },
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 13212,
+          "bio2rdf:sgd_vocabulary:Chromosome": 6600,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 6604
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 6604,
+          "bio2rdf:sgd_vocabulary:Location": 6604
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6604
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 6604
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6604
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6604
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6604
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6604
+        },
+        "bio2rdf:sgd_vocabulary:alias": {
+          "Literal:xsd:string": 6665
+        },
+        "bio2rdf:sgd_vocabulary:prefLabel": {
+          "Literal:xsd:string": 6604
+        },
+        "bio2rdf:sgd_vocabulary:standardName": {
+          "Literal:xsd:string": 5095
+        },
+        "bio2rdf:sgd_vocabulary:status": {
+          "Literal:xsd:string": 6608
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 6604
+        }
+      }
+    },
+    {
+      "@id": "so:0000180",
+      "bio2rdf:sgd_vocabulary:x-ec": {
+        "@id": "bio2rdf:ec_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:x-ncbigene": {
+        "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+      },
+      "owl:sameAs": {
+        "@id": "bio2rdf:sgd_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:alias": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:sgd_vocabulary:x-ec": {
+          "bio2rdf:ec_vocabulary:Resource": 179
+        },
+        "bio2rdf:sgd_vocabulary:x-ncbigene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 128
+        },
+        "owl:sameAs": {
+          "bio2rdf:sgd_vocabulary:Resource": 101
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 91
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 91,
+          "bio2rdf:sgd_vocabulary:Location": 91
+        },
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 182,
+          "bio2rdf:sgd_vocabulary:Chromosome": 91,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 91
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 91
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 91
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 91
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 91
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 91
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 91
+        },
+        "bio2rdf:sgd_vocabulary:alias": {
+          "Literal:xsd:string": 100
+        },
+        "bio2rdf:sgd_vocabulary:prefLabel": {
+          "Literal:xsd:string": 91
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 91
+        }
+      }
+    },
+    {
+      "@id": "so:0000188",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 377
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 377,
+          "bio2rdf:sgd_vocabulary:Location": 377
+        },
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 1131,
+          "bio2rdf:sgd_vocabulary:Chromosome": 377,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 377
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 377
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 377
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 377
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 377
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 377
+        }
+      }
+    },
+    {
+      "@id": "so:0000286",
+      "owl:sameAs": {
+        "@id": "bio2rdf:sgd_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:alias": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:sameAs": {
+          "bio2rdf:sgd_vocabulary:Resource": 383
+        },
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 766,
+          "bio2rdf:sgd_vocabulary:Chromosome": 383,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 383
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 383
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 383,
+          "bio2rdf:sgd_vocabulary:Location": 383
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 383
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 383
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 383
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 383
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 383
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 383
+        },
+        "bio2rdf:sgd_vocabulary:alias": {
+          "Literal:xsd:string": 15
+        },
+        "bio2rdf:sgd_vocabulary:prefLabel": {
+          "Literal:xsd:string": 383
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 383
+        }
+      }
+    },
+    {
+      "@id": "so:0000316",
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 21222,
+          "bio2rdf:sgd_vocabulary:Chromosome": 7070,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 7074
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 7074
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 7074,
+          "bio2rdf:sgd_vocabulary:Location": 7074
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 7074
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 7074
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 7074
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 7074
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 7074
+        }
+      }
+    },
+    {
+      "@id": "so:0000336",
+      "owl:sameAs": {
+        "@id": "bio2rdf:sgd_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:x-ec": [
+        {
+          "@id": "bio2rdf:ec_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Reaction"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:x-ncbigene": {
+        "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:alias": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:standardName": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:sameAs": {
+          "bio2rdf:sgd_vocabulary:Resource": 20
+        },
+        "bio2rdf:sgd_vocabulary:x-ec": {
+          "bio2rdf:ec_vocabulary:Resource": 2,
+          "bio2rdf:sgd_vocabulary:Reaction": 2
+        },
+        "bio2rdf:sgd_vocabulary:x-ncbigene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 1
+        },
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 24,
+          "bio2rdf:sgd_vocabulary:Chromosome": 12,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 12
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 12
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 12,
+          "bio2rdf:sgd_vocabulary:Location": 12
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 12
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 12
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:sgd_vocabulary:alias": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:sgd_vocabulary:prefLabel": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:sgd_vocabulary:standardName": {
+          "Literal:xsd:string": 4
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 12
+        }
+      }
+    },
+    {
+      "@id": "so:0000445",
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 1452,
+          "bio2rdf:sgd_vocabulary:Chromosome": 484,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 484
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 484
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 484,
+          "bio2rdf:sgd_vocabulary:Location": 484
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 484
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 484
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 484
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 484
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 484
+        }
+      }
+    },
+    {
+      "@id": "so:0000577",
+      "owl:sameAs": {
+        "@id": "bio2rdf:sgd_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:standardName": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:sameAs": {
+          "bio2rdf:sgd_vocabulary:Resource": 32
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 16,
+          "bio2rdf:sgd_vocabulary:Location": 16
+        },
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 32,
+          "bio2rdf:sgd_vocabulary:Chromosome": 16,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 16
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 16
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 16
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 16
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:sgd_vocabulary:prefLabel": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:sgd_vocabulary:standardName": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 16
+        }
+      }
+    },
+    {
+      "@id": "so:0000830",
+      "bio2rdf:sgd_vocabulary:x-ec": {
+        "@id": "bio2rdf:ec_vocabulary:Resource"
+      },
+      "owl:sameAs": {
+        "@id": "bio2rdf:sgd_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:encodes": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:RNA"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:alias": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:standardName": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:sgd_vocabulary:x-ec": {
+          "bio2rdf:ec_vocabulary:Resource": 2
+        },
+        "owl:sameAs": {
+          "bio2rdf:sgd_vocabulary:Resource": 1546
+        },
+        "bio2rdf:sgd_vocabulary:encodes": {
+          "bio2rdf:sgd_vocabulary:Resource": 428,
+          "bio2rdf:sgd_vocabulary:RNA": 428
+        },
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 2464,
+          "bio2rdf:sgd_vocabulary:Chromosome": 1239,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 864
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 1280
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 1216,
+          "bio2rdf:sgd_vocabulary:Location": 1216
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 919
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 994
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1280
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1280
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1280
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1280
+        },
+        "bio2rdf:sgd_vocabulary:alias": {
+          "Literal:xsd:string": 405
+        },
+        "bio2rdf:sgd_vocabulary:prefLabel": {
+          "Literal:xsd:string": 919
+        },
+        "bio2rdf:sgd_vocabulary:standardName": {
+          "Literal:xsd:string": 299
+        },
+        "bio2rdf:sgd_vocabulary:status": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1280
+        }
+      }
+    },
+    {
+      "@id": "so:0000624",
+      "owl:sameAs": {
+        "@id": "bio2rdf:sgd_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:sameAs": {
+          "bio2rdf:sgd_vocabulary:Resource": 32
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 32
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 32,
+          "bio2rdf:sgd_vocabulary:Location": 32
+        },
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 64,
+          "bio2rdf:sgd_vocabulary:Chromosome": 32,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 32
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 32
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 32
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 32
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 32
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 32
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 32
+        },
+        "bio2rdf:sgd_vocabulary:prefLabel": {
+          "Literal:xsd:string": 32
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 32
+        }
+      }
+    },
+    {
+      "@id": "so:0001496",
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 93,
+          "bio2rdf:sgd_vocabulary:Chromosome": 31,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 31
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 31
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 31,
+          "bio2rdf:sgd_vocabulary:Location": 31
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 31
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 31
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 31
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 31
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 31
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 31
+        }
+      }
+    },
+    {
+      "@id": "so:0001211",
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 141,
+          "bio2rdf:sgd_vocabulary:Chromosome": 47,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 47
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 47
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 47,
+          "bio2rdf:sgd_vocabulary:Location": 47
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 47
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 47
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 47
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 47
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 47
+        }
+      }
+    },
+    {
+      "@id": "so:0000183",
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 9,
+          "bio2rdf:sgd_vocabulary:Chromosome": 3,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 3
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 3
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 3,
+          "bio2rdf:sgd_vocabulary:Location": 3
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 3
+        }
+      }
+    },
+    {
+      "@id": "so:0000640",
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:encodes": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:RNA"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 24,
+          "bio2rdf:sgd_vocabulary:Chromosome": 8,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 8
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 8
+        },
+        "bio2rdf:sgd_vocabulary:encodes": {
+          "bio2rdf:sgd_vocabulary:Resource": 8,
+          "bio2rdf:sgd_vocabulary:RNA": 8
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 8,
+          "bio2rdf:sgd_vocabulary:Location": 8
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 8
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 8
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 8
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 8
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 8
+        }
+      }
+    },
+    {
+      "@id": "so:0000639",
+      "bio2rdf:sgd_vocabulary:is-proper-part-of": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Chromosome"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:CrickStrand"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:encodes": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:RNA"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:location": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Location"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:sgd_vocabulary:is-proper-part-of": {
+          "bio2rdf:sgd_vocabulary:Resource": 24,
+          "bio2rdf:sgd_vocabulary:Chromosome": 8,
+          "bio2rdf:sgd_vocabulary:CrickStrand": 8
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 8
+        },
+        "bio2rdf:sgd_vocabulary:encodes": {
+          "bio2rdf:sgd_vocabulary:Resource": 8,
+          "bio2rdf:sgd_vocabulary:RNA": 8
+        },
+        "bio2rdf:sgd_vocabulary:location": {
+          "bio2rdf:sgd_vocabulary:Resource": 8,
+          "bio2rdf:sgd_vocabulary:Location": 8
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 8
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 8
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 8
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 8
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 8
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:phobius_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 7
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 7
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:Domain-Alignment",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:query": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:target": [
+        {
+          "@id": "bio2rdf:pfam_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:coil_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:gene3d_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:hamap_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:panther_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:phobius_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pirsf_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:prints_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:prodom_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:prosite_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:signalp_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:smart_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:superfamily_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:tmhmm_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:e-value": [
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:query-start": {
+        "@type": "xsd:integer"
+      },
+      "bio2rdf:sgd_vocabulary:query-stop": {
+        "@type": "xsd:integer"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 73647
+        },
+        "bio2rdf:sgd_vocabulary:query": {
+          "bio2rdf:sgd_vocabulary:Resource": 73647,
+          "bio2rdf:sgd_vocabulary:Protein": 523
+        },
+        "bio2rdf:sgd_vocabulary:target": {
+          "bio2rdf:pfam_vocabulary:Resource": 8563,
+          "bio2rdf:coil_vocabulary:Resource": 2018,
+          "bio2rdf:gene3d_vocabulary:Resource": 6669,
+          "bio2rdf:hamap_vocabulary:Resource": 329,
+          "bio2rdf:panther_vocabulary:Resource": 12272,
+          "bio2rdf:phobius_vocabulary:Resource": 17134,
+          "bio2rdf:pirsf_vocabulary:Resource": 683,
+          "bio2rdf:prints_vocabulary:Resource": 3849,
+          "bio2rdf:prodom_vocabulary:Resource": 208,
+          "bio2rdf:prosite_vocabulary:Resource": 5467,
+          "bio2rdf:signalp_vocabulary:Resource": 764,
+          "bio2rdf:smart_vocabulary:Resource": 3371,
+          "bio2rdf:superfamily_vocabulary:Resource": 6607,
+          "bio2rdf:tmhmm_vocabulary:Resource": 5713
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 73647
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 73647
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 73647
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 73647
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 73647
+        },
+        "bio2rdf:sgd_vocabulary:e-value": {
+          "Literal:xsd:float": 7671,
+          "Literal:xsd:string": 65976
+        },
+        "bio2rdf:sgd_vocabulary:query-start": {
+          "Literal:xsd:integer": 73647
+        },
+        "bio2rdf:sgd_vocabulary:query-stop": {
+          "Literal:xsd:integer": 73647
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:signalp_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:tmhmm_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:AlanineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:float": 5004,
+          "Literal:xsd:string": 1643
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:ArginineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:float": 6642,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:AromaticityScore",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6614,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:AsparagineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6612,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:AspartateCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6613,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:CodonAdaptationIndex",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:string": 6616
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:CodonBias",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:float": 6644,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:CysteinCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6615,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:FrequencyOfOptimalCodons",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6612,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:GRAVYScore",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6608,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:GlutamateCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6614,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:GlutamineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6616,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:GlycineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6615,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:HistineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6610,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:IsolectricPoint",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6614,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:IsoleucineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6616,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:LeucineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6614,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:LysineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6615,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:MethionineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6613,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:MolecularWeight",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:float": 6617,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:PhenylalanineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6614,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:ProlineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6613,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:SequenceLength",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:string": 6616
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:SerineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6616,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:ThreonineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6613,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:TryptophanCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6615,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:apo:0000186",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:bait": {
+        "@id": "bio2rdf:sgd_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:hit": {
+        "@id": "bio2rdf:sgd_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:method": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:phenotype": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:qualifier": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:throughput": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 208786
+        },
+        "bio2rdf:sgd_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 208786
+        },
+        "bio2rdf:sgd_vocabulary:bait": {
+          "bio2rdf:sgd_vocabulary:Resource": 208786
+        },
+        "bio2rdf:sgd_vocabulary:hit": {
+          "bio2rdf:sgd_vocabulary:Resource": 208786
+        },
+        "bio2rdf:sgd_vocabulary:method": {
+          "bio2rdf:apo_vocabulary:Resource": 208786
+        },
+        "bio2rdf:sgd_vocabulary:phenotype": {
+          "bio2rdf:apo_vocabulary:Resource": 54988
+        },
+        "bio2rdf:sgd_vocabulary:qualifier": {
+          "bio2rdf:apo_vocabulary:Resource": 37304
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 208786
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 208786
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 208786
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 208786
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 208786
+        },
+        "bio2rdf:sgd_vocabulary:throughput": {
+          "Literal:xsd:string": 208786
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:apo:0000187",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:bait": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:hit": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:method": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:throughput": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 123357
+        },
+        "bio2rdf:sgd_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 123357
+        },
+        "bio2rdf:sgd_vocabulary:bait": {
+          "bio2rdf:sgd_vocabulary:Resource": 123357,
+          "bio2rdf:sgd_vocabulary:Protein": 123248
+        },
+        "bio2rdf:sgd_vocabulary:hit": {
+          "bio2rdf:sgd_vocabulary:Resource": 123357,
+          "bio2rdf:sgd_vocabulary:Protein": 122321
+        },
+        "bio2rdf:sgd_vocabulary:method": {
+          "bio2rdf:apo_vocabulary:Resource": 123357
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 123357
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 123357
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 123357
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 123357
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 123357
+        },
+        "bio2rdf:sgd_vocabulary:throughput": {
+          "Literal:xsd:string": 123357
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:Phenotype_Experiment",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:experiment-type": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:has-participant": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "so:0000236"
+        },
+        {
+          "@id": "so:0000336"
+        },
+        {
+          "@id": "so:0000830"
+        },
+        {
+          "@id": "so:0000180"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:mutant-type": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:observable": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:article": [
+        {
+          "@id": "bio2rdf:pubmed_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:qualifier": {
+        "@id": "bio2rdf:apo_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:allele": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:background": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:chemical": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:condition": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:details": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 94616
+        },
+        "bio2rdf:sgd_vocabulary:experiment-type": {
+          "bio2rdf:apo_vocabulary:Resource": 94616
+        },
+        "bio2rdf:sgd_vocabulary:has-participant": {
+          "bio2rdf:sgd_vocabulary:Resource": 94616,
+          "so:0000236": 93687,
+          "so:0000336": 38,
+          "so:0000830": 653,
+          "so:0000180": 15
+        },
+        "bio2rdf:sgd_vocabulary:mutant-type": {
+          "bio2rdf:apo_vocabulary:Resource": 94616
+        },
+        "bio2rdf:sgd_vocabulary:observable": {
+          "bio2rdf:apo_vocabulary:Resource": 94598
+        },
+        "bio2rdf:sgd_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 110197,
+          "bio2rdf:sgd_vocabulary:Resource": 110216
+        },
+        "bio2rdf:sgd_vocabulary:qualifier": {
+          "bio2rdf:apo_vocabulary:Resource": 82293
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 94616
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 22733
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 94616
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 94616
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 94616
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 94616
+        },
+        "bio2rdf:sgd_vocabulary:allele": {
+          "Literal:xsd:string": 6198
+        },
+        "bio2rdf:sgd_vocabulary:background": {
+          "Literal:xsd:string": 98516
+        },
+        "bio2rdf:sgd_vocabulary:chemical": {
+          "Literal:xsd:string": 64974
+        },
+        "bio2rdf:sgd_vocabulary:condition": {
+          "Literal:xsd:string": 40583
+        },
+        "bio2rdf:sgd_vocabulary:details": {
+          "Literal:xsd:string": 29395
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:TyrosineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6615,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:ValineCount",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:sgd_vocabulary:has-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6594
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6594
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6594
+        },
+        "bio2rdf:sgd_vocabulary:has-value": {
+          "Literal:xsd:integer": 6615,
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:Complex",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:has-proper-part": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:RNA"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Protein"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 459
+        },
+        "bio2rdf:sgd_vocabulary:has-proper-part": {
+          "bio2rdf:sgd_vocabulary:Resource": 6552,
+          "bio2rdf:sgd_vocabulary:RNA": 330,
+          "bio2rdf:sgd_vocabulary:Protein": 6220
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 459
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 459
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 459
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 459
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 459
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 459
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:Enzyme",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:has-proper-part": {
+        "@id": "bio2rdf:sgd_vocabulary:Resource"
+      },
+      "bio2rdf:sgd_vocabulary:has-participant": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Enzyme"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:article": [
+        {
+          "@id": "bio2rdf:pubmed_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 413
+        },
+        "bio2rdf:sgd_vocabulary:has-proper-part": {
+          "bio2rdf:sgd_vocabulary:Resource": 506
+        },
+        "bio2rdf:sgd_vocabulary:has-participant": {
+          "bio2rdf:sgd_vocabulary:Resource": 11,
+          "bio2rdf:sgd_vocabulary:Enzyme": 5
+        },
+        "bio2rdf:sgd_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 1,
+          "bio2rdf:sgd_vocabulary:Resource": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 413
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 413
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 413
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 413
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 413
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:Pathway",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:has-participant": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Enzyme"
+        }
+      ],
+      "bio2rdf:sgd_vocabulary:article": [
+        {
+          "@id": "bio2rdf:pubmed_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 160
+        },
+        "bio2rdf:sgd_vocabulary:has-participant": {
+          "bio2rdf:sgd_vocabulary:Resource": 1283,
+          "bio2rdf:sgd_vocabulary:Enzyme": 506
+        },
+        "bio2rdf:sgd_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 293,
+          "bio2rdf:sgd_vocabulary:Resource": 155
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 160
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 160
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 160
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 160
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 160
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:Reaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:has-participant": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Enzyme"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 444
+        },
+        "bio2rdf:sgd_vocabulary:has-participant": {
+          "bio2rdf:sgd_vocabulary:Resource": 1038,
+          "bio2rdf:sgd_vocabulary:Enzyme": 405
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 444
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 444
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 444
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 444
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 444
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 444
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:sgd_vocabulary:SuperPathway",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:sgd_vocabulary:has-proper-part": [
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:Pathway"
+        },
+        {
+          "@id": "bio2rdf:sgd_vocabulary:SuperPathway"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 26
+        },
+        "bio2rdf:sgd_vocabulary:has-proper-part": {
+          "bio2rdf:sgd_vocabulary:Resource": 96,
+          "bio2rdf:sgd_vocabulary:Pathway": 82,
+          "bio2rdf:sgd_vocabulary:SuperPathway": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 26
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 26
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 26
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 26
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 26
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T14:15:16.016540+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "sgd",
+    "graph_uris": [
+      "http://bio2rdf.org/sgd_resource:bio2rdf.dataset.sgd.R3"
+    ],
+    "pattern_count": 1259,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:Class": "Class",
+    "owl:equivalentClass": "equivalentClass",
+    "bio2rdf:chebi_vocabulary:Resource": "chebi_vocabulary:Resource",
+    "bio2rdf:so_vocabulary:Resource": "so_vocabulary:Resource",
+    "bio2rdf:sgd_vocabulary:Resource": "sgd_vocabulary:Resource",
+    "owl:sameAs": "sameAs",
+    "bio2rdf:sgd_vocabulary:Protein": "sgd_vocabulary:Protein",
+    "bio2rdf:ec_vocabulary:Resource": "ec_vocabulary:Resource",
+    "void:inDataset": "inDataset",
+    "dcterms:Dataset": "Dataset",
+    "owl:ObjectProperty": "ObjectProperty",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "bio2rdf:goa_vocabulary:evidence": "goa_vocabulary:evidence",
+    "bio2rdf:eco_vocabulary:Resource": "eco_vocabulary:Resource",
+    "bio2rdf:goa_vocabulary:go-term": "goa_vocabulary:go-term",
+    "bio2rdf:go_vocabulary:Resource": "go_vocabulary:Resource",
+    "bio2rdf:goa_vocabulary:target": "goa_vocabulary:target",
+    "bio2rdf:sgd_vocabulary:RNA": "sgd_vocabulary:RNA",
+    "bio2rdf:sgd_vocabulary:x-ec": "sgd_vocabulary:x-ec",
+    "bio2rdf:sgd_vocabulary:Reaction": "sgd_vocabulary:Reaction",
+    "bio2rdf:sgd_vocabulary:x-gi": "sgd_vocabulary:x-gi",
+    "bio2rdf:gi_vocabulary:Resource": "gi_vocabulary:Resource",
+    "bio2rdf:sgd_vocabulary:x-ncbigene": "sgd_vocabulary:x-ncbigene",
+    "bio2rdf:ncbigene_vocabulary:Resource": "ncbigene_vocabulary:Resource",
+    "bio2rdf:sgd_vocabulary:x-refseq": "sgd_vocabulary:x-refseq",
+    "bio2rdf:refseq_vocabulary:Resource": "refseq_vocabulary:Resource",
+    "bio2rdf:sgd_vocabulary:chromosome": "sgd_vocabulary:chromosome",
+    "bio2rdf:sgd_vocabulary:Chromosome": "sgd_vocabulary:Chromosome",
+    "bio2rdf:sgd_vocabulary:encodes": "sgd_vocabulary:encodes",
+    "bio2rdf:sgd_vocabulary:is-about": "sgd_vocabulary:is-about",
+    "so:0000236": "so:0000236",
+    "so:0000336": "so:0000336",
+    "so:0000830": "so:0000830",
+    "so:0000180": "so:0000180",
+    "so:0000577": "so:0000577",
+    "so:0000286": "so:0000286",
+    "so:0000624": "so:0000624",
+    "so:0001496": "so:0001496",
+    "so:0000316": "so:0000316",
+    "so:0000445": "so:0000445",
+    "so:0000188": "so:0000188",
+    "so:0001211": "so:0001211",
+    "so:0000183": "so:0000183",
+    "so:0000640": "so:0000640",
+    "so:0000639": "so:0000639",
+    "bio2rdf:sgd_vocabulary:is-proper-part-of": "sgd_vocabulary:is-proper-part-of",
+    "bio2rdf:sgd_vocabulary:CrickStrand": "sgd_vocabulary:CrickStrand",
+    "bio2rdf:sgd_vocabulary:location": "sgd_vocabulary:location",
+    "bio2rdf:sgd_vocabulary:Location": "sgd_vocabulary:Location",
+    "bio2rdf:sgd_vocabulary:strand": "sgd_vocabulary:strand",
+    "bio2rdf:sgd_vocabulary:has-proper-part": "sgd_vocabulary:has-proper-part",
+    "bio2rdf:pfam_vocabulary:Resource": "pfam_vocabulary:Resource",
+    "bio2rdf:coil_vocabulary:Resource": "coil_vocabulary:Resource",
+    "bio2rdf:gene3d_vocabulary:Resource": "gene3d_vocabulary:Resource",
+    "bio2rdf:hamap_vocabulary:Resource": "hamap_vocabulary:Resource",
+    "bio2rdf:panther_vocabulary:Resource": "panther_vocabulary:Resource",
+    "bio2rdf:phobius_vocabulary:Resource": "phobius_vocabulary:Resource",
+    "bio2rdf:pirsf_vocabulary:Resource": "pirsf_vocabulary:Resource",
+    "bio2rdf:prints_vocabulary:Resource": "prints_vocabulary:Resource",
+    "bio2rdf:prodom_vocabulary:Resource": "prodom_vocabulary:Resource",
+    "bio2rdf:prosite_vocabulary:Resource": "prosite_vocabulary:Resource",
+    "bio2rdf:signalp_vocabulary:Resource": "signalp_vocabulary:Resource",
+    "bio2rdf:smart_vocabulary:Resource": "smart_vocabulary:Resource",
+    "bio2rdf:superfamily_vocabulary:Resource": "superfamily_vocabulary:Resource",
+    "bio2rdf:tmhmm_vocabulary:Resource": "tmhmm_vocabulary:Resource",
+    "bio2rdf:sgd_vocabulary:Pathway": "sgd_vocabulary:Pathway",
+    "bio2rdf:sgd_vocabulary:query": "sgd_vocabulary:query",
+    "bio2rdf:sgd_vocabulary:SuperPathway": "sgd_vocabulary:SuperPathway",
+    "bio2rdf:sgd_vocabulary:target": "sgd_vocabulary:target",
+    "bio2rdf:sgd_vocabulary:is-described-by": "sgd_vocabulary:is-described-by",
+    "bio2rdf:sgd_vocabulary:AlanineCount": "sgd_vocabulary:AlanineCount",
+    "bio2rdf:sgd_vocabulary:ArginineCount": "sgd_vocabulary:ArginineCount",
+    "bio2rdf:sgd_vocabulary:AromaticityScore": "sgd_vocabulary:AromaticityScore",
+    "bio2rdf:sgd_vocabulary:AsparagineCount": "sgd_vocabulary:AsparagineCount",
+    "bio2rdf:sgd_vocabulary:AspartateCount": "sgd_vocabulary:AspartateCount",
+    "bio2rdf:sgd_vocabulary:CodonAdaptationIndex": "sgd_vocabulary:CodonAdaptationIndex",
+    "bio2rdf:sgd_vocabulary:CodonBias": "sgd_vocabulary:CodonBias",
+    "bio2rdf:sgd_vocabulary:CysteinCount": "sgd_vocabulary:CysteinCount",
+    "bio2rdf:sgd_vocabulary:FrequencyOfOptimalCodons": "sgd_vocabulary:FrequencyOfOptimalCodons",
+    "bio2rdf:sgd_vocabulary:GlutamineCount": "sgd_vocabulary:GlutamineCount",
+    "bio2rdf:sgd_vocabulary:GlutamateCount": "sgd_vocabulary:GlutamateCount",
+    "bio2rdf:sgd_vocabulary:GlycineCount": "sgd_vocabulary:GlycineCount",
+    "bio2rdf:sgd_vocabulary:GRAVYScore": "sgd_vocabulary:GRAVYScore",
+    "bio2rdf:sgd_vocabulary:HistineCount": "sgd_vocabulary:HistineCount",
+    "bio2rdf:sgd_vocabulary:IsoleucineCount": "sgd_vocabulary:IsoleucineCount",
+    "bio2rdf:sgd_vocabulary:LeucineCount": "sgd_vocabulary:LeucineCount",
+    "bio2rdf:sgd_vocabulary:LysineCount": "sgd_vocabulary:LysineCount",
+    "bio2rdf:sgd_vocabulary:SequenceLength": "sgd_vocabulary:SequenceLength",
+    "bio2rdf:sgd_vocabulary:MethionineCount": "sgd_vocabulary:MethionineCount",
+    "bio2rdf:sgd_vocabulary:MolecularWeight": "sgd_vocabulary:MolecularWeight",
+    "bio2rdf:sgd_vocabulary:PhenylalanineCount": "sgd_vocabulary:PhenylalanineCount",
+    "bio2rdf:sgd_vocabulary:IsolectricPoint": "sgd_vocabulary:IsolectricPoint",
+    "bio2rdf:sgd_vocabulary:ProlineCount": "sgd_vocabulary:ProlineCount",
+    "bio2rdf:sgd_vocabulary:SerineCount": "sgd_vocabulary:SerineCount",
+    "bio2rdf:sgd_vocabulary:ThreonineCount": "sgd_vocabulary:ThreonineCount",
+    "bio2rdf:sgd_vocabulary:TryptophanCount": "sgd_vocabulary:TryptophanCount",
+    "bio2rdf:sgd_vocabulary:TyrosineCount": "sgd_vocabulary:TyrosineCount",
+    "bio2rdf:sgd_vocabulary:ValineCount": "sgd_vocabulary:ValineCount",
+    "bio2rdf:sgd_vocabulary:component": "sgd_vocabulary:component",
+    "bio2rdf:sgd_vocabulary:function": "sgd_vocabulary:function",
+    "bio2rdf:sgd_vocabulary:process": "sgd_vocabulary:process",
+    "bio2rdf:sgd_vocabulary:experiment-type": "sgd_vocabulary:experiment-type",
+    "bio2rdf:apo_vocabulary:Resource": "apo_vocabulary:Resource",
+    "bio2rdf:sgd_vocabulary:has-participant": "sgd_vocabulary:has-participant",
+    "bio2rdf:sgd_vocabulary:Enzyme": "sgd_vocabulary:Enzyme",
+    "bio2rdf:sgd_vocabulary:mutant-type": "sgd_vocabulary:mutant-type",
+    "bio2rdf:sgd_vocabulary:observable": "sgd_vocabulary:observable",
+    "bio2rdf:sgd_vocabulary:article": "sgd_vocabulary:article",
+    "bio2rdf:pubmed_vocabulary:Resource": "pubmed_vocabulary:Resource",
+    "bio2rdf:sgd_vocabulary:bait": "sgd_vocabulary:bait",
+    "bio2rdf:sgd_vocabulary:has-function": "sgd_vocabulary:has-function",
+    "bio2rdf:sgd_vocabulary:hit": "sgd_vocabulary:hit",
+    "bio2rdf:sgd_vocabulary:is-located-in": "sgd_vocabulary:is-located-in",
+    "bio2rdf:sgd_vocabulary:is-participant-in": "sgd_vocabulary:is-participant-in",
+    "bio2rdf:sgd_vocabulary:method": "sgd_vocabulary:method",
+    "bio2rdf:sgd_vocabulary:phenotype": "sgd_vocabulary:phenotype",
+    "bio2rdf:sgd_vocabulary:qualifier": "sgd_vocabulary:qualifier",
+    "dcat:Distribution": "Distribution",
+    "dcterms:source": "source",
+    "dcat:distribution": "distribution",
+    "dcterms:title": "title",
+    "dcterms:identifier": "identifier",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "dcterms:created": "created",
+    "dcterms:format": "format",
+    "dcterms:rights": "rights",
+    "pav:retrievedOn": "retrievedOn",
+    "owl:equivalentProperty": "equivalentProperty",
+    "foaf:page": "page",
+    "dcterms:publisher": "publisher",
+    "dcterms:creator": "creator",
+    "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": "bio2rdf_vocabulary:x-identifiers.org",
+    "dcterms:license": "license",
+    "bio2rdf:goa_vocabulary:GO-Annotation": "goa_vocabulary:GO-Annotation",
+    "bio2rdf:goa_vocabulary:go-category": "goa_vocabulary:go-category",
+    "bio2rdf:goa_vocabulary:Resource": "goa_vocabulary:Resource",
+    "bio2rdf:sgd_vocabulary:Record": "sgd_vocabulary:Record",
+    "bio2rdf:sgd_vocabulary:has-start-position": "sgd_vocabulary:has-start-position",
+    "bio2rdf:sgd_vocabulary:has-stop-position": "sgd_vocabulary:has-stop-position",
+    "bio2rdf:sgd_vocabulary:modified": "sgd_vocabulary:modified",
+    "dcterms:description": "description",
+    "bio2rdf:sgd_vocabulary:alias": "sgd_vocabulary:alias",
+    "bio2rdf:sgd_vocabulary:prefLabel": "sgd_vocabulary:prefLabel",
+    "bio2rdf:sgd_vocabulary:standardName": "sgd_vocabulary:standardName",
+    "bio2rdf:sgd_vocabulary:status": "sgd_vocabulary:status",
+    "bio2rdf:sgd_vocabulary:Domain-Alignment": "sgd_vocabulary:Domain-Alignment",
+    "bio2rdf:sgd_vocabulary:e-value": "sgd_vocabulary:e-value",
+    "bio2rdf:sgd_vocabulary:query-start": "sgd_vocabulary:query-start",
+    "bio2rdf:sgd_vocabulary:query-stop": "sgd_vocabulary:query-stop",
+    "bio2rdf:sgd_vocabulary:has-value": "sgd_vocabulary:has-value",
+    "bio2rdf:apo:0000186": "apo:0000186",
+    "bio2rdf:apo:0000187": "apo:0000187",
+    "bio2rdf:sgd_vocabulary:Phenotype_Experiment": "sgd_vocabulary:Phenotype_Experiment",
+    "bio2rdf:sgd_vocabulary:Complex": "sgd_vocabulary:Complex",
+    "bio2rdf:sgd_vocabulary:allele": "sgd_vocabulary:allele",
+    "bio2rdf:sgd_vocabulary:background": "sgd_vocabulary:background",
+    "bio2rdf:sgd_vocabulary:chemical": "sgd_vocabulary:chemical",
+    "bio2rdf:sgd_vocabulary:condition": "sgd_vocabulary:condition",
+    "bio2rdf:sgd_vocabulary:details": "sgd_vocabulary:details",
+    "bio2rdf:sgd_vocabulary:throughput": "sgd_vocabulary:throughput"
+  }
+}

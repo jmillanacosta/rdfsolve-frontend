@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "oboinowl": "http://www.geneontology.org/formats/oboInOwl#",
+    "iao": "http://purl.obolibrary.org/obo/IAO_",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "owl:Class",
+      "oboinowl:replaces": {
+        "@id": "owl:Class"
+      },
+      "iao:0000115": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:hasExactSynonym": {
+        "@type": "xsd:string"
+      },
+      "oboinowl:hasRelatedSynonym": {
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "owl:Restriction",
+      "owl:someValuesFrom": {
+        "@id": "owl:Class"
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T09:15:56.307474+00:00",
+    "endpoint": "https://sparql.uniprot.org/sparql/",
+    "dataset_name": "uniprot.go",
+    "graph_uris": [
+      "http://sparql.uniprot.org/go"
+    ],
+    "pattern_count": 11,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:Class": "Class",
+    "oboinowl:replaces": "replaces",
+    "owl:Restriction": "Restriction",
+    "owl:someValuesFrom": "someValuesFrom",
+    "iao:0000115": "IAO_0000115",
+    "oboinowl:hasExactSynonym": "hasExactSynonym",
+    "oboinowl:hasRelatedSynonym": "hasRelatedSynonym"
+  }
+}

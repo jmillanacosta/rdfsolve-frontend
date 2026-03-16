@@ -14,7 +14,7 @@ interface NodeInfo {
   uri: string;
   label: string;
   nodeType: string;
-  /** Visual ID — only set if the node is currently rendered */
+  /** Visual ID - only set if the node is currently rendered */
   id?: string;
 }
 
@@ -166,7 +166,7 @@ export class FindNode extends HTMLElement {
     if (node?.id) {
       diagram.zoomToNode(node.id);
     } else if (node?.uri) {
-      // Node is in the schema but not rendered — add as root
+      // Node is in the schema but not rendered - add as root
       const currentRoots = diagram.getState().getSelectedRoots();
       diagram.setRoots([...currentRoots, node.uri]);
       // After render, find the new visual ID and zoom

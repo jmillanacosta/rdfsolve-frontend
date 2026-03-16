@@ -1,0 +1,2399 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfsolve": "https://w3id.org/rdfsolve/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "sd": "http://www.w3.org/ns/sparql-service-description#",
+    "pathbank": "https://pathbank.org/view/",
+    "kegg.pathway": "https://www.kegg.jp/pathway/",
+    "reactome": "https://reactome.org/content/detail/",
+    "wikipathways": "http://www.wikipathways.org/instance/"
+  },
+  "@graph": [
+    {
+      "@id": "pathbank:PW000044",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00590",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-2142753",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000010",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00330",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW070885",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa04662",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-983705",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP23",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000145",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00120",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000013",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00780",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000015",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00232",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW091851",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa04710",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000005",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00020",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-71403",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP78",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000019",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00472",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000167",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00061",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP357",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000023",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa01212",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-8978868",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000453",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa04664",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-2454202",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000159",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00052",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000004",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00480",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-174403",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP100",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000144",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00561",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW064816",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa04912",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000043",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00340",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000156",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00562",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-1483249",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000454",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa04910",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP3634",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000028",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00072",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-74182",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP311",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000029",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00310",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-71064",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW064818",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa04064",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000151",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00760",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000457",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa03420",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-5696398",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW064774",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa04115",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000032",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00770",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000055",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00030",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-71336",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP134",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000149",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00640",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW112896",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00220",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000052",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00230",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000160",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00240",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP4022",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000054",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00620",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-70268",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW064776",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa04014",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000164",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00830",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000035",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00740",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-196843",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000148",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00600",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-428157",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP1422",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000150",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00500",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000050",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00140",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "kegg.pathway:hsa00100",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP496",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000040",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00920",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-1614635",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW067987",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa04660",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP69",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW064784",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa04668",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-75893",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000038",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00430",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000036",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00730",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-196819",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000693",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa04918",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-209968",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP1981",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000163",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa00380",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP465",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000142",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00350",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW064821",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa04120",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000051",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00280",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000447",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa04962",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-432040",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000053",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00750",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW078607",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "kegg.pathway:hsa04310",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/kegg.pathway",
+            "dcterms:title": "kegg.pathway",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.genome.jp/kegg/pathway.html"
+            }
+          }
+        },
+        {
+          "@id": "reactome:R-HSA-195721",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP428",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000011",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_kegg.csv",
+        "dcterms:title": "pathbank_kegg.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "kegg.pathway:hsa00410",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/kegg.pathway",
+          "dcterms:title": "kegg.pathway",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.genome.jp/kegg/pathway.html"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW064763",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "reactome:R-HSA-8937144",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP2586",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP2873",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW064820",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-173736",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000161",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-390247",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW122325",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-6807047",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000016",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-71262",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000017",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-209905",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW065057",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "reactome:R-HSA-166658",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP545",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000562",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-140877",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW064819",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "reactome:R-HSA-166658",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP545",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000152",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-70263",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000146",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-70171",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW064906",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-166662",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000165",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "reactome:R-HSA-611105",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP111",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW015076",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-1483191",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW030608",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-1483213",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000158",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-189445",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000007",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "reactome:R-HSA-2408522",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP28",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000564",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": [
+        {
+          "@id": "reactome:R-HSA-390522",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/reactome",
+            "dcterms:title": "reactome",
+            "void:sparqlEndpoint": {
+              "@id": "https://www.reactome.org/"
+            }
+          }
+        },
+        {
+          "@id": "wikipathways:WP383",
+          "void:inDataset": {
+            "@id": "rdfsolve:dataset/wikipathways",
+            "dcterms:title": "wikipathways",
+            "void:sparqlEndpoint": {
+              "@id": "http://www.wikipathways.org/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@id": "pathbank:PW000162",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_reactome.csv",
+        "dcterms:title": "pathbank_reactome.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "reactome:R-HSA-70635",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/reactome",
+          "dcterms:title": "reactome",
+          "void:sparqlEndpoint": {
+            "@id": "https://www.reactome.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000024",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_wikipathways.csv",
+        "dcterms:title": "pathbank_wikipathways.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "wikipathways:WP176",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/wikipathways",
+          "dcterms:title": "wikipathways",
+          "void:sparqlEndpoint": {
+            "@id": "http://www.wikipathways.org/"
+          }
+        }
+      }
+    },
+    {
+      "@id": "pathbank:PW000173",
+      "void:inDataset": {
+        "@id": "rdfsolve:dataset/pathbank_wikipathways.csv",
+        "dcterms:title": "pathbank_wikipathways.csv"
+      },
+      "dcterms:created": "2026-02-20T16:57:07.845136+00:00",
+      "skos:exactMatch": {
+        "@id": "wikipathways:WP368",
+        "void:inDataset": {
+          "@id": "rdfsolve:dataset/wikipathways",
+          "dcterms:title": "wikipathways",
+          "void:sparqlEndpoint": {
+            "@id": "http://www.wikipathways.org/"
+          }
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-02-20T16:57:07.845136+00:00",
+    "dataset_name": "compath_pathbank_mapping",
+    "pattern_count": 115,
+    "strategy": "semra_import",
+    "semra_source": "compath",
+    "semra_prefix": "pathbank",
+    "evidence": [
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_kegg.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_reactome.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      },
+      {
+        "type": "simple",
+        "justification": "semapv:ManualMappingCuration",
+        "mapping_set": "pathbank_wikipathways.csv"
+      }
+    ]
+  }
+}

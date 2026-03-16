@@ -1,0 +1,1088 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "resource": "http://semanticscience.org/resource/",
+    "dctypes": "http://purl.org/dc/dcmitype/",
+    "bio2rdf": "http://bio2rdf.org/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "cito": "http://purl.org/spar/cito/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "idot": "http://identifiers.org/idot/",
+    "pav": "http://purl.org/pav/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "owl:Class",
+      "resource:is-member-of": [
+        {
+          "@id": "dctypes:Dataset"
+        },
+        {
+          "@id": "bio2rdf:lsr_vocabulary:Dataset"
+        },
+        {
+          "@id": "bio2rdf:lsr_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "resource:is-member-of": {
+          "dctypes:Dataset": 2175,
+          "bio2rdf:lsr_vocabulary:Dataset": 2175,
+          "bio2rdf:lsr_vocabulary:Resource": 2175
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 1
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pubmed_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 236
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 236
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 236
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 236
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 236
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 236
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:bio2rdf_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:biodbcore_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:url": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 97
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 97
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 97
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 97
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 97
+        },
+        "bio2rdf:bio2rdf_vocabulary:url": {
+          "Resource": 97
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:bioportal_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 357
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 357
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 357
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 357
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 357
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 357
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:datahub_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2
+        }
+      }
+    },
+    {
+      "@id": "dctypes:Dataset",
+      "resource:has-member": {
+        "@id": "owl:Class"
+      },
+      "bio2rdf:lsr_vocabulary:x-biodbcore": {
+        "@id": "bio2rdf:biodbcore_vocabulary:Resource"
+      },
+      "bio2rdf:lsr_vocabulary:x-bioportal": {
+        "@id": "bio2rdf:bioportal_vocabulary:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "bio2rdf:lsr_vocabulary:Resource"
+      },
+      "bio2rdf:lsr_vocabulary:x-miriam": {
+        "@id": "bio2rdf:miriam_vocabulary:Resource"
+      },
+      "cito:citesAsAuthority": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:lsr_vocabulary:x-datahub": {
+        "@id": "bio2rdf:datahub_vocabulary:Resource"
+      },
+      "dcterms:alternative": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "idot:alternativePrefix": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:lsr_vocabulary:type": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "idot:exampleIdentifier": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:decimal"
+        }
+      ],
+      "idot:accessPattern": {
+        "@type": "xsd:string"
+      },
+      "void:uriRegexPattern": {
+        "@type": "xsd:anyUri"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:lsr_vocabulary:license-text": {
+        "@type": "xsd:string"
+      },
+      "idot:preferredPrefix": {
+        "@type": "xsd:string"
+      },
+      "dcat:keyword": {
+        "@type": "xsd:string"
+      },
+      "idot:identifierPattern": {
+        "@type": "xsd:string"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-member": {
+          "owl:Class": 2175
+        },
+        "bio2rdf:lsr_vocabulary:x-biodbcore": {
+          "bio2rdf:biodbcore_vocabulary:Resource": 106
+        },
+        "bio2rdf:lsr_vocabulary:x-bioportal": {
+          "bio2rdf:bioportal_vocabulary:Resource": 358
+        },
+        "dcterms:publisher": {
+          "bio2rdf:lsr_vocabulary:Resource": 1309
+        },
+        "bio2rdf:lsr_vocabulary:x-miriam": {
+          "bio2rdf:miriam_vocabulary:Resource": 347
+        },
+        "cito:citesAsAuthority": {
+          "bio2rdf:pubmed_vocabulary:Resource": 277
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 2175
+        },
+        "bio2rdf:lsr_vocabulary:x-datahub": {
+          "bio2rdf:datahub_vocabulary:Resource": 2
+        },
+        "dcterms:alternative": {
+          "Literal:xsd:string": 1874
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2175
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2067
+        },
+        "idot:alternativePrefix": {
+          "Literal:xsd:string": 426
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2175
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2175
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 1636
+        },
+        "bio2rdf:lsr_vocabulary:type": {
+          "Literal:xsd:string": 581
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2175
+        },
+        "idot:exampleIdentifier": {
+          "Literal:xsd:string": 733,
+          "Literal:xsd:integer": 322,
+          "Literal:xsd:float": 1,
+          "Literal:xsd:decimal": 3
+        },
+        "idot:accessPattern": {
+          "Literal:xsd:string": 967
+        },
+        "void:uriRegexPattern": {
+          "Literal:xsd:anyUri": 297
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 63
+        },
+        "bio2rdf:lsr_vocabulary:license-text": {
+          "Literal:xsd:string": 132
+        },
+        "idot:preferredPrefix": {
+          "Literal:xsd:string": 2175
+        },
+        "dcat:keyword": {
+          "Literal:xsd:string": 2858
+        },
+        "idot:identifierPattern": {
+          "Literal:xsd:string": 962
+        },
+        "foaf:page": {
+          "Resource": 1655
+        },
+        "dcterms:license": {
+          "Resource": 116
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:lsr_vocabulary:Dataset",
+      "resource:has-member": {
+        "@id": "owl:Class"
+      },
+      "bio2rdf:lsr_vocabulary:x-biodbcore": {
+        "@id": "bio2rdf:biodbcore_vocabulary:Resource"
+      },
+      "bio2rdf:lsr_vocabulary:x-bioportal": {
+        "@id": "bio2rdf:bioportal_vocabulary:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "bio2rdf:lsr_vocabulary:Resource"
+      },
+      "bio2rdf:lsr_vocabulary:x-miriam": {
+        "@id": "bio2rdf:miriam_vocabulary:Resource"
+      },
+      "cito:citesAsAuthority": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:lsr_vocabulary:x-datahub": {
+        "@id": "bio2rdf:datahub_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:alternative": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "idot:accessPattern": {
+        "@type": "xsd:string"
+      },
+      "idot:exampleIdentifier": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:decimal"
+        }
+      ],
+      "bio2rdf:lsr_vocabulary:type": {
+        "@type": "xsd:string"
+      },
+      "idot:alternativePrefix": {
+        "@type": "xsd:string"
+      },
+      "void:uriRegexPattern": {
+        "@type": "xsd:anyUri"
+      },
+      "bio2rdf:lsr_vocabulary:license-text": {
+        "@type": "xsd:string"
+      },
+      "idot:preferredPrefix": {
+        "@type": "xsd:string"
+      },
+      "idot:identifierPattern": {
+        "@type": "xsd:string"
+      },
+      "dcat:keyword": {
+        "@type": "xsd:string"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-member": {
+          "owl:Class": 2175
+        },
+        "bio2rdf:lsr_vocabulary:x-biodbcore": {
+          "bio2rdf:biodbcore_vocabulary:Resource": 106
+        },
+        "bio2rdf:lsr_vocabulary:x-bioportal": {
+          "bio2rdf:bioportal_vocabulary:Resource": 358
+        },
+        "dcterms:publisher": {
+          "bio2rdf:lsr_vocabulary:Resource": 1309
+        },
+        "bio2rdf:lsr_vocabulary:x-miriam": {
+          "bio2rdf:miriam_vocabulary:Resource": 347
+        },
+        "cito:citesAsAuthority": {
+          "bio2rdf:pubmed_vocabulary:Resource": 277
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 2175
+        },
+        "bio2rdf:lsr_vocabulary:x-datahub": {
+          "bio2rdf:datahub_vocabulary:Resource": 2
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2067
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2175
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2175
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 1636
+        },
+        "dcterms:alternative": {
+          "Literal:xsd:string": 1874
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2175
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2175
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 63
+        },
+        "idot:accessPattern": {
+          "Literal:xsd:string": 967
+        },
+        "idot:exampleIdentifier": {
+          "Literal:xsd:string": 733,
+          "Literal:xsd:integer": 322,
+          "Literal:xsd:float": 1,
+          "Literal:xsd:decimal": 3
+        },
+        "bio2rdf:lsr_vocabulary:type": {
+          "Literal:xsd:string": 581
+        },
+        "idot:alternativePrefix": {
+          "Literal:xsd:string": 426
+        },
+        "void:uriRegexPattern": {
+          "Literal:xsd:anyUri": 297
+        },
+        "bio2rdf:lsr_vocabulary:license-text": {
+          "Literal:xsd:string": 132
+        },
+        "idot:preferredPrefix": {
+          "Literal:xsd:string": 2175
+        },
+        "idot:identifierPattern": {
+          "Literal:xsd:string": 962
+        },
+        "dcat:keyword": {
+          "Literal:xsd:string": 2858
+        },
+        "foaf:page": {
+          "Resource": 1655
+        },
+        "dcterms:license": {
+          "Resource": 116
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:lsr_vocabulary:Resource",
+      "resource:has-member": {
+        "@id": "owl:Class"
+      },
+      "bio2rdf:lsr_vocabulary:x-biodbcore": {
+        "@id": "bio2rdf:biodbcore_vocabulary:Resource"
+      },
+      "bio2rdf:lsr_vocabulary:x-bioportal": {
+        "@id": "bio2rdf:bioportal_vocabulary:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "bio2rdf:lsr_vocabulary:Resource"
+      },
+      "bio2rdf:lsr_vocabulary:x-miriam": {
+        "@id": "bio2rdf:miriam_vocabulary:Resource"
+      },
+      "cito:citesAsAuthority": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:lsr_vocabulary:x-datahub": {
+        "@id": "bio2rdf:datahub_vocabulary:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:lsr_vocabulary:type": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "idot:alternativePrefix": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:alternative": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "idot:accessPattern": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "idot:exampleIdentifier": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:decimal"
+        }
+      ],
+      "dcterms:title": [
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "void:uriRegexPattern": {
+        "@type": "xsd:anyUri"
+      },
+      "bio2rdf:lsr_vocabulary:license-text": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "idot:preferredPrefix": {
+        "@type": "xsd:string"
+      },
+      "idot:identifierPattern": {
+        "@type": "xsd:string"
+      },
+      "dcat:keyword": {
+        "@type": "xsd:string"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-member": {
+          "owl:Class": 2175
+        },
+        "bio2rdf:lsr_vocabulary:x-biodbcore": {
+          "bio2rdf:biodbcore_vocabulary:Resource": 106
+        },
+        "bio2rdf:lsr_vocabulary:x-bioportal": {
+          "bio2rdf:bioportal_vocabulary:Resource": 358
+        },
+        "dcterms:publisher": {
+          "bio2rdf:lsr_vocabulary:Resource": 1309
+        },
+        "bio2rdf:lsr_vocabulary:x-miriam": {
+          "bio2rdf:miriam_vocabulary:Resource": 347
+        },
+        "cito:citesAsAuthority": {
+          "bio2rdf:pubmed_vocabulary:Resource": 277
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 2923
+        },
+        "bio2rdf:lsr_vocabulary:x-datahub": {
+          "bio2rdf:datahub_vocabulary:Resource": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2923
+        },
+        "bio2rdf:lsr_vocabulary:type": {
+          "Literal:xsd:string": 581
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 1636
+        },
+        "idot:alternativePrefix": {
+          "Literal:xsd:string": 426
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2923
+        },
+        "dcterms:alternative": {
+          "Literal:xsd:string": 1874
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2923
+        },
+        "idot:accessPattern": {
+          "Literal:xsd:string": 967
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2923
+        },
+        "idot:exampleIdentifier": {
+          "Literal:xsd:string": 733,
+          "Literal:xsd:integer": 322,
+          "Literal:xsd:float": 1,
+          "Literal:xsd:decimal": 3
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 741
+        },
+        "void:uriRegexPattern": {
+          "Literal:xsd:anyUri": 297
+        },
+        "bio2rdf:lsr_vocabulary:license-text": {
+          "Literal:xsd:string": 132
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 63
+        },
+        "idot:preferredPrefix": {
+          "Literal:xsd:string": 2175
+        },
+        "idot:identifierPattern": {
+          "Literal:xsd:string": 962
+        },
+        "dcat:keyword": {
+          "Literal:xsd:string": 2858
+        },
+        "foaf:page": {
+          "Resource": 1655
+        },
+        "dcterms:license": {
+          "Resource": 116
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:miriam_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:url": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 343
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 343
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 343
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 343
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 343
+        },
+        "bio2rdf:bio2rdf_vocabulary:url": {
+          "Resource": 347
+        }
+      }
+    },
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 2
+        }
+      }
+    },
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "foaf:page": [
+        {
+          "@id": "dcat:Distribution"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 1
+        },
+        "foaf:page": {
+          "dcat:Distribution": 1,
+          "Resource": 1
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 3
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 1
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:creator": {
+          "Resource": 1
+        },
+        "dcterms:publisher": {
+          "Resource": 2
+        },
+        "dcterms:license": {
+          "Resource": 2
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T12:37:23.752404+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "lsr",
+    "graph_uris": [
+      "http://bio2rdf.org/lsr_resource:bio2rdf.dataset.lsr.R3"
+    ],
+    "pattern_count": 214,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:Class": "Class",
+    "resource:is-member-of": "is-member-of",
+    "dctypes:Dataset": "Dataset",
+    "bio2rdf:lsr_vocabulary:Dataset": "lsr_vocabulary:Dataset",
+    "bio2rdf:lsr_vocabulary:Resource": "lsr_vocabulary:Resource",
+    "owl:ObjectProperty": "ObjectProperty",
+    "void:inDataset": "inDataset",
+    "dcterms:Dataset": "Dataset",
+    "bio2rdf:pubmed_vocabulary:Resource": "pubmed_vocabulary:Resource",
+    "bio2rdf:bio2rdf_vocabulary:Resource": "bio2rdf_vocabulary:Resource",
+    "bio2rdf:biodbcore_vocabulary:Resource": "biodbcore_vocabulary:Resource",
+    "bio2rdf:bioportal_vocabulary:Resource": "bioportal_vocabulary:Resource",
+    "bio2rdf:datahub_vocabulary:Resource": "datahub_vocabulary:Resource",
+    "resource:has-member": "has-member",
+    "bio2rdf:lsr_vocabulary:x-biodbcore": "lsr_vocabulary:x-biodbcore",
+    "bio2rdf:lsr_vocabulary:x-bioportal": "lsr_vocabulary:x-bioportal",
+    "dcterms:publisher": "publisher",
+    "bio2rdf:lsr_vocabulary:x-miriam": "lsr_vocabulary:x-miriam",
+    "bio2rdf:miriam_vocabulary:Resource": "miriam_vocabulary:Resource",
+    "cito:citesAsAuthority": "citesAsAuthority",
+    "bio2rdf:lsr_vocabulary:x-datahub": "lsr_vocabulary:x-datahub",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "dcat:distribution": "distribution",
+    "dcat:Distribution": "Distribution",
+    "dcterms:source": "source",
+    "foaf:page": "page",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "dcterms:title": "title",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "dcterms:identifier": "identifier",
+    "dcterms:alternative": "alternative",
+    "idot:alternativePrefix": "alternativePrefix",
+    "dcterms:description": "description",
+    "bio2rdf:lsr_vocabulary:type": "lsr_vocabulary:type",
+    "idot:exampleIdentifier": "exampleIdentifier",
+    "idot:accessPattern": "accessPattern",
+    "void:uriRegexPattern": "uriRegexPattern",
+    "dcterms:rights": "rights",
+    "bio2rdf:lsr_vocabulary:license-text": "lsr_vocabulary:license-text",
+    "idot:preferredPrefix": "preferredPrefix",
+    "dcat:keyword": "keyword",
+    "idot:identifierPattern": "identifierPattern",
+    "dcterms:format": "format",
+    "dcterms:created": "created",
+    "pav:retrievedOn": "retrievedOn",
+    "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": "bio2rdf_vocabulary:x-identifiers.org",
+    "bio2rdf:bio2rdf_vocabulary:url": "bio2rdf_vocabulary:url",
+    "dcterms:license": "license",
+    "dcterms:creator": "creator"
+  }
+}

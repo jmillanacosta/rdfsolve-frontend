@@ -1,0 +1,603 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "bio2rdf": "http://bio2rdf.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "void": "http://rdfs.org/ns/void#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "owl:Class",
+      "bio2rdf:obo_vocabulary:x-biogrid": {
+        "@id": "bio2rdf:biogrid_vocabulary:Resource"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:subset": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:exact_synonym": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:related_synonym": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:created_by": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:creation_date": {
+        "@type": "xsd:dateTime"
+      },
+      "bio2rdf:obo_vocabulary:comment": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:consider": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:replaced_by": {
+        "@type": "xsd:string"
+      },
+      "void:inDataset": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:obo_vocabulary:x-biogrid": {
+          "bio2rdf:biogrid_vocabulary:Resource": 2
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 340
+        },
+        "bio2rdf:obo_vocabulary:subset": {
+          "Literal:xsd:string": 1104
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 340
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 340
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 340
+        },
+        "bio2rdf:obo_vocabulary:namespace": {
+          "Literal:xsd:string": 340
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 340
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 304
+        },
+        "bio2rdf:obo_vocabulary:exact_synonym": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:obo_vocabulary:related_synonym": {
+          "Literal:xsd:string": 14
+        },
+        "bio2rdf:obo_vocabulary:created_by": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:obo_vocabulary:creation_date": {
+          "Literal:xsd:dateTime": 17
+        },
+        "bio2rdf:obo_vocabulary:comment": {
+          "Literal:xsd:string": 28
+        },
+        "bio2rdf:obo_vocabulary:consider": {
+          "Literal:xsd:string": 36
+        },
+        "bio2rdf:obo_vocabulary:replaced_by": {
+          "Literal:xsd:string": 7
+        },
+        "void:inDataset": {
+          "Resource": 340
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:apo_vocabulary:Resource",
+      "bio2rdf:obo_vocabulary:x-biogrid": {
+        "@id": "bio2rdf:biogrid_vocabulary:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:subset": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:exact_synonym": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:related_synonym": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:created_by": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:creation_date": {
+        "@type": "xsd:dateTime"
+      },
+      "bio2rdf:obo_vocabulary:comment": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:consider": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:replaced_by": {
+        "@type": "xsd:string"
+      },
+      "void:inDataset": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:obo_vocabulary:x-biogrid": {
+          "bio2rdf:biogrid_vocabulary:Resource": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 340
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 340
+        },
+        "bio2rdf:obo_vocabulary:namespace": {
+          "Literal:xsd:string": 340
+        },
+        "bio2rdf:obo_vocabulary:subset": {
+          "Literal:xsd:string": 1104
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 340
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 340
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 340
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 304
+        },
+        "bio2rdf:obo_vocabulary:exact_synonym": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:obo_vocabulary:related_synonym": {
+          "Literal:xsd:string": 14
+        },
+        "bio2rdf:obo_vocabulary:created_by": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:obo_vocabulary:creation_date": {
+          "Literal:xsd:dateTime": 17
+        },
+        "bio2rdf:obo_vocabulary:comment": {
+          "Literal:xsd:string": 28
+        },
+        "bio2rdf:obo_vocabulary:consider": {
+          "Literal:xsd:string": 36
+        },
+        "bio2rdf:obo_vocabulary:replaced_by": {
+          "Literal:xsd:string": 7
+        },
+        "void:inDataset": {
+          "Resource": 340
+        }
+      }
+    },
+    {
+      "@id": "owl:Ontology",
+      "bio2rdf:obo_vocabulary:default-namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:auto-generated-by": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:remark": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:namespace-id-rule": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:format-version": {
+        "@type": "xsd:float"
+      },
+      "bio2rdf:obo_vocabulary:saved-by": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:date": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:subsetdef": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:obo_vocabulary:default-namespace": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:obo_vocabulary:auto-generated-by": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:obo_vocabulary:remark": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:obo_vocabulary:namespace-id-rule": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:obo_vocabulary:format-version": {
+          "Literal:xsd:float": 1
+        },
+        "bio2rdf:obo_vocabulary:saved-by": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:obo_vocabulary:date": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:obo_vocabulary:subsetdef": {
+          "Literal:xsd:string": 4
+        }
+      }
+    },
+    {
+      "@id": "owl:DeprecatedClass",
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:comment": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:consider": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:replaced_by": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:obo_vocabulary:subset": {
+        "@type": "xsd:string"
+      },
+      "void:inDataset": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 33
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 33
+        },
+        "bio2rdf:obo_vocabulary:comment": {
+          "Literal:xsd:string": 26
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 33
+        },
+        "bio2rdf:obo_vocabulary:namespace": {
+          "Literal:xsd:string": 33
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 33
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 33
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 33
+        },
+        "bio2rdf:obo_vocabulary:consider": {
+          "Literal:xsd:string": 36
+        },
+        "bio2rdf:obo_vocabulary:replaced_by": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:obo_vocabulary:subset": {
+          "Literal:xsd:string": 69
+        },
+        "void:inDataset": {
+          "Resource": 33
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "void:inDataset": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "void:inDataset": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "void:inDataset": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:identifier": {
+          "Literal:xsd:string": 17
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 17
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 17
+        },
+        "void:inDataset": {
+          "Resource": 17
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:biogrid_vocabulary:Resource",
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "void:inDataset": {
+        "@id": "rdfs:Resource"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1
+        },
+        "void:inDataset": {
+          "Resource": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:obo_vocabulary:Resource",
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "void:inDataset": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:identifier": {
+          "Literal:xsd:string": 19
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 18
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 19
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 19
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 19
+        },
+        "void:inDataset": {
+          "Resource": 19
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ypo_vocabulary:Resource",
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "void:inDataset": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 276
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 276
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 276
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 276
+        },
+        "void:inDataset": {
+          "Resource": 276
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T13:19:31.611779+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "apo",
+    "graph_uris": [
+      "http://bio2rdf.org/apo_resource:bio2rdf.dataset.apo.R3"
+    ],
+    "pattern_count": 126,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:Class": "Class",
+    "bio2rdf:obo_vocabulary:x-biogrid": "obo_vocabulary:x-biogrid",
+    "bio2rdf:biogrid_vocabulary:Resource": "biogrid_vocabulary:Resource",
+    "bio2rdf:apo_vocabulary:Resource": "apo_vocabulary:Resource",
+    "dcterms:identifier": "identifier",
+    "bio2rdf:obo_vocabulary:subset": "obo_vocabulary:subset",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "dcterms:title": "title",
+    "bio2rdf:obo_vocabulary:namespace": "obo_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "dcterms:description": "description",
+    "bio2rdf:obo_vocabulary:exact_synonym": "obo_vocabulary:exact_synonym",
+    "bio2rdf:obo_vocabulary:related_synonym": "obo_vocabulary:related_synonym",
+    "owl:Ontology": "Ontology",
+    "bio2rdf:obo_vocabulary:default-namespace": "obo_vocabulary:default-namespace",
+    "bio2rdf:obo_vocabulary:auto-generated-by": "obo_vocabulary:auto-generated-by",
+    "bio2rdf:obo_vocabulary:remark": "obo_vocabulary:remark",
+    "bio2rdf:obo_vocabulary:namespace-id-rule": "obo_vocabulary:namespace-id-rule",
+    "bio2rdf:obo_vocabulary:format-version": "obo_vocabulary:format-version",
+    "bio2rdf:obo_vocabulary:saved-by": "obo_vocabulary:saved-by",
+    "bio2rdf:obo_vocabulary:date": "obo_vocabulary:date",
+    "bio2rdf:obo_vocabulary:subsetdef": "obo_vocabulary:subsetdef",
+    "bio2rdf:obo_vocabulary:created_by": "obo_vocabulary:created_by",
+    "bio2rdf:obo_vocabulary:creation_date": "obo_vocabulary:creation_date",
+    "bio2rdf:obo_vocabulary:comment": "obo_vocabulary:comment",
+    "bio2rdf:obo_vocabulary:consider": "obo_vocabulary:consider",
+    "owl:DeprecatedClass": "DeprecatedClass",
+    "bio2rdf:obo_vocabulary:replaced_by": "obo_vocabulary:replaced_by",
+    "owl:ObjectProperty": "ObjectProperty",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "bio2rdf:obo_vocabulary:Resource": "obo_vocabulary:Resource",
+    "bio2rdf:ypo_vocabulary:Resource": "ypo_vocabulary:Resource",
+    "void:inDataset": "inDataset",
+    "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": "bio2rdf_vocabulary:x-identifiers.org"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "@context": {},
+  "@graph": [],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T09:16:06.484554+00:00",
+    "endpoint": "http://rdfportal.org/pdb/sparql",
+    "dataset_name": "pubcasefinder",
+    "graph_uris": [
+      "https://pubcasefinder.dbcls.jp/rdf"
+    ],
+    "pattern_count": 0,
+    "strategy": "miner/two-phase"
+  }
+}

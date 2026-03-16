@@ -1,0 +1,168 @@
+{
+  "@context": {
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "biopaxleve": "http://www.biopax.org/release/biopax-level3.owl#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "ro": "http://purl.obolibrary.org/obo/RO_",
+    "uniprot.core": "http://purl.uniprot.org/core/",
+    "cito": "http://purl.org/spar/cito/"
+  },
+  "@graph": [
+    {
+      "@id": "vocabulary:Pathway",
+      "skos:related": [
+        {
+          "@id": "biopaxleve:Pathway"
+        },
+        {
+          "@id": "vocabulary:Pathway"
+        }
+      ],
+      "biopaxleve:pathwayComponent": [
+        {
+          "@id": "biopaxleve:Pathway"
+        },
+        {
+          "@id": "vocabulary:Pathway"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "ro:0000057": {
+        "@id": "rdfs:Resource"
+      },
+      "cito:isDiscussedBy": {
+        "@id": "rdfs:Resource"
+      },
+      "uniprot.core:organism": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:source": {
+        "@id": "rdfs:Resource"
+      },
+      "biopaxleve:organism": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "skos:related": {
+          "biopaxleve:Pathway": 1819,
+          "vocabulary:Pathway": 1819
+        },
+        "biopaxleve:pathwayComponent": {
+          "biopaxleve:Pathway": 6710,
+          "vocabulary:Pathway": 6710
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 80801
+        },
+        "ro:0000057": {
+          "Resource": 1956232
+        },
+        "cito:isDiscussedBy": {
+          "Resource": 40471
+        },
+        "uniprot.core:organism": {
+          "Resource": 151192
+        },
+        "dcterms:source": {
+          "Resource": 80801
+        },
+        "biopaxleve:organism": {
+          "Resource": 151192
+        }
+      }
+    },
+    {
+      "@id": "biopaxleve:Pathway",
+      "biopaxleve:pathwayComponent": [
+        {
+          "@id": "biopaxleve:Pathway"
+        },
+        {
+          "@id": "vocabulary:Pathway"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "biopaxleve:Pathway"
+        },
+        {
+          "@id": "vocabulary:Pathway"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:source": {
+        "@id": "rdfs:Resource"
+      },
+      "uniprot.core:organism": {
+        "@id": "rdfs:Resource"
+      },
+      "biopaxleve:organism": {
+        "@id": "rdfs:Resource"
+      },
+      "ro:0000057": {
+        "@id": "rdfs:Resource"
+      },
+      "cito:isDiscussedBy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "biopaxleve:pathwayComponent": {
+          "biopaxleve:Pathway": 6710,
+          "vocabulary:Pathway": 6710
+        },
+        "skos:related": {
+          "biopaxleve:Pathway": 1819,
+          "vocabulary:Pathway": 1819
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 80801
+        },
+        "dcterms:source": {
+          "Resource": 80801
+        },
+        "uniprot.core:organism": {
+          "Resource": 151192
+        },
+        "biopaxleve:organism": {
+          "Resource": 151192
+        },
+        "ro:0000057": {
+          "Resource": 1956232
+        },
+        "cito:isDiscussedBy": {
+          "Resource": 40471
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:39:50.866662+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.pathway",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/pathway"
+    ],
+    "pattern_count": 24,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "vocabulary:Pathway": "Pathway",
+    "skos:related": "related",
+    "biopaxleve:Pathway": "Pathway",
+    "biopaxleve:pathwayComponent": "pathwayComponent",
+    "dcterms:title": "title",
+    "dcterms:source": "source",
+    "ro:0000057": "RO_0000057",
+    "uniprot.core:organism": "organism",
+    "biopaxleve:organism": "organism",
+    "cito:isDiscussedBy": "isDiscussedBy"
+  }
+}

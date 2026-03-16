@@ -1,5 +1,5 @@
 /**
- * URI Utilities — shared helpers for URI/IRI/CURIE manipulation.
+ * URI Utilities - shared helpers for URI/IRI/CURIE manipulation.
  *
  * Single source of truth for local-name extraction, prefix expansion,
  * compaction, and HTML escaping used throughout the project.
@@ -23,7 +23,7 @@ export function getLocalName(uri: string): string {
 }
 
 // =============================================================================
-// CURIE ↔ URI Conversion
+// CURIE <-> URI Conversion
 // =============================================================================
 
 /** Compact a full URI to a CURIE using a prefix map. */

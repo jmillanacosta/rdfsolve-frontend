@@ -1,27 +1,5 @@
 /**
- * View Builder — Pure projection from CanonicalSchema → PathTree
- *
- * THE ARCHITECTURE:
- *
- *   CanonicalSchema (the full graph — all triples, never mutated)
- *        │
- *        ▼
- *   buildTree(graph, rootUri, opts)  →  PathTree  (initial view)
- *        │
- *        ▼
- *   expandTree(graph, tree, nodeUri, opts)  →  mutates tree  (interactive)
- *
- * PRINCIPLES:
- *   1. The CanonicalSchema is the ONLY source of truth for the graph.
- *   2. A PathTree is a projection: it tracks its own nodes/edges.
- *   3. "What's already visible?" is answered by the tree itself — no external state.
- *   4. Expansion is the SAME operation as initial building, just from a different anchor.
- *   5. Every function here can be replaced by an API call in the future.
- *      The PathTree / layout / render pipeline stays the same.
- *
- * TRIPLE IDENTITY:
- *   A triple is identified by subject|predicate|object (direction-agnostic).
- *   The same triple is never drawn twice in the same tree.
+ * View Builder - Pure projection from CanonicalSchema -> PathTree
  */
 
 import type {
@@ -86,19 +64,19 @@ function classifyNode(uri: string, schema: CanonicalSchema, isTypeTarget: boolea
 }
 
 // =============================================================================
-// TreeProjection — per-tree bookkeeping (private, not exported)
+// TreeProjection - per-tree bookkeeping (private, not exported)
 // =============================================================================
 
 /**
  * Lightweight bookkeeping for ONE tree being built or expanded.
- * NOT shared across trees — each tree tracks its own state.
+ * NOT shared across trees - each tree tracks its own state.
  */
 class TreeProjection {
   /** Triple keys already in this tree */
   readonly seenTriples = new Set<string>();
-  /** URI → node ID (first registered — used for general lookups) */
+  /** URI -> node ID (first registered - used for general lookups) */
   readonly uriToNodeId = new Map<string, string>();
-  /** "uri\tcol" → node ID (used to reuse nodes within the same column) */
+  /** "uri\tcol" -> node ID (used to reuse nodes within the same column) */
   readonly uriColToNodeId = new Map<string, string>();
   /** Max row index per column (for row allocation) */
   readonly columnMaxRow = new Map<number, number>();
@@ -220,7 +198,7 @@ class TreeProjection {
       if (node.row > cur) this.columnMaxRow.set(node.column, node.row);
     }
 
-    // Sync edges → reconstruct triple keys
+    // Sync edges -> reconstruct triple keys
     for (const edge of tree.edges) {
       const srcNode = tree.nodes.find(n => n.id === edge.sourceId);
       const tgtNode = tree.nodes.find(n => n.id === edge.targetId);
@@ -266,7 +244,7 @@ export interface ExpandResult {
 }
 
 // =============================================================================
-// Public API — pure functions
+// Public API - pure functions
 // =============================================================================
 
 /**
@@ -308,7 +286,7 @@ export function buildTree(
 
 /**
  * Build independent trees for multiple root URIs.
- * Each tree has its own projection state — no cross-tree sharing.
+ * Each tree has its own projection state.
  */
 export function buildTrees(
   graph: CanonicalSchema,
@@ -443,7 +421,7 @@ export function getAvailableRoots(
 }
 
 /**
- * Build a nodeId → URI map from a set of trees.
+ * Build a nodeId -> URI map from a set of trees.
  * Useful for SPARQL generation and other cross-cutting concerns.
  */
 export function getNodeIdToUriMap(trees: PathTree[]): Map<string, string> {
@@ -461,7 +439,7 @@ export function getNodeIdToUriMap(trees: PathTree[]): Map<string, string> {
 // =============================================================================
 
 /**
- * Walk outgoing edges (subject → object) from `uri`, adding unseen nodes/edges.
+ * Walk outgoing edges (subject -> object) from `uri`, adding unseen nodes/edges.
  */
 function walkOutgoing(
   graph: CanonicalSchema,
@@ -554,7 +532,7 @@ function walkIncoming(
       sourceId = newNode.id;
     }
 
-    // Edge from anchor(nodeId) → source(sourceId) with isIncoming flag
+    // Edge from anchor(nodeId) -> source(sourceId) with isIncoming flag
     edges.push(proj.makeEdge(nodeId, sourceId, triple, true));
     proj.registerTriple(triple);
     count++;

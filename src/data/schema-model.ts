@@ -101,9 +101,9 @@ export function detectNodeType(uri: string, objectType: 'uri' | 'literal' | 'bla
  * A URI is a class if:
  *   1. It is the *subject* of  `rdf:type  owl:Class / rdfs:Class / …`
  *   2. It is the *object* of any `rdf:type` triple
- *      (i.e., something says `X rdf:type <thisURI>` — so it acts as a type)
+ *      (i.e., something says `X rdf:type <thisURI>` - so it acts as a type)
  *
- * Also removes the redundant `rdf:type → classType` triples from the
+ * Also removes the redundant `rdf:type -> classType` triples from the
  * triples list and adjacency maps so downstream code never sees them.
  */
 export function enrichSchemaWithClassInfo(schema: CanonicalSchema): void {
@@ -113,19 +113,19 @@ export function enrichSchemaWithClassInfo(schema: CanonicalSchema): void {
   for (const t of schema.triples) {
     if (!t.isRdfType) continue;
 
-    // Rule 1:  ?subject rdf:type owl:Class → subject is a class
+    // Rule 1:  ?subject rdf:type owl:Class -> subject is a class
     if (CLASS_TYPE_URIS.has(t.object)) {
       classUris.add(t.subject);
     }
 
-    // Rule 2:  ?x rdf:type ?object → object acts as a type, so it's a class
+    // Rule 2:  ?x rdf:type ?object -> object acts as a type, so it's a class
     if (t.objectType === 'uri') {
       classUris.add(t.object);
     }
   }
 
-  // --- Pass 2: remove "rdf:type → CLASS_TYPE_URIS" triples --------------------
-  // These are meta-type declarations ("X is a class") — redundant in the diagram.
+  // --- Pass 2: remove "rdf:type -> CLASS_TYPE_URIS" triples --------------------
+  // These are meta-type declarations ("X is a class") - redundant in the diagram.
   const keep = (t: CanonicalTriple) =>
     !(t.isRdfType && CLASS_TYPE_URIS.has(t.object));
 

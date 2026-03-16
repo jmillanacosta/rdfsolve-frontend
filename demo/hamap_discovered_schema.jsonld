@@ -1,0 +1,274 @@
+{
+  "@context": {
+    "sh": "http://www.w3.org/ns/shacl#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "sp": "http://spinrdf.org/sp#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "vocab": "https://hamap.expasy.org/rdf/vocab#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "ontology": "https://purl.expasy.org/sparql-examples/ontology#",
+    "sparqlserv": "http://www.w3.org/ns/sparql-service-description#",
+    "pav": "http://purl.org/pav/",
+    "voidext": "http://ldf.fi/void-ext#",
+    "void": "http://rdfs.org/ns/void#"
+  },
+  "@graph": [
+    {
+      "@id": "sh:NodeShape",
+      "dcterms:modified": {
+        "@id": "Literal"
+      },
+      "sh:rule": [
+        {
+          "@id": "sp:Construct"
+        },
+        {
+          "@id": "sh:SPARQLRule"
+        }
+      ],
+      "sh:targetClass": {
+        "@id": "Resource"
+      }
+    },
+    {
+      "@id": "sh:SPARQLRule",
+      "sp:templates": {
+        "@id": "Resource"
+      },
+      "sp:where": {
+        "@id": "Resource"
+      },
+      "sh:construct": {
+        "@id": "Literal"
+      },
+      "sh:prefixes": {
+        "@id": "owl:Ontology"
+      },
+      "vocab:addsTriple": {
+        "@id": "Resource"
+      }
+    },
+    {
+      "@id": "sp:Construct",
+      "sp:templates": {
+        "@id": "Resource"
+      },
+      "sp:where": {
+        "@id": "Resource"
+      },
+      "sh:construct": {
+        "@id": "Literal"
+      },
+      "sh:prefixes": {
+        "@id": "owl:Ontology"
+      },
+      "vocab:addsTriple": {
+        "@id": "Resource"
+      }
+    },
+    {
+      "@id": "sh:SPARQLSelectExecutable",
+      "sh:prefixes": {
+        "@id": "owl:Ontology"
+      },
+      "rdfs:comment": {
+        "@id": "Literal"
+      },
+      "sh:select": {
+        "@id": "Literal"
+      },
+      "schema:target": {
+        "@id": "Resource"
+      }
+    },
+    {
+      "@id": "sh:SPARQLExecutable",
+      "sh:prefixes": {
+        "@id": "owl:Ontology"
+      },
+      "rdfs:comment": [
+        {
+          "@id": "Literal"
+        }
+      ],
+      "sh:select": {
+        "@id": "Literal"
+      },
+      "schema:target": {
+        "@id": "Resource"
+      },
+      "ontology:describe": {
+        "@id": "Literal"
+      }
+    },
+    {
+      "@id": "owl:AnnotationProperty",
+      "rdfs:comment": {
+        "@id": "Literal"
+      }
+    },
+    {
+      "@id": "owl:Ontology",
+      "rdfs:comment": {
+        "@id": "Literal"
+      },
+      "owl:imports": {
+        "@id": "Resource"
+      },
+      "sh:declare": {
+        "@id": "Resource"
+      }
+    },
+    {
+      "@id": "sp:Optional",
+      "sp:elements": {
+        "@id": "Resource"
+      }
+    },
+    {
+      "@id": "sp:Union",
+      "sp:elements": {
+        "@id": "Resource"
+      }
+    },
+    {
+      "@id": "sparqlserv:Service",
+      "sparqlserv:availableGraphs": {
+        "@id": "Resource"
+      },
+      "sparqlserv:defaultDataset": {
+        "@id": "sparqlserv:Dataset"
+      },
+      "sparqlserv:endpoint": {
+        "@id": "sparqlserv:Service"
+      },
+      "sparqlserv:feature": {
+        "@id": "Resource"
+      },
+      "sparqlserv:resultFormat": {
+        "@id": "Resource"
+      },
+      "sparqlserv:supportedLanguage": {
+        "@id": "Resource"
+      }
+    },
+    {
+      "@id": "sparqlserv:Dataset",
+      "dcterms:issued": {
+        "@id": "Literal"
+      },
+      "pav:version": {
+        "@id": "Literal"
+      },
+      "sparqlserv:defaultGraph": {
+        "@id": "sparqlserv:Graph"
+      },
+      "sparqlserv:namedGraph": {
+        "@id": "sparqlserv:NamedGraph"
+      }
+    },
+    {
+      "@id": "sparqlserv:Graph",
+      "dcterms:issued": {
+        "@id": "Literal"
+      },
+      "voidext:distinctBlankNodeObjects": {
+        "@id": "Literal"
+      },
+      "voidext:distinctBlankNodeSubjects": {
+        "@id": "Literal"
+      },
+      "voidext:distinctIRIReferenceObjects": {
+        "@id": "Literal"
+      },
+      "voidext:distinctIRIReferenceSubjects": {
+        "@id": "Literal"
+      },
+      "voidext:distinctLiterals": {
+        "@id": "Literal"
+      },
+      "void:classPartition": {
+        "@id": "void:Dataset"
+      },
+      "void:classes": {
+        "@id": "Literal"
+      },
+      "void:distinctObjects": {
+        "@id": "Literal"
+      },
+      "void:distinctSubjects": {
+        "@id": "Literal"
+      },
+      "void:propertyPartition": {
+        "@id": "void:Dataset"
+      },
+      "void:subset": {
+        "@id": "void:Linkset"
+      },
+      "void:triples": {
+        "@id": "Literal"
+      }
+    },
+    {
+      "@id": "void:Dataset",
+      "void:classPartition": {
+        "@id": "void:Dataset"
+      },
+      "void:propertyPartition": {
+        "@id": "void:Dataset"
+      },
+      "void:triples": {
+        "@id": "Literal"
+      },
+      "voidext:datatype": {
+        "@id": "Resource"
+      },
+      "voidext:datatypePartition": {
+        "@id": "void:Dataset"
+      },
+      "void:class": {
+        "@id": "Resource"
+      },
+      "void:entities": {
+        "@id": "Literal"
+      },
+      "void:property": [
+        {
+          "@id": "Resource"
+        },
+        {
+          "@id": "owl:AnnotationProperty"
+        }
+      ]
+    },
+    {
+      "@id": "sparqlserv:NamedGraph",
+      "sparqlserv:graph": {
+        "@id": "sparqlserv:Graph"
+      },
+      "sparqlserv:name": {
+        "@id": "sparqlserv:NamedGraph"
+      }
+    },
+    {
+      "@id": "void:Linkset",
+      "void:linkPredicate": {
+        "@id": "Resource"
+      },
+      "void:objectsTarget": {
+        "@id": "void:Dataset"
+      },
+      "void:subjectsTarget": {
+        "@id": "void:Dataset"
+      }
+    }
+  ],
+  "@about": {
+    "generatedBy": "rdfsolve 0.0.1",
+    "generatedAt": "2026-03-03T16:09:12.425479+00:00",
+    "endpoint": "https://hamap.expasy.org/sparql/",
+    "datasetName": "hamap",
+    "tripleCount": 67
+  }
+}

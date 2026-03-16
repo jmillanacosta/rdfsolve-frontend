@@ -1,0 +1,2980 @@
+{
+  "@context": {
+    "bio2rdf": "http://bio2rdf.org/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pav": "http://purl.org/pav/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "bio2rdf:go_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5088
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5088
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5088
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5088
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5088
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 5088
+        }
+      }
+    },
+    {
+      "@id": "owl:Class",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 35
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 35
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 35
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 35
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 35
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 35
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 16
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 16
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Resource",
+      "bio2rdf:wormbase_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:physically-interacts-with": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:regulates": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:cosmid": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Cosmid"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:genetically-interacts-with": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:evidence_type": {
+        "@id": "bio2rdf:eco_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:x-go": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:publication": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Publication"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "owl:sourceIndividual": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "owl:targetIndividual": {
+        "@id": "bio2rdf:wbphenotype_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:phenotype": {
+        "@id": "bio2rdf:wbphenotype_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:associated-gene-variant": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene-Variant"
+        }
+      ],
+      "owl:assertionProperty": {
+        "@id": "bio2rdf:wormbase_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:associated-rnai-knockdown-experiment": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:RNAi-Knockdown-Experiment"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:target-gene": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:rnai": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:RNAi"
+        }
+      ],
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:wormbase_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 324061
+        },
+        "bio2rdf:wormbase_vocabulary:physically-interacts-with": {
+          "bio2rdf:wormbase_vocabulary:Resource": 3693,
+          "bio2rdf:wormbase_vocabulary:Gene": 3693
+        },
+        "bio2rdf:wormbase_vocabulary:regulates": {
+          "bio2rdf:wormbase_vocabulary:Resource": 5180,
+          "bio2rdf:wormbase_vocabulary:Gene": 5174
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 1384974
+        },
+        "bio2rdf:wormbase_vocabulary:cosmid": {
+          "bio2rdf:wormbase_vocabulary:Resource": 47085,
+          "bio2rdf:wormbase_vocabulary:Cosmid": 47085
+        },
+        "bio2rdf:wormbase_vocabulary:genetically-interacts-with": {
+          "bio2rdf:wormbase_vocabulary:Resource": 7178,
+          "bio2rdf:wormbase_vocabulary:Gene": 7173
+        },
+        "bio2rdf:wormbase_vocabulary:evidence_type": {
+          "bio2rdf:eco_vocabulary:Resource": 273163
+        },
+        "bio2rdf:wormbase_vocabulary:x-go": {
+          "bio2rdf:go_vocabulary:Resource": 273163
+        },
+        "bio2rdf:wormbase_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 44595
+        },
+        "bio2rdf:wormbase_vocabulary:gene": {
+          "bio2rdf:wormbase_vocabulary:Resource": 693987,
+          "bio2rdf:wormbase_vocabulary:Gene": 507824
+        },
+        "bio2rdf:wormbase_vocabulary:publication": {
+          "bio2rdf:wormbase_vocabulary:Resource": 44595,
+          "bio2rdf:wormbase_vocabulary:Publication": 44595
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 55654,
+          "bio2rdf:wormbase_vocabulary:Gene": 55635
+        },
+        "owl:sourceIndividual": {
+          "bio2rdf:wormbase_vocabulary:Resource": 324749,
+          "bio2rdf:wormbase_vocabulary:Gene": 324749
+        },
+        "owl:targetIndividual": {
+          "bio2rdf:wbphenotype_vocabulary:Resource": 324749
+        },
+        "bio2rdf:wormbase_vocabulary:phenotype": {
+          "bio2rdf:wbphenotype_vocabulary:Resource": 420824
+        },
+        "bio2rdf:wormbase_vocabulary:associated-gene-variant": {
+          "bio2rdf:wormbase_vocabulary:Resource": 21856,
+          "bio2rdf:wormbase_vocabulary:Gene-Variant": 21856
+        },
+        "owl:assertionProperty": {
+          "bio2rdf:wormbase_vocabulary:Resource": 324749
+        },
+        "bio2rdf:wormbase_vocabulary:associated-rnai-knockdown-experiment": {
+          "bio2rdf:wormbase_vocabulary:Resource": 390627,
+          "bio2rdf:wormbase_vocabulary:RNAi-Knockdown-Experiment": 390627
+        },
+        "bio2rdf:wormbase_vocabulary:target-gene": {
+          "bio2rdf:wormbase_vocabulary:Resource": 390627,
+          "bio2rdf:wormbase_vocabulary:Gene": 390627
+        },
+        "bio2rdf:wormbase_vocabulary:rnai": {
+          "bio2rdf:wormbase_vocabulary:Resource": 390627,
+          "bio2rdf:wormbase_vocabulary:RNAi": 390627
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 300302
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pubmed_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 4072
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 4072
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 4072
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 4072
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 4072
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 4072
+        }
+      }
+    },
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 2
+        }
+      }
+    },
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 1
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 5
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:creator": {
+          "Resource": 1
+        },
+        "foaf:page": {
+          "Resource": 2
+        },
+        "dcterms:publisher": {
+          "Resource": 2
+        },
+        "dcterms:license": {
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:taxonomy_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 19
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 19
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 19
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 19
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 19
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 19
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wbphenotype_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1905
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1905
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1905
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1905
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1905
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:eco_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 16
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 16
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Cosmid",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 47082
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 47082
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 47082
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 47082
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 47082
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 47082
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 47082
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Gene",
+      "bio2rdf:wormbase_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:cosmid": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Cosmid"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:genetically-interacts-with": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:physically-interacts-with": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:regulates": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:wormbase_vocabulary:approved-gene-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:wormbase_vocabulary:automated-description": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:wormbase_vocabulary:concise-description": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:wormbase_vocabulary:detailed-description": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:wormbase_vocabulary:gene-class-description": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:wormbase_vocabulary:provisional-description": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:wormbase_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 50894
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 50894
+        },
+        "bio2rdf:wormbase_vocabulary:cosmid": {
+          "bio2rdf:wormbase_vocabulary:Resource": 47085,
+          "bio2rdf:wormbase_vocabulary:Cosmid": 47085
+        },
+        "bio2rdf:wormbase_vocabulary:genetically-interacts-with": {
+          "bio2rdf:wormbase_vocabulary:Resource": 7176,
+          "bio2rdf:wormbase_vocabulary:Gene": 7173
+        },
+        "bio2rdf:wormbase_vocabulary:physically-interacts-with": {
+          "bio2rdf:wormbase_vocabulary:Resource": 3693,
+          "bio2rdf:wormbase_vocabulary:Gene": 3693
+        },
+        "bio2rdf:wormbase_vocabulary:regulates": {
+          "bio2rdf:wormbase_vocabulary:Resource": 5174,
+          "bio2rdf:wormbase_vocabulary:Gene": 5172
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 50894
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 50894
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 50894
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 50894
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 50894
+        },
+        "bio2rdf:wormbase_vocabulary:approved-gene-name": {
+          "Literal:xsd:string": 27629
+        },
+        "bio2rdf:wormbase_vocabulary:automated-description": {
+          "Literal:xsd:string": 50894
+        },
+        "bio2rdf:wormbase_vocabulary:concise-description": {
+          "Literal:xsd:string": 50894
+        },
+        "bio2rdf:wormbase_vocabulary:detailed-description": {
+          "Literal:xsd:string": 50894
+        },
+        "bio2rdf:wormbase_vocabulary:gene-class-description": {
+          "Literal:xsd:string": 50873
+        },
+        "bio2rdf:wormbase_vocabulary:provisional-description": {
+          "Literal:xsd:string": 50894
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 50894
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Gene-GO-Association",
+      "bio2rdf:wormbase_vocabulary:x-go": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:x-taxonomy": {
+        "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:evidence_type": {
+        "@id": "bio2rdf:eco_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:publication": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Publication"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:x-pubmed": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:wormbase_vocabulary:x-go": {
+          "bio2rdf:go_vocabulary:Resource": 273163
+        },
+        "bio2rdf:wormbase_vocabulary:x-taxonomy": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 273167
+        },
+        "bio2rdf:wormbase_vocabulary:evidence_type": {
+          "bio2rdf:eco_vocabulary:Resource": 273163
+        },
+        "bio2rdf:wormbase_vocabulary:gene": {
+          "bio2rdf:wormbase_vocabulary:Resource": 273163,
+          "bio2rdf:wormbase_vocabulary:Gene": 87000
+        },
+        "bio2rdf:wormbase_vocabulary:publication": {
+          "bio2rdf:wormbase_vocabulary:Resource": 44595,
+          "bio2rdf:wormbase_vocabulary:Publication": 44595
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 273163
+        },
+        "bio2rdf:wormbase_vocabulary:x-pubmed": {
+          "bio2rdf:pubmed_vocabulary:Resource": 44595
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 273163
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 273163
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 273163
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 273163
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 273163
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Publication",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 4072
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 4072
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 4072
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 4072
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 4072
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 4072
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 4072
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Asynthetic-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 12
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 24,
+          "bio2rdf:wormbase_vocabulary:Gene": 24
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 12
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 12
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Change_of_expression_level-Regulatory-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 3886
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 7772,
+          "bio2rdf:wormbase_vocabulary:Gene": 7761
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 3886
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3886
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3886
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3886
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3886
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 3886
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Enhancement-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1198
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 2396,
+          "bio2rdf:wormbase_vocabulary:Gene": 2396
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1198
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1198
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1198
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1198
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1198
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1198
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Complete_unilateral_suppression-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 16
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 32,
+          "bio2rdf:wormbase_vocabulary:Gene": 32
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 16
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 16
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 4065
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 8130,
+          "bio2rdf:wormbase_vocabulary:Gene": 8130
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 4065
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 4065
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 4065
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 4065
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 4065
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 4065
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Epistasis-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 299
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 598,
+          "bio2rdf:wormbase_vocabulary:Gene": 597
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 299
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 299
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 299
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 299
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 299
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 299
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Oversuppression-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 24
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 48,
+          "bio2rdf:wormbase_vocabulary:Gene": 48
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 24
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 24
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 24
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 24
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 24
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 24
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Opposing_epistasis-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 30
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 60,
+          "bio2rdf:wormbase_vocabulary:Gene": 60
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 30
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 30
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 30
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 30
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 30
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 30
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Mutual_enhancement-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 276
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 552,
+          "bio2rdf:wormbase_vocabulary:Gene": 550
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 276
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 276
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 276
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 276
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 276
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 276
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Partial_suppression-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 94
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 188,
+          "bio2rdf:wormbase_vocabulary:Gene": 188
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 94
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 94
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 94
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 94
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 94
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 94
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Mutual_suppression-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 75
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 150,
+          "bio2rdf:wormbase_vocabulary:Gene": 150
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 75
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 75
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 75
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 75
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 75
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 75
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Physical-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 10619
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 21238,
+          "bio2rdf:wormbase_vocabulary:Gene": 21238
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 10619
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 10619
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 10619
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 10619
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 10619
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 10619
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Partial_unilateral_suppression-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 15
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 30,
+          "bio2rdf:wormbase_vocabulary:Gene": 30
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 15
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 15
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 15
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 15
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 15
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 15
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Regulatory-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1757
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 3514,
+          "bio2rdf:wormbase_vocabulary:Gene": 3514
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1757
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1757
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1757
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1757
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1757
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1757
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Suppression-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2768
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 5536,
+          "bio2rdf:wormbase_vocabulary:Gene": 5534
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2768
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2768
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2768
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2768
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2768
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 2768
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Synthetic-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2044
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 4088,
+          "bio2rdf:wormbase_vocabulary:Gene": 4086
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2044
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2044
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2044
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2044
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2044
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 2044
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Unilateral_enhancement-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 30
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 60,
+          "bio2rdf:wormbase_vocabulary:Gene": 60
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 30
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 30
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 30
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 30
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 30
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 30
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Change_of_localization-Regulatory-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 525
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 1050,
+          "bio2rdf:wormbase_vocabulary:Gene": 1049
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 525
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 525
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 525
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 525
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 525
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 525
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Oversuppression_enhancement-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 12
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 24,
+          "bio2rdf:wormbase_vocabulary:Gene": 24
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 12
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 12
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Maximal_epistasis-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 12
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 24,
+          "bio2rdf:wormbase_vocabulary:Gene": 24
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 12
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 12
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Phenotype_bias-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 24
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 48,
+          "bio2rdf:wormbase_vocabulary:Gene": 48
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 24
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 24
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 24
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 24
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 24
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 24
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Unilateral_suppression-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 22
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 44,
+          "bio2rdf:wormbase_vocabulary:Gene": 44
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 22
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 22
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 22
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 22
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 22
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 22
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Negative_genetic-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 2,
+          "bio2rdf:wormbase_vocabulary:Gene": 2
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Minimal_epistasis-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 12,
+          "bio2rdf:wormbase_vocabulary:Gene": 12
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 6
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Complete_suppression-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 15
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 30,
+          "bio2rdf:wormbase_vocabulary:Gene": 30
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 15
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 15
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 15
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 15
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 15
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 15
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Positive_genetic-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 2,
+          "bio2rdf:wormbase_vocabulary:Gene": 2
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Complete_mutual_suppression-Genetic-Interaction",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:involves": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1
+        },
+        "bio2rdf:wormbase_vocabulary:involves": {
+          "bio2rdf:wormbase_vocabulary:Resource": 2,
+          "bio2rdf:wormbase_vocabulary:Gene": 2
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Gene-Phenotype-Association",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:phenotype": {
+        "@id": "bio2rdf:wbphenotype_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:associated-gene-variant": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene-Variant"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:associated-rnai-knockdown-experiment": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:RNAi-Knockdown-Experiment"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 96075
+        },
+        "bio2rdf:wormbase_vocabulary:gene": {
+          "bio2rdf:wormbase_vocabulary:Resource": 96075,
+          "bio2rdf:wormbase_vocabulary:Gene": 96075
+        },
+        "bio2rdf:wormbase_vocabulary:phenotype": {
+          "bio2rdf:wbphenotype_vocabulary:Resource": 96075
+        },
+        "bio2rdf:wormbase_vocabulary:associated-gene-variant": {
+          "bio2rdf:wormbase_vocabulary:Resource": 14918,
+          "bio2rdf:wormbase_vocabulary:Gene-Variant": 14918
+        },
+        "bio2rdf:wormbase_vocabulary:associated-rnai-knockdown-experiment": {
+          "bio2rdf:wormbase_vocabulary:Resource": 78681,
+          "bio2rdf:wormbase_vocabulary:RNAi-Knockdown-Experiment": 78681
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 96075
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 96075
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 96075
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 96075
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 96075
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Gene-Variant",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5344
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 5344
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5344
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5344
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5344
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5344
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 5344
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:Negative-Gene-Phenotype-Association",
+      "bio2rdf:wormbase_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "owl:sourceIndividual": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "owl:targetIndividual": {
+        "@id": "bio2rdf:wbphenotype_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:associated-gene-variant": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene-Variant"
+        }
+      ],
+      "owl:assertionProperty": {
+        "@id": "bio2rdf:wormbase_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:phenotype": {
+        "@id": "bio2rdf:wbphenotype_vocabulary:Resource"
+      },
+      "bio2rdf:wormbase_vocabulary:associated-rnai-knockdown-experiment": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:RNAi-Knockdown-Experiment"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:wormbase_vocabulary:gene": {
+          "bio2rdf:wormbase_vocabulary:Resource": 324749,
+          "bio2rdf:wormbase_vocabulary:Gene": 324749
+        },
+        "owl:sourceIndividual": {
+          "bio2rdf:wormbase_vocabulary:Resource": 324749,
+          "bio2rdf:wormbase_vocabulary:Gene": 324749
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 324749
+        },
+        "owl:targetIndividual": {
+          "bio2rdf:wbphenotype_vocabulary:Resource": 324749
+        },
+        "bio2rdf:wormbase_vocabulary:associated-gene-variant": {
+          "bio2rdf:wormbase_vocabulary:Resource": 6938,
+          "bio2rdf:wormbase_vocabulary:Gene-Variant": 6938
+        },
+        "owl:assertionProperty": {
+          "bio2rdf:wormbase_vocabulary:Resource": 324749
+        },
+        "bio2rdf:wormbase_vocabulary:phenotype": {
+          "bio2rdf:wbphenotype_vocabulary:Resource": 324749
+        },
+        "bio2rdf:wormbase_vocabulary:associated-rnai-knockdown-experiment": {
+          "bio2rdf:wormbase_vocabulary:Resource": 311946,
+          "bio2rdf:wormbase_vocabulary:RNAi-Knockdown-Experiment": 311946
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 324749
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 324749
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 324749
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 324749
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 324749
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:RNAi",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 99307
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 99307
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 99307
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 99307
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 99307
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 99307
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 99307
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:wormbase_vocabulary:RNAi-Knockdown-Experiment",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:wormbase_vocabulary:rnai": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:RNAi"
+        }
+      ],
+      "bio2rdf:wormbase_vocabulary:target-gene": [
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:wormbase_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 390627
+        },
+        "bio2rdf:wormbase_vocabulary:rnai": {
+          "bio2rdf:wormbase_vocabulary:Resource": 390627,
+          "bio2rdf:wormbase_vocabulary:RNAi": 390627
+        },
+        "bio2rdf:wormbase_vocabulary:target-gene": {
+          "bio2rdf:wormbase_vocabulary:Resource": 390627,
+          "bio2rdf:wormbase_vocabulary:Gene": 390627
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 390627
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 390627
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 390627
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 390627
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 390627
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T14:16:08.187806+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "wormbase",
+    "graph_uris": [
+      "http://bio2rdf.org/wormbase_resource:bio2rdf.dataset.wormbase.R3"
+    ],
+    "pattern_count": 612,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "bio2rdf:go_vocabulary:Resource": "go_vocabulary:Resource",
+    "void:inDataset": "inDataset",
+    "dcterms:Dataset": "Dataset",
+    "owl:Class": "Class",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "owl:ObjectProperty": "ObjectProperty",
+    "bio2rdf:wormbase_vocabulary:Resource": "wormbase_vocabulary:Resource",
+    "bio2rdf:wormbase_vocabulary:x-taxonomy": "wormbase_vocabulary:x-taxonomy",
+    "bio2rdf:taxonomy_vocabulary:Resource": "taxonomy_vocabulary:Resource",
+    "bio2rdf:wormbase_vocabulary:physically-interacts-with": "wormbase_vocabulary:physically-interacts-with",
+    "bio2rdf:wormbase_vocabulary:Gene": "wormbase_vocabulary:Gene",
+    "bio2rdf:wormbase_vocabulary:regulates": "wormbase_vocabulary:regulates",
+    "bio2rdf:wormbase_vocabulary:cosmid": "wormbase_vocabulary:cosmid",
+    "bio2rdf:wormbase_vocabulary:Cosmid": "wormbase_vocabulary:Cosmid",
+    "bio2rdf:wormbase_vocabulary:genetically-interacts-with": "wormbase_vocabulary:genetically-interacts-with",
+    "bio2rdf:wormbase_vocabulary:evidence_type": "wormbase_vocabulary:evidence_type",
+    "bio2rdf:eco_vocabulary:Resource": "eco_vocabulary:Resource",
+    "bio2rdf:wormbase_vocabulary:x-go": "wormbase_vocabulary:x-go",
+    "bio2rdf:wormbase_vocabulary:x-pubmed": "wormbase_vocabulary:x-pubmed",
+    "bio2rdf:pubmed_vocabulary:Resource": "pubmed_vocabulary:Resource",
+    "bio2rdf:wormbase_vocabulary:gene": "wormbase_vocabulary:gene",
+    "bio2rdf:wormbase_vocabulary:publication": "wormbase_vocabulary:publication",
+    "bio2rdf:wormbase_vocabulary:Publication": "wormbase_vocabulary:Publication",
+    "bio2rdf:wormbase_vocabulary:involves": "wormbase_vocabulary:involves",
+    "owl:sourceIndividual": "sourceIndividual",
+    "owl:targetIndividual": "targetIndividual",
+    "bio2rdf:wbphenotype_vocabulary:Resource": "wbphenotype_vocabulary:Resource",
+    "bio2rdf:wormbase_vocabulary:phenotype": "wormbase_vocabulary:phenotype",
+    "bio2rdf:wormbase_vocabulary:associated-gene-variant": "wormbase_vocabulary:associated-gene-variant",
+    "bio2rdf:wormbase_vocabulary:Gene-Variant": "wormbase_vocabulary:Gene-Variant",
+    "owl:assertionProperty": "assertionProperty",
+    "bio2rdf:wormbase_vocabulary:associated-rnai-knockdown-experiment": "wormbase_vocabulary:associated-rnai-knockdown-experiment",
+    "bio2rdf:wormbase_vocabulary:RNAi-Knockdown-Experiment": "wormbase_vocabulary:RNAi-Knockdown-Experiment",
+    "bio2rdf:wormbase_vocabulary:target-gene": "wormbase_vocabulary:target-gene",
+    "bio2rdf:wormbase_vocabulary:rnai": "wormbase_vocabulary:rnai",
+    "bio2rdf:wormbase_vocabulary:RNAi": "wormbase_vocabulary:RNAi",
+    "dcat:distribution": "distribution",
+    "dcat:Distribution": "Distribution",
+    "dcterms:source": "source",
+    "bio2rdf:wormbase_vocabulary:Gene-GO-Association": "wormbase_vocabulary:Gene-GO-Association",
+    "dcterms:title": "title",
+    "dcterms:identifier": "identifier",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "dcterms:created": "created",
+    "dcterms:format": "format",
+    "dcterms:rights": "rights",
+    "pav:retrievedOn": "retrievedOn",
+    "bio2rdf:wormbase_vocabulary:approved-gene-name": "wormbase_vocabulary:approved-gene-name",
+    "bio2rdf:wormbase_vocabulary:automated-description": "wormbase_vocabulary:automated-description",
+    "bio2rdf:wormbase_vocabulary:concise-description": "wormbase_vocabulary:concise-description",
+    "bio2rdf:wormbase_vocabulary:detailed-description": "wormbase_vocabulary:detailed-description",
+    "bio2rdf:wormbase_vocabulary:gene-class-description": "wormbase_vocabulary:gene-class-description",
+    "bio2rdf:wormbase_vocabulary:provisional-description": "wormbase_vocabulary:provisional-description",
+    "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": "bio2rdf_vocabulary:x-identifiers.org",
+    "dcterms:creator": "creator",
+    "foaf:page": "page",
+    "dcterms:publisher": "publisher",
+    "dcterms:license": "license",
+    "bio2rdf:wormbase_vocabulary:Asynthetic-Genetic-Interaction": "wormbase_vocabulary:Asynthetic-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Change_of_expression_level-Regulatory-Interaction": "wormbase_vocabulary:Change_of_expression_level-Regulatory-Interaction",
+    "bio2rdf:wormbase_vocabulary:Enhancement-Genetic-Interaction": "wormbase_vocabulary:Enhancement-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Complete_unilateral_suppression-Genetic-Interaction": "wormbase_vocabulary:Complete_unilateral_suppression-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Genetic-Interaction": "wormbase_vocabulary:Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Epistasis-Genetic-Interaction": "wormbase_vocabulary:Epistasis-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Oversuppression-Genetic-Interaction": "wormbase_vocabulary:Oversuppression-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Opposing_epistasis-Genetic-Interaction": "wormbase_vocabulary:Opposing_epistasis-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Mutual_enhancement-Genetic-Interaction": "wormbase_vocabulary:Mutual_enhancement-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Partial_suppression-Genetic-Interaction": "wormbase_vocabulary:Partial_suppression-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Mutual_suppression-Genetic-Interaction": "wormbase_vocabulary:Mutual_suppression-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Physical-Interaction": "wormbase_vocabulary:Physical-Interaction",
+    "bio2rdf:wormbase_vocabulary:Partial_unilateral_suppression-Genetic-Interaction": "wormbase_vocabulary:Partial_unilateral_suppression-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Regulatory-Interaction": "wormbase_vocabulary:Regulatory-Interaction",
+    "bio2rdf:wormbase_vocabulary:Suppression-Genetic-Interaction": "wormbase_vocabulary:Suppression-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Synthetic-Genetic-Interaction": "wormbase_vocabulary:Synthetic-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Unilateral_enhancement-Genetic-Interaction": "wormbase_vocabulary:Unilateral_enhancement-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Change_of_localization-Regulatory-Interaction": "wormbase_vocabulary:Change_of_localization-Regulatory-Interaction",
+    "bio2rdf:wormbase_vocabulary:Oversuppression_enhancement-Genetic-Interaction": "wormbase_vocabulary:Oversuppression_enhancement-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Maximal_epistasis-Genetic-Interaction": "wormbase_vocabulary:Maximal_epistasis-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Phenotype_bias-Genetic-Interaction": "wormbase_vocabulary:Phenotype_bias-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Unilateral_suppression-Genetic-Interaction": "wormbase_vocabulary:Unilateral_suppression-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Negative_genetic-Genetic-Interaction": "wormbase_vocabulary:Negative_genetic-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Minimal_epistasis-Genetic-Interaction": "wormbase_vocabulary:Minimal_epistasis-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Complete_suppression-Genetic-Interaction": "wormbase_vocabulary:Complete_suppression-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Positive_genetic-Genetic-Interaction": "wormbase_vocabulary:Positive_genetic-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Complete_mutual_suppression-Genetic-Interaction": "wormbase_vocabulary:Complete_mutual_suppression-Genetic-Interaction",
+    "bio2rdf:wormbase_vocabulary:Gene-Phenotype-Association": "wormbase_vocabulary:Gene-Phenotype-Association",
+    "bio2rdf:wormbase_vocabulary:Negative-Gene-Phenotype-Association": "wormbase_vocabulary:Negative-Gene-Phenotype-Association"
+  }
+}

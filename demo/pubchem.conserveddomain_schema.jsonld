@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "so": "http://purl.obolibrary.org/obo/SO_",
+    "cito": "http://purl.org/spar/cito/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "vocabulary:ConservedDomain",
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "cito:isDiscussedBy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:abstract": {
+          "Literal:xsd:string": 25997
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 25997
+        },
+        "cito:isDiscussedBy": {
+          "Resource": 357844
+        }
+      }
+    },
+    {
+      "@id": "so:0000417",
+      "dcterms:abstract": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "cito:isDiscussedBy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:abstract": {
+          "Literal:xsd:string": 25997
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 25997
+        },
+        "cito:isDiscussedBy": {
+          "Resource": 357844
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:40:06.432362+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.conserveddomain",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/conserveddomain"
+    ],
+    "pattern_count": 10,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "vocabulary:ConservedDomain": "ConservedDomain",
+    "dcterms:abstract": "abstract",
+    "so:0000417": "SO_0000417",
+    "dcterms:title": "title",
+    "cito:isDiscussedBy": "isDiscussedBy"
+  }
+}

@@ -72,7 +72,7 @@ export class DatasetSelector extends HTMLElement {
     return this.loadedSchemas;
   }
 
-  /** Return the configured datasets (id → entry). */
+  /** Return the configured datasets (id -> entry). */
   getDatasets(): Record<string, DatasetEntry> {
     return this.datasets;
   }
@@ -126,7 +126,7 @@ export class DatasetSelector extends HTMLElement {
    */
   private _aboutTooltip(about: Record<string, unknown> | undefined): string {
     if (!about || Object.keys(about).length === 0) return '';
-    // Keys to skip — too verbose or already visible in the UI
+    // Keys to skip - too verbose or already visible in the UI
     const SKIP = new Set(['generated_by', '@context']);
     const items = Object.entries(about)
       .filter(([k]) => !SKIP.has(k))
@@ -418,7 +418,7 @@ export class DatasetSelector extends HTMLElement {
       }
 
       // --- 2. Parse each schema individually to collect subject URIs ---
-      //        Build nodeColorMap (subjectURI → color) and schemaColorMap
+      //        Build nodeColorMap (subjectURI -> color) and schemaColorMap
       const nodeColorMap = new Map<string, string>();
       const schemaColorMap = new Map<string, { name: string; color: string }>();
 
@@ -427,7 +427,7 @@ export class DatasetSelector extends HTMLElement {
           const ds = this.datasets[id];
           const parsed: CanonicalSchema = parseJSONLD(jsonld);
           for (const uri of parsed.subjects) {
-            // First-seen wins — keeps the color stable across re-renders
+            // First-seen wins - keeps the color stable across re-renders
             if (!nodeColorMap.has(uri)) {
               nodeColorMap.set(uri, ds.color);
             }
@@ -444,7 +444,7 @@ export class DatasetSelector extends HTMLElement {
       diagram.setData(merged, { nodeColorMap, schemaColorMap });
 
       const nodeCount = diagram.getNodeList().length;
-      this.setStatus(`Loaded ${this.selected.size} dataset(s) — ${nodeCount} nodes`);
+      this.setStatus(`Loaded ${this.selected.size} dataset(s) - ${nodeCount} nodes`);
 
       this.dispatchEvent(new CustomEvent('schema-loaded', { detail: { schema: diagram.getSchema() } }));
     } catch (err) {

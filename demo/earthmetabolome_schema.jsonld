@@ -1,0 +1,3179 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "npc": "https://w3id.org/emi/npc#",
+    "emi": "https://w3id.org/emi#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "error": "http://org.semanticweb.owlapi/error#",
+    "vann": "http://purl.org/vocab/vann/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "ontology": "https://purl.expasy.org/sparql-examples/ontology#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "org": "http://www.w3.org/ns/org#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "wgs84": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "qudt": "https://qudt.org/schema/qudt/"
+  },
+  "@graph": [
+    {
+      "@id": "skos:Concept",
+      "skos:broader": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:broaderTransitive": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:closeMatch": {
+        "@id": "skos:Concept"
+      },
+      "skos:mappingRelation": {
+        "@id": "skos:Concept"
+      },
+      "skos:narrower": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:narrowerTransitive": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:semanticRelation": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "_counts": {
+        "skos:broader": {
+          "skos:Concept": 786,
+          "npc:Class": 2,
+          "npc:Pathway": 93,
+          "npc:Superclass": 693,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        },
+        "skos:broaderTransitive": {
+          "skos:Concept": 786,
+          "npc:Class": 2,
+          "npc:Pathway": 93,
+          "npc:Superclass": 693,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        },
+        "skos:closeMatch": {
+          "skos:Concept": 6
+        },
+        "skos:mappingRelation": {
+          "skos:Concept": 6
+        },
+        "skos:narrower": {
+          "skos:Concept": 786,
+          "npc:Class": 695,
+          "npc:Superclass": 93,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        },
+        "skos:narrowerTransitive": {
+          "skos:Concept": 786,
+          "npc:Class": 695,
+          "npc:Superclass": 93,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        },
+        "skos:semanticRelation": {
+          "skos:Concept": 1578,
+          "npc:Class": 697,
+          "npc:Pathway": 93,
+          "npc:Superclass": 786,
+          "emi:ChemicalEntity": 1572,
+          "emi:ChemicalTaxon": 1572
+        }
+      }
+    },
+    {
+      "@id": "prov:Activity",
+      "prov:generated": [
+        {
+          "@id": "prov:Entity"
+        },
+        {
+          "@id": "emi:LFpair"
+        },
+        {
+          "@id": "emi:SpectralPair"
+        },
+        {
+          "@id": "emi:SpectrumAnnotation"
+        },
+        {
+          "@id": "emi:StructuralAnnotation"
+        }
+      ],
+      "prov:influenced": [
+        {
+          "@id": "prov:Entity"
+        },
+        {
+          "@id": "emi:LFpair"
+        },
+        {
+          "@id": "emi:SpectralPair"
+        },
+        {
+          "@id": "emi:SpectrumAnnotation"
+        },
+        {
+          "@id": "emi:StructuralAnnotation"
+        }
+      ],
+      "prov:used": {
+        "@id": "prov:Entity"
+      },
+      "prov:wasAssociatedWith": {
+        "@id": "prov:Agent"
+      },
+      "prov:wasInfluencedBy": [
+        {
+          "@id": "prov:Agent"
+        },
+        {
+          "@id": "prov:Entity"
+        }
+      ],
+      "_counts": {
+        "prov:generated": {
+          "prov:Entity": 3965260,
+          "emi:LFpair": 2739136,
+          "emi:SpectralPair": 2739136,
+          "emi:SpectrumAnnotation": 1226124,
+          "emi:StructuralAnnotation": 1226124
+        },
+        "prov:influenced": {
+          "prov:Entity": 3965260,
+          "emi:LFpair": 2739136,
+          "emi:SpectralPair": 2739136,
+          "emi:SpectrumAnnotation": 1226124,
+          "emi:StructuralAnnotation": 1226124
+        },
+        "prov:used": {
+          "prov:Entity": 2745494
+        },
+        "prov:wasAssociatedWith": {
+          "prov:Agent": 6358
+        },
+        "prov:wasInfluencedBy": {
+          "prov:Agent": 6358,
+          "prov:Entity": 2745494
+        }
+      }
+    },
+    {
+      "@id": "prov:Agent",
+      "prov:influenced": {
+        "@id": "prov:Activity"
+      },
+      "_counts": {
+        "prov:influenced": {
+          "prov:Activity": 6358
+        }
+      }
+    },
+    {
+      "@id": "prov:Entity",
+      "prov:influenced": [
+        {
+          "@id": "prov:Activity"
+        },
+        {
+          "@id": "prov:Entity"
+        }
+      ],
+      "prov:wasDerivedFrom": {
+        "@id": "prov:Entity"
+      },
+      "prov:wasGeneratedBy": {
+        "@id": "prov:Activity"
+      },
+      "prov:wasInfluencedBy": [
+        {
+          "@id": "prov:Activity"
+        },
+        {
+          "@id": "prov:Entity"
+        }
+      ],
+      "prov:wasRevisionOf": {
+        "@id": "prov:Entity"
+      },
+      "emi:hasChemicalStructure": [
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalStructure"
+        },
+        {
+          "@id": "emi:InChIKey2D"
+        }
+      ],
+      "emi:hasFirstMember": [
+        {
+          "@id": "emi:LCMSFeature"
+        },
+        {
+          "@id": "emi:MS2Spectrum"
+        }
+      ],
+      "emi:hasPairMember": [
+        {
+          "@id": "emi:LCMSFeature"
+        },
+        {
+          "@id": "emi:MS2Spectrum"
+        }
+      ],
+      "emi:hasSecondMember": [
+        {
+          "@id": "emi:LCMSFeature"
+        },
+        {
+          "@id": "emi:MS2Spectrum"
+        }
+      ],
+      "emi:hasAdduct": {
+        "@type": "xsd:string"
+      },
+      "emi:hasConsistencyScore": {
+        "@type": "xsd:int"
+      },
+      "emi:hasCosine": {
+        "@type": "xsd:double"
+      },
+      "emi:hasCosmicScore": {
+        "@type": "xsd:double"
+      },
+      "emi:hasFinalScore": {
+        "@type": "xsd:double"
+      },
+      "emi:hasMassDifference": {
+        "@type": "xsd:double"
+      },
+      "emi:hasScore": [
+        {
+          "@type": "xsd:double"
+        },
+        {
+          "@type": "xsd:int"
+        }
+      ],
+      "emi:hasSpectralScore": {
+        "@type": "xsd:double"
+      },
+      "emi:hasTaxoScore": {
+        "@type": "xsd:int"
+      },
+      "emi:hasZodiacScore": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "prov:influenced": {
+          "prov:Activity": 2745494,
+          "prov:Entity": 1
+        },
+        "prov:wasDerivedFrom": {
+          "prov:Entity": 1
+        },
+        "prov:wasGeneratedBy": {
+          "prov:Activity": 3965260
+        },
+        "prov:wasInfluencedBy": {
+          "prov:Activity": 3965260,
+          "prov:Entity": 1
+        },
+        "prov:wasRevisionOf": {
+          "prov:Entity": 1
+        },
+        "emi:hasChemicalStructure": {
+          "emi:ChemicalEntity": 1230570,
+          "emi:ChemicalStructure": 1230570,
+          "emi:InChIKey2D": 1230570
+        },
+        "emi:hasFirstMember": {
+          "emi:LCMSFeature": 2739136,
+          "emi:MS2Spectrum": 2739136
+        },
+        "emi:hasPairMember": {
+          "emi:LCMSFeature": 5478272,
+          "emi:MS2Spectrum": 5478272
+        },
+        "emi:hasSecondMember": {
+          "emi:LCMSFeature": 2739136,
+          "emi:MS2Spectrum": 2739136
+        },
+        "emi:hasAdduct": {
+          "Literal:xsd:string": 1226739
+        },
+        "emi:hasConsistencyScore": {
+          "Literal:xsd:int": 426855
+        },
+        "emi:hasCosine": {
+          "Literal:xsd:double": 2739136
+        },
+        "emi:hasCosmicScore": {
+          "Literal:xsd:double": 799269
+        },
+        "emi:hasFinalScore": {
+          "Literal:xsd:double": 426408
+        },
+        "emi:hasMassDifference": {
+          "Literal:xsd:double": 2739136
+        },
+        "emi:hasScore": {
+          "Literal:xsd:double": 3248025,
+          "Literal:xsd:int": 802186
+        },
+        "emi:hasSpectralScore": {
+          "Literal:xsd:double": 426855
+        },
+        "emi:hasTaxoScore": {
+          "Literal:xsd:int": 426855
+        },
+        "emi:hasZodiacScore": {
+          "Literal:xsd:double": 799269
+        }
+      }
+    },
+    {
+      "@id": "sosa:Observation",
+      "sosa:hasFeatureOfInterest": [
+        {
+          "@id": "sosa:Sample"
+        },
+        {
+          "@id": "emi:Blank"
+        },
+        {
+          "@id": "emi:ExtractSample"
+        },
+        {
+          "@id": "emi:QCSample"
+        }
+      ],
+      "sosa:hasResult": {
+        "@id": "emi:LCMSFeatureSet"
+      },
+      "emi:hasLCMSFeatureSet": {
+        "@id": "emi:LCMSFeatureSet"
+      },
+      "emi:hasGNPSLCMSLink": {
+        "@type": "xsd:anyURI"
+      },
+      "foaf:depiction": {
+        "@id": "rdfs:Resource"
+      },
+      "emi:hasMassiveDOI": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sosa:hasFeatureOfInterest": {
+          "sosa:Sample": 3840,
+          "emi:Blank": 320,
+          "emi:ExtractSample": 3200,
+          "emi:QCSample": 320
+        },
+        "sosa:hasResult": {
+          "emi:LCMSFeatureSet": 3200
+        },
+        "emi:hasLCMSFeatureSet": {
+          "emi:LCMSFeatureSet": 3200
+        },
+        "emi:hasGNPSLCMSLink": {
+          "Literal:xsd:anyURI": 3200
+        },
+        "foaf:depiction": {
+          "Resource": 3200
+        },
+        "emi:hasMassiveDOI": {
+          "Resource": 3840
+        }
+      }
+    },
+    {
+      "@id": "sosa:Sample",
+      "sosa:hasSample": [
+        {
+          "@id": "sosa:Sample"
+        },
+        {
+          "@id": "emi:ExtractSample"
+        }
+      ],
+      "sosa:isFeatureOfInterestOf": [
+        {
+          "@id": "sosa:Observation"
+        },
+        {
+          "@id": "emi:Analysis"
+        },
+        {
+          "@id": "emi:LCMSAnalysis"
+        },
+        {
+          "@id": "emi:LCMSAnalysisNeg"
+        },
+        {
+          "@id": "emi:LCMSAnalysisPos"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "sosa:isSampleOf": [
+        {
+          "@id": "sosa:Sample"
+        },
+        {
+          "@id": "emi:Organism"
+        },
+        {
+          "@id": "emi:RawMaterial"
+        },
+        {
+          "@id": "emi:System"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "emi:hasAnatomicalEntity": [
+        {
+          "@id": "emi:AnatomicalEntity"
+        },
+        {
+          "@id": "emi:BiologicalSex"
+        },
+        {
+          "@id": "emi:DevelopmentalStage"
+        }
+      ],
+      "emi:hasDevelopmentalStage": [
+        {
+          "@id": "emi:AnatomicalEntity"
+        },
+        {
+          "@id": "emi:BiologicalSex"
+        },
+        {
+          "@id": "emi:DevelopmentalStage"
+        },
+        {
+          "@id": "emi:InteractionType"
+        }
+      ],
+      "emi:inTaxon": [
+        {
+          "@id": "emi:Taxon"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:isPartOf": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sosa:hasSample": {
+          "sosa:Sample": 1600,
+          "emi:ExtractSample": 1600
+        },
+        "sosa:isFeatureOfInterestOf": {
+          "sosa:Observation": 3840,
+          "emi:Analysis": 3840,
+          "emi:LCMSAnalysis": 3840,
+          "emi:LCMSAnalysisNeg": 1920,
+          "emi:LCMSAnalysisPos": 1920,
+          "Resource": 1198616
+        },
+        "sosa:isSampleOf": {
+          "sosa:Sample": 1600,
+          "emi:Organism": 1569,
+          "emi:RawMaterial": 1600,
+          "emi:System": 1569,
+          "Resource": 26957762
+        },
+        "emi:hasAnatomicalEntity": {
+          "emi:AnatomicalEntity": 406086,
+          "emi:BiologicalSex": 4,
+          "emi:DevelopmentalStage": 327697
+        },
+        "emi:hasDevelopmentalStage": {
+          "emi:AnatomicalEntity": 172967,
+          "emi:BiologicalSex": 23173,
+          "emi:DevelopmentalStage": 200672,
+          "emi:InteractionType": 1
+        },
+        "emi:inTaxon": {
+          "emi:Taxon": 289027,
+          "Resource": 25470119
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3520
+        },
+        "dcterms:isPartOf": {
+          "Resource": 1198616
+        }
+      }
+    },
+    {
+      "@id": "error:Error1",
+      "vann:example": {
+        "@type": "xsd:string"
+      },
+      "emi:hasIonization": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "vann:example": {
+          "Literal:xsd:string": 2
+        },
+        "emi:hasIonization": {
+          "Literal:xsd:string": 2
+        }
+      }
+    },
+    {
+      "@id": "dcam:VocabularyEncodingScheme",
+      "dcterms:date": {
+        "@type": "xsd:date"
+      },
+      "dcterms:issued": {
+        "@type": "xsd:date"
+      },
+      "_counts": {
+        "dcterms:date": {
+          "Literal:xsd:date": 9
+        },
+        "dcterms:issued": {
+          "Literal:xsd:date": 9
+        }
+      }
+    },
+    {
+      "@id": "dcterms:AgentClass",
+      "dcterms:date": {
+        "@type": "xsd:date"
+      },
+      "dcterms:issued": {
+        "@type": "xsd:date"
+      },
+      "_counts": {
+        "dcterms:date": {
+          "Literal:xsd:date": 1
+        },
+        "dcterms:issued": {
+          "Literal:xsd:date": 1
+        }
+      }
+    },
+    {
+      "@id": "sh:SPARQLExecutable",
+      "sh:select": {
+        "@type": "xsd:string"
+      },
+      "ontology:file_name": {
+        "@type": "xsd:string"
+      },
+      "ontology:file_path": {
+        "@type": "xsd:string"
+      },
+      "ontology:project": {
+        "@type": "xsd:string"
+      },
+      "ontology:federatesWith": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sh:select": {
+          "Literal:xsd:string": 22
+        },
+        "ontology:file_name": {
+          "Literal:xsd:string": 22
+        },
+        "ontology:file_path": {
+          "Literal:xsd:string": 22
+        },
+        "ontology:project": {
+          "Literal:xsd:string": 22
+        },
+        "ontology:federatesWith": {
+          "Resource": 17
+        }
+      }
+    },
+    {
+      "@id": "sh:SPARQLSelectExecutable",
+      "sh:select": {
+        "@type": "xsd:string"
+      },
+      "ontology:file_name": {
+        "@type": "xsd:string"
+      },
+      "ontology:file_path": {
+        "@type": "xsd:string"
+      },
+      "ontology:project": {
+        "@type": "xsd:string"
+      },
+      "ontology:federatesWith": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sh:select": {
+          "Literal:xsd:string": 22
+        },
+        "ontology:file_name": {
+          "Literal:xsd:string": 22
+        },
+        "ontology:file_path": {
+          "Literal:xsd:string": 22
+        },
+        "ontology:project": {
+          "Literal:xsd:string": 22
+        },
+        "ontology:federatesWith": {
+          "Resource": 17
+        }
+      }
+    },
+    {
+      "@id": "owl:Ontology",
+      "owl:imports": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "owl:imports": {
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "foaf:Organization",
+      "foaf:homepage": {
+        "@id": "foaf:Organization"
+      },
+      "foaf:name": {
+        "@type": "rdf:langString"
+      },
+      "_counts": {
+        "foaf:homepage": {
+          "foaf:Organization": 4
+        },
+        "foaf:name": {
+          "Literal:rdf:langString": 4
+        }
+      }
+    },
+    {
+      "@id": "foaf:Person",
+      "org:memberOf": {
+        "@id": "foaf:Organization"
+      },
+      "foaf:name": {
+        "@type": "rdf:langString"
+      },
+      "_counts": {
+        "org:memberOf": {
+          "foaf:Organization": 8
+        },
+        "foaf:name": {
+          "Literal:rdf:langString": 8
+        }
+      }
+    },
+    {
+      "@id": "npc:Class",
+      "skos:broader": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:broaderTransitive": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:narrower": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:narrowerTransitive": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:semanticRelation": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "_counts": {
+        "skos:broader": {
+          "skos:Concept": 695,
+          "npc:Class": 2,
+          "npc:Pathway": 2,
+          "npc:Superclass": 693,
+          "emi:ChemicalEntity": 695,
+          "emi:ChemicalTaxon": 695
+        },
+        "skos:broaderTransitive": {
+          "skos:Concept": 695,
+          "npc:Class": 2,
+          "npc:Pathway": 2,
+          "npc:Superclass": 693,
+          "emi:ChemicalEntity": 695,
+          "emi:ChemicalTaxon": 695
+        },
+        "skos:narrower": {
+          "skos:Concept": 2,
+          "npc:Class": 2,
+          "emi:ChemicalEntity": 2,
+          "emi:ChemicalTaxon": 2
+        },
+        "skos:narrowerTransitive": {
+          "skos:Concept": 2,
+          "npc:Class": 2,
+          "emi:ChemicalEntity": 2,
+          "emi:ChemicalTaxon": 2
+        },
+        "skos:semanticRelation": {
+          "skos:Concept": 697,
+          "npc:Class": 4,
+          "npc:Pathway": 2,
+          "npc:Superclass": 693,
+          "emi:ChemicalEntity": 697,
+          "emi:ChemicalTaxon": 697
+        }
+      }
+    },
+    {
+      "@id": "npc:Pathway",
+      "skos:narrower": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:narrowerTransitive": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:semanticRelation": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "_counts": {
+        "skos:narrower": {
+          "skos:Concept": 93,
+          "npc:Class": 2,
+          "npc:Superclass": 93,
+          "emi:ChemicalEntity": 93,
+          "emi:ChemicalTaxon": 93
+        },
+        "skos:narrowerTransitive": {
+          "skos:Concept": 93,
+          "npc:Class": 2,
+          "npc:Superclass": 93,
+          "emi:ChemicalEntity": 93,
+          "emi:ChemicalTaxon": 93
+        },
+        "skos:semanticRelation": {
+          "skos:Concept": 93,
+          "npc:Class": 2,
+          "npc:Superclass": 93,
+          "emi:ChemicalEntity": 93,
+          "emi:ChemicalTaxon": 93
+        }
+      }
+    },
+    {
+      "@id": "npc:Superclass",
+      "skos:broader": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:broaderTransitive": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:narrower": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:narrowerTransitive": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:semanticRelation": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "_counts": {
+        "skos:broader": {
+          "skos:Concept": 93,
+          "npc:Pathway": 93,
+          "emi:ChemicalEntity": 93,
+          "emi:ChemicalTaxon": 93
+        },
+        "skos:broaderTransitive": {
+          "skos:Concept": 93,
+          "npc:Pathway": 93,
+          "emi:ChemicalEntity": 93,
+          "emi:ChemicalTaxon": 93
+        },
+        "skos:narrower": {
+          "skos:Concept": 693,
+          "npc:Class": 693,
+          "emi:ChemicalEntity": 693,
+          "emi:ChemicalTaxon": 693
+        },
+        "skos:narrowerTransitive": {
+          "skos:Concept": 693,
+          "npc:Class": 693,
+          "emi:ChemicalEntity": 693,
+          "emi:ChemicalTaxon": 693
+        },
+        "skos:semanticRelation": {
+          "skos:Concept": 786,
+          "npc:Class": 693,
+          "npc:Pathway": 93,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        }
+      }
+    },
+    {
+      "@id": "emi:Analysis",
+      "sosa:hasFeatureOfInterest": [
+        {
+          "@id": "sosa:Sample"
+        },
+        {
+          "@id": "emi:Blank"
+        },
+        {
+          "@id": "emi:ExtractSample"
+        },
+        {
+          "@id": "emi:QCSample"
+        }
+      ],
+      "sosa:hasResult": {
+        "@id": "emi:LCMSFeatureSet"
+      },
+      "emi:hasLCMSFeatureSet": {
+        "@id": "emi:LCMSFeatureSet"
+      },
+      "emi:hasGNPSLCMSLink": {
+        "@type": "xsd:anyURI"
+      },
+      "foaf:depiction": {
+        "@id": "rdfs:Resource"
+      },
+      "emi:hasMassiveDOI": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sosa:hasFeatureOfInterest": {
+          "sosa:Sample": 3840,
+          "emi:Blank": 320,
+          "emi:ExtractSample": 3200,
+          "emi:QCSample": 320
+        },
+        "sosa:hasResult": {
+          "emi:LCMSFeatureSet": 3200
+        },
+        "emi:hasLCMSFeatureSet": {
+          "emi:LCMSFeatureSet": 3200
+        },
+        "emi:hasGNPSLCMSLink": {
+          "Literal:xsd:anyURI": 3200
+        },
+        "foaf:depiction": {
+          "Resource": 3200
+        },
+        "emi:hasMassiveDOI": {
+          "Resource": 3840
+        }
+      }
+    },
+    {
+      "@id": "emi:Blank",
+      "sosa:isFeatureOfInterestOf": [
+        {
+          "@id": "sosa:Observation"
+        },
+        {
+          "@id": "emi:Analysis"
+        },
+        {
+          "@id": "emi:LCMSAnalysis"
+        },
+        {
+          "@id": "emi:LCMSAnalysisNeg"
+        },
+        {
+          "@id": "emi:LCMSAnalysisPos"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sosa:isFeatureOfInterestOf": {
+          "sosa:Observation": 320,
+          "emi:Analysis": 320,
+          "emi:LCMSAnalysis": 320,
+          "emi:LCMSAnalysisNeg": 160,
+          "emi:LCMSAnalysisPos": 160
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 160
+        }
+      }
+    },
+    {
+      "@id": "emi:Chemical",
+      "emi:hasInChIKey": [
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalStructure"
+        },
+        {
+          "@id": "emi:InChIKey"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "emi:hasInChIKey": {
+          "emi:ChemicalEntity": 175369,
+          "emi:ChemicalStructure": 175369,
+          "emi:InChIKey": 175369
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 175330
+        }
+      }
+    },
+    {
+      "@id": "emi:Taxon",
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "skos:inScheme": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1760
+        },
+        "skos:exactMatch": {
+          "Resource": 4673
+        },
+        "skos:inScheme": {
+          "Resource": 1015
+        }
+      }
+    },
+    {
+      "@id": "emi:ChemicalEntity",
+      "skos:broader": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:broaderTransitive": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:narrower": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:narrowerTransitive": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:semanticRelation": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "emi:hasClass": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "emi:hasInChIKey": [
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalStructure"
+        },
+        {
+          "@id": "emi:InChIKey"
+        }
+      ],
+      "emi:hasInChIKey2D": [
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalStructure"
+        },
+        {
+          "@id": "emi:InChIKey2D"
+        }
+      ],
+      "emi:isClassifiedWith": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "emi:isInChIKey2DOf": [
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalStructure"
+        },
+        {
+          "@id": "emi:InChIKey"
+        }
+      ],
+      "emi:isInChIKeyOf": [
+        {
+          "@id": "emi:Chemical"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:WDChemicalStructure"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "emi:hasSMILES": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "skos:broader": {
+          "skos:Concept": 786,
+          "npc:Class": 2,
+          "npc:Pathway": 93,
+          "npc:Superclass": 693,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        },
+        "skos:broaderTransitive": {
+          "skos:Concept": 786,
+          "npc:Class": 2,
+          "npc:Pathway": 93,
+          "npc:Superclass": 693,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        },
+        "skos:narrower": {
+          "skos:Concept": 786,
+          "npc:Class": 695,
+          "npc:Superclass": 93,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        },
+        "skos:narrowerTransitive": {
+          "skos:Concept": 786,
+          "npc:Class": 695,
+          "npc:Superclass": 93,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        },
+        "skos:semanticRelation": {
+          "skos:Concept": 1572,
+          "npc:Class": 697,
+          "npc:Pathway": 93,
+          "npc:Superclass": 786,
+          "emi:ChemicalEntity": 1572,
+          "emi:ChemicalTaxon": 1572
+        },
+        "emi:hasClass": {
+          "skos:Concept": 135751,
+          "npc:Class": 135751,
+          "npc:Superclass": 71,
+          "emi:ChemicalEntity": 135751,
+          "emi:ChemicalTaxon": 135751
+        },
+        "emi:hasInChIKey": {
+          "emi:ChemicalEntity": 175369,
+          "emi:ChemicalStructure": 175369,
+          "emi:InChIKey": 175369
+        },
+        "emi:hasInChIKey2D": {
+          "emi:ChemicalEntity": 223118,
+          "emi:ChemicalStructure": 223118,
+          "emi:InChIKey2D": 223118
+        },
+        "emi:isClassifiedWith": {
+          "skos:Concept": 135751,
+          "npc:Class": 135751,
+          "npc:Superclass": 71,
+          "emi:ChemicalEntity": 135751,
+          "emi:ChemicalTaxon": 135751
+        },
+        "emi:isInChIKey2DOf": {
+          "emi:ChemicalEntity": 223118,
+          "emi:ChemicalStructure": 223118,
+          "emi:InChIKey": 223118
+        },
+        "emi:isInChIKeyOf": {
+          "emi:Chemical": 175369,
+          "emi:ChemicalEntity": 175369,
+          "emi:WDChemicalStructure": 175369
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 175330
+        },
+        "emi:hasSMILES": {
+          "Literal:xsd:string": 371390
+        }
+      }
+    },
+    {
+      "@id": "emi:ChemicalStructure",
+      "emi:hasClass": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "emi:hasInChIKey2D": [
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalStructure"
+        },
+        {
+          "@id": "emi:InChIKey2D"
+        }
+      ],
+      "emi:isClassifiedWith": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "emi:isInChIKey2DOf": [
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalStructure"
+        },
+        {
+          "@id": "emi:InChIKey"
+        }
+      ],
+      "emi:isInChIKeyOf": [
+        {
+          "@id": "emi:Chemical"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:WDChemicalStructure"
+        }
+      ],
+      "emi:hasSMILES": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "emi:hasClass": {
+          "skos:Concept": 135751,
+          "npc:Class": 135751,
+          "npc:Superclass": 71,
+          "emi:ChemicalEntity": 135751,
+          "emi:ChemicalTaxon": 135751
+        },
+        "emi:hasInChIKey2D": {
+          "emi:ChemicalEntity": 223118,
+          "emi:ChemicalStructure": 223118,
+          "emi:InChIKey2D": 223118
+        },
+        "emi:isClassifiedWith": {
+          "skos:Concept": 135751,
+          "npc:Class": 135751,
+          "npc:Superclass": 71,
+          "emi:ChemicalEntity": 135751,
+          "emi:ChemicalTaxon": 135751
+        },
+        "emi:isInChIKey2DOf": {
+          "emi:ChemicalEntity": 223118,
+          "emi:ChemicalStructure": 223118,
+          "emi:InChIKey": 223118
+        },
+        "emi:isInChIKeyOf": {
+          "emi:Chemical": 175369,
+          "emi:ChemicalEntity": 175369,
+          "emi:WDChemicalStructure": 175369
+        },
+        "emi:hasSMILES": {
+          "Literal:xsd:string": 371390
+        }
+      }
+    },
+    {
+      "@id": "emi:ChemicalTaxon",
+      "skos:broader": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:broaderTransitive": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:narrower": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:narrowerTransitive": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "skos:semanticRelation": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Pathway"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "_counts": {
+        "skos:broader": {
+          "skos:Concept": 786,
+          "npc:Class": 2,
+          "npc:Pathway": 93,
+          "npc:Superclass": 693,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        },
+        "skos:broaderTransitive": {
+          "skos:Concept": 786,
+          "npc:Class": 2,
+          "npc:Pathway": 93,
+          "npc:Superclass": 693,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        },
+        "skos:narrower": {
+          "skos:Concept": 786,
+          "npc:Class": 695,
+          "npc:Superclass": 93,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        },
+        "skos:narrowerTransitive": {
+          "skos:Concept": 786,
+          "npc:Class": 695,
+          "npc:Superclass": 93,
+          "emi:ChemicalEntity": 786,
+          "emi:ChemicalTaxon": 786
+        },
+        "skos:semanticRelation": {
+          "skos:Concept": 1572,
+          "npc:Class": 697,
+          "npc:Pathway": 93,
+          "npc:Superclass": 786,
+          "emi:ChemicalEntity": 1572,
+          "emi:ChemicalTaxon": 1572
+        }
+      }
+    },
+    {
+      "@id": "emi:ChemicalTaxonAnnotation",
+      "emi:hasClass": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "emi:isClassifiedWith": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "emi:hasClassProbability": {
+        "@type": "xsd:double"
+      },
+      "emi:hasPathwayProbability": {
+        "@type": "xsd:double"
+      },
+      "emi:hasProbability": {
+        "@type": "xsd:double"
+      },
+      "emi:hasSuperClassProbability": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "emi:hasClass": {
+          "skos:Concept": 292094,
+          "npc:Class": 292094,
+          "npc:Superclass": 3,
+          "emi:ChemicalEntity": 292094,
+          "emi:ChemicalTaxon": 292094
+        },
+        "emi:isClassifiedWith": {
+          "skos:Concept": 292094,
+          "npc:Class": 292094,
+          "npc:Superclass": 3,
+          "emi:ChemicalEntity": 292094,
+          "emi:ChemicalTaxon": 292094
+        },
+        "emi:hasClassProbability": {
+          "Literal:xsd:double": 292094
+        },
+        "emi:hasPathwayProbability": {
+          "Literal:xsd:double": 292094
+        },
+        "emi:hasProbability": {
+          "Literal:xsd:double": 876282
+        },
+        "emi:hasSuperClassProbability": {
+          "Literal:xsd:double": 292094
+        }
+      }
+    },
+    {
+      "@id": "emi:ExtractSample",
+      "sosa:isFeatureOfInterestOf": [
+        {
+          "@id": "sosa:Observation"
+        },
+        {
+          "@id": "emi:Analysis"
+        },
+        {
+          "@id": "emi:LCMSAnalysis"
+        },
+        {
+          "@id": "emi:LCMSAnalysisNeg"
+        },
+        {
+          "@id": "emi:LCMSAnalysisPos"
+        }
+      ],
+      "sosa:isSampleOf": [
+        {
+          "@id": "sosa:Sample"
+        },
+        {
+          "@id": "emi:RawMaterial"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sosa:isFeatureOfInterestOf": {
+          "sosa:Observation": 3200,
+          "emi:Analysis": 3200,
+          "emi:LCMSAnalysis": 3200,
+          "emi:LCMSAnalysisNeg": 1600,
+          "emi:LCMSAnalysisPos": 1600
+        },
+        "sosa:isSampleOf": {
+          "sosa:Sample": 1600,
+          "emi:RawMaterial": 1600
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1600
+        }
+      }
+    },
+    {
+      "@id": "emi:InChIKey",
+      "emi:hasInChIKey2D": [
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalStructure"
+        },
+        {
+          "@id": "emi:InChIKey2D"
+        }
+      ],
+      "emi:isInChIKeyOf": [
+        {
+          "@id": "emi:Chemical"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:WDChemicalStructure"
+        }
+      ],
+      "emi:hasSMILES": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "emi:hasInChIKey2D": {
+          "emi:ChemicalEntity": 223118,
+          "emi:ChemicalStructure": 223118,
+          "emi:InChIKey2D": 223118
+        },
+        "emi:isInChIKeyOf": {
+          "emi:Chemical": 175369,
+          "emi:ChemicalEntity": 175369,
+          "emi:WDChemicalStructure": 175369
+        },
+        "emi:hasSMILES": {
+          "Literal:xsd:string": 214910
+        }
+      }
+    },
+    {
+      "@id": "emi:InChIKey2D",
+      "emi:hasClass": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "emi:isClassifiedWith": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "emi:isInChIKey2DOf": [
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalStructure"
+        },
+        {
+          "@id": "emi:InChIKey"
+        }
+      ],
+      "emi:hasSMILES": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "emi:hasClass": {
+          "skos:Concept": 135751,
+          "npc:Class": 135751,
+          "npc:Superclass": 71,
+          "emi:ChemicalEntity": 135751,
+          "emi:ChemicalTaxon": 135751
+        },
+        "emi:isClassifiedWith": {
+          "skos:Concept": 135751,
+          "npc:Class": 135751,
+          "npc:Superclass": 71,
+          "emi:ChemicalEntity": 135751,
+          "emi:ChemicalTaxon": 135751
+        },
+        "emi:isInChIKey2DOf": {
+          "emi:ChemicalEntity": 223118,
+          "emi:ChemicalStructure": 223118,
+          "emi:InChIKey": 223118
+        },
+        "emi:hasSMILES": {
+          "Literal:xsd:string": 156480
+        }
+      }
+    },
+    {
+      "@id": "emi:Interaction",
+      "emi:hasSource": {
+        "@id": "sosa:Sample"
+      },
+      "emi:hasTarget": {
+        "@id": "sosa:Sample"
+      },
+      "emi:isClassifiedWith": [
+        {
+          "@id": "emi:DevelopmentalStage"
+        },
+        {
+          "@id": "emi:InteractionType"
+        }
+      ],
+      "dcterms:bibliographicCitation": {
+        "@type": "xsd:string"
+      },
+      "wgs84:lat": {
+        "@type": "xsd:string"
+      },
+      "wgs84:long": {
+        "@type": "xsd:string"
+      },
+      "prov:atLocation": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "emi:hasSource": {
+          "sosa:Sample": 12879573
+        },
+        "emi:hasTarget": {
+          "sosa:Sample": 12879573
+        },
+        "emi:isClassifiedWith": {
+          "emi:DevelopmentalStage": 2,
+          "emi:InteractionType": 12879573
+        },
+        "dcterms:bibliographicCitation": {
+          "Literal:xsd:string": 819487
+        },
+        "wgs84:lat": {
+          "Literal:xsd:string": 4284501
+        },
+        "wgs84:long": {
+          "Literal:xsd:string": 4284501
+        },
+        "prov:atLocation": {
+          "Literal:xsd:string": 8403520
+        }
+      }
+    },
+    {
+      "@id": "emi:LCMSAnalysis",
+      "sosa:hasFeatureOfInterest": [
+        {
+          "@id": "sosa:Sample"
+        },
+        {
+          "@id": "emi:Blank"
+        },
+        {
+          "@id": "emi:ExtractSample"
+        },
+        {
+          "@id": "emi:QCSample"
+        }
+      ],
+      "sosa:hasResult": {
+        "@id": "emi:LCMSFeatureSet"
+      },
+      "emi:hasLCMSFeatureSet": {
+        "@id": "emi:LCMSFeatureSet"
+      },
+      "emi:hasGNPSLCMSLink": {
+        "@type": "xsd:anyURI"
+      },
+      "foaf:depiction": {
+        "@id": "rdfs:Resource"
+      },
+      "emi:hasMassiveDOI": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sosa:hasFeatureOfInterest": {
+          "sosa:Sample": 3840,
+          "emi:Blank": 320,
+          "emi:ExtractSample": 3200,
+          "emi:QCSample": 320
+        },
+        "sosa:hasResult": {
+          "emi:LCMSFeatureSet": 3200
+        },
+        "emi:hasLCMSFeatureSet": {
+          "emi:LCMSFeatureSet": 3200
+        },
+        "emi:hasGNPSLCMSLink": {
+          "Literal:xsd:anyURI": 3200
+        },
+        "foaf:depiction": {
+          "Resource": 3200
+        },
+        "emi:hasMassiveDOI": {
+          "Resource": 3840
+        }
+      }
+    },
+    {
+      "@id": "emi:LCMSAnalysisNeg",
+      "sosa:hasFeatureOfInterest": [
+        {
+          "@id": "sosa:Sample"
+        },
+        {
+          "@id": "emi:Blank"
+        },
+        {
+          "@id": "emi:ExtractSample"
+        },
+        {
+          "@id": "emi:QCSample"
+        }
+      ],
+      "sosa:hasResult": {
+        "@id": "emi:LCMSFeatureSet"
+      },
+      "emi:hasLCMSFeatureSet": {
+        "@id": "emi:LCMSFeatureSet"
+      },
+      "emi:hasGNPSLCMSLink": {
+        "@type": "xsd:anyURI"
+      },
+      "foaf:depiction": {
+        "@id": "rdfs:Resource"
+      },
+      "emi:hasMassiveDOI": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sosa:hasFeatureOfInterest": {
+          "sosa:Sample": 1920,
+          "emi:Blank": 160,
+          "emi:ExtractSample": 1600,
+          "emi:QCSample": 160
+        },
+        "sosa:hasResult": {
+          "emi:LCMSFeatureSet": 1600
+        },
+        "emi:hasLCMSFeatureSet": {
+          "emi:LCMSFeatureSet": 1600
+        },
+        "emi:hasGNPSLCMSLink": {
+          "Literal:xsd:anyURI": 1600
+        },
+        "foaf:depiction": {
+          "Resource": 1600
+        },
+        "emi:hasMassiveDOI": {
+          "Resource": 1920
+        }
+      }
+    },
+    {
+      "@id": "emi:LCMSAnalysisPos",
+      "sosa:hasFeatureOfInterest": [
+        {
+          "@id": "sosa:Sample"
+        },
+        {
+          "@id": "emi:Blank"
+        },
+        {
+          "@id": "emi:ExtractSample"
+        },
+        {
+          "@id": "emi:QCSample"
+        }
+      ],
+      "sosa:hasResult": {
+        "@id": "emi:LCMSFeatureSet"
+      },
+      "emi:hasLCMSFeatureSet": {
+        "@id": "emi:LCMSFeatureSet"
+      },
+      "emi:hasGNPSLCMSLink": {
+        "@type": "xsd:anyURI"
+      },
+      "foaf:depiction": {
+        "@id": "rdfs:Resource"
+      },
+      "emi:hasMassiveDOI": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sosa:hasFeatureOfInterest": {
+          "sosa:Sample": 1920,
+          "emi:Blank": 160,
+          "emi:ExtractSample": 1600,
+          "emi:QCSample": 160
+        },
+        "sosa:hasResult": {
+          "emi:LCMSFeatureSet": 1600
+        },
+        "emi:hasLCMSFeatureSet": {
+          "emi:LCMSFeatureSet": 1600
+        },
+        "emi:hasGNPSLCMSLink": {
+          "Literal:xsd:anyURI": 1600
+        },
+        "foaf:depiction": {
+          "Resource": 1600
+        },
+        "emi:hasMassiveDOI": {
+          "Resource": 1920
+        }
+      }
+    },
+    {
+      "@id": "emi:LCMSFeature",
+      "emi:hasAnnotation": [
+        {
+          "@id": "prov:Entity"
+        },
+        {
+          "@id": "emi:ChemicalTaxonAnnotation"
+        },
+        {
+          "@id": "emi:SpectrumAnnotation"
+        },
+        {
+          "@id": "emi:StructuralAnnotation"
+        }
+      ],
+      "emi:hasSpec2VecDoc": {
+        "@id": "emi:Spec2VecDoc"
+      },
+      "emi:hasFeatureArea": {
+        "@type": "xsd:double"
+      },
+      "emi:hasParentMass": {
+        "@type": "xsd:double"
+      },
+      "emi:hasRawSpectrum": {
+        "@type": "xsd:string"
+      },
+      "emi:hasRelativeFeatureArea": {
+        "@type": "xsd:double"
+      },
+      "emi:hasRetentionTime": {
+        "@type": "xsd:double"
+      },
+      "emi:hasRowId": {
+        "@type": "xsd:int"
+      },
+      "emi:hasUSI": {
+        "@type": "xsd:string"
+      },
+      "foaf:depiction": {
+        "@id": "rdfs:Resource"
+      },
+      "emi:hasFBMNComponent": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "emi:hasAnnotation": {
+          "prov:Entity": 1226124,
+          "emi:ChemicalTaxonAnnotation": 292094,
+          "emi:SpectrumAnnotation": 1518218,
+          "emi:StructuralAnnotation": 1226124
+        },
+        "emi:hasSpec2VecDoc": {
+          "emi:Spec2VecDoc": 3833
+        },
+        "emi:hasFeatureArea": {
+          "Literal:xsd:double": 1081098
+        },
+        "emi:hasParentMass": {
+          "Literal:xsd:double": 1081098
+        },
+        "emi:hasRawSpectrum": {
+          "Literal:xsd:string": 3833
+        },
+        "emi:hasRelativeFeatureArea": {
+          "Literal:xsd:double": 1081098
+        },
+        "emi:hasRetentionTime": {
+          "Literal:xsd:double": 1081098
+        },
+        "emi:hasRowId": {
+          "Literal:xsd:int": 1081098
+        },
+        "emi:hasUSI": {
+          "Literal:xsd:string": 1081098
+        },
+        "foaf:depiction": {
+          "Resource": 1081098
+        },
+        "emi:hasFBMNComponent": {
+          "Resource": 903411
+        }
+      }
+    },
+    {
+      "@id": "emi:LCMSFeatureSet",
+      "sosa:isResultOf": [
+        {
+          "@id": "sosa:Observation"
+        },
+        {
+          "@id": "emi:Analysis"
+        },
+        {
+          "@id": "emi:LCMSAnalysis"
+        },
+        {
+          "@id": "emi:LCMSAnalysisNeg"
+        },
+        {
+          "@id": "emi:LCMSAnalysisPos"
+        }
+      ],
+      "emi:hasLCMSFeature": [
+        {
+          "@id": "emi:LCMSFeature"
+        },
+        {
+          "@id": "emi:MS2Spectrum"
+        }
+      ],
+      "emi:hasSpectrum": [
+        {
+          "@id": "emi:LCMSFeature"
+        },
+        {
+          "@id": "emi:MS2Spectrum"
+        }
+      ],
+      "_counts": {
+        "sosa:isResultOf": {
+          "sosa:Observation": 3200,
+          "emi:Analysis": 3200,
+          "emi:LCMSAnalysis": 3200,
+          "emi:LCMSAnalysisNeg": 1600,
+          "emi:LCMSAnalysisPos": 1600
+        },
+        "emi:hasLCMSFeature": {
+          "emi:LCMSFeature": 1081098,
+          "emi:MS2Spectrum": 1081098
+        },
+        "emi:hasSpectrum": {
+          "emi:LCMSFeature": 1081098,
+          "emi:MS2Spectrum": 1081098
+        }
+      }
+    },
+    {
+      "@id": "emi:LFpair",
+      "prov:wasGeneratedBy": {
+        "@id": "prov:Activity"
+      },
+      "prov:wasInfluencedBy": {
+        "@id": "prov:Activity"
+      },
+      "emi:hasFirstMember": [
+        {
+          "@id": "emi:LCMSFeature"
+        },
+        {
+          "@id": "emi:MS2Spectrum"
+        }
+      ],
+      "emi:hasPairMember": [
+        {
+          "@id": "emi:LCMSFeature"
+        },
+        {
+          "@id": "emi:MS2Spectrum"
+        }
+      ],
+      "emi:hasSecondMember": [
+        {
+          "@id": "emi:LCMSFeature"
+        },
+        {
+          "@id": "emi:MS2Spectrum"
+        }
+      ],
+      "emi:hasCosine": {
+        "@type": "xsd:double"
+      },
+      "emi:hasMassDifference": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "prov:wasGeneratedBy": {
+          "prov:Activity": 2739136
+        },
+        "prov:wasInfluencedBy": {
+          "prov:Activity": 2739136
+        },
+        "emi:hasFirstMember": {
+          "emi:LCMSFeature": 2739136,
+          "emi:MS2Spectrum": 2739136
+        },
+        "emi:hasPairMember": {
+          "emi:LCMSFeature": 5478272,
+          "emi:MS2Spectrum": 5478272
+        },
+        "emi:hasSecondMember": {
+          "emi:LCMSFeature": 2739136,
+          "emi:MS2Spectrum": 2739136
+        },
+        "emi:hasCosine": {
+          "Literal:xsd:double": 2739136
+        },
+        "emi:hasMassDifference": {
+          "Literal:xsd:double": 2739136
+        }
+      }
+    },
+    {
+      "@id": "emi:MS2Spectrum",
+      "emi:hasAnnotation": [
+        {
+          "@id": "prov:Entity"
+        },
+        {
+          "@id": "emi:ChemicalTaxonAnnotation"
+        },
+        {
+          "@id": "emi:SpectrumAnnotation"
+        },
+        {
+          "@id": "emi:StructuralAnnotation"
+        }
+      ],
+      "emi:hasSpec2VecDoc": {
+        "@id": "emi:Spec2VecDoc"
+      },
+      "emi:hasFeatureArea": {
+        "@type": "xsd:double"
+      },
+      "emi:hasParentMass": {
+        "@type": "xsd:double"
+      },
+      "emi:hasRawSpectrum": {
+        "@type": "xsd:string"
+      },
+      "emi:hasRelativeFeatureArea": {
+        "@type": "xsd:double"
+      },
+      "emi:hasRetentionTime": {
+        "@type": "xsd:double"
+      },
+      "emi:hasRowId": {
+        "@type": "xsd:int"
+      },
+      "emi:hasUSI": {
+        "@type": "xsd:string"
+      },
+      "foaf:depiction": {
+        "@id": "rdfs:Resource"
+      },
+      "emi:hasFBMNComponent": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "emi:hasAnnotation": {
+          "prov:Entity": 1226124,
+          "emi:ChemicalTaxonAnnotation": 292094,
+          "emi:SpectrumAnnotation": 1518218,
+          "emi:StructuralAnnotation": 1226124
+        },
+        "emi:hasSpec2VecDoc": {
+          "emi:Spec2VecDoc": 3833
+        },
+        "emi:hasFeatureArea": {
+          "Literal:xsd:double": 1081098
+        },
+        "emi:hasParentMass": {
+          "Literal:xsd:double": 1081098
+        },
+        "emi:hasRawSpectrum": {
+          "Literal:xsd:string": 3833
+        },
+        "emi:hasRelativeFeatureArea": {
+          "Literal:xsd:double": 1081098
+        },
+        "emi:hasRetentionTime": {
+          "Literal:xsd:double": 1081098
+        },
+        "emi:hasRowId": {
+          "Literal:xsd:int": 1081098
+        },
+        "emi:hasUSI": {
+          "Literal:xsd:string": 1081098
+        },
+        "foaf:depiction": {
+          "Resource": 1081098
+        },
+        "emi:hasFBMNComponent": {
+          "Resource": 903411
+        }
+      }
+    },
+    {
+      "@id": "emi:Organism",
+      "sosa:hasSample": [
+        {
+          "@id": "sosa:Sample"
+        },
+        {
+          "@id": "emi:RawMaterial"
+        }
+      ],
+      "emi:inTaxon": [
+        {
+          "@id": "emi:Taxon"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "_counts": {
+        "sosa:hasSample": {
+          "sosa:Sample": 1569,
+          "emi:RawMaterial": 1569
+        },
+        "emi:inTaxon": {
+          "emi:Taxon": 745,
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "emi:QCSample",
+      "sosa:isFeatureOfInterestOf": [
+        {
+          "@id": "sosa:Observation"
+        },
+        {
+          "@id": "emi:Analysis"
+        },
+        {
+          "@id": "emi:LCMSAnalysis"
+        },
+        {
+          "@id": "emi:LCMSAnalysisNeg"
+        },
+        {
+          "@id": "emi:LCMSAnalysisPos"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sosa:isFeatureOfInterestOf": {
+          "sosa:Observation": 320,
+          "emi:Analysis": 320,
+          "emi:LCMSAnalysis": 320,
+          "emi:LCMSAnalysisNeg": 160,
+          "emi:LCMSAnalysisPos": 160
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 160
+        }
+      }
+    },
+    {
+      "@id": "emi:RawMaterial",
+      "sosa:hasSample": [
+        {
+          "@id": "sosa:Sample"
+        },
+        {
+          "@id": "emi:ExtractSample"
+        }
+      ],
+      "sosa:isSampleOf": [
+        {
+          "@id": "emi:Organism"
+        },
+        {
+          "@id": "emi:System"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sosa:hasSample": {
+          "sosa:Sample": 1600,
+          "emi:ExtractSample": 1600
+        },
+        "sosa:isSampleOf": {
+          "emi:Organism": 1569,
+          "emi:System": 1569
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1600
+        }
+      }
+    },
+    {
+      "@id": "emi:SpectralPair",
+      "prov:wasGeneratedBy": {
+        "@id": "prov:Activity"
+      },
+      "prov:wasInfluencedBy": {
+        "@id": "prov:Activity"
+      },
+      "emi:hasFirstMember": [
+        {
+          "@id": "emi:LCMSFeature"
+        },
+        {
+          "@id": "emi:MS2Spectrum"
+        }
+      ],
+      "emi:hasPairMember": [
+        {
+          "@id": "emi:LCMSFeature"
+        },
+        {
+          "@id": "emi:MS2Spectrum"
+        }
+      ],
+      "emi:hasSecondMember": [
+        {
+          "@id": "emi:LCMSFeature"
+        },
+        {
+          "@id": "emi:MS2Spectrum"
+        }
+      ],
+      "emi:hasCosine": {
+        "@type": "xsd:double"
+      },
+      "emi:hasMassDifference": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "prov:wasGeneratedBy": {
+          "prov:Activity": 2739136
+        },
+        "prov:wasInfluencedBy": {
+          "prov:Activity": 2739136
+        },
+        "emi:hasFirstMember": {
+          "emi:LCMSFeature": 2739136,
+          "emi:MS2Spectrum": 2739136
+        },
+        "emi:hasPairMember": {
+          "emi:LCMSFeature": 5478272,
+          "emi:MS2Spectrum": 5478272
+        },
+        "emi:hasSecondMember": {
+          "emi:LCMSFeature": 2739136,
+          "emi:MS2Spectrum": 2739136
+        },
+        "emi:hasCosine": {
+          "Literal:xsd:double": 2739136
+        },
+        "emi:hasMassDifference": {
+          "Literal:xsd:double": 2739136
+        }
+      }
+    },
+    {
+      "@id": "emi:SpectrumAnnotation",
+      "prov:wasGeneratedBy": {
+        "@id": "prov:Activity"
+      },
+      "prov:wasInfluencedBy": {
+        "@id": "prov:Activity"
+      },
+      "emi:hasChemicalStructure": [
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalStructure"
+        },
+        {
+          "@id": "emi:InChIKey2D"
+        }
+      ],
+      "emi:hasClass": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "emi:isClassifiedWith": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "npc:Class"
+        },
+        {
+          "@id": "npc:Superclass"
+        },
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalTaxon"
+        }
+      ],
+      "emi:hasAdduct": {
+        "@type": "xsd:string"
+      },
+      "emi:hasClassProbability": {
+        "@type": "xsd:double"
+      },
+      "emi:hasConsistencyScore": {
+        "@type": "xsd:int"
+      },
+      "emi:hasCosmicScore": {
+        "@type": "xsd:double"
+      },
+      "emi:hasFinalScore": {
+        "@type": "xsd:double"
+      },
+      "emi:hasPathwayProbability": {
+        "@type": "xsd:double"
+      },
+      "emi:hasProbability": {
+        "@type": "xsd:double"
+      },
+      "emi:hasScore": [
+        {
+          "@type": "xsd:double"
+        },
+        {
+          "@type": "xsd:int"
+        }
+      ],
+      "emi:hasSpectralScore": {
+        "@type": "xsd:double"
+      },
+      "emi:hasSuperClassProbability": {
+        "@type": "xsd:double"
+      },
+      "emi:hasTaxoScore": {
+        "@type": "xsd:int"
+      },
+      "emi:hasZodiacScore": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "prov:wasGeneratedBy": {
+          "prov:Activity": 1226124
+        },
+        "prov:wasInfluencedBy": {
+          "prov:Activity": 1226124
+        },
+        "emi:hasChemicalStructure": {
+          "emi:ChemicalEntity": 1230570,
+          "emi:ChemicalStructure": 1230570,
+          "emi:InChIKey2D": 1230570
+        },
+        "emi:hasClass": {
+          "skos:Concept": 292094,
+          "npc:Class": 292094,
+          "npc:Superclass": 3,
+          "emi:ChemicalEntity": 292094,
+          "emi:ChemicalTaxon": 292094
+        },
+        "emi:isClassifiedWith": {
+          "skos:Concept": 292094,
+          "npc:Class": 292094,
+          "npc:Superclass": 3,
+          "emi:ChemicalEntity": 292094,
+          "emi:ChemicalTaxon": 292094
+        },
+        "emi:hasAdduct": {
+          "Literal:xsd:string": 1226739
+        },
+        "emi:hasClassProbability": {
+          "Literal:xsd:double": 292094
+        },
+        "emi:hasConsistencyScore": {
+          "Literal:xsd:int": 426855
+        },
+        "emi:hasCosmicScore": {
+          "Literal:xsd:double": 799269
+        },
+        "emi:hasFinalScore": {
+          "Literal:xsd:double": 426408
+        },
+        "emi:hasPathwayProbability": {
+          "Literal:xsd:double": 292094
+        },
+        "emi:hasProbability": {
+          "Literal:xsd:double": 876282
+        },
+        "emi:hasScore": {
+          "Literal:xsd:double": 3248025,
+          "Literal:xsd:int": 802186
+        },
+        "emi:hasSpectralScore": {
+          "Literal:xsd:double": 426855
+        },
+        "emi:hasSuperClassProbability": {
+          "Literal:xsd:double": 292094
+        },
+        "emi:hasTaxoScore": {
+          "Literal:xsd:int": 426855
+        },
+        "emi:hasZodiacScore": {
+          "Literal:xsd:double": 799269
+        }
+      }
+    },
+    {
+      "@id": "emi:StructuralAnnotation",
+      "prov:wasGeneratedBy": {
+        "@id": "prov:Activity"
+      },
+      "prov:wasInfluencedBy": {
+        "@id": "prov:Activity"
+      },
+      "emi:hasChemicalStructure": [
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalStructure"
+        },
+        {
+          "@id": "emi:InChIKey2D"
+        }
+      ],
+      "emi:hasAdduct": {
+        "@type": "xsd:string"
+      },
+      "emi:hasConsistencyScore": {
+        "@type": "xsd:int"
+      },
+      "emi:hasCosmicScore": {
+        "@type": "xsd:double"
+      },
+      "emi:hasFinalScore": {
+        "@type": "xsd:double"
+      },
+      "emi:hasScore": [
+        {
+          "@type": "xsd:double"
+        },
+        {
+          "@type": "xsd:int"
+        }
+      ],
+      "emi:hasSpectralScore": {
+        "@type": "xsd:double"
+      },
+      "emi:hasTaxoScore": {
+        "@type": "xsd:int"
+      },
+      "emi:hasZodiacScore": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "prov:wasGeneratedBy": {
+          "prov:Activity": 1226124
+        },
+        "prov:wasInfluencedBy": {
+          "prov:Activity": 1226124
+        },
+        "emi:hasChemicalStructure": {
+          "emi:ChemicalEntity": 1230570,
+          "emi:ChemicalStructure": 1230570,
+          "emi:InChIKey2D": 1230570
+        },
+        "emi:hasAdduct": {
+          "Literal:xsd:string": 1226739
+        },
+        "emi:hasConsistencyScore": {
+          "Literal:xsd:int": 426855
+        },
+        "emi:hasCosmicScore": {
+          "Literal:xsd:double": 799269
+        },
+        "emi:hasFinalScore": {
+          "Literal:xsd:double": 426408
+        },
+        "emi:hasScore": {
+          "Literal:xsd:double": 3248025,
+          "Literal:xsd:int": 802186
+        },
+        "emi:hasSpectralScore": {
+          "Literal:xsd:double": 426855
+        },
+        "emi:hasTaxoScore": {
+          "Literal:xsd:int": 426855
+        },
+        "emi:hasZodiacScore": {
+          "Literal:xsd:double": 799269
+        }
+      }
+    },
+    {
+      "@id": "emi:System",
+      "sosa:hasSample": [
+        {
+          "@id": "sosa:Sample"
+        },
+        {
+          "@id": "emi:RawMaterial"
+        }
+      ],
+      "emi:inTaxon": [
+        {
+          "@id": "emi:Taxon"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "_counts": {
+        "sosa:hasSample": {
+          "sosa:Sample": 1569,
+          "emi:RawMaterial": 1569
+        },
+        "emi:inTaxon": {
+          "emi:Taxon": 745,
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "emi:WDChemicalStructure",
+      "emi:hasInChIKey": [
+        {
+          "@id": "emi:ChemicalEntity"
+        },
+        {
+          "@id": "emi:ChemicalStructure"
+        },
+        {
+          "@id": "emi:InChIKey"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "emi:hasInChIKey": {
+          "emi:ChemicalEntity": 175369,
+          "emi:ChemicalStructure": 175369,
+          "emi:InChIKey": 175369
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 175330
+        }
+      }
+    },
+    {
+      "@id": "emi:NonTrait",
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "sosa:isResultOf": {
+        "@id": "rdfs:Resource"
+      },
+      "qudt:hasUnit": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:identifier": {
+          "Literal:xsd:string": 18342136
+        },
+        "sosa:isResultOf": {
+          "Resource": 18342136
+        },
+        "qudt:hasUnit": {
+          "Resource": 7000444
+        }
+      }
+    },
+    {
+      "@id": "emi:Spec2VecDoc",
+      "emi:hasScore": {
+        "@type": "xsd:double"
+      },
+      "emi:hasSpec2VecLoss": {
+        "@type": "xsd:double"
+      },
+      "emi:hasSpec2VecPeak": {
+        "@type": "xsd:double"
+      },
+      "emi:hasSpec2VecValue": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "emi:hasScore": {
+          "Literal:xsd:double": 111964
+        },
+        "emi:hasSpec2VecLoss": {
+          "Literal:xsd:double": 15172
+        },
+        "emi:hasSpec2VecPeak": {
+          "Literal:xsd:double": 96824
+        },
+        "emi:hasSpec2VecValue": {
+          "Literal:xsd:double": 111964
+        }
+      }
+    },
+    {
+      "@id": "emi:Trait",
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "sosa:isResultOf": {
+        "@id": "rdfs:Resource"
+      },
+      "qudt:hasUnit": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1930452
+        },
+        "sosa:isResultOf": {
+          "Resource": 1930452
+        },
+        "qudt:hasUnit": {
+          "Resource": 1711077
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T14:41:20.239924+00:00",
+    "endpoint": "https://kg.earthmetabolome.org/metrin/api/",
+    "dataset_name": "earthmetabolome",
+    "pattern_count": 666,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "skos:Concept": "Concept",
+    "skos:broader": "has broader",
+    "npc:Class": "Natural product class",
+    "npc:Pathway": "Natural product pathway",
+    "npc:Superclass": "Natural product superclass",
+    "emi:ChemicalEntity": "Chemical entity",
+    "emi:ChemicalTaxon": "Chemical taxon",
+    "skos:broaderTransitive": "has broader transitive",
+    "skos:closeMatch": "has close match",
+    "skos:mappingRelation": "is in mapping relation with",
+    "skos:narrower": "has narrower",
+    "skos:narrowerTransitive": "has narrower transitive",
+    "skos:semanticRelation": "is in semantic relation with",
+    "prov:Activity": "Activity",
+    "prov:generated": "generated",
+    "prov:Entity": "Entity",
+    "emi:LFpair": "LCMS feature pair",
+    "emi:SpectralPair": "MS2Spectra pair",
+    "emi:SpectrumAnnotation": "Spectrum annotation",
+    "emi:StructuralAnnotation": "Chemical structure annotation",
+    "prov:influenced": "influenced",
+    "prov:used": "used",
+    "prov:wasAssociatedWith": "wasAssociatedWith",
+    "prov:Agent": "Agent",
+    "prov:wasInfluencedBy": "wasInfluencedBy",
+    "prov:wasDerivedFrom": "wasDerivedFrom",
+    "prov:wasGeneratedBy": "wasGeneratedBy",
+    "prov:wasRevisionOf": "wasRevisionOf",
+    "emi:hasChemicalStructure": "has chemical structure representation",
+    "emi:ChemicalStructure": "Chemical structure representation",
+    "emi:InChIKey2D": "2D InChIKey",
+    "emi:hasFirstMember": "has first member",
+    "emi:LCMSFeature": "LCMS individual MS2 spectrum",
+    "emi:MS2Spectrum": "MS2 spectrum",
+    "emi:hasPairMember": "has pair member",
+    "emi:hasSecondMember": "has second member",
+    "sosa:Observation": "Observation",
+    "sosa:hasFeatureOfInterest": "has feature of interest",
+    "sosa:Sample": "Sample",
+    "emi:Blank": "Blank sample",
+    "emi:ExtractSample": "Extract sample",
+    "emi:QCSample": "Quality control sample",
+    "sosa:hasResult": "has result",
+    "emi:LCMSFeatureSet": "LCMS feature set",
+    "emi:hasLCMSFeatureSet": "has LCMS feature set",
+    "sosa:hasSample": "has sample",
+    "sosa:isFeatureOfInterestOf": "is feature of interest of",
+    "emi:Analysis": "Analysis",
+    "emi:LCMSAnalysis": "LCMS analysis",
+    "emi:LCMSAnalysisNeg": "Negative LCMS analysis",
+    "emi:LCMSAnalysisPos": "Positive LCMS analysis",
+    "sosa:isSampleOf": "is sample of",
+    "emi:Organism": "Organism",
+    "emi:RawMaterial": "Raw material",
+    "emi:System": "System",
+    "emi:hasAnatomicalEntity": "has anatomical entity",
+    "emi:AnatomicalEntity": "Anatomical entity",
+    "emi:BiologicalSex": "biological sex",
+    "emi:DevelopmentalStage": "Developmental stage",
+    "emi:hasDevelopmentalStage": "has developmental stage",
+    "emi:InteractionType": "Interaction type",
+    "emi:inTaxon": "found in taxon",
+    "emi:Taxon": "Taxon",
+    "error:Error1": "Error1",
+    "vann:example": "example",
+    "emi:hasIonization": "hasIonization",
+    "dcam:VocabularyEncodingScheme": "VocabularyEncodingScheme",
+    "dcterms:date": "Date",
+    "dcterms:issued": "Date Issued",
+    "dcterms:AgentClass": "Agent Class",
+    "emi:hasAdduct": "has adduct",
+    "emi:hasConsistencyScore": "has consistency score",
+    "emi:hasCosine": "has cosine",
+    "emi:hasCosmicScore": "has cosmic score",
+    "emi:hasFinalScore": "has final score",
+    "emi:hasMassDifference": "has Mass difference",
+    "emi:hasScore": "has score",
+    "emi:hasSpectralScore": "has spectral score",
+    "emi:hasTaxoScore": "has taxo score",
+    "emi:hasZodiacScore": "has zodiac score",
+    "sh:SPARQLExecutable": "SPARQLExecutable",
+    "sh:select": "select",
+    "ontology:file_name": "file_name",
+    "ontology:file_path": "file_path",
+    "ontology:project": "project",
+    "sh:SPARQLSelectExecutable": "SPARQLSelectExecutable",
+    "emi:hasGNPSLCMSLink": "has GNPS LCMS link",
+    "dcterms:identifier": "Identifier",
+    "owl:Ontology": "Ontology",
+    "owl:imports": "imports",
+    "ontology:federatesWith": "federatesWith",
+    "foaf:depiction": "depiction",
+    "emi:hasMassiveDOI": "has Massive DOI.",
+    "dcterms:isPartOf": "Is Part Of",
+    "foaf:Organization": "Organization",
+    "foaf:homepage": "homepage",
+    "foaf:Person": "Person",
+    "org:memberOf": "memberOf",
+    "emi:Chemical": "Chemical",
+    "emi:hasInChIKey": "has InChIKey",
+    "emi:InChIKey": "InChIKey",
+    "foaf:name": "name",
+    "skos:exactMatch": "has exact match",
+    "skos:inScheme": "is in scheme",
+    "emi:hasClass": "has class",
+    "emi:hasInChIKey2D": "has InChIKey2D",
+    "emi:isClassifiedWith": "is classified with",
+    "emi:isInChIKey2DOf": "is InChIKey2D of",
+    "emi:isInChIKeyOf": "is InChIKey of",
+    "emi:WDChemicalStructure": "Wikidata chemical",
+    "emi:ChemicalTaxonAnnotation": "Chemical taxon annotation",
+    "emi:Interaction": "Interaction System",
+    "emi:hasSource": "has source",
+    "emi:hasTarget": "has target",
+    "emi:hasAnnotation": "has annotation",
+    "emi:hasSpec2VecDoc": "has spec2vec documentation",
+    "emi:Spec2VecDoc": "Spec2vec document",
+    "sosa:isResultOf": "is result of",
+    "emi:hasLCMSFeature": "has LCMS feature",
+    "emi:hasSpectrum": "has spectrum",
+    "emi:hasSMILES": "has SMILES",
+    "emi:hasClassProbability": "hasClassProbability",
+    "emi:hasPathwayProbability": "hasPathwayProbability",
+    "emi:hasProbability": "has probability",
+    "emi:hasSuperClassProbability": "hasSuperClassProbability",
+    "dcterms:bibliographicCitation": "Bibliographic Citation",
+    "wgs84:lat": "latitude",
+    "wgs84:long": "longitude",
+    "prov:atLocation": "atLocation",
+    "emi:hasFeatureArea": "has feature area",
+    "emi:hasParentMass": "has parent mass",
+    "emi:hasRawSpectrum": "hasRawSpectrum",
+    "emi:hasRelativeFeatureArea": "has relative feature area",
+    "emi:hasRetentionTime": "has retention time",
+    "emi:hasRowId": "has row id",
+    "emi:hasUSI": "has universal spectrum identifier",
+    "emi:hasFBMNComponent": "has FBMN component",
+    "emi:NonTrait": "NonTrait",
+    "emi:hasSpec2VecLoss": "has spec2vec loss",
+    "emi:hasSpec2VecPeak": "has spec2vec peak",
+    "emi:hasSpec2VecValue": "has spec2vec value",
+    "emi:Trait": "Trait",
+    "qudt:hasUnit": "hasUnit"
+  }
+}

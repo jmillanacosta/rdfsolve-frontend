@@ -1,0 +1,130 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pav": "http://purl.org/pav/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "skos:Concept",
+      "skos:broader": [
+        {
+          "@id": "skos:Concept"
+        },
+        {
+          "@id": "vocabulary:Concept"
+        }
+      ],
+      "skos:inScheme": [
+        {
+          "@id": "vocabulary:Concept"
+        },
+        {
+          "@id": "skos:ConceptScheme"
+        }
+      ],
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "pav:importedFrom": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "skos:broader": {
+          "skos:Concept": 5994,
+          "vocabulary:Concept": 5994
+        },
+        "skos:inScheme": {
+          "vocabulary:Concept": 6025,
+          "skos:ConceptScheme": 6025
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 6008
+        },
+        "pav:importedFrom": {
+          "Resource": 6022
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:Concept",
+      "skos:broader": [
+        {
+          "@id": "vocabulary:Concept"
+        },
+        {
+          "@id": "skos:Concept"
+        }
+      ],
+      "skos:inScheme": [
+        {
+          "@id": "vocabulary:Concept"
+        },
+        {
+          "@id": "skos:ConceptScheme"
+        }
+      ],
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "pav:importedFrom": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "skos:broader": {
+          "vocabulary:Concept": 5994,
+          "skos:Concept": 5994
+        },
+        "skos:inScheme": {
+          "vocabulary:Concept": 6025,
+          "skos:ConceptScheme": 6025
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 6009
+        },
+        "pav:importedFrom": {
+          "Resource": 6023
+        }
+      }
+    },
+    {
+      "@id": "skos:ConceptScheme",
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "pav:importedFrom": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "skos:prefLabel": {
+          "Literal:xsd:string": 1
+        },
+        "pav:importedFrom": {
+          "Resource": 1
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:40:52.575884+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.concept",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/concept"
+    ],
+    "pattern_count": 17,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "skos:Concept": "Concept",
+    "skos:broader": "broader",
+    "skos:inScheme": "inScheme",
+    "vocabulary:Concept": "Concept",
+    "skos:ConceptScheme": "ConceptScheme",
+    "skos:prefLabel": "prefLabel",
+    "pav:importedFrom": "importedFrom"
+  }
+}

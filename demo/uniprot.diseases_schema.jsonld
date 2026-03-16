@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "uniprot.core": "http://purl.uniprot.org/core/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "uniprot.core:Disease",
+      "uniprot.core:mnemonic": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "uniprot.core:mnemonic": {
+          "Literal:xsd:string": 6898
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 10860
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 6898
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T09:04:04.990195+00:00",
+    "endpoint": "https://sparql.uniprot.org/sparql/",
+    "dataset_name": "uniprot.diseases",
+    "graph_uris": [
+      "http://sparql.uniprot.org/diseases"
+    ],
+    "pattern_count": 6,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "uniprot.core:Disease": "Disease",
+    "uniprot.core:mnemonic": "mnemonic",
+    "skos:altLabel": "altLabel",
+    "skos:prefLabel": "prefLabel"
+  }
+}

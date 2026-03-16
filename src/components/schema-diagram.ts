@@ -61,13 +61,13 @@ export interface SchemaDiagramOptions {
   showSystemNodes?: boolean;
 
   /**
-   * Subject URI → CSS color, built by DatasetSelector when multiple schemas
+   * Subject URI -> CSS color, built by DatasetSelector when multiple schemas
    * are merged so each node can show which schema it came from.
    */
   nodeColorMap?: Map<string, string>;
 
   /**
-   * Schema-id → { name, color } — drives the legend swatches.
+   * Schema-id -> { name, color } - drives the legend swatches.
    */
   schemaColorMap?: Map<string, { name: string; color: string }>;
 }
@@ -718,7 +718,7 @@ export class SchemaDiagram extends HTMLElement {
     label?: string,
     edgeAlternatives?: Array<Array<import('../algorithms/path-finder').PathEdgeInfo>>,
   ): string {
-    // Build reverse map: URI → visual node IDs (a URI may appear multiple times)
+    // Build reverse map: URI -> visual node IDs (a URI may appear multiple times)
     const uriToNodeIds = new Map<string, string[]>();
     if (this.trees) {
       for (const tree of this.trees) {
@@ -846,7 +846,7 @@ export class SchemaDiagram extends HTMLElement {
     });
 
     if (result && result.nodesAdded + result.edgesAdded > 0) {
-      // Update nodeId→URI map
+      // Update nodeId->URI map
       this.nodeIdToUri = getNodeIdToUriMap(this.trees);
 
       // Track expansion in state
@@ -907,14 +907,14 @@ export class SchemaDiagram extends HTMLElement {
       ? { ...this.schema.prefixes }
       : {};
     
-    // Map frontend options → backend API options
+    // Map frontend options -> backend API options
     const composeOpts: ComposeOptions = {
       include_types: options?.includeTypes ?? false,
       include_labels: options?.includeLabels ?? true,
       limit: options?.limit ?? 100,
     };
     
-    // Convert valueBindings Map → plain object
+    // Convert valueBindings Map -> plain object
     if (options?.valueBindings && options.valueBindings.size > 0) {
       const bindings: Record<string, string[]> = {};
       for (const [k, v] of options.valueBindings) {
@@ -1064,7 +1064,7 @@ export class SchemaDiagram extends HTMLElement {
     const isShift = event?.shiftKey || false;
     
     if (mode === 'draw-path') {
-      // Multi-node path building — just fire node-click so path-list can pick it up.
+      // Multi-node path building - just fire node-click so path-list can pick it up.
       // If PathBuildingState is active, path-list handles adding the node.
       // Also visually highlight the node as "selected for path".
       this.highlightPathStartNode(node.id, true);
@@ -1073,7 +1073,7 @@ export class SchemaDiagram extends HTMLElement {
       // Expansion mode
       this.dispatchEvent(new CustomEvent('expand-request', { detail: { node } }));
     } else {
-      // Default view mode — support multi-select with Ctrl/Shift
+      // Default view mode - support multi-select with Ctrl/Shift
       if (isCtrl || isShift) {
         if (this.selectedNodes.has(node.id)) {
           this.selectedNodes.delete(node.id);
@@ -1101,7 +1101,7 @@ export class SchemaDiagram extends HTMLElement {
 
     if (mode === 'shapes') {
       // In shapes mode, dispatch edge info so the shapes panel can
-      // handle deletion.  We don't toggle internal state here —
+      // handle deletion.  We don't toggle internal state here -
       // the panel owns the working-set logic.
       const sourceNode = this.trees
         .flatMap(t => t.nodes)

@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfsolve": "https://w3id.org/rdfsolve/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "sd": "http://www.w3.org/ns/sparql-service-description#"
+  },
+  "@graph": [],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-02-19T14:24:52.563020+00:00",
+    "dataset_name": "chebi_instance_mapping",
+    "pattern_count": 0,
+    "strategy": "instance_matcher",
+    "resource": "chebi",
+    "uri_formats_queried": [
+      "https://n2t.net/chebi:",
+      "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=",
+      "https://bioregistry.io/CHEBI:",
+      "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:",
+      "https://identifiers.org/CHEBI:",
+      "https://www.iedb.org/antigen/ChEBI:",
+      "https://www.ebi.ac.uk/chebi/backend/api/public/compound/$1/structure/?width=300&height=300",
+      "http://www.ebi.ac.uk/chebi/searchId.do?chebiId=",
+      "http://www.ebi.ac.uk/ols/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_",
+      "http://www.ebi.ac.uk/chebi/search?query=",
+      "https://identifiers.org/CHEBI/",
+      "http://identifiers.org/CHEBI:",
+      "http://bioregistry.io/CHEBIID:",
+      "http://bio2rdf.org/chebi:",
+      "http://bioregistry.io/chebi:",
+      "https://bioregistry.io/CHEBIID:",
+      "https://bioregistry.io/chebi:",
+      "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:",
+      "http://purl.obolibrary.org/obo/CHEBI_",
+      "https://bio2rdf.org/chebi:",
+      "http://identifiers.org/CHEBI/",
+      "https://identifiers.org/chebi/CHEBI:",
+      "http://n2t.net/chebi:",
+      "http://bioregistry.io/ChEBI:",
+      "http://www.iedb.org/antigen/ChEBI:",
+      "http://identifiers.org/chebi/CHEBI:",
+      "https://www.ebi.ac.uk/ols/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_",
+      "http://bioregistry.io/CHEBI:",
+      "https://bioregistry.io/ChEBI:",
+      "https://purl.obolibrary.org/obo/CHEBI_",
+      "https://www.ebi.ac.uk/chebi/search?query=",
+      "http://www.ebi.ac.uk/chebi/backend/api/public/compound/$1/structure/?width=300&height=300"
+    ]
+  }
+}

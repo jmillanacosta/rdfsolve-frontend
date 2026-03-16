@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "cheminf": "http://semanticscience.org/resource/CHEMINF_",
+    "resource": "http://semanticscience.org/resource/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "sio": "http://semanticscience.org/resource/SIO_",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@graph": [
+    {
+      "@id": "cheminf:000399",
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:rdf:langString": 122943365
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 122943365
+        },
+        "resource:is-attribute-of": {
+          "Resource": 123351913
+        },
+        "dcterms:subject": {
+          "Resource": 10540
+        },
+        "sio:000011": {
+          "Resource": 123351913
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:InChIKey",
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "resource:has-value": {
+        "@type": "rdf:langString"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:subject": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:string": 122943365
+        },
+        "resource:has-value": {
+          "Literal:rdf:langString": 122943365
+        },
+        "resource:is-attribute-of": {
+          "Resource": 123351913
+        },
+        "dcterms:subject": {
+          "Resource": 10540
+        },
+        "sio:000011": {
+          "Resource": 123351913
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:42:51.373540+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.inchikey",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/inchikey"
+    ],
+    "pattern_count": 12,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "cheminf:000399": "CHEMINF_000399",
+    "resource:has-value": "has-value",
+    "vocabulary:InChIKey": "InChIKey",
+    "sio:000300": "SIO_000300",
+    "resource:is-attribute-of": "is-attribute-of",
+    "dcterms:subject": "subject",
+    "sio:000011": "SIO_000011"
+  }
+}

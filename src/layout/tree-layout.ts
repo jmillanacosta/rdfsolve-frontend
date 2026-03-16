@@ -58,7 +58,7 @@ export function layoutTrees(trees: PathTree[], config: LayoutConfig = {}): Visua
  * RULES:
  * - Every edge exits the RIGHT-CENTER of the source node.
  * - Every edge arrives at the LEFT-CENTER of the target node.
- * - Edges are ORTHOGONAL: horizontal → vertical → horizontal (Z-shape).
+ * - Edges are ORTHOGONAL: horizontal -> vertical -> horizontal (Z-shape).
  * - When a source has multiple outgoing edges, the vertical segment of each
  *   edge is staggered at a different X so they never overlap.
  * - Labels are placed on the last horizontal segment (near target), which is
@@ -135,7 +135,7 @@ function layoutSingleTree(
 
     // The gap between source right edge and target left edge
     const gap = opts.horizontalGap;
-    // ALL vertical segments share the same X — midpoint of the gap.
+    // ALL vertical segments share the same X - midpoint of the gap.
     // They naturally separate on Y since each target is at a different row.
     const vertX = sourceNode.outPort.x + gap * 0.35;
 
@@ -152,7 +152,7 @@ function layoutSingleTree(
       const ty = rightNode.inPort.y;
 
       if (Math.abs(sy - ty) < 1) {
-        // Same row — straight horizontal line
+        // Same row - straight horizontal line
         edge.path = `M ${sx} ${sy} H ${tx}`;
       } else {
         // Z-shape: H to shared vertX, V to target Y, H to target

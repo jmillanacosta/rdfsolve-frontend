@@ -1,0 +1,15 @@
+{
+  "@context": {},
+  "@graph": [],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:42:59.831488+00:00",
+    "endpoint": "https://nanosafety.rdf.bigcat-bioinformatics.org/sparql//",
+    "dataset_name": "nanosafetyrdf",
+    "graph_uris": [
+      "https://nanosafety.rdf.bigcat-bioinformatics.org"
+    ],
+    "pattern_count": 0,
+    "strategy": "miner/two-phase"
+  }
+}

@@ -9,7 +9,7 @@
 // PREFIX / CONTEXT
 // =============================================================================
 
-/** Map of prefix → namespace URI */
+/** Map of prefix -> namespace URI */
 export type PrefixMap = Record<string, string>;
 
 /** Standard prefixes we always include */
@@ -79,7 +79,7 @@ export interface CanonicalSchema {
   prefixes: PrefixMap;
 
   /**
-   * CURIE → human-readable label map.
+   * CURIE -> human-readable label map.
    * Populated from `_labels` in JSON-LD when available.
    * Falls back to the local-name part of the URI.
    */
@@ -94,18 +94,18 @@ export interface CanonicalSchema {
   classUris: Set<string>;
   
   // Adjacency for traversal
-  outgoing: Map<string, CanonicalTriple[]>;  // subject → triples
-  incoming: Map<string, CanonicalTriple[]>;  // object → triples
+  outgoing: Map<string, CanonicalTriple[]>;  // subject -> triples
+  incoming: Map<string, CanonicalTriple[]>;  // object -> triples
 
   /**
-   * Subject URI → CSS color string.
+   * Subject URI -> CSS color string.
    * Set when multiple schemas are merged so nodes can be colored
    * by their source schema.  Absent (empty map) for single-schema loads.
    */
   nodeColorMap: Map<string, string>;
 
   /**
-   * Schema-id → { name, color } — used by the legend.
+   * Schema-id -> { name, color } - used by the legend.
    * Populated by DatasetSelector when multiple schemas are merged.
    */
   schemaColorMap: Map<string, { name: string; color: string }>;
@@ -164,7 +164,7 @@ export interface PathEdge {
   
   isRdfType: boolean;
   
-  /** True if this edge represents an incoming triple (object→subject direction) */
+  /** True if this edge represents an incoming triple (object->subject direction) */
   isIncoming?: boolean;
   
   /** SVG path data (computed by layout) */

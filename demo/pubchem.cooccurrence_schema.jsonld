@@ -1,0 +1,151 @@
+{
+  "@context": {
+    "sio": "http://semanticscience.org/resource/SIO_",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "sio:001437",
+      "sio:000300": {
+        "@type": "xsd:int"
+      },
+      "sio:001157": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:int": 7520462
+        },
+        "sio:001157": {
+          "Resource": 7520462
+        }
+      }
+    },
+    {
+      "@id": "sio:000983",
+      "sio:000300": {
+        "@type": "xsd:int"
+      },
+      "sio:001157": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:int": 6419066
+        },
+        "sio:001157": {
+          "Resource": 6419066
+        }
+      }
+    },
+    {
+      "@id": "sio:000993",
+      "sio:000300": {
+        "@type": "xsd:int"
+      },
+      "sio:001157": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:int": 8535718
+        },
+        "sio:001157": {
+          "Resource": 8535718
+        }
+      }
+    },
+    {
+      "@id": "sio:001257",
+      "sio:000300": {
+        "@type": "xsd:int"
+      },
+      "sio:001157": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:int": 13637060
+        },
+        "sio:001157": {
+          "Resource": 13637060
+        }
+      }
+    },
+    {
+      "@id": "sio:001436",
+      "sio:000300": {
+        "@type": "xsd:int"
+      },
+      "sio:001157": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:int": 3371887
+        },
+        "sio:001157": {
+          "Resource": 3371887
+        }
+      }
+    },
+    {
+      "@id": "sio:001435",
+      "sio:000300": {
+        "@type": "xsd:int"
+      },
+      "sio:001157": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:int": 20661457
+        },
+        "sio:001157": {
+          "Resource": 20661457
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:Cooccurrence",
+      "sio:000300": {
+        "@type": "xsd:int"
+      },
+      "sio:001157": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000300": {
+          "Literal:xsd:int": 60145650
+        },
+        "sio:001157": {
+          "Resource": 60145650
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:43:39.524835+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.cooccurrence",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/cooccurrence"
+    ],
+    "pattern_count": 35,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "sio:001437": "SIO_001437",
+    "sio:000300": "SIO_000300",
+    "sio:000983": "SIO_000983",
+    "sio:000993": "SIO_000993",
+    "sio:001257": "SIO_001257",
+    "sio:001436": "SIO_001436",
+    "sio:001435": "SIO_001435",
+    "vocabulary:Cooccurrence": "Cooccurrence",
+    "sio:001157": "SIO_001157"
+  }
+}

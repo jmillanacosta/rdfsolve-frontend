@@ -1,0 +1,1191 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "bio2rdf": "http://bio2rdf.org/",
+    "void": "http://rdfs.org/ns/void#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pav": "http://purl.org/pav/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 1
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 4
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:creator": {
+          "Resource": 1
+        },
+        "dcterms:publisher": {
+          "Resource": 2
+        },
+        "foaf:page": {
+          "Resource": 2
+        },
+        "dcterms:license": {
+          "Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ndc_vocabulary:amount_unit": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Unit"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:dosage-form": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Dosage-Form"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:has-part": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Substance"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Package-Component"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:ingredient": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Ingredient"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:labeller": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Labeller"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Ingredient"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:pharmacological-class": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Pharmacological-Class"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:product-type": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Product-Type"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Route"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Dosage-Form"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:route": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Route"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:has-package": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Package"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:amount": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:application-number": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:end-marketing-date": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:marketing-category": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:non-proprietary-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:product-id": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:proprietary-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:start-marketing-date": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:trade-name-suffix": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:ndc-product-id": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 555293
+        },
+        "bio2rdf:ndc_vocabulary:amount_unit": {
+          "bio2rdf:ndc_vocabulary:Resource": 44086,
+          "bio2rdf:ndc_vocabulary:Unit": 44086
+        },
+        "bio2rdf:ndc_vocabulary:dosage-form": {
+          "bio2rdf:ndc_vocabulary:Resource": 127257,
+          "bio2rdf:ndc_vocabulary:Dosage-Form": 127257
+        },
+        "bio2rdf:ndc_vocabulary:has-part": {
+          "bio2rdf:ndc_vocabulary:Resource": 413540,
+          "bio2rdf:ndc_vocabulary:Substance": 187851,
+          "bio2rdf:ndc_vocabulary:Package-Component": 225689
+        },
+        "bio2rdf:ndc_vocabulary:ingredient": {
+          "bio2rdf:ndc_vocabulary:Resource": 187752,
+          "bio2rdf:ndc_vocabulary:Ingredient": 187752
+        },
+        "bio2rdf:ndc_vocabulary:labeller": {
+          "bio2rdf:ndc_vocabulary:Resource": 95115,
+          "bio2rdf:ndc_vocabulary:Labeller": 95114,
+          "bio2rdf:ndc_vocabulary:Ingredient": 1
+        },
+        "bio2rdf:ndc_vocabulary:pharmacological-class": {
+          "bio2rdf:ndc_vocabulary:Resource": 137578,
+          "bio2rdf:ndc_vocabulary:Pharmacological-Class": 137578
+        },
+        "bio2rdf:ndc_vocabulary:product-type": {
+          "bio2rdf:ndc_vocabulary:Resource": 95115,
+          "bio2rdf:ndc_vocabulary:Product-Type": 95092,
+          "bio2rdf:ndc_vocabulary:Route": 13,
+          "bio2rdf:ndc_vocabulary:Dosage-Form": 10
+        },
+        "bio2rdf:ndc_vocabulary:route": {
+          "bio2rdf:ndc_vocabulary:Resource": 100742,
+          "bio2rdf:ndc_vocabulary:Route": 100742
+        },
+        "bio2rdf:ndc_vocabulary:has-package": {
+          "bio2rdf:ndc_vocabulary:Resource": 176944,
+          "bio2rdf:ndc_vocabulary:Package": 176944
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 555258
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 555293
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 555292
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 555293
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 555293
+        },
+        "bio2rdf:ndc_vocabulary:amount": {
+          "Literal:xsd:integer": 32119,
+          "Literal:xsd:float": 5472,
+          "Literal:xsd:string": 6492
+        },
+        "bio2rdf:ndc_vocabulary:application-number": {
+          "Literal:xsd:string": 83253
+        },
+        "bio2rdf:ndc_vocabulary:end-marketing-date": {
+          "Literal:xsd:string": 1109
+        },
+        "bio2rdf:ndc_vocabulary:marketing-category": {
+          "Literal:xsd:string": 95115
+        },
+        "bio2rdf:ndc_vocabulary:non-proprietary-name": {
+          "Literal:xsd:string": 95112
+        },
+        "bio2rdf:ndc_vocabulary:product-id": {
+          "Literal:xsd:string": 95115
+        },
+        "bio2rdf:ndc_vocabulary:proprietary-name": {
+          "Literal:xsd:string": 95105,
+          "Literal:xsd:integer": 2
+        },
+        "bio2rdf:ndc_vocabulary:start-marketing-date": {
+          "Literal:xsd:string": 95110
+        },
+        "bio2rdf:ndc_vocabulary:trade-name-suffix": {
+          "Literal:xsd:string": 14234,
+          "Literal:xsd:integer": 130
+        },
+        "bio2rdf:ndc_vocabulary:ndc-product-id": {
+          "Literal:xsd:string": 95089
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Product",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ndc_vocabulary:dosage-form": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Dosage-Form"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:has-part": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Substance"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:ingredient": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Ingredient"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:labeller": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Labeller"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Ingredient"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:pharmacological-class": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Pharmacological-Class"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:product-type": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Product-Type"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Route"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Dosage-Form"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:route": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Route"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:has-package": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Package"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:application-number": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:end-marketing-date": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:marketing-category": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:non-proprietary-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:product-id": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:proprietary-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:start-marketing-date": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:trade-name-suffix": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:ndc_vocabulary:ndc-product-id": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 95115
+        },
+        "bio2rdf:ndc_vocabulary:dosage-form": {
+          "bio2rdf:ndc_vocabulary:Resource": 127257,
+          "bio2rdf:ndc_vocabulary:Dosage-Form": 127257
+        },
+        "bio2rdf:ndc_vocabulary:has-part": {
+          "bio2rdf:ndc_vocabulary:Resource": 187851,
+          "bio2rdf:ndc_vocabulary:Substance": 187851
+        },
+        "bio2rdf:ndc_vocabulary:ingredient": {
+          "bio2rdf:ndc_vocabulary:Resource": 187752,
+          "bio2rdf:ndc_vocabulary:Ingredient": 187752
+        },
+        "bio2rdf:ndc_vocabulary:labeller": {
+          "bio2rdf:ndc_vocabulary:Resource": 95115,
+          "bio2rdf:ndc_vocabulary:Labeller": 95114,
+          "bio2rdf:ndc_vocabulary:Ingredient": 1
+        },
+        "bio2rdf:ndc_vocabulary:pharmacological-class": {
+          "bio2rdf:ndc_vocabulary:Resource": 137578,
+          "bio2rdf:ndc_vocabulary:Pharmacological-Class": 137578
+        },
+        "bio2rdf:ndc_vocabulary:product-type": {
+          "bio2rdf:ndc_vocabulary:Resource": 95115,
+          "bio2rdf:ndc_vocabulary:Product-Type": 95092,
+          "bio2rdf:ndc_vocabulary:Route": 13,
+          "bio2rdf:ndc_vocabulary:Dosage-Form": 10
+        },
+        "bio2rdf:ndc_vocabulary:route": {
+          "bio2rdf:ndc_vocabulary:Resource": 100742,
+          "bio2rdf:ndc_vocabulary:Route": 100742
+        },
+        "bio2rdf:ndc_vocabulary:has-package": {
+          "bio2rdf:ndc_vocabulary:Resource": 176893,
+          "bio2rdf:ndc_vocabulary:Package": 176893
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 95107
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 95115
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 95115
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 95115
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 95115
+        },
+        "bio2rdf:ndc_vocabulary:application-number": {
+          "Literal:xsd:string": 83253
+        },
+        "bio2rdf:ndc_vocabulary:end-marketing-date": {
+          "Literal:xsd:string": 1109
+        },
+        "bio2rdf:ndc_vocabulary:marketing-category": {
+          "Literal:xsd:string": 95115
+        },
+        "bio2rdf:ndc_vocabulary:non-proprietary-name": {
+          "Literal:xsd:string": 95112
+        },
+        "bio2rdf:ndc_vocabulary:product-id": {
+          "Literal:xsd:string": 95115
+        },
+        "bio2rdf:ndc_vocabulary:proprietary-name": {
+          "Literal:xsd:string": 95105,
+          "Literal:xsd:integer": 2
+        },
+        "bio2rdf:ndc_vocabulary:start-marketing-date": {
+          "Literal:xsd:string": 95110
+        },
+        "bio2rdf:ndc_vocabulary:trade-name-suffix": {
+          "Literal:xsd:string": 14234,
+          "Literal:xsd:integer": 130
+        },
+        "bio2rdf:ndc_vocabulary:ndc-product-id": {
+          "Literal:xsd:string": 95062
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Ingredient",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6631
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6631
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6631
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6631
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6631
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6631
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Labeller",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 6552
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6552
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6552
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6552
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6552
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6552
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Substance",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ndc_vocabulary:amount_unit": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Unit"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:ndc_vocabulary:amount": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 44086
+        },
+        "bio2rdf:ndc_vocabulary:amount_unit": {
+          "bio2rdf:ndc_vocabulary:Resource": 44086,
+          "bio2rdf:ndc_vocabulary:Unit": 44086
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 44086
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 44086
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 44086
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 44086
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 44086
+        },
+        "bio2rdf:ndc_vocabulary:amount": {
+          "Literal:xsd:integer": 32119,
+          "Literal:xsd:float": 5472,
+          "Literal:xsd:string": 6492
+        }
+      }
+    },
+    {
+      "@id": "owl:Class",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 11
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 11
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 11
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 11
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 11
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 11
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Dosage-Form",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 105
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 105
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 105
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 105
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 105
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 105
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Pharmacological-Class",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1069
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1069
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1069
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1069
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1069
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1069
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Product-Type",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 33978
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 33978
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 33978
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 33977
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 33978
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 33978
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Route",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 68
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 68
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 68
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 68
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 68
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 68
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 9
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 9
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 9
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 9
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 9
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 9
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 10
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 10
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 10
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 10
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 10
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 10
+        }
+      }
+    },
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Package",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:ndc_vocabulary:has-part": [
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:ndc_vocabulary:Package-Component"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 176931
+        },
+        "bio2rdf:ndc_vocabulary:has-part": {
+          "bio2rdf:ndc_vocabulary:Resource": 225689,
+          "bio2rdf:ndc_vocabulary:Package-Component": 225689
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 176931
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 176931
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 176931
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 176931
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 176931
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Unit",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1801
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1801
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1801
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1801
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1801
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1801
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Package-Component",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 188900
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 188900
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 188900
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 188900
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 188900
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 188900
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T13:06:27.758630+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "ndc",
+    "graph_uris": [
+      "http://bio2rdf.org/ndc_resource:bio2rdf.dataset.ndc.R3"
+    ],
+    "pattern_count": 239,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "dcat:Distribution": "Distribution",
+    "dcterms:source": "source",
+    "bio2rdf:ndc_vocabulary:Resource": "ndc_vocabulary:Resource",
+    "void:inDataset": "inDataset",
+    "dcterms:Dataset": "Dataset",
+    "bio2rdf:ndc_vocabulary:Product": "ndc_vocabulary:Product",
+    "bio2rdf:ndc_vocabulary:Ingredient": "ndc_vocabulary:Ingredient",
+    "bio2rdf:ndc_vocabulary:Labeller": "ndc_vocabulary:Labeller",
+    "bio2rdf:ndc_vocabulary:Substance": "ndc_vocabulary:Substance",
+    "owl:Class": "Class",
+    "bio2rdf:ndc_vocabulary:Dosage-Form": "ndc_vocabulary:Dosage-Form",
+    "bio2rdf:ndc_vocabulary:Pharmacological-Class": "ndc_vocabulary:Pharmacological-Class",
+    "bio2rdf:ndc_vocabulary:Product-Type": "ndc_vocabulary:Product-Type",
+    "bio2rdf:ndc_vocabulary:Route": "ndc_vocabulary:Route",
+    "owl:ObjectProperty": "ObjectProperty",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "dcat:distribution": "distribution",
+    "bio2rdf:ndc_vocabulary:amount_unit": "ndc_vocabulary:amount_unit",
+    "bio2rdf:ndc_vocabulary:Unit": "ndc_vocabulary:Unit",
+    "bio2rdf:ndc_vocabulary:dosage-form": "ndc_vocabulary:dosage-form",
+    "bio2rdf:ndc_vocabulary:has-part": "ndc_vocabulary:has-part",
+    "bio2rdf:ndc_vocabulary:Package-Component": "ndc_vocabulary:Package-Component",
+    "bio2rdf:ndc_vocabulary:ingredient": "ndc_vocabulary:ingredient",
+    "bio2rdf:ndc_vocabulary:labeller": "ndc_vocabulary:labeller",
+    "bio2rdf:ndc_vocabulary:pharmacological-class": "ndc_vocabulary:pharmacological-class",
+    "bio2rdf:ndc_vocabulary:product-type": "ndc_vocabulary:product-type",
+    "bio2rdf:ndc_vocabulary:route": "ndc_vocabulary:route",
+    "bio2rdf:ndc_vocabulary:has-package": "ndc_vocabulary:has-package",
+    "bio2rdf:ndc_vocabulary:Package": "ndc_vocabulary:Package",
+    "dcterms:title": "title",
+    "dcterms:identifier": "identifier",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "dcterms:created": "created",
+    "dcterms:format": "format",
+    "dcterms:rights": "rights",
+    "pav:retrievedOn": "retrievedOn",
+    "bio2rdf:ndc_vocabulary:amount": "ndc_vocabulary:amount",
+    "bio2rdf:ndc_vocabulary:application-number": "ndc_vocabulary:application-number",
+    "bio2rdf:ndc_vocabulary:end-marketing-date": "ndc_vocabulary:end-marketing-date",
+    "bio2rdf:ndc_vocabulary:marketing-category": "ndc_vocabulary:marketing-category",
+    "bio2rdf:ndc_vocabulary:non-proprietary-name": "ndc_vocabulary:non-proprietary-name",
+    "bio2rdf:ndc_vocabulary:product-id": "ndc_vocabulary:product-id",
+    "bio2rdf:ndc_vocabulary:proprietary-name": "ndc_vocabulary:proprietary-name",
+    "bio2rdf:ndc_vocabulary:start-marketing-date": "ndc_vocabulary:start-marketing-date",
+    "bio2rdf:ndc_vocabulary:trade-name-suffix": "ndc_vocabulary:trade-name-suffix",
+    "bio2rdf:ndc_vocabulary:ndc-product-id": "ndc_vocabulary:ndc-product-id",
+    "dcterms:creator": "creator",
+    "dcterms:publisher": "publisher",
+    "foaf:page": "page",
+    "dcterms:license": "license"
+  }
+}

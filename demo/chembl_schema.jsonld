@@ -1,0 +1,6456 @@
+{
+  "@context": {
+    "chembl": "http://rdf.ebi.ac.uk/terms/chembl#",
+    "sio": "http://semanticscience.org/resource/SIO_",
+    "cheminf": "http://semanticscience.org/resource/CHEMINF_",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "resource": "http://semanticscience.org/resource/",
+    "bao": "http://www.bioassayontology.org/bao#BAO_",
+    "bibo": "http://purl.org/ontology/bibo/",
+    "pdbxv50owl": "http://rdf.wwpdb.org/schema/pdbx-v50.owl#"
+  },
+  "@graph": [
+    {
+      "@id": "chembl:Substance",
+      "chembl:moleculeXref": [
+        {
+          "@id": "chembl:SelleckRef"
+        },
+        {
+          "@id": "chembl:PubchemThomPharmRef"
+        },
+        {
+          "@id": "chembl:ReconRef"
+        },
+        {
+          "@id": "chembl:PubchemRef"
+        },
+        {
+          "@id": "chembl:PubchemDotfRef"
+        },
+        {
+          "@id": "chembl:SureChemblRef"
+        },
+        {
+          "@id": "chembl:PharmGkbRef"
+        },
+        {
+          "@id": "chembl:IupharRef"
+        },
+        {
+          "@id": "chembl:ChebiRef"
+        },
+        {
+          "@id": "chembl:HmdbRef"
+        },
+        {
+          "@id": "chembl:NmrShiftDb2Ref"
+        },
+        {
+          "@id": "chembl:DrugbankRef"
+        },
+        {
+          "@id": "chembl:MculeRef"
+        },
+        {
+          "@id": "chembl:PdbeRef"
+        },
+        {
+          "@id": "chembl:AtlasRef"
+        },
+        {
+          "@id": "chembl:ZincRef"
+        },
+        {
+          "@id": "chembl:NikkajiRef"
+        },
+        {
+          "@id": "chembl:LincsRef"
+        },
+        {
+          "@id": "chembl:ActorRef"
+        },
+        {
+          "@id": "chembl:KeggLigandRef"
+        },
+        {
+          "@id": "chembl:EmoleculesRef"
+        },
+        {
+          "@id": "chembl:FdaSrsRef"
+        }
+      ],
+      "sio:000008": [
+        {
+          "@id": "cheminf:000018"
+        },
+        {
+          "@id": "cheminf:000381"
+        },
+        {
+          "@id": "cheminf:000244"
+        },
+        {
+          "@id": "cheminf:000300"
+        },
+        {
+          "@id": "cheminf:000307"
+        },
+        {
+          "@id": "cheminf:000312"
+        },
+        {
+          "@id": "cheminf:000315"
+        },
+        {
+          "@id": "cheminf:000431"
+        },
+        {
+          "@id": "cheminf:000350"
+        },
+        {
+          "@id": "cheminf:000216"
+        },
+        {
+          "@id": "sio:011120"
+        },
+        {
+          "@id": "cheminf:000254"
+        },
+        {
+          "@id": "cheminf:000042"
+        },
+        {
+          "@id": "cheminf:000251"
+        },
+        {
+          "@id": "cheminf:000113"
+        },
+        {
+          "@id": "cheminf:000059"
+        },
+        {
+          "@id": "cheminf:000245"
+        }
+      ],
+      "chembl:hasDrugIndication": {
+        "@id": "chembl:DrugIndication"
+      },
+      "chembl:hasBioComponent": {
+        "@id": "chembl:BioComponent"
+      },
+      "chembl:hasChildMolecule": [
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        }
+      ],
+      "chembl:hasActivity": {
+        "@id": "chembl:Activity"
+      },
+      "chembl:hasMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasDocument": [
+        {
+          "@id": "chembl:Document"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "chembl:hasParentMolecule": [
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Oligonucleotide"
+        }
+      ],
+      "foaf:depiction": {
+        "@id": "foaf:Image"
+      },
+      "chembl:HRACClassification": {
+        "@type": "xsd:string"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:helmNotation": {
+        "@type": "xsd:string"
+      },
+      "chembl:FRACClassification": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "chembl:isBiotherapeutic": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:atcClassification": {
+        "@type": "xsd:string"
+      },
+      "chembl:highestDevelopmentPhase": {
+        "@type": "xsd:float"
+      },
+      "chembl:substanceType": {
+        "@type": "xsd:string"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:moleculeXref": {
+          "chembl:SelleckRef": 1732,
+          "chembl:PubchemThomPharmRef": 454443,
+          "chembl:ReconRef": 303,
+          "chembl:PubchemRef": 2684595,
+          "chembl:PubchemDotfRef": 3912,
+          "chembl:SureChemblRef": 822916,
+          "chembl:PharmGkbRef": 1459,
+          "chembl:IupharRef": 6975,
+          "chembl:ChebiRef": 43226,
+          "chembl:HmdbRef": 12292,
+          "chembl:NmrShiftDb2Ref": 42461,
+          "chembl:DrugbankRef": 9009,
+          "chembl:MculeRef": 514123,
+          "chembl:PdbeRef": 5,
+          "chembl:AtlasRef": 629,
+          "chembl:ZincRef": 1274860,
+          "chembl:NikkajiRef": 221314,
+          "chembl:LincsRef": 16780,
+          "chembl:ActorRef": 67279,
+          "chembl:KeggLigandRef": 6961,
+          "chembl:EmoleculesRef": 485636,
+          "chembl:FdaSrsRef": 33405
+        },
+        "sio:000008": {
+          "cheminf:000018": 2854815,
+          "cheminf:000381": 2784347,
+          "cheminf:000244": 2784347,
+          "cheminf:000300": 2784347,
+          "cheminf:000307": 2784347,
+          "cheminf:000312": 2784347,
+          "cheminf:000315": 2784347,
+          "cheminf:000431": 2784347,
+          "cheminf:000350": 2858455,
+          "cheminf:000216": 2858458,
+          "sio:011120": 2854815,
+          "cheminf:000254": 2784347,
+          "cheminf:000042": 2858458,
+          "cheminf:000251": 2784347,
+          "cheminf:000113": 2854806,
+          "cheminf:000059": 2854815,
+          "cheminf:000245": 2784347
+        },
+        "chembl:hasDrugIndication": {
+          "chembl:DrugIndication": 59954
+        },
+        "chembl:hasBioComponent": {
+          "chembl:BioComponent": 4418
+        },
+        "chembl:hasChildMolecule": {
+          "chembl:Oligonucleotide": 6,
+          "chembl:ProteinMolecule": 347,
+          "chembl:UnknownSubstance": 18180,
+          "chembl:Substance": 120485,
+          "chembl:Oligosaccharide": 8,
+          "chembl:SmallMolecule": 101944
+        },
+        "chembl:hasActivity": {
+          "chembl:Activity": 24267312
+        },
+        "chembl:hasMechanism": {
+          "chembl:Mechanism": 7568
+        },
+        "chembl:hasDocument": {
+          "chembl:Document": 3698389,
+          "Resource": 10528
+        },
+        "chembl:hasParentMolecule": {
+          "chembl:UnknownSubstance": 16971,
+          "chembl:ProteinMolecule": 372,
+          "chembl:Oligosaccharide": 13,
+          "chembl:Substance": 120485,
+          "chembl:SmallMolecule": 103123,
+          "chembl:Oligonucleotide": 6
+        },
+        "foaf:depiction": {
+          "foaf:Image": 2878135
+        },
+        "chembl:HRACClassification": {
+          "Literal:xsd:string": 244
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 2878135
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 3179311
+        },
+        "chembl:helmNotation": {
+          "Literal:xsd:string": 22122
+        },
+        "chembl:FRACClassification": {
+          "Literal:xsd:string": 155
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 2878135
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 1210
+        },
+        "chembl:isBiotherapeutic": {
+          "Literal:xsd:boolean": 23921
+        },
+        "chembl:atcClassification": {
+          "Literal:xsd:string": 4569
+        },
+        "chembl:highestDevelopmentPhase": {
+          "Literal:xsd:float": 19310
+        },
+        "chembl:substanceType": {
+          "Literal:xsd:string": 2878135
+        },
+        "skos:exactMatch": {
+          "Resource": 2684595
+        }
+      }
+    },
+    {
+      "@id": "chembl:Oligonucleotide",
+      "chembl:hasDrugIndication": {
+        "@id": "chembl:DrugIndication"
+      },
+      "chembl:hasChildMolecule": [
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:Oligonucleotide"
+        }
+      ],
+      "chembl:hasDocument": [
+        {
+          "@id": "chembl:Document"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "chembl:hasBioComponent": {
+        "@id": "chembl:BioComponent"
+      },
+      "sio:000008": [
+        {
+          "@id": "cheminf:000018"
+        },
+        {
+          "@id": "cheminf:000216"
+        },
+        {
+          "@id": "cheminf:000042"
+        },
+        {
+          "@id": "cheminf:000113"
+        },
+        {
+          "@id": "cheminf:000350"
+        },
+        {
+          "@id": "sio:011120"
+        },
+        {
+          "@id": "cheminf:000059"
+        }
+      ],
+      "chembl:hasMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasParentMolecule": [
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:Substance"
+        }
+      ],
+      "chembl:hasActivity": {
+        "@id": "chembl:Activity"
+      },
+      "foaf:depiction": {
+        "@id": "foaf:Image"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:isBiotherapeutic": {
+        "@type": "xsd:boolean"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:atcClassification": {
+        "@type": "xsd:string"
+      },
+      "chembl:highestDevelopmentPhase": {
+        "@type": "xsd:float"
+      },
+      "chembl:substanceType": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "chembl:hasDrugIndication": {
+          "chembl:DrugIndication": 374
+        },
+        "chembl:hasChildMolecule": {
+          "chembl:Substance": 6,
+          "chembl:Oligonucleotide": 6
+        },
+        "chembl:hasDocument": {
+          "chembl:Document": 328,
+          "Resource": 116
+        },
+        "chembl:hasBioComponent": {
+          "chembl:BioComponent": 175
+        },
+        "sio:000008": {
+          "cheminf:000018": 57,
+          "cheminf:000216": 57,
+          "cheminf:000042": 57,
+          "cheminf:000113": 49,
+          "cheminf:000350": 57,
+          "sio:011120": 57,
+          "cheminf:000059": 57
+        },
+        "chembl:hasMechanism": {
+          "chembl:Mechanism": 84
+        },
+        "chembl:hasParentMolecule": {
+          "chembl:Oligonucleotide": 6,
+          "chembl:Substance": 6
+        },
+        "chembl:hasActivity": {
+          "chembl:Activity": 757
+        },
+        "foaf:depiction": {
+          "foaf:Image": 260
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 260
+        },
+        "chembl:isBiotherapeutic": {
+          "Literal:xsd:boolean": 125
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 1066
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 260
+        },
+        "chembl:atcClassification": {
+          "Literal:xsd:string": 21
+        },
+        "chembl:highestDevelopmentPhase": {
+          "Literal:xsd:float": 209
+        },
+        "chembl:substanceType": {
+          "Literal:xsd:string": 260
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "chembl:Antibody",
+      "chembl:hasMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasActivity": {
+        "@id": "chembl:Activity"
+      },
+      "foaf:depiction": {
+        "@id": "foaf:Image"
+      },
+      "chembl:hasBioComponent": {
+        "@id": "chembl:BioComponent"
+      },
+      "chembl:hasDrugIndication": {
+        "@id": "chembl:DrugIndication"
+      },
+      "chembl:hasDocument": [
+        {
+          "@id": "chembl:Document"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:highestDevelopmentPhase": {
+        "@type": "xsd:float"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "chembl:isBiotherapeutic": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:helmNotation": {
+        "@type": "xsd:string"
+      },
+      "chembl:atcClassification": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:substanceType": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "chembl:hasMechanism": {
+          "chembl:Mechanism": 632
+        },
+        "chembl:hasActivity": {
+          "chembl:Activity": 116
+        },
+        "foaf:depiction": {
+          "foaf:Image": 1032
+        },
+        "chembl:hasBioComponent": {
+          "chembl:BioComponent": 2881
+        },
+        "chembl:hasDrugIndication": {
+          "chembl:DrugIndication": 5729
+        },
+        "chembl:hasDocument": {
+          "chembl:Document": 1742,
+          "Resource": 811
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 1032
+        },
+        "chembl:highestDevelopmentPhase": {
+          "Literal:xsd:float": 1032
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 292
+        },
+        "chembl:isBiotherapeutic": {
+          "Literal:xsd:boolean": 890
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 1032
+        },
+        "chembl:helmNotation": {
+          "Literal:xsd:string": 85
+        },
+        "chembl:atcClassification": {
+          "Literal:xsd:string": 155
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 5836
+        },
+        "chembl:substanceType": {
+          "Literal:xsd:string": 1032
+        }
+      }
+    },
+    {
+      "@id": "chembl:ChimericProtein",
+      "chembl:relHasSubset": [
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:SingleProtein"
+        }
+      ],
+      "chembl:relOverlapsWith": [
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        }
+      ],
+      "chembl:hasProteinClassification": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "chembl:relSubsetOf": [
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:Target"
+        }
+      ],
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:hasTargetComponent": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:hasBindingSite": {
+        "@id": "chembl:BindingSite"
+      },
+      "skos:relatedMatch": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:relHasSubset": {
+          "chembl:Target": 56,
+          "chembl:SingleProtein": 56
+        },
+        "chembl:relOverlapsWith": {
+          "chembl:Target": 189,
+          "chembl:ProteinProteinInteraction": 75,
+          "chembl:ProteinFamily": 18,
+          "chembl:ProteinComplex": 4,
+          "chembl:ChimericProtein": 78,
+          "chembl:ProteinSelectivityGroup": 14
+        },
+        "chembl:hasProteinClassification": {
+          "chembl:ProteinClassification": 236
+        },
+        "chembl:relSubsetOf": {
+          "chembl:ProteinProteinInteraction": 10,
+          "chembl:ProteinFamily": 2,
+          "chembl:ProteinSelectivityGroup": 1,
+          "chembl:Target": 13
+        },
+        "chembl:hasAssay": {
+          "chembl:Assay": 768
+        },
+        "chembl:hasTargetComponent": {
+          "chembl:TargetComponent": 67
+        },
+        "chembl:hasBindingSite": {
+          "chembl:BindingSite": 1
+        },
+        "skos:relatedMatch": {
+          "chembl:TargetComponent": 67
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 23
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 34
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 34
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 34
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 34
+        },
+        "chembl:taxonomy": {
+          "Resource": 102
+        }
+      }
+    },
+    {
+      "@id": "chembl:Phenotype",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 59
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 2
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 2
+        }
+      }
+    },
+    {
+      "@id": "chembl:CellTherapy",
+      "chembl:hasDocument": [
+        {
+          "@id": "chembl:Document"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "chembl:hasMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasDrugIndication": {
+        "@id": "chembl:DrugIndication"
+      },
+      "foaf:depiction": {
+        "@id": "foaf:Image"
+      },
+      "chembl:substanceType": {
+        "@type": "xsd:string"
+      },
+      "chembl:atcClassification": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:highestDevelopmentPhase": {
+        "@type": "xsd:float"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:isBiotherapeutic": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "chembl:hasDocument": {
+          "chembl:Document": 109,
+          "Resource": 44
+        },
+        "chembl:hasMechanism": {
+          "chembl:Mechanism": 11
+        },
+        "chembl:hasDrugIndication": {
+          "chembl:DrugIndication": 171
+        },
+        "foaf:depiction": {
+          "foaf:Image": 85
+        },
+        "chembl:substanceType": {
+          "Literal:xsd:string": 85
+        },
+        "chembl:atcClassification": {
+          "Literal:xsd:string": 6
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 85
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 314
+        },
+        "chembl:highestDevelopmentPhase": {
+          "Literal:xsd:float": 85
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 85
+        },
+        "chembl:isBiotherapeutic": {
+          "Literal:xsd:boolean": 1
+        }
+      }
+    },
+    {
+      "@id": "chembl:ProteinNucleicAcidComplex",
+      "chembl:hasProteinClassification": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "skos:relatedMatch": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:hasBindingSite": {
+        "@id": "chembl:BindingSite"
+      },
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:hasTargetComponent": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasProteinClassification": {
+          "chembl:ProteinClassification": 21
+        },
+        "skos:relatedMatch": {
+          "chembl:TargetComponent": 430
+        },
+        "chembl:hasBindingSite": {
+          "chembl:BindingSite": 9
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 86
+        },
+        "chembl:hasAssay": {
+          "chembl:Assay": 165
+        },
+        "chembl:hasTargetComponent": {
+          "chembl:TargetComponent": 430
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 11
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 1
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 11
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 11
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 11
+        },
+        "chembl:taxonomy": {
+          "Resource": 33
+        }
+      }
+    },
+    {
+      "@id": "chembl:Macromolecule",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 232
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 35
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 18
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 3
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 18
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 18
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 18
+        },
+        "chembl:taxonomy": {
+          "Resource": 54
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000251",
+      "sio:000011": [
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:Substance"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:UnknownSubstance": 887707,
+          "chembl:SmallMolecule": 1887042,
+          "chembl:Oligosaccharide": 22,
+          "chembl:ProteinMolecule": 9576,
+          "chembl:Substance": 2784347
+        },
+        "sio:000300": {
+          "Literal:xsd:double": 2784347
+        }
+      }
+    },
+    {
+      "@id": "chembl:ADMET",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 152589
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000244",
+      "sio:000011": [
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:SmallMolecule": 1887042,
+          "chembl:Oligosaccharide": 22,
+          "chembl:Substance": 2784347,
+          "chembl:ProteinMolecule": 9576,
+          "chembl:UnknownSubstance": 887707
+        },
+        "sio:000300": {
+          "Literal:xsd:double": 2784347
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000381",
+      "sio:000011": [
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:Substance": 2784347,
+          "chembl:Oligosaccharide": 22,
+          "chembl:UnknownSubstance": 887707,
+          "chembl:ProteinMolecule": 9576,
+          "chembl:SmallMolecule": 1887042
+        },
+        "sio:000300": {
+          "Literal:xsd:double": 2784347
+        }
+      }
+    },
+    {
+      "@id": "chembl:UnclassifiedTarget",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 183389
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 14
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 19
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 19
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 13
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 19
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 1
+        },
+        "chembl:taxonomy": {
+          "Resource": 39
+        }
+      }
+    },
+    {
+      "@id": "chembl:IntactRef",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 8439
+        }
+      }
+    },
+    {
+      "@id": "chembl:ReactomeRef",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 4996
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000245",
+      "sio:000011": [
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:SmallMolecule": 1887042,
+          "chembl:Substance": 2784347,
+          "chembl:Oligosaccharide": 22,
+          "chembl:UnknownSubstance": 887707,
+          "chembl:ProteinMolecule": 9576
+        },
+        "sio:000300": {
+          "Literal:xsd:double": 2784347
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000307",
+      "sio:000011": [
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:Substance": 2784347,
+          "chembl:SmallMolecule": 1887042,
+          "chembl:UnknownSubstance": 887707,
+          "chembl:Oligosaccharide": 22,
+          "chembl:ProteinMolecule": 9576
+        },
+        "sio:000300": {
+          "Literal:xsd:double": 2784347
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000018",
+      "sio:000011": [
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:Oligonucleotide": 57,
+          "chembl:UnknownSubstance": 917050,
+          "chembl:Substance": 2854815,
+          "chembl:SmallMolecule": 1915414,
+          "chembl:Oligosaccharide": 53,
+          "chembl:ProteinMolecule": 22241
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 2854815
+        }
+      }
+    },
+    {
+      "@id": "sio:011120",
+      "sio:000011": [
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        }
+      ],
+      "resource:is-attribute-of": [
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:Substance": 2854815,
+          "chembl:SmallMolecule": 1915414,
+          "chembl:Oligonucleotide": 57,
+          "chembl:UnknownSubstance": 917050,
+          "chembl:ProteinMolecule": 22241,
+          "chembl:Oligosaccharide": 53
+        },
+        "resource:is-attribute-of": {
+          "chembl:Substance": 2854815,
+          "chembl:Oligosaccharide": 53,
+          "chembl:SmallMolecule": 1915414,
+          "chembl:Oligonucleotide": 57,
+          "chembl:UnknownSubstance": 917050,
+          "chembl:ProteinMolecule": 22241
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 2854815
+        },
+        "resource:has-value": {
+          "Literal:xsd:string": 2854815
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000113",
+      "sio:000011": [
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:Oligonucleotide": 49,
+          "chembl:UnknownSubstance": 917050,
+          "chembl:Substance": 2854806,
+          "chembl:ProteinMolecule": 22240,
+          "chembl:Oligosaccharide": 53,
+          "chembl:SmallMolecule": 1915414
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 2854806
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000300",
+      "sio:000011": [
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:Substance": 2784347,
+          "chembl:SmallMolecule": 1887042,
+          "chembl:ProteinMolecule": 9576,
+          "chembl:Oligosaccharide": 22,
+          "chembl:UnknownSubstance": 887707
+        },
+        "sio:000300": {
+          "Literal:xsd:double": 2784347
+        }
+      }
+    },
+    {
+      "@id": "chembl:NucleicAcid",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasProteinClassification": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "chembl:hasTargetComponent": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 8889
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 231
+        },
+        "chembl:hasProteinClassification": {
+          "chembl:ProteinClassification": 100
+        },
+        "chembl:hasTargetComponent": {
+          "chembl:TargetComponent": 52
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 5
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 112
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 86
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 112
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 112
+        },
+        "chembl:taxonomy": {
+          "Resource": 258
+        }
+      }
+    },
+    {
+      "@id": "chembl:EnzymeClassRef",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 1576
+        }
+      }
+    },
+    {
+      "@id": "chembl:PharmgkbRef",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 6416
+        }
+      }
+    },
+    {
+      "@id": "chembl:UniprotRef",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 12782
+        }
+      }
+    },
+    {
+      "@id": "chembl:InterproRef",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 12634
+        }
+      }
+    },
+    {
+      "@id": "chembl:Assay",
+      "chembl:hasTarget": [
+        {
+          "@id": "chembl:UnknownTarget"
+        },
+        {
+          "@id": "chembl:Tissue"
+        },
+        {
+          "@id": "chembl:UnclassifiedTarget"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinNucleicAcidComplex"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:Phenotype"
+        },
+        {
+          "@id": "chembl:SubCellular"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:OligosaccharideTarget"
+        },
+        {
+          "@id": "chembl:SingleProtein"
+        },
+        {
+          "@id": "chembl:SmallMoleculeTarget"
+        },
+        {
+          "@id": "chembl:Macromolecule"
+        },
+        {
+          "@id": "chembl:Organism"
+        },
+        {
+          "@id": "chembl:CellLineTarget"
+        },
+        {
+          "@id": "chembl:ADMET"
+        },
+        {
+          "@id": "chembl:NucleicAcid"
+        },
+        {
+          "@id": "chembl:NonMolecular"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        }
+      ],
+      "chembl:hasSource": {
+        "@id": "chembl:Source"
+      },
+      "chembl:hasCellLine": {
+        "@id": "chembl:CellLine"
+      },
+      "chembl:hasActivity": {
+        "@id": "chembl:Activity"
+      },
+      "chembl:hasDocument": {
+        "@id": "chembl:Document"
+      },
+      "chembl:assayXref": {
+        "@id": "chembl:PubchemBioassayRef"
+      },
+      "chembl:assaySubCellFrac": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetConfScore": {
+        "@type": "xsd:int"
+      },
+      "chembl:assayTestType": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetRelDesc": {
+        "@type": "xsd:string"
+      },
+      "chembl:assayCellType": {
+        "@type": "xsd:string"
+      },
+      "chembl:assayTissue": {
+        "@type": "xsd:string"
+      },
+      "chembl:assayCategory": {
+        "@type": "xsd:string"
+      },
+      "chembl:assayType": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetRelType": {
+        "@type": "xsd:string"
+      },
+      "chembl:assayStrain": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetConfDesc": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "bao:0000205": {
+        "@id": "rdfs:Resource"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasTarget": {
+          "chembl:UnknownTarget": 10805,
+          "chembl:Tissue": 35867,
+          "chembl:UnclassifiedTarget": 183389,
+          "chembl:Target": 1890749,
+          "chembl:ProteinSelectivityGroup": 2497,
+          "chembl:ProteinFamily": 19172,
+          "chembl:ProteinNucleicAcidComplex": 165,
+          "chembl:ProteinComplexGroup": 5259,
+          "chembl:Phenotype": 59,
+          "chembl:SubCellular": 5091,
+          "chembl:ProteinComplex": 19047,
+          "chembl:OligosaccharideTarget": 6,
+          "chembl:SingleProtein": 513292,
+          "chembl:SmallMoleculeTarget": 146,
+          "chembl:Macromolecule": 232,
+          "chembl:Organism": 520926,
+          "chembl:CellLineTarget": 366518,
+          "chembl:ADMET": 152589,
+          "chembl:NucleicAcid": 8889,
+          "chembl:NonMolecular": 37869,
+          "chembl:ProteinProteinInteraction": 8163,
+          "chembl:ChimericProtein": 768
+        },
+        "chembl:hasSource": {
+          "chembl:Source": 1890749
+        },
+        "chembl:hasCellLine": {
+          "chembl:CellLine": 542997
+        },
+        "chembl:hasActivity": {
+          "chembl:Activity": 24267312
+        },
+        "chembl:hasDocument": {
+          "chembl:Document": 1890749
+        },
+        "chembl:assayXref": {
+          "chembl:PubchemBioassayRef": 2999
+        },
+        "chembl:assaySubCellFrac": {
+          "Literal:xsd:string": 45067
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 1890708
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 1890749
+        },
+        "chembl:targetConfScore": {
+          "Literal:xsd:int": 1555182
+        },
+        "chembl:assayTestType": {
+          "Literal:xsd:string": 111375
+        },
+        "chembl:targetRelDesc": {
+          "Literal:xsd:string": 1890749
+        },
+        "chembl:assayCellType": {
+          "Literal:xsd:string": 648182
+        },
+        "chembl:assayTissue": {
+          "Literal:xsd:string": 211996
+        },
+        "chembl:assayCategory": {
+          "Literal:xsd:string": 26639
+        },
+        "chembl:assayType": {
+          "Literal:xsd:string": 1890749
+        },
+        "chembl:targetRelType": {
+          "Literal:xsd:string": 1890749
+        },
+        "chembl:assayStrain": {
+          "Literal:xsd:string": 359793
+        },
+        "chembl:targetConfDesc": {
+          "Literal:xsd:string": 1890749
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 1725362
+        },
+        "chembl:taxonomy": {
+          "Resource": 5157837
+        },
+        "bao:0000205": {
+          "Resource": 1890749
+        },
+        "skos:exactMatch": {
+          "Resource": 2999
+        }
+      }
+    },
+    {
+      "@id": "chembl:ProteinComplex",
+      "chembl:relHasSubset": [
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:SingleProtein"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:Target"
+        }
+      ],
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasBindingSite": {
+        "@id": "chembl:BindingSite"
+      },
+      "chembl:relOverlapsWith": [
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        }
+      ],
+      "chembl:relEquivalentTo": [
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:SingleProtein"
+        }
+      ],
+      "chembl:relSubsetOf": [
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:Target"
+        }
+      ],
+      "skos:relatedMatch": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:hasTargetComponent": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:hasProteinClassification": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:relHasSubset": {
+          "chembl:ProteinComplex": 113,
+          "chembl:ProteinFamily": 1,
+          "chembl:ProteinProteinInteraction": 7,
+          "chembl:ProteinSelectivityGroup": 1,
+          "chembl:SingleProtein": 1040,
+          "chembl:ProteinComplexGroup": 1,
+          "chembl:Target": 1163
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 371
+        },
+        "chembl:hasBindingSite": {
+          "chembl:BindingSite": 1158
+        },
+        "chembl:relOverlapsWith": {
+          "chembl:ProteinComplexGroup": 171,
+          "chembl:ProteinFamily": 316,
+          "chembl:ProteinProteinInteraction": 1654,
+          "chembl:ProteinSelectivityGroup": 89,
+          "chembl:Target": 4818,
+          "chembl:ProteinComplex": 2584,
+          "chembl:ChimericProtein": 4
+        },
+        "chembl:relEquivalentTo": {
+          "chembl:ProteinComplex": 6,
+          "chembl:ProteinFamily": 2,
+          "chembl:ProteinSelectivityGroup": 1,
+          "chembl:ProteinProteinInteraction": 2,
+          "chembl:Target": 12,
+          "chembl:SingleProtein": 1
+        },
+        "chembl:relSubsetOf": {
+          "chembl:ProteinProteinInteraction": 12,
+          "chembl:ProteinFamily": 36,
+          "chembl:ProteinComplex": 113,
+          "chembl:ProteinSelectivityGroup": 26,
+          "chembl:ProteinComplexGroup": 230,
+          "chembl:Target": 417
+        },
+        "skos:relatedMatch": {
+          "chembl:TargetComponent": 1601
+        },
+        "chembl:hasTargetComponent": {
+          "chembl:TargetComponent": 1601
+        },
+        "chembl:hasProteinClassification": {
+          "chembl:ProteinClassification": 3322
+        },
+        "chembl:hasAssay": {
+          "chembl:Assay": 19047
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 4
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 645
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 645
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 645
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 645
+        },
+        "chembl:taxonomy": {
+          "Resource": 1935
+        }
+      }
+    },
+    {
+      "@id": "chembl:Mechanism",
+      "chembl:hasMolecule": [
+        {
+          "@id": "chembl:Enzyme"
+        },
+        {
+          "@id": "chembl:CellTherapy"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:UnclassifiedMolecule"
+        },
+        {
+          "@id": "chembl:Antibody"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        }
+      ],
+      "chembl:hasTarget": [
+        {
+          "@id": "chembl:UnknownTarget"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:SubCellular"
+        },
+        {
+          "@id": "chembl:SingleProtein"
+        },
+        {
+          "@id": "chembl:NucleicAcid"
+        },
+        {
+          "@id": "chembl:Metal"
+        },
+        {
+          "@id": "chembl:Macromolecule"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:ProteinNucleicAcidComplex"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:CellLineTarget"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        },
+        {
+          "@id": "chembl:Organism"
+        },
+        {
+          "@id": "chembl:UnclassifiedTarget"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:SmallMoleculeTarget"
+        },
+        {
+          "@id": "chembl:OligosaccharideTarget"
+        }
+      ],
+      "chembl:hasBindingSite": {
+        "@id": "chembl:BindingSite"
+      },
+      "chembl:mechanismDescription": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:mechanismActionType": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "chembl:hasMolecule": {
+          "chembl:Enzyme": 85,
+          "chembl:CellTherapy": 11,
+          "chembl:ProteinMolecule": 442,
+          "chembl:UnknownSubstance": 693,
+          "chembl:Oligonucleotide": 84,
+          "chembl:SmallMolecule": 5371,
+          "chembl:Substance": 7568,
+          "chembl:UnclassifiedMolecule": 229,
+          "chembl:Antibody": 632,
+          "chembl:Oligosaccharide": 21
+        },
+        "chembl:hasTarget": {
+          "chembl:UnknownTarget": 4,
+          "chembl:Target": 6990,
+          "chembl:SubCellular": 29,
+          "chembl:SingleProtein": 4948,
+          "chembl:NucleicAcid": 231,
+          "chembl:Metal": 34,
+          "chembl:Macromolecule": 35,
+          "chembl:ProteinFamily": 755,
+          "chembl:ProteinComplexGroup": 297,
+          "chembl:ProteinNucleicAcidComplex": 86,
+          "chembl:ProteinSelectivityGroup": 12,
+          "chembl:CellLineTarget": 1,
+          "chembl:ChimericProtein": 23,
+          "chembl:Organism": 2,
+          "chembl:UnclassifiedTarget": 14,
+          "chembl:ProteinProteinInteraction": 9,
+          "chembl:ProteinComplex": 371,
+          "chembl:SmallMoleculeTarget": 93,
+          "chembl:OligosaccharideTarget": 46
+        },
+        "chembl:hasBindingSite": {
+          "chembl:BindingSite": 250
+        },
+        "chembl:mechanismDescription": {
+          "Literal:xsd:string": 7568
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 7568
+        },
+        "chembl:mechanismActionType": {
+          "Literal:xsd:string": 6990
+        }
+      }
+    },
+    {
+      "@id": "chembl:Target",
+      "chembl:relSubsetOf": [
+        {
+          "@id": "chembl:ChimericProtein"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:ProteinNucleicAcidComplex"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        }
+      ],
+      "chembl:hasTargetComponent": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:relEquivalentTo": [
+        {
+          "@id": "chembl:SingleProtein"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        }
+      ],
+      "chembl:hasProteinClassification": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:hasBindingSite": {
+        "@id": "chembl:BindingSite"
+      },
+      "chembl:relHasSubset": [
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:SingleProtein"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        }
+      ],
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:relOverlapsWith": [
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        }
+      ],
+      "skos:exactMatch": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:isTargetForCellLine": {
+        "@id": "chembl:CellLine"
+      },
+      "skos:relatedMatch": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:relSubsetOf": {
+          "chembl:ChimericProtein": 56,
+          "chembl:ProteinProteinInteraction": 1235,
+          "chembl:ProteinComplexGroup": 494,
+          "chembl:ProteinNucleicAcidComplex": 72,
+          "chembl:Target": 4851,
+          "chembl:ProteinFamily": 1510,
+          "chembl:ProteinSelectivityGroup": 321,
+          "chembl:ProteinComplex": 1163
+        },
+        "chembl:hasTargetComponent": {
+          "chembl:TargetComponent": 16702
+        },
+        "chembl:relEquivalentTo": {
+          "chembl:SingleProtein": 28,
+          "chembl:ProteinFamily": 12,
+          "chembl:ProteinComplex": 12,
+          "chembl:ProteinSelectivityGroup": 8,
+          "chembl:Target": 62,
+          "chembl:ProteinProteinInteraction": 2
+        },
+        "chembl:hasProteinClassification": {
+          "chembl:ProteinClassification": 47772
+        },
+        "chembl:hasAssay": {
+          "chembl:Assay": 1890749
+        },
+        "chembl:hasBindingSite": {
+          "chembl:BindingSite": 4549
+        },
+        "chembl:relHasSubset": {
+          "chembl:ProteinComplex": 417,
+          "chembl:ProteinFamily": 132,
+          "chembl:ProteinComplexGroup": 19,
+          "chembl:ProteinSelectivityGroup": 98,
+          "chembl:ProteinProteinInteraction": 51,
+          "chembl:SingleProtein": 4049,
+          "chembl:Target": 4779,
+          "chembl:ChimericProtein": 13
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 6990
+        },
+        "chembl:relOverlapsWith": {
+          "chembl:ProteinProteinInteraction": 81420,
+          "chembl:ProteinSelectivityGroup": 590,
+          "chembl:ProteinFamily": 1058,
+          "chembl:ProteinComplexGroup": 235,
+          "chembl:Target": 88310,
+          "chembl:ProteinComplex": 4818,
+          "chembl:ChimericProtein": 189
+        },
+        "skos:exactMatch": {
+          "chembl:TargetComponent": 10962
+        },
+        "chembl:isTargetForCellLine": {
+          "chembl:CellLine": 1877
+        },
+        "skos:relatedMatch": {
+          "chembl:TargetComponent": 5688
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 17556
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 17803
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 322
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 17803
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 17803
+        },
+        "chembl:taxonomy": {
+          "Resource": 52662
+        }
+      }
+    },
+    {
+      "@id": "chembl:ProteinClassification",
+      "skos:narrower": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "chembl:hasTargetComponentDescendant": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:hasTargetDescendant": [
+        {
+          "@id": "chembl:SingleProtein"
+        },
+        {
+          "@id": "chembl:ProteinNucleicAcidComplex"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:NucleicAcid"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        }
+      ],
+      "skos:broader": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:classLevel": {
+        "@type": "xsd:string"
+      },
+      "chembl:classPath": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "skos:narrower": {
+          "chembl:ProteinClassification": 904
+        },
+        "chembl:hasTargetComponentDescendant": {
+          "chembl:TargetComponent": 43324
+        },
+        "chembl:hasTargetDescendant": {
+          "chembl:SingleProtein": 37673,
+          "chembl:ProteinNucleicAcidComplex": 21,
+          "chembl:ProteinComplexGroup": 345,
+          "chembl:Target": 47772,
+          "chembl:NucleicAcid": 100,
+          "chembl:ProteinComplex": 3322,
+          "chembl:ChimericProtein": 236,
+          "chembl:ProteinProteinInteraction": 3003,
+          "chembl:ProteinSelectivityGroup": 723,
+          "chembl:ProteinFamily": 2349
+        },
+        "skos:broader": {
+          "chembl:ProteinClassification": 904
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 905
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 905
+        },
+        "chembl:classLevel": {
+          "Literal:xsd:string": 905
+        },
+        "chembl:classPath": {
+          "Literal:xsd:string": 905
+        }
+      }
+    },
+    {
+      "@id": "chembl:UnknownTarget",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 10805
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 4
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 8
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 20
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 20
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 20
+        },
+        "chembl:taxonomy": {
+          "Resource": 24
+        }
+      }
+    },
+    {
+      "@id": "chembl:Enzyme",
+      "chembl:hasDrugIndication": {
+        "@id": "chembl:DrugIndication"
+      },
+      "chembl:hasBioComponent": {
+        "@id": "chembl:BioComponent"
+      },
+      "foaf:depiction": {
+        "@id": "foaf:Image"
+      },
+      "chembl:hasActivity": {
+        "@id": "chembl:Activity"
+      },
+      "chembl:hasMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasDocument": [
+        {
+          "@id": "chembl:Document"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "chembl:substanceType": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:atcClassification": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "chembl:highestDevelopmentPhase": {
+        "@type": "xsd:float"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:isBiotherapeutic": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "chembl:hasDrugIndication": {
+          "chembl:DrugIndication": 422
+        },
+        "chembl:hasBioComponent": {
+          "chembl:BioComponent": 111
+        },
+        "foaf:depiction": {
+          "foaf:Image": 129
+        },
+        "chembl:hasActivity": {
+          "chembl:Activity": 155
+        },
+        "chembl:hasMechanism": {
+          "chembl:Mechanism": 85
+        },
+        "chembl:hasDocument": {
+          "chembl:Document": 297,
+          "Resource": 89
+        },
+        "chembl:substanceType": {
+          "Literal:xsd:string": 129
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 129
+        },
+        "chembl:atcClassification": {
+          "Literal:xsd:string": 53
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 859
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 19
+        },
+        "chembl:highestDevelopmentPhase": {
+          "Literal:xsd:float": 129
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 129
+        },
+        "chembl:isBiotherapeutic": {
+          "Literal:xsd:boolean": 66
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000312",
+      "sio:000011": [
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:UnknownSubstance": 887707,
+          "chembl:ProteinMolecule": 9576,
+          "chembl:Oligosaccharide": 22,
+          "chembl:Substance": 2784347,
+          "chembl:SmallMolecule": 1887042
+        },
+        "sio:000300": {
+          "Literal:xsd:double": 2784347
+        }
+      }
+    },
+    {
+      "@id": "chembl:CGDRef",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 27
+        }
+      }
+    },
+    {
+      "@id": "chembl:GoComponentRef",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 1713
+        }
+      }
+    },
+    {
+      "@id": "chembl:BindingSite",
+      "chembl:hasTarget": [
+        {
+          "@id": "chembl:SingleProtein"
+        },
+        {
+          "@id": "chembl:ProteinNucleicAcidComplex"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        }
+      ],
+      "chembl:isBindingSiteForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:bindingSiteName": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "chembl:hasTarget": {
+          "chembl:SingleProtein": 3365,
+          "chembl:ProteinNucleicAcidComplex": 9,
+          "chembl:Target": 4549,
+          "chembl:ProteinComplexGroup": 15,
+          "chembl:ProteinFamily": 1,
+          "chembl:ChimericProtein": 1,
+          "chembl:ProteinComplex": 1158
+        },
+        "chembl:isBindingSiteForMechanism": {
+          "chembl:Mechanism": 250
+        },
+        "chembl:bindingSiteName": {
+          "Literal:xsd:string": 4549
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 4549
+        }
+      }
+    },
+    {
+      "@id": "chembl:ProteinSelectivityGroup",
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:relHasSubset": [
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:SingleProtein"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        }
+      ],
+      "chembl:relOverlapsWith": [
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        }
+      ],
+      "chembl:relEquivalentTo": [
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:Target"
+        }
+      ],
+      "chembl:hasProteinClassification": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:relSubsetOf": [
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        }
+      ],
+      "chembl:hasTargetComponent": {
+        "@id": "chembl:TargetComponent"
+      },
+      "skos:relatedMatch": {
+        "@id": "chembl:TargetComponent"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 12
+        },
+        "chembl:relHasSubset": {
+          "chembl:ProteinComplex": 26,
+          "chembl:ProteinFamily": 11,
+          "chembl:ProteinComplexGroup": 1,
+          "chembl:ProteinSelectivityGroup": 9,
+          "chembl:SingleProtein": 273,
+          "chembl:Target": 321,
+          "chembl:ChimericProtein": 1
+        },
+        "chembl:relOverlapsWith": {
+          "chembl:Target": 590,
+          "chembl:ProteinProteinInteraction": 100,
+          "chembl:ProteinSelectivityGroup": 314,
+          "chembl:ProteinFamily": 68,
+          "chembl:ProteinComplexGroup": 5,
+          "chembl:ProteinComplex": 89,
+          "chembl:ChimericProtein": 14
+        },
+        "chembl:relEquivalentTo": {
+          "chembl:ProteinFamily": 7,
+          "chembl:ProteinComplex": 1,
+          "chembl:Target": 8
+        },
+        "chembl:hasProteinClassification": {
+          "chembl:ProteinClassification": 723
+        },
+        "chembl:hasAssay": {
+          "chembl:Assay": 2497
+        },
+        "chembl:relSubsetOf": {
+          "chembl:Target": 98,
+          "chembl:ProteinComplex": 1,
+          "chembl:ProteinSelectivityGroup": 9,
+          "chembl:ProteinFamily": 88
+        },
+        "chembl:hasTargetComponent": {
+          "chembl:TargetComponent": 285
+        },
+        "skos:relatedMatch": {
+          "chembl:TargetComponent": 285
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 123
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 123
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 123
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 123
+        },
+        "chembl:taxonomy": {
+          "Resource": 369
+        }
+      }
+    },
+    {
+      "@id": "chembl:Oligosaccharide",
+      "chembl:hasParentMolecule": [
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:Substance"
+        }
+      ],
+      "chembl:moleculeXref": [
+        {
+          "@id": "chembl:ReconRef"
+        },
+        {
+          "@id": "chembl:SelleckRef"
+        },
+        {
+          "@id": "chembl:PubchemThomPharmRef"
+        },
+        {
+          "@id": "chembl:PubchemRef"
+        },
+        {
+          "@id": "chembl:PubchemDotfRef"
+        },
+        {
+          "@id": "chembl:SureChemblRef"
+        },
+        {
+          "@id": "chembl:MculeRef"
+        },
+        {
+          "@id": "chembl:NmrShiftDb2Ref"
+        },
+        {
+          "@id": "chembl:KeggLigandRef"
+        },
+        {
+          "@id": "chembl:HmdbRef"
+        },
+        {
+          "@id": "chembl:EmoleculesRef"
+        },
+        {
+          "@id": "chembl:ActorRef"
+        },
+        {
+          "@id": "chembl:NikkajiRef"
+        },
+        {
+          "@id": "chembl:PharmGkbRef"
+        },
+        {
+          "@id": "chembl:ZincRef"
+        },
+        {
+          "@id": "chembl:IupharRef"
+        },
+        {
+          "@id": "chembl:FdaSrsRef"
+        },
+        {
+          "@id": "chembl:ChebiRef"
+        },
+        {
+          "@id": "chembl:DrugbankRef"
+        },
+        {
+          "@id": "chembl:LincsRef"
+        }
+      ],
+      "sio:000008": [
+        {
+          "@id": "cheminf:000307"
+        },
+        {
+          "@id": "cheminf:000315"
+        },
+        {
+          "@id": "cheminf:000312"
+        },
+        {
+          "@id": "sio:011120"
+        },
+        {
+          "@id": "cheminf:000018"
+        },
+        {
+          "@id": "cheminf:000431"
+        },
+        {
+          "@id": "cheminf:000300"
+        },
+        {
+          "@id": "cheminf:000059"
+        },
+        {
+          "@id": "cheminf:000254"
+        },
+        {
+          "@id": "cheminf:000251"
+        },
+        {
+          "@id": "cheminf:000042"
+        },
+        {
+          "@id": "cheminf:000245"
+        },
+        {
+          "@id": "cheminf:000381"
+        },
+        {
+          "@id": "cheminf:000216"
+        },
+        {
+          "@id": "cheminf:000113"
+        },
+        {
+          "@id": "cheminf:000350"
+        },
+        {
+          "@id": "cheminf:000244"
+        }
+      ],
+      "chembl:hasDocument": [
+        {
+          "@id": "chembl:Document"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "chembl:hasChildMolecule": [
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        }
+      ],
+      "chembl:hasMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasActivity": {
+        "@id": "chembl:Activity"
+      },
+      "foaf:depiction": {
+        "@id": "foaf:Image"
+      },
+      "chembl:hasDrugIndication": {
+        "@id": "chembl:DrugIndication"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:atcClassification": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:highestDevelopmentPhase": {
+        "@type": "xsd:float"
+      },
+      "chembl:substanceType": {
+        "@type": "xsd:string"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasParentMolecule": {
+          "chembl:Oligosaccharide": 8,
+          "chembl:Substance": 8
+        },
+        "chembl:moleculeXref": {
+          "chembl:ReconRef": 1,
+          "chembl:SelleckRef": 1,
+          "chembl:PubchemThomPharmRef": 29,
+          "chembl:PubchemRef": 57,
+          "chembl:PubchemDotfRef": 9,
+          "chembl:SureChemblRef": 25,
+          "chembl:MculeRef": 2,
+          "chembl:NmrShiftDb2Ref": 12,
+          "chembl:KeggLigandRef": 11,
+          "chembl:HmdbRef": 6,
+          "chembl:EmoleculesRef": 16,
+          "chembl:ActorRef": 20,
+          "chembl:NikkajiRef": 24,
+          "chembl:PharmGkbRef": 1,
+          "chembl:ZincRef": 19,
+          "chembl:IupharRef": 5,
+          "chembl:FdaSrsRef": 29,
+          "chembl:ChebiRef": 20,
+          "chembl:DrugbankRef": 21,
+          "chembl:LincsRef": 2
+        },
+        "sio:000008": {
+          "cheminf:000307": 22,
+          "cheminf:000315": 22,
+          "cheminf:000312": 22,
+          "sio:011120": 53,
+          "cheminf:000018": 53,
+          "cheminf:000431": 22,
+          "cheminf:000300": 22,
+          "cheminf:000059": 53,
+          "cheminf:000254": 22,
+          "cheminf:000251": 22,
+          "cheminf:000042": 53,
+          "cheminf:000245": 22,
+          "cheminf:000381": 22,
+          "cheminf:000216": 53,
+          "cheminf:000113": 53,
+          "cheminf:000350": 53,
+          "cheminf:000244": 22
+        },
+        "chembl:hasDocument": {
+          "chembl:Document": 608,
+          "Resource": 52
+        },
+        "chembl:hasChildMolecule": {
+          "chembl:Substance": 13,
+          "chembl:SmallMolecule": 3,
+          "chembl:Oligosaccharide": 8,
+          "chembl:UnknownSubstance": 2
+        },
+        "chembl:hasMechanism": {
+          "chembl:Mechanism": 21
+        },
+        "chembl:hasActivity": {
+          "chembl:Activity": 5297
+        },
+        "foaf:depiction": {
+          "foaf:Image": 81
+        },
+        "chembl:hasDrugIndication": {
+          "chembl:DrugIndication": 267
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 81
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 81
+        },
+        "chembl:atcClassification": {
+          "Literal:xsd:string": 17
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 653
+        },
+        "chembl:highestDevelopmentPhase": {
+          "Literal:xsd:float": 72
+        },
+        "chembl:substanceType": {
+          "Literal:xsd:string": 81
+        },
+        "skos:exactMatch": {
+          "Resource": 57
+        }
+      }
+    },
+    {
+      "@id": "chembl:ProteinMolecule",
+      "chembl:moleculeXref": [
+        {
+          "@id": "chembl:LincsRef"
+        },
+        {
+          "@id": "chembl:IupharRef"
+        },
+        {
+          "@id": "chembl:KeggLigandRef"
+        },
+        {
+          "@id": "chembl:NikkajiRef"
+        },
+        {
+          "@id": "chembl:MculeRef"
+        },
+        {
+          "@id": "chembl:NmrShiftDb2Ref"
+        },
+        {
+          "@id": "chembl:HmdbRef"
+        },
+        {
+          "@id": "chembl:ChebiRef"
+        },
+        {
+          "@id": "chembl:PubchemRef"
+        },
+        {
+          "@id": "chembl:FdaSrsRef"
+        },
+        {
+          "@id": "chembl:PubchemThomPharmRef"
+        },
+        {
+          "@id": "chembl:ReconRef"
+        },
+        {
+          "@id": "chembl:SureChemblRef"
+        },
+        {
+          "@id": "chembl:PharmGkbRef"
+        },
+        {
+          "@id": "chembl:ActorRef"
+        },
+        {
+          "@id": "chembl:AtlasRef"
+        },
+        {
+          "@id": "chembl:EmoleculesRef"
+        },
+        {
+          "@id": "chembl:SelleckRef"
+        },
+        {
+          "@id": "chembl:ZincRef"
+        },
+        {
+          "@id": "chembl:DrugbankRef"
+        },
+        {
+          "@id": "chembl:PubchemDotfRef"
+        }
+      ],
+      "chembl:hasDrugIndication": {
+        "@id": "chembl:DrugIndication"
+      },
+      "chembl:hasChildMolecule": [
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        }
+      ],
+      "chembl:hasDocument": [
+        {
+          "@id": "chembl:Document"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "foaf:depiction": {
+        "@id": "foaf:Image"
+      },
+      "sio:000008": [
+        {
+          "@id": "cheminf:000315"
+        },
+        {
+          "@id": "cheminf:000307"
+        },
+        {
+          "@id": "cheminf:000431"
+        },
+        {
+          "@id": "cheminf:000018"
+        },
+        {
+          "@id": "cheminf:000300"
+        },
+        {
+          "@id": "cheminf:000113"
+        },
+        {
+          "@id": "cheminf:000042"
+        },
+        {
+          "@id": "cheminf:000350"
+        },
+        {
+          "@id": "cheminf:000254"
+        },
+        {
+          "@id": "sio:011120"
+        },
+        {
+          "@id": "cheminf:000059"
+        },
+        {
+          "@id": "cheminf:000381"
+        },
+        {
+          "@id": "cheminf:000245"
+        },
+        {
+          "@id": "cheminf:000312"
+        },
+        {
+          "@id": "cheminf:000216"
+        },
+        {
+          "@id": "cheminf:000251"
+        },
+        {
+          "@id": "cheminf:000244"
+        }
+      ],
+      "chembl:hasParentMolecule": [
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        }
+      ],
+      "chembl:hasActivity": {
+        "@id": "chembl:Activity"
+      },
+      "chembl:hasMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasBioComponent": {
+        "@id": "chembl:BioComponent"
+      },
+      "chembl:helmNotation": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:atcClassification": {
+        "@type": "xsd:string"
+      },
+      "chembl:isBiotherapeutic": {
+        "@type": "xsd:boolean"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "chembl:substanceType": {
+        "@type": "xsd:string"
+      },
+      "chembl:highestDevelopmentPhase": {
+        "@type": "xsd:float"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:moleculeXref": {
+          "chembl:LincsRef": 28,
+          "chembl:IupharRef": 199,
+          "chembl:KeggLigandRef": 25,
+          "chembl:NikkajiRef": 2624,
+          "chembl:MculeRef": 13,
+          "chembl:NmrShiftDb2Ref": 161,
+          "chembl:HmdbRef": 34,
+          "chembl:ChebiRef": 444,
+          "chembl:PubchemRef": 23819,
+          "chembl:FdaSrsRef": 272,
+          "chembl:PubchemThomPharmRef": 4569,
+          "chembl:ReconRef": 1,
+          "chembl:SureChemblRef": 928,
+          "chembl:PharmGkbRef": 9,
+          "chembl:ActorRef": 345,
+          "chembl:AtlasRef": 9,
+          "chembl:EmoleculesRef": 213,
+          "chembl:SelleckRef": 8,
+          "chembl:ZincRef": 9072,
+          "chembl:DrugbankRef": 116,
+          "chembl:PubchemDotfRef": 63
+        },
+        "chembl:hasDrugIndication": {
+          "chembl:DrugIndication": 4078
+        },
+        "chembl:hasChildMolecule": {
+          "chembl:UnknownSubstance": 17,
+          "chembl:Substance": 372,
+          "chembl:SmallMolecule": 11,
+          "chembl:ProteinMolecule": 344
+        },
+        "chembl:hasDocument": {
+          "chembl:Document": 31273,
+          "Resource": 626
+        },
+        "foaf:depiction": {
+          "foaf:Image": 22870
+        },
+        "sio:000008": {
+          "cheminf:000315": 9576,
+          "cheminf:000307": 9576,
+          "cheminf:000431": 9576,
+          "cheminf:000018": 22241,
+          "cheminf:000300": 9576,
+          "cheminf:000113": 22240,
+          "cheminf:000042": 22271,
+          "cheminf:000350": 22271,
+          "cheminf:000254": 9576,
+          "sio:011120": 22241,
+          "cheminf:000059": 22241,
+          "cheminf:000381": 9576,
+          "cheminf:000245": 9576,
+          "cheminf:000312": 9576,
+          "cheminf:000216": 22271,
+          "cheminf:000251": 9576,
+          "cheminf:000244": 9576
+        },
+        "chembl:hasParentMolecule": {
+          "chembl:SmallMolecule": 3,
+          "chembl:Substance": 347,
+          "chembl:ProteinMolecule": 344
+        },
+        "chembl:hasActivity": {
+          "chembl:Activity": 127137
+        },
+        "chembl:hasMechanism": {
+          "chembl:Mechanism": 442
+        },
+        "chembl:hasBioComponent": {
+          "chembl:BioComponent": 807
+        },
+        "chembl:helmNotation": {
+          "Literal:xsd:string": 22032
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 32326
+        },
+        "chembl:atcClassification": {
+          "Literal:xsd:string": 240
+        },
+        "chembl:isBiotherapeutic": {
+          "Literal:xsd:boolean": 22415
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 22870
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 22870
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 620
+        },
+        "chembl:substanceType": {
+          "Literal:xsd:string": 22870
+        },
+        "chembl:highestDevelopmentPhase": {
+          "Literal:xsd:float": 986
+        },
+        "skos:exactMatch": {
+          "Resource": 23819
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000042",
+      "sio:000011": [
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:Oligonucleotide"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:SmallMolecule": 1918823,
+          "chembl:Substance": 2858458,
+          "chembl:UnknownSubstance": 917254,
+          "chembl:ProteinMolecule": 22271,
+          "chembl:Oligosaccharide": 53,
+          "chembl:Oligonucleotide": 57
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 2858458
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000350",
+      "sio:000011": [
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:UnknownSubstance": 917254,
+          "chembl:Substance": 2858455,
+          "chembl:SmallMolecule": 1918820,
+          "chembl:ProteinMolecule": 22271,
+          "chembl:Oligonucleotide": 57,
+          "chembl:Oligosaccharide": 53
+        },
+        "sio:000300": {
+          "Literal:xsd:double": 2858455
+        }
+      }
+    },
+    {
+      "@id": "chembl:CellLineTarget",
+      "chembl:isTargetForCellLine": {
+        "@id": "chembl:CellLine"
+      },
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:isTargetForCellLine": {
+          "chembl:CellLine": 1877
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 1
+        },
+        "chembl:hasAssay": {
+          "chembl:Assay": 366518
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 1824
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1997
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 1997
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 1997
+        },
+        "chembl:taxonomy": {
+          "Resource": 5472
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000315",
+      "sio:000011": [
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:ProteinMolecule": 9576,
+          "chembl:Substance": 2784347,
+          "chembl:SmallMolecule": 1887042,
+          "chembl:Oligosaccharide": 22,
+          "chembl:UnknownSubstance": 887707
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 2784347
+        }
+      }
+    },
+    {
+      "@id": "chembl:SmallMoleculeTarget",
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 93
+        },
+        "chembl:hasAssay": {
+          "chembl:Assay": 146
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 41
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 41
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 28
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 3
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 41
+        },
+        "chembl:taxonomy": {
+          "Resource": 84
+        }
+      }
+    },
+    {
+      "@id": "chembl:GoProcessRef",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 10446
+        }
+      }
+    },
+    {
+      "@id": "chembl:SmallMolecule",
+      "sio:000008": [
+        {
+          "@id": "sio:011120"
+        },
+        {
+          "@id": "cheminf:000018"
+        },
+        {
+          "@id": "cheminf:000113"
+        },
+        {
+          "@id": "cheminf:000315"
+        },
+        {
+          "@id": "cheminf:000042"
+        },
+        {
+          "@id": "cheminf:000245"
+        },
+        {
+          "@id": "cheminf:000300"
+        },
+        {
+          "@id": "cheminf:000059"
+        },
+        {
+          "@id": "cheminf:000307"
+        },
+        {
+          "@id": "cheminf:000431"
+        },
+        {
+          "@id": "cheminf:000381"
+        },
+        {
+          "@id": "cheminf:000254"
+        },
+        {
+          "@id": "cheminf:000251"
+        },
+        {
+          "@id": "cheminf:000244"
+        },
+        {
+          "@id": "cheminf:000350"
+        },
+        {
+          "@id": "cheminf:000216"
+        },
+        {
+          "@id": "cheminf:000312"
+        }
+      ],
+      "chembl:hasParentMolecule": [
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        }
+      ],
+      "chembl:moleculeXref": [
+        {
+          "@id": "chembl:PubchemRef"
+        },
+        {
+          "@id": "chembl:SureChemblRef"
+        },
+        {
+          "@id": "chembl:PharmGkbRef"
+        },
+        {
+          "@id": "chembl:ReconRef"
+        },
+        {
+          "@id": "chembl:SelleckRef"
+        },
+        {
+          "@id": "chembl:KeggLigandRef"
+        },
+        {
+          "@id": "chembl:NikkajiRef"
+        },
+        {
+          "@id": "chembl:EmoleculesRef"
+        },
+        {
+          "@id": "chembl:AtlasRef"
+        },
+        {
+          "@id": "chembl:ChebiRef"
+        },
+        {
+          "@id": "chembl:HmdbRef"
+        },
+        {
+          "@id": "chembl:ActorRef"
+        },
+        {
+          "@id": "chembl:FdaSrsRef"
+        },
+        {
+          "@id": "chembl:NmrShiftDb2Ref"
+        },
+        {
+          "@id": "chembl:LincsRef"
+        },
+        {
+          "@id": "chembl:MculeRef"
+        },
+        {
+          "@id": "chembl:ZincRef"
+        },
+        {
+          "@id": "chembl:PubchemThomPharmRef"
+        },
+        {
+          "@id": "chembl:PdbeRef"
+        },
+        {
+          "@id": "chembl:IupharRef"
+        },
+        {
+          "@id": "chembl:PubchemDotfRef"
+        },
+        {
+          "@id": "chembl:DrugbankRef"
+        }
+      ],
+      "chembl:hasBioComponent": {
+        "@id": "chembl:BioComponent"
+      },
+      "chembl:hasDocument": [
+        {
+          "@id": "chembl:Document"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "chembl:hasActivity": {
+        "@id": "chembl:Activity"
+      },
+      "chembl:hasChildMolecule": [
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        }
+      ],
+      "chembl:hasMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "foaf:depiction": {
+        "@id": "foaf:Image"
+      },
+      "chembl:hasDrugIndication": {
+        "@id": "chembl:DrugIndication"
+      },
+      "chembl:highestDevelopmentPhase": {
+        "@type": "xsd:float"
+      },
+      "chembl:HRACClassification": {
+        "@type": "xsd:string"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:FRACClassification": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "chembl:isBiotherapeutic": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:helmNotation": {
+        "@type": "xsd:string"
+      },
+      "chembl:atcClassification": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:substanceType": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "sio:000008": {
+          "sio:011120": 1915414,
+          "cheminf:000018": 1915414,
+          "cheminf:000113": 1915414,
+          "cheminf:000315": 1887042,
+          "cheminf:000042": 1918823,
+          "cheminf:000245": 1887042,
+          "cheminf:000300": 1887042,
+          "cheminf:000059": 1915414,
+          "cheminf:000307": 1887042,
+          "cheminf:000431": 1887042,
+          "cheminf:000381": 1887042,
+          "cheminf:000254": 1887042,
+          "cheminf:000251": 1887042,
+          "cheminf:000244": 1887042,
+          "cheminf:000350": 1918820,
+          "cheminf:000216": 1918823,
+          "cheminf:000312": 1887042
+        },
+        "chembl:hasParentMolecule": {
+          "chembl:Substance": 101944,
+          "chembl:SmallMolecule": 101653,
+          "chembl:UnknownSubstance": 277,
+          "chembl:Oligosaccharide": 3,
+          "chembl:ProteinMolecule": 11
+        },
+        "chembl:moleculeXref": {
+          "chembl:PubchemRef": 1879197,
+          "chembl:SureChemblRef": 486271,
+          "chembl:PharmGkbRef": 1441,
+          "chembl:ReconRef": 292,
+          "chembl:SelleckRef": 1698,
+          "chembl:KeggLigandRef": 6710,
+          "chembl:NikkajiRef": 207363,
+          "chembl:EmoleculesRef": 423844,
+          "chembl:AtlasRef": 618,
+          "chembl:ChebiRef": 39866,
+          "chembl:HmdbRef": 11760,
+          "chembl:ActorRef": 63757,
+          "chembl:FdaSrsRef": 31856,
+          "chembl:NmrShiftDb2Ref": 38301,
+          "chembl:LincsRef": 16655,
+          "chembl:MculeRef": 411354,
+          "chembl:ZincRef": 1128175,
+          "chembl:PubchemThomPharmRef": 429418,
+          "chembl:PdbeRef": 5,
+          "chembl:IupharRef": 6338,
+          "chembl:PubchemDotfRef": 3778,
+          "chembl:DrugbankRef": 8766
+        },
+        "chembl:hasBioComponent": {
+          "chembl:BioComponent": 3
+        },
+        "chembl:hasDocument": {
+          "chembl:Document": 2575907,
+          "Resource": 7421
+        },
+        "chembl:hasActivity": {
+          "chembl:Activity": 19074718
+        },
+        "chembl:hasChildMolecule": {
+          "chembl:SmallMolecule": 101653,
+          "chembl:Substance": 103123,
+          "chembl:ProteinMolecule": 3,
+          "chembl:UnknownSubstance": 1467
+        },
+        "chembl:hasMechanism": {
+          "chembl:Mechanism": 5371
+        },
+        "foaf:depiction": {
+          "foaf:Image": 1920603
+        },
+        "chembl:hasDrugIndication": {
+          "chembl:DrugIndication": 44705
+        },
+        "chembl:highestDevelopmentPhase": {
+          "Literal:xsd:float": 14715
+        },
+        "chembl:HRACClassification": {
+          "Literal:xsd:string": 242
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 1920603
+        },
+        "chembl:FRACClassification": {
+          "Literal:xsd:string": 152
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 2
+        },
+        "chembl:isBiotherapeutic": {
+          "Literal:xsd:boolean": 10
+        },
+        "chembl:helmNotation": {
+          "Literal:xsd:string": 5
+        },
+        "chembl:atcClassification": {
+          "Literal:xsd:string": 3839
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 2211246
+        },
+        "chembl:substanceType": {
+          "Literal:xsd:string": 1920603
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 1920603
+        },
+        "skos:exactMatch": {
+          "Resource": 1879197
+        }
+      }
+    },
+    {
+      "@id": "chembl:BioComponent",
+      "chembl:hasMolecule": [
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Enzyme"
+        },
+        {
+          "@id": "chembl:Antibody"
+        },
+        {
+          "@id": "chembl:UnclassifiedMolecule"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        }
+      ],
+      "chembl:proteinSequence": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "chembl:componentType": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasMolecule": {
+          "chembl:Oligonucleotide": 175,
+          "chembl:ProteinMolecule": 807,
+          "chembl:UnknownSubstance": 105,
+          "chembl:Enzyme": 111,
+          "chembl:Antibody": 2881,
+          "chembl:UnclassifiedMolecule": 336,
+          "chembl:Substance": 4418,
+          "chembl:SmallMolecule": 3
+        },
+        "chembl:proteinSequence": {
+          "Literal:xsd:string": 3478
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 3478
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 151
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 3478
+        },
+        "chembl:componentType": {
+          "Literal:xsd:string": 2344
+        },
+        "chembl:taxonomy": {
+          "Resource": 453
+        }
+      }
+    },
+    {
+      "@id": "chembl:DrugIndication",
+      "chembl:hasMolecule": [
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:CellTherapy"
+        },
+        {
+          "@id": "chembl:UnclassifiedMolecule"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Antibody"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:Enzyme"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        }
+      ],
+      "chembl:hasMeshHeading": {
+        "@type": "xsd:string"
+      },
+      "chembl:highestDevelopmentPhase": {
+        "@type": "xsd:int"
+      },
+      "chembl:hasEFOName": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:hasEFO": {
+        "@id": "rdfs:Resource"
+      },
+      "chembl:hasMesh": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasMolecule": {
+          "chembl:Oligonucleotide": 374,
+          "chembl:ProteinMolecule": 4078,
+          "chembl:CellTherapy": 171,
+          "chembl:UnclassifiedMolecule": 995,
+          "chembl:Substance": 59954,
+          "chembl:SmallMolecule": 44705,
+          "chembl:Antibody": 5729,
+          "chembl:Oligosaccharide": 267,
+          "chembl:Enzyme": 422,
+          "chembl:UnknownSubstance": 3213
+        },
+        "chembl:hasMeshHeading": {
+          "Literal:xsd:string": 59954
+        },
+        "chembl:highestDevelopmentPhase": {
+          "Literal:xsd:int": 59954
+        },
+        "chembl:hasEFOName": {
+          "Literal:xsd:string": 59786
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 59954
+        },
+        "chembl:hasEFO": {
+          "Resource": 59785
+        },
+        "chembl:hasMesh": {
+          "Resource": 119908
+        }
+      }
+    },
+    {
+      "@id": "chembl:SingleProtein",
+      "chembl:hasTargetComponent": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:relEquivalentTo": [
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:SingleProtein"
+        }
+      ],
+      "chembl:relSubsetOf": [
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinNucleicAcidComplex"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        },
+        {
+          "@id": "chembl:Target"
+        }
+      ],
+      "chembl:hasBindingSite": {
+        "@id": "chembl:BindingSite"
+      },
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "skos:exactMatch": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:hasProteinClassification": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasTargetComponent": {
+          "chembl:TargetComponent": 10962
+        },
+        "chembl:relEquivalentTo": {
+          "chembl:Target": 28,
+          "chembl:ProteinComplex": 1,
+          "chembl:ProteinFamily": 1,
+          "chembl:SingleProtein": 26
+        },
+        "chembl:relSubsetOf": {
+          "chembl:ProteinComplex": 1040,
+          "chembl:ProteinSelectivityGroup": 273,
+          "chembl:ProteinFamily": 1271,
+          "chembl:ProteinNucleicAcidComplex": 72,
+          "chembl:ProteinProteinInteraction": 1163,
+          "chembl:ProteinComplexGroup": 246,
+          "chembl:ChimericProtein": 56,
+          "chembl:Target": 4121
+        },
+        "chembl:hasBindingSite": {
+          "chembl:BindingSite": 3365
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 4948
+        },
+        "skos:exactMatch": {
+          "chembl:TargetComponent": 10962
+        },
+        "chembl:hasProteinClassification": {
+          "chembl:ProteinClassification": 37673
+        },
+        "chembl:hasAssay": {
+          "chembl:Assay": 513292
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 23
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 10962
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 10962
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 10962
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 10962
+        },
+        "chembl:taxonomy": {
+          "Resource": 32886
+        }
+      }
+    },
+    {
+      "@id": "chembl:ProteinComplexGroup",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:relHasSubset": [
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:SingleProtein"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        }
+      ],
+      "chembl:hasTargetComponent": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:relOverlapsWith": [
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        }
+      ],
+      "skos:relatedMatch": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:hasBindingSite": {
+        "@id": "chembl:BindingSite"
+      },
+      "chembl:relSubsetOf": [
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:Target"
+        }
+      ],
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasProteinClassification": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 5259
+        },
+        "chembl:relHasSubset": {
+          "chembl:Target": 494,
+          "chembl:ProteinComplex": 230,
+          "chembl:SingleProtein": 246,
+          "chembl:ProteinComplexGroup": 14,
+          "chembl:ProteinFamily": 4
+        },
+        "chembl:hasTargetComponent": {
+          "chembl:TargetComponent": 478
+        },
+        "chembl:relOverlapsWith": {
+          "chembl:ProteinProteinInteraction": 27,
+          "chembl:ProteinComplexGroup": 14,
+          "chembl:Target": 235,
+          "chembl:ProteinSelectivityGroup": 5,
+          "chembl:ProteinFamily": 18,
+          "chembl:ProteinComplex": 171
+        },
+        "skos:relatedMatch": {
+          "chembl:TargetComponent": 478
+        },
+        "chembl:hasBindingSite": {
+          "chembl:BindingSite": 15
+        },
+        "chembl:relSubsetOf": {
+          "chembl:ProteinSelectivityGroup": 1,
+          "chembl:ProteinFamily": 3,
+          "chembl:ProteinComplex": 1,
+          "chembl:ProteinComplexGroup": 14,
+          "chembl:Target": 19
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 297
+        },
+        "chembl:hasProteinClassification": {
+          "chembl:ProteinClassification": 345
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 66
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 5
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 66
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 66
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 66
+        },
+        "chembl:taxonomy": {
+          "Resource": 198
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000059",
+      "sio:000011": [
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:Oligonucleotide": 57,
+          "chembl:Oligosaccharide": 53,
+          "chembl:Substance": 2854815,
+          "chembl:SmallMolecule": 1915414,
+          "chembl:ProteinMolecule": 22241,
+          "chembl:UnknownSubstance": 917050
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 2854815
+        }
+      }
+    },
+    {
+      "@id": "chembl:Tissue",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 35867
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 294
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 2
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 294
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 293
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 294
+        },
+        "chembl:taxonomy": {
+          "Resource": 879
+        }
+      }
+    },
+    {
+      "@id": "chembl:Organism",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 520926
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 2
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 265
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 2383
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 2383
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2383
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 2383
+        },
+        "chembl:taxonomy": {
+          "Resource": 7149
+        }
+      }
+    },
+    {
+      "@id": "chembl:ProteinDataBankRef",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 76621
+        }
+      }
+    },
+    {
+      "@id": "chembl:GoFunctionRef",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 4061
+        }
+      }
+    },
+    {
+      "@id": "chembl:ProteinFamily",
+      "chembl:relEquivalentTo": [
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:SingleProtein"
+        }
+      ],
+      "chembl:relHasSubset": [
+        {
+          "@id": "chembl:SingleProtein"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        }
+      ],
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:relOverlapsWith": [
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        }
+      ],
+      "chembl:hasTargetComponent": {
+        "@id": "chembl:TargetComponent"
+      },
+      "skos:relatedMatch": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:hasBindingSite": {
+        "@id": "chembl:BindingSite"
+      },
+      "chembl:relSubsetOf": [
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        }
+      ],
+      "chembl:hasProteinClassification": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:relEquivalentTo": {
+          "chembl:ProteinFamily": 2,
+          "chembl:ProteinSelectivityGroup": 7,
+          "chembl:ProteinComplex": 2,
+          "chembl:Target": 12,
+          "chembl:SingleProtein": 1
+        },
+        "chembl:relHasSubset": {
+          "chembl:SingleProtein": 1271,
+          "chembl:Target": 1510,
+          "chembl:ProteinFamily": 110,
+          "chembl:ProteinComplexGroup": 3,
+          "chembl:ProteinSelectivityGroup": 88,
+          "chembl:ChimericProtein": 2,
+          "chembl:ProteinComplex": 36
+        },
+        "chembl:hasAssay": {
+          "chembl:Assay": 19172
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 755
+        },
+        "chembl:relOverlapsWith": {
+          "chembl:ProteinFamily": 152,
+          "chembl:ProteinComplexGroup": 18,
+          "chembl:Target": 1058,
+          "chembl:ProteinSelectivityGroup": 68,
+          "chembl:ProteinComplex": 316,
+          "chembl:ProteinProteinInteraction": 486,
+          "chembl:ChimericProtein": 18
+        },
+        "chembl:hasTargetComponent": {
+          "chembl:TargetComponent": 1568
+        },
+        "skos:relatedMatch": {
+          "chembl:TargetComponent": 1568
+        },
+        "chembl:hasBindingSite": {
+          "chembl:BindingSite": 1
+        },
+        "chembl:relSubsetOf": {
+          "chembl:ProteinComplexGroup": 4,
+          "chembl:ProteinSelectivityGroup": 11,
+          "chembl:ProteinFamily": 110,
+          "chembl:ProteinComplex": 1,
+          "chembl:Target": 132,
+          "chembl:ProteinProteinInteraction": 6
+        },
+        "chembl:hasProteinClassification": {
+          "chembl:ProteinClassification": 2349
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 428
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 428
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 2
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 428
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 428
+        },
+        "chembl:taxonomy": {
+          "Resource": 1284
+        }
+      }
+    },
+    {
+      "@id": "chembl:UnknownSubstance",
+      "chembl:moleculeXref": [
+        {
+          "@id": "chembl:PubchemRef"
+        },
+        {
+          "@id": "chembl:PubchemDotfRef"
+        },
+        {
+          "@id": "chembl:PharmGkbRef"
+        },
+        {
+          "@id": "chembl:ReconRef"
+        },
+        {
+          "@id": "chembl:SelleckRef"
+        },
+        {
+          "@id": "chembl:PubchemThomPharmRef"
+        },
+        {
+          "@id": "chembl:NmrShiftDb2Ref"
+        },
+        {
+          "@id": "chembl:LincsRef"
+        },
+        {
+          "@id": "chembl:MculeRef"
+        },
+        {
+          "@id": "chembl:SureChemblRef"
+        },
+        {
+          "@id": "chembl:FdaSrsRef"
+        },
+        {
+          "@id": "chembl:EmoleculesRef"
+        },
+        {
+          "@id": "chembl:KeggLigandRef"
+        },
+        {
+          "@id": "chembl:AtlasRef"
+        },
+        {
+          "@id": "chembl:HmdbRef"
+        },
+        {
+          "@id": "chembl:ActorRef"
+        },
+        {
+          "@id": "chembl:NikkajiRef"
+        },
+        {
+          "@id": "chembl:ZincRef"
+        },
+        {
+          "@id": "chembl:DrugbankRef"
+        },
+        {
+          "@id": "chembl:IupharRef"
+        },
+        {
+          "@id": "chembl:ChebiRef"
+        }
+      ],
+      "chembl:hasParentMolecule": [
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        }
+      ],
+      "sio:000008": [
+        {
+          "@id": "cheminf:000307"
+        },
+        {
+          "@id": "cheminf:000300"
+        },
+        {
+          "@id": "sio:011120"
+        },
+        {
+          "@id": "cheminf:000315"
+        },
+        {
+          "@id": "cheminf:000018"
+        },
+        {
+          "@id": "cheminf:000431"
+        },
+        {
+          "@id": "cheminf:000381"
+        },
+        {
+          "@id": "cheminf:000251"
+        },
+        {
+          "@id": "cheminf:000059"
+        },
+        {
+          "@id": "cheminf:000245"
+        },
+        {
+          "@id": "cheminf:000042"
+        },
+        {
+          "@id": "cheminf:000113"
+        },
+        {
+          "@id": "cheminf:000244"
+        },
+        {
+          "@id": "cheminf:000350"
+        },
+        {
+          "@id": "cheminf:000254"
+        },
+        {
+          "@id": "cheminf:000216"
+        },
+        {
+          "@id": "cheminf:000312"
+        }
+      ],
+      "chembl:hasBioComponent": {
+        "@id": "chembl:BioComponent"
+      },
+      "chembl:hasChildMolecule": [
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        }
+      ],
+      "chembl:hasMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasDocument": [
+        {
+          "@id": "chembl:Document"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "chembl:hasActivity": {
+        "@id": "chembl:Activity"
+      },
+      "foaf:depiction": {
+        "@id": "foaf:Image"
+      },
+      "chembl:hasDrugIndication": {
+        "@id": "chembl:DrugIndication"
+      },
+      "chembl:FRACClassification": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "chembl:isBiotherapeutic": {
+        "@type": "xsd:boolean"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:highestDevelopmentPhase": {
+        "@type": "xsd:float"
+      },
+      "chembl:HRACClassification": {
+        "@type": "xsd:string"
+      },
+      "chembl:atcClassification": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:substanceType": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "skos:exactMatch": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:moleculeXref": {
+          "chembl:PubchemRef": 781522,
+          "chembl:PubchemDotfRef": 62,
+          "chembl:PharmGkbRef": 8,
+          "chembl:ReconRef": 9,
+          "chembl:SelleckRef": 25,
+          "chembl:PubchemThomPharmRef": 20427,
+          "chembl:NmrShiftDb2Ref": 3987,
+          "chembl:LincsRef": 95,
+          "chembl:MculeRef": 102754,
+          "chembl:SureChemblRef": 335692,
+          "chembl:FdaSrsRef": 1248,
+          "chembl:EmoleculesRef": 61563,
+          "chembl:KeggLigandRef": 215,
+          "chembl:AtlasRef": 2,
+          "chembl:HmdbRef": 492,
+          "chembl:ActorRef": 3157,
+          "chembl:NikkajiRef": 11303,
+          "chembl:ZincRef": 137594,
+          "chembl:DrugbankRef": 106,
+          "chembl:IupharRef": 433,
+          "chembl:ChebiRef": 2896
+        },
+        "chembl:hasParentMolecule": {
+          "chembl:Oligosaccharide": 2,
+          "chembl:Substance": 18180,
+          "chembl:SmallMolecule": 1467,
+          "chembl:ProteinMolecule": 17,
+          "chembl:UnknownSubstance": 16694
+        },
+        "sio:000008": {
+          "cheminf:000307": 887707,
+          "cheminf:000300": 887707,
+          "sio:011120": 917050,
+          "cheminf:000315": 887707,
+          "cheminf:000018": 917050,
+          "cheminf:000431": 887707,
+          "cheminf:000381": 887707,
+          "cheminf:000251": 887707,
+          "cheminf:000059": 917050,
+          "cheminf:000245": 887707,
+          "cheminf:000042": 917254,
+          "cheminf:000113": 917050,
+          "cheminf:000244": 887707,
+          "cheminf:000350": 917254,
+          "cheminf:000254": 887707,
+          "cheminf:000216": 917254,
+          "cheminf:000312": 887707
+        },
+        "chembl:hasBioComponent": {
+          "chembl:BioComponent": 105
+        },
+        "chembl:hasChildMolecule": {
+          "chembl:Substance": 16971,
+          "chembl:SmallMolecule": 277,
+          "chembl:UnknownSubstance": 16694
+        },
+        "chembl:hasMechanism": {
+          "chembl:Mechanism": 693
+        },
+        "chembl:hasDocument": {
+          "chembl:Document": 1087580,
+          "Resource": 1165
+        },
+        "chembl:hasActivity": {
+          "chembl:Activity": 5059094
+        },
+        "foaf:depiction": {
+          "foaf:Image": 932685
+        },
+        "chembl:hasDrugIndication": {
+          "chembl:DrugIndication": 3213
+        },
+        "chembl:FRACClassification": {
+          "Literal:xsd:string": 3
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 246
+        },
+        "chembl:isBiotherapeutic": {
+          "Literal:xsd:boolean": 300
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 932685
+        },
+        "chembl:highestDevelopmentPhase": {
+          "Literal:xsd:float": 1692
+        },
+        "chembl:HRACClassification": {
+          "Literal:xsd:string": 2
+        },
+        "chembl:atcClassification": {
+          "Literal:xsd:string": 182
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 925005
+        },
+        "chembl:substanceType": {
+          "Literal:xsd:string": 932685
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 932685
+        },
+        "skos:exactMatch": {
+          "Resource": 781522
+        }
+      }
+    },
+    {
+      "@id": "chembl:Activity",
+      "chembl:hasMolecule": [
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:Antibody"
+        },
+        {
+          "@id": "chembl:UnclassifiedMolecule"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Enzyme"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        }
+      ],
+      "chembl:hasDocument": {
+        "@id": "chembl:Document"
+      },
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:type": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:units": {
+        "@type": "xsd:string"
+      },
+      "chembl:value": {
+        "@type": "xsd:double"
+      },
+      "chembl:standardRelation": {
+        "@type": "xsd:string"
+      },
+      "chembl:standardType": {
+        "@type": "xsd:string"
+      },
+      "chembl:relation": {
+        "@type": "xsd:string"
+      },
+      "chembl:standardValue": {
+        "@type": "xsd:double"
+      },
+      "chembl:standardUnits": {
+        "@type": "xsd:string"
+      },
+      "chembl:dataValidityIssue": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:pChembl": {
+        "@type": "xsd:double"
+      },
+      "chembl:activityComment": {
+        "@type": "xsd:string"
+      },
+      "chembl:potentialDuplicate": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:dataValidityComment": {
+        "@type": "xsd:string"
+      },
+      "bao:0000208": {
+        "@id": "rdfs:Resource"
+      },
+      "chembl:hasUnitOnto": {
+        "@id": "rdfs:Resource"
+      },
+      "chembl:hasQUDT": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasMolecule": {
+          "chembl:Oligosaccharide": 5297,
+          "chembl:Oligonucleotide": 757,
+          "chembl:Antibody": 116,
+          "chembl:UnclassifiedMolecule": 38,
+          "chembl:Substance": 24267312,
+          "chembl:SmallMolecule": 19074718,
+          "chembl:UnknownSubstance": 5059094,
+          "chembl:Enzyme": 155,
+          "chembl:ProteinMolecule": 127137
+        },
+        "chembl:hasDocument": {
+          "chembl:Document": 24267312
+        },
+        "chembl:hasAssay": {
+          "chembl:Assay": 24267312
+        },
+        "chembl:type": {
+          "Literal:xsd:string": 24267312
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 24267312
+        },
+        "chembl:units": {
+          "Literal:xsd:string": 18704962
+        },
+        "chembl:value": {
+          "Literal:xsd:double": 20921972
+        },
+        "chembl:standardRelation": {
+          "Literal:xsd:string": 16861344
+        },
+        "chembl:standardType": {
+          "Literal:xsd:string": 24267312
+        },
+        "chembl:relation": {
+          "Literal:xsd:string": 16864384
+        },
+        "chembl:standardValue": {
+          "Literal:xsd:double": 20921972
+        },
+        "chembl:standardUnits": {
+          "Literal:xsd:string": 20912595
+        },
+        "chembl:dataValidityIssue": {
+          "Literal:xsd:boolean": 349315
+        },
+        "chembl:pChembl": {
+          "Literal:xsd:double": 4896791
+        },
+        "chembl:activityComment": {
+          "Literal:xsd:string": 12898600
+        },
+        "chembl:potentialDuplicate": {
+          "Literal:xsd:boolean": 355131
+        },
+        "chembl:dataValidityComment": {
+          "Literal:xsd:string": 349315
+        },
+        "bao:0000208": {
+          "Resource": 24267312
+        },
+        "chembl:hasUnitOnto": {
+          "Resource": 19590708
+        },
+        "chembl:hasQUDT": {
+          "Resource": 19431460
+        }
+      }
+    },
+    {
+      "@id": "chembl:ProteinProteinInteraction",
+      "skos:relatedMatch": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:hasTargetComponent": {
+        "@id": "chembl:TargetComponent"
+      },
+      "chembl:relOverlapsWith": [
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        }
+      ],
+      "chembl:relSubsetOf": [
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        }
+      ],
+      "chembl:hasProteinClassification": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "chembl:relHasSubset": [
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:SingleProtein"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        },
+        {
+          "@id": "chembl:Target"
+        }
+      ],
+      "chembl:relEquivalentTo": [
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:Target"
+        }
+      ],
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "skos:relatedMatch": {
+          "chembl:TargetComponent": 1259
+        },
+        "chembl:hasTargetComponent": {
+          "chembl:TargetComponent": 1259
+        },
+        "chembl:relOverlapsWith": {
+          "chembl:ProteinComplex": 1654,
+          "chembl:ProteinFamily": 486,
+          "chembl:ProteinSelectivityGroup": 100,
+          "chembl:Target": 81420,
+          "chembl:ProteinProteinInteraction": 79078,
+          "chembl:ChimericProtein": 75,
+          "chembl:ProteinComplexGroup": 27
+        },
+        "chembl:relSubsetOf": {
+          "chembl:Target": 51,
+          "chembl:ProteinProteinInteraction": 44,
+          "chembl:ProteinComplex": 7
+        },
+        "chembl:hasProteinClassification": {
+          "chembl:ProteinClassification": 3003
+        },
+        "chembl:relHasSubset": {
+          "chembl:ProteinProteinInteraction": 44,
+          "chembl:ProteinFamily": 6,
+          "chembl:ProteinComplex": 12,
+          "chembl:SingleProtein": 1163,
+          "chembl:ChimericProtein": 10,
+          "chembl:Target": 1235
+        },
+        "chembl:relEquivalentTo": {
+          "chembl:ProteinComplex": 2,
+          "chembl:Target": 2
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 9
+        },
+        "chembl:hasAssay": {
+          "chembl:Assay": 8163
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 596
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 596
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 596
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 596
+        },
+        "chembl:taxonomy": {
+          "Resource": 1788
+        }
+      }
+    },
+    {
+      "@id": "chembl:OligosaccharideTarget",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 6
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 46
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 22
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 22
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 22
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 22
+        },
+        "chembl:taxonomy": {
+          "Resource": 66
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000216",
+      "sio:000011": [
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:Substance": 2858458,
+          "chembl:SmallMolecule": 1918823,
+          "chembl:Oligonucleotide": 57,
+          "chembl:Oligosaccharide": 53,
+          "chembl:ProteinMolecule": 22271,
+          "chembl:UnknownSubstance": 917254
+        },
+        "sio:000300": {
+          "Literal:xsd:double": 2858458
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000431",
+      "sio:000011": [
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:Oligosaccharide": 22,
+          "chembl:ProteinMolecule": 9576,
+          "chembl:UnknownSubstance": 887707,
+          "chembl:Substance": 2784347,
+          "chembl:SmallMolecule": 1887042
+        },
+        "sio:000300": {
+          "Literal:xsd:double": 2784347
+        }
+      }
+    },
+    {
+      "@id": "chembl:SubCellular",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:isSpeciesGroup": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 5091
+        },
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 29
+        },
+        "chembl:isSpeciesGroup": {
+          "Literal:xsd:boolean": 8
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 14
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 18
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 18
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 18
+        },
+        "chembl:taxonomy": {
+          "Resource": 42
+        }
+      }
+    },
+    {
+      "@id": "chembl:CellLine",
+      "chembl:cellXref": {
+        "@id": "chembl:LincsCellRef"
+      },
+      "chembl:isCellLineForTarget": [
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:CellLineTarget"
+        }
+      ],
+      "chembl:isCellLineForAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "chembl:cellosaurusId": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "chembl:hasEFO": {
+        "@id": "rdfs:Resource"
+      },
+      "chembl:hasCLO": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:cellXref": {
+          "chembl:LincsCellRef": 658
+        },
+        "chembl:isCellLineForTarget": {
+          "chembl:Target": 1877,
+          "chembl:CellLineTarget": 1877
+        },
+        "chembl:isCellLineForAssay": {
+          "chembl:Assay": 542997
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 2037
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 2215
+        },
+        "chembl:cellosaurusId": {
+          "Literal:xsd:string": 1755
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 2215
+        },
+        "chembl:taxonomy": {
+          "Resource": 6111
+        },
+        "chembl:hasEFO": {
+          "Resource": 701
+        },
+        "chembl:hasCLO": {
+          "Resource": 995
+        }
+      }
+    },
+    {
+      "@id": "chembl:NonMolecular",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 37869
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 1
+        }
+      }
+    },
+    {
+      "@id": "chembl:Source",
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "chembl:hasAssay": {
+          "chembl:Assay": 1890749
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 67
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 67
+        }
+      }
+    },
+    {
+      "@id": "chembl:PfamRef",
+      "dc:identifier": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "dc:identifier": {
+          "Literal:xsd:string": 5031
+        }
+      }
+    },
+    {
+      "@id": "chembl:TargetComponent",
+      "chembl:targetCmptXref": [
+        {
+          "@id": "chembl:GoProcessRef"
+        },
+        {
+          "@id": "chembl:GoFunctionRef"
+        },
+        {
+          "@id": "chembl:GoComponentRef"
+        },
+        {
+          "@id": "chembl:EnzymeClassRef"
+        },
+        {
+          "@id": "chembl:IntactRef"
+        },
+        {
+          "@id": "chembl:InterproRef"
+        },
+        {
+          "@id": "chembl:PfamRef"
+        },
+        {
+          "@id": "chembl:ProteinDataBankRef"
+        },
+        {
+          "@id": "chembl:ReactomeRef"
+        },
+        {
+          "@id": "chembl:UniprotRef"
+        },
+        {
+          "@id": "chembl:PharmgkbRef"
+        },
+        {
+          "@id": "chembl:CGDRef"
+        }
+      ],
+      "skos:exactMatch": [
+        {
+          "@id": "chembl:UniprotRef"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "chembl:hasTarget": [
+        {
+          "@id": "chembl:Target"
+        },
+        {
+          "@id": "chembl:SingleProtein"
+        },
+        {
+          "@id": "chembl:ProteinComplexGroup"
+        },
+        {
+          "@id": "chembl:ProteinFamily"
+        },
+        {
+          "@id": "chembl:ProteinComplex"
+        },
+        {
+          "@id": "chembl:ProteinSelectivityGroup"
+        },
+        {
+          "@id": "chembl:ProteinNucleicAcidComplex"
+        },
+        {
+          "@id": "chembl:NucleicAcid"
+        },
+        {
+          "@id": "chembl:ChimericProtein"
+        },
+        {
+          "@id": "chembl:ProteinProteinInteraction"
+        }
+      ],
+      "chembl:hasProteinClassification": {
+        "@id": "chembl:ProteinClassification"
+      },
+      "chembl:proteinSequence": {
+        "@type": "xsd:string"
+      },
+      "chembl:componentType": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "pdbxv50owl:link_to_pdb": {
+        "@id": "rdfs:Resource"
+      },
+      "chembl:taxonomy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:targetCmptXref": {
+          "chembl:GoProcessRef": 129298,
+          "chembl:GoFunctionRef": 72709,
+          "chembl:GoComponentRef": 71976,
+          "chembl:EnzymeClassRef": 7741,
+          "chembl:IntactRef": 8440,
+          "chembl:InterproRef": 73701,
+          "chembl:PfamRef": 24436,
+          "chembl:ProteinDataBankRef": 89206,
+          "chembl:ReactomeRef": 38080,
+          "chembl:UniprotRef": 12782,
+          "chembl:PharmgkbRef": 7169,
+          "chembl:CGDRef": 27
+        },
+        "skos:exactMatch": {
+          "chembl:UniprotRef": 12782,
+          "Resource": 47
+        },
+        "chembl:hasTarget": {
+          "chembl:Target": 16702,
+          "chembl:SingleProtein": 10962,
+          "chembl:ProteinComplexGroup": 478,
+          "chembl:ProteinFamily": 1568,
+          "chembl:ProteinComplex": 1601,
+          "chembl:ProteinSelectivityGroup": 285,
+          "chembl:ProteinNucleicAcidComplex": 430,
+          "chembl:NucleicAcid": 52,
+          "chembl:ChimericProtein": 67,
+          "chembl:ProteinProteinInteraction": 1259
+        },
+        "chembl:hasProteinClassification": {
+          "chembl:ProteinClassification": 43324
+        },
+        "chembl:proteinSequence": {
+          "Literal:xsd:string": 12785
+        },
+        "chembl:componentType": {
+          "Literal:xsd:string": 12856
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 12856
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 12856
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 304336
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 12856
+        },
+        "pdbxv50owl:link_to_pdb": {
+          "Resource": 89206
+        },
+        "chembl:taxonomy": {
+          "Resource": 38568
+        }
+      }
+    },
+    {
+      "@id": "chembl:UnclassifiedMolecule",
+      "foaf:depiction": {
+        "@id": "foaf:Image"
+      },
+      "chembl:hasDocument": [
+        {
+          "@id": "chembl:Document"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "chembl:hasDrugIndication": {
+        "@id": "chembl:DrugIndication"
+      },
+      "chembl:hasMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:hasActivity": {
+        "@id": "chembl:Activity"
+      },
+      "chembl:hasBioComponent": {
+        "@id": "chembl:BioComponent"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:atcClassification": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "chembl:highestDevelopmentPhase": {
+        "@type": "xsd:float"
+      },
+      "chembl:isBiotherapeutic": {
+        "@type": "xsd:boolean"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "chembl:substanceType": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "foaf:depiction": {
+          "foaf:Image": 390
+        },
+        "chembl:hasDocument": {
+          "chembl:Document": 545,
+          "Resource": 204
+        },
+        "chembl:hasDrugIndication": {
+          "chembl:DrugIndication": 995
+        },
+        "chembl:hasMechanism": {
+          "chembl:Mechanism": 229
+        },
+        "chembl:hasActivity": {
+          "chembl:Activity": 38
+        },
+        "chembl:hasBioComponent": {
+          "chembl:BioComponent": 336
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 2006
+        },
+        "chembl:atcClassification": {
+          "Literal:xsd:string": 56
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 30
+        },
+        "chembl:highestDevelopmentPhase": {
+          "Literal:xsd:float": 390
+        },
+        "chembl:isBiotherapeutic": {
+          "Literal:xsd:boolean": 114
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 390
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 390
+        },
+        "chembl:substanceType": {
+          "Literal:xsd:string": 390
+        }
+      }
+    },
+    {
+      "@id": "cheminf:000254",
+      "sio:000011": [
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        }
+      ],
+      "sio:000300": {
+        "@type": "xsd:double"
+      },
+      "_counts": {
+        "sio:000011": {
+          "chembl:ProteinMolecule": 9576,
+          "chembl:UnknownSubstance": 887707,
+          "chembl:Substance": 2784347,
+          "chembl:SmallMolecule": 1887042,
+          "chembl:Oligosaccharide": 22
+        },
+        "sio:000300": {
+          "Literal:xsd:double": 2784347
+        }
+      }
+    },
+    {
+      "@id": "chembl:Journal",
+      "chembl:hasDocument": {
+        "@id": "chembl:Document"
+      },
+      "bibo:issn": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "bibo:shortTitle": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "bibo:eissn": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "chembl:hasDocument": {
+          "chembl:Document": 91308
+        },
+        "bibo:issn": {
+          "Literal:xsd:string": 188
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 224
+        },
+        "bibo:shortTitle": {
+          "Literal:xsd:string": 224
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 190
+        },
+        "bibo:eissn": {
+          "Literal:xsd:string": 195
+        }
+      }
+    },
+    {
+      "@id": "chembl:Document",
+      "chembl:hasMolecule": [
+        {
+          "@id": "chembl:Substance"
+        },
+        {
+          "@id": "chembl:ProteinMolecule"
+        },
+        {
+          "@id": "chembl:SmallMolecule"
+        },
+        {
+          "@id": "chembl:UnknownSubstance"
+        },
+        {
+          "@id": "chembl:Antibody"
+        },
+        {
+          "@id": "chembl:Oligosaccharide"
+        },
+        {
+          "@id": "chembl:Enzyme"
+        },
+        {
+          "@id": "chembl:Oligonucleotide"
+        },
+        {
+          "@id": "chembl:UnclassifiedMolecule"
+        },
+        {
+          "@id": "chembl:CellTherapy"
+        }
+      ],
+      "chembl:hasActivity": {
+        "@id": "chembl:Activity"
+      },
+      "chembl:hasJournal": [
+        {
+          "@id": "chembl:Journal"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "chembl:hasAssay": {
+        "@id": "chembl:Assay"
+      },
+      "bibo:issue": {
+        "@type": "xsd:string"
+      },
+      "dcterms:date": {
+        "@type": "xsd:int"
+      },
+      "bibo:doi": {
+        "@type": "xsd:string"
+      },
+      "bibo:pageStart": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "bibo:pageEnd": {
+        "@type": "xsd:string"
+      },
+      "bibo:volume": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "chembl:documentType": {
+        "@type": "xsd:string"
+      },
+      "bibo:pmid": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "chembl:hasMolecule": {
+          "chembl:Substance": 3698389,
+          "chembl:ProteinMolecule": 31273,
+          "chembl:SmallMolecule": 2575907,
+          "chembl:UnknownSubstance": 1087580,
+          "chembl:Antibody": 1742,
+          "chembl:Oligosaccharide": 608,
+          "chembl:Enzyme": 297,
+          "chembl:Oligonucleotide": 328,
+          "chembl:UnclassifiedMolecule": 545,
+          "chembl:CellTherapy": 109
+        },
+        "chembl:hasActivity": {
+          "chembl:Activity": 24267312
+        },
+        "chembl:hasJournal": {
+          "chembl:Journal": 91308,
+          "Resource": 7833
+        },
+        "chembl:hasAssay": {
+          "chembl:Assay": 1890749
+        },
+        "bibo:issue": {
+          "Literal:xsd:string": 80147
+        },
+        "dcterms:date": {
+          "Literal:xsd:int": 98927
+        },
+        "bibo:doi": {
+          "Literal:xsd:string": 91669
+        },
+        "bibo:pageStart": {
+          "Literal:xsd:string": 91445
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 99141
+        },
+        "bibo:pageEnd": {
+          "Literal:xsd:string": 91436
+        },
+        "bibo:volume": {
+          "Literal:xsd:string": 91354
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 99007
+        },
+        "chembl:documentType": {
+          "Literal:xsd:string": 99141
+        },
+        "bibo:pmid": {
+          "Resource": 86112
+        }
+      }
+    },
+    {
+      "@id": "chembl:Metal",
+      "chembl:isTargetForMechanism": {
+        "@id": "chembl:Mechanism"
+      },
+      "chembl:organismName": {
+        "@type": "xsd:string"
+      },
+      "chembl:chemblId": {
+        "@type": "xsd:string"
+      },
+      "chembl:targetType": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "chembl:isTargetForMechanism": {
+          "chembl:Mechanism": 34
+        },
+        "chembl:organismName": {
+          "Literal:xsd:string": 2
+        },
+        "chembl:chemblId": {
+          "Literal:xsd:string": 10
+        },
+        "chembl:targetType": {
+          "Literal:xsd:string": 10
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 10
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T10:54:49.951800+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "chembl",
+    "graph_uris": [
+      "http://rdf.ebi.ac.uk/dataset/chembl"
+    ],
+    "pattern_count": 1328,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "chembl:Substance": "Substance",
+    "chembl:moleculeXref": "moleculeXref",
+    "chembl:SelleckRef": "SelleckRef",
+    "chembl:PubchemThomPharmRef": "PubchemThomPharmRef",
+    "chembl:Oligonucleotide": "Oligonucleotide",
+    "chembl:hasDrugIndication": "hasDrugIndication",
+    "chembl:DrugIndication": "DrugIndication",
+    "chembl:ReconRef": "ReconRef",
+    "chembl:PubchemRef": "PubchemRef",
+    "chembl:PubchemDotfRef": "PubchemDotfRef",
+    "chembl:SureChemblRef": "SureChemblRef",
+    "chembl:hasChildMolecule": "hasChildMolecule",
+    "chembl:Antibody": "Antibody",
+    "chembl:hasMechanism": "hasMechanism",
+    "chembl:Mechanism": "Mechanism",
+    "chembl:hasDocument": "hasDocument",
+    "chembl:Document": "Document",
+    "chembl:PharmGkbRef": "PharmGkbRef",
+    "chembl:ChimericProtein": "ChimericProtein",
+    "chembl:relHasSubset": "relHasSubset",
+    "chembl:Target": "Target",
+    "sio:000008": "SIO_000008",
+    "cheminf:000018": "CHEMINF_000018",
+    "chembl:Phenotype": "Phenotype",
+    "chembl:hasAssay": "hasAssay",
+    "chembl:Assay": "Assay",
+    "chembl:IupharRef": "IupharRef",
+    "chembl:ChebiRef": "ChebiRef",
+    "chembl:HmdbRef": "HmdbRef",
+    "chembl:relOverlapsWith": "relOverlapsWith",
+    "chembl:NmrShiftDb2Ref": "NmrShiftDb2Ref",
+    "chembl:DrugbankRef": "DrugbankRef",
+    "chembl:MculeRef": "MculeRef",
+    "chembl:hasBioComponent": "hasBioComponent",
+    "chembl:BioComponent": "BioComponent",
+    "chembl:CellTherapy": "CellTherapy",
+    "chembl:PdbeRef": "PdbeRef",
+    "chembl:ProteinNucleicAcidComplex": "ProteinNucleicAcidComplex",
+    "chembl:hasProteinClassification": "hasProteinClassification",
+    "chembl:ProteinClassification": "ProteinClassification",
+    "chembl:Macromolecule": "Macromolecule",
+    "cheminf:000381": "CHEMINF_000381",
+    "cheminf:000251": "CHEMINF_000251",
+    "sio:000011": "SIO_000011",
+    "chembl:UnknownSubstance": "UnknownSubstance",
+    "chembl:ProteinProteinInteraction": "ProteinProteinInteraction",
+    "chembl:AtlasRef": "AtlasRef",
+    "chembl:ProteinMolecule": "ProteinMolecule",
+    "chembl:hasActivity": "hasActivity",
+    "chembl:Activity": "Activity",
+    "chembl:ProteinFamily": "ProteinFamily",
+    "chembl:ZincRef": "ZincRef",
+    "cheminf:000216": "CHEMINF_000216",
+    "skos:relatedMatch": "relatedMatch",
+    "chembl:TargetComponent": "TargetComponent",
+    "chembl:SmallMolecule": "SmallMolecule",
+    "chembl:relSubsetOf": "relSubsetOf",
+    "chembl:ADMET": "ADMET",
+    "chembl:Oligosaccharide": "Oligosaccharide",
+    "cheminf:000244": "CHEMINF_000244",
+    "chembl:ProteinComplex": "ProteinComplex",
+    "chembl:SingleProtein": "SingleProtein",
+    "chembl:NikkajiRef": "NikkajiRef",
+    "chembl:LincsRef": "LincsRef",
+    "chembl:isTargetForMechanism": "isTargetForMechanism",
+    "chembl:UnclassifiedTarget": "UnclassifiedTarget",
+    "chembl:hasParentMolecule": "hasParentMolecule",
+    "cheminf:000300": "CHEMINF_000300",
+    "cheminf:000307": "CHEMINF_000307",
+    "chembl:hasBindingSite": "hasBindingSite",
+    "chembl:BindingSite": "BindingSite",
+    "cheminf:000312": "CHEMINF_000312",
+    "cheminf:000315": "CHEMINF_000315",
+    "cheminf:000431": "CHEMINF_000431",
+    "chembl:hasTargetComponent": "hasTargetComponent",
+    "foaf:depiction": "depiction",
+    "foaf:Image": "Image",
+    "cheminf:000350": "CHEMINF_000350",
+    "cheminf:000042": "CHEMINF_000042",
+    "sio:011120": "SIO_011120",
+    "chembl:ProteinSelectivityGroup": "ProteinSelectivityGroup",
+    "cheminf:000113": "CHEMINF_000113",
+    "cheminf:000254": "CHEMINF_000254",
+    "chembl:ActorRef": "ActorRef",
+    "cheminf:000059": "CHEMINF_000059",
+    "chembl:KeggLigandRef": "KeggLigandRef",
+    "chembl:EmoleculesRef": "EmoleculesRef",
+    "chembl:FdaSrsRef": "FdaSrsRef",
+    "cheminf:000245": "CHEMINF_000245",
+    "chembl:targetType": "targetType",
+    "skos:prefLabel": "prefLabel",
+    "chembl:HRACClassification": "HRACClassification",
+    "chembl:organismName": "organismName",
+    "dcterms:title": "title",
+    "chembl:isBiotherapeutic": "isBiotherapeutic",
+    "skos:altLabel": "altLabel",
+    "chembl:chemblId": "chemblId",
+    "chembl:helmNotation": "helmNotation",
+    "chembl:substanceType": "substanceType",
+    "chembl:FRACClassification": "FRACClassification",
+    "sio:000300": "SIO_000300",
+    "dcterms:description": "description",
+    "chembl:highestDevelopmentPhase": "highestDevelopmentPhase",
+    "chembl:isSpeciesGroup": "isSpeciesGroup",
+    "chembl:atcClassification": "atcClassification",
+    "chembl:IntactRef": "IntactRef",
+    "dc:identifier": "identifier",
+    "chembl:ReactomeRef": "ReactomeRef",
+    "chembl:taxonomy": "taxonomy",
+    "skos:exactMatch": "exactMatch",
+    "resource:is-attribute-of": "is-attribute-of",
+    "chembl:NucleicAcid": "NucleicAcid",
+    "chembl:EnzymeClassRef": "EnzymeClassRef",
+    "chembl:PharmgkbRef": "PharmgkbRef",
+    "chembl:UniprotRef": "UniprotRef",
+    "resource:has-value": "has-value",
+    "chembl:InterproRef": "InterproRef",
+    "chembl:hasTarget": "hasTarget",
+    "chembl:UnknownTarget": "UnknownTarget",
+    "chembl:Tissue": "Tissue",
+    "chembl:hasSource": "hasSource",
+    "chembl:Source": "Source",
+    "chembl:hasMolecule": "hasMolecule",
+    "chembl:Enzyme": "Enzyme",
+    "chembl:ProteinComplexGroup": "ProteinComplexGroup",
+    "skos:narrower": "narrower",
+    "chembl:relEquivalentTo": "relEquivalentTo",
+    "chembl:SubCellular": "SubCellular",
+    "chembl:OligosaccharideTarget": "OligosaccharideTarget",
+    "chembl:SmallMoleculeTarget": "SmallMoleculeTarget",
+    "chembl:hasTargetComponentDescendant": "hasTargetComponentDescendant",
+    "chembl:hasCellLine": "hasCellLine",
+    "chembl:CellLine": "CellLine",
+    "chembl:hasTargetDescendant": "hasTargetDescendant",
+    "chembl:Organism": "Organism",
+    "chembl:CellLineTarget": "CellLineTarget",
+    "chembl:Metal": "Metal",
+    "skos:broader": "broader",
+    "chembl:isTargetForCellLine": "isTargetForCellLine",
+    "chembl:NonMolecular": "NonMolecular",
+    "chembl:UnclassifiedMolecule": "UnclassifiedMolecule",
+    "chembl:assayXref": "assayXref",
+    "chembl:PubchemBioassayRef": "PubchemBioassayRef",
+    "chembl:CGDRef": "CGDRef",
+    "chembl:assaySubCellFrac": "assaySubCellFrac",
+    "chembl:classLevel": "classLevel",
+    "chembl:targetConfScore": "targetConfScore",
+    "chembl:assayTestType": "assayTestType",
+    "chembl:targetRelDesc": "targetRelDesc",
+    "chembl:assayCellType": "assayCellType",
+    "chembl:assayTissue": "assayTissue",
+    "chembl:mechanismDescription": "mechanismDescription",
+    "chembl:assayCategory": "assayCategory",
+    "chembl:assayType": "assayType",
+    "chembl:targetRelType": "targetRelType",
+    "chembl:GoComponentRef": "GoComponentRef",
+    "chembl:assayStrain": "assayStrain",
+    "chembl:classPath": "classPath",
+    "chembl:targetConfDesc": "targetConfDesc",
+    "chembl:mechanismActionType": "mechanismActionType",
+    "bao:0000205": "BAO_0000205",
+    "chembl:isBindingSiteForMechanism": "isBindingSiteForMechanism",
+    "chembl:bindingSiteName": "bindingSiteName",
+    "chembl:GoProcessRef": "GoProcessRef",
+    "chembl:hasMeshHeading": "hasMeshHeading",
+    "chembl:hasEFOName": "hasEFOName",
+    "chembl:ProteinDataBankRef": "ProteinDataBankRef",
+    "chembl:proteinSequence": "proteinSequence",
+    "chembl:GoFunctionRef": "GoFunctionRef",
+    "chembl:componentType": "componentType",
+    "chembl:hasEFO": "hasEFO",
+    "chembl:hasMesh": "hasMesh",
+    "chembl:cellXref": "cellXref",
+    "chembl:LincsCellRef": "LincsCellRef",
+    "chembl:isCellLineForTarget": "isCellLineForTarget",
+    "chembl:isCellLineForAssay": "isCellLineForAssay",
+    "chembl:type": "type",
+    "chembl:units": "units",
+    "chembl:value": "value",
+    "chembl:standardRelation": "standardRelation",
+    "chembl:cellosaurusId": "cellosaurusId",
+    "chembl:standardType": "standardType",
+    "chembl:relation": "relation",
+    "chembl:standardValue": "standardValue",
+    "chembl:standardUnits": "standardUnits",
+    "chembl:dataValidityIssue": "dataValidityIssue",
+    "chembl:pChembl": "pChembl",
+    "chembl:activityComment": "activityComment",
+    "chembl:potentialDuplicate": "potentialDuplicate",
+    "chembl:dataValidityComment": "dataValidityComment",
+    "chembl:PfamRef": "PfamRef",
+    "bao:0000208": "BAO_0000208",
+    "chembl:hasUnitOnto": "hasUnitOnto",
+    "chembl:hasQUDT": "hasQUDT",
+    "chembl:hasCLO": "hasCLO",
+    "chembl:targetCmptXref": "targetCmptXref",
+    "chembl:Journal": "Journal",
+    "chembl:hasJournal": "hasJournal",
+    "bibo:issn": "issn",
+    "bibo:shortTitle": "shortTitle",
+    "bibo:issue": "issue",
+    "dcterms:date": "date",
+    "bibo:doi": "doi",
+    "bibo:pageStart": "pageStart",
+    "bibo:eissn": "eissn",
+    "bibo:pageEnd": "pageEnd",
+    "bibo:volume": "volume",
+    "chembl:documentType": "documentType",
+    "pdbxv50owl:link_to_pdb": "link_to_pdb",
+    "bibo:pmid": "pmid"
+  }
+}

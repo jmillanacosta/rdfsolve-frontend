@@ -172,7 +172,7 @@ export class ResultsPanel extends HTMLElement {
 
 <div class="rp-controls">
   <div class="rp-endpoint-wrap">
-    <select id="ep-select"><option value="">— select endpoint —</option></select>
+    <select id="ep-select"><option value="">- select endpoint -</option></select>
   </div>
   <div class="rp-method">
     <label><input type="radio" name="rp-method" value="GET" checked /> GET</label>
@@ -185,7 +185,7 @@ export class ResultsPanel extends HTMLElement {
 <div id="summary"></div>
 <div id="results">
   <div class="rp-empty">
-    Draw a path → review the query → run it here.<br/>
+    Draw a path -> review the query -> run it here.<br/>
     Results will map back to the schema diagram.
   </div>
 </div>
@@ -217,7 +217,7 @@ export class ResultsPanel extends HTMLElement {
 
     sel.innerHTML = '';
     if (endpoints.length === 0) {
-      sel.append(this.opt('', '— no endpoints discovered —'));
+      sel.append(this.opt('', '- no endpoints discovered -'));
       return;
     }
     for (const ep of endpoints) {
@@ -236,7 +236,7 @@ export class ResultsPanel extends HTMLElement {
   private async runQuery(): Promise<void> {
     const editor = this.getEditor();
     const query = editor?.getSPARQL()?.trim();
-    if (!query) { this.setStatus('No SPARQL query — draw a path first', true); return; }
+    if (!query) { this.setStatus('No SPARQL query - draw a path first', true); return; }
 
     const sel = this.root.getElementById('ep-select') as HTMLSelectElement;
     const endpoint = sel.value;
@@ -251,7 +251,7 @@ export class ResultsPanel extends HTMLElement {
     btn.textContent = '⏳ Running…';
     this.setStatus('Querying endpoint…');
 
-    // Build variable → schema URI map from query text
+    // Build variable -> schema URI map from query text
     const diagram = this.getDiagram();
     const prefixes = diagram?.getSchema()?.prefixes ?? {};
     const variableMap = buildVariableMapFromQuery(query, prefixes);
@@ -305,7 +305,7 @@ export class ResultsPanel extends HTMLElement {
 
     const state = diagram.getState();
 
-    // Convert Set<string> → string[] for the state API
+    // Convert Set<string> -> string[] for the state API
     const classToIris = new Map<string, string[]>();
     const highlightUris: string[] = [];
     for (const [schemaUri, instances] of instanceMap) {
@@ -376,7 +376,7 @@ export class ResultsPanel extends HTMLElement {
       const badge = document.createElement('span');
       badge.className = count > 0 ? 'rp-badge has-data' : 'rp-badge no-data';
       badge.innerHTML = `<span class="badge-dot"></span>?${escapeHtml(v)}: ${count}`;
-      badge.title = `${shortenForDisplay(schemaUri)} — ${count} distinct instance${count !== 1 ? 's' : ''}`;
+      badge.title = `${shortenForDisplay(schemaUri)} - ${count} distinct instance${count !== 1 ? 's' : ''}`;
 
       if (count > 0) {
         badge.addEventListener('click', () => this.zoomToSchemaNode(schemaUri));
@@ -417,7 +417,7 @@ export class ResultsPanel extends HTMLElement {
       if (schemaUri) {
         const schemaSpan = document.createElement('span');
         schemaSpan.className = 'th-schema';
-        schemaSpan.textContent = `→ ${getLocalName(schemaUri)}`;
+        schemaSpan.textContent = `-> ${getLocalName(schemaUri)}`;
         schemaSpan.title = `Schema: ${schemaUri}\nClick to zoom`;
         schemaSpan.addEventListener('click', () => this.zoomToSchemaNode(schemaUri));
         th.append(schemaSpan);
@@ -437,7 +437,7 @@ export class ResultsPanel extends HTMLElement {
 
         if (!cell) {
           td.className = 'cell-empty';
-          td.textContent = '—';
+          td.textContent = '-';
         } else if (cell.type === 'uri') {
           const a = document.createElement('span');
           a.className = 'cell-uri';

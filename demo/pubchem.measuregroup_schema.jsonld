@@ -4,10 +4,9 @@
     "dcterms": "http://purl.org/dc/terms/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "bao": "http://www.bioassayontology.org/bao#BAO_",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ro": "http://purl.obolibrary.org/obo/RO_",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "obi": "http://purl.obolibrary.org/obo/OBI_",
-    "ro": "http://purl.obolibrary.org/obo/RO_"
+    "obi": "http://purl.obolibrary.org/obo/OBI_"
   },
   "@graph": [
     {
@@ -15,17 +14,28 @@
       "dcterms:title": {
         "@type": "xsd:string"
       },
-      "rdf:type": {
-        "@id": "rdfs:Resource"
-      },
-      "dcterms:source": {
-        "@id": "rdfs:Resource"
-      },
       "obi:0000299": {
         "@id": "rdfs:Resource"
       },
       "ro:0000057": {
         "@id": "rdfs:Resource"
+      },
+      "dcterms:source": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:title": {
+          "Literal:xsd:string": 1796801
+        },
+        "obi:0000299": {
+          "Resource": 269576253
+        },
+        "ro:0000057": {
+          "Resource": 2311076
+        },
+        "dcterms:source": {
+          "Resource": 1791793
+        }
       }
     },
     {
@@ -33,29 +43,48 @@
       "dcterms:title": {
         "@type": "xsd:string"
       },
-      "rdf:type": {
-        "@id": "rdfs:Resource"
-      },
-      "obi:0000299": {
+      "ro:0000057": {
         "@id": "rdfs:Resource"
       },
       "dcterms:source": {
         "@id": "rdfs:Resource"
       },
-      "ro:0000057": {
+      "obi:0000299": {
         "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:title": {
+          "Literal:xsd:string": 1796801
+        },
+        "ro:0000057": {
+          "Resource": 2311076
+        },
+        "dcterms:source": {
+          "Resource": 1791793
+        },
+        "obi:0000299": {
+          "Resource": 269576253
+        }
       }
     }
   ],
   "@about": {
     "generated_by": "rdfsolve 0.0.1",
-    "generated_at": "2026-02-09T15:09:50.618692+00:00",
+    "generated_at": "2026-03-02T08:43:03.175841+00:00",
     "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
     "dataset_name": "pubchem.measuregroup",
     "graph_uris": [
       "http://rdf.ncbi.nlm.nih.gov/pubchem/measuregroup"
     ],
     "pattern_count": 10,
-    "strategy": "miner"
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "vocabulary:MeasureGroup": "MeasureGroup",
+    "dcterms:title": "title",
+    "bao:0000040": "BAO_0000040",
+    "ro:0000057": "RO_0000057",
+    "obi:0000299": "OBI_0000299",
+    "dcterms:source": "source"
   }
 }

@@ -1,0 +1,564 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "bio2rdf": "http://bio2rdf.org/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pav": "http://purl.org/pav/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "owl:Class",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:taxonomy_vocabulary:division-id": [
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Division"
+        }
+      ],
+      "bio2rdf:taxonomy_vocabulary:embl-code": [
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Embl-code"
+        }
+      ],
+      "bio2rdf:taxonomy_vocabulary:genetic-code-id": [
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Genetic-Code"
+        }
+      ],
+      "bio2rdf:taxonomy_vocabulary:mitochondrial-genetic-code-id": [
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Genetic-Code"
+        }
+      ],
+      "bio2rdf:taxonomy_vocabulary:rank": [
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Rank"
+        }
+      ],
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1323912
+        },
+        "bio2rdf:taxonomy_vocabulary:division-id": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 1323908,
+          "bio2rdf:taxonomy_vocabulary:Division": 1323908
+        },
+        "bio2rdf:taxonomy_vocabulary:embl-code": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 1323908,
+          "bio2rdf:taxonomy_vocabulary:Embl-code": 1323908
+        },
+        "bio2rdf:taxonomy_vocabulary:genetic-code-id": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 1323908,
+          "bio2rdf:taxonomy_vocabulary:Genetic-Code": 1323908
+        },
+        "bio2rdf:taxonomy_vocabulary:mitochondrial-genetic-code-id": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 1323908,
+          "bio2rdf:taxonomy_vocabulary:Genetic-Code": 1323908
+        },
+        "bio2rdf:taxonomy_vocabulary:rank": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 1323908,
+          "bio2rdf:taxonomy_vocabulary:Rank": 1323908
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1323908
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 5
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 26
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 26
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 26
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 26
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 26
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 26
+        }
+      }
+    },
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 2
+        }
+      }
+    },
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 1
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 4
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 1
+        },
+        "foaf:page": {
+          "Resource": 2
+        },
+        "dcterms:creator": {
+          "Resource": 1
+        },
+        "dcterms:publisher": {
+          "Resource": 2
+        },
+        "dcterms:license": {
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:taxonomy_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:taxonomy_vocabulary:division-id": [
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Division"
+        }
+      ],
+      "bio2rdf:taxonomy_vocabulary:embl-code": [
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Embl-code"
+        }
+      ],
+      "bio2rdf:taxonomy_vocabulary:genetic-code-id": [
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Genetic-Code"
+        }
+      ],
+      "bio2rdf:taxonomy_vocabulary:mitochondrial-genetic-code-id": [
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Genetic-Code"
+        }
+      ],
+      "bio2rdf:taxonomy_vocabulary:rank": [
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:taxonomy_vocabulary:Rank"
+        }
+      ],
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1324681
+        },
+        "bio2rdf:taxonomy_vocabulary:division-id": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 1323908,
+          "bio2rdf:taxonomy_vocabulary:Division": 1323908
+        },
+        "bio2rdf:taxonomy_vocabulary:embl-code": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 1323908,
+          "bio2rdf:taxonomy_vocabulary:Embl-code": 1323908
+        },
+        "bio2rdf:taxonomy_vocabulary:genetic-code-id": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 1323908,
+          "bio2rdf:taxonomy_vocabulary:Genetic-Code": 1323908
+        },
+        "bio2rdf:taxonomy_vocabulary:mitochondrial-genetic-code-id": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 1323908,
+          "bio2rdf:taxonomy_vocabulary:Genetic-Code": 1323908
+        },
+        "bio2rdf:taxonomy_vocabulary:rank": {
+          "bio2rdf:taxonomy_vocabulary:Resource": 1323908,
+          "bio2rdf:taxonomy_vocabulary:Rank": 1323908
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1323908
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:taxonomy_vocabulary:Embl-code",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 677
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 676
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 677
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 676
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 677
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 677
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:taxonomy_vocabulary:Rank",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 29
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 29
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 29
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 29
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 29
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 29
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:taxonomy_vocabulary:Division",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:taxonomy_vocabulary:comment": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:taxonomy_vocabulary:division-code": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 12
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 12
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 12
+        },
+        "bio2rdf:taxonomy_vocabulary:comment": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:taxonomy_vocabulary:division-code": {
+          "Literal:xsd:string": 12
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:taxonomy_vocabulary:Genetic-Code",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:taxonomy_vocabulary:start-codons": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:taxonomy_vocabulary:translation-table": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 20
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 20
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 20
+        },
+        "bio2rdf:taxonomy_vocabulary:start-codons": {
+          "Literal:xsd:string": 19
+        },
+        "bio2rdf:taxonomy_vocabulary:translation-table": {
+          "Literal:xsd:string": 19
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T14:07:55.897332+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "taxonomy",
+    "graph_uris": [
+      "http://bio2rdf.org/taxonomy_resource:bio2rdf.dataset.taxonomy.R3"
+    ],
+    "pattern_count": 114,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:Class": "Class",
+    "void:inDataset": "inDataset",
+    "dcterms:Dataset": "Dataset",
+    "owl:ObjectProperty": "ObjectProperty",
+    "bio2rdf:taxonomy_vocabulary:division-id": "taxonomy_vocabulary:division-id",
+    "bio2rdf:taxonomy_vocabulary:Resource": "taxonomy_vocabulary:Resource",
+    "bio2rdf:taxonomy_vocabulary:Division": "taxonomy_vocabulary:Division",
+    "bio2rdf:taxonomy_vocabulary:embl-code": "taxonomy_vocabulary:embl-code",
+    "bio2rdf:taxonomy_vocabulary:Embl-code": "taxonomy_vocabulary:Embl-code",
+    "bio2rdf:taxonomy_vocabulary:genetic-code-id": "taxonomy_vocabulary:genetic-code-id",
+    "bio2rdf:taxonomy_vocabulary:Genetic-Code": "taxonomy_vocabulary:Genetic-Code",
+    "bio2rdf:taxonomy_vocabulary:mitochondrial-genetic-code-id": "taxonomy_vocabulary:mitochondrial-genetic-code-id",
+    "bio2rdf:taxonomy_vocabulary:rank": "taxonomy_vocabulary:rank",
+    "bio2rdf:taxonomy_vocabulary:Rank": "taxonomy_vocabulary:Rank",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "dcat:distribution": "distribution",
+    "dcat:Distribution": "Distribution",
+    "dcterms:source": "source",
+    "dcterms:title": "title",
+    "dcterms:identifier": "identifier",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "dcterms:created": "created",
+    "dcterms:format": "format",
+    "dcterms:rights": "rights",
+    "pav:retrievedOn": "retrievedOn",
+    "bio2rdf:taxonomy_vocabulary:comment": "taxonomy_vocabulary:comment",
+    "bio2rdf:taxonomy_vocabulary:division-code": "taxonomy_vocabulary:division-code",
+    "bio2rdf:taxonomy_vocabulary:start-codons": "taxonomy_vocabulary:start-codons",
+    "bio2rdf:taxonomy_vocabulary:translation-table": "taxonomy_vocabulary:translation-table",
+    "foaf:page": "page",
+    "dcterms:creator": "creator",
+    "dcterms:publisher": "publisher",
+    "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": "bio2rdf_vocabulary:x-identifiers.org",
+    "dcterms:license": "license"
+  }
+}

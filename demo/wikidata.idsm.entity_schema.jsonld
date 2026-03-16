@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "cheminf": "http://semanticscience.org/resource/CHEMINF_",
+    "resource": "http://semanticscience.org/resource/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "sio": "http://semanticscience.org/resource/SIO_",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "cheminf:000018",
+      "resource:has-value": {
+        "@type": "xsd:string"
+      },
+      "sio:000300": {
+        "@type": "xsd:string"
+      },
+      "resource:is-attribute-of": {
+        "@id": "rdfs:Resource"
+      },
+      "sio:000011": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "resource:has-value": {
+          "Literal:xsd:string": 1365739
+        },
+        "sio:000300": {
+          "Literal:xsd:string": 1365739
+        },
+        "resource:is-attribute-of": {
+          "Resource": 1365739
+        },
+        "sio:000011": {
+          "Resource": 1365739
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:40:28.299446+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "wikidata.idsm.entity",
+    "graph_uris": [
+      "http://www.wikidata.org/entity/"
+    ],
+    "pattern_count": 5,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "cheminf:000018": "CHEMINF_000018",
+    "resource:has-value": "has-value",
+    "sio:000300": "SIO_000300",
+    "resource:is-attribute-of": "is-attribute-of",
+    "sio:000011": "SIO_000011"
+  }
+}

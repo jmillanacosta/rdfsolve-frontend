@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "uniprot.core": "http://purl.uniprot.org/core/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "uniprot.core:Citation_Statement",
+      "uniprot.core:mappedAnnotation": {
+        "@id": "uniprot.core:Annotation"
+      },
+      "uniprot.core:scope": {
+        "@type": "xsd:string"
+      },
+      "uniprot.core:attribution": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "uniprot.core:mappedAnnotation": {
+          "uniprot.core:Annotation": 39667389
+        },
+        "uniprot.core:scope": {
+          "Literal:xsd:string": 58881610
+        },
+        "uniprot.core:attribution": {
+          "Resource": 47750344
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T09:21:12.938711+00:00",
+    "endpoint": "https://sparql.uniprot.org/sparql/",
+    "dataset_name": "uniprot.citationmapping",
+    "graph_uris": [
+      "http://sparql.uniprot.org/citationmapping"
+    ],
+    "pattern_count": 10,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "uniprot.core:Citation_Statement": "Citation_Statement",
+    "uniprot.core:mappedAnnotation": "mappedAnnotation",
+    "uniprot.core:Annotation": "Annotation",
+    "uniprot.core:scope": "scope",
+    "uniprot.core:attribution": "attribution"
+  }
+}

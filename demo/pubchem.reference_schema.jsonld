@@ -1,0 +1,187 @@
+{
+  "@context": {
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "30": "http://prismstandard.org/namespaces/basic/3.0/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "fabio": "http://purl.org/spar/fabio/",
+    "frapo": "http://purl.org/cerif/frapo/",
+    "cito": "http://purl.org/spar/cito/"
+  },
+  "@graph": [
+    {
+      "@id": "vocabulary:Reference",
+      "30:pageRange": {
+        "@type": "xsd:string"
+      },
+      "dcterms:language": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "30:issueIdentifier": {
+        "@type": "xsd:string"
+      },
+      "30:publicationName": {
+        "@type": "xsd:string"
+      },
+      "30:startingPage": {
+        "@type": "xsd:string"
+      },
+      "30:issn": {
+        "@type": "xsd:string"
+      },
+      "dcterms:bibliographicCitation": {
+        "@type": "xsd:string"
+      },
+      "dcterms:date": {
+        "@type": "xsd:date"
+      },
+      "30:isbn": {
+        "@type": "xsd:string"
+      },
+      "30:endingPage": {
+        "@type": "xsd:string"
+      },
+      "30:contentType": {
+        "@type": "xsd:string"
+      },
+      "dcterms:source": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "fabio:hasPrimarySubjectTerm": {
+        "@id": "rdfs:Resource"
+      },
+      "frapo:isSupportedBy": {
+        "@id": "rdfs:Resource"
+      },
+      "fabio:hasSubjectTerm": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:isPartOf": {
+        "@id": "rdfs:Resource"
+      },
+      "frapo:hasFundingAgency": {
+        "@id": "rdfs:Resource"
+      },
+      "cito:discusses": {
+        "@id": "rdfs:Resource"
+      },
+      "vocabulary:discussesAsDerivedByTextMining": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "30:pageRange": {
+          "Literal:xsd:string": 41385473
+        },
+        "dcterms:language": {
+          "Literal:xsd:string": 42397590
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 84065101
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 42397257
+        },
+        "30:issueIdentifier": {
+          "Literal:xsd:string": 36360687
+        },
+        "30:publicationName": {
+          "Literal:xsd:string": 42312670
+        },
+        "30:startingPage": {
+          "Literal:xsd:string": 41385473
+        },
+        "30:issn": {
+          "Literal:xsd:string": 57704837
+        },
+        "dcterms:bibliographicCitation": {
+          "Literal:xsd:string": 41967595
+        },
+        "dcterms:date": {
+          "Literal:xsd:date": 42390958
+        },
+        "30:isbn": {
+          "Literal:xsd:string": 2224294
+        },
+        "30:endingPage": {
+          "Literal:xsd:string": 34903932
+        },
+        "30:contentType": {
+          "Literal:xsd:string": 42388060
+        },
+        "dcterms:source": {
+          "Resource": 78600284
+        },
+        "dcterms:creator": {
+          "Resource": 194673970
+        },
+        "fabio:hasPrimarySubjectTerm": {
+          "Resource": 117750347
+        },
+        "frapo:isSupportedBy": {
+          "Resource": 10456834
+        },
+        "fabio:hasSubjectTerm": {
+          "Resource": 268288707
+        },
+        "dcterms:isPartOf": {
+          "Resource": 99439079
+        },
+        "frapo:hasFundingAgency": {
+          "Resource": 20441621
+        },
+        "cito:discusses": {
+          "Resource": 64220252
+        },
+        "vocabulary:discussesAsDerivedByTextMining": {
+          "Resource": 108175139
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:52:35.259993+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.reference",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/reference"
+    ],
+    "pattern_count": 23,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "vocabulary:Reference": "Reference",
+    "30:pageRange": "pageRange",
+    "dcterms:language": "language",
+    "dcterms:identifier": "identifier",
+    "dcterms:title": "title",
+    "30:issueIdentifier": "issueIdentifier",
+    "30:publicationName": "publicationName",
+    "30:startingPage": "startingPage",
+    "30:issn": "issn",
+    "dcterms:bibliographicCitation": "bibliographicCitation",
+    "dcterms:date": "date",
+    "30:isbn": "isbn",
+    "30:endingPage": "endingPage",
+    "30:contentType": "contentType",
+    "dcterms:source": "source",
+    "dcterms:creator": "creator",
+    "fabio:hasPrimarySubjectTerm": "hasPrimarySubjectTerm",
+    "frapo:isSupportedBy": "isSupportedBy",
+    "fabio:hasSubjectTerm": "hasSubjectTerm",
+    "dcterms:isPartOf": "isPartOf",
+    "frapo:hasFundingAgency": "hasFundingAgency",
+    "cito:discusses": "discusses",
+    "vocabulary:discussesAsDerivedByTextMining": "discussesAsDerivedByTextMining"
+  }
+}

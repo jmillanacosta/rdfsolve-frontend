@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "sio": "http://semanticscience.org/resource/SIO_",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "vocabulary": "http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#",
+    "cito": "http://purl.org/spar/cito/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "sio:001262",
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "cito:isDiscussedBy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "skos:prefLabel": {
+          "Literal:xsd:string": 707
+        },
+        "skos:altLabel": {
+          "Literal:xsd:string": 2312
+        },
+        "cito:isDiscussedBy": {
+          "Resource": 21201852
+        }
+      }
+    },
+    {
+      "@id": "vocabulary:Anatomy",
+      "skos:altLabel": {
+        "@type": "xsd:string"
+      },
+      "skos:prefLabel": {
+        "@type": "xsd:string"
+      },
+      "cito:isDiscussedBy": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "skos:altLabel": {
+          "Literal:xsd:string": 2312
+        },
+        "skos:prefLabel": {
+          "Literal:xsd:string": 707
+        },
+        "cito:isDiscussedBy": {
+          "Resource": 21201852
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:39:59.091647+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "pubchem.anatomy",
+    "graph_uris": [
+      "http://rdf.ncbi.nlm.nih.gov/pubchem/anatomy"
+    ],
+    "pattern_count": 10,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "sio:001262": "SIO_001262",
+    "skos:prefLabel": "prefLabel",
+    "skos:altLabel": "altLabel",
+    "vocabulary:Anatomy": "Anatomy",
+    "cito:isDiscussedBy": "isDiscussedBy"
+  }
+}

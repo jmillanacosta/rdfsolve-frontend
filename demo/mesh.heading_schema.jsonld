@@ -1,0 +1,1438 @@
+{
+  "@context": {
+    "mesh.vocab": "http://id.nlm.nih.gov/mesh/vocab#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "mesh.vocab:GeographicalDescriptor",
+      "mesh.vocab:concept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredTerm": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:broaderDescriptor": [
+        {
+          "@id": "mesh.vocab:GeographicalDescriptor"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        }
+      ],
+      "mesh.vocab:treeNumber": {
+        "@id": "mesh.vocab:TreeNumber"
+      },
+      "mesh.vocab:allowableQualifier": {
+        "@id": "mesh.vocab:Qualifier"
+      },
+      "mesh.vocab:onlineNote": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:annotation": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateRevised": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:dateEstablished": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:dateCreated": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:historyNote": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:previousIndexing": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:concept": {
+          "mesh.vocab:Concept": 109
+        },
+        "mesh.vocab:preferredConcept": {
+          "mesh.vocab:Concept": 401
+        },
+        "mesh.vocab:preferredTerm": {
+          "mesh.vocab:Term": 401
+        },
+        "mesh.vocab:broaderDescriptor": {
+          "mesh.vocab:GeographicalDescriptor": 438,
+          "mesh.vocab:TopicalDescriptor": 40
+        },
+        "mesh.vocab:treeNumber": {
+          "mesh.vocab:TreeNumber": 517
+        },
+        "mesh.vocab:allowableQualifier": {
+          "mesh.vocab:Qualifier": 800
+        },
+        "mesh.vocab:onlineNote": {
+          "Literal:rdf:langString": 41
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 401
+        },
+        "mesh.vocab:annotation": {
+          "Literal:rdf:langString": 169
+        },
+        "mesh.vocab:dateRevised": {
+          "Literal:xsd:date": 391
+        },
+        "mesh.vocab:dateEstablished": {
+          "Literal:xsd:date": 401
+        },
+        "mesh.vocab:dateCreated": {
+          "Literal:xsd:date": 401
+        },
+        "mesh.vocab:historyNote": {
+          "Literal:rdf:langString": 169
+        },
+        "mesh.vocab:previousIndexing": {
+          "Literal:rdf:langString": 58
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 401
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:PublicationType",
+      "mesh.vocab:concept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:seeAlso": {
+        "@id": "mesh.vocab:PublicationType"
+      },
+      "mesh.vocab:preferredTerm": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:broaderDescriptor": {
+        "@id": "mesh.vocab:PublicationType"
+      },
+      "mesh.vocab:treeNumber": {
+        "@id": "mesh.vocab:TreeNumber"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:annotation": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateRevised": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:dateEstablished": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:dateCreated": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:historyNote": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:previousIndexing": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:nlmClassificationNumber": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:concept": {
+          "mesh.vocab:Concept": 52
+        },
+        "mesh.vocab:preferredConcept": {
+          "mesh.vocab:Concept": 189
+        },
+        "mesh.vocab:seeAlso": {
+          "mesh.vocab:PublicationType": 67
+        },
+        "mesh.vocab:preferredTerm": {
+          "mesh.vocab:Term": 189
+        },
+        "mesh.vocab:broaderDescriptor": {
+          "mesh.vocab:PublicationType": 216
+        },
+        "mesh.vocab:treeNumber": {
+          "mesh.vocab:TreeNumber": 233
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 189
+        },
+        "mesh.vocab:annotation": {
+          "Literal:rdf:langString": 186
+        },
+        "mesh.vocab:dateRevised": {
+          "Literal:xsd:date": 189
+        },
+        "mesh.vocab:dateEstablished": {
+          "Literal:xsd:date": 189
+        },
+        "mesh.vocab:dateCreated": {
+          "Literal:xsd:date": 189
+        },
+        "mesh.vocab:historyNote": {
+          "Literal:rdf:langString": 185
+        },
+        "mesh.vocab:previousIndexing": {
+          "Literal:rdf:langString": 10
+        },
+        "mesh.vocab:nlmClassificationNumber": {
+          "Literal:xsd:string": 12
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 189
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:Qualifier",
+      "mesh.vocab:concept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredTerm": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:broaderQualifier": {
+        "@id": "mesh.vocab:Qualifier"
+      },
+      "mesh.vocab:treeNumber": {
+        "@id": "mesh.vocab:TreeNumber"
+      },
+      "mesh.vocab:onlineNote": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:annotation": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateRevised": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:dateEstablished": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:lastActiveYear": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateCreated": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:historyNote": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:concept": {
+          "mesh.vocab:Concept": 156
+        },
+        "mesh.vocab:preferredConcept": {
+          "mesh.vocab:Concept": 84
+        },
+        "mesh.vocab:preferredTerm": {
+          "mesh.vocab:Term": 84
+        },
+        "mesh.vocab:broaderQualifier": {
+          "mesh.vocab:Qualifier": 76
+        },
+        "mesh.vocab:treeNumber": {
+          "mesh.vocab:TreeNumber": 99
+        },
+        "mesh.vocab:onlineNote": {
+          "Literal:rdf:langString": 82
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 84
+        },
+        "mesh.vocab:annotation": {
+          "Literal:rdf:langString": 84
+        },
+        "mesh.vocab:dateRevised": {
+          "Literal:xsd:date": 84
+        },
+        "mesh.vocab:dateEstablished": {
+          "Literal:xsd:date": 84
+        },
+        "mesh.vocab:lastActiveYear": {
+          "Literal:rdf:langString": 8
+        },
+        "mesh.vocab:dateCreated": {
+          "Literal:xsd:date": 84
+        },
+        "mesh.vocab:historyNote": {
+          "Literal:rdf:langString": 84
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 84
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:SCR_Disease",
+      "mesh.vocab:concept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredTerm": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:preferredMappedTo": [
+        {
+          "@id": "mesh.vocab:AllowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:DisallowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        }
+      ],
+      "mesh.vocab:indexerConsiderAlso": [
+        {
+          "@id": "mesh.vocab:AllowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "mesh.vocab:mappedTo": [
+        {
+          "@id": "mesh.vocab:AllowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        }
+      ],
+      "mesh.vocab:note": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:source": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateRevised": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:lastActiveYear": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateCreated": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:previousIndexing": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:frequency": {
+        "@type": "xsd:int"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:concept": {
+          "mesh.vocab:Concept": 609
+        },
+        "mesh.vocab:preferredConcept": {
+          "mesh.vocab:Concept": 6771
+        },
+        "mesh.vocab:preferredTerm": {
+          "mesh.vocab:Term": 6771
+        },
+        "mesh.vocab:preferredMappedTo": {
+          "mesh.vocab:AllowedDescriptorQualifierPair": 1967,
+          "mesh.vocab:DisallowedDescriptorQualifierPair": 1,
+          "mesh.vocab:TopicalDescriptor": 11685
+        },
+        "mesh.vocab:indexerConsiderAlso": {
+          "mesh.vocab:AllowedDescriptorQualifierPair": 1,
+          "mesh.vocab:TopicalDescriptor": 41,
+          "Resource": 10
+        },
+        "mesh.vocab:mappedTo": {
+          "mesh.vocab:AllowedDescriptorQualifierPair": 3,
+          "mesh.vocab:TopicalDescriptor": 393
+        },
+        "mesh.vocab:note": {
+          "Literal:rdf:langString": 2103
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 6771
+        },
+        "mesh.vocab:source": {
+          "Literal:rdf:langString": 97
+        },
+        "mesh.vocab:dateRevised": {
+          "Literal:xsd:date": 3840
+        },
+        "mesh.vocab:lastActiveYear": {
+          "Literal:rdf:langString": 226
+        },
+        "mesh.vocab:dateCreated": {
+          "Literal:xsd:date": 6771
+        },
+        "mesh.vocab:previousIndexing": {
+          "Literal:rdf:langString": 115
+        },
+        "mesh.vocab:frequency": {
+          "Literal:xsd:int": 6748
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 6771
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:SCR_Chemical",
+      "mesh.vocab:concept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredTerm": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:pharmacologicalAction": {
+        "@id": "mesh.vocab:TopicalDescriptor"
+      },
+      "mesh.vocab:preferredMappedTo": [
+        {
+          "@id": "mesh.vocab:AllowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        }
+      ],
+      "mesh.vocab:indexerConsiderAlso": [
+        {
+          "@id": "mesh.vocab:AllowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:DisallowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "mesh.vocab:mappedTo": [
+        {
+          "@id": "mesh.vocab:AllowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        }
+      ],
+      "mesh.vocab:note": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:source": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateRevised": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:lastActiveYear": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateCreated": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:previousIndexing": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:frequency": {
+        "@type": "xsd:int"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:concept": {
+          "mesh.vocab:Concept": 79250
+        },
+        "mesh.vocab:preferredConcept": {
+          "mesh.vocab:Concept": 250445
+        },
+        "mesh.vocab:preferredTerm": {
+          "mesh.vocab:Term": 250445
+        },
+        "mesh.vocab:pharmacologicalAction": {
+          "mesh.vocab:TopicalDescriptor": 10630
+        },
+        "mesh.vocab:preferredMappedTo": {
+          "mesh.vocab:AllowedDescriptorQualifierPair": 33426,
+          "mesh.vocab:TopicalDescriptor": 312376
+        },
+        "mesh.vocab:indexerConsiderAlso": {
+          "mesh.vocab:AllowedDescriptorQualifierPair": 6595,
+          "mesh.vocab:DisallowedDescriptorQualifierPair": 80,
+          "mesh.vocab:TopicalDescriptor": 38597,
+          "Resource": 107
+        },
+        "mesh.vocab:mappedTo": {
+          "mesh.vocab:AllowedDescriptorQualifierPair": 29,
+          "mesh.vocab:TopicalDescriptor": 5559
+        },
+        "mesh.vocab:note": {
+          "Literal:rdf:langString": 215031
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 250445
+        },
+        "mesh.vocab:source": {
+          "Literal:rdf:langString": 253757
+        },
+        "mesh.vocab:dateRevised": {
+          "Literal:xsd:date": 181964
+        },
+        "mesh.vocab:lastActiveYear": {
+          "Literal:rdf:langString": 2449
+        },
+        "mesh.vocab:dateCreated": {
+          "Literal:xsd:date": 250445
+        },
+        "mesh.vocab:previousIndexing": {
+          "Literal:rdf:langString": 55785
+        },
+        "mesh.vocab:frequency": {
+          "Literal:xsd:int": 249075
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 250445
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:SCR_Organism",
+      "mesh.vocab:concept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredTerm": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:preferredMappedTo": {
+        "@id": "mesh.vocab:TopicalDescriptor"
+      },
+      "mesh.vocab:indexerConsiderAlso": [
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "mesh.vocab:mappedTo": {
+        "@id": "mesh.vocab:TopicalDescriptor"
+      },
+      "mesh.vocab:note": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:source": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateRevised": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:lastActiveYear": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateCreated": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:previousIndexing": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:frequency": {
+        "@type": "xsd:int"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:concept": {
+          "mesh.vocab:Concept": 606
+        },
+        "mesh.vocab:preferredConcept": {
+          "mesh.vocab:Concept": 66571
+        },
+        "mesh.vocab:preferredTerm": {
+          "mesh.vocab:Term": 66571
+        },
+        "mesh.vocab:preferredMappedTo": {
+          "mesh.vocab:TopicalDescriptor": 66269
+        },
+        "mesh.vocab:indexerConsiderAlso": {
+          "mesh.vocab:TopicalDescriptor": 1741,
+          "Resource": 3
+        },
+        "mesh.vocab:mappedTo": {
+          "mesh.vocab:TopicalDescriptor": 570
+        },
+        "mesh.vocab:note": {
+          "Literal:rdf:langString": 43
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 66571
+        },
+        "mesh.vocab:source": {
+          "Literal:rdf:langString": 3
+        },
+        "mesh.vocab:dateRevised": {
+          "Literal:xsd:date": 66571
+        },
+        "mesh.vocab:lastActiveYear": {
+          "Literal:rdf:langString": 848
+        },
+        "mesh.vocab:dateCreated": {
+          "Literal:xsd:date": 66571
+        },
+        "mesh.vocab:previousIndexing": {
+          "Literal:rdf:langString": 29
+        },
+        "mesh.vocab:frequency": {
+          "Literal:xsd:int": 66107
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 66571
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:SCR_Population",
+      "mesh.vocab:concept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredTerm": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:preferredMappedTo": {
+        "@id": "mesh.vocab:TopicalDescriptor"
+      },
+      "mesh.vocab:mappedTo": {
+        "@id": "mesh.vocab:TopicalDescriptor"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:dateRevised": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:dateCreated": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:frequency": {
+        "@type": "xsd:int"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:concept": {
+          "mesh.vocab:Concept": 18
+        },
+        "mesh.vocab:preferredConcept": {
+          "mesh.vocab:Concept": 1764
+        },
+        "mesh.vocab:preferredTerm": {
+          "mesh.vocab:Term": 1764
+        },
+        "mesh.vocab:preferredMappedTo": {
+          "mesh.vocab:TopicalDescriptor": 1780
+        },
+        "mesh.vocab:mappedTo": {
+          "mesh.vocab:TopicalDescriptor": 12
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 1764
+        },
+        "mesh.vocab:dateRevised": {
+          "Literal:xsd:date": 1764
+        },
+        "mesh.vocab:dateCreated": {
+          "Literal:xsd:date": 1764
+        },
+        "mesh.vocab:frequency": {
+          "Literal:xsd:int": 1762
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 1764
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:SCR_Protocol",
+      "mesh.vocab:concept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredTerm": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:pharmacologicalAction": {
+        "@id": "mesh.vocab:TopicalDescriptor"
+      },
+      "mesh.vocab:preferredMappedTo": [
+        {
+          "@id": "mesh.vocab:AllowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:DisallowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        }
+      ],
+      "mesh.vocab:indexerConsiderAlso": [
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "mesh.vocab:mappedTo": [
+        {
+          "@id": "mesh.vocab:AllowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        }
+      ],
+      "mesh.vocab:note": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:source": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateRevised": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:lastActiveYear": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateCreated": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:previousIndexing": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:frequency": {
+        "@type": "xsd:int"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:concept": {
+          "mesh.vocab:Concept": 389
+        },
+        "mesh.vocab:preferredConcept": {
+          "mesh.vocab:Concept": 1237
+        },
+        "mesh.vocab:preferredTerm": {
+          "mesh.vocab:Term": 1237
+        },
+        "mesh.vocab:pharmacologicalAction": {
+          "mesh.vocab:TopicalDescriptor": 1
+        },
+        "mesh.vocab:preferredMappedTo": {
+          "mesh.vocab:AllowedDescriptorQualifierPair": 91,
+          "mesh.vocab:DisallowedDescriptorQualifierPair": 1,
+          "mesh.vocab:TopicalDescriptor": 1265
+        },
+        "mesh.vocab:indexerConsiderAlso": {
+          "mesh.vocab:TopicalDescriptor": 27,
+          "Resource": 1
+        },
+        "mesh.vocab:mappedTo": {
+          "mesh.vocab:AllowedDescriptorQualifierPair": 1,
+          "mesh.vocab:TopicalDescriptor": 4719
+        },
+        "mesh.vocab:note": {
+          "Literal:rdf:langString": 1211
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 1237
+        },
+        "mesh.vocab:source": {
+          "Literal:rdf:langString": 1215
+        },
+        "mesh.vocab:dateRevised": {
+          "Literal:xsd:date": 1169
+        },
+        "mesh.vocab:lastActiveYear": {
+          "Literal:rdf:langString": 4
+        },
+        "mesh.vocab:dateCreated": {
+          "Literal:xsd:date": 1237
+        },
+        "mesh.vocab:previousIndexing": {
+          "Literal:rdf:langString": 221
+        },
+        "mesh.vocab:frequency": {
+          "Literal:xsd:int": 1219
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 1237
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:TopicalDescriptor",
+      "mesh.vocab:concept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:seeAlso": [
+        {
+          "@id": "mesh.vocab:PublicationType"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        }
+      ],
+      "mesh.vocab:preferredTerm": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:pharmacologicalAction": {
+        "@id": "mesh.vocab:TopicalDescriptor"
+      },
+      "mesh.vocab:broaderDescriptor": [
+        {
+          "@id": "mesh.vocab:GeographicalDescriptor"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        }
+      ],
+      "mesh.vocab:treeNumber": {
+        "@id": "mesh.vocab:TreeNumber"
+      },
+      "mesh.vocab:allowableQualifier": {
+        "@id": "mesh.vocab:Qualifier"
+      },
+      "mesh.vocab:onlineNote": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:annotation": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateRevised": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:dateEstablished": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:lastActiveYear": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateCreated": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:publicMeSHNote": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:historyNote": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:previousIndexing": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:nlmClassificationNumber": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:considerAlso": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:concept": {
+          "mesh.vocab:Concept": 30156
+        },
+        "mesh.vocab:preferredConcept": {
+          "mesh.vocab:Concept": 30248
+        },
+        "mesh.vocab:seeAlso": {
+          "mesh.vocab:PublicationType": 2,
+          "mesh.vocab:TopicalDescriptor": 9124
+        },
+        "mesh.vocab:preferredTerm": {
+          "mesh.vocab:Term": 30248
+        },
+        "mesh.vocab:pharmacologicalAction": {
+          "mesh.vocab:TopicalDescriptor": 5076
+        },
+        "mesh.vocab:broaderDescriptor": {
+          "mesh.vocab:GeographicalDescriptor": 4,
+          "mesh.vocab:TopicalDescriptor": 41416
+        },
+        "mesh.vocab:treeNumber": {
+          "mesh.vocab:TreeNumber": 63811
+        },
+        "mesh.vocab:allowableQualifier": {
+          "mesh.vocab:Qualifier": 627288
+        },
+        "mesh.vocab:onlineNote": {
+          "Literal:rdf:langString": 2927
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 30248
+        },
+        "mesh.vocab:annotation": {
+          "Literal:rdf:langString": 12233
+        },
+        "mesh.vocab:dateRevised": {
+          "Literal:xsd:date": 28792
+        },
+        "mesh.vocab:dateEstablished": {
+          "Literal:xsd:date": 30248
+        },
+        "mesh.vocab:lastActiveYear": {
+          "Literal:rdf:langString": 76
+        },
+        "mesh.vocab:dateCreated": {
+          "Literal:xsd:date": 30248
+        },
+        "mesh.vocab:publicMeSHNote": {
+          "Literal:rdf:langString": 26386
+        },
+        "mesh.vocab:historyNote": {
+          "Literal:rdf:langString": 26473
+        },
+        "mesh.vocab:previousIndexing": {
+          "Literal:rdf:langString": 27189
+        },
+        "mesh.vocab:nlmClassificationNumber": {
+          "Literal:xsd:string": 6255
+        },
+        "mesh.vocab:considerAlso": {
+          "Literal:rdf:langString": 67
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 30248
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:CheckTag",
+      "mesh.vocab:preferredConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredTerm": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:annotation": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateRevised": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:dateEstablished": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:dateCreated": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:historyNote": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:preferredConcept": {
+          "mesh.vocab:Concept": 2
+        },
+        "mesh.vocab:preferredTerm": {
+          "mesh.vocab:Term": 2
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 2
+        },
+        "mesh.vocab:annotation": {
+          "Literal:rdf:langString": 2
+        },
+        "mesh.vocab:dateRevised": {
+          "Literal:xsd:date": 2
+        },
+        "mesh.vocab:dateEstablished": {
+          "Literal:xsd:date": 2
+        },
+        "mesh.vocab:dateCreated": {
+          "Literal:xsd:date": 2
+        },
+        "mesh.vocab:historyNote": {
+          "Literal:rdf:langString": 2
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 2
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:Concept",
+      "mesh.vocab:preferredTerm": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:term": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:broaderConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:relatedConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:narrowerConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:scopeNote": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:relatedRegistryNumber": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:casn1_label": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:registryNumber": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:lastActiveYear": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:preferredTerm": {
+          "mesh.vocab:Term": 466976
+        },
+        "mesh.vocab:term": {
+          "mesh.vocab:Term": 396721
+        },
+        "mesh.vocab:broaderConcept": {
+          "mesh.vocab:Concept": 8883
+        },
+        "mesh.vocab:relatedConcept": {
+          "mesh.vocab:Concept": 8279
+        },
+        "mesh.vocab:narrowerConcept": {
+          "mesh.vocab:Concept": 92171
+        },
+        "mesh.vocab:scopeNote": {
+          "Literal:rdf:langString": 33127
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 466976
+        },
+        "mesh.vocab:relatedRegistryNumber": {
+          "Literal:xsd:string": 43964
+        },
+        "mesh.vocab:casn1_label": {
+          "Literal:rdf:langString": 22632
+        },
+        "mesh.vocab:registryNumber": {
+          "Literal:xsd:string": 387312
+        },
+        "mesh.vocab:lastActiveYear": {
+          "Literal:rdf:langString": 4454
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 466976
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:TreeNumber",
+      "mesh.vocab:parentTreeNumber": {
+        "@id": "mesh.vocab:TreeNumber"
+      },
+      "mesh.vocab:lastActiveYear": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:parentTreeNumber": {
+          "mesh.vocab:TreeNumber": 81591
+        },
+        "mesh.vocab:lastActiveYear": {
+          "Literal:rdf:langString": 17186
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 81732
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:AllowedDescriptorQualifierPair",
+      "mesh.vocab:hasQualifier": {
+        "@id": "mesh.vocab:Qualifier"
+      },
+      "mesh.vocab:hasDescriptor": [
+        {
+          "@id": "mesh.vocab:GeographicalDescriptor"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        }
+      ],
+      "mesh.vocab:lastActiveYear": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:hasQualifier": {
+          "mesh.vocab:Qualifier": 679888
+        },
+        "mesh.vocab:hasDescriptor": {
+          "mesh.vocab:GeographicalDescriptor": 800,
+          "mesh.vocab:TopicalDescriptor": 679088
+        },
+        "mesh.vocab:lastActiveYear": {
+          "Literal:rdf:langString": 52627
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 679888
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:DisallowedDescriptorQualifierPair",
+      "mesh.vocab:hasQualifier": {
+        "@id": "mesh.vocab:Qualifier"
+      },
+      "mesh.vocab:hasDescriptor": {
+        "@id": "mesh.vocab:TopicalDescriptor"
+      },
+      "mesh.vocab:useInstead": [
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        },
+        {
+          "@id": "mesh.vocab:DisallowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:AllowedDescriptorQualifierPair"
+        }
+      ],
+      "mesh.vocab:lastActiveYear": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:hasQualifier": {
+          "mesh.vocab:Qualifier": 1041
+        },
+        "mesh.vocab:hasDescriptor": {
+          "mesh.vocab:TopicalDescriptor": 1041
+        },
+        "mesh.vocab:useInstead": {
+          "mesh.vocab:TopicalDescriptor": 990,
+          "mesh.vocab:DisallowedDescriptorQualifierPair": 1,
+          "mesh.vocab:AllowedDescriptorQualifierPair": 50
+        },
+        "mesh.vocab:lastActiveYear": {
+          "Literal:rdf:langString": 47
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 1041
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:Term",
+      "mesh.vocab:sortVersion": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:lexicalTag": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:thesaurusID": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:altLabel": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:abbreviation": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:lastActiveYear": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:dateCreated": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:prefLabel": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:entryVersion": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "mesh.vocab:sortVersion": {
+          "Literal:rdf:langString": 3973
+        },
+        "mesh.vocab:lexicalTag": {
+          "Literal:rdf:langString": 869536
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 869536
+        },
+        "mesh.vocab:thesaurusID": {
+          "Literal:rdf:langString": 916022
+        },
+        "mesh.vocab:altLabel": {
+          "Literal:rdf:langString": 133000
+        },
+        "mesh.vocab:abbreviation": {
+          "Literal:rdf:langString": 81
+        },
+        "mesh.vocab:lastActiveYear": {
+          "Literal:rdf:langString": 13105
+        },
+        "mesh.vocab:dateCreated": {
+          "Literal:xsd:date": 639130
+        },
+        "mesh.vocab:prefLabel": {
+          "Literal:rdf:langString": 869536
+        },
+        "mesh.vocab:entryVersion": {
+          "Literal:rdf:langString": 16273
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 869536
+        }
+      }
+    },
+    {
+      "@id": "mesh.vocab:SCR_Anatomy",
+      "mesh.vocab:concept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:preferredTerm": {
+        "@id": "mesh.vocab:Term"
+      },
+      "mesh.vocab:preferredMappedTo": [
+        {
+          "@id": "mesh.vocab:AllowedDescriptorQualifierPair"
+        },
+        {
+          "@id": "mesh.vocab:TopicalDescriptor"
+        }
+      ],
+      "mesh.vocab:preferredConcept": {
+        "@id": "mesh.vocab:Concept"
+      },
+      "mesh.vocab:indexerConsiderAlso": {
+        "@id": "mesh.vocab:TopicalDescriptor"
+      },
+      "mesh.vocab:active": {
+        "@type": "xsd:boolean"
+      },
+      "mesh.vocab:identifier": {
+        "@type": "xsd:string"
+      },
+      "mesh.vocab:dateCreated": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:dateRevised": {
+        "@type": "xsd:date"
+      },
+      "mesh.vocab:note": {
+        "@type": "rdf:langString"
+      },
+      "mesh.vocab:lastActiveYear": {
+        "@type": "rdf:langString"
+      },
+      "_counts": {
+        "mesh.vocab:concept": {
+          "mesh.vocab:Concept": 15
+        },
+        "mesh.vocab:preferredTerm": {
+          "mesh.vocab:Term": 24
+        },
+        "mesh.vocab:preferredMappedTo": {
+          "mesh.vocab:AllowedDescriptorQualifierPair": 17,
+          "mesh.vocab:TopicalDescriptor": 28
+        },
+        "mesh.vocab:preferredConcept": {
+          "mesh.vocab:Concept": 24
+        },
+        "mesh.vocab:indexerConsiderAlso": {
+          "mesh.vocab:TopicalDescriptor": 8
+        },
+        "mesh.vocab:active": {
+          "Literal:xsd:boolean": 24
+        },
+        "mesh.vocab:identifier": {
+          "Literal:xsd:string": 24
+        },
+        "mesh.vocab:dateCreated": {
+          "Literal:xsd:date": 24
+        },
+        "mesh.vocab:dateRevised": {
+          "Literal:xsd:date": 24
+        },
+        "mesh.vocab:note": {
+          "Literal:rdf:langString": 17
+        },
+        "mesh.vocab:lastActiveYear": {
+          "Literal:rdf:langString": 1
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T08:43:05.657155+00:00",
+    "endpoint": "https://idsm.elixir-czech.cz/sparql/endpoint/idsm",
+    "dataset_name": "mesh.heading",
+    "graph_uris": [
+      "http://id.nlm.nih.gov/mesh/heading"
+    ],
+    "pattern_count": 245,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "mesh.vocab:GeographicalDescriptor": "GeographicalDescriptor",
+    "mesh.vocab:concept": "concept",
+    "mesh.vocab:Concept": "Concept",
+    "mesh.vocab:PublicationType": "PublicationType",
+    "mesh.vocab:Qualifier": "Qualifier",
+    "mesh.vocab:SCR_Disease": "SCR_Disease",
+    "mesh.vocab:SCR_Chemical": "SCR_Chemical",
+    "mesh.vocab:SCR_Organism": "SCR_Organism",
+    "mesh.vocab:SCR_Population": "SCR_Population",
+    "mesh.vocab:SCR_Protocol": "SCR_Protocol",
+    "mesh.vocab:TopicalDescriptor": "TopicalDescriptor",
+    "mesh.vocab:preferredConcept": "preferredConcept",
+    "mesh.vocab:CheckTag": "CheckTag",
+    "mesh.vocab:seeAlso": "seeAlso",
+    "mesh.vocab:preferredTerm": "preferredTerm",
+    "mesh.vocab:Term": "Term",
+    "mesh.vocab:term": "term",
+    "mesh.vocab:pharmacologicalAction": "pharmacologicalAction",
+    "mesh.vocab:preferredMappedTo": "preferredMappedTo",
+    "mesh.vocab:AllowedDescriptorQualifierPair": "AllowedDescriptorQualifierPair",
+    "mesh.vocab:DisallowedDescriptorQualifierPair": "DisallowedDescriptorQualifierPair",
+    "mesh.vocab:indexerConsiderAlso": "indexerConsiderAlso",
+    "mesh.vocab:TreeNumber": "TreeNumber",
+    "mesh.vocab:parentTreeNumber": "parentTreeNumber",
+    "mesh.vocab:broaderDescriptor": "broaderDescriptor",
+    "mesh.vocab:hasQualifier": "hasQualifier",
+    "mesh.vocab:broaderQualifier": "broaderQualifier",
+    "mesh.vocab:hasDescriptor": "hasDescriptor",
+    "mesh.vocab:broaderConcept": "broaderConcept",
+    "mesh.vocab:relatedConcept": "relatedConcept",
+    "mesh.vocab:treeNumber": "treeNumber",
+    "mesh.vocab:allowableQualifier": "allowableQualifier",
+    "mesh.vocab:mappedTo": "mappedTo",
+    "mesh.vocab:useInstead": "useInstead",
+    "mesh.vocab:narrowerConcept": "narrowerConcept",
+    "mesh.vocab:onlineNote": "onlineNote",
+    "mesh.vocab:note": "note",
+    "mesh.vocab:scopeNote": "scopeNote",
+    "mesh.vocab:sortVersion": "sortVersion",
+    "mesh.vocab:lexicalTag": "lexicalTag",
+    "mesh.vocab:identifier": "identifier",
+    "mesh.vocab:relatedRegistryNumber": "relatedRegistryNumber",
+    "mesh.vocab:casn1_label": "casn1_label",
+    "mesh.vocab:thesaurusID": "thesaurusID",
+    "mesh.vocab:source": "source",
+    "mesh.vocab:altLabel": "altLabel",
+    "mesh.vocab:annotation": "annotation",
+    "mesh.vocab:abbreviation": "abbreviation",
+    "mesh.vocab:registryNumber": "registryNumber",
+    "mesh.vocab:dateRevised": "dateRevised",
+    "mesh.vocab:dateEstablished": "dateEstablished",
+    "mesh.vocab:lastActiveYear": "lastActiveYear",
+    "mesh.vocab:dateCreated": "dateCreated",
+    "mesh.vocab:prefLabel": "prefLabel",
+    "mesh.vocab:publicMeSHNote": "publicMeSHNote",
+    "mesh.vocab:historyNote": "historyNote",
+    "mesh.vocab:entryVersion": "entryVersion",
+    "mesh.vocab:previousIndexing": "previousIndexing",
+    "mesh.vocab:frequency": "frequency",
+    "mesh.vocab:nlmClassificationNumber": "nlmClassificationNumber",
+    "mesh.vocab:considerAlso": "considerAlso",
+    "mesh.vocab:active": "active",
+    "mesh.vocab:SCR_Anatomy": "SCR_Anatomy"
+  }
+}

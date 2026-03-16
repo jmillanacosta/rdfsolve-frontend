@@ -1,0 +1,4474 @@
+{
+  "@context": {
+    "bio2rdf": "http://bio2rdf.org/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pav": "http://purl.org/pav/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "bio2rdf:ensembl_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 38380
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 38380
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 38380
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 38380
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 38380
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 38380
+        }
+      }
+    },
+    {
+      "@id": "owl:Class",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 19
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 19
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 19
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 19
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 19
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 19
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 16
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 16
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 48
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 48
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 48
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 48
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 48
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 48
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:genbank_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 45
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 45
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 45
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 45
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 45
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 45
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:go_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5478
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5478
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5478
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5478
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5478
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 5478
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 26917
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 26917
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 26917
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 26917
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 26917
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 26917
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ncbigene_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 53486
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 53486
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 53486
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 53486
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 53486
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 53486
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:refseq_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 129697
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 129697
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 129697
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 129697
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 129697
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 129697
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:uniprot_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 24767
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 24767
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 24767
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 24767
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 24767
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 24767
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:omim_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 16536
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16536
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16536
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16536
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16536
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 16536
+        }
+      }
+    },
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 1
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 4
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 5
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:creator": {
+          "Resource": 1
+        },
+        "foaf:page": {
+          "Resource": 2
+        },
+        "dcterms:publisher": {
+          "Resource": 2
+        },
+        "dcterms:license": {
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 516
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 516
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 516
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 516
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 516
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 516
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pubmed_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5076
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5076
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5076
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5076
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5076
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 5076
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ctd_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 10729
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 10729
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 10729
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 10729
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 10729
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 10729
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:kegg_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1859
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1859
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1859
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1859
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1859
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:Resource",
+      "bio2rdf:pharmgkb_vocabulary:x-ensembl": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-alfred": {
+        "@id": "bio2rdf:alfred_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-ctd": {
+        "@id": "bio2rdf:ctd_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-genecards": {
+        "@id": "bio2rdf:genecards_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-go": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-uniprot": {
+        "@id": "bio2rdf:uniprot_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-genatlas": {
+        "@id": "bio2rdf:genatlas_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-ncbigene": {
+        "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:drug": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Drug"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:disease": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Disease"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:x-refseq": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-omim": {
+        "@id": "bio2rdf:omim_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-hgnc": {
+        "@id": "bio2rdf:hgnc_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-huge": {
+        "@id": "bio2rdf:huge_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-humancyc": {
+        "@id": "bio2rdf:humancyc_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-modbase": {
+        "@id": "bio2rdf:modbase_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-iupharreceptor": {
+        "@id": "bio2rdf:iuphar.receptor_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-mutdb": {
+        "@id": "bio2rdf:mutdb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:x-clinicaltrials": {
+        "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-bindingdb": {
+        "@id": "bio2rdf:bindingdb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-chebi": {
+        "@id": "bio2rdf:chebi_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-chemspider": {
+        "@id": "bio2rdf:chemspider_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-dailymed": {
+        "@id": "bio2rdf:dailymed_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-atc": {
+        "@id": "bio2rdf:atc_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-genbank": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-drugbank": {
+        "@id": "bio2rdf:drugbank_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-kegg": {
+        "@id": "bio2rdf:kegg_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-ndc": {
+        "@id": "bio2rdf:ndc_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-pdb": {
+        "@id": "bio2rdf:pdb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-pubchemcompound": {
+        "@id": "bio2rdf:pubchem.compound_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-pubchemsubstance": {
+        "@id": "bio2rdf:pubchem.substance_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-het": {
+        "@id": "bio2rdf:ccd_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:variantlocation": [
+        {
+          "@id": "bio2rdf:dbsnp_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Variation"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:haplotype": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-dpd": {
+        "@id": "bio2rdf:dpd_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-iupharligand": {
+        "@id": "bio2rdf:iuphar.ligand_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-ttd": {
+        "@id": "bio2rdf:ttd_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-mesh": {
+        "@id": "bio2rdf:mesh_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-snomedct": {
+        "@id": "bio2rdf:snomedct_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-meddra": {
+        "@id": "bio2rdf:meddra_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-ndfrt": {
+        "@id": "bio2rdf:ndfrt_vocabulary:Resource"
+      },
+      "owl:sameAs": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-umls": {
+        "@id": "bio2rdf:umls_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:article": [
+        {
+          "@id": "bio2rdf:pubmed_vocabulary:Resource"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:alternate-symbol": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:alternative-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:chromosome": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:chromosome-end": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:chromosome-start": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:cpic-dosing-guideline": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:has-variant-annotation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:is-vip": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:brand_mixture": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:drug_class": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:generic_name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:trade_name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:synonym": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-webresource": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:x-ensembl": {
+          "bio2rdf:ensembl_vocabulary:Resource": 39504
+        },
+        "bio2rdf:pharmgkb_vocabulary:symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 26931
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 120480
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-alfred": {
+          "bio2rdf:alfred_vocabulary:Resource": 18223
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-ctd": {
+          "bio2rdf:ctd_vocabulary:Resource": 10729
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-genecards": {
+          "bio2rdf:genecards_vocabulary:Resource": 25843
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-go": {
+          "bio2rdf:go_vocabulary:Resource": 97257
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-uniprot": {
+          "bio2rdf:uniprot_vocabulary:Resource": 24802
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-genatlas": {
+          "bio2rdf:genatlas_vocabulary:Resource": 13241
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-ncbigene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 53526
+        },
+        "bio2rdf:pharmgkb_vocabulary:drug": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 58612,
+          "bio2rdf:pharmgkb_vocabulary:Drug": 58578
+        },
+        "bio2rdf:pharmgkb_vocabulary:disease": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 37334,
+          "bio2rdf:pharmgkb_vocabulary:Disease": 37256
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-refseq": {
+          "bio2rdf:refseq_vocabulary:Resource": 269736
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-omim": {
+          "bio2rdf:omim_vocabulary:Resource": 17604
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-hgnc": {
+          "bio2rdf:hgnc_vocabulary:Resource": 26183
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-huge": {
+          "bio2rdf:huge_vocabulary:Resource": 21932
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-humancyc": {
+          "bio2rdf:humancyc_vocabulary:Resource": 13660
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-modbase": {
+          "bio2rdf:modbase_vocabulary:Resource": 15515
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-iupharreceptor": {
+          "bio2rdf:iuphar.receptor_vocabulary:Resource": 555
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-mutdb": {
+          "bio2rdf:mutdb_vocabulary:Resource": 13524
+        },
+        "bio2rdf:pharmgkb_vocabulary:gene": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 43160,
+          "bio2rdf:pharmgkb_vocabulary:Gene": 43160
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-clinicaltrials": {
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 1003
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-bindingdb": {
+          "bio2rdf:bindingdb_vocabulary:Resource": 431
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-chebi": {
+          "bio2rdf:chebi_vocabulary:Resource": 1010
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-chemspider": {
+          "bio2rdf:chemspider_vocabulary:Resource": 1227
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-dailymed": {
+          "bio2rdf:dailymed_vocabulary:Resource": 886
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-atc": {
+          "bio2rdf:atc_vocabulary:Resource": 752
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-genbank": {
+          "bio2rdf:genbank_vocabulary:Resource": 71
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-drugbank": {
+          "bio2rdf:drugbank_vocabulary:Resource": 1625
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-kegg": {
+          "bio2rdf:kegg_vocabulary:Resource": 1862
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-ndc": {
+          "bio2rdf:ndc_vocabulary:Resource": 962
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-pdb": {
+          "bio2rdf:pdb_vocabulary:Resource": 293
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-pubchemcompound": {
+          "bio2rdf:pubchem.compound_vocabulary:Resource": 1667
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-pubchemsubstance": {
+          "bio2rdf:pubchem.substance_vocabulary:Resource": 2642
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-het": {
+          "bio2rdf:ccd_vocabulary:Resource": 255
+        },
+        "bio2rdf:pharmgkb_vocabulary:variantlocation": {
+          "bio2rdf:dbsnp_vocabulary:Resource": 44973,
+          "bio2rdf:pharmgkb_vocabulary:Variation": 40260,
+          "bio2rdf:pharmgkb_vocabulary:Resource": 612
+        },
+        "bio2rdf:pharmgkb_vocabulary:haplotype": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 26553
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-dpd": {
+          "bio2rdf:dpd_vocabulary:Resource": 962
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-iupharligand": {
+          "bio2rdf:iuphar.ligand_vocabulary:Resource": 247
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-ttd": {
+          "bio2rdf:ttd_vocabulary:Resource": 1335
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-mesh": {
+          "bio2rdf:mesh_vocabulary:Resource": 3046
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-snomedct": {
+          "bio2rdf:snomedct_vocabulary:Resource": 4365
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-meddra": {
+          "bio2rdf:meddra_vocabulary:Resource": 2570
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-ndfrt": {
+          "bio2rdf:ndfrt_vocabulary:Resource": 3220
+        },
+        "owl:sameAs": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3478
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-umls": {
+          "bio2rdf:umls_vocabulary:Resource": 3103
+        },
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 211542,
+          "Resource": 25
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 107368
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 82577
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 116330
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 120480
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 120480
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 120480
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 120480
+        },
+        "bio2rdf:pharmgkb_vocabulary:name": {
+          "Literal:xsd:string": 30501
+        },
+        "bio2rdf:pharmgkb_vocabulary:alternate-symbol": {
+          "Literal:xsd:string": 36098,
+          "Literal:xsd:integer": 139,
+          "Literal:xsd:float": 6
+        },
+        "bio2rdf:pharmgkb_vocabulary:alternative-name": {
+          "Literal:xsd:string": 15873,
+          "Literal:xsd:integer": 46
+        },
+        "bio2rdf:pharmgkb_vocabulary:chromosome": {
+          "Literal:xsd:string": 26655
+        },
+        "bio2rdf:pharmgkb_vocabulary:chromosome-end": {
+          "Literal:xsd:integer": 24279,
+          "Literal:xsd:string": 2376
+        },
+        "bio2rdf:pharmgkb_vocabulary:chromosome-start": {
+          "Literal:xsd:integer": 24279,
+          "Literal:xsd:string": 2376
+        },
+        "bio2rdf:pharmgkb_vocabulary:cpic-dosing-guideline": {
+          "Literal:xsd:string": 27023
+        },
+        "bio2rdf:pharmgkb_vocabulary:has-variant-annotation": {
+          "Literal:xsd:string": 27023
+        },
+        "bio2rdf:pharmgkb_vocabulary:is-vip": {
+          "Literal:xsd:string": 27023
+        },
+        "bio2rdf:pharmgkb_vocabulary:brand_mixture": {
+          "Literal:xsd:string": 4159
+        },
+        "bio2rdf:pharmgkb_vocabulary:drug_class": {
+          "Literal:xsd:string": 3168
+        },
+        "bio2rdf:pharmgkb_vocabulary:generic_name": {
+          "Literal:xsd:string": 7007,
+          "Literal:xsd:integer": 67
+        },
+        "bio2rdf:pharmgkb_vocabulary:trade_name": {
+          "Literal:xsd:string": 18240
+        },
+        "bio2rdf:pharmgkb_vocabulary:synonym": {
+          "Literal:xsd:string": 25744,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 57390
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 19182
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-webresource": {
+          "Resource": 1386
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:mesh_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2867
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2867
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2867
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2867
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2867
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 2867
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:bindingdb_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 431
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 431
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 431
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 431
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 431
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 431
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:chemspider_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1224
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1224
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1224
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1224
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1224
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1224
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pdb_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 293
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 293
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 293
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 293
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 293
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 293
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pubchem.compound_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1656
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1656
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1656
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1656
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1656
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1656
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pubchem.substance_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2641
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2641
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2641
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2641
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2641
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 2641
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ccd_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 255
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 255
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 255
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 255
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 255
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 255
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:dailymed_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 886
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 886
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 886
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 886
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 886
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:atc_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 711
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 711
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 711
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 711
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 711
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 711
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:chebi_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1005
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1005
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1005
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1005
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1005
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1005
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:drugbank_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1624
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1624
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1624
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1624
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1624
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 1624
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:genatlas_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 13241
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 13241
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 13241
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 13241
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 13241
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 13241
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:genecards_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 25843
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 25843
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 25843
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 25843
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 25843
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 25843
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:hgnc_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 26183
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 26183
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 26183
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 26183
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 26183
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndc_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 962
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 962
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 962
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 962
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 962
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:alfred_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 18219
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 18219
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 18219
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 18219
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 18219
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:huge_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 21932
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 21932
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 21932
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 21932
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 21932
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 21932
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:dpd_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 958
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 958
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 958
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 958
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 958
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:humancyc_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 13660
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 13660
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 13660
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 13660
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 13660
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:iuphar.receptor_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 555
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 555
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 555
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 555
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 555
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 555
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:iuphar.ligand_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 241
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 241
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 241
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 241
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 241
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:meddra_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2406
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2406
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2406
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2406
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2406
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:modbase_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 15515
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 15515
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 15515
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 15515
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 15515
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:mutdb_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 13524
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 13524
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 13524
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 13524
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 13524
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ndfrt_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 3040
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3040
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3040
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3040
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3040
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:snomedct_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 4323
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 4323
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 4323
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 4323
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 4323
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 4323
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:ttd_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1334
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1334
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1334
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1334
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1334
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:umls_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2919
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2919
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2919
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2919
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2919
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:Disease",
+      "bio2rdf:pharmgkb_vocabulary:x-mesh": {
+        "@id": "bio2rdf:mesh_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-snomedct": {
+        "@id": "bio2rdf:snomedct_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-meddra": {
+        "@id": "bio2rdf:meddra_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-ndfrt": {
+        "@id": "bio2rdf:ndfrt_vocabulary:Resource"
+      },
+      "owl:sameAs": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:x-umls": {
+        "@id": "bio2rdf:umls_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:variantlocation": [
+        {
+          "@id": "bio2rdf:dbsnp_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Variation"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:haplotype": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:disease": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Disease"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:synonym": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:x-mesh": {
+          "bio2rdf:mesh_vocabulary:Resource": 3046
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-snomedct": {
+          "bio2rdf:snomedct_vocabulary:Resource": 4365
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-meddra": {
+          "bio2rdf:meddra_vocabulary:Resource": 2570
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-ndfrt": {
+          "bio2rdf:ndfrt_vocabulary:Resource": 3220
+        },
+        "owl:sameAs": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3478
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 3478
+        },
+        "bio2rdf:pharmgkb_vocabulary:gene": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3825,
+          "bio2rdf:pharmgkb_vocabulary:Gene": 3825
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-umls": {
+          "bio2rdf:umls_vocabulary:Resource": 3103
+        },
+        "bio2rdf:pharmgkb_vocabulary:variantlocation": {
+          "bio2rdf:dbsnp_vocabulary:Resource": 5742,
+          "bio2rdf:pharmgkb_vocabulary:Variation": 5081,
+          "bio2rdf:pharmgkb_vocabulary:Resource": 91
+        },
+        "bio2rdf:pharmgkb_vocabulary:haplotype": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 1966
+        },
+        "bio2rdf:pharmgkb_vocabulary:disease": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 16,
+          "bio2rdf:pharmgkb_vocabulary:Disease": 16
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 3478
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3478
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3478
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3478
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3478
+        },
+        "bio2rdf:pharmgkb_vocabulary:name": {
+          "Literal:xsd:string": 3478
+        },
+        "bio2rdf:pharmgkb_vocabulary:synonym": {
+          "Literal:xsd:string": 25744,
+          "Literal:xsd:integer": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:Variation",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:disease": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Disease"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:drug": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Drug"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Gene"
+        }
+      ]
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:Drug",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-genbank": {
+        "@id": "bio2rdf:genbank_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-uniprot": {
+        "@id": "bio2rdf:uniprot_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-clinicaltrials": {
+        "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:x-bindingdb": {
+        "@id": "bio2rdf:bindingdb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-chebi": {
+        "@id": "bio2rdf:chebi_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-chemspider": {
+        "@id": "bio2rdf:chemspider_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-drugbank": {
+        "@id": "bio2rdf:drugbank_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-kegg": {
+        "@id": "bio2rdf:kegg_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-ndc": {
+        "@id": "bio2rdf:ndc_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-pdb": {
+        "@id": "bio2rdf:pdb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-pubchemcompound": {
+        "@id": "bio2rdf:pubchem.compound_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-pubchemsubstance": {
+        "@id": "bio2rdf:pubchem.substance_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-het": {
+        "@id": "bio2rdf:ccd_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-dailymed": {
+        "@id": "bio2rdf:dailymed_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:variantlocation": [
+        {
+          "@id": "bio2rdf:dbsnp_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Variation"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:haplotype": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-atc": {
+        "@id": "bio2rdf:atc_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-dpd": {
+        "@id": "bio2rdf:dpd_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-iupharligand": {
+        "@id": "bio2rdf:iuphar.ligand_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-ttd": {
+        "@id": "bio2rdf:ttd_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:drug": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Drug"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:brand_mixture": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:drug_class": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:generic_name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:trade_name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-webresource": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 3168
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-genbank": {
+          "bio2rdf:genbank_vocabulary:Resource": 71
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-uniprot": {
+          "bio2rdf:uniprot_vocabulary:Resource": 74
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-clinicaltrials": {
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 1003
+        },
+        "bio2rdf:pharmgkb_vocabulary:gene": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 5939,
+          "bio2rdf:pharmgkb_vocabulary:Gene": 5939
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-bindingdb": {
+          "bio2rdf:bindingdb_vocabulary:Resource": 431
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-chebi": {
+          "bio2rdf:chebi_vocabulary:Resource": 1010
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-chemspider": {
+          "bio2rdf:chemspider_vocabulary:Resource": 1227
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-drugbank": {
+          "bio2rdf:drugbank_vocabulary:Resource": 1625
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-kegg": {
+          "bio2rdf:kegg_vocabulary:Resource": 1862
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-ndc": {
+          "bio2rdf:ndc_vocabulary:Resource": 962
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-pdb": {
+          "bio2rdf:pdb_vocabulary:Resource": 293
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-pubchemcompound": {
+          "bio2rdf:pubchem.compound_vocabulary:Resource": 1667
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-pubchemsubstance": {
+          "bio2rdf:pubchem.substance_vocabulary:Resource": 2642
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-het": {
+          "bio2rdf:ccd_vocabulary:Resource": 255
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-dailymed": {
+          "bio2rdf:dailymed_vocabulary:Resource": 886
+        },
+        "bio2rdf:pharmgkb_vocabulary:variantlocation": {
+          "bio2rdf:dbsnp_vocabulary:Resource": 7857,
+          "bio2rdf:pharmgkb_vocabulary:Variation": 6982,
+          "bio2rdf:pharmgkb_vocabulary:Resource": 113
+        },
+        "bio2rdf:pharmgkb_vocabulary:haplotype": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3493
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-atc": {
+          "bio2rdf:atc_vocabulary:Resource": 752
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-dpd": {
+          "bio2rdf:dpd_vocabulary:Resource": 962
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-iupharligand": {
+          "bio2rdf:iuphar.ligand_vocabulary:Resource": 247
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-ttd": {
+          "bio2rdf:ttd_vocabulary:Resource": 1335
+        },
+        "bio2rdf:pharmgkb_vocabulary:drug": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 32,
+          "bio2rdf:pharmgkb_vocabulary:Drug": 32
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 3168
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3168
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3168
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3168
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3168
+        },
+        "bio2rdf:pharmgkb_vocabulary:brand_mixture": {
+          "Literal:xsd:string": 4159
+        },
+        "bio2rdf:pharmgkb_vocabulary:drug_class": {
+          "Literal:xsd:string": 3168
+        },
+        "bio2rdf:pharmgkb_vocabulary:generic_name": {
+          "Literal:xsd:string": 7007,
+          "Literal:xsd:integer": 67
+        },
+        "bio2rdf:pharmgkb_vocabulary:trade_name": {
+          "Literal:xsd:string": 18240
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-webresource": {
+          "Resource": 1364
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:Gene",
+      "bio2rdf:pharmgkb_vocabulary:x-ensembl": {
+        "@id": "bio2rdf:ensembl_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:symbol": {
+        "@id": "bio2rdf:hgnc.symbol_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-alfred": {
+        "@id": "bio2rdf:alfred_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-ctd": {
+        "@id": "bio2rdf:ctd_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-genecards": {
+        "@id": "bio2rdf:genecards_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-go": {
+        "@id": "bio2rdf:go_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-uniprot": {
+        "@id": "bio2rdf:uniprot_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-genatlas": {
+        "@id": "bio2rdf:genatlas_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-ncbigene": {
+        "@id": "bio2rdf:ncbigene_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:drug": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Drug"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:disease": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Disease"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:x-refseq": {
+        "@id": "bio2rdf:refseq_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-omim": {
+        "@id": "bio2rdf:omim_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-hgnc": {
+        "@id": "bio2rdf:hgnc_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-huge": {
+        "@id": "bio2rdf:huge_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-humancyc": {
+        "@id": "bio2rdf:humancyc_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-modbase": {
+        "@id": "bio2rdf:modbase_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-iupharreceptor": {
+        "@id": "bio2rdf:iuphar.receptor_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-mutdb": {
+        "@id": "bio2rdf:mutdb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:alternate-symbol": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:alternative-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:chromosome": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:chromosome-end": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:chromosome-start": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:cpic-dosing-guideline": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:has-variant-annotation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:is-vip": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:x-webresource": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:x-ensembl": {
+          "bio2rdf:ensembl_vocabulary:Resource": 39504
+        },
+        "bio2rdf:pharmgkb_vocabulary:symbol": {
+          "bio2rdf:hgnc.symbol_vocabulary:Resource": 26931
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 27023
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-alfred": {
+          "bio2rdf:alfred_vocabulary:Resource": 18223
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-ctd": {
+          "bio2rdf:ctd_vocabulary:Resource": 10729
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-genecards": {
+          "bio2rdf:genecards_vocabulary:Resource": 25843
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-go": {
+          "bio2rdf:go_vocabulary:Resource": 97257
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-uniprot": {
+          "bio2rdf:uniprot_vocabulary:Resource": 24728
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-genatlas": {
+          "bio2rdf:genatlas_vocabulary:Resource": 13241
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-ncbigene": {
+          "bio2rdf:ncbigene_vocabulary:Resource": 53526
+        },
+        "bio2rdf:pharmgkb_vocabulary:drug": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 5940,
+          "bio2rdf:pharmgkb_vocabulary:Drug": 5939
+        },
+        "bio2rdf:pharmgkb_vocabulary:disease": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3835,
+          "bio2rdf:pharmgkb_vocabulary:Disease": 3825
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-refseq": {
+          "bio2rdf:refseq_vocabulary:Resource": 269736
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-omim": {
+          "bio2rdf:omim_vocabulary:Resource": 17604
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-hgnc": {
+          "bio2rdf:hgnc_vocabulary:Resource": 26183
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-huge": {
+          "bio2rdf:huge_vocabulary:Resource": 21932
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-humancyc": {
+          "bio2rdf:humancyc_vocabulary:Resource": 13660
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-modbase": {
+          "bio2rdf:modbase_vocabulary:Resource": 15515
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-iupharreceptor": {
+          "bio2rdf:iuphar.receptor_vocabulary:Resource": 555
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-mutdb": {
+          "bio2rdf:mutdb_vocabulary:Resource": 13524
+        },
+        "bio2rdf:pharmgkb_vocabulary:gene": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 1538,
+          "bio2rdf:pharmgkb_vocabulary:Gene": 1538
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 27023
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 27023
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 27023
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 27023
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 27023
+        },
+        "bio2rdf:pharmgkb_vocabulary:name": {
+          "Literal:xsd:string": 27023
+        },
+        "bio2rdf:pharmgkb_vocabulary:alternate-symbol": {
+          "Literal:xsd:string": 36098,
+          "Literal:xsd:integer": 139,
+          "Literal:xsd:float": 6
+        },
+        "bio2rdf:pharmgkb_vocabulary:alternative-name": {
+          "Literal:xsd:string": 15873,
+          "Literal:xsd:integer": 46
+        },
+        "bio2rdf:pharmgkb_vocabulary:chromosome": {
+          "Literal:xsd:string": 26655
+        },
+        "bio2rdf:pharmgkb_vocabulary:chromosome-end": {
+          "Literal:xsd:integer": 24279,
+          "Literal:xsd:string": 2376
+        },
+        "bio2rdf:pharmgkb_vocabulary:chromosome-start": {
+          "Literal:xsd:integer": 24279,
+          "Literal:xsd:string": 2376
+        },
+        "bio2rdf:pharmgkb_vocabulary:cpic-dosing-guideline": {
+          "Literal:xsd:string": 27023
+        },
+        "bio2rdf:pharmgkb_vocabulary:has-variant-annotation": {
+          "Literal:xsd:string": 27023
+        },
+        "bio2rdf:pharmgkb_vocabulary:is-vip": {
+          "Literal:xsd:string": 27023
+        },
+        "bio2rdf:pharmgkb_vocabulary:x-webresource": {
+          "Resource": 22
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:disease-gene-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:disease": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Disease"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 11807
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 3835
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 5143
+        },
+        "bio2rdf:pharmgkb_vocabulary:gene": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3835,
+          "bio2rdf:pharmgkb_vocabulary:Gene": 3835
+        },
+        "bio2rdf:pharmgkb_vocabulary:disease": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3835,
+          "bio2rdf:pharmgkb_vocabulary:Disease": 3825
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3835
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 3835
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3835
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3835
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3835
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3835
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 3194
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 544
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:disease-disease-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:disease": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Disease"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 6
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 16
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 16
+        },
+        "bio2rdf:pharmgkb_vocabulary:disease": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 32,
+          "bio2rdf:pharmgkb_vocabulary:Disease": 32
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 16
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 16
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 16
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 16
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:disease-haplotype-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:disease": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Disease"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:haplotype": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 11809
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 3344
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3539
+        },
+        "bio2rdf:pharmgkb_vocabulary:disease": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3344,
+          "bio2rdf:pharmgkb_vocabulary:Disease": 3341
+        },
+        "bio2rdf:pharmgkb_vocabulary:haplotype": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3344
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3344
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 3344
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3344
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3344
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3344
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3344
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 2659
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 1179
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:disease-variantlocation-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:disease": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Disease"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:variantlocation": [
+        {
+          "@id": "bio2rdf:dbsnp_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Variation"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 11665
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 5846
+        },
+        "bio2rdf:pharmgkb_vocabulary:disease": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 5846,
+          "bio2rdf:pharmgkb_vocabulary:Disease": 5833
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 7464
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 5846
+        },
+        "bio2rdf:pharmgkb_vocabulary:variantlocation": {
+          "bio2rdf:dbsnp_vocabulary:Resource": 5755,
+          "bio2rdf:pharmgkb_vocabulary:Variation": 5094,
+          "bio2rdf:pharmgkb_vocabulary:Resource": 91
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 5846
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5846
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5846
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5846
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5846
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 4780
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 841
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:drug-gene-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": [
+        {
+          "@id": "bio2rdf:pubmed_vocabulary:Resource"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:drug": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Drug"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 17292,
+          "Resource": 1
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 5955
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 8856
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 5955
+        },
+        "bio2rdf:pharmgkb_vocabulary:gene": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 5955,
+          "bio2rdf:pharmgkb_vocabulary:Gene": 5955
+        },
+        "bio2rdf:pharmgkb_vocabulary:drug": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 5955,
+          "bio2rdf:pharmgkb_vocabulary:Drug": 5954
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 5955
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5955
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5955
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5955
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5955
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 4014
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 881
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:drug-drug-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:drug": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Drug"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 41
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 33
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 33
+        },
+        "bio2rdf:pharmgkb_vocabulary:drug": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 66,
+          "bio2rdf:pharmgkb_vocabulary:Drug": 66
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 33
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 33
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 33
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 33
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 33
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 33
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:drug-haplotype-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": [
+        {
+          "@id": "bio2rdf:pubmed_vocabulary:Resource"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:drug": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Drug"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:haplotype": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 17885,
+          "Resource": 11
+        },
+        "bio2rdf:pharmgkb_vocabulary:drug": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 6516,
+          "bio2rdf:pharmgkb_vocabulary:Drug": 6516
+        },
+        "bio2rdf:pharmgkb_vocabulary:haplotype": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 6516
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 6516
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 6873
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 6516
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6516
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6516
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6516
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6516
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6516
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 3012
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 3499
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:drug-variantlocation-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:drug": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Drug"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:variantlocation": [
+        {
+          "@id": "bio2rdf:dbsnp_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Variation"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 14238
+        },
+        "bio2rdf:pharmgkb_vocabulary:drug": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 7989,
+          "bio2rdf:pharmgkb_vocabulary:Drug": 7979
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 7989
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 10921
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 7989
+        },
+        "bio2rdf:pharmgkb_vocabulary:variantlocation": {
+          "bio2rdf:dbsnp_vocabulary:Resource": 7876,
+          "bio2rdf:pharmgkb_vocabulary:Variation": 6999,
+          "bio2rdf:pharmgkb_vocabulary:Resource": 113
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 7989
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 7989
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 7989
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 7989
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 7989
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 6250
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 1324
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:gene-disease-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Gene"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:disease": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Disease"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 22840
+        },
+        "bio2rdf:pharmgkb_vocabulary:gene": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 6995,
+          "bio2rdf:pharmgkb_vocabulary:Gene": 6995
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 6995
+        },
+        "bio2rdf:pharmgkb_vocabulary:disease": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 6995,
+          "bio2rdf:pharmgkb_vocabulary:Disease": 6977
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 9565
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 6995
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 6995
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 6995
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 6995
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 6995
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 6995
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 5820
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 1067
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:gene-drug-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": [
+        {
+          "@id": "bio2rdf:pubmed_vocabulary:Resource"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Gene"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:drug": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Drug"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 33446,
+          "Resource": 2
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 10724
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 16469
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 10724
+        },
+        "bio2rdf:pharmgkb_vocabulary:gene": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 10724,
+          "bio2rdf:pharmgkb_vocabulary:Gene": 10724
+        },
+        "bio2rdf:pharmgkb_vocabulary:drug": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 10724,
+          "bio2rdf:pharmgkb_vocabulary:Drug": 10722
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 10724
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 10724
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 10724
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 10724
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 10724
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 7135
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 1703
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:gene-gene-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:gene": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Gene"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 836
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 2169
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 2169
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 2169
+        },
+        "bio2rdf:pharmgkb_vocabulary:gene": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 4338,
+          "bio2rdf:pharmgkb_vocabulary:Gene": 4338
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2169
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2169
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2169
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2169
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2169
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:haplotype-disease-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:disease": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Disease"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:haplotype": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 13039
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 3749
+        },
+        "bio2rdf:pharmgkb_vocabulary:disease": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3749,
+          "bio2rdf:pharmgkb_vocabulary:Disease": 3744
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3982
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3749
+        },
+        "bio2rdf:pharmgkb_vocabulary:haplotype": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 3749
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 3749
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3749
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3749
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3749
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3749
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 2989
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 1296
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:haplotype-drug-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": [
+        {
+          "@id": "bio2rdf:pubmed_vocabulary:Resource"
+        },
+        {
+          "@id": "rdfs:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:drug": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Drug"
+        }
+      ],
+      "bio2rdf:pharmgkb_vocabulary:haplotype": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 19422,
+          "Resource": 11
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 7482
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 7970
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 7482
+        },
+        "bio2rdf:pharmgkb_vocabulary:drug": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 7482,
+          "bio2rdf:pharmgkb_vocabulary:Drug": 7482
+        },
+        "bio2rdf:pharmgkb_vocabulary:haplotype": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 7482
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 7482
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 7482
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 7482
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 7482
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 7482
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 3446
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 3785
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:variantlocation-disease-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:disease": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Disease"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:variantlocation": [
+        {
+          "@id": "bio2rdf:dbsnp_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Variation"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 17133
+        },
+        "bio2rdf:pharmgkb_vocabulary:disease": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 7622,
+          "bio2rdf:pharmgkb_vocabulary:Disease": 7606
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 7622
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 9910
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 7622
+        },
+        "bio2rdf:pharmgkb_vocabulary:variantlocation": {
+          "bio2rdf:dbsnp_vocabulary:Resource": 7531,
+          "bio2rdf:pharmgkb_vocabulary:Variation": 6825,
+          "bio2rdf:pharmgkb_vocabulary:Resource": 91
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 7622
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 7622
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 7622
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 7622
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 7622
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 6215
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 1232
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pharmgkb_vocabulary:variantlocation-drug-Association",
+      "bio2rdf:pharmgkb_vocabulary:article": {
+        "@id": "bio2rdf:pubmed_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:drug": [
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Drug"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:association": {
+        "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+      },
+      "bio2rdf:pharmgkb_vocabulary:variantlocation": [
+        {
+          "@id": "bio2rdf:dbsnp_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Variation"
+        },
+        {
+          "@id": "bio2rdf:pharmgkb_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+        "@type": "xsd:boolean"
+      },
+      "_counts": {
+        "bio2rdf:pharmgkb_vocabulary:article": {
+          "bio2rdf:pubmed_vocabulary:Resource": 20083
+        },
+        "bio2rdf:pharmgkb_vocabulary:drug": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 10302,
+          "bio2rdf:pharmgkb_vocabulary:Drug": 10282
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 10302
+        },
+        "bio2rdf:pharmgkb_vocabulary:annotation-type": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 14458
+        },
+        "bio2rdf:pharmgkb_vocabulary:association": {
+          "bio2rdf:pharmgkb_vocabulary:Resource": 10302
+        },
+        "bio2rdf:pharmgkb_vocabulary:variantlocation": {
+          "bio2rdf:dbsnp_vocabulary:Resource": 10189,
+          "bio2rdf:pharmgkb_vocabulary:Variation": 9257,
+          "bio2rdf:pharmgkb_vocabulary:Resource": 113
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 10302
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 10302
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 10302
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 10302
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 10302
+        },
+        "bio2rdf:pharmgkb_vocabulary:pd_relationship": {
+          "Literal:xsd:boolean": 7876
+        },
+        "bio2rdf:pharmgkb_vocabulary:pk_relationship": {
+          "Literal:xsd:boolean": 1831
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T15:00:25.842150+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "pharmgkb",
+    "graph_uris": [
+      "http://bio2rdf.org/pharmgkb_resource:bio2rdf.dataset.pharmgkb.R3"
+    ],
+    "pattern_count": 821,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "bio2rdf:ensembl_vocabulary:Resource": "ensembl_vocabulary:Resource",
+    "void:inDataset": "inDataset",
+    "dcterms:Dataset": "Dataset",
+    "owl:Class": "Class",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "owl:ObjectProperty": "ObjectProperty",
+    "bio2rdf:genbank_vocabulary:Resource": "genbank_vocabulary:Resource",
+    "bio2rdf:go_vocabulary:Resource": "go_vocabulary:Resource",
+    "bio2rdf:hgnc.symbol_vocabulary:Resource": "hgnc.symbol_vocabulary:Resource",
+    "bio2rdf:ncbigene_vocabulary:Resource": "ncbigene_vocabulary:Resource",
+    "bio2rdf:refseq_vocabulary:Resource": "refseq_vocabulary:Resource",
+    "bio2rdf:uniprot_vocabulary:Resource": "uniprot_vocabulary:Resource",
+    "bio2rdf:omim_vocabulary:Resource": "omim_vocabulary:Resource",
+    "dcat:Distribution": "Distribution",
+    "dcterms:source": "source",
+    "dcat:distribution": "distribution",
+    "dcterms:identifier": "identifier",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "dcterms:title": "title",
+    "dcterms:created": "created",
+    "dcterms:format": "format",
+    "dcterms:rights": "rights",
+    "pav:retrievedOn": "retrievedOn",
+    "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": "bio2rdf_vocabulary:x-identifiers.org",
+    "dcterms:creator": "creator",
+    "foaf:page": "page",
+    "dcterms:publisher": "publisher",
+    "dcterms:license": "license",
+    "bio2rdf:clinicaltrials_vocabulary:Resource": "clinicaltrials_vocabulary:Resource",
+    "bio2rdf:pubmed_vocabulary:Resource": "pubmed_vocabulary:Resource",
+    "bio2rdf:ctd_vocabulary:Resource": "ctd_vocabulary:Resource",
+    "bio2rdf:kegg_vocabulary:Resource": "kegg_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:Resource": "pharmgkb_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-ensembl": "pharmgkb_vocabulary:x-ensembl",
+    "bio2rdf:pharmgkb_vocabulary:symbol": "pharmgkb_vocabulary:symbol",
+    "bio2rdf:pharmgkb_vocabulary:x-alfred": "pharmgkb_vocabulary:x-alfred",
+    "bio2rdf:alfred_vocabulary:Resource": "alfred_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-ctd": "pharmgkb_vocabulary:x-ctd",
+    "bio2rdf:pharmgkb_vocabulary:x-genecards": "pharmgkb_vocabulary:x-genecards",
+    "bio2rdf:genecards_vocabulary:Resource": "genecards_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-go": "pharmgkb_vocabulary:x-go",
+    "bio2rdf:pharmgkb_vocabulary:x-uniprot": "pharmgkb_vocabulary:x-uniprot",
+    "bio2rdf:pharmgkb_vocabulary:x-genatlas": "pharmgkb_vocabulary:x-genatlas",
+    "bio2rdf:genatlas_vocabulary:Resource": "genatlas_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-ncbigene": "pharmgkb_vocabulary:x-ncbigene",
+    "bio2rdf:pharmgkb_vocabulary:drug": "pharmgkb_vocabulary:drug",
+    "bio2rdf:pharmgkb_vocabulary:Drug": "pharmgkb_vocabulary:Drug",
+    "bio2rdf:pharmgkb_vocabulary:disease": "pharmgkb_vocabulary:disease",
+    "bio2rdf:pharmgkb_vocabulary:Disease": "pharmgkb_vocabulary:Disease",
+    "bio2rdf:pharmgkb_vocabulary:x-refseq": "pharmgkb_vocabulary:x-refseq",
+    "bio2rdf:pharmgkb_vocabulary:x-omim": "pharmgkb_vocabulary:x-omim",
+    "bio2rdf:pharmgkb_vocabulary:x-hgnc": "pharmgkb_vocabulary:x-hgnc",
+    "bio2rdf:hgnc_vocabulary:Resource": "hgnc_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-huge": "pharmgkb_vocabulary:x-huge",
+    "bio2rdf:huge_vocabulary:Resource": "huge_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-humancyc": "pharmgkb_vocabulary:x-humancyc",
+    "bio2rdf:humancyc_vocabulary:Resource": "humancyc_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-modbase": "pharmgkb_vocabulary:x-modbase",
+    "bio2rdf:modbase_vocabulary:Resource": "modbase_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-iupharreceptor": "pharmgkb_vocabulary:x-iupharreceptor",
+    "bio2rdf:iuphar.receptor_vocabulary:Resource": "iuphar.receptor_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-mutdb": "pharmgkb_vocabulary:x-mutdb",
+    "bio2rdf:mutdb_vocabulary:Resource": "mutdb_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:gene": "pharmgkb_vocabulary:gene",
+    "bio2rdf:pharmgkb_vocabulary:Gene": "pharmgkb_vocabulary:Gene",
+    "bio2rdf:pharmgkb_vocabulary:x-clinicaltrials": "pharmgkb_vocabulary:x-clinicaltrials",
+    "bio2rdf:pharmgkb_vocabulary:x-bindingdb": "pharmgkb_vocabulary:x-bindingdb",
+    "bio2rdf:bindingdb_vocabulary:Resource": "bindingdb_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-chebi": "pharmgkb_vocabulary:x-chebi",
+    "bio2rdf:chebi_vocabulary:Resource": "chebi_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-chemspider": "pharmgkb_vocabulary:x-chemspider",
+    "bio2rdf:chemspider_vocabulary:Resource": "chemspider_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-dailymed": "pharmgkb_vocabulary:x-dailymed",
+    "bio2rdf:dailymed_vocabulary:Resource": "dailymed_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-atc": "pharmgkb_vocabulary:x-atc",
+    "bio2rdf:atc_vocabulary:Resource": "atc_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-genbank": "pharmgkb_vocabulary:x-genbank",
+    "bio2rdf:pharmgkb_vocabulary:x-drugbank": "pharmgkb_vocabulary:x-drugbank",
+    "bio2rdf:drugbank_vocabulary:Resource": "drugbank_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-kegg": "pharmgkb_vocabulary:x-kegg",
+    "bio2rdf:pharmgkb_vocabulary:x-ndc": "pharmgkb_vocabulary:x-ndc",
+    "bio2rdf:ndc_vocabulary:Resource": "ndc_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-pdb": "pharmgkb_vocabulary:x-pdb",
+    "bio2rdf:pdb_vocabulary:Resource": "pdb_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-pubchemcompound": "pharmgkb_vocabulary:x-pubchemcompound",
+    "bio2rdf:pubchem.compound_vocabulary:Resource": "pubchem.compound_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-pubchemsubstance": "pharmgkb_vocabulary:x-pubchemsubstance",
+    "bio2rdf:pubchem.substance_vocabulary:Resource": "pubchem.substance_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-het": "pharmgkb_vocabulary:x-het",
+    "bio2rdf:ccd_vocabulary:Resource": "ccd_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:variantlocation": "pharmgkb_vocabulary:variantlocation",
+    "bio2rdf:dbsnp_vocabulary:Resource": "dbsnp_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:Variation": "pharmgkb_vocabulary:Variation",
+    "bio2rdf:pharmgkb_vocabulary:haplotype": "pharmgkb_vocabulary:haplotype",
+    "bio2rdf:pharmgkb_vocabulary:x-dpd": "pharmgkb_vocabulary:x-dpd",
+    "bio2rdf:dpd_vocabulary:Resource": "dpd_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-iupharligand": "pharmgkb_vocabulary:x-iupharligand",
+    "bio2rdf:iuphar.ligand_vocabulary:Resource": "iuphar.ligand_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-ttd": "pharmgkb_vocabulary:x-ttd",
+    "bio2rdf:ttd_vocabulary:Resource": "ttd_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-mesh": "pharmgkb_vocabulary:x-mesh",
+    "bio2rdf:mesh_vocabulary:Resource": "mesh_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-snomedct": "pharmgkb_vocabulary:x-snomedct",
+    "bio2rdf:snomedct_vocabulary:Resource": "snomedct_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-meddra": "pharmgkb_vocabulary:x-meddra",
+    "bio2rdf:meddra_vocabulary:Resource": "meddra_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:x-ndfrt": "pharmgkb_vocabulary:x-ndfrt",
+    "bio2rdf:ndfrt_vocabulary:Resource": "ndfrt_vocabulary:Resource",
+    "owl:sameAs": "sameAs",
+    "bio2rdf:pharmgkb_vocabulary:x-umls": "pharmgkb_vocabulary:x-umls",
+    "bio2rdf:umls_vocabulary:Resource": "umls_vocabulary:Resource",
+    "bio2rdf:pharmgkb_vocabulary:article": "pharmgkb_vocabulary:article",
+    "bio2rdf:pharmgkb_vocabulary:annotation-type": "pharmgkb_vocabulary:annotation-type",
+    "bio2rdf:pharmgkb_vocabulary:association": "pharmgkb_vocabulary:association",
+    "bio2rdf:pharmgkb_vocabulary:name": "pharmgkb_vocabulary:name",
+    "bio2rdf:pharmgkb_vocabulary:alternate-symbol": "pharmgkb_vocabulary:alternate-symbol",
+    "bio2rdf:pharmgkb_vocabulary:alternative-name": "pharmgkb_vocabulary:alternative-name",
+    "bio2rdf:pharmgkb_vocabulary:chromosome": "pharmgkb_vocabulary:chromosome",
+    "bio2rdf:pharmgkb_vocabulary:chromosome-end": "pharmgkb_vocabulary:chromosome-end",
+    "bio2rdf:pharmgkb_vocabulary:chromosome-start": "pharmgkb_vocabulary:chromosome-start",
+    "bio2rdf:pharmgkb_vocabulary:cpic-dosing-guideline": "pharmgkb_vocabulary:cpic-dosing-guideline",
+    "bio2rdf:pharmgkb_vocabulary:has-variant-annotation": "pharmgkb_vocabulary:has-variant-annotation",
+    "bio2rdf:pharmgkb_vocabulary:is-vip": "pharmgkb_vocabulary:is-vip",
+    "bio2rdf:pharmgkb_vocabulary:brand_mixture": "pharmgkb_vocabulary:brand_mixture",
+    "bio2rdf:pharmgkb_vocabulary:drug_class": "pharmgkb_vocabulary:drug_class",
+    "bio2rdf:pharmgkb_vocabulary:generic_name": "pharmgkb_vocabulary:generic_name",
+    "bio2rdf:pharmgkb_vocabulary:trade_name": "pharmgkb_vocabulary:trade_name",
+    "bio2rdf:pharmgkb_vocabulary:synonym": "pharmgkb_vocabulary:synonym",
+    "bio2rdf:pharmgkb_vocabulary:pd_relationship": "pharmgkb_vocabulary:pd_relationship",
+    "bio2rdf:pharmgkb_vocabulary:pk_relationship": "pharmgkb_vocabulary:pk_relationship",
+    "bio2rdf:pharmgkb_vocabulary:x-webresource": "pharmgkb_vocabulary:x-webresource",
+    "bio2rdf:pharmgkb_vocabulary:disease-gene-Association": "pharmgkb_vocabulary:disease-gene-Association",
+    "bio2rdf:pharmgkb_vocabulary:disease-disease-Association": "pharmgkb_vocabulary:disease-disease-Association",
+    "bio2rdf:pharmgkb_vocabulary:disease-haplotype-Association": "pharmgkb_vocabulary:disease-haplotype-Association",
+    "bio2rdf:pharmgkb_vocabulary:disease-variantlocation-Association": "pharmgkb_vocabulary:disease-variantlocation-Association",
+    "bio2rdf:pharmgkb_vocabulary:drug-gene-Association": "pharmgkb_vocabulary:drug-gene-Association",
+    "bio2rdf:pharmgkb_vocabulary:drug-drug-Association": "pharmgkb_vocabulary:drug-drug-Association",
+    "bio2rdf:pharmgkb_vocabulary:drug-haplotype-Association": "pharmgkb_vocabulary:drug-haplotype-Association",
+    "bio2rdf:pharmgkb_vocabulary:drug-variantlocation-Association": "pharmgkb_vocabulary:drug-variantlocation-Association",
+    "bio2rdf:pharmgkb_vocabulary:gene-disease-Association": "pharmgkb_vocabulary:gene-disease-Association",
+    "bio2rdf:pharmgkb_vocabulary:gene-drug-Association": "pharmgkb_vocabulary:gene-drug-Association",
+    "bio2rdf:pharmgkb_vocabulary:gene-gene-Association": "pharmgkb_vocabulary:gene-gene-Association",
+    "bio2rdf:pharmgkb_vocabulary:haplotype-disease-Association": "pharmgkb_vocabulary:haplotype-disease-Association",
+    "bio2rdf:pharmgkb_vocabulary:haplotype-drug-Association": "pharmgkb_vocabulary:haplotype-drug-Association",
+    "bio2rdf:pharmgkb_vocabulary:variantlocation-disease-Association": "pharmgkb_vocabulary:variantlocation-disease-Association",
+    "bio2rdf:pharmgkb_vocabulary:variantlocation-drug-Association": "pharmgkb_vocabulary:variantlocation-drug-Association"
+  }
+}

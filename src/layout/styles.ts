@@ -235,7 +235,7 @@ function deepMerge<T>(target: T, source: DeepPartial<T>): T {
 // FLAT STYLE SHORTHAND
 // =============================================================================
 
-/** Property-name → path in DiagramStyle for the flat STYLE accessor. */
+/** Property-name -> path in DiagramStyle for the flat STYLE accessor. */
 const FLAT_MAP: Record<string, [keyof DiagramStyle, string]> = {
   fontFamily:         ['typography', 'fontFamily'],
   fontFamilyBold:     ['typography', 'fontFamilyBold'],
@@ -274,7 +274,7 @@ const FLAT_MAP: Record<string, [keyof DiagramStyle, string]> = {
   labelBg:            ['background', 'labelBg'],
 };
 
-/** Flat style accessor — reads from `currentStyle` using the mapping above.
+/** Flat style accessor - reads from `currentStyle` using the mapping above.
  *  Top-level collection properties (`nodeColors`, `highlightColors`) are passed through directly. */
 export const STYLE: Record<string, any> = new Proxy({} as Record<string, any>, {
   get(_target, prop: string) {

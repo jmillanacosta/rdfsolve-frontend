@@ -1,5 +1,5 @@
 /**
- * Schema Diagram Component — Public API
+ * Schema Diagram Component - Public API
  */
 
 // Core component

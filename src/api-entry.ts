@@ -38,7 +38,7 @@ import type { ShapesPanel } from './components/shapes-panel';
 // =====================================================================
 
 // =====================================================================
-// COLOUR PALETTE — perceptually spaced, supports many datasets
+// COLOUR PALETTE - perceptually spaced, supports many datasets
 // =====================================================================
 
 /**
@@ -82,7 +82,7 @@ async function loadDatasetsFromAPI(): Promise<
   Record<string, { name: string; url: string; color: string; about?: Record<string, unknown> }>
 > {
   const res = await fetch(`${API_BASE}/api/schemas/`);
-  if (!res.ok) throw new Error(`GET /api/schemas/ → ${res.status}`);
+  if (!res.ok) throw new Error(`GET /api/schemas/ -> ${res.status}`);
 
   const schemas: SchemaListItem[] = await res.json();
   const palette = generatePalette(schemas.length);
@@ -109,7 +109,7 @@ async function loadMappingDatasetsFromAPI(
   allDatasets: Record<string, { name: string; url: string; color: string; about?: Record<string, unknown> }>,
 ): Promise<Record<string, { name: string; url: string; color: string; about?: Record<string, unknown> }>> {
   const res = await fetch(`${API_BASE}/api/schemas/?type=mapping`);
-  if (!res.ok) throw new Error(`GET /api/schemas/?type=mapping → ${res.status}`);
+  if (!res.ok) throw new Error(`GET /api/schemas/?type=mapping -> ${res.status}`);
 
   const schemas: SchemaListItem[] = await res.json();
   // Reuse colors from the already-generated allDatasets palette so swatches

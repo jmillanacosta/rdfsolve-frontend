@@ -1,0 +1,5742 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "bio2rdf": "http://bio2rdf.org/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "pav": "http://purl.org/pav/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@graph": [
+    {
+      "@id": "owl:Class",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 51813
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 51819
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 51813
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 51813
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 51813
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 51813
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Genetic",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:arm-group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Experimental"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Active_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:No_Intervention"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Control"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Case"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:other-name": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 1279
+        },
+        "bio2rdf:clinicaltrials_vocabulary:arm-group": {
+          "bio2rdf:clinicaltrials_vocabulary:Experimental": 827,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 1503,
+          "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator": 35,
+          "bio2rdf:clinicaltrials_vocabulary:Active_Comparator": 102,
+          "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm": 445,
+          "bio2rdf:clinicaltrials_vocabulary:Other": 75,
+          "bio2rdf:clinicaltrials_vocabulary:No_Intervention": 13,
+          "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator": 3,
+          "bio2rdf:clinicaltrials_vocabulary:Control": 1,
+          "bio2rdf:clinicaltrials_vocabulary:Case": 2
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 1279
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 1279
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 1279
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 1279
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 1279
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+          "Literal:xsd:string": 961
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+          "Literal:xsd:string": 1279
+        },
+        "bio2rdf:clinicaltrials_vocabulary:other-name": {
+          "Literal:xsd:string": 251
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Treatment_Comparison",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:description": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2
+        },
+        "bio2rdf:clinicaltrials_vocabulary:description": {
+          "Literal:xsd:string": 2
+        }
+      }
+    },
+    {
+      "@id": "owl:ObjectProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 51
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 51
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 51
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 51
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 51
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 51
+        }
+      }
+    },
+    {
+      "@id": "owl:DatatypeProperty",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 95
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 95
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 95
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 95
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 95
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 95
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Active_Comparator",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:description": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 68499
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 68499
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 68499
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 68499
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 68499
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 68499
+        },
+        "bio2rdf:clinicaltrials_vocabulary:description": {
+          "Literal:xsd:string": 56897,
+          "Literal:xsd:integer": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Case",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:description": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 32
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 32
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 32
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 32
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 32
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 32
+        },
+        "bio2rdf:clinicaltrials_vocabulary:description": {
+          "Literal:xsd:string": 31
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Control",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:description": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 18
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 18
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 18
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 18
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 18
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 18
+        },
+        "bio2rdf:clinicaltrials_vocabulary:description": {
+          "Literal:xsd:string": 17
+        }
+      }
+    },
+    {
+      "@id": "dcterms:Dataset",
+      "dcat:distribution": {
+        "@id": "dcat:Distribution"
+      },
+      "_counts": {
+        "dcat:distribution": {
+          "dcat:Distribution": 2
+        }
+      }
+    },
+    {
+      "@id": "dcat:Distribution",
+      "dcterms:source": {
+        "@id": "dcat:Distribution"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:format": {
+        "@type": "xsd:string"
+      },
+      "dcterms:rights": {
+        "@type": "xsd:string"
+      },
+      "pav:retrievedOn": {
+        "@type": "xsd:dateTime"
+      },
+      "dcterms:creator": {
+        "@id": "rdfs:Resource"
+      },
+      "foaf:page": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:publisher": {
+        "@id": "rdfs:Resource"
+      },
+      "dcterms:license": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "dcterms:source": {
+          "dcat:Distribution": 1
+        },
+        "dcterms:created": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2
+        },
+        "dcterms:format": {
+          "Literal:xsd:string": 3
+        },
+        "dcterms:rights": {
+          "Literal:xsd:string": 5
+        },
+        "pav:retrievedOn": {
+          "Literal:xsd:dateTime": 1
+        },
+        "dcterms:creator": {
+          "Resource": 1
+        },
+        "foaf:page": {
+          "Resource": 2
+        },
+        "dcterms:publisher": {
+          "Resource": 2
+        },
+        "dcterms:license": {
+          "Resource": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Address",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:city": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:country": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:state": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:zip": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 32540
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 32540
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 32540
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 32540
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 32540
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 32540
+        },
+        "bio2rdf:clinicaltrials_vocabulary:city": {
+          "Literal:xsd:string": 32540
+        },
+        "bio2rdf:clinicaltrials_vocabulary:country": {
+          "Literal:xsd:string": 32540
+        },
+        "bio2rdf:clinicaltrials_vocabulary:state": {
+          "Literal:xsd:string": 20836
+        },
+        "bio2rdf:clinicaltrials_vocabulary:zip": {
+          "Literal:xsd:string": 26839
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Analysis",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:ci-lower-limit": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:ci-n-sides": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:ci-percent": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:ci-upper-limit": [
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:method-desc": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:param-type": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:param-value": [
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:non-inferiority-desc": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:groups-desc": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:method": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:non-inferiority": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:p-value": [
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:p-value-desc": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:estimate-desc": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:dispersion-type": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:dispersion-value": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:ci-upper-limit-na-comment": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 75409
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 75409
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 75409
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 75409
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 75409
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 75409
+        },
+        "bio2rdf:clinicaltrials_vocabulary:ci-lower-limit": {
+          "Literal:xsd:string": 25055,
+          "Literal:xsd:float": 21373,
+          "Literal:xsd:integer": 574
+        },
+        "bio2rdf:clinicaltrials_vocabulary:ci-n-sides": {
+          "Literal:xsd:string": 36254
+        },
+        "bio2rdf:clinicaltrials_vocabulary:ci-percent": {
+          "Literal:xsd:integer": 48288,
+          "Literal:xsd:float": 582,
+          "Literal:xsd:string": 1
+        },
+        "bio2rdf:clinicaltrials_vocabulary:ci-upper-limit": {
+          "Literal:xsd:float": 37795,
+          "Literal:xsd:string": 7970,
+          "Literal:xsd:integer": 1025
+        },
+        "bio2rdf:clinicaltrials_vocabulary:method-desc": {
+          "Literal:xsd:string": 20232
+        },
+        "bio2rdf:clinicaltrials_vocabulary:param-type": {
+          "Literal:xsd:string": 50433
+        },
+        "bio2rdf:clinicaltrials_vocabulary:param-value": {
+          "Literal:xsd:float": 31400,
+          "Literal:xsd:string": 17743,
+          "Literal:xsd:integer": 1290
+        },
+        "bio2rdf:clinicaltrials_vocabulary:non-inferiority-desc": {
+          "Literal:xsd:string": 5415,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:clinicaltrials_vocabulary:groups-desc": {
+          "Literal:xsd:string": 42726,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:clinicaltrials_vocabulary:method": {
+          "Literal:xsd:string": 61548
+        },
+        "bio2rdf:clinicaltrials_vocabulary:non-inferiority": {
+          "Literal:xsd:string": 75409
+        },
+        "bio2rdf:clinicaltrials_vocabulary:p-value": {
+          "Literal:xsd:float": 45264,
+          "Literal:xsd:string": 16266,
+          "Literal:xsd:integer": 18
+        },
+        "bio2rdf:clinicaltrials_vocabulary:p-value-desc": {
+          "Literal:xsd:string": 24908
+        },
+        "bio2rdf:clinicaltrials_vocabulary:estimate-desc": {
+          "Literal:xsd:string": 16999
+        },
+        "bio2rdf:clinicaltrials_vocabulary:dispersion-type": {
+          "Literal:xsd:string": 14403
+        },
+        "bio2rdf:clinicaltrials_vocabulary:dispersion-value": {
+          "Literal:xsd:integer": 152,
+          "Literal:xsd:float": 14172,
+          "Literal:xsd:string": 79
+        },
+        "bio2rdf:clinicaltrials_vocabulary:ci-upper-limit-na-comment": {
+          "Literal:xsd:string": 6
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Baseline",
+      "bio2rdf:clinicaltrials_vocabulary:group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Group"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:measure": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Measure"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:group": {
+          "bio2rdf:clinicaltrials_vocabulary:Group": 49968,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 49968
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 18089
+        },
+        "bio2rdf:clinicaltrials_vocabulary:measure": {
+          "bio2rdf:clinicaltrials_vocabulary:Measure": 91012,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 91012
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 18089
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 18089
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 18089
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 18089
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 18089
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Behavioral",
+      "bio2rdf:clinicaltrials_vocabulary:arm-group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Active_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Experimental"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:No_Intervention"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-desc": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:intervention-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:other-name": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:arm-group": {
+          "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator": 953,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 27619,
+          "bio2rdf:clinicaltrials_vocabulary:Active_Comparator": 7168,
+          "bio2rdf:clinicaltrials_vocabulary:Experimental": 16261,
+          "bio2rdf:clinicaltrials_vocabulary:Other": 1325,
+          "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm": 1455,
+          "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator": 250,
+          "bio2rdf:clinicaltrials_vocabulary:No_Intervention": 207
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 23871
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 23871
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 23871
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 23871
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 23871
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 23871
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+          "Literal:xsd:string": 19733,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+          "Literal:xsd:string": 23868,
+          "Literal:xsd:integer": 3
+        },
+        "bio2rdf:clinicaltrials_vocabulary:other-name": {
+          "Literal:xsd:string": 4508
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Biological",
+      "bio2rdf:clinicaltrials_vocabulary:arm-group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Experimental"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Active_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:No_Intervention"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:other-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:arm-group": {
+          "bio2rdf:clinicaltrials_vocabulary:Experimental": 18124,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 24515,
+          "bio2rdf:clinicaltrials_vocabulary:Active_Comparator": 3604,
+          "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator": 1496,
+          "bio2rdf:clinicaltrials_vocabulary:Other": 522,
+          "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm": 679,
+          "bio2rdf:clinicaltrials_vocabulary:No_Intervention": 47,
+          "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator": 43
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 17447
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 17447
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 17447
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 17447
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 17447
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 17447
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+          "Literal:xsd:string": 14825
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+          "Literal:xsd:string": 17447
+        },
+        "bio2rdf:clinicaltrials_vocabulary:other-name": {
+          "Literal:xsd:string": 6277,
+          "Literal:xsd:integer": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Category",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:measurement": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Measurement"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 591226
+        },
+        "bio2rdf:clinicaltrials_vocabulary:measurement": {
+          "bio2rdf:clinicaltrials_vocabulary:Measurement": 1458839,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 1458839
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:City",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:organization": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 9552
+        },
+        "bio2rdf:clinicaltrials_vocabulary:organization": {
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 3,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 3
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 9552
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 9552
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 9552
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 9552
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 9552
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:description": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 38407
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 38407
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 38407
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 38407
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 38407
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 38407
+        },
+        "bio2rdf:clinicaltrials_vocabulary:description": {
+          "Literal:xsd:string": 30752,
+          "Literal:xsd:integer": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Result",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:limitations-and-caveats": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 18089
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 18089
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 18089
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 18089
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 18089
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 18089
+        },
+        "bio2rdf:clinicaltrials_vocabulary:limitations-and-caveats": {
+          "Literal:xsd:string": 4384
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Study",
+      "bio2rdf:clinicaltrials_vocabulary:eligibility": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Eligibility"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:condition": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:ZipCode"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Phase"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Status"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:condition-browse": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:condition-mesh": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:intervention-browse": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:lead-sponsor": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:authority": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:study-design": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Study-Design"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:overall-official": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Contact"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:reference": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Reference"
+        },
+        {
+          "@id": "bio2rdf:pubmed_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:overall-status": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Status"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:source": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:oversight": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:study-type": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:clinicaltrials_vocabulary:primary-outcome": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:primary-outcome"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:link": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Link"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:clinicaltrials_vocabulary:other-outcome": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:other-outcome"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:collaborator": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:phase": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Phase"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:responsible-party": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Responsible-Party"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:clinicaltrials_vocabulary:secondary-outcome": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:secondary-outcome"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:location": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Location"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:arm-group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Experimental"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Active_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:No_Intervention"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Case"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Control"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Treatment_Comparison"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:intervention": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Drug"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Behavioral"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Procedure"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Biological"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Radiation"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Genetic"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Device"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Dietary_Supplement"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:country": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Country"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:overall-contact": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Contact"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:baseline": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Baseline"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:outcome": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Outcome"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:clinical-result": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Result"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:participant-flow": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Participant-Flow"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:reported-events": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Reported-Events"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:overall-contact-backup": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Contact"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:url": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:eligibility": {
+          "bio2rdf:clinicaltrials_vocabulary:Eligibility": 195545,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 195545
+        },
+        "bio2rdf:clinicaltrials_vocabulary:condition": {
+          "owl:Class": 316266,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 317765,
+          "bio2rdf:clinicaltrials_vocabulary:Term": 97751,
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 27098,
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 117,
+          "bio2rdf:clinicaltrials_vocabulary:State": 21,
+          "bio2rdf:clinicaltrials_vocabulary:City": 10,
+          "bio2rdf:clinicaltrials_vocabulary:ZipCode": 5,
+          "bio2rdf:clinicaltrials_vocabulary:Phase": 3,
+          "bio2rdf:clinicaltrials_vocabulary:Status": 2
+        },
+        "bio2rdf:clinicaltrials_vocabulary:condition-browse": {
+          "owl:Class": 263948,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 306619,
+          "bio2rdf:clinicaltrials_vocabulary:Term": 304158,
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 9580,
+          "bio2rdf:clinicaltrials_vocabulary:City": 14
+        },
+        "bio2rdf:clinicaltrials_vocabulary:condition-mesh": {
+          "owl:Class": 263948,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 306619,
+          "bio2rdf:clinicaltrials_vocabulary:Term": 304158,
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 9580,
+          "bio2rdf:clinicaltrials_vocabulary:City": 14
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-browse": {
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 173994,
+          "bio2rdf:clinicaltrials_vocabulary:Term": 173993,
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 7200,
+          "owl:Class": 7424
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 196129
+        },
+        "bio2rdf:clinicaltrials_vocabulary:lead-sponsor": {
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 196127,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 196129,
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 225,
+          "bio2rdf:clinicaltrials_vocabulary:State": 11,
+          "bio2rdf:clinicaltrials_vocabulary:City": 7
+        },
+        "bio2rdf:clinicaltrials_vocabulary:authority": {
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 196129,
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 708,
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 230,
+          "bio2rdf:clinicaltrials_vocabulary:City": 1
+        },
+        "bio2rdf:clinicaltrials_vocabulary:study-design": {
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 196129,
+          "bio2rdf:clinicaltrials_vocabulary:Study-Design": 196129
+        },
+        "bio2rdf:clinicaltrials_vocabulary:overall-official": {
+          "bio2rdf:clinicaltrials_vocabulary:Contact": 165355,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 165355
+        },
+        "bio2rdf:clinicaltrials_vocabulary:reference": {
+          "bio2rdf:clinicaltrials_vocabulary:Reference": 158705,
+          "bio2rdf:pubmed_vocabulary:Resource": 158705
+        },
+        "bio2rdf:clinicaltrials_vocabulary:overall-status": {
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 196129,
+          "bio2rdf:clinicaltrials_vocabulary:Status": 196129
+        },
+        "bio2rdf:clinicaltrials_vocabulary:source": {
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 196127,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 196129,
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 119,
+          "bio2rdf:clinicaltrials_vocabulary:State": 10,
+          "bio2rdf:clinicaltrials_vocabulary:City": 7
+        },
+        "bio2rdf:clinicaltrials_vocabulary:oversight": {
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 196129,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 196129
+        },
+        "bio2rdf:clinicaltrials_vocabulary:study-type": {
+          "owl:Class": 196129,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 196129
+        },
+        "bio2rdf:clinicaltrials_vocabulary:clinicaltrials_vocabulary:primary-outcome": {
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 264688,
+          "bio2rdf:clinicaltrials_vocabulary:primary-outcome": 264688
+        },
+        "bio2rdf:clinicaltrials_vocabulary:link": {
+          "bio2rdf:clinicaltrials_vocabulary:Link": 47540,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 47540
+        },
+        "bio2rdf:clinicaltrials_vocabulary:clinicaltrials_vocabulary:other-outcome": {
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 28907,
+          "bio2rdf:clinicaltrials_vocabulary:other-outcome": 28907
+        },
+        "bio2rdf:clinicaltrials_vocabulary:collaborator": {
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 66037,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 66038,
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 225,
+          "bio2rdf:clinicaltrials_vocabulary:State": 4,
+          "bio2rdf:clinicaltrials_vocabulary:City": 3
+        },
+        "bio2rdf:clinicaltrials_vocabulary:phase": {
+          "bio2rdf:clinicaltrials_vocabulary:Phase": 112158,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 112158
+        },
+        "bio2rdf:clinicaltrials_vocabulary:responsible-party": {
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 175314,
+          "bio2rdf:clinicaltrials_vocabulary:Responsible-Party": 175314
+        },
+        "bio2rdf:clinicaltrials_vocabulary:clinicaltrials_vocabulary:secondary-outcome": {
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 533763,
+          "bio2rdf:clinicaltrials_vocabulary:secondary-outcome": 533763
+        },
+        "bio2rdf:clinicaltrials_vocabulary:location": {
+          "bio2rdf:clinicaltrials_vocabulary:Location": 176338,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 176338
+        },
+        "bio2rdf:clinicaltrials_vocabulary:arm-group": {
+          "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm": 38407,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 317684,
+          "bio2rdf:clinicaltrials_vocabulary:Experimental": 151619,
+          "bio2rdf:clinicaltrials_vocabulary:Other": 12221,
+          "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator": 31342,
+          "bio2rdf:clinicaltrials_vocabulary:Active_Comparator": 68499,
+          "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator": 2494,
+          "bio2rdf:clinicaltrials_vocabulary:No_Intervention": 13050,
+          "bio2rdf:clinicaltrials_vocabulary:Case": 32,
+          "bio2rdf:clinicaltrials_vocabulary:Control": 18,
+          "bio2rdf:clinicaltrials_vocabulary:Treatment_Comparison": 2
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention": {
+          "bio2rdf:clinicaltrials_vocabulary:Other": 37125,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 338176,
+          "bio2rdf:clinicaltrials_vocabulary:Drug": 184967,
+          "bio2rdf:clinicaltrials_vocabulary:Behavioral": 24433,
+          "bio2rdf:clinicaltrials_vocabulary:Procedure": 29243,
+          "bio2rdf:clinicaltrials_vocabulary:Biological": 19488,
+          "bio2rdf:clinicaltrials_vocabulary:Radiation": 5284,
+          "bio2rdf:clinicaltrials_vocabulary:Genetic": 2312,
+          "bio2rdf:clinicaltrials_vocabulary:Device": 25728,
+          "bio2rdf:clinicaltrials_vocabulary:Dietary_Supplement": 9596
+        },
+        "bio2rdf:clinicaltrials_vocabulary:country": {
+          "bio2rdf:clinicaltrials_vocabulary:Country": 180560,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 180561,
+          "bio2rdf:clinicaltrials_vocabulary:City": 2516,
+          "bio2rdf:clinicaltrials_vocabulary:State": 32,
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 3
+        },
+        "bio2rdf:clinicaltrials_vocabulary:overall-contact": {
+          "bio2rdf:clinicaltrials_vocabulary:Contact": 50719,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 50719
+        },
+        "bio2rdf:clinicaltrials_vocabulary:baseline": {
+          "bio2rdf:clinicaltrials_vocabulary:Baseline": 18089,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 18089
+        },
+        "bio2rdf:clinicaltrials_vocabulary:outcome": {
+          "bio2rdf:clinicaltrials_vocabulary:Outcome": 18089,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 18089
+        },
+        "bio2rdf:clinicaltrials_vocabulary:clinical-result": {
+          "bio2rdf:clinicaltrials_vocabulary:Clinical-Result": 18089,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 18089
+        },
+        "bio2rdf:clinicaltrials_vocabulary:participant-flow": {
+          "bio2rdf:clinicaltrials_vocabulary:Participant-Flow": 18089,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 18089
+        },
+        "bio2rdf:clinicaltrials_vocabulary:reported-events": {
+          "bio2rdf:clinicaltrials_vocabulary:Reported-Events": 14113,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 14113
+        },
+        "bio2rdf:clinicaltrials_vocabulary:overall-contact-backup": {
+          "bio2rdf:clinicaltrials_vocabulary:Contact": 23095,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 23095
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 196129
+        },
+        "bio2rdf:clinicaltrials_vocabulary:url": {
+          "Resource": 196129
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Contact",
+      "bio2rdf:clinicaltrials_vocabulary:affiliation": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Country"
+        },
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:ZipCode"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Status"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:phone-ext": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:decimal"
+        },
+        {
+          "@type": "xsd:float"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:email": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:last-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:phone": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:decimal"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        },
+        {
+          "@type": "xsd:date"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:role": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:affiliation": {
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 272496,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 272542,
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 171,
+          "bio2rdf:clinicaltrials_vocabulary:City": 156,
+          "bio2rdf:clinicaltrials_vocabulary:Country": 8,
+          "owl:Class": 80,
+          "bio2rdf:clinicaltrials_vocabulary:State": 110,
+          "bio2rdf:clinicaltrials_vocabulary:ZipCode": 13,
+          "bio2rdf:clinicaltrials_vocabulary:Status": 1
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 279896
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 286352
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 279896
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 279896
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 279896
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 279896
+        },
+        "bio2rdf:clinicaltrials_vocabulary:phone-ext": {
+          "Literal:xsd:string": 5025,
+          "Literal:xsd:integer": 39123,
+          "Literal:xsd:decimal": 88,
+          "Literal:xsd:float": 32
+        },
+        "bio2rdf:clinicaltrials_vocabulary:email": {
+          "Literal:xsd:string": 239514
+        },
+        "bio2rdf:clinicaltrials_vocabulary:last-name": {
+          "Literal:xsd:string": 319400
+        },
+        "bio2rdf:clinicaltrials_vocabulary:phone": {
+          "Literal:xsd:string": 208833,
+          "Literal:xsd:decimal": 20776,
+          "Literal:xsd:integer": 7367,
+          "Literal:xsd:float": 20,
+          "Literal:xsd:date": 5
+        },
+        "bio2rdf:clinicaltrials_vocabulary:role": {
+          "Literal:xsd:string": 272636
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Device",
+      "bio2rdf:clinicaltrials_vocabulary:arm-group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Experimental"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Active_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:No_Intervention"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:other-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:decimal"
+        }
+      ],
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:arm-group": {
+          "bio2rdf:clinicaltrials_vocabulary:Experimental": 13782,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 28978,
+          "bio2rdf:clinicaltrials_vocabulary:Active_Comparator": 8205,
+          "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator": 894,
+          "bio2rdf:clinicaltrials_vocabulary:Other": 2349,
+          "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator": 1031,
+          "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm": 2579,
+          "bio2rdf:clinicaltrials_vocabulary:No_Intervention": 138
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 25296
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 25296
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 25296
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 25296
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 25296
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 25296
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+          "Literal:xsd:string": 20445
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+          "Literal:xsd:string": 25288,
+          "Literal:xsd:integer": 8
+        },
+        "bio2rdf:clinicaltrials_vocabulary:other-name": {
+          "Literal:xsd:string": 8487,
+          "Literal:xsd:integer": 3,
+          "Literal:xsd:decimal": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Country",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 172
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 172
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 172
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 172
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 172
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 172
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Dietary_Supplement",
+      "bio2rdf:clinicaltrials_vocabulary:arm-group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Experimental"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Active_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:No_Intervention"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Case"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:other-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:arm-group": {
+          "bio2rdf:clinicaltrials_vocabulary:Experimental": 5619,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 11748,
+          "bio2rdf:clinicaltrials_vocabulary:Active_Comparator": 3195,
+          "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator": 2379,
+          "bio2rdf:clinicaltrials_vocabulary:Other": 348,
+          "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm": 133,
+          "bio2rdf:clinicaltrials_vocabulary:No_Intervention": 27,
+          "bio2rdf:clinicaltrials_vocabulary:Case": 1,
+          "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator": 46
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 9313
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 9313
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 9313
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 9313
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 9313
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 9313
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+          "Literal:xsd:string": 7883
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+          "Literal:xsd:string": 9313
+        },
+        "bio2rdf:clinicaltrials_vocabulary:other-name": {
+          "Literal:xsd:string": 2657,
+          "Literal:xsd:integer": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Drug",
+      "bio2rdf:clinicaltrials_vocabulary:arm-group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Experimental"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Active_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:No_Intervention"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Control"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Case"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-desc": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:intervention-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:other-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:arm-group": {
+          "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm": 4062,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 208974,
+          "bio2rdf:clinicaltrials_vocabulary:Experimental": 130939,
+          "bio2rdf:clinicaltrials_vocabulary:Other": 5124,
+          "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator": 23058,
+          "bio2rdf:clinicaltrials_vocabulary:Active_Comparator": 45179,
+          "bio2rdf:clinicaltrials_vocabulary:No_Intervention": 251,
+          "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator": 359,
+          "bio2rdf:clinicaltrials_vocabulary:Control": 1,
+          "bio2rdf:clinicaltrials_vocabulary:Case": 1
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 163894
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 163894
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 163894
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 163894
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 163894
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 163894
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+          "Literal:xsd:string": 135958,
+          "Literal:xsd:integer": 15
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+          "Literal:xsd:string": 163878,
+          "Literal:xsd:integer": 16
+        },
+        "bio2rdf:clinicaltrials_vocabulary:other-name": {
+          "Literal:xsd:string": 65904,
+          "Literal:xsd:integer": 12
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Eligibility",
+      "bio2rdf:clinicaltrials_vocabulary:exclusion-criteria": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:ZipCode"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Phase"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:inclusion-criteria": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:ZipCode"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Phase"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Country"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:gender": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:healthy-volunteers": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:maximum-age": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:minimum-age": [
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:string"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:study-population": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:text": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:exclusion-criteria": {
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 715684,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 716615,
+          "owl:Class": 3743,
+          "bio2rdf:clinicaltrials_vocabulary:Term": 718,
+          "bio2rdf:clinicaltrials_vocabulary:ZipCode": 316,
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 104,
+          "bio2rdf:clinicaltrials_vocabulary:State": 19,
+          "bio2rdf:clinicaltrials_vocabulary:Phase": 8,
+          "bio2rdf:clinicaltrials_vocabulary:City": 12
+        },
+        "bio2rdf:clinicaltrials_vocabulary:inclusion-criteria": {
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 797346,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 798552,
+          "owl:Class": 4428,
+          "bio2rdf:clinicaltrials_vocabulary:Term": 1474,
+          "bio2rdf:clinicaltrials_vocabulary:City": 46,
+          "bio2rdf:clinicaltrials_vocabulary:ZipCode": 338,
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 114,
+          "bio2rdf:clinicaltrials_vocabulary:State": 21,
+          "bio2rdf:clinicaltrials_vocabulary:Phase": 8,
+          "bio2rdf:clinicaltrials_vocabulary:Country": 1
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 193603
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 193958
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 193603
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 193603
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 193603
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 193603
+        },
+        "bio2rdf:clinicaltrials_vocabulary:gender": {
+          "Literal:xsd:string": 193603
+        },
+        "bio2rdf:clinicaltrials_vocabulary:healthy-volunteers": {
+          "Literal:xsd:string": 191790
+        },
+        "bio2rdf:clinicaltrials_vocabulary:maximum-age": {
+          "Literal:xsd:integer": 92461,
+          "Literal:xsd:string": 3948
+        },
+        "bio2rdf:clinicaltrials_vocabulary:minimum-age": {
+          "Literal:xsd:integer": 172044,
+          "Literal:xsd:string": 5260
+        },
+        "bio2rdf:clinicaltrials_vocabulary:study-population": {
+          "Literal:xsd:string": 32057,
+          "Literal:xsd:integer": 33
+        },
+        "bio2rdf:clinicaltrials_vocabulary:text": {
+          "Literal:xsd:string": 193576
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Event",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 756057
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Event-Count",
+      "bio2rdf:clinicaltrials_vocabulary:group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Group"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:group": {
+          "bio2rdf:clinicaltrials_vocabulary:Group": 2179001,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 2179001
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 2179001
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Experimental",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:description": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:float"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 151619
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 151619
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 151619
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 151619
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 151619
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 151619
+        },
+        "bio2rdf:clinicaltrials_vocabulary:description": {
+          "Literal:xsd:string": 122049,
+          "Literal:xsd:integer": 13,
+          "Literal:xsd:float": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Group",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:group-id": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 165740
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 165740
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 160038
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 165740
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 165740
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 165740
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 165740
+        },
+        "bio2rdf:clinicaltrials_vocabulary:group-id": {
+          "Literal:xsd:string": 165740
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:organization": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 647041
+        },
+        "bio2rdf:clinicaltrials_vocabulary:organization": {
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 1,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Link",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:url": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 26168
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 25088
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 26168
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 26168
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 26168
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 26168
+        },
+        "bio2rdf:clinicaltrials_vocabulary:url": {
+          "Resource": 26168
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Location",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:address": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Address"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:contact": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Contact"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:investigator": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Contact"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:contact-backup": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Contact"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:status": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 115595
+        },
+        "bio2rdf:clinicaltrials_vocabulary:address": {
+          "bio2rdf:clinicaltrials_vocabulary:Address": 115595,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 115595
+        },
+        "bio2rdf:clinicaltrials_vocabulary:contact": {
+          "bio2rdf:clinicaltrials_vocabulary:Contact": 41139,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 41139
+        },
+        "bio2rdf:clinicaltrials_vocabulary:investigator": {
+          "bio2rdf:clinicaltrials_vocabulary:Contact": 64227,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 64227
+        },
+        "bio2rdf:clinicaltrials_vocabulary:contact-backup": {
+          "bio2rdf:clinicaltrials_vocabulary:Contact": 37768,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 37768
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 112047
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 115595
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 115595
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 115595
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 115595
+        },
+        "bio2rdf:clinicaltrials_vocabulary:status": {
+          "Literal:xsd:string": 49724
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Measure",
+      "bio2rdf:clinicaltrials_vocabulary:category": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Category"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "dcterms:alternate": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:dispersion": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:parameter": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:unit": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:category": {
+          "bio2rdf:clinicaltrials_vocabulary:Category": 606999,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 606999
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 267961
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 121764
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 267961
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 267961
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 267961
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 267961
+        },
+        "dcterms:alternate": {
+          "Literal:xsd:string": 267876
+        },
+        "bio2rdf:clinicaltrials_vocabulary:dispersion": {
+          "Literal:xsd:string": 101697
+        },
+        "bio2rdf:clinicaltrials_vocabulary:parameter": {
+          "Literal:xsd:string": 264564
+        },
+        "bio2rdf:clinicaltrials_vocabulary:unit": {
+          "Literal:xsd:string": 264559,
+          "Literal:xsd:integer": 5
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Measurement",
+      "bio2rdf:clinicaltrials_vocabulary:group-id": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Group"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:group-id": {
+          "bio2rdf:clinicaltrials_vocabulary:Group": 1089005,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 1089005
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 1089005
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Milestone",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:participant-counts": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Participant-Count"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 73410
+        },
+        "bio2rdf:clinicaltrials_vocabulary:participant-counts": {
+          "bio2rdf:clinicaltrials_vocabulary:Participant-Count": 180248,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 180248
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 73410
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 73410
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 73410
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 73410
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 73410
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:No_Intervention",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:description": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 13050
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 13050
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 13050
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 13050
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 13050
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 13050
+        },
+        "bio2rdf:clinicaltrials_vocabulary:description": {
+          "Literal:xsd:string": 11001,
+          "Literal:xsd:integer": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Organization",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:organization": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:has-dmc": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 83664
+        },
+        "bio2rdf:clinicaltrials_vocabulary:organization": {
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 18005,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 18005
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 83663
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 83664
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 83664
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 83664
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 83664
+        },
+        "bio2rdf:clinicaltrials_vocabulary:has-dmc": {
+          "Literal:xsd:string": 15347
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Other",
+      "bio2rdf:clinicaltrials_vocabulary:arm-group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Experimental"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Active_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:No_Intervention"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Control"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Case"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:description": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:intervention-desc": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:intervention-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:other-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:arm-group": {
+          "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm": 7067,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 45693,
+          "bio2rdf:clinicaltrials_vocabulary:Experimental": 19992,
+          "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator": 4561,
+          "bio2rdf:clinicaltrials_vocabulary:Other": 4327,
+          "bio2rdf:clinicaltrials_vocabulary:Active_Comparator": 8725,
+          "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator": 641,
+          "bio2rdf:clinicaltrials_vocabulary:No_Intervention": 376,
+          "bio2rdf:clinicaltrials_vocabulary:Control": 2,
+          "bio2rdf:clinicaltrials_vocabulary:Case": 2
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 46702
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 46702
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 46702
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 46702
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 46702
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 46702
+        },
+        "bio2rdf:clinicaltrials_vocabulary:description": {
+          "Literal:xsd:string": 10382,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+          "Literal:xsd:string": 29804,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+          "Literal:xsd:string": 34476,
+          "Literal:xsd:integer": 5
+        },
+        "bio2rdf:clinicaltrials_vocabulary:other-name": {
+          "Literal:xsd:string": 7141,
+          "Literal:xsd:integer": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Other-Event",
+      "bio2rdf:clinicaltrials_vocabulary:count": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Event-Count"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:major-title": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:sub-title": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Event"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:count": {
+          "bio2rdf:clinicaltrials_vocabulary:Event-Count": 1169608,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 1169608
+        },
+        "bio2rdf:clinicaltrials_vocabulary:major-title": {
+          "owl:Class": 429659,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 429659
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 429659
+        },
+        "bio2rdf:clinicaltrials_vocabulary:sub-title": {
+          "bio2rdf:clinicaltrials_vocabulary:Event": 429659,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 429659
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 429659
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 429659
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 429659
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 429659
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 429659
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Outcome",
+      "bio2rdf:clinicaltrials_vocabulary:group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Group"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:analysis": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Analysis"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:measure": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Measure"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "dcterms:alternate": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:population": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:safety-issue": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:time-frame": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:type": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:group": {
+          "bio2rdf:clinicaltrials_vocabulary:Group": 41580,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 41580
+        },
+        "bio2rdf:clinicaltrials_vocabulary:analysis": {
+          "bio2rdf:clinicaltrials_vocabulary:Analysis": 75409,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 75409
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 18089
+        },
+        "bio2rdf:clinicaltrials_vocabulary:measure": {
+          "bio2rdf:clinicaltrials_vocabulary:Measure": 176949,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 176949
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 16334
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 18089
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 18089
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 18089
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 18089
+        },
+        "dcterms:alternate": {
+          "Literal:xsd:string": 18086
+        },
+        "bio2rdf:clinicaltrials_vocabulary:population": {
+          "Literal:xsd:string": 46102,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:clinicaltrials_vocabulary:safety-issue": {
+          "Literal:xsd:string": 23484
+        },
+        "bio2rdf:clinicaltrials_vocabulary:time-frame": {
+          "Literal:xsd:string": 57909,
+          "Literal:xsd:integer": 14
+        },
+        "bio2rdf:clinicaltrials_vocabulary:type": {
+          "Literal:xsd:string": 33347
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Participant-Count",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Group"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:count": {
+        "@type": "xsd:integer"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 180248
+        },
+        "bio2rdf:clinicaltrials_vocabulary:group": {
+          "bio2rdf:clinicaltrials_vocabulary:Group": 180248,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 180248
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 180248
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 180248
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 180248
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 180248
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 180248
+        },
+        "bio2rdf:clinicaltrials_vocabulary:count": {
+          "Literal:xsd:integer": 180248
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Participant-Flow",
+      "bio2rdf:clinicaltrials_vocabulary:group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Group"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:period": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Period"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:pre-assignment-details": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:recruitment-details": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:group": {
+          "bio2rdf:clinicaltrials_vocabulary:Group": 40725,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 40725
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 18086
+        },
+        "bio2rdf:clinicaltrials_vocabulary:period": {
+          "bio2rdf:clinicaltrials_vocabulary:Period": 23023,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 23023
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 18087
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 18086
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 18086
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 18086
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 18086
+        },
+        "bio2rdf:clinicaltrials_vocabulary:pre-assignment-details": {
+          "Literal:xsd:string": 7691
+        },
+        "bio2rdf:clinicaltrials_vocabulary:recruitment-details": {
+          "Literal:xsd:string": 8895,
+          "Literal:xsd:integer": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Period",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:milestone": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Milestone"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 23023
+        },
+        "bio2rdf:clinicaltrials_vocabulary:milestone": {
+          "bio2rdf:clinicaltrials_vocabulary:Milestone": 73410,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 73410
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 23023
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 23023
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 23023
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 23023
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 23023
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:description": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 31342
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 31342
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 31342
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 31342
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 31342
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 31342
+        },
+        "bio2rdf:clinicaltrials_vocabulary:description": {
+          "Literal:xsd:string": 23438,
+          "Literal:xsd:integer": 2
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Phase",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 7
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 7
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 7
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 7
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Procedure",
+      "bio2rdf:clinicaltrials_vocabulary:arm-group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Experimental"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Active_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:No_Intervention"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Case"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Control"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:other-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:arm-group": {
+          "bio2rdf:clinicaltrials_vocabulary:Experimental": 12832,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 28753,
+          "bio2rdf:clinicaltrials_vocabulary:Active_Comparator": 9088,
+          "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator": 483,
+          "bio2rdf:clinicaltrials_vocabulary:Other": 1853,
+          "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator": 856,
+          "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm": 3456,
+          "bio2rdf:clinicaltrials_vocabulary:No_Intervention": 168,
+          "bio2rdf:clinicaltrials_vocabulary:Case": 15,
+          "bio2rdf:clinicaltrials_vocabulary:Control": 2
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 26374
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 26374
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 26374
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 26374
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 26374
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 26374
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+          "Literal:xsd:string": 20587
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+          "Literal:xsd:string": 26374
+        },
+        "bio2rdf:clinicaltrials_vocabulary:other-name": {
+          "Literal:xsd:string": 6480,
+          "Literal:xsd:integer": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Reference",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:citation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 132335
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 132335
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 132335
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 132335
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 132335
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 132335
+        },
+        "bio2rdf:clinicaltrials_vocabulary:citation": {
+          "Literal:xsd:string": 132335
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 132335
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Reported-Events",
+      "bio2rdf:clinicaltrials_vocabulary:group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Group"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:other-events": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other-Event"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:serious-events": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Serious-Event"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:group": {
+          "bio2rdf:clinicaltrials_vocabulary:Group": 33467,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 33467
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 14111
+        },
+        "bio2rdf:clinicaltrials_vocabulary:other-events": {
+          "bio2rdf:clinicaltrials_vocabulary:Other-Event": 429659,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 429659
+        },
+        "bio2rdf:clinicaltrials_vocabulary:serious-events": {
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 384207,
+          "bio2rdf:clinicaltrials_vocabulary:Serious-Event": 384207
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 14111
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 14111
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 14111
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 14111
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 14111
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:overall-contact-backup": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Contact"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:contact-backup": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Contact"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:address": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Address"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:affiliation": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Country"
+        },
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:ZipCode"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Status"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:analysis": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Analysis"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:arm-group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Experimental"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Active_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:No_Intervention"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Case"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Control"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Treatment_Comparison"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:authority": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:baseline": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Baseline"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:category": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Category"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:clinical-result": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Result"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:clinicaltrials_vocabulary:other-outcome": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:other-outcome"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:clinicaltrials_vocabulary:primary-outcome": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:primary-outcome"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:clinicaltrials_vocabulary:secondary-outcome": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:secondary-outcome"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:collaborator": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:condition": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:ZipCode"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Phase"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Status"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:condition-browse": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:condition-mesh": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:contact": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Contact"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:count": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Event-Count"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:country": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Country"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:eligibility": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Eligibility"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:exclusion-criteria": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:ZipCode"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Phase"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Group"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:group-id": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Group"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:inclusion-criteria": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:ZipCode"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Phase"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Country"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:intervention": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Drug"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Biological"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Behavioral"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Radiation"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Procedure"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Dietary_Supplement"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Device"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Genetic"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:intervention-browse": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "owl:Class"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:lead-sponsor": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:link": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Link"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:location": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Location"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:major-title": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:measure": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Measure"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:measurement": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Measurement"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:milestone": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Milestone"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:organization": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:ZipCode"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:other-events": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other-Event"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:outcome": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Outcome"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:overall-contact": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Contact"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:overall-official": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Contact"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:overall-status": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Status"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:oversight": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:participant-counts": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Participant-Count"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:participant-flow": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Participant-Flow"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:period": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Period"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:phase": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Phase"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:reference": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Reference"
+        },
+        {
+          "@id": "bio2rdf:pubmed_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:reported-events": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Reported-Events"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:responsible-party": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Responsible-Party"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:serious-events": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Serious-Event"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:source": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:study-design": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Study-Design"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:study-type": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:sub-title": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Event"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:investigator": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Contact"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:url": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 196129
+        },
+        "bio2rdf:clinicaltrials_vocabulary:url": {
+          "Resource": 222297
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Responsible-Party",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:organization": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:State"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:ZipCode"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria"
+        },
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:City"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Term"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:investigator-affiliation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:investigator-full-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:investigator-title": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:name-title": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 63731
+        },
+        "bio2rdf:clinicaltrials_vocabulary:organization": {
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 63727,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 63731,
+          "bio2rdf:clinicaltrials_vocabulary:State": 13,
+          "bio2rdf:clinicaltrials_vocabulary:ZipCode": 1,
+          "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": 18,
+          "owl:Class": 23,
+          "bio2rdf:clinicaltrials_vocabulary:City": 19,
+          "bio2rdf:clinicaltrials_vocabulary:Term": 1
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 23693
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 63731
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 63731
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 63731
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 63731
+        },
+        "bio2rdf:clinicaltrials_vocabulary:investigator-affiliation": {
+          "Literal:xsd:string": 40037
+        },
+        "bio2rdf:clinicaltrials_vocabulary:investigator-full-name": {
+          "Literal:xsd:string": 40036
+        },
+        "bio2rdf:clinicaltrials_vocabulary:investigator-title": {
+          "Literal:xsd:string": 40035,
+          "Literal:xsd:integer": 1
+        },
+        "bio2rdf:clinicaltrials_vocabulary:name-title": {
+          "Literal:xsd:string": 23610
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Serious-Event",
+      "bio2rdf:clinicaltrials_vocabulary:count": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Event-Count"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "bio2rdf:clinicaltrials_vocabulary:major-title": [
+        {
+          "@id": "owl:Class"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:sub-title": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Event"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:count": {
+          "bio2rdf:clinicaltrials_vocabulary:Event-Count": 1009393,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 1009393
+        },
+        "bio2rdf:clinicaltrials_vocabulary:major-title": {
+          "owl:Class": 384207,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 384207
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 384207
+        },
+        "bio2rdf:clinicaltrials_vocabulary:sub-title": {
+          "bio2rdf:clinicaltrials_vocabulary:Event": 384207,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 384207
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 384207
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 384207
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 384207
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 384207
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 384207
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:description": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 2494
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 2494
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 2494
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 2494
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 2494
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 2494
+        },
+        "bio2rdf:clinicaltrials_vocabulary:description": {
+          "Literal:xsd:string": 2138
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:State",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:organization": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Organization"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 3564
+        },
+        "bio2rdf:clinicaltrials_vocabulary:organization": {
+          "bio2rdf:clinicaltrials_vocabulary:Organization": 4,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 4
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 3564
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 3564
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 3564
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 3564
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 3564
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Study-Design",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 196129
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 196129
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 196129
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 196129
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 196129
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 196129
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Status",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 13
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 13
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 13
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 13
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 13
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 13
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Term",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 5692
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 5692
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 5692
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 5692
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 5692
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 5692
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Withdraw-Reason",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Group"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        }
+      ],
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:count": {
+        "@type": "xsd:integer"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 54389
+        },
+        "bio2rdf:clinicaltrials_vocabulary:group": {
+          "bio2rdf:clinicaltrials_vocabulary:Group": 143104,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 143104
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 54389
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 54389
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 54389
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 54389
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 54389
+        },
+        "bio2rdf:clinicaltrials_vocabulary:count": {
+          "Literal:xsd:integer": 106394
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:ZipCode",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 17643
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 17643
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 17643
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 17643
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 17643
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 17643
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:other-outcome",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:measure": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:time-frame": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:date"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 28907
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 28907
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 28588
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 28907
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 28907
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 28907
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 28907
+        },
+        "bio2rdf:clinicaltrials_vocabulary:measure": {
+          "Literal:xsd:string": 28907
+        },
+        "bio2rdf:clinicaltrials_vocabulary:time-frame": {
+          "Literal:xsd:string": 28873,
+          "Literal:xsd:integer": 5,
+          "Literal:xsd:date": 1
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:primary-outcome",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:measure": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:time-frame": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:date"
+        },
+        {
+          "@type": "xsd:float"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 264688
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 264688
+        },
+        "dcterms:description": {
+          "Literal:xsd:string": 240114,
+          "Literal:xsd:integer": 16
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 264688
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 264688
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 264688
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 264688
+        },
+        "bio2rdf:clinicaltrials_vocabulary:measure": {
+          "Literal:xsd:string": 264688
+        },
+        "bio2rdf:clinicaltrials_vocabulary:time-frame": {
+          "Literal:xsd:string": 241697,
+          "Literal:xsd:integer": 274,
+          "Literal:xsd:date": 4,
+          "Literal:xsd:float": 7
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:secondary-outcome",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:description": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:measure": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:time-frame": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        },
+        {
+          "@type": "xsd:date"
+        },
+        {
+          "@type": "xsd:float"
+        }
+      ],
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 533763
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:pubmed_vocabulary:Resource",
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:citation": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+        "@id": "rdfs:Resource"
+      },
+      "_counts": {
+        "void:inDataset": {
+          "dcterms:Dataset": 132335
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 132335
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 132335
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 132335
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 132335
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 132335
+        },
+        "bio2rdf:clinicaltrials_vocabulary:citation": {
+          "Literal:xsd:string": 132335
+        },
+        "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": {
+          "Resource": 132335
+        }
+      }
+    },
+    {
+      "@id": "bio2rdf:clinicaltrials_vocabulary:Radiation",
+      "bio2rdf:clinicaltrials_vocabulary:arm-group": [
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Experimental"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Resource"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Other"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Active_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:No_Intervention"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm"
+        },
+        {
+          "@id": "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator"
+        }
+      ],
+      "void:inDataset": {
+        "@id": "dcterms:Dataset"
+      },
+      "dcterms:title": {
+        "@type": "xsd:string"
+      },
+      "dcterms:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:identifier": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:namespace": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:bio2rdf_vocabulary:uri": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+        "@type": "xsd:string"
+      },
+      "bio2rdf:clinicaltrials_vocabulary:other-name": [
+        {
+          "@type": "xsd:string"
+        },
+        {
+          "@type": "xsd:integer"
+        }
+      ],
+      "_counts": {
+        "bio2rdf:clinicaltrials_vocabulary:arm-group": {
+          "bio2rdf:clinicaltrials_vocabulary:Experimental": 3767,
+          "bio2rdf:clinicaltrials_vocabulary:Resource": 5497,
+          "bio2rdf:clinicaltrials_vocabulary:Other": 344,
+          "bio2rdf:clinicaltrials_vocabulary:Active_Comparator": 971,
+          "bio2rdf:clinicaltrials_vocabulary:No_Intervention": 14,
+          "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator": 58,
+          "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm": 331,
+          "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator": 12
+        },
+        "void:inDataset": {
+          "dcterms:Dataset": 4466
+        },
+        "dcterms:title": {
+          "Literal:xsd:string": 4466
+        },
+        "dcterms:identifier": {
+          "Literal:xsd:string": 4466
+        },
+        "bio2rdf:bio2rdf_vocabulary:identifier": {
+          "Literal:xsd:string": 4466
+        },
+        "bio2rdf:bio2rdf_vocabulary:namespace": {
+          "Literal:xsd:string": 4466
+        },
+        "bio2rdf:bio2rdf_vocabulary:uri": {
+          "Literal:xsd:string": 4466
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-desc": {
+          "Literal:xsd:string": 3617
+        },
+        "bio2rdf:clinicaltrials_vocabulary:intervention-name": {
+          "Literal:xsd:string": 4466
+        },
+        "bio2rdf:clinicaltrials_vocabulary:other-name": {
+          "Literal:xsd:string": 1485,
+          "Literal:xsd:integer": 1
+        }
+      }
+    }
+  ],
+  "@about": {
+    "generated_by": "rdfsolve 0.0.1",
+    "generated_at": "2026-03-02T12:31:37.264572+00:00",
+    "endpoint": "https://bio2rdf.org/sparql",
+    "dataset_name": "clinicaltrials",
+    "graph_uris": [
+      "http://bio2rdf.org/clinicaltrials_resource:bio2rdf.dataset.clinicaltrials.R3"
+    ],
+    "pattern_count": 1279,
+    "strategy": "miner/two-phase"
+  },
+  "_labels": {
+    "owl:Class": "Class",
+    "void:inDataset": "inDataset",
+    "dcterms:Dataset": "Dataset",
+    "bio2rdf:clinicaltrials_vocabulary:Genetic": "clinicaltrials_vocabulary:Genetic",
+    "bio2rdf:clinicaltrials_vocabulary:Treatment_Comparison": "clinicaltrials_vocabulary:Treatment_Comparison",
+    "owl:ObjectProperty": "ObjectProperty",
+    "owl:DatatypeProperty": "DatatypeProperty",
+    "bio2rdf:clinicaltrials_vocabulary:arm-group": "clinicaltrials_vocabulary:arm-group",
+    "bio2rdf:clinicaltrials_vocabulary:Experimental": "clinicaltrials_vocabulary:Experimental",
+    "bio2rdf:clinicaltrials_vocabulary:Resource": "clinicaltrials_vocabulary:Resource",
+    "bio2rdf:clinicaltrials_vocabulary:Placebo_Comparator": "clinicaltrials_vocabulary:Placebo_Comparator",
+    "bio2rdf:clinicaltrials_vocabulary:Active_Comparator": "clinicaltrials_vocabulary:Active_Comparator",
+    "bio2rdf:clinicaltrials_vocabulary:Clinical-Arm": "clinicaltrials_vocabulary:Clinical-Arm",
+    "bio2rdf:clinicaltrials_vocabulary:Other": "clinicaltrials_vocabulary:Other",
+    "bio2rdf:clinicaltrials_vocabulary:No_Intervention": "clinicaltrials_vocabulary:No_Intervention",
+    "bio2rdf:clinicaltrials_vocabulary:Sham_Comparator": "clinicaltrials_vocabulary:Sham_Comparator",
+    "bio2rdf:clinicaltrials_vocabulary:Control": "clinicaltrials_vocabulary:Control",
+    "bio2rdf:clinicaltrials_vocabulary:Case": "clinicaltrials_vocabulary:Case",
+    "dcat:distribution": "distribution",
+    "dcat:Distribution": "Distribution",
+    "dcterms:source": "source",
+    "bio2rdf:clinicaltrials_vocabulary:Address": "clinicaltrials_vocabulary:Address",
+    "bio2rdf:clinicaltrials_vocabulary:Analysis": "clinicaltrials_vocabulary:Analysis",
+    "bio2rdf:clinicaltrials_vocabulary:Baseline": "clinicaltrials_vocabulary:Baseline",
+    "bio2rdf:clinicaltrials_vocabulary:group": "clinicaltrials_vocabulary:group",
+    "bio2rdf:clinicaltrials_vocabulary:Group": "clinicaltrials_vocabulary:Group",
+    "bio2rdf:clinicaltrials_vocabulary:measure": "clinicaltrials_vocabulary:measure",
+    "bio2rdf:clinicaltrials_vocabulary:Measure": "clinicaltrials_vocabulary:Measure",
+    "bio2rdf:clinicaltrials_vocabulary:Behavioral": "clinicaltrials_vocabulary:Behavioral",
+    "dcterms:title": "title",
+    "dcterms:identifier": "identifier",
+    "bio2rdf:bio2rdf_vocabulary:identifier": "bio2rdf_vocabulary:identifier",
+    "bio2rdf:bio2rdf_vocabulary:namespace": "bio2rdf_vocabulary:namespace",
+    "bio2rdf:bio2rdf_vocabulary:uri": "bio2rdf_vocabulary:uri",
+    "bio2rdf:clinicaltrials_vocabulary:description": "clinicaltrials_vocabulary:description",
+    "bio2rdf:clinicaltrials_vocabulary:intervention-desc": "clinicaltrials_vocabulary:intervention-desc",
+    "bio2rdf:clinicaltrials_vocabulary:intervention-name": "clinicaltrials_vocabulary:intervention-name",
+    "bio2rdf:clinicaltrials_vocabulary:other-name": "clinicaltrials_vocabulary:other-name",
+    "dcterms:created": "created",
+    "dcterms:format": "format",
+    "dcterms:rights": "rights",
+    "pav:retrievedOn": "retrievedOn",
+    "bio2rdf:clinicaltrials_vocabulary:city": "clinicaltrials_vocabulary:city",
+    "bio2rdf:clinicaltrials_vocabulary:country": "clinicaltrials_vocabulary:country",
+    "bio2rdf:clinicaltrials_vocabulary:state": "clinicaltrials_vocabulary:state",
+    "bio2rdf:clinicaltrials_vocabulary:zip": "clinicaltrials_vocabulary:zip",
+    "bio2rdf:clinicaltrials_vocabulary:ci-lower-limit": "clinicaltrials_vocabulary:ci-lower-limit",
+    "bio2rdf:clinicaltrials_vocabulary:ci-n-sides": "clinicaltrials_vocabulary:ci-n-sides",
+    "bio2rdf:clinicaltrials_vocabulary:ci-percent": "clinicaltrials_vocabulary:ci-percent",
+    "bio2rdf:clinicaltrials_vocabulary:ci-upper-limit": "clinicaltrials_vocabulary:ci-upper-limit",
+    "bio2rdf:clinicaltrials_vocabulary:method-desc": "clinicaltrials_vocabulary:method-desc",
+    "bio2rdf:clinicaltrials_vocabulary:param-type": "clinicaltrials_vocabulary:param-type",
+    "bio2rdf:clinicaltrials_vocabulary:param-value": "clinicaltrials_vocabulary:param-value",
+    "bio2rdf:clinicaltrials_vocabulary:non-inferiority-desc": "clinicaltrials_vocabulary:non-inferiority-desc",
+    "bio2rdf:clinicaltrials_vocabulary:groups-desc": "clinicaltrials_vocabulary:groups-desc",
+    "bio2rdf:clinicaltrials_vocabulary:method": "clinicaltrials_vocabulary:method",
+    "bio2rdf:clinicaltrials_vocabulary:non-inferiority": "clinicaltrials_vocabulary:non-inferiority",
+    "bio2rdf:clinicaltrials_vocabulary:p-value": "clinicaltrials_vocabulary:p-value",
+    "bio2rdf:clinicaltrials_vocabulary:p-value-desc": "clinicaltrials_vocabulary:p-value-desc",
+    "bio2rdf:clinicaltrials_vocabulary:estimate-desc": "clinicaltrials_vocabulary:estimate-desc",
+    "bio2rdf:clinicaltrials_vocabulary:dispersion-type": "clinicaltrials_vocabulary:dispersion-type",
+    "bio2rdf:clinicaltrials_vocabulary:dispersion-value": "clinicaltrials_vocabulary:dispersion-value",
+    "bio2rdf:clinicaltrials_vocabulary:ci-upper-limit-na-comment": "clinicaltrials_vocabulary:ci-upper-limit-na-comment",
+    "dcterms:creator": "creator",
+    "foaf:page": "page",
+    "dcterms:publisher": "publisher",
+    "dcterms:license": "license",
+    "bio2rdf:clinicaltrials_vocabulary:Biological": "clinicaltrials_vocabulary:Biological",
+    "bio2rdf:clinicaltrials_vocabulary:Category": "clinicaltrials_vocabulary:Category",
+    "bio2rdf:clinicaltrials_vocabulary:measurement": "clinicaltrials_vocabulary:measurement",
+    "bio2rdf:clinicaltrials_vocabulary:Measurement": "clinicaltrials_vocabulary:Measurement",
+    "bio2rdf:clinicaltrials_vocabulary:City": "clinicaltrials_vocabulary:City",
+    "bio2rdf:clinicaltrials_vocabulary:organization": "clinicaltrials_vocabulary:organization",
+    "bio2rdf:clinicaltrials_vocabulary:Organization": "clinicaltrials_vocabulary:Organization",
+    "bio2rdf:clinicaltrials_vocabulary:Clinical-Result": "clinicaltrials_vocabulary:Clinical-Result",
+    "bio2rdf:clinicaltrials_vocabulary:Clinical-Study": "clinicaltrials_vocabulary:Clinical-Study",
+    "bio2rdf:clinicaltrials_vocabulary:eligibility": "clinicaltrials_vocabulary:eligibility",
+    "bio2rdf:clinicaltrials_vocabulary:Eligibility": "clinicaltrials_vocabulary:Eligibility",
+    "bio2rdf:clinicaltrials_vocabulary:condition": "clinicaltrials_vocabulary:condition",
+    "bio2rdf:clinicaltrials_vocabulary:Term": "clinicaltrials_vocabulary:Term",
+    "bio2rdf:clinicaltrials_vocabulary:condition-browse": "clinicaltrials_vocabulary:condition-browse",
+    "bio2rdf:clinicaltrials_vocabulary:condition-mesh": "clinicaltrials_vocabulary:condition-mesh",
+    "bio2rdf:clinicaltrials_vocabulary:intervention-browse": "clinicaltrials_vocabulary:intervention-browse",
+    "bio2rdf:clinicaltrials_vocabulary:Inclusion-Criteria": "clinicaltrials_vocabulary:Inclusion-Criteria",
+    "bio2rdf:clinicaltrials_vocabulary:lead-sponsor": "clinicaltrials_vocabulary:lead-sponsor",
+    "bio2rdf:clinicaltrials_vocabulary:authority": "clinicaltrials_vocabulary:authority",
+    "bio2rdf:clinicaltrials_vocabulary:study-design": "clinicaltrials_vocabulary:study-design",
+    "bio2rdf:clinicaltrials_vocabulary:Study-Design": "clinicaltrials_vocabulary:Study-Design",
+    "bio2rdf:clinicaltrials_vocabulary:overall-official": "clinicaltrials_vocabulary:overall-official",
+    "bio2rdf:clinicaltrials_vocabulary:Contact": "clinicaltrials_vocabulary:Contact",
+    "bio2rdf:clinicaltrials_vocabulary:reference": "clinicaltrials_vocabulary:reference",
+    "bio2rdf:clinicaltrials_vocabulary:Reference": "clinicaltrials_vocabulary:Reference",
+    "bio2rdf:pubmed_vocabulary:Resource": "pubmed_vocabulary:Resource",
+    "bio2rdf:clinicaltrials_vocabulary:overall-status": "clinicaltrials_vocabulary:overall-status",
+    "bio2rdf:clinicaltrials_vocabulary:Status": "clinicaltrials_vocabulary:Status",
+    "bio2rdf:clinicaltrials_vocabulary:source": "clinicaltrials_vocabulary:source",
+    "bio2rdf:clinicaltrials_vocabulary:oversight": "clinicaltrials_vocabulary:oversight",
+    "bio2rdf:clinicaltrials_vocabulary:study-type": "clinicaltrials_vocabulary:study-type",
+    "bio2rdf:clinicaltrials_vocabulary:clinicaltrials_vocabulary:primary-outcome": "clinicaltrials_vocabulary:clinicaltrials_vocabulary:primary-outcome",
+    "bio2rdf:clinicaltrials_vocabulary:primary-outcome": "clinicaltrials_vocabulary:primary-outcome",
+    "bio2rdf:clinicaltrials_vocabulary:link": "clinicaltrials_vocabulary:link",
+    "bio2rdf:clinicaltrials_vocabulary:Link": "clinicaltrials_vocabulary:Link",
+    "bio2rdf:clinicaltrials_vocabulary:clinicaltrials_vocabulary:other-outcome": "clinicaltrials_vocabulary:clinicaltrials_vocabulary:other-outcome",
+    "bio2rdf:clinicaltrials_vocabulary:other-outcome": "clinicaltrials_vocabulary:other-outcome",
+    "bio2rdf:clinicaltrials_vocabulary:collaborator": "clinicaltrials_vocabulary:collaborator",
+    "bio2rdf:clinicaltrials_vocabulary:phase": "clinicaltrials_vocabulary:phase",
+    "bio2rdf:clinicaltrials_vocabulary:Phase": "clinicaltrials_vocabulary:Phase",
+    "bio2rdf:clinicaltrials_vocabulary:responsible-party": "clinicaltrials_vocabulary:responsible-party",
+    "bio2rdf:clinicaltrials_vocabulary:Responsible-Party": "clinicaltrials_vocabulary:Responsible-Party",
+    "bio2rdf:clinicaltrials_vocabulary:clinicaltrials_vocabulary:secondary-outcome": "clinicaltrials_vocabulary:clinicaltrials_vocabulary:secondary-outcome",
+    "bio2rdf:clinicaltrials_vocabulary:secondary-outcome": "clinicaltrials_vocabulary:secondary-outcome",
+    "bio2rdf:clinicaltrials_vocabulary:location": "clinicaltrials_vocabulary:location",
+    "bio2rdf:clinicaltrials_vocabulary:Location": "clinicaltrials_vocabulary:Location",
+    "bio2rdf:clinicaltrials_vocabulary:intervention": "clinicaltrials_vocabulary:intervention",
+    "bio2rdf:clinicaltrials_vocabulary:Country": "clinicaltrials_vocabulary:Country",
+    "bio2rdf:clinicaltrials_vocabulary:Drug": "clinicaltrials_vocabulary:Drug",
+    "bio2rdf:clinicaltrials_vocabulary:Procedure": "clinicaltrials_vocabulary:Procedure",
+    "bio2rdf:clinicaltrials_vocabulary:Radiation": "clinicaltrials_vocabulary:Radiation",
+    "bio2rdf:clinicaltrials_vocabulary:overall-contact": "clinicaltrials_vocabulary:overall-contact",
+    "bio2rdf:clinicaltrials_vocabulary:baseline": "clinicaltrials_vocabulary:baseline",
+    "bio2rdf:clinicaltrials_vocabulary:outcome": "clinicaltrials_vocabulary:outcome",
+    "bio2rdf:clinicaltrials_vocabulary:Outcome": "clinicaltrials_vocabulary:Outcome",
+    "bio2rdf:clinicaltrials_vocabulary:clinical-result": "clinicaltrials_vocabulary:clinical-result",
+    "bio2rdf:clinicaltrials_vocabulary:participant-flow": "clinicaltrials_vocabulary:participant-flow",
+    "bio2rdf:clinicaltrials_vocabulary:Participant-Flow": "clinicaltrials_vocabulary:Participant-Flow",
+    "bio2rdf:clinicaltrials_vocabulary:reported-events": "clinicaltrials_vocabulary:reported-events",
+    "bio2rdf:clinicaltrials_vocabulary:Reported-Events": "clinicaltrials_vocabulary:Reported-Events",
+    "bio2rdf:clinicaltrials_vocabulary:Device": "clinicaltrials_vocabulary:Device",
+    "bio2rdf:clinicaltrials_vocabulary:Dietary_Supplement": "clinicaltrials_vocabulary:Dietary_Supplement",
+    "bio2rdf:clinicaltrials_vocabulary:overall-contact-backup": "clinicaltrials_vocabulary:overall-contact-backup",
+    "bio2rdf:clinicaltrials_vocabulary:State": "clinicaltrials_vocabulary:State",
+    "bio2rdf:clinicaltrials_vocabulary:ZipCode": "clinicaltrials_vocabulary:ZipCode",
+    "bio2rdf:clinicaltrials_vocabulary:affiliation": "clinicaltrials_vocabulary:affiliation",
+    "bio2rdf:clinicaltrials_vocabulary:exclusion-criteria": "clinicaltrials_vocabulary:exclusion-criteria",
+    "bio2rdf:clinicaltrials_vocabulary:inclusion-criteria": "clinicaltrials_vocabulary:inclusion-criteria",
+    "bio2rdf:clinicaltrials_vocabulary:Event": "clinicaltrials_vocabulary:Event",
+    "bio2rdf:clinicaltrials_vocabulary:Event-Count": "clinicaltrials_vocabulary:Event-Count",
+    "bio2rdf:clinicaltrials_vocabulary:limitations-and-caveats": "clinicaltrials_vocabulary:limitations-and-caveats",
+    "bio2rdf:clinicaltrials_vocabulary:phone-ext": "clinicaltrials_vocabulary:phone-ext",
+    "bio2rdf:clinicaltrials_vocabulary:email": "clinicaltrials_vocabulary:email",
+    "bio2rdf:clinicaltrials_vocabulary:last-name": "clinicaltrials_vocabulary:last-name",
+    "bio2rdf:clinicaltrials_vocabulary:phone": "clinicaltrials_vocabulary:phone",
+    "bio2rdf:clinicaltrials_vocabulary:role": "clinicaltrials_vocabulary:role",
+    "bio2rdf:clinicaltrials_vocabulary:gender": "clinicaltrials_vocabulary:gender",
+    "bio2rdf:clinicaltrials_vocabulary:healthy-volunteers": "clinicaltrials_vocabulary:healthy-volunteers",
+    "bio2rdf:clinicaltrials_vocabulary:maximum-age": "clinicaltrials_vocabulary:maximum-age",
+    "bio2rdf:clinicaltrials_vocabulary:minimum-age": "clinicaltrials_vocabulary:minimum-age",
+    "bio2rdf:clinicaltrials_vocabulary:study-population": "clinicaltrials_vocabulary:study-population",
+    "bio2rdf:clinicaltrials_vocabulary:text": "clinicaltrials_vocabulary:text",
+    "bio2rdf:bio2rdf_vocabulary:x-identifiers.org": "bio2rdf_vocabulary:x-identifiers.org",
+    "bio2rdf:clinicaltrials_vocabulary:url": "clinicaltrials_vocabulary:url",
+    "bio2rdf:clinicaltrials_vocabulary:address": "clinicaltrials_vocabulary:address",
+    "bio2rdf:clinicaltrials_vocabulary:contact": "clinicaltrials_vocabulary:contact",
+    "bio2rdf:clinicaltrials_vocabulary:investigator": "clinicaltrials_vocabulary:investigator",
+    "bio2rdf:clinicaltrials_vocabulary:contact-backup": "clinicaltrials_vocabulary:contact-backup",
+    "bio2rdf:clinicaltrials_vocabulary:category": "clinicaltrials_vocabulary:category",
+    "bio2rdf:clinicaltrials_vocabulary:group-id": "clinicaltrials_vocabulary:group-id",
+    "bio2rdf:clinicaltrials_vocabulary:Milestone": "clinicaltrials_vocabulary:Milestone",
+    "bio2rdf:clinicaltrials_vocabulary:participant-counts": "clinicaltrials_vocabulary:participant-counts",
+    "bio2rdf:clinicaltrials_vocabulary:Participant-Count": "clinicaltrials_vocabulary:Participant-Count",
+    "bio2rdf:clinicaltrials_vocabulary:Other-Event": "clinicaltrials_vocabulary:Other-Event",
+    "bio2rdf:clinicaltrials_vocabulary:count": "clinicaltrials_vocabulary:count",
+    "bio2rdf:clinicaltrials_vocabulary:major-title": "clinicaltrials_vocabulary:major-title",
+    "bio2rdf:clinicaltrials_vocabulary:sub-title": "clinicaltrials_vocabulary:sub-title",
+    "bio2rdf:clinicaltrials_vocabulary:analysis": "clinicaltrials_vocabulary:analysis",
+    "bio2rdf:clinicaltrials_vocabulary:period": "clinicaltrials_vocabulary:period",
+    "bio2rdf:clinicaltrials_vocabulary:Period": "clinicaltrials_vocabulary:Period",
+    "bio2rdf:clinicaltrials_vocabulary:milestone": "clinicaltrials_vocabulary:milestone",
+    "dcterms:description": "description",
+    "bio2rdf:clinicaltrials_vocabulary:status": "clinicaltrials_vocabulary:status",
+    "dcterms:alternate": "alternate",
+    "bio2rdf:clinicaltrials_vocabulary:dispersion": "clinicaltrials_vocabulary:dispersion",
+    "bio2rdf:clinicaltrials_vocabulary:parameter": "clinicaltrials_vocabulary:parameter",
+    "bio2rdf:clinicaltrials_vocabulary:unit": "clinicaltrials_vocabulary:unit",
+    "bio2rdf:clinicaltrials_vocabulary:has-dmc": "clinicaltrials_vocabulary:has-dmc",
+    "bio2rdf:clinicaltrials_vocabulary:population": "clinicaltrials_vocabulary:population",
+    "bio2rdf:clinicaltrials_vocabulary:safety-issue": "clinicaltrials_vocabulary:safety-issue",
+    "bio2rdf:clinicaltrials_vocabulary:time-frame": "clinicaltrials_vocabulary:time-frame",
+    "bio2rdf:clinicaltrials_vocabulary:type": "clinicaltrials_vocabulary:type",
+    "bio2rdf:clinicaltrials_vocabulary:pre-assignment-details": "clinicaltrials_vocabulary:pre-assignment-details",
+    "bio2rdf:clinicaltrials_vocabulary:recruitment-details": "clinicaltrials_vocabulary:recruitment-details",
+    "bio2rdf:clinicaltrials_vocabulary:other-events": "clinicaltrials_vocabulary:other-events",
+    "bio2rdf:clinicaltrials_vocabulary:serious-events": "clinicaltrials_vocabulary:serious-events",
+    "bio2rdf:clinicaltrials_vocabulary:Serious-Event": "clinicaltrials_vocabulary:Serious-Event",
+    "bio2rdf:clinicaltrials_vocabulary:Withdraw-Reason": "clinicaltrials_vocabulary:Withdraw-Reason",
+    "bio2rdf:clinicaltrials_vocabulary:citation": "clinicaltrials_vocabulary:citation",
+    "bio2rdf:clinicaltrials_vocabulary:investigator-affiliation": "clinicaltrials_vocabulary:investigator-affiliation",
+    "bio2rdf:clinicaltrials_vocabulary:investigator-full-name": "clinicaltrials_vocabulary:investigator-full-name",
+    "bio2rdf:clinicaltrials_vocabulary:investigator-title": "clinicaltrials_vocabulary:investigator-title",
+    "bio2rdf:clinicaltrials_vocabulary:name-title": "clinicaltrials_vocabulary:name-title"
+  }
+}

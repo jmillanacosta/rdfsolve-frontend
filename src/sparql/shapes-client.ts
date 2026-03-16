@@ -2,8 +2,8 @@
  * Shapes API Client
  *
  * Calls the backend `/api/shapes/*` endpoints:
- *  - `/api/shapes/subset`  – Subset a JSON-LD schema by edges
- *  - `/api/shapes/shacl`   – Convert JSON-LD (subset) → SHACL Turtle
+ *  - `/api/shapes/subset`  - Subset a JSON-LD schema by edges
+ *  - `/api/shapes/shacl`   - Convert JSON-LD (subset) -> SHACL Turtle
  */
 
 // ── API base ────────────────────────────────────────────────────

@@ -1,5 +1,5 @@
 /**
- * Shapes Panel Component — SHACL Shape Builder
+ * Shapes Panel Component - SHACL Shape Builder
  *
  * Separate panel for interactive schema subsetting.
  * The user starts with ALL edges and removes unwanted ones.
