@@ -45,6 +45,23 @@ jobs:
           cp -r demo/dist _site/dist
           # Include pre-baked schema JSONLDs for the demo
           for f in demo/*.jsonld; do [ -f "$f" ] && cp "$f" _site/ || true; done
+          # Generate manifest.json listing every .jsonld file so the
+          # demo can discover all datasets at runtime instead of
+          # requiring a hardcoded list.
+          node -e "
+            const fs = require('fs');
+            const path = require('path');
+            const files = fs.readdirSync('demo').filter(f => f.endsWith('.jsonld'));
+            const manifest = files.map(f => {
+              const id = f.replace(/\.jsonld$/, '');
+              const name = id
+                .replace(/[._]/g, ' ')
+                .replace(/\b\w/g, c => c.toUpperCase());
+              return { id, file: f, name };
+            });
+            fs.writeFileSync('_site/manifest.json', JSON.stringify(manifest, null, 2));
+            console.log('manifest.json: ' + manifest.length + ' entries');
+          "
 
       - uses: actions/configure-pages@v5
         with:

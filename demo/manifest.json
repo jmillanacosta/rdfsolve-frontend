@@ -1,0 +1,547 @@
+[
+  {
+    "id": "affymetrix_schema",
+    "file": "affymetrix_schema.jsonld",
+    "name": "Affymetrix Schema"
+  },
+  {
+    "id": "allie_schema",
+    "file": "allie_schema.jsonld",
+    "name": "Allie Schema"
+  },
+  {
+    "id": "aopwikirdf.all_schema",
+    "file": "aopwikirdf.all_schema.jsonld",
+    "name": "Aopwikirdf All Schema"
+  },
+  {
+    "id": "aopwikirdf_schema",
+    "file": "aopwikirdf_schema.jsonld",
+    "name": "Aopwikirdf Schema"
+  },
+  {
+    "id": "apo_schema",
+    "file": "apo_schema.jsonld",
+    "name": "Apo Schema"
+  },
+  {
+    "id": "bio2rdf.uniprot_schema",
+    "file": "bio2rdf.uniprot_schema.jsonld",
+    "name": "Bio2rdf Uniprot Schema"
+  },
+  {
+    "id": "cbms2019_doid",
+    "file": "cbms2019_doid.jsonld",
+    "name": "Cbms2019 Doid"
+  },
+  {
+    "id": "cbms2019_icd10",
+    "file": "cbms2019_icd10.jsonld",
+    "name": "Cbms2019 Icd10"
+  },
+  {
+    "id": "cbms2019_mesh",
+    "file": "cbms2019_mesh.jsonld",
+    "name": "Cbms2019 Mesh"
+  },
+  {
+    "id": "cellosaurus_schema",
+    "file": "cellosaurus_schema.jsonld",
+    "name": "Cellosaurus Schema"
+  },
+  {
+    "id": "chebi_instance_mapping",
+    "file": "chebi_instance_mapping.jsonld",
+    "name": "Chebi Instance Mapping"
+  },
+  {
+    "id": "chebi_schema",
+    "file": "chebi_schema.jsonld",
+    "name": "Chebi Schema"
+  },
+  {
+    "id": "chembl.bigcat.all_schema",
+    "file": "chembl.bigcat.all_schema.jsonld",
+    "name": "Chembl Bigcat All Schema"
+  },
+  {
+    "id": "chembl.bigcat_schema",
+    "file": "chembl.bigcat_schema.jsonld",
+    "name": "Chembl Bigcat Schema"
+  },
+  {
+    "id": "chembl_schema",
+    "file": "chembl_schema.jsonld",
+    "name": "Chembl Schema"
+  },
+  {
+    "id": "clinicaltrials_schema",
+    "file": "clinicaltrials_schema.jsonld",
+    "name": "Clinicaltrials Schema"
+  },
+  {
+    "id": "clo_clo",
+    "file": "clo_clo.jsonld",
+    "name": "Clo Clo"
+  },
+  {
+    "id": "compath_kegg.pathway",
+    "file": "compath_kegg.pathway.jsonld",
+    "name": "Compath Kegg Pathway"
+  },
+  {
+    "id": "compath_pathbank",
+    "file": "compath_pathbank.jsonld",
+    "name": "Compath Pathbank"
+  },
+  {
+    "id": "compath_wikipathways",
+    "file": "compath_wikipathways.jsonld",
+    "name": "Compath Wikipathways"
+  },
+  {
+    "id": "ctd_schema",
+    "file": "ctd_schema.jsonld",
+    "name": "Ctd Schema"
+  },
+  {
+    "id": "drugbank.drugs_schema",
+    "file": "drugbank.drugs_schema.jsonld",
+    "name": "Drugbank Drugs Schema"
+  },
+  {
+    "id": "drugbank_schema",
+    "file": "drugbank_schema.jsonld",
+    "name": "Drugbank Schema"
+  },
+  {
+    "id": "earthmetabolome_schema",
+    "file": "earthmetabolome_schema.jsonld",
+    "name": "Earthmetabolome Schema"
+  },
+  {
+    "id": "eco_schema",
+    "file": "eco_schema.jsonld",
+    "name": "Eco Schema"
+  },
+  {
+    "id": "ensembl_instance_mapping",
+    "file": "ensembl_instance_mapping.jsonld",
+    "name": "Ensembl Instance Mapping"
+  },
+  {
+    "id": "faldo_instance_mapping",
+    "file": "faldo_instance_mapping.jsonld",
+    "name": "Faldo Instance Mapping"
+  },
+  {
+    "id": "fplx_fplx",
+    "file": "fplx_fplx.jsonld",
+    "name": "Fplx Fplx"
+  },
+  {
+    "id": "getncitchebimappings_ncit",
+    "file": "getncitchebimappings_ncit.jsonld",
+    "name": "Getncitchebimappings Ncit"
+  },
+  {
+    "id": "gilda_mesh",
+    "file": "gilda_mesh.jsonld",
+    "name": "Gilda Mesh"
+  },
+  {
+    "id": "goa_schema",
+    "file": "goa_schema.jsonld",
+    "name": "Goa Schema"
+  },
+  {
+    "id": "hamap_discovered_schema",
+    "file": "hamap_discovered_schema.jsonld",
+    "name": "Hamap Discovered Schema"
+  },
+  {
+    "id": "hamap_mined_qlever_schema",
+    "file": "hamap_mined_qlever_schema.jsonld",
+    "name": "Hamap Mined Qlever Schema"
+  },
+  {
+    "id": "hgnc_schema",
+    "file": "hgnc_schema.jsonld",
+    "name": "Hgnc Schema"
+  },
+  {
+    "id": "homologene_schema",
+    "file": "homologene_schema.jsonld",
+    "name": "Homologene Schema"
+  },
+  {
+    "id": "hp_schema",
+    "file": "hp_schema.jsonld",
+    "name": "Hp Schema"
+  },
+  {
+    "id": "inferenced_mappings",
+    "file": "inferenced_mappings.jsonld",
+    "name": "Inferenced Mappings"
+  },
+  {
+    "id": "interpro_schema",
+    "file": "interpro_schema.jsonld",
+    "name": "Interpro Schema"
+  },
+  {
+    "id": "iocb.ontology_schema",
+    "file": "iocb.ontology_schema.jsonld",
+    "name": "Iocb Ontology Schema"
+  },
+  {
+    "id": "irefindex_schema",
+    "file": "irefindex_schema.jsonld",
+    "name": "Irefindex Schema"
+  },
+  {
+    "id": "isdb_schema",
+    "file": "isdb_schema.jsonld",
+    "name": "Isdb Schema"
+  },
+  {
+    "id": "jpost_schema",
+    "file": "jpost_schema.jsonld",
+    "name": "Jpost Schema"
+  },
+  {
+    "id": "kegg_schema",
+    "file": "kegg_schema.jsonld",
+    "name": "Kegg Schema"
+  },
+  {
+    "id": "lsr_schema",
+    "file": "lsr_schema.jsonld",
+    "name": "Lsr Schema"
+  },
+  {
+    "id": "medgen_schema",
+    "file": "medgen_schema.jsonld",
+    "name": "Medgen Schema"
+  },
+  {
+    "id": "mesh.heading_schema",
+    "file": "mesh.heading_schema.jsonld",
+    "name": "Mesh Heading Schema"
+  },
+  {
+    "id": "mesh_schema",
+    "file": "mesh_schema.jsonld",
+    "name": "Mesh Schema"
+  },
+  {
+    "id": "metanext_discovered_schema",
+    "file": "metanext_discovered_schema.jsonld",
+    "name": "Metanext Discovered Schema"
+  },
+  {
+    "id": "metanext_schema",
+    "file": "metanext_schema.jsonld",
+    "name": "Metanext Schema"
+  },
+  {
+    "id": "mgi_schema",
+    "file": "mgi_schema.jsonld",
+    "name": "Mgi Schema"
+  },
+  {
+    "id": "mona_schema",
+    "file": "mona_schema.jsonld",
+    "name": "Mona Schema"
+  },
+  {
+    "id": "nanosafetyrdf_schema",
+    "file": "nanosafetyrdf_schema.jsonld",
+    "name": "Nanosafetyrdf Schema"
+  },
+  {
+    "id": "ncbigene_schema",
+    "file": "ncbigene_schema.jsonld",
+    "name": "Ncbigene Schema"
+  },
+  {
+    "id": "ncitchebi_ncit",
+    "file": "ncitchebi_ncit.jsonld",
+    "name": "Ncitchebi Ncit"
+  },
+  {
+    "id": "ncitgo_ncit",
+    "file": "ncitgo_ncit.jsonld",
+    "name": "Ncitgo Ncit"
+  },
+  {
+    "id": "ncithgnc_ncit",
+    "file": "ncithgnc_ncit.jsonld",
+    "name": "Ncithgnc Ncit"
+  },
+  {
+    "id": "ncituniprot_ncit",
+    "file": "ncituniprot_ncit.jsonld",
+    "name": "Ncituniprot Ncit"
+  },
+  {
+    "id": "ndc_schema",
+    "file": "ndc_schema.jsonld",
+    "name": "Ndc Schema"
+  },
+  {
+    "id": "omabrowser_schema",
+    "file": "omabrowser_schema.jsonld",
+    "name": "Omabrowser Schema"
+  },
+  {
+    "id": "omim_schema",
+    "file": "omim_schema.jsonld",
+    "name": "Omim Schema"
+  },
+  {
+    "id": "omimgene_omim",
+    "file": "omimgene_omim.jsonld",
+    "name": "Omimgene Omim"
+  },
+  {
+    "id": "pdb_schema",
+    "file": "pdb_schema.jsonld",
+    "name": "Pdb Schema"
+  },
+  {
+    "id": "pharmgkb_schema",
+    "file": "pharmgkb_schema.jsonld",
+    "name": "Pharmgkb Schema"
+  },
+  {
+    "id": "plantmetwiki.all_schema",
+    "file": "plantmetwiki.all_schema.jsonld",
+    "name": "Plantmetwiki All Schema"
+  },
+  {
+    "id": "plantmetwiki_schema",
+    "file": "plantmetwiki_schema.jsonld",
+    "name": "Plantmetwiki Schema"
+  },
+  {
+    "id": "pubcasefinder_schema",
+    "file": "pubcasefinder_schema.jsonld",
+    "name": "Pubcasefinder Schema"
+  },
+  {
+    "id": "pubchem.anatomy_schema",
+    "file": "pubchem.anatomy_schema.jsonld",
+    "name": "Pubchem Anatomy Schema"
+  },
+  {
+    "id": "pubchem.author_schema",
+    "file": "pubchem.author_schema.jsonld",
+    "name": "Pubchem Author Schema"
+  },
+  {
+    "id": "pubchem.bioassay_schema",
+    "file": "pubchem.bioassay_schema.jsonld",
+    "name": "Pubchem Bioassay Schema"
+  },
+  {
+    "id": "pubchem.book_schema",
+    "file": "pubchem.book_schema.jsonld",
+    "name": "Pubchem Book Schema"
+  },
+  {
+    "id": "pubchem.cell_schema",
+    "file": "pubchem.cell_schema.jsonld",
+    "name": "Pubchem Cell Schema"
+  },
+  {
+    "id": "pubchem.concept_schema",
+    "file": "pubchem.concept_schema.jsonld",
+    "name": "Pubchem Concept Schema"
+  },
+  {
+    "id": "pubchem.conserveddomain_schema",
+    "file": "pubchem.conserveddomain_schema.jsonld",
+    "name": "Pubchem Conserveddomain Schema"
+  },
+  {
+    "id": "pubchem.cooccurrence_schema",
+    "file": "pubchem.cooccurrence_schema.jsonld",
+    "name": "Pubchem Cooccurrence Schema"
+  },
+  {
+    "id": "pubchem.descriptor.compound_schema",
+    "file": "pubchem.descriptor.compound_schema.jsonld",
+    "name": "Pubchem Descriptor Compound Schema"
+  },
+  {
+    "id": "pubchem.descriptor.substance_schema",
+    "file": "pubchem.descriptor.substance_schema.jsonld",
+    "name": "Pubchem Descriptor Substance Schema"
+  },
+  {
+    "id": "pubchem.disease_schema",
+    "file": "pubchem.disease_schema.jsonld",
+    "name": "Pubchem Disease Schema"
+  },
+  {
+    "id": "pubchem.endpoint_schema",
+    "file": "pubchem.endpoint_schema.jsonld",
+    "name": "Pubchem Endpoint Schema"
+  },
+  {
+    "id": "pubchem.gene_schema",
+    "file": "pubchem.gene_schema.jsonld",
+    "name": "Pubchem Gene Schema"
+  },
+  {
+    "id": "pubchem.grant_schema",
+    "file": "pubchem.grant_schema.jsonld",
+    "name": "Pubchem Grant Schema"
+  },
+  {
+    "id": "pubchem.inchikey_schema",
+    "file": "pubchem.inchikey_schema.jsonld",
+    "name": "Pubchem Inchikey Schema"
+  },
+  {
+    "id": "pubchem.journal_schema",
+    "file": "pubchem.journal_schema.jsonld",
+    "name": "Pubchem Journal Schema"
+  },
+  {
+    "id": "pubchem.measuregroup_schema",
+    "file": "pubchem.measuregroup_schema.jsonld",
+    "name": "Pubchem Measuregroup Schema"
+  },
+  {
+    "id": "pubchem.organization_schema",
+    "file": "pubchem.organization_schema.jsonld",
+    "name": "Pubchem Organization Schema"
+  },
+  {
+    "id": "pubchem.patent_schema",
+    "file": "pubchem.patent_schema.jsonld",
+    "name": "Pubchem Patent Schema"
+  },
+  {
+    "id": "pubchem.pathway_schema",
+    "file": "pubchem.pathway_schema.jsonld",
+    "name": "Pubchem Pathway Schema"
+  },
+  {
+    "id": "pubchem.reference_schema",
+    "file": "pubchem.reference_schema.jsonld",
+    "name": "Pubchem Reference Schema"
+  },
+  {
+    "id": "pubchem.source_schema",
+    "file": "pubchem.source_schema.jsonld",
+    "name": "Pubchem Source Schema"
+  },
+  {
+    "id": "pubchem.synonym_schema",
+    "file": "pubchem.synonym_schema.jsonld",
+    "name": "Pubchem Synonym Schema"
+  },
+  {
+    "id": "pubchem.taxonomy_schema",
+    "file": "pubchem.taxonomy_schema.jsonld",
+    "name": "Pubchem Taxonomy Schema"
+  },
+  {
+    "id": "rhea_schema",
+    "file": "rhea_schema.jsonld",
+    "name": "Rhea Schema"
+  },
+  {
+    "id": "sgd_schema",
+    "file": "sgd_schema.jsonld",
+    "name": "Sgd Schema"
+  },
+  {
+    "id": "sibils_schema",
+    "file": "sibils_schema.jsonld",
+    "name": "Sibils Schema"
+  },
+  {
+    "id": "sider_schema",
+    "file": "sider_schema.jsonld",
+    "name": "Sider Schema"
+  },
+  {
+    "id": "swisslipids_schema",
+    "file": "swisslipids_schema.jsonld",
+    "name": "Swisslipids Schema"
+  },
+  {
+    "id": "taxonomy_schema",
+    "file": "taxonomy_schema.jsonld",
+    "name": "Taxonomy Schema"
+  },
+  {
+    "id": "uniprot.chebi_schema",
+    "file": "uniprot.chebi_schema.jsonld",
+    "name": "Uniprot Chebi Schema"
+  },
+  {
+    "id": "uniprot.citationmapping_schema",
+    "file": "uniprot.citationmapping_schema.jsonld",
+    "name": "Uniprot Citationmapping Schema"
+  },
+  {
+    "id": "uniprot.citations_schema",
+    "file": "uniprot.citations_schema.jsonld",
+    "name": "Uniprot Citations Schema"
+  },
+  {
+    "id": "uniprot.core_schema",
+    "file": "uniprot.core_schema.jsonld",
+    "name": "Uniprot Core Schema"
+  },
+  {
+    "id": "uniprot.database_schema",
+    "file": "uniprot.database_schema.jsonld",
+    "name": "Uniprot Database Schema"
+  },
+  {
+    "id": "uniprot.diseases_schema",
+    "file": "uniprot.diseases_schema.jsonld",
+    "name": "Uniprot Diseases Schema"
+  },
+  {
+    "id": "uniprot.enzymes_schema",
+    "file": "uniprot.enzymes_schema.jsonld",
+    "name": "Uniprot Enzymes Schema"
+  },
+  {
+    "id": "uniprot.go_schema",
+    "file": "uniprot.go_schema.jsonld",
+    "name": "Uniprot Go Schema"
+  },
+  {
+    "id": "uniprot_instance_mapping",
+    "file": "uniprot_instance_mapping.jsonld",
+    "name": "Uniprot Instance Mapping"
+  },
+  {
+    "id": "wikidata.idsm.entity_schema",
+    "file": "wikidata.idsm.entity_schema.jsonld",
+    "name": "Wikidata Idsm Entity Schema"
+  },
+  {
+    "id": "wikipathways.all_schema",
+    "file": "wikipathways.all_schema.jsonld",
+    "name": "Wikipathways All Schema"
+  },
+  {
+    "id": "wikipathways_schema",
+    "file": "wikipathways_schema.jsonld",
+    "name": "Wikipathways Schema"
+  },
+  {
+    "id": "wormbase_schema",
+    "file": "wormbase_schema.jsonld",
+    "name": "Wormbase Schema"
+  }
+]

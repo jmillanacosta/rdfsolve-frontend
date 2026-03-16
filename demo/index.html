@@ -176,7 +176,7 @@
   <div class="app">
     <!-- ── Demo notice ── -->
     <div class="demo-banner">
-      <strong>Static demo</strong> - schemas are pre-computed snapshots.
+      <strong>Static demo</strong> - schemas are pre-computed snapshots, and functions like query generation, IRI resolution and SHACL generation are not available without the backend.
       &nbsp;·&nbsp;
       <a href="https://github.com/jmillanacosta/rdfsolve" target="_blank" rel="noopener">Package / API docs</a>
       &nbsp;·&nbsp;
@@ -429,34 +429,5 @@
   </script>
 
   <script type="module" src="./dist/bundle.js"></script>
-
-  <!-- ── Load schemas from manifest (injected by CI) if present ── -->
-  <script type="module">
-    (async () => {
-      const selector = document.querySelector('dataset-selector');
-      if (!selector) return;
-
-      let manifest;
-      try {
-        const res = await fetch('./dist/schemas/manifest.json');
-        if (!res.ok) throw new Error('no manifest');
-        manifest = await res.json();
-      } catch {
-        // Fall back to the static jsonld files already in the demo directory.
-        manifest = null;
-      }
-
-      if (manifest && manifest.length > 0 && typeof selector.addSchema === 'function') {
-        for (const entry of manifest) {
-          try {
-            const r = await fetch('./dist/' + entry.file);
-            if (!r.ok) continue;
-            const schema = await r.json();
-            selector.addSchema(entry.dataset, schema);
-          } catch { /* skip broken entries */ }
-        }
-      }
-    })();
-  </script>
 </body>
 </html>
