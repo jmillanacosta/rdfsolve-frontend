@@ -47,6 +47,8 @@ jobs:
           for f in demo/*.jsonld; do [ -f "$f" ] && cp "$f" _site/ || true; done
 
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:

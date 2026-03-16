@@ -432,29 +432,31 @@
 
   <!-- ── Load schemas from manifest (injected by CI) if present ── -->
   <script type="module">
-    const selector = document.querySelector('dataset-selector');
-    if (!selector) return;
+    (async () => {
+      const selector = document.querySelector('dataset-selector');
+      if (!selector) return;
 
-    let manifest;
-    try {
-      const res = await fetch('./dist/schemas/manifest.json');
-      if (!res.ok) throw new Error('no manifest');
-      manifest = await res.json();
-    } catch {
-      // Fall back to the static jsonld files already in the demo directory.
-      manifest = null;
-    }
-
-    if (manifest && manifest.length > 0 && typeof selector.addSchema === 'function') {
-      for (const entry of manifest) {
-        try {
-          const r = await fetch('./dist/' + entry.file);
-          if (!r.ok) continue;
-          const schema = await r.json();
-          selector.addSchema(entry.dataset, schema);
-        } catch { /* skip broken entries */ }
+      let manifest;
+      try {
+        const res = await fetch('./dist/schemas/manifest.json');
+        if (!res.ok) throw new Error('no manifest');
+        manifest = await res.json();
+      } catch {
+        // Fall back to the static jsonld files already in the demo directory.
+        manifest = null;
       }
-    }
+
+      if (manifest && manifest.length > 0 && typeof selector.addSchema === 'function') {
+        for (const entry of manifest) {
+          try {
+            const r = await fetch('./dist/' + entry.file);
+            if (!r.ok) continue;
+            const schema = await r.json();
+            selector.addSchema(entry.dataset, schema);
+          } catch { /* skip broken entries */ }
+        }
+      }
+    })();
   </script>
 </body>
 </html>
